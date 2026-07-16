@@ -1,0 +1,310 @@
+{
+ "model": "sentence-transformers/all-mpnet-base-v2",
+ "device": "cuda",
+ "verses": 1796,
+ "mean_similarity": 0.5908,
+ "p05": 0.4186,
+ "lowest_50": [
+  {
+   "id": "3.9.37",
+   "kanda": 3,
+   "similarity": 0.1723,
+   "contested": true
+  },
+  {
+   "id": "2.330",
+   "kanda": 2,
+   "similarity": 0.233,
+   "contested": false
+  },
+  {
+   "id": "2.193",
+   "kanda": 2,
+   "similarity": 0.2702,
+   "contested": false
+  },
+  {
+   "id": "3.14.531",
+   "kanda": 3,
+   "similarity": 0.2976,
+   "contested": false
+  },
+  {
+   "id": "2.38",
+   "kanda": 2,
+   "similarity": 0.299,
+   "contested": true
+  },
+  {
+   "id": "1.74",
+   "kanda": 1,
+   "similarity": 0.3012,
+   "contested": true
+  },
+  {
+   "id": "3.14.479",
+   "kanda": 3,
+   "similarity": 0.3192,
+   "contested": true
+  },
+  {
+   "id": "3.12.2",
+   "kanda": 3,
+   "similarity": 0.3201,
+   "contested": false
+  },
+  {
+   "id": "2.176",
+   "kanda": 2,
+   "similarity": 0.3212,
+   "contested": false
+  },
+  {
+   "id": "3.2.13",
+   "kanda": 3,
+   "similarity": 0.3223,
+   "contested": false
+  },
+  {
+   "id": "3.7.148",
+   "kanda": 3,
+   "similarity": 0.3258,
+   "contested": false
+  },
+  {
+   "id": "2.244",
+   "kanda": 2,
+   "similarity": 0.3264,
+   "contested": false
+  },
+  {
+   "id": "1.63",
+   "kanda": 1,
+   "similarity": 0.3271,
+   "contested": false
+  },
+  {
+   "id": "3.9.27",
+   "kanda": 3,
+   "similarity": 0.3282,
+   "contested": false
+  },
+  {
+   "id": "3.9.105",
+   "kanda": 3,
+   "similarity": 0.3328,
+   "contested": false
+  },
+  {
+   "id": "3.9.54",
+   "kanda": 3,
+   "similarity": 0.3353,
+   "contested": false
+  },
+  {
+   "id": "1.149",
+   "kanda": 1,
+   "similarity": 0.3382,
+   "contested": true
+  },
+  {
+   "id": "3.14.289",
+   "kanda": 3,
+   "similarity": 0.3387,
+   "contested": false
+  },
+  {
+   "id": "2.402",
+   "kanda": 2,
+   "similarity": 0.3388,
+   "contested": false
+  },
+  {
+   "id": "3.9.75",
+   "kanda": 3,
+   "similarity": 0.3418,
+   "contested": false
+  },
+  {
+   "id": "3.1.1",
+   "kanda": 3,
+   "similarity": 0.3489,
+   "contested": false
+  },
+  {
+   "id": "3.13.17",
+   "kanda": 3,
+   "similarity": 0.3522,
+   "contested": false
+  },
+  {
+   "id": "3.14.421",
+   "kanda": 3,
+   "similarity": 0.3534,
+   "contested": true
+  },
+  {
+   "id": "2.188",
+   "kanda": 2,
+   "similarity": 0.3553,
+   "contested": true
+  },
+  {
+   "id": "2.360",
+   "kanda": 2,
+   "similarity": 0.3581,
+   "contested": false
+  },
+  {
+   "id": "3.14.501",
+   "kanda": 3,
+   "similarity": 0.3631,
+   "contested": false
+  },
+  {
+   "id": "3.8.16",
+   "kanda": 3,
+   "similarity": 0.3644,
+   "contested": false
+  },
+  {
+   "id": "2.155",
+   "kanda": 2,
+   "similarity": 0.3651,
+   "contested": false
+  },
+  {
+   "id": "3.11.13",
+   "kanda": 3,
+   "similarity": 0.3652,
+   "contested": false
+  },
+  {
+   "id": "3.1.77",
+   "kanda": 3,
+   "similarity": 0.3653,
+   "contested": false
+  },
+  {
+   "id": "2.314",
+   "kanda": 2,
+   "similarity": 0.3654,
+   "contested": false
+  },
+  {
+   "id": "3.14.347",
+   "kanda": 3,
+   "similarity": 0.3678,
+   "contested": false
+  },
+  {
+   "id": "3.14.355",
+   "kanda": 3,
+   "similarity": 0.372,
+   "contested": false
+  },
+  {
+   "id": "3.14.551",
+   "kanda": 3,
+   "similarity": 0.3746,
+   "contested": true
+  },
+  {
+   "id": "2.3",
+   "kanda": 2,
+   "similarity": 0.3751,
+   "contested": false
+  },
+  {
+   "id": "3.14.25",
+   "kanda": 3,
+   "similarity": 0.3761,
+   "contested": false
+  },
+  {
+   "id": "3.2.12",
+   "kanda": 3,
+   "similarity": 0.3783,
+   "contested": true
+  },
+  {
+   "id": "3.9.57",
+   "kanda": 3,
+   "similarity": 0.379,
+   "contested": false
+  },
+  {
+   "id": "3.12.22",
+   "kanda": 3,
+   "similarity": 0.3799,
+   "contested": false
+  },
+  {
+   "id": "3.14.246",
+   "kanda": 3,
+   "similarity": 0.382,
+   "contested": false
+  },
+  {
+   "id": "3.3.36",
+   "kanda": 3,
+   "similarity": 0.3829,
+   "contested": false
+  },
+  {
+   "id": "1.99",
+   "kanda": 1,
+   "similarity": 0.3839,
+   "contested": false
+  },
+  {
+   "id": "3.14.464",
+   "kanda": 3,
+   "similarity": 0.3843,
+   "contested": true
+  },
+  {
+   "id": "1.29",
+   "kanda": 1,
+   "similarity": 0.3849,
+   "contested": false
+  },
+  {
+   "id": "3.7.7",
+   "kanda": 3,
+   "similarity": 0.3866,
+   "contested": false
+  },
+  {
+   "id": "2.333",
+   "kanda": 2,
+   "similarity": 0.3873,
+   "contested": false
+  },
+  {
+   "id": "2.302",
+   "kanda": 2,
+   "similarity": 0.3882,
+   "contested": false
+  },
+  {
+   "id": "3.7.13",
+   "kanda": 3,
+   "similarity": 0.3897,
+   "contested": false
+  },
+  {
+   "id": "3.9.59",
+   "kanda": 3,
+   "similarity": 0.3899,
+   "contested": false
+  },
+  {
+   "id": "2.22",
+   "kanda": 2,
+   "similarity": 0.3925,
+   "contested": false
+  }
+ ],
+ "note": "similarity of translation vs commentary embeddings; low values are a review queue, not a verdict \u2014 short aphoristic translations with long technical commentary naturally score lower"
+}
