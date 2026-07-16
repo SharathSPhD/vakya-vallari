@@ -1,0 +1,15 @@
+{
+ "verses": 1796,
+ "by_kanda": {
+  "1": 144,
+  "2": 426,
+  "3": 1226
+ },
+ "contested": 286,
+ "quarantined": 0,
+ "sha256": "53043bdabcb76b0c8f20f1a7a04f20f8deaef847876cf7450751d177394f230a",
+ "sources": {
+  "mula": "wisdomlib.org (Devanagari kārikās, blockquote-scoped extraction)",
+  "translation_commentary": "original, written from the Sanskrit mūla"
+ }
+}
