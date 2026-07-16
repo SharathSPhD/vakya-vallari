@@ -1,0 +1,185 @@
+{
+  "verse": "1.42",
+  "entities": [
+    {
+      "id": "anumana",
+      "name": "anumāna",
+      "sort": "power",
+      "cite": "The blind man's hand does give him real information — touch is a genuine pramana, as inference is"
+    },
+    {
+      "id": "pratyaksha",
+      "name": "pratyakṣa",
+      "sort": "power",
+      "cite": "touch is a genuine pramana, as inference is"
+    },
+    {
+      "id": "vinipata",
+      "name": "vinipāta",
+      "sort": "manifestation",
+      "cite": "Vinipata, the headlong fall, is then na durlabha — 'not hard to obtain'"
+    },
+    {
+      "id": "sarana_jnana",
+      "name": "saraṇa-jñāna",
+      "sort": "cognition",
+      "cite": "one who relies chiefly on inference does not find his fall hard to come by"
+    },
+    {
+      "id": "visama_pathi",
+      "name": "viṣame pathi",
+      "sort": "property",
+      "cite": "The failure comes from the combination the verse specifies: visame pathi, on broken ground"
+    },
+    {
+      "id": "drava",
+      "name": "dhāvatā",
+      "sort": "property",
+      "cite": "and dhavata, running"
+    },
+    {
+      "id": "sukshma_jnana",
+      "name": "sūkṣma-jñāna",
+      "sort": "cognition",
+      "cite": "on even ground, walking slowly, it suffices"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "pramana",
+      "of": "anumana",
+      "cite": "touch is a genuine pramana, as inference is"
+    },
+    {
+      "kind": "predication",
+      "name": "pramana",
+      "of": "pratyaksha",
+      "cite": "touch is a genuine pramana, as inference is"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "vinipata",
+      "to": "visama_pathi",
+      "cite": "The failure comes from the combination the verse specifies: visame pathi, on broken ground"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "vinipata",
+      "to": "drava",
+      "cite": "and dhavata, running"
+    },
+    {
+      "kind": "predication",
+      "name": "serial_slow",
+      "of": "anumana",
+      "cite": "Inference fails not because it delivers nothing but because it is local, serial and slow"
+    },
+    {
+      "kind": "predication",
+      "name": "na_durlabha",
+      "of": "vinipata",
+      "cite": "Vinipata, the headlong fall, is then na durlabha — 'not hard to obtain'"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "pramana",
+      "of": "vinipata",
+      "cite": "The blind man's hand does give him real information — touch is a genuine pramana, as inference is"
+    },
+    {
+      "kind": "relation",
+      "name": "vivartate",
+      "from": "anumana",
+      "to": "vinipata",
+      "cite": "Inference fails not because it delivers nothing but because it is local, serial and slow, while the terrain (1.32-33: powers indexed to circumstance, defeaters unsurveyed) is uneven and the reasoner in practice moves at speed"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "pramana",
+        "of": "anumana",
+        "cite": "one who relies chiefly on inference"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "vinipata",
+        "to": "visama_pathi",
+        "cite": "Like a blind man running on rough ground"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "vinipata",
+        "to": "drava",
+        "cite": "running on rough ground"
+      },
+      {
+        "kind": "predication",
+        "name": "na_durlabha",
+        "of": "vinipata",
+        "cite": "does not find his fall hard to come by"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "anumana_not_pramana",
+      "rendering": "Inference is not a valid means of knowledge and should be completely rejected.",
+      "why": "The commentary explicitly states 'touch is a genuine pramana, as inference is', establishing anumana's legitimacy. Treating it as an invalid pramana contradicts the axiom that establishes anumana as a power.",
+      "entities": [
+        {
+          "id": "anumana_invalid",
+          "name": "anumāna",
+          "sort": "property"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "pramana",
+          "of": "anumana_invalid"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "anumana_always_fails",
+      "rendering": "Inference necessarily and always produces headlong falls.",
+      "why": "The verse's conditional structure (combination of rough ground AND speed) contradicts a universal claim of failure. The commentary says 'on even ground, walking slowly, it suffices', showing anumana succeeds in favorable circumstances.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "vivartate",
+          "from": "anumana",
+          "to": "vinipata"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "pratyaksha_fails_on_rough_ground",
+      "rendering": "Direct perception fails on difficult terrain, just as inference does.",
+      "why": "The verse isolates anumana's failure; touch/perception is introduced as a genuine pramana that succeeds. The commentary emphasizes that the problem is anumana's serial nature combined with rough terrain, not rough terrain itself.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "asraya",
+          "from": "vinipata",
+          "to": "pratyaksha"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse formalizes the conditional nature of anumana's epistemic failure: not that it is an invalid pramana, but that it cannot sustain reliable knowledge when operating under compounded adverse conditions (rough ground + speed). The six sorts accommodate this: anumana and pratyaksha as powers, vinipata as a manifestation, the conditions as properties."
+}

@@ -1,0 +1,119 @@
+{
+  "verse": "1.52",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "it is seen in the case of the word as well"
+    },
+    {
+      "id": "vaktr",
+      "name": "vaktṛ",
+      "sort": "absolute",
+      "cite": "one who possesses the whole and must nonetheless produce it serially"
+    },
+    {
+      "id": "buddhivisaya",
+      "name": "buddhivisaya",
+      "sort": "cognition",
+      "cite": "the object of a single cognition"
+    },
+    {
+      "id": "tritaya",
+      "name": "tritaya",
+      "sort": "property",
+      "cite": "the thing is first apprehended in sequence, then held as the object of a single sequenceless cognition, then externalized in sequence again"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "ekacaitanya",
+      "of": "sabda",
+      "cite": "unitary in the speaker's cognition"
+    },
+    {
+      "kind": "relation",
+      "name": "utpadyate",
+      "from": "tritaya",
+      "to": "sabda",
+      "cite": "realized through the staged procedure of articulation"
+    },
+    {
+      "kind": "predication",
+      "name": "vivartate",
+      "of": "sabda",
+      "cite": "the word's permanent oscillation between unity and sequence"
+    },
+    {
+      "kind": "predication",
+      "name": "kriya",
+      "of": "vaktr",
+      "cite": "painting is deliberate craft, and it models the *speaker's* situation"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "natural",
+      "of": "sabda",
+      "cite": "Fire, reflection and egg are natural processes, but painting is deliberate craft"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "ekacaitanya",
+        "of": "sabda",
+        "cite": "though the object of a single cognition"
+      },
+      {
+        "kind": "relation",
+        "name": "utpadyate",
+        "from": "tritaya",
+        "to": "sabda",
+        "cite": "it is seen in the case of the word as well"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "mutual_exclusivity",
+      "rendering": "The word is either unified in the speaker's mind or sequential in articulation, but not both simultaneously.",
+      "why": "The verse's central teaching is that the word is permanently dual-natured: unified (ekacaitanya) in cognition yet realized through the three-stage procedure (tritaya utpadyate). The commentary emphasizes 'the word's permanent oscillation between unity and sequence', demonstrating they coexist. Denying this simultaneity violates the vivartate axiom.",
+      "entities": [
+        {
+          "id": "sabda_unity_only",
+          "name": "śabda",
+          "sort": "property"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "utpadyate",
+          "from": "tritaya",
+          "to": "sabda_unity_only"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "natural_process",
+      "rendering": "The word is produced spontaneously like natural processes (fire, reflection, eggs), without the speaker's deliberate crafting.",
+      "why": "The verse's choice of painting (not natural phenomena) emphasizes deliberate craft and speaker agency. The commentary explicitly contrasts: 'Fire, reflection and egg are natural processes, but painting is deliberate craft, and it models the *speaker's* situation'. Denying the speaker's intentional kriya (agency) contradicts both the kriya axiom and the denial that sabda is natural.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "natural",
+          "of": "sabda"
+        }
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "The contract captures verse 1.52's teaching that the word (sabda) is simultaneously unified in the speaker's cognition (ekacaitanya) while being realized through a three-stage procedure of articulation (tritaya utpadyate). The verse emphasizes deliberate speaker agency (kriya) through the painting simile, distinguishing linguistic production from natural processes. The traditional reading interprets the tritaya as a recurrent cycle: sequential apprehension, unified cognition, sequential externalization—each utterance re-enacting this oscillation (vivartate)."
+}

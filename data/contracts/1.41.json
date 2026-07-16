@@ -1,0 +1,101 @@
+{
+  "verse": "1.41",
+  "entities": [
+    {
+      "id": "agama",
+      "name": "āgama",
+      "sort": "absolute",
+      "cite": "agama is presented not as a body of claims that might be true or false but as a standing condition"
+    },
+    {
+      "id": "caitanya",
+      "name": "caitanya",
+      "sort": "absolute",
+      "cite": "consciousness is not the kind of thing one argues someone out of, since every argument presupposes it"
+    },
+    {
+      "id": "hetuvada",
+      "name": "hetuvāda",
+      "sort": "power",
+      "cite": "Hetuvada, reasoned refutation, arrives inside that condition"
+    },
+    {
+      "id": "upasina",
+      "name": "upāsīna",
+      "sort": "cognition",
+      "cite": "the one who dwells in it"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "avicchedena_vartate",
+      "of": "agama",
+      "cite": "Tradition persists avicchedena, without break, caitanyam iva — the way consciousness does"
+    },
+    {
+      "kind": "predication",
+      "name": "avicchedena_vartate",
+      "of": "caitanya",
+      "cite": "Consciousness has no observable first moment, and neither has the tradition"
+    },
+    {
+      "kind": "relation",
+      "name": "na_badhyate",
+      "from": "hetuvada",
+      "to": "agama",
+      "cite": "Hetuvada, reasoned refutation, arrives inside that condition and so cannot get behind it"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "badhyate",
+      "from": "hetuvada",
+      "to": "agama",
+      "cite": "Hetuvada, reasoned refutation, arrives inside that condition and so cannot get behind it"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "avicchedena_vartate",
+        "of": "agama",
+        "cite": "persists without interruption"
+      },
+      {
+        "kind": "relation",
+        "name": "na_badhyate",
+        "from": "hetuvada",
+        "to": "agama",
+        "cite": "cannot be overturned by argumentation"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "conventional_property",
+      "rendering": "This conventional teaching, which is transmitted without interruption, cannot be questioned by those who practice it.",
+      "why": "Demotes agama from an absolute standing condition to a mere property or convention. Loses the transcendental status the commentary attributes to it: agama is not a body of claims but a condition that every argument presupposes, like consciousness itself. Renders the analogy vacuous.",
+      "entities": [
+        {"id": "agama_prop", "name": "āgama", "sort": "property"}
+      ],
+      "claims": [
+        {"kind": "predication", "name": "avicchedena_vartate", "of": "agama_prop"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "context_dependent_refutation",
+      "rendering": "This tradition, which persists like consciousness, can still be refuted by logical arguments for those who do not subscribe to it.",
+      "why": "Reverses the core claim: asserts hetuvada CAN badhyate (overturn) agama under certain conditions. Contradicts the commentary's structural claim that hetuvada arrives 'inside' the condition and thus cannot escape or refute it. The impossibility is not contingent but transcendental.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "badhyate", "from": "hetuvada", "to": "agama"}
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "The verse hinges on an analogy: agama and caitanya both persist without break and both transcend argumentative reach. The contract encodes their shared predicates (unbroken continuity) and the asymmetry between agama's permanence and hetuvada's impotence. Strain: upasina is introduced late in the commentary as the locus ('standing condition of the upasina') but the formal ontology treats it as a cognition/stance rather than an agent—this captures the phenomenological intent that the impossibility of refutation is relative to abiding in the tradition, not absolute."
+}

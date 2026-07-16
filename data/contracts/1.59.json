@@ -1,0 +1,114 @@
+{
+  "verse": "1.59",
+  "entities": [
+    {
+      "id": "vrddhi",
+      "name": "vṛddhi",
+      "sort": "linguisticItem",
+      "cite": "the word 'vrddhi' in that rule stands sva-rupa-upanibandhana, resting on its own form (this is Panini's own meta-rule svam rupam sabdasya, 1.1.68: a word in grammar denotes its own form unless it is a technical name)"
+    },
+    {
+      "id": "svarupa",
+      "name": "svarūpa",
+      "sort": "property",
+      "cite": "The sva-rupa that ordinary usage never notices (1.54) is exactly what grammar traffics in"
+    },
+    {
+      "id": "adaic",
+      "name": "ādaic",
+      "sort": "linguisticItem",
+      "cite": "given in the rule by the pratyahara 'adaic'"
+    },
+    {
+      "id": "vowels",
+      "name": "the vowels (a, ai, au)",
+      "sort": "linguisticItem",
+      "cite": "the vowels a, ai, au — given in the rule by the pratyahara 'adaic'"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "upanibandhana",
+      "from": "vrddhi",
+      "to": "svarupa",
+      "cite": "the word 'vrddhi' in that rule stands sva-rupa-upanibandhana, resting on its own form (this is Panini's own meta-rule svam rupam sabdasya, 1.1.68: a word in grammar denotes its own form unless it is a technical name)"
+    },
+    {
+      "kind": "relation",
+      "name": "samjna",
+      "from": "vrddhi",
+      "to": "vowels",
+      "cite": "it relates as samjna, name, to the samjnins, the named items that 'adaic' conveys"
+    },
+    {
+      "kind": "relation",
+      "name": "pratyayita",
+      "from": "adaic",
+      "to": "vowels",
+      "cite": "the vowels a, ai, au — given in the rule by the pratyahara 'adaic'"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "samjna",
+      "from": "vowels",
+      "to": "vrddhi",
+      "cite": "it relates as samjna, name, to the samjnins, the named items that 'adaic' conveys"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "upanibandhana",
+        "from": "vrddhi",
+        "to": "svarupa",
+        "cite": "founded upon their own form"
+      },
+      {
+        "kind": "relation",
+        "name": "samjna",
+        "from": "vrddhi",
+        "to": "vowels",
+        "cite": "enter into relation with the words conveyed by 'at' and 'aic' as the things they name"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "process_referent",
+      "rendering": "The term 'vrddhi' in Pāṇini's grammar denotes the process of vowel-lengthening itself, not the vowels a, ai, au.",
+      "why": "This misidentifies what vrddhi refers to. The commentary makes clear that vrddhi is the saṃjñā (name) for the vowels themselves: 'the vowels a, ai, au — given in the rule by the pratyahara adaic'. Vrddhi relates as a name to the named vowels, not to the process of lengthening.",
+      "entities": [
+        {"id": "lengthening_process", "name": "vowel lengthening", "sort": "power"}
+      ],
+      "claims": [
+        {"kind": "relation", "name": "samjna", "from": "vrddhi", "to": "lengthening_process"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "reversed_naming",
+      "rendering": "The vowels a, ai, and au are the names that denote the technical term vrddhi.",
+      "why": "This reverses the saṃjñā (naming) relation. The commentary explicitly states 'it relates as samjna, name, to the samjnins, the named items' — vrddhi is the name (saṃjñā) and the vowels are what is named (saṃjñins). This reversed direction contradicts the verse's claim.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "samjna", "from": "vowels", "to": "vrddhi"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "merged_terms",
+      "rendering": "The term 'vrddhi' is simply another name for the pratyāhāra 'ādaic', both referring identically to the designation of vowels.",
+      "why": "This conflates two distinct linguistic roles. Vrddhi is the technical NAME (saṃjñā) that designates the vowels, while ādaic is the ABBREVIATION (pratyāhāra) mechanism that conveys them. The commentary distinguishes them: 'it relates as samjna, name, to the samjnins, the named items that adaic conveys.' They are related but not identical.",
+      "entities": [],
+      "claims": [
+        {"kind": "identity", "a": "vrddhi", "b": "adaic"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse exemplifies how technical grammar reveals the svarūpa (intrinsic form) of linguistic items that ordinary usage overlooks. This presupposes the double luminosity described in verse 1.50 and validates grammar as the institutional witness to the fundamental linguistic-metaphysical doctrine of the Vākyapadīya."
+}

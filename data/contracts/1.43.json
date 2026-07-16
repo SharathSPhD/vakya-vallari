@@ -1,0 +1,113 @@
+{
+  "verse": "1.43",
+  "entities": [
+    {
+      "id": "akrtaka_sastra",
+      "name": "akṛtaka-śāstra",
+      "sort": "absolute",
+      "cite": "a teaching that is not made"
+    },
+    {
+      "id": "smrti",
+      "name": "smṛti",
+      "sort": "linguisticItem",
+      "cite": "the smrti is not arbitrary: it has nibandhana"
+    },
+    {
+      "id": "grammar",
+      "name": "śabdānāmanuśāsana",
+      "sort": "linguisticItem",
+      "cite": "the term echoes sabdanusasana, the traditional name of grammar itself"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "asritya",
+      "from": "grammar",
+      "to": "akrtaka_sastra",
+      "cite": "proceeds akrtakam sastram asritya, resting on a teaching that is not made"
+    },
+    {
+      "kind": "predication",
+      "name": "nibandhana",
+      "of": "smrti",
+      "cite": "it has nibandhana, attachments to its source"
+    },
+    {
+      "kind": "relation",
+      "name": "asritya",
+      "from": "grammar",
+      "to": "smrti",
+      "cite": "Sanibandhana, 'with its grounds' or 'bindings', concedes that the smrti is not arbitrary"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "arbitrary",
+      "of": "smrti",
+      "cite": "the smrti is not arbitrary"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "asritya",
+        "from": "grammar",
+        "to": "akrtaka_sastra",
+        "cite": "resting on the uncreated teaching"
+      },
+      {
+        "kind": "relation",
+        "name": "asritya",
+        "from": "grammar",
+        "to": "smrti",
+        "cite": "on the tradition with its grounds"
+      },
+      {
+        "kind": "predication",
+        "name": "nibandhana",
+        "of": "smrti",
+        "cite": "the tradition with its grounds"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "arbitrary_tradition",
+      "rendering": "The cultivated decide the regulation of words by an arbitrary, self-justifying tradition without any transcendent grounding.",
+      "why": "Misrepresents tradition as arbitrary and self-grounded, contradicting the commentary's explicit insistence that the smrti is not arbitrary but grounded in nibandhana and attachments to its source.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "arbitrary",
+          "of": "smrti"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "arbitrary_grammar_tradition_only",
+      "rendering": "Grammar is an arbitrary, conventional system maintained by tradition alone, with no connection to any uncreated or transcendent principle.",
+      "why": "Simultaneously contradicts both axioms: (1) it denies grammar rests on uncreated teaching, and (2) it represents tradition as arbitrary, contradicting the commentary's insistence on nibandhana. It misses that both sources are necessary and neither is arbitrary.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "arbitrary",
+          "of": "grammar"
+        },
+        {
+          "kind": "predication",
+          "name": "arbitrary",
+          "of": "smrti"
+        }
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "Verse 1.43 grounds grammar (śabdānāmanuśāsana) in two complementary sources: akṛtaka-śāstra (uncreated transcendent principle) and smṛti (tradition, given legitimacy through nibandhana—its grounded attachments to source). The contract captures the dual foundation and rules out both the reduction to a single source and the false claim that tradition or grammar is arbitrary."
+}

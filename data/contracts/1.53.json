@@ -1,0 +1,131 @@
+{
+  "verse": "1.53",
+  "entities": [
+    {
+      "id": "buddhi",
+      "name": "buddhi",
+      "sort": "cognition",
+      "cite": "The speaker's buddhi engages sabdesv eva, the words themselves, before utterance"
+    },
+    {
+      "id": "vyavasaya",
+      "name": "vyavasāya",
+      "sort": "cognition",
+      "cite": "the hearer's vyavasaya, determinate grasp, arises tesv eva, upon those same words"
+    },
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "As the cognition of the speaker first operates upon the words themselves"
+    },
+    {
+      "id": "sphota",
+      "name": "sphota",
+      "sort": "linguisticItem",
+      "cite": "the hearer's cognition lands on the word — the same undivided sphota the speaker began with"
+    },
+    {
+      "id": "artha",
+      "name": "artha",
+      "sort": "manifestation",
+      "cite": "the meaning shines out (1.50) once it does"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "pravritti",
+      "from": "buddhi",
+      "to": "sabda",
+      "cite": "The speaker's buddhi engages sabdesv eva, the words themselves, before utterance"
+    },
+    {
+      "kind": "relation",
+      "name": "janma",
+      "from": "vyavasaya",
+      "to": "sabda",
+      "cite": "the hearer's vyavasaya, determinate grasp, arises tesv eva, upon those same words"
+    },
+    {
+      "kind": "identity",
+      "a": "sabda",
+      "b": "sphota",
+      "cite": "the hearer's cognition lands on the word — the same undivided sphota the speaker began with"
+    },
+    {
+      "kind": "predication",
+      "name": "ekatva",
+      "of": "sphota",
+      "cite": "speaker and hearer converge on numerically the same word, not on private tokens that merely resemble each other"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "arthajanma",
+      "from": "vyavasaya",
+      "to": "artha",
+      "cite": "comprehension is not a matter of receiving phonemes and computing a meaning from them; the hearer's cognition lands on the word"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "pravritti",
+        "from": "buddhi",
+        "to": "sabda",
+        "cite": "the cognition of the speaker first operates upon the words themselves"
+      },
+      {
+        "kind": "relation",
+        "name": "janma",
+        "from": "vyavasaya",
+        "to": "sabda",
+        "cite": "the determination of the hearers likewise arises upon those very words"
+      },
+      {
+        "kind": "identity",
+        "a": "sabda",
+        "b": "sphota",
+        "cite": "upon those very words"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "phoneme_sequence_view",
+      "rendering": "The speaker's cognition operates on individual phonemes sequentially, and the hearer computes meaning by reassembling them.",
+      "why": "Treats sabda as a mere sequence of phonetic elements rather than a unified sphota. The commentary insists cognition lands on the word itself, the same undivided unit for both speaker and hearer, not on private phoneme tokens. This demotes sphota from a linguisticItem to a mere aggregation, violating the sort and the identity axiom.",
+      "entities": [
+        {"id": "phoneme_seq", "name": "phoneme sequence", "sort": "property"}
+      ],
+      "claims": [
+        {"kind": "relation", "name": "pravritti", "from": "buddhi", "to": "phoneme_seq"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "asymmetric_cognition",
+      "rendering": "The speaker's buddhi engages the sabda directly, but the hearer's vyavasaya is triggered by the last phoneme and reconstructs the meaning inferentially.",
+      "why": "Breaks the symmetry the verse and commentary emphasize: both speaker and hearer converge on the same word. This reading treats them asymmetrically—one direct, one constructed—and implicitly denies their convergence on a single sphota. The commentary's 'upon those very words' mandates numerically identical engagement, which this reading violates.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "janma", "from": "vyavasaya", "to": "artha"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "meaning_computation",
+      "rendering": "Comprehension is a matter of receiving phonemes and computing a meaning from them.",
+      "why": "The commentary explicitly rejects this: 'comprehension is not a matter of receiving phonemes and computing a meaning from them; the hearer's cognition lands on the word'. This reading treats meaning as computed from phonemes, but the axioms only license vyavasaya's engagement with sabda/sphota, not directly with artha.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "arthajanma", "from": "vyavasaya", "to": "artha"}
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "The verse pivots on symmetry: speaker and hearer both operate on the same word (sphota), not on private phoneme tokens or inferred meanings. The emphasis on 'eva' ('itself', 'those very') enforces identity at both ends. Strain: the 'cognition' sort captures buddhi and vyavasaya as mental states, but the verse describes them as dynamic engagements (pravritti, janma) rather than static properties. The contract encodes the engagements as relations, preserving the directional character the verse emphasizes."
+}

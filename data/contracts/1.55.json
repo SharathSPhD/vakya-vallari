@@ -1,0 +1,159 @@
+{
+  "verse": "1.55",
+  "entities": [
+    {
+      "id": "tejas",
+      "name": "tejas",
+      "sort": "absolute",
+      "cite": "Light is the one thing in ordinary experience that reveals itself in revealing others"
+    },
+    {
+      "id": "grahakatva",
+      "name": "grahakatva",
+      "sort": "power",
+      "cite": "grahakatva, graspingness (they seize their meanings and present them)"
+    },
+    {
+      "id": "grahyatva",
+      "name": "grāhyatva",
+      "sort": "power",
+      "cite": "grahyatva, graspability (they are heard, they are objects)"
+    },
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "all words, without exception, have these two powers standing distinct"
+    },
+    {
+      "id": "artha",
+      "name": "artha",
+      "sort": "manifestation",
+      "cite": "they seize their meanings and present them"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "has_grahakatva",
+      "of": "tejas",
+      "cite": "Light is the one thing in ordinary experience that reveals itself in revealing others"
+    },
+    {
+      "kind": "predication",
+      "name": "has_grahyatva",
+      "of": "tejas",
+      "cite": "Light is the one thing in ordinary experience that reveals itself in revealing others"
+    },
+    {
+      "kind": "predication",
+      "name": "has_grahakatva",
+      "of": "sabda",
+      "cite": "grahakatva, graspingness (they seize their meanings and present them)"
+    },
+    {
+      "kind": "predication",
+      "name": "has_grahyatva",
+      "of": "sabda",
+      "cite": "grahyatva, graspability (they are heard, they are objects)"
+    },
+    {
+      "kind": "relation",
+      "name": "prthag_avasthite",
+      "from": "grahyatva",
+      "to": "grahakatva",
+      "cite": "the two powers are prthag avasthite, distinct in standing"
+    },
+    {
+      "kind": "predication",
+      "name": "sarva_sabdanam",
+      "of": "sabda",
+      "cite": "Sarva-sabdanam, of *all* words: the doctrine tolerates no exceptions"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "identity",
+      "a": "grahyatva",
+      "b": "grahakatva",
+      "cite": "which is why attention can fall on either"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "has_grahakatva",
+        "of": "sabda",
+        "cite": "that of grasping"
+      },
+      {
+        "kind": "predication",
+        "name": "has_grahyatva",
+        "of": "sabda",
+        "cite": "that of being grasped"
+      },
+      {
+        "kind": "relation",
+        "name": "prthag_avasthite",
+        "from": "grahyatva",
+        "to": "grahakatva",
+        "cite": "standing distinct"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "undifferentiated_power",
+      "rendering": "Words possess a single undifferentiated power that is both passive reception and active presentation, not two distinct powers.",
+      "why": "The verse emphasizes 'standing distinct' and the commentary repeatedly stresses prthag avasthite (distinct in standing). Merging the powers into one contradicts the core doctrine that attention can fall on either separately. This denies the relation axiom.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "identity",
+          "a": "grahyatva",
+          "b": "grahakatva"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "only_passive",
+      "rendering": "Words are merely inert sounds that are heard, lacking any active power to seize and present meaning.",
+      "why": "This assigns to words only the passive power (grahyatva), not the active power (grahakatva). The axioms require all sabda to have both: 'grahakatva, graspingness (they seize their meanings and present them)'. Denying this relation makes the reading unlicensed.",
+      "entities": [
+        {"id": "sabda_inert", "name": "inert sound", "sort": "linguisticItem"}
+      ],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "has_grahyatva",
+          "of": "sabda_inert"
+        },
+        {
+          "kind": "identity",
+          "a": "sabda",
+          "b": "sabda_inert"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "exceptional_words",
+      "rendering": "Some words (such as words used as mere sounds in poetry) lack the power to grasp meaning, unlike ordinary words.",
+      "why": "This restricts grahakatva to only some words, violating the axiom 'Sarva-sabdanam, of *all* words: the doctrine tolerates no exceptions.' A word without grahakatva contradicts the universal requirement.",
+      "entities": [
+        {"id": "poetic_word", "name": "poetic word", "sort": "linguisticItem"}
+      ],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "has_grahyatva",
+          "of": "poetic_word"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse establishes that words, like light, possess two irreducibly distinct powers: grahyatva (the passive power to be heard and grasped as objects) and grahakatva (the active power to seize and present meanings). This applies universally to all words without exception. The distinctness allows attention to fall on either aspect—the grammarian on the graspable (phonetic) face, the ordinary speaker/hearer on the grasping (meaningful) use. This doctrine prepares 1.56's claim that nothing can signify without first being seized by grahakatva."
+}

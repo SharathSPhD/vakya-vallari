@@ -1,0 +1,181 @@
+{
+  "verse": "1.38",
+  "entities": [
+    {
+      "id": "rsi",
+      "name": "ṛṣi",
+      "sort": "absolute",
+      "cite": "If the rsis' knowledge is perceptual in character"
+    },
+    {
+      "id": "arsa_caksu",
+      "name": "ārṣa-cakṣus",
+      "sort": "power",
+      "cite": "that we can identify who the arsa-caksu belong to"
+    },
+    {
+      "id": "bhava",
+      "name": "bhāva",
+      "sort": "manifestation",
+      "cite": "the domain of dharma is exactly where direct seeing is available"
+    },
+    {
+      "id": "atindriya",
+      "name": "atīndriya",
+      "sort": "property",
+      "cite": "If the rsis' knowledge is perceptual in character"
+    },
+    {
+      "id": "vacana",
+      "name": "vacana",
+      "sort": "linguisticItem",
+      "cite": "vacana — their word, the agama — cannot be arraigned by tarka"
+    },
+    {
+      "id": "anumana",
+      "name": "anumāna",
+      "sort": "power",
+      "cite": "inference is defeasible in the way 1.34 showed"
+    },
+    {
+      "id": "pramana",
+      "name": "pramāṇa",
+      "sort": "power",
+      "cite": "Inference is a real pramana"
+    },
+    {
+      "id": "direct_seeing",
+      "name": "direct seeing",
+      "sort": "cognition",
+      "cite": "direct seeing is available to some and inference to all"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "arsa_caksu",
+      "of": "rsi",
+      "cite": "the rsis' knowledge is perceptual in character"
+    },
+    {
+      "kind": "relation",
+      "name": "perceives",
+      "from": "arsa_caksu",
+      "to": "atindriya",
+      "cite": "direct seeing is available to some and inference to all"
+    },
+    {
+      "kind": "identity",
+      "a": "anumana",
+      "b": "pramana",
+      "cite": "Inference is a real pramana"
+    },
+    {
+      "kind": "predication",
+      "name": "vacana",
+      "of": "rsi",
+      "cite": "vacana — their word, the agama — cannot be arraigned by tarka"
+    },
+    {
+      "kind": "relation",
+      "name": "not_overturned_by",
+      "from": "vacana",
+      "to": "anumana",
+      "cite": "vacana — their word, the agama — cannot be arraigned by tarka"
+    },
+    {
+      "kind": "predication",
+      "name": "defeasible",
+      "of": "anumana",
+      "cite": "inference is defeasible in the way 1.34 showed"
+    },
+    {
+      "kind": "relation",
+      "name": "stronger_than",
+      "from": "direct_seeing",
+      "to": "anumana",
+      "cite": "the weaker instrument does not get to overrule the stronger"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "can_overrule",
+      "from": "anumana",
+      "to": "vacana",
+      "cite": "vacana — their word, the agama — cannot be arraigned by tarka"
+    },
+    {
+      "kind": "relation",
+      "name": "can_overrule",
+      "from": "anumana",
+      "to": "direct_seeing",
+      "cite": "the weaker instrument does not get to overrule the stronger"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "arsa_caksu",
+        "of": "rsi",
+        "cite": "Those who see, with the seer's eye"
+      },
+      {
+        "kind": "relation",
+        "name": "perceives",
+        "from": "arsa_caksu",
+        "to": "atindriya",
+        "cite": "see, with the seer's eye, things that lie beyond the senses"
+      },
+      {
+        "kind": "predication",
+        "name": "vacana",
+        "of": "rsi",
+        "cite": "their word"
+      },
+      {
+        "kind": "relation",
+        "name": "not_overturned_by",
+        "from": "vacana",
+        "to": "anumana",
+        "cite": "their word is not overturned by inference"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "inference_overrules_testimony",
+      "rendering": "The inference of ordinary reasoners can overturn the testimony of the seers.",
+      "why": "Directly contradicts the verse's core claim that the rsis' word cannot be overturned by inference. The commentary explicitly denies that the weaker instrument (inference) can overrule the stronger (direct seeing).",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "can_overrule", "from": "anumana", "to": "vacana"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "no_seer_eye_distinction",
+      "rendering": "The seers have no special perceptual faculty; their knowledge comes only from ordinary inference like everyone else.",
+      "why": "Denies the ārṣa-cakṣus (seer's eye) as a distinct power, which is central to the verse's claim that they see what lies beyond the senses. This demotes the seer's faculty from a unique power to ordinary cognition.",
+      "entities": [
+        {"id": "arsa_caksu_ordinary", "name": "ārṣa-cakṣus", "sort": "cognition"}
+      ],
+      "claims": [
+        {"kind": "predication", "name": "arsa_caksu_ordinary", "of": "rsi"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "inference_equals_direct_seeing",
+      "rendering": "Inference and direct perception have equal epistemic status in the domain of dharma.",
+      "why": "Reverses the hierarchy established by the verse and commentary. The commentary is explicit that the weaker instrument (inference) does not override the stronger (direct seeing), and that direct seeing is available to seers but inference to all.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "equal_status", "from": "anumana", "to": "direct_seeing"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse establishes an epistemological hierarchy: the rsis possess the ārṣa-cakṣus (seer's eye), a power of direct perception of the atīndriya (beyond senses), and their vacana (testimony) cannot be overturned by anumāna (inference), even though inference is a valid pramāṇa. The contract captures the comparative claim rather than asserting absolute knowledge—inference remains valid, merely subordinate to direct seeing in hierarchical rank."
+}

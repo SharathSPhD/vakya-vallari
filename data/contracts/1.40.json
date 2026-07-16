@@ -1,0 +1,96 @@
+{
+  "verse": "1.40",
+  "entities": [
+    {
+      "id": "punya",
+      "name": "puṇya",
+      "sort": "property",
+      "cite": "This is merit"
+    },
+    {
+      "id": "papa",
+      "name": "pāpa",
+      "sort": "property",
+      "cite": "this is sin"
+    },
+    {
+      "id": "manusya",
+      "name": "manuṣya",
+      "sort": "manifestation",
+      "cite": "for men down to the candala"
+    },
+    {
+      "id": "sastra",
+      "name": "śāstra",
+      "sort": "linguisticItem",
+      "cite": "the treatise"
+    },
+    {
+      "id": "jnana",
+      "name": "jñāna",
+      "sort": "cognition",
+      "cite": "already commands the pair punya and papa"
+    },
+    {
+      "id": "prayojana",
+      "name": "prayojana",
+      "sort": "property",
+      "cite": "the need for the treatise"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "sarvagata",
+      "of": "jnana",
+      "cite": "Everyone, acandalam — down to the outcaste, the expression marking the widest possible social range — already commands the pair punya and papa"
+    },
+    {
+      "kind": "predication",
+      "name": "alpa",
+      "of": "prayojana",
+      "cite": "the treatise's prayojana there is alpa, slight"
+    },
+    {
+      "kind": "predication",
+      "name": "anapeksita",
+      "of": "jnana",
+      "cite": "Ordinary moral competence does not wait upon learning"
+    }
+  ],
+  "denials": [],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "alpa",
+        "of": "prayojana",
+        "cite": "the need for the treatise is small"
+      },
+      {
+        "kind": "predication",
+        "name": "sarvagata",
+        "of": "jnana",
+        "cite": "for men down to the candala"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "sastra_foundational",
+      "rendering": "The treatise is essential for understanding the moral distinction between merit and sin.",
+      "why": "Asserts that sastra is necessary for basic moral knowledge, contradicting the verse's claim that all people already know punya and papa without formal instruction.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "asraya",
+          "from": "jnana",
+          "to": "sastra"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse establishes that moral knowledge (punya/papa distinction) is universal and independent of formal learning, limiting the sastra's purpose (prayojana) to refinement at the margins rather than foundational teaching."
+}

@@ -1,0 +1,122 @@
+{
+  "verse": "1.58",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "The two properties of the word"
+    },
+    {
+      "id": "grahyatva",
+      "name": "grahyatva",
+      "sort": "power",
+      "cite": "Grahyatva and grahakatva (1.55) are apoddhrta — extracted by analysis"
+    },
+    {
+      "id": "grahakatva",
+      "name": "grahakatva",
+      "sort": "power",
+      "cite": "Grahyatva and grahakatva (1.55) are apoddhrta — extracted by analysis"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "grahyatva",
+      "to": "sabda",
+      "cite": "Grahyatva and grahakatva (1.55) are apoddhrta — extracted by analysis"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "grahakatva",
+      "to": "sabda",
+      "cite": "Grahyatva and grahakatva (1.55) are apoddhrta — extracted by analysis"
+    },
+    {
+      "kind": "predication",
+      "name": "hetutvam",
+      "of": "grahyatva",
+      "cite": "the word's being-heard grounds one class of effects"
+    },
+    {
+      "kind": "predication",
+      "name": "hetutvam",
+      "of": "grahakatva",
+      "cite": "its meaning-conveying grounds another"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "virodha",
+      "from": "grahyatva",
+      "to": "grahakatva",
+      "cite": "neither obstructs the other"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "grahyatva",
+        "to": "sabda",
+        "cite": "The two properties of the word"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "grahakatva",
+        "to": "sabda",
+        "cite": "The two properties of the word"
+      },
+      {
+        "kind": "predication",
+        "name": "hetutvam",
+        "of": "grahyatva",
+        "cite": "function as causes"
+      },
+      {
+        "kind": "predication",
+        "name": "hetutvam",
+        "of": "grahakatva",
+        "cite": "function as causes"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "single_unified_power",
+      "rendering": "The word has a single unified power that cannot be separated into distinct properties.",
+      "why": "The verse identifies 'The two properties' and the axioms establish grahyatva and grahakatva as distinct entities, each with its own asraya and hetutvam. This reading falsely collapses them into identity.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "identity",
+          "a": "grahyatva",
+          "b": "grahakatva"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "mutual_interference",
+      "rendering": "The two properties of the word interfere with and obstruct each other's effects.",
+      "why": "The verse explicitly states the powers operate 'without conflict'. The commentary reinforces: 'neither obstructs the other'. This reading directly contradicts the denial of virodha between the two powers.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "virodha",
+          "from": "grahyatva",
+          "to": "grahakatva"
+        }
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "The contract formalizes the two-powers doctrine applied to the word: grahyatva and grahakatva are distinct powers (analytically separable via bhedena) both inhering in sabda via asraya, each functioning as cause (hetutvam) for its proper effects, without mutual obstruction. This methodological resolution licenses the grammatical analysis of word-form as a freestanding object of study."
+}

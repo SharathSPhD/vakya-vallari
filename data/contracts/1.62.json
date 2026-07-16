@@ -1,0 +1,108 @@
+{
+  "verse": "1.62",
+  "entities": [
+    {
+      "id": "guna",
+      "name": "guṇa",
+      "sort": "linguisticItem",
+      "cite": "A guna here is the dependent member — say, a constituent inside a compound or a bare stem inside a larger unit"
+    },
+    {
+      "id": "karya",
+      "name": "kārya",
+      "sort": "power",
+      "cite": "grammatical operations do not attach to it directly in that dependent condition"
+    },
+    {
+      "id": "artha",
+      "name": "artha",
+      "sort": "property",
+      "cite": "the function or value of the element within the whole"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "paratantra",
+      "of": "guna",
+      "cite": "Uttered, it is paratantra, not standing on its own"
+    },
+    {
+      "kind": "relation",
+      "name": "na_yujyate",
+      "from": "karya",
+      "to": "guna",
+      "cite": "grammatical operations do not attach to it directly in that dependent condition"
+    },
+    {
+      "kind": "relation",
+      "name": "parikalpyate",
+      "from": "karya",
+      "to": "artha",
+      "cite": "the relation of karya to item is parikalpyate, construed, through the artha, the function or value of the element within the whole"
+    }
+  ],
+  "denials": [],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "paratantra",
+        "of": "guna",
+        "cite": "it is dependent"
+      },
+      {
+        "kind": "relation",
+        "name": "na_yujyate",
+        "from": "karya",
+        "to": "guna",
+        "cite": "the subordinate element is not joined to the operations"
+      },
+      {
+        "kind": "relation",
+        "name": "parikalpyate",
+        "from": "karya",
+        "to": "artha",
+        "cite": "the relation of the operations is construed with what those elements mean"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "quality_not_element",
+      "rendering": "Qualities, being dependent on substances, do not undergo grammatical operations directly.",
+      "why": "Shifts guna from a grammatical category (constituent, stem in compound) to a metaphysical one (quality-substance relation). The sort error—guna as property rather than linguistic item—breaks the verse's argument about how grammar works with subordinate linguistic elements.",
+      "entities": [
+        {
+          "id": "guna_quality",
+          "name": "guṇa",
+          "sort": "property"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "paratantra",
+          "of": "guna_quality"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "direct_attachment",
+      "rendering": "Grammatical operations directly apply to dependent elements without semantic mediation.",
+      "why": "Contradicts the verse's core claim by asserting that operations do join dependent elements directly. This ignores the parikalpyate (construing) that the verse establishes—the connection is preserved, not eliminated, but redirected through artha (meaning).",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "yujyate",
+          "from": "karya",
+          "to": "guna"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse captures a deep principle of Pāṇinian grammar: dependent linguistic elements (constituents, stems in compounds) do not undergo rules directly in their surface form, but rules connect to them through their abstract semantic value or function. The sort 'property' for artha is workable but strained—could also fit as 'cognition' or 'manifestation'—but captures it as a value or attribute of the linguistic item. The contested note flags a metaphysical reading (qualities dependent on substances) which is deliberately excluded to preserve the grammatical focus."
+}

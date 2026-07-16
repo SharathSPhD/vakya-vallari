@@ -1,0 +1,111 @@
+{
+  "verse": "1.60",
+  "entities": [
+    {
+      "id": "agni_sabda",
+      "name": "agni-śabda",
+      "sort": "linguisticItem",
+      "cite": "this word 'agni'"
+    },
+    {
+      "id": "agni_sruti",
+      "name": "agni-śruti",
+      "sort": "linguisticItem",
+      "cite": "the word-form 'agni'"
+    },
+    {
+      "id": "fire",
+      "name": "agni",
+      "sort": "absolute",
+      "cite": "fire—which is not what the grammatical rule designates"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "nibandhana",
+      "from": "agni_sabda",
+      "to": "agni_sabda",
+      "cite": "the agni-word, founded on the agni-word, related to the agni-sruti"
+    },
+    {
+      "kind": "relation",
+      "name": "sambandha",
+      "from": "agni_sabda",
+      "to": "agni_sruti",
+      "cite": "the rule's mention of it stands to it as name to named"
+    },
+    {
+      "kind": "predication",
+      "name": "atmadesananukulata",
+      "of": "agni_sabda",
+      "cite": "language here bends back on itself, one occurrence functioning as designator and the form itself as designatum"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "abhidheya",
+      "from": "agni_sabda",
+      "to": "fire",
+      "cite": "the item the rule mentions is not fire and not any particular utterance"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "nibandhana",
+        "from": "agni_sabda",
+        "to": "agni_sabda",
+        "cite": "this word 'agni', founded upon the word 'agni' itself"
+      },
+      {
+        "kind": "relation",
+        "name": "sambandha",
+        "from": "agni_sabda",
+        "to": "agni_sruti",
+        "cite": "enters into relation with the word-form 'agni' as what is expressed by it"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "fire_as_designatum",
+      "rendering": "The word 'agni' achieves self-reference by ultimately designating fire itself.",
+      "why": "The commentary explicitly states: 'the item the rule mentions is not fire and not any particular utterance—it is the word-form itself.' This reading inverts the designatum, placing fire where the word-form should be.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "abhidheya",
+          "from": "agni_sabda",
+          "to": "fire"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "utterance_token_circularity",
+      "rendering": "A particular phonetic event 'agni' is self-grounded: this token refers to and depends upon itself.",
+      "why": "Confuses the linguistic word-form (a stable type recognized by grammar) with a particular utterance-token (an individual sound event). The verse's nibandhana applies to the word-form as a linguistic item, not to tokens. Treats a linguistic item as a mere phonetic property.",
+      "entities": [
+        {
+          "id": "agni_utterance",
+          "name": "agni-utterance",
+          "sort": "property"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "nibandhana",
+          "from": "agni_sabda",
+          "to": "agni_utterance"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "Verse 1.60 exemplifies linguistic self-reference: the word 'agni', grounded in the word-form 'agni', systematically designates that very form rather than fire. This demonstrates that self-presentation belongs to language's nature and is not exceptional."
+}

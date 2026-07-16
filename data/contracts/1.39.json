@@ -1,0 +1,139 @@
+{
+  "verse": "1.39",
+  "entities": [
+    {
+      "id": "jnana",
+      "name": "jñāna",
+      "sort": "cognition",
+      "cite": "When someone does not doubt a cognition — a seeing that is, as it were, his own possession"
+    },
+    {
+      "id": "pratyaksa",
+      "name": "pratyakṣa",
+      "sort": "cognition",
+      "cite": "it stands on the side of perception"
+    },
+    {
+      "id": "sanka",
+      "name": "śaṅka",
+      "sort": "property",
+      "cite": "without residual doubt"
+    },
+    {
+      "id": "tarka",
+      "name": "tarka",
+      "sort": "power",
+      "cite": "Argument gets its grip only where doubt has a foothold"
+    },
+    {
+      "id": "niscaya",
+      "name": "niśchaya",
+      "sort": "cognition",
+      "cite": "their cognition arrives with the self-evidence of perception"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "asrita",
+      "from": "jnana",
+      "to": "pratyaksa",
+      "cite": "The appeal to what stands pratyaksa-pakse, on perception's side, cuts in every direction"
+    },
+    {
+      "kind": "predication",
+      "name": "atyanta-nirvikalpa",
+      "of": "jnana",
+      "cite": "their cognition arrives with the self-evidence of perception, svam iva, like one's own property, and na atisankate, without residual doubt"
+    },
+    {
+      "kind": "relation",
+      "name": "grahana-sthana",
+      "from": "tarka",
+      "to": "sanka",
+      "cite": "Argument gets its grip only where doubt has a foothold, and a cognition that presents itself perceptually offers none"
+    },
+    {
+      "kind": "identity",
+      "a": "niscaya",
+      "b": "jnana",
+      "cite": "their cognition arrives with the self-evidence of perception, svam iva, like one's own property, and na atisankate, without residual doubt"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "nivartayet",
+      "from": "tarka",
+      "to": "jnana",
+      "cite": "katham anyah nivartayet, how could another dislodge it?"
+    },
+    {
+      "kind": "predication",
+      "name": "sankamanvita",
+      "of": "pratyaksa",
+      "cite": "a cognition that presents itself perceptually offers none"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "asrita",
+        "from": "jnana",
+        "to": "pratyaksa",
+        "cite": "and it stands on the side of perception"
+      },
+      {
+        "kind": "predication",
+        "name": "atyanta-nirvikalpa",
+        "of": "jnana",
+        "cite": "When someone does not doubt a cognition"
+      },
+      {
+        "kind": "identity",
+        "a": "niscaya",
+        "b": "jnana",
+        "cite": "a seeing that is, as it were, his own possession"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "argument_power_universality",
+      "rendering": "Rational argument has the power to overturn any cognition, whether it is grounded in perception or not.",
+      "why": "Contradicts the core epistemological claim: argument only has grip where doubt already exists. A perceptually-grounded cognition offers no foothold for argument to work.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "nivartayet",
+          "from": "tarka",
+          "to": "jnana"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "perception_as_doubt_source",
+      "rendering": "Perceptual knowledge is itself subject to doubt, so argument can still be used to overturn perceptually-grounded cognitions.",
+      "why": "Denies the phenomenological fact the verse establishes: that a cognition standing on perception's side is presented without residual doubt. This misses the property atyanta-nirvikalpa essential to perceptual cognition.",
+      "entities": [
+        {
+          "id": "pratyaksa_dubitable",
+          "name": "pratyakṣa",
+          "sort": "property"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "sankamanvita",
+          "of": "pratyaksa_dubitable"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse's epistemology turns on the distinction between cognitions that carry doubt and those that carry self-evidence. The contract encodes the core relational claim: argument has grip only where doubt exists as a foothold; perceptual cognition, by virtue of its self-evidential character, lacks this foothold and is thus immune to argumentative dislodgement."
+}

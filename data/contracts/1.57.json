@@ -1,0 +1,121 @@
+{
+  "verse": "1.57",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "the word cannot mediate unless it is itself apprehended"
+    },
+    {
+      "id": "sabdarupa",
+      "name": "śabdarūpa",
+      "sort": "property",
+      "cite": "when sounds reached the ear but the word's rupa was not seized"
+    },
+    {
+      "id": "artha",
+      "name": "artha",
+      "sort": "manifestation",
+      "cite": "meaning waits on the second"
+    },
+    {
+      "id": "indriya",
+      "name": "indriya",
+      "sort": "power",
+      "cite": "The eye illuminates the pot without itself being grasped in the act"
+    },
+    {
+      "id": "visaya",
+      "name": "viṣaya",
+      "sort": "manifestation",
+      "cite": "in the case of an object illuminated by the senses"
+    },
+    {
+      "id": "pratyaya",
+      "name": "pratyaya",
+      "sort": "cognition",
+      "cite": "the word is an instrument of a special kind, one that works only from inside awareness"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "pratyayaka",
+      "of": "sabda",
+      "cite": "the word is both pratyayaka and pratyayya, conveyor and conveyed"
+    },
+    {
+      "kind": "predication",
+      "name": "pratyayya",
+      "of": "sabda",
+      "cite": "the word is both pratyayaka and pratyayya, conveyor and conveyed"
+    },
+    {
+      "kind": "relation",
+      "name": "apeksa",
+      "from": "artha",
+      "to": "sabda",
+      "cite": "meaning waits on the second"
+    },
+    {
+      "kind": "relation",
+      "name": "prakasayati",
+      "from": "indriya",
+      "to": "visaya",
+      "cite": "The eye illuminates the pot without itself being grasped in the act"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "prakasayati",
+      "from": "sabda",
+      "to": "artha",
+      "cite": "the word cannot mediate unless it is itself apprehended"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "prakasayati",
+        "from": "indriya",
+        "to": "visaya",
+        "cite": "object illuminated by the senses"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "word_as_sense_organ",
+      "rendering": "The word conveys meaning through illumination, like a sense organ - it need not itself be apprehended for its meaning to be determined.",
+      "why": "The verse explicitly establishes a disanalogy: sense organs illuminate their objects without themselves being grasped, while words require their own apprehension to convey meaning. The word is unique precisely in being both conveyor and conveyed.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "prakasayati",
+          "from": "sabda",
+          "to": "artha"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "sense_organs_also_pratyayya",
+      "rendering": "Both words and sense organs must be apprehended by consciousness to convey their meanings - they share the same structure as pratyayaka and pratyayya.",
+      "why": "The verse emphasizes through 'one does not see one's seeing' that sense organs illuminate without themselves being grasped, precisely what makes words different. Words are unique in being both conveyor and conveyed, whereas sense organs are merely pratyayaka.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "pratyayya",
+          "of": "indriya"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse establishes the word's unique status through striking disanalogy with sense organs: sense organs illuminate objects without being apprehended ('one does not see one's seeing'), but words cannot mediate meaning unless themselves apprehended. The axioms capture: (1) the word's dual role as both pratyayaka and pratyayya, (2) meaning's dependence on word-apprehension, and (3) how sense organs function differently. The distinctness of sound-hearing from word-grasping, demonstrated by 'what did he say?', is implicit in the asymmetry: meaning requires apprehension of sabda, not merely its sound. A minor strain: the common experience of asking for clarification is difficult to formalize without event-entities, which the system does not accommodate."
+}

@@ -1,0 +1,120 @@
+{
+  "verse": "1.48",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "the word itself is na purvo na parah — it has no earlier and later parts, because the meaning-bearer must be present whole wherever it is present at all"
+    },
+    {
+      "id": "nada",
+      "name": "nāda",
+      "sort": "manifestation",
+      "cite": "Nada, realized sound, is krama-janman, sequence-born; that is simply what acoustic events are"
+    },
+    {
+      "id": "krama",
+      "name": "krama",
+      "sort": "property",
+      "cite": "the sequenceless is born *as if* divided, in the form of sequence"
+    },
+    {
+      "id": "brahman",
+      "name": "brahman",
+      "sort": "absolute",
+      "cite": "as Brahman, undivided, appears as a world unfolding in time, so the word, undivided, appears as a string of phonemes"
+    },
+    {
+      "id": "jagat",
+      "name": "jagat",
+      "sort": "manifestation",
+      "cite": "as Brahman, undivided, appears as a world unfolding in time, so the word, undivided, appears as a string of phonemes"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "akrama",
+      "of": "sabda",
+      "cite": "the word itself is na purvo na parah — it has no earlier and later parts, because the meaning-bearer must be present whole wherever it is present at all"
+    },
+    {
+      "kind": "predication",
+      "name": "krama-janman",
+      "of": "nada",
+      "cite": "Nada, realized sound, is krama-janman, sequence-born; that is simply what acoustic events are"
+    },
+    {
+      "kind": "relation",
+      "name": "vivartate",
+      "from": "sabda",
+      "to": "nada",
+      "cite": "akramah kramarupena bhedavan iva jayate, the sequenceless is born *as if* divided, in the form of sequence"
+    },
+    {
+      "kind": "relation",
+      "name": "vivartate",
+      "from": "brahman",
+      "to": "jagat",
+      "cite": "as Brahman, undivided, appears as a world unfolding in time"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "parinamate",
+      "from": "sabda",
+      "to": "nada",
+      "cite": "the sequenceless is born *as if* divided, in the form of sequence"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "krama-janman",
+        "of": "nada",
+        "cite": "Since audible sound is born in sequence"
+      },
+      {
+        "kind": "predication",
+        "name": "akrama",
+        "of": "sabda",
+        "cite": "the word is neither prior nor posterior"
+      },
+      {
+        "kind": "relation",
+        "name": "vivartate",
+        "from": "sabda",
+        "to": "nada",
+        "cite": "the sequenceless, taking on the form of sequence, is born as though divided"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "real_transformation",
+      "rendering": "The word transforms into audible sound in sequence.",
+      "why": "Asserts parinamate (real transformation) where the verse uses vivarta (apparent division). The iva (as if) marks this as appearing divided without actual transformation.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "parinamate", "from": "sabda", "to": "nada"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "sequential_word",
+      "rendering": "The word is made up of sequential phonemes that together form meaning.",
+      "why": "Denies akrama by treating sabda as having temporal parts (earlier and later). The commentary insists the meaning-bearer must be present whole, not composed of sequential parts.",
+      "entities": [
+        {"id": "sabda_parts", "name": "śabda", "sort": "linguisticItem"}
+      ],
+      "claims": [
+        {"kind": "predication", "name": "krama-janman", "of": "sabda_parts"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The contract encodes the sphota doctrine's resolution of the phoneme paradox: sabda (the word) is akrama (whole, sequenceless) while nada (audible sound) is krama-janman (sequence-born). The vivarta relationship preserves sabda's integrity while explaining its manifestation as sequential sound. The brahman-jagat parallel establishes the structural homology between cosmology and linguistics."
+}

@@ -1,0 +1,206 @@
+{
+  "verse": "1.46",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "absolute",
+      "cite": "the word sits buddhistha, in the intellect, complete and unsounded"
+    },
+    {
+      "id": "buddhi",
+      "name": "buddhi",
+      "sort": "cognition",
+      "cite": "the word residing in the intellect is, separately, the cause of audible sounds"
+    },
+    {
+      "id": "sruti",
+      "name": "śruti",
+      "sort": "linguisticItem",
+      "cite": "articulation churns it into audible sruti, and the sounds then do the manifesting"
+    },
+    {
+      "id": "agni",
+      "name": "agni",
+      "sort": "absolute",
+      "cite": "Fire is latent in the arani, the fire-stick, before any kindling"
+    },
+    {
+      "id": "arani",
+      "name": "araṇi",
+      "sort": "manifestation",
+      "cite": "fire that resides in the kindling-wood"
+    },
+    {
+      "id": "jvala",
+      "name": "jvala",
+      "sort": "manifestation",
+      "cite": "churned, it becomes flame, which then illuminates other things"
+    },
+    {
+      "id": "prakirya",
+      "name": "prakīrya",
+      "sort": "power",
+      "cite": "articulation churns it into audible sruti"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "sabda",
+      "to": "buddhi",
+      "cite": "the word sits buddhistha, in the intellect, complete and unsounded"
+    },
+    {
+      "kind": "relation",
+      "name": "karana",
+      "from": "sabda",
+      "to": "sruti",
+      "cite": "the inner word is a cause of the sounds without being identical to them"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "agni",
+      "to": "arani",
+      "cite": "Fire is latent in the arani, the fire-stick, before any kindling"
+    },
+    {
+      "kind": "relation",
+      "name": "karana",
+      "from": "agni",
+      "to": "jvala",
+      "cite": "churned, it becomes flame, which then illuminates other things"
+    },
+    {
+      "kind": "predication",
+      "name": "parinamate_deny",
+      "of": "sabda",
+      "cite": "The flame is not created by the churning ex nihilo — it was in the wood in potentia"
+    },
+    {
+      "kind": "predication",
+      "name": "asananta",
+      "of": "sabda",
+      "cite": "the sounds do not create the word; they release and transmit what was already whole within the speaker"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "identity",
+      "a": "sabda",
+      "b": "sruti",
+      "cite": "the inner word is a cause of the sounds without being identical to them, as fire-in-wood is not the visible blaze"
+    },
+    {
+      "kind": "identity",
+      "a": "agni",
+      "b": "jvala",
+      "cite": "fire-in-wood is not the visible blaze"
+    },
+    {
+      "kind": "relation",
+      "name": "parinamate",
+      "from": "sabda",
+      "to": "sruti",
+      "cite": "it was in the wood in potentia"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "sabda",
+        "to": "buddhi",
+        "cite": "the word residing in the intellect"
+      },
+      {
+        "kind": "relation",
+        "name": "karana",
+        "from": "sabda",
+        "to": "sruti",
+        "cite": "is, separately, the cause of audible sounds"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "agni",
+        "to": "arani",
+        "cite": "As the fire that resides in the kindling-wood"
+      },
+      {
+        "kind": "relation",
+        "name": "karana",
+        "from": "agni",
+        "to": "jvala",
+        "cite": "is the cause of further illumination"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "parinama_transformation",
+      "rendering": "The word transforms into sounds through articulation.",
+      "why": "Asserts parinama (real transformation of substance) rather than vivarta (appearance without loss of unity). The commentary explicitly denies this: 'The flame is not created by the churning ex nihilo — it was in the wood in potentia.' The word remains whole in the speaker; articulation releases it without constituting transformation.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "parinamate",
+          "from": "sabda",
+          "to": "sruti"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "identity_sabda_sruti",
+      "rendering": "The word just is the audible sounds, manifested through articulation.",
+      "why": "Collapses the distinction the verse insists on: 'separately' (prthak) guards that inner word and sounds are not identical, 'as fire-in-wood is not the visible blaze.' The word has potentiality without identity to its manifestations.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "identity",
+          "a": "sabda",
+          "b": "sruti"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "sounds_produce_word",
+      "rendering": "The audible sounds produce or generate the word from scratch.",
+      "why": "Inverts causation backward. The commentary makes clear: 'the sounds do not create the word; they release and transmit what was already whole within the speaker.' The word is latent in the speaker's intellect before uttering; sounds manifest it without constituting it.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "karana",
+          "from": "sruti",
+          "to": "sabda"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "sabda_as_property",
+      "rendering": "The word-property manifests as audible sounds.",
+      "why": "Sort error: demotes sabda from absolute (unchanging principle) to property. The entire simile structure depends on sabda being a constant, unmodified principle latent in the speaker, like fire latent in the wood — not a variable property.",
+      "entities": [
+        {"id": "sabda_prop", "name": "śabda", "sort": "property"}
+      ],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "karana",
+          "from": "sabda_prop",
+          "to": "sruti"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse deploys fire-in-wood as simile to model word-in-intellect: both latent unmanifested principles whose manifestations (flame, sounds) do not transform the principles themselves and remain distinct from them. The 'separately' (prthak) of the verse is key: sabda causes sruti without identity. The deny of parinama and backward causation guards against two typical confusions: thinking manifestation is transformation, and thinking sounds generate rather than express the word."
+}

@@ -1,0 +1,106 @@
+{
+  "verse": "1.54",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "The words become artha-upasarjani-bhuta"
+    },
+    {
+      "id": "artha",
+      "name": "artha",
+      "sort": "manifestation",
+      "cite": "words become subordinate to the meaning"
+    },
+    {
+      "id": "lokah",
+      "name": "lokaḥ",
+      "sort": "cognition",
+      "cite": "the world takes no cognizance of them"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "upasarjani",
+      "from": "sabda",
+      "to": "artha",
+      "cite": "The words become artha-upasarjani-bhuta — upasarjana is the grammarians' term for the subordinate member of a compound"
+    },
+    {
+      "kind": "predication",
+      "name": "caritartha",
+      "of": "sabda",
+      "cite": "caritartha, their task discharged"
+    },
+    {
+      "kind": "predication",
+      "name": "pararthatva",
+      "of": "sabda",
+      "cite": "pararthatvat, existing for another's sake, like an instrument"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "upasarjani",
+      "from": "artha",
+      "to": "sabda",
+      "cite": "The words become artha-upasarjani-bhuta — upasarjana is the grammarians' term for the subordinate member of a compound"
+    },
+    {
+      "kind": "relation",
+      "name": "pratipadyate",
+      "from": "lokah",
+      "to": "sabda",
+      "cite": "Hence lokah na pratipadyate, the world takes no cognizance of them"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "upasarjani",
+        "from": "sabda",
+        "to": "artha",
+        "cite": "words become subordinate to the meaning"
+      },
+      {
+        "kind": "predication",
+        "name": "caritartha",
+        "of": "sabda",
+        "cite": "discharged their purpose"
+      },
+      {
+        "kind": "predication",
+        "name": "pararthatva",
+        "of": "sabda",
+        "cite": "for the sake of another"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "reversed_subordination",
+      "rendering": "In certain things-to-be-expressed, meanings become subordinate to the words, which remain focal to the listener's attention.",
+      "why": "Inverts the upasarjani relation; treats meanings rather than words as subordinate. This directly contradicts the verse's explicit statement that words become artha-upasarjani-bhuta (subordinate to meaning).",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "upasarjani", "from": "artha", "to": "sabda"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "world_attends_words",
+      "rendering": "The world clearly notices and attends to the words themselves, recognizing linguistic forms as focal to communication.",
+      "why": "Asserts that the world attends to (pratipadyate) words, directly contradicting the verse's core claim that the world does not cognize the words when they are subordinate to meaning.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "pratipadyate", "from": "lokah", "to": "sabda"}
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "The verse's restriction to 'certain cases' (kesucit) is acknowledged but not formalized as a modal operator; the axioms apply within the domain of subordinated words. The negation of pratipadyate (world does not attend) is captured via denial rather than positive axiom, since the verse defines the phenomenon precisely by what consciousness overlooks."
+}

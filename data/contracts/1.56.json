@@ -1,0 +1,118 @@
+{
+  "verse": "1.56",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "Words that have not themselves become objects"
+    },
+    {
+      "id": "artha",
+      "name": "artha",
+      "sort": "manifestation",
+      "cite": "illuminate the meaning"
+    },
+    {
+      "id": "grahana",
+      "name": "grahaṇa",
+      "sort": "cognition",
+      "cite": "the word must first itself be grasped"
+    },
+    {
+      "id": "prakasaka",
+      "name": "prakāśaka",
+      "sort": "power",
+      "cite": "revealers of meanings"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "grahana",
+      "to": "prakasaka",
+      "cite": "signification is routed, ineliminably, through cognition"
+    },
+    {
+      "kind": "relation",
+      "name": "purvatara",
+      "from": "grahana",
+      "to": "artha",
+      "cite": "the priority of grasping-the-word over grasping-the-meaning is the sphota doctrine's account of what hearing is"
+    },
+    {
+      "kind": "predication",
+      "name": "virayate",
+      "of": "sabda",
+      "cite": "For meaning to be conveyed, the word must first itself be grasped — visayatvam apannaih, having become an object of cognition"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "prakasaka",
+      "from": "sabda",
+      "to": "artha",
+      "cite": "A word existing unperceived in the vicinity conveys nothing"
+    },
+    {
+      "kind": "relation",
+      "name": "satta_prakasaka",
+      "from": "sabda",
+      "to": "artha",
+      "cite": "Any theory on which words signify by their sheer existence — by an unmediated relation between real sound and real object that bypasses the hearer's apprehension — is ruled out"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "grahana",
+        "to": "prakasaka",
+        "cite": "do not illuminate the meaning"
+      },
+      {
+        "kind": "relation",
+        "name": "purvatara",
+        "from": "grahana",
+        "to": "artha",
+        "cite": "ungrasped, are they revealers"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "direct_acoustic_signification",
+      "rendering": "Words signify meanings by their acoustic properties alone, regardless of whether the hearer perceives them.",
+      "why": "Contradicts the core denial: signification requires grahana; words existing unperceived convey nothing. This reading treats signification as a property of the sound-object relation independent of cognition.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "satta_prakasaka",
+          "from": "sabda",
+          "to": "artha"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "presence_without_apprehension",
+      "rendering": "Words present in proximity to the hearer convey their meanings even without being heard or grasped.",
+      "why": "Contradicts the denial that unperceived words convey nothing. This reverses the priority of grasping-the-word, making signification independent of the hearer's cognition.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "prakasaka",
+          "from": "sabda",
+          "to": "artha"
+        }
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "The verse encodes the epistemological priority of apprehension (grahana purvatara artha) and the dependence of signification on cognition (grahana asraya prakasaka). The formalization captures the sphota doctrine's two-stage hearing process: word-grasping must precede meaning-illumination. Denials explicitly rule out both direct acoustic signification and unmediated presence-based conveyance."
+}

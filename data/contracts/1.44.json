@@ -1,0 +1,111 @@
+{
+  "verse": "1.44",
+  "entities": [
+    {
+      "id": "dhvani",
+      "name": "dhvani",
+      "sort": "linguisticItem",
+      "cite": "the dhvani or nada being what expresses it"
+    },
+    {
+      "id": "sphota",
+      "name": "sphota",
+      "sort": "linguisticItem",
+      "cite": "the word as meaning-bearer, which Bhartrhari will call sphota"
+    },
+    {
+      "id": "artha",
+      "name": "artha",
+      "sort": "property",
+      "cite": "deployed toward meaning"
+    },
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "in every uttered word there are dvau sabdau, two words"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "bhidyate",
+      "from": "dhvani",
+      "to": "sphota",
+      "cite": "So the bearer of meaning and the vehicle of audition must be distinguished"
+    },
+    {
+      "kind": "predication",
+      "name": "nimitta",
+      "of": "dhvani",
+      "cite": "One is nimitta, the cause — the sound-complex, produced by the organs, serial, audible, the thing phonetics studies"
+    },
+    {
+      "kind": "predication",
+      "name": "prayujyate",
+      "of": "sphota",
+      "cite": "The other is the one prayujyate arthe, actually deployed toward meaning — the word as meaning-bearer, which Bhartrhari will call sphota"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "sphota",
+      "to": "artha",
+      "cite": "the bearer of meaning and the vehicle of audition must be distinguished"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "nimitta",
+      "of": "sphota",
+      "cite": "the sphota being what is expressed, the dhvani or nada being what expresses it"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "bhidyate",
+        "from": "dhvani",
+        "to": "sphota",
+        "cite": "discern two words"
+      },
+      {
+        "kind": "predication",
+        "name": "nimitta",
+        "of": "dhvani",
+        "cite": "one is the cause of words"
+      },
+      {
+        "kind": "predication",
+        "name": "prayujyate",
+        "of": "sphota",
+        "cite": "the other is what is used in respect of meaning"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "single_undifferentiated_word",
+      "rendering": "The word is a single undifferentiated entity that somehow functions both as the audible sound and as the bearer of meaning.",
+      "why": "Erases the verse's central distinction of two words. The verse explicitly states those who know words discern two, and the commentary explains that failure to distinguish nimitta (sound-cause) from sphota (meaning-bearer) leaves unexplained how a never-wholly-present sound-series can convey whole meaning.",
+      "entities": [],
+      "claims": [
+        {"kind": "identity", "a": "dhvani", "b": "sphota"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "causality_inverted",
+      "rendering": "The meaning-bearing word is the cause of the audible sound, which is merely its effect.",
+      "why": "Reverses the verse's primary assignment. Though the contested note acknowledges some read the inner word as causing utterance, the encoded reading makes the sound-complex (dhvani) the nimitta-cause, and the other word (sphota) what is deployed toward meaning. Asserting sphota as nimitta contradicts the distinction the commentary draws between what is expressed and what expresses.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "nimitta", "of": "sphota"}
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "The verse's paradox—dvau sabdau, two words in one utterance—hinges on recognizing two modes of word-being: the audible sound-series (dhvani, the nimitta-cause, serial, never wholly present) and the meaning-bearer (sphota, deployed toward significance, whole). The formal language (bhidyate, asraya) models their logical structure without committing to metaphysical claims about sphota's ontic status, preserving the ontological openness the verse itself maintains."
+}

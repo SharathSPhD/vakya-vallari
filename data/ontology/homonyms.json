@@ -10,8 +10,8 @@
       {
         "sort": "power",
         "gloss": "the transformative power or faculty enabling direct access to the absolute",
-        "justification": "Verses 1.12 and 1.18-22 present grammar as a power (śakti) and method (yoga) that provides the direct path and enables realization of Brahman.",
-        "verses": ["1.12", "1.18-22"]
+        "justification": "Verses 1.12, 1.18-22, and 1.61 present grammar as a power (śakti) and method (yoga) that provides the direct path and enables realization of Brahman; verse 1.61 refers to the operative power (kāryam) of grammatical rules.",
+        "verses": ["1.12", "1.18-22", "1.61"]
       }
     ]
   },
@@ -31,6 +31,38 @@
       }
     ]
   },
+  "āgama": {
+    "senses": [
+      {
+        "sort": "power",
+        "gloss": "tradition as a source or means of knowledge; the transmitted teaching",
+        "justification": "Verses 1.27 and 1.30 present āgama as a source from which correct words are established and through which dharma is known—a means of valid knowledge distinct from independent reasoning.",
+        "verses": ["1.27", "1.30"]
+      },
+      {
+        "sort": "absolute",
+        "gloss": "tradition as a transcendent standing condition; the unbroken continuity presupposed by all reasoning",
+        "justification": "Verse 1.41 presents āgama as persisting without break (avicchedena) like consciousness itself (caitanyam iva), transcending argumentative reach—a transcendent presupposition rather than a mere means of knowledge.",
+        "verses": ["1.41"]
+      }
+    ]
+  },
+  "anumāna": {
+    "senses": [
+      {
+        "sort": "power",
+        "gloss": "inference as a means of knowledge; anumāna as a pramāṇa or instrument",
+        "justification": "Verses 1.36, 1.38, and 1.42 list anumāna alongside pratyakṣa as one of the conventional pramāṇas (means of knowledge) whose reach the siddhis transcend, or whose limit the highest knowledge exceeds.",
+        "verses": ["1.36", "1.38", "1.42"]
+      },
+      {
+        "sort": "cognition",
+        "gloss": "inference as an epistemic faculty or cognitive process",
+        "justification": "Verses 1.32, 1.35, 1.37 discuss anumāna as an epistemic capacity—establishing things by inference, the claim that anumāna exhausts knowledge, and what the highest knowledge transcends.",
+        "verses": ["1.32", "1.35", "1.37"]
+      }
+    ]
+  },
   "dharma": {
     "senses": [
       {
@@ -44,6 +76,12 @@
         "gloss": "the empirical, transmitted paths and practices of virtue; established customs and traditions",
         "justification": "Verses 1.30-31 describe dharma as the unbroken paths established through tradition and world-practice, grounded in empirical continuity rather than reasoning alone.",
         "verses": ["1.30", "1.31"]
+      },
+      {
+        "sort": "property",
+        "gloss": "the specific relational character or nature; the dharma between ground and manifestation",
+        "justification": "Verse 1.49 uses dharma to mean the relational character ('such is the relation, that dharma, between sphota and sound'), referring to the vivarta (manifestation) relation where properties appear transferred without ontological change.",
+        "verses": ["1.49"]
       }
     ]
   },
@@ -63,6 +101,22 @@
       }
     ]
   },
+  "śabda": {
+    "senses": [
+      {
+        "sort": "absolute",
+        "gloss": "the transcendent, inner word as an unchanging principle; the word residing in intellect before utterance",
+        "justification": "Verse 1.46 presents śabda as buddhistha (residing in intellect), complete and unsounded, latent as fire in the fire-stick—the absolute sphoṭa that manifests without transformation, distinct from the audible utterance (śruti).",
+        "verses": ["1.46"]
+      },
+      {
+        "sort": "linguisticItem",
+        "gloss": "the linguistic term or word as used in utterance, grammar, and communication",
+        "justification": "Twenty-one verses (1.6, 1.12-13, 1.18-28, 1.44-45, 1.47-48, 1.50-58, 1.61) refer to śabda as the linguistic item operating in communication and grammar.",
+        "verses": ["1.6", "1.12", "1.13", "1.18-22", "1.23", "1.24-26", "1.28", "1.44", "1.45", "1.47", "1.48", "1.50", "1.51", "1.52", "1.53", "1.54", "1.55", "1.56", "1.57", "1.58", "1.61"]
+      }
+    ]
+  },
   "artha": {
     "senses": [
       {
@@ -74,8 +128,8 @@
       {
         "sort": "property",
         "gloss": "meaning as a property conveyed or as the attribute of meaningfulness",
-        "justification": "Verse 1.27 establishes that both correct and incorrect words succeed equally in artha-pratyayana (conveying meaning), treating artha as a property both possess.",
-        "verses": ["1.27"]
+        "justification": "Verses 1.27, 1.44, 1.47, and 1.62 establish that words succeed in conveying meaning or in standing for referents, treating artha as a property they possess.",
+        "verses": ["1.27", "1.44", "1.47", "1.62"]
       },
       {
         "sort": "absolute",
@@ -88,6 +142,12 @@
         "gloss": "a matter, subject, or object of knowledge; the thing being discussed or inferred",
         "justification": "Verse 1.34 refers to a matter inferred with great effort, treating artha as the subject-matter of inference that remains vulnerable to reversal.",
         "verses": ["1.34"]
+      },
+      {
+        "sort": "manifestation",
+        "gloss": "the manifested referent; the object as revealed or manifested through word and cognition",
+        "justification": "Verses 1.50, 1.53-57, and 1.61 present artha as the manifested object (jneya), the thing that is known and expressed—artha as the empirical manifestation revealed through the speaker and hearer's understanding.",
+        "verses": ["1.50", "1.53", "1.54", "1.55", "1.56", "1.57", "1.61"]
       }
     ]
   },
@@ -107,35 +167,39 @@
       }
     ]
   },
-  "anumāna": {
-    "senses": [
-      {
-        "sort": "power",
-        "gloss": "inference as a means of knowledge; anumāna as a pramāṇa or instrument",
-        "justification": "Verse 1.36 lists anumāna alongside pratyakṣa as one of the two conventional pramāṇas (means of knowledge) whose reach the siddhis transcend.",
-        "verses": ["1.36"]
-      },
-      {
-        "sort": "cognition",
-        "gloss": "inference as an epistemic faculty or cognitive process",
-        "justification": "Verses 1.32, 1.35, 1.37 discuss anumāna as an epistemic capacity—establishing things by inference, the claim that anumāna exhausts knowledge, and what the highest knowledge transcends.",
-        "verses": ["1.32", "1.35", "1.37"]
-      }
-    ]
-  },
   "pratyakṣa": {
     "senses": [
       {
         "sort": "power",
         "gloss": "perception as a means of knowledge; pratyakṣa as a pramāṇa or instrument",
-        "justification": "Verse 1.36 lists pratyakṣa alongside anumāna as one of the two conventional pramāṇas (means of knowledge) whose reach the siddhis transcend.",
-        "verses": ["1.36"]
+        "justification": "Verses 1.36 and 1.42 list pratyakṣa alongside anumāna as one of the conventional pramāṇas (means of knowledge) whose reach the siddhis transcend or whose limit the highest knowledge exceeds.",
+        "verses": ["1.36", "1.42"]
       },
       {
         "sort": "cognition",
         "gloss": "perception as an epistemic faculty or immediate knowledge",
-        "justification": "Verse 1.37 describes the highest knowledge as having perception's immediacy (aparokṣa), not distinguishable from perception—pratyakṣa as the character of direct epistemic awareness.",
-        "verses": ["1.37"]
+        "justification": "Verses 1.37 and 1.39 describe the highest knowledge as having perception's immediacy (aparokṣa), not distinguishable from perception—pratyakṣa as the character of direct epistemic awareness.",
+        "verses": ["1.37", "1.39"]
+      }
+    ]
+  },
+  "smṛti": {
+    "senses": [
+      {
+        "sort": "linguisticItem",
+        "gloss": "traditional transmitted texts and knowledge; the body of secondary literature derived from the Veda",
+        "justification": "Verses 1.7, 1.29, and 1.43 refer to smṛti as the traditional texts framed by vedavid (those who know the Veda), transmitted without interruption, providing the grounds for the regulation of words.",
+        "verses": ["1.7", "1.29", "1.43"]
+      }
+    ]
+  },
+  "sphota": {
+    "senses": [
+      {
+        "sort": "linguisticItem",
+        "gloss": "the meaning-bearing linguistic universal; the word-whole that resides in intellect and manifests through utterance",
+        "justification": "Verses 1.44, 1.45, and 1.53 present sphoṭa as the unified meaning-bearer distinguished from the serial audible sounds (dhvani); it is the non-sequential linguistic principle that remains constant across utterances.",
+        "verses": ["1.44", "1.45", "1.53"]
       }
     ]
   }

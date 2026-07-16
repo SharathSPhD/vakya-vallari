@@ -1,0 +1,181 @@
+{
+  "verse": "1.51",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "The energy called the word"
+    },
+    {
+      "id": "kratu",
+      "name": "kratu",
+      "sort": "power",
+      "cite": "Kratu — a Vedic word for sacrifice, but here in its older sense of power, resolve, energy — names the word in its unmanifest state"
+    },
+    {
+      "id": "anda_bhava",
+      "name": "aṇḍabhāva",
+      "sort": "manifestation",
+      "cite": "anda-bhavam ivapannah, come as it were to egg-hood"
+    },
+    {
+      "id": "vrtti",
+      "name": "vṛtti",
+      "sort": "property",
+      "cite": "Its vrtti, functioning, kriyabhuta, turned into activity"
+    },
+    {
+      "id": "kriya",
+      "name": "kriyā",
+      "sort": "manifestation",
+      "cite": "Its vrtti, functioning, kriyabhuta, turned into activity"
+    },
+    {
+      "id": "kramam",
+      "name": "kramam",
+      "sort": "property",
+      "cite": "labhate kramam bhagasah — takes on sequence limb by limb"
+    },
+    {
+      "id": "bhaga",
+      "name": "bhāga",
+      "sort": "manifestation",
+      "cite": "the parts of the word are all 'there' in the sphota as the bird is in the egg"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "identity",
+      "a": "sabda",
+      "b": "kratu",
+      "cite": "Kratu — a Vedic word for sacrifice, but here in its older sense of power, resolve, energy — names the word in its unmanifest state"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "sabda",
+      "to": "anda_bhava",
+      "cite": "anda-bhavam ivapannah, come as it were to egg-hood"
+    },
+    {
+      "kind": "relation",
+      "name": "vivartate",
+      "from": "vrtti",
+      "to": "kriya",
+      "cite": "Its vrtti, functioning, kriyabhuta, turned into activity"
+    },
+    {
+      "kind": "predication",
+      "name": "kramam",
+      "of": "bhaga",
+      "cite": "labhate kramam bhagasah — takes on sequence limb by limb"
+    },
+    {
+      "kind": "predication",
+      "name": "sarva_atra",
+      "of": "sabda",
+      "cite": "the parts of the word are all 'there' in the sphota as the bird is in the egg — really recoverable, yet not laid out in time until manifestation unfolds them"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "kramam",
+      "of": "sabda",
+      "cite": "how a partless whole can nonetheless ground the appearance of ordered parts"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "identity",
+        "a": "sabda",
+        "b": "kratu",
+        "cite": "The energy called the word"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "sabda",
+        "to": "anda_bhava",
+        "cite": "having arrived as it were at the condition of an egg"
+      },
+      {
+        "kind": "relation",
+        "name": "vivartate",
+        "from": "vrtti",
+        "to": "kriya",
+        "cite": "its functioning becoming activity"
+      },
+      {
+        "kind": "predication",
+        "name": "kramam",
+        "of": "bhaga",
+        "cite": "attains sequence part by part"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "sacrificial_ritual",
+      "rendering": "The sacrificial ritual, having arrived at the condition of an unfolding process, performs its function through distinct sequential stages.",
+      "why": "Treats kratu as literal sacrifice (a real transformation unfolding in ordered time) rather than power/energy (a latent capacity), which commits to parinamate (transformation) and denies the egg model's insight that parts exist all-at-once in the unmanifest whole.",
+      "entities": [
+        {
+          "id": "kratu_ritual",
+          "name": "kratu",
+          "sort": "linguisticItem"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "identity",
+          "a": "kratu_ritual",
+          "b": "sabda"
+        },
+        {
+          "kind": "predication",
+          "name": "kramam",
+          "of": "sabda"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "sequential_manifestation",
+      "rendering": "The word unfolds its parts sequentially from the start, each part appearing only after the previous one is completed.",
+      "why": "Denies the core egg-model insight: that all parts are 'there' in the unmanifest sphota, really recoverable, but not laid out in time until manifestation. This rendering treats the parts as genuinely absent until their moment, making them not pre-contained in the whole.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "kramam",
+          "of": "sabda"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "discrete_parts",
+      "rendering": "The word's parts exist as separate, independent entities that come into being one after another during manifestation.",
+      "why": "Misses the egg model's core insight: that all parts are 'there' in the sphota as the bird is in the egg, really recoverable yet not laid out in time. This reading treats parts as genuinely absent until manifestation, not pre-contained in the whole.",
+      "entities": [
+        {
+          "id": "bhaga_discrete",
+          "name": "bhāga",
+          "sort": "absolute"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "anirdhanya",
+          "of": "bhaga_discrete"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The egg simile integrates the latent whole (sphota) with ordered manifestation without requiring real transformation or genuine absence of parts. The contested reading (kratu as sacrificial vs. as power) is noted; the contract follows the Vedic sense of power, but both readings cohere with the simile structure."
+}

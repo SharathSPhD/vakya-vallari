@@ -1,0 +1,185 @@
+{
+  "verse": "1.61",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "Whatever word is uttered does not thereby necessarily partake in the operation"
+    },
+    {
+      "id": "sva_rupa",
+      "name": "sva-rūpa",
+      "sort": "manifestation",
+      "cite": "the same utterance may present its own form or convey another"
+    },
+    {
+      "id": "artha",
+      "name": "artha",
+      "sort": "manifestation",
+      "cite": "its power to convey something else is not thereby obstructed"
+    },
+    {
+      "id": "sakti",
+      "name": "śakti",
+      "sort": "power",
+      "cite": "The two saktis of 1.55 coexist in every occurrence"
+    },
+    {
+      "id": "sva_rupa_sakti",
+      "name": "sva-rūpa-śakti",
+      "sort": "power",
+      "cite": "the same utterance may present its own form or convey another"
+    },
+    {
+      "id": "artha_sakti",
+      "name": "artha-śakti",
+      "sort": "power",
+      "cite": "its power of standing for something beyond itself is not cancelled by its being mentioned"
+    },
+    {
+      "id": "vyakarana",
+      "name": "vyākaraṇa",
+      "sort": "power",
+      "cite": "not automatically the item to which the taught operation applies"
+    },
+    {
+      "id": "paramartha",
+      "name": "paramārtha",
+      "sort": "manifestation",
+      "cite": "its power of standing for something beyond itself"
+    },
+    {
+      "id": "vikalpa",
+      "name": "vikalpa",
+      "sort": "cognition",
+      "cite": "which it does in a given sutra is settled by the economy of the system, not by the phonetics"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "coexist",
+      "from": "sva_rupa_sakti",
+      "to": "artha_sakti",
+      "cite": "The two saktis of 1.55 coexist in every occurrence"
+    },
+    {
+      "kind": "predication",
+      "name": "aavarana-vimuktah",
+      "of": "artha_sakti",
+      "cite": "its power of standing for something beyond itself is not cancelled by its being mentioned"
+    },
+    {
+      "kind": "predication",
+      "name": "aavarana-vimuktah",
+      "of": "sva_rupa_sakti",
+      "cite": "Use and mention, in modern terms, are not marked on the word's face"
+    },
+    {
+      "kind": "relation",
+      "name": "avadharyate",
+      "from": "vikalpa",
+      "to": "sabda",
+      "cite": "context selects"
+    },
+    {
+      "kind": "predication",
+      "name": "dvaya-sakti-sambhava",
+      "of": "sabda",
+      "cite": "the same utterance may present its own form or convey another"
+    },
+    {
+      "kind": "predication",
+      "name": "na-niyata-karyabhak",
+      "of": "sabda",
+      "cite": "that occurrence is not niyatam karyabhak — not automatically the item to which the taught operation applies"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "exhausts",
+      "from": "sabda",
+      "to": "sakti",
+      "cite": "denying that mention exhausts the word's powers"
+    },
+    {
+      "kind": "relation",
+      "name": "determines-operation",
+      "from": "sabda",
+      "to": "vyakarana",
+      "cite": "not automatically the item to which the taught operation applies"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "na-niyata-karyabhak",
+        "of": "sabda",
+        "cite": "does not thereby necessarily partake in the operation"
+      },
+      {
+        "kind": "predication",
+        "name": "aavarana-vimuktah",
+        "of": "artha_sakti",
+        "cite": "its power to convey something else is not thereby obstructed"
+      },
+      {
+        "kind": "relation",
+        "name": "coexist",
+        "from": "sva_rupa_sakti",
+        "to": "artha_sakti",
+        "cite": "Whatever word is uttered"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "mention_exhausts_power",
+      "rendering": "When a word is mentioned in a rule, its power is exhausted by that mention.",
+      "why": "The verse explicitly denies that mention exhausts the word's powers. This reading misses the coexistence doctrine: the word retains both its own-form power and referential power regardless of mention.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "exhausts",
+          "from": "sabda",
+          "to": "sakti"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "utterance_determines_operation",
+      "rendering": "A word uttered in a grammatical rule necessarily becomes the direct object of that rule's operation.",
+      "why": "Contradicts the core axiom that utterance does not make the word niyatam karyabhak. The verse insists on the independence of the word's powers from its occurrence in a rule.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "determines-operation",
+          "from": "sabda",
+          "to": "vyakarana"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "single_power_doctrine",
+      "rendering": "Each word occurrence has a single power determined by its function in the grammatical rule.",
+      "why": "Violates the two-powers doctrine central to the verse. The commentary explicitly states the two saktis coexist, and context selects which operates—not that the word has only one power.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "eka-sakti-yuktah",
+          "of": "sabda"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse embodies the two-powers doctrine (dvaiśakti) central to Bhārtṛhari's theory: every word maintains simultaneous powers to present its own form (sva-rūpa-śakti) and to convey a referent (artha-śakti). The contract captures the hermeneutical corollary: utterance in a rule does not exhaust these powers, nor does it necessarily make the word a direct participant in the operation. Context (vikalpa) determines which power is operative in a given instance."
+}

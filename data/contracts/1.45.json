@@ -1,0 +1,123 @@
+{
+  "verse": "1.45",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "Some who follow the ancient way say there is a difference of essence between the two"
+    },
+    {
+      "id": "sphota",
+      "name": "sphota",
+      "sort": "linguisticItem",
+      "cite": "the difference of what is in fact undivided"
+    },
+    {
+      "id": "buddhi",
+      "name": "buddhi",
+      "sort": "cognition",
+      "cite": "a difference in cognition"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "abhinna",
+      "of": "sphota",
+      "cite": "The eke, the others, hold that the sphota is abhinna, undivided, and that duality is buddhibheda-ja, born of a difference in the apprehending cognition"
+    },
+    {
+      "kind": "relation",
+      "name": "buddhibheda",
+      "from": "sabda",
+      "to": "sphota",
+      "cite": "The eke, the others, hold that the sphota is abhinna, undivided, and that duality is buddhibheda-ja, born of a difference in the apprehending cognition"
+    },
+    {
+      "kind": "predication",
+      "name": "vivarta_compatible",
+      "of": "sphota",
+      "cite": "The second position is the one that coheres with the vivarta metaphysics of 1.1-2, where all plurality is appearance riding on the one"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "atmabheda",
+      "from": "sabda",
+      "to": "sphota",
+      "cite": "The puranagas, followers of the old doctrine, hold atmabheda: sound and sphota are two in essence, really distinct items."
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "abhinna",
+        "of": "sphota",
+        "cite": "in fact undivided"
+      },
+      {
+        "kind": "relation",
+        "name": "buddhibheda",
+        "from": "sabda",
+        "to": "sphota",
+        "cite": "arises from a difference in cognition"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "atmabheda_doctrine",
+      "rendering": "Sound and sphota are fundamentally different entities in essence.",
+      "why": "The commentary attributes atmabheda to puranagas but the endorsed position (buddhibheda) contradicts this. The verse makes clear that sphota is abhinna with only cognitive difference, not essential difference.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "atmabheda",
+          "from": "sabda",
+          "to": "sphota"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "sphota_manifestation",
+      "rendering": "Sphota is merely a manifestation or appearance of sound itself.",
+      "why": "The commentary emphasizes sphota as abhinna (undivided/independent), suggesting it transcends or equals sound ontologically, not as a derivative manifestation. Treating it as a manifestation demotes its status incorrectly.",
+      "entities": [
+        {
+          "id": "sphota_wrong",
+          "name": "sphota",
+          "sort": "manifestation"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "vivartate",
+          "from": "sabda",
+          "to": "sphota_wrong"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "no_cognitive_variation",
+      "rendering": "Sound and sphota are identical without any cognitive difference whatsoever.",
+      "why": "The verse explicitly states that difference arises from cognitive variation (buddhibheda). Asserting identity without cognitive differentiation contradicts the buddhibheda relation.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "identity",
+          "a": "sabda",
+          "b": "sphota"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse presents two doctrinal positions (atmabheda vs buddhibheda) doxographically, but the commentary endorses buddhibheda as coherent with vivarta metaphysics. Axioms formalize the endorsed position: sphota is abhinna, yet appears different through cognitive difference (buddhibheda). The atmabheda view is attributed to puranagas and structurally denied."
+}

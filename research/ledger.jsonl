@@ -82,3 +82,5 @@
 {"ts": "2026-07-16T21:20:02.169170+00:00", "event": "accept", "verse": "1.7", "detail": "adequacy theorem compiled; build green (30-verse state)"}
 {"ts": "2026-07-16T21:20:02.169188+00:00", "event": "accept", "verse": "1.8", "detail": "adequacy theorem compiled; build green (30-verse state)"}
 {"ts": "2026-07-16T21:20:02.169207+00:00", "event": "accept", "verse": "1.9", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:35:37.267505+00:00", "event": "gate", "detail": "round 3 (25 agents, wf_5b29e99e): all OK first pass; 10 sort conflicts adjudicated (3 fixes, 7 new senses); sphota canonicalized as linguisticItem"}
+{"ts": "2026-07-16T21:35:37.267621+00:00", "event": "milestone", "detail": "55 verse units verified (through 1.62), 128 refutation theorems, 91 pytest gates"}

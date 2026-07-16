@@ -1,0 +1,137 @@
+{
+  "verse": "1.47",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "The word is vitarkitah pura buddhya — deliberated first, in the mind — and nivesitah, installed, upon its meaning"
+    },
+    {
+      "id": "buddhi",
+      "name": "buddhi",
+      "sort": "cognition",
+      "cite": "The word is vitarkitah pura buddhya — deliberated first, in the mind"
+    },
+    {
+      "id": "artha",
+      "name": "artha",
+      "sort": "property",
+      "cite": "and nivesitah, installed, upon its meaning before a single sound occurs"
+    },
+    {
+      "id": "dhvani",
+      "name": "dhvani",
+      "sort": "linguisticItem",
+      "cite": "the inner word anugrhyate, is *favoured* or assisted, by the dhvani"
+    },
+    {
+      "id": "karanas",
+      "name": "karaṇa",
+      "sort": "property",
+      "cite": "Only then do the karanas, the articulatory organs, come into play"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "artha",
+      "to": "sabda",
+      "cite": "and nivesitah, installed, upon its meaning before a single sound occurs"
+    },
+    {
+      "kind": "relation",
+      "name": "vitarkita",
+      "from": "buddhi",
+      "to": "sabda",
+      "cite": "The word is vitarkitah pura buddhya — deliberated first, in the mind"
+    },
+    {
+      "kind": "relation",
+      "name": "anugrhyate",
+      "from": "dhvani",
+      "to": "sabda",
+      "cite": "the inner word anugrhyate, is *favoured* or assisted, by the dhvani"
+    },
+    {
+      "kind": "relation",
+      "name": "vivartate",
+      "from": "karanas",
+      "to": "dhvani",
+      "cite": "what the organs produce must come out in sequence because the organs work in time"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "is_substance",
+      "from": "dhvani",
+      "to": "sabda",
+      "cite": "Sound is an auxiliary, a helper of manifestation, not the substance of the word"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "vitarkita",
+        "from": "buddhi",
+        "to": "sabda",
+        "cite": "First conceived by the intellect"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "artha",
+        "to": "sabda",
+        "cite": "set upon some meaning"
+      },
+      {
+        "kind": "relation",
+        "name": "anugrhyate",
+        "from": "dhvani",
+        "to": "sabda",
+        "cite": "assisted by the sound"
+      },
+      {
+        "kind": "relation",
+        "name": "vivartate",
+        "from": "karanas",
+        "to": "dhvani",
+        "cite": "unrolled from the organs of speech"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "sonic_primacy",
+      "rendering": "Sound is the fundamental nature of the word, produced by the organs of speech and then given meaning by the intellect.",
+      "why": "Inverts the ontological order and contradicts the commentary's key point that sound is auxiliary, not the substance of the word. The word is first established as meaningful before sound appears.",
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "is_substance",
+          "from": "dhvani",
+          "to": "sabda"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "simultaneity",
+      "rendering": "The intellect and the organs of speech work together to produce the word and its sound at the same time.",
+      "why": "Collapses the temporal order that the verse carefully stages: first the meaningful conception in the mind, then the sonic unfold from the organs. The commentary emphasizes this sequencing as crucial to understanding the word's nature.",
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "co_produce",
+          "from": "karanas",
+          "to": "sabda"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse encodes the dual nature of the word: inner (meaningful, mental, prior in order) and outer (sonic, temporal, auxiliary). Four axioms capture: (1) meaning as basis, (2) intellect as locus of deliberation, (3) sound as auxiliary to the word, (4) organs as source of sonic manifestation. The denial anchors the key philosophical point: sound assists but is not the substance of the word."
+}

@@ -1,0 +1,135 @@
+{
+  "verse": "1.50",
+  "entities": [
+    {
+      "id": "jnana",
+      "name": "jñāna",
+      "sort": "cognition",
+      "cite": "A cognition, on this view, is self-revealing"
+    },
+    {
+      "id": "jneya",
+      "name": "jñeya",
+      "sort": "manifestation",
+      "cite": "in knowing the pot, awareness displays the pot's form and its own"
+    },
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "The word, Bhartrhari says, has the same double luminosity"
+    },
+    {
+      "id": "artha",
+      "name": "artha",
+      "sort": "manifestation",
+      "cite": "It presents artha-rupa, the meaning, and simultaneously sva-rupa, itself"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "sva-prakashate",
+      "of": "jnana",
+      "cite": "A cognition, on this view, is self-revealing"
+    },
+    {
+      "kind": "predication",
+      "name": "jneya-prakashate",
+      "of": "jnana",
+      "cite": "in knowing the pot, awareness displays the pot's form and its own"
+    },
+    {
+      "kind": "predication",
+      "name": "sva-prakashate",
+      "of": "sabda",
+      "cite": "It presents artha-rupa, the meaning, and simultaneously sva-rupa, itself"
+    },
+    {
+      "kind": "predication",
+      "name": "artha-prakashate",
+      "of": "sabda",
+      "cite": "It presents artha-rupa, the meaning, and simultaneously sva-rupa, itself"
+    },
+    {
+      "kind": "relation",
+      "name": "sadrsya",
+      "from": "sabda",
+      "to": "jnana",
+      "cite": "The word, Bhartrhari says, has the same double luminosity"
+    }
+  ],
+  "denials": [],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "sva-prakashate",
+        "of": "jnana",
+        "cite": "its own form"
+      },
+      {
+        "kind": "predication",
+        "name": "jneya-prakashate",
+        "of": "jnana",
+        "cite": "the form of the object known"
+      },
+      {
+        "kind": "predication",
+        "name": "sva-prakashate",
+        "of": "sabda",
+        "cite": "its own form"
+      },
+      {
+        "kind": "predication",
+        "name": "artha-prakashate",
+        "of": "sabda",
+        "cite": "the form of the meaning"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "sabda_as_property",
+      "rendering": "The linguistic property of sound conveys meanings through its structured patterns.",
+      "why": "Demotes śabda from linguisticItem to property. Properties lack ontological independence and cannot prakashate (shine forth) or reveal themselves. This sort error makes the self-luminosity claim unlicensed and severs the analogy with cognition.",
+      "entities": [
+        {
+          "id": "sabda_prop",
+          "name": "śabda",
+          "sort": "property"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "sva-prakashate",
+          "of": "sabda_prop"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "jneya_as_absolute",
+      "rendering": "The object of cognition is an unchanging absolute that reveals itself through awareness.",
+      "why": "Promotes jñeya to absolute rather than manifestation. This contradicts the prakashate relation: absolutes are not manifested by other entities. The object must be a manifestation—something cognition reveals—not a co-equal absolute.",
+      "entities": [
+        {
+          "id": "jneya_abs",
+          "name": "jñeya",
+          "sort": "absolute"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "prakashate",
+          "from": "jnana",
+          "to": "jneya_abs"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The contract formalizes the double-luminosity doctrine (āvaraṇa-śakti) as applied to both cognition and word. Four predicates encode prakashate (self-revealing, other-revealing); one relation encodes the analogy (sadrsya). The framework assumes the Prabhakara Mimamsa model of self-luminous cognition and extends it to language, a signature Bhartṛhari move. No contradictions are explicitly ruled out in the commentary, hence denials = 0."
+}
