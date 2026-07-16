@@ -97,6 +97,15 @@ def test_validator_checks_expect_matches_reality():
     assert any("expect" in e for e in errors)
 
 
+def test_validator_rejects_non_ascii_entity_ids():
+    """Lean identifiers must be ASCII; Python's isidentifier() is too lax."""
+    idx = corpus_index()
+    contract = load_contract(ROOT / "data" / "contracts" / "1.1.json")
+    contract["entities"][0]["id"] = "smṛti"
+    errors = validate_contract(contract, idx["1.1"])
+    assert any("ASCII" in e for e in errors)
+
+
 def test_validator_catches_unknown_entity_reference():
     idx = corpus_index()
     contract = load_contract(ROOT / "data" / "contracts" / "1.1.json")

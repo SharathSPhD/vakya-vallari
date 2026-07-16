@@ -1,0 +1,79 @@
+{
+  "verse": "1.31",
+  "entities": [
+    {
+      "id": "dharma",
+      "name": "dharma",
+      "sort": "manifestation",
+      "cite": "those paths of dharma that stand unbroken"
+    },
+    {
+      "id": "tarka",
+      "name": "tarka",
+      "sort": "power",
+      "cite": "tarka arrives too late to sit in judgement"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "avyavacchinna",
+      "of": "dharma",
+      "cite": "avyavacchinna, 'unbroken', 'uninterrupted'"
+    },
+    {
+      "kind": "predication",
+      "name": "lokaprasiddha",
+      "of": "dharma",
+      "cite": "their being established in the world, functions as the warrant"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "badhate",
+      "from": "tarka",
+      "to": "dharma",
+      "cite": "Reasoning does not get to arraign an unbroken practice"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "avyavacchinna",
+        "of": "dharma",
+        "cite": "stand unbroken"
+      },
+      {
+        "kind": "predication",
+        "name": "lokaprasiddha",
+        "of": "dharma",
+        "cite": "established in the world"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "tarka_overturns",
+      "rendering": "Reasoning can overturn the unbroken paths of dharma.",
+      "why": "Directly contradicts the verse's denial that tarka badhate dharma. The verse explicitly says no one sets them aside by reasoning.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "badhate", "from": "tarka", "to": "dharma"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "tarka_ground_dharma",
+      "rendering": "Reasoning is what establishes and grounds the dharmic paths in the world.",
+      "why": "Inverts the epistemological priority. The verse insists that dharma's establishment in the world is prior and independent of reasoning; tarka arrives too late to judge. This reading incorrectly makes reasoning the ground of dharma's worldly establishment.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "vyavasthapayate", "from": "tarka", "to": "dharma"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The contract captures the asymmetry with 1.30: reasoning cannot establish dharma (1.30) and cannot overturn it (1.31). The verse's structure is: unbroken paths + worldly establishment = invulnerability to reasoning. This clarifies reasoning's scope rather than negating its validity."
+}

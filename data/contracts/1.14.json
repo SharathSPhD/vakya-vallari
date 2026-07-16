@@ -1,0 +1,143 @@
+{
+  "verse": "1.14",
+  "entities": [
+    {
+      "id": "vyakarana",
+      "name": "vyākaraṇa",
+      "sort": "linguisticItem",
+      "cite": "That is the gateway to liberation, the therapy for the impurities of speech, the purifier of all the sciences; it shines as the science standing above the sciences."
+    },
+    {
+      "id": "apavarga",
+      "name": "apavarga",
+      "sort": "absolute",
+      "cite": "the gateway to liberation"
+    },
+    {
+      "id": "vangmala",
+      "name": "vāṅmala",
+      "sort": "manifestation",
+      "cite": "the therapy for the impurities of speech"
+    },
+    {
+      "id": "sarvavidya",
+      "name": "sarvavidyā",
+      "sort": "manifestation",
+      "cite": "the purifier of all the sciences"
+    },
+    {
+      "id": "adhividya",
+      "name": "adhividyā",
+      "sort": "power",
+      "cite": "it shines as the science standing above the sciences"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "dvara",
+      "from": "vyakarana",
+      "to": "apavarga",
+      "cite": "Dvaram apavargasya makes grammar the door to liberation outright"
+    },
+    {
+      "kind": "relation",
+      "name": "cikitsa",
+      "from": "vyakarana",
+      "to": "vangmala",
+      "cite": "Cikitsita is a medical term, 'treatment' or 'therapy', and casts corrupt speech as pathology and the grammarian as physician"
+    },
+    {
+      "kind": "relation",
+      "name": "pavitrate",
+      "from": "vyakarana",
+      "to": "sarvavidya",
+      "cite": "Pavitram sarvavidyanam extends the therapeutic claim across the disciplines: grammar does not merely sit beside the other sciences but purifies them"
+    },
+    {
+      "kind": "identity",
+      "a": "vyakarana",
+      "b": "adhividya",
+      "cite": "Adhividyam then names the resulting position — a science *above* sciences, a meta-discipline"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "samavaya",
+      "from": "vyakarana",
+      "to": "sarvavidya",
+      "cite": "grammar does not merely sit beside the other sciences but purifies them"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "dvara",
+        "from": "vyakarana",
+        "to": "apavarga",
+        "cite": "the gateway to liberation"
+      },
+      {
+        "kind": "relation",
+        "name": "cikitsa",
+        "from": "vyakarana",
+        "to": "vangmala",
+        "cite": "the therapy for the impurities of speech"
+      },
+      {
+        "kind": "relation",
+        "name": "pavitrate",
+        "from": "vyakarana",
+        "to": "sarvavidya",
+        "cite": "the purifier of all the sciences"
+      },
+      {
+        "kind": "identity",
+        "a": "vyakarana",
+        "b": "adhividya",
+        "cite": "it shines as the science standing above the sciences"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "instrumental_tool",
+      "rendering": "Grammar is a practical tool for mastering the other sciences more effectively.",
+      "why": "Reduces vyakarana to an instrumental property or manifestation rather than recognizing its ontological identity with adhividya (metadisciplinary power). This sort error loses the verse's central metaphysical claim about grammar's absolute status.",
+      "entities": [
+        {"id": "vyakarana_tool", "name": "vyākaraṇa", "sort": "property"}
+      ],
+      "claims": [
+        {"kind": "relation", "name": "aids", "from": "vyakarana_tool", "to": "sarvavidya"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "hierarchical_rank",
+      "rendering": "Grammar is the most important science, standing at the apex of a hierarchy of disciplines.",
+      "why": "Treats adhividya as a property (comparative rank) rather than recognizing it as power (metadisciplinary authority that encompasses all). This sort error makes the identity between vyakarana and adhividya appear merely prudential rather than essential.",
+      "entities": [
+        {"id": "adhividya_rank", "name": "adhividyā", "sort": "property"}
+      ],
+      "claims": [
+        {"kind": "identity", "a": "vyakarana", "b": "adhividya_rank"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "metaphorical_medicine",
+      "rendering": "Grammar metaphorically 'heals' speech through stylistic convention, but speech defects are not real pathologies.",
+      "why": "Evacuates the therapeutic relation of ontological force. The commentary insists: 'if speech is Brahman then disordered speech is disordered being, and correcting it is not pedantry but cure.' The therapy is not poetic but real.",
+      "entities": [
+        {"id": "vangmala_conventional", "name": "vāṅmala", "sort": "property"}
+      ],
+      "claims": [
+        {"kind": "relation", "name": "cikitsa", "from": "vyakarana", "to": "vangmala_conventional"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse escalates four relational and identity claims: vyakarana is gateway to apavarga, therapy for vangmala, purifier of sarvavidya, and identical to adhividya-power. The contract captures these as three directed relations and one identity, with a denial ruling out coordinate status. Rejected readings address sort errors that would weaken the metaphysical ontology."
+}

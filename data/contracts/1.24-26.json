@@ -1,0 +1,144 @@
+{
+  "verse": "1.24-26",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "those words that are to be explained"
+    },
+    {
+      "id": "padartha",
+      "name": "padartha",
+      "sort": "linguisticItem",
+      "cite": "Those word-meanings reached by abstraction"
+    },
+    {
+      "id": "anvakhyeya",
+      "name": "anvākhyeya",
+      "sort": "linguisticItem",
+      "cite": "those words that are to be explained"
+    },
+    {
+      "id": "pratipadaka",
+      "name": "pratipadaka",
+      "sort": "linguisticItem",
+      "cite": "those that do the explaining"
+    },
+    {
+      "id": "sambandha",
+      "name": "saṃbandha",
+      "sort": "property",
+      "cite": "relations obtaining by way of cause and effect and by way of fitness"
+    },
+    {
+      "id": "dharma",
+      "name": "dharma",
+      "sort": "absolute",
+      "cite": "ancillary to dharma and to cognition"
+    },
+    {
+      "id": "pratyaya",
+      "name": "pratyaya",
+      "sort": "cognition",
+      "cite": "ancillary to dharma and to cognition"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "apoddhāra",
+      "of": "sabda",
+      "cite": "the word is not a natural unit given prior to the sentence but is *extracted* from it by analysis"
+    },
+    {
+      "kind": "predication",
+      "name": "sthita-lakṣaṇa",
+      "of": "padartha",
+      "cite": "meanings with fixed marks"
+    },
+    {
+      "kind": "relation",
+      "name": "vyakhyāyate",
+      "from": "pratipadaka",
+      "to": "anvakhyeya",
+      "cite": "the anvakhyeya/pratipadaka distinction between what gets explained and what does the explaining"
+    },
+    {
+      "kind": "predication",
+      "name": "kāryakāraṇa-bhāva",
+      "of": "sambandha",
+      "cite": "relations of two kinds, causal and of yogyata or fitness"
+    },
+    {
+      "kind": "predication",
+      "name": "yogya-bhāva",
+      "of": "sambandha",
+      "cite": "relations of two kinds, causal and of yogyata or fitness"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "sarva-upavarnita",
+      "of": "padartha",
+      "cite": "not everything true of these matters is transmitted, only kecid eva, some only"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "apoddhāra",
+        "of": "sabda",
+        "cite": "word-meanings reached by abstraction"
+      },
+      {
+        "kind": "predication",
+        "name": "sthita-lakṣaṇa",
+        "of": "padartha",
+        "cite": "meanings whose defining marks are fixed"
+      },
+      {
+        "kind": "relation",
+        "name": "vyakhyāyate",
+        "from": "pratipadaka",
+        "to": "anvakhyeya",
+        "cite": "words that are to be explained, and those that do the explaining"
+      },
+      {
+        "kind": "predication",
+        "name": "kāryakāraṇa-bhāva",
+        "of": "sambandha",
+        "cite": "relations obtaining by way of cause and effect"
+      },
+      {
+        "kind": "predication",
+        "name": "yogya-bhāva",
+        "of": "sambandha",
+        "cite": "relations obtaining by way of cause and effect and by way of fitness"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "word_as_primitive",
+      "rendering": "Words are primitive linguistic units from which sentences are built.",
+      "why": "Contradicts the presupposed apoddhara doctrine: the verse grounds itself in the principle that words are extracted from the sentence by analysis, not given as natural prior units. The sentence is the real linguistic whole.",
+      "claims": [
+        {"kind": "predication", "name": "prakṛta", "of": "sabda"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "comprehensive_transmission",
+      "rendering": "This science transmits every true matter concerning meanings and relations.",
+      "why": "The final clause of the verse explicitly denies this: only some matters are transmitted according to tradition, not all. The discipline is selective.",
+      "claims": [
+        {"kind": "predication", "name": "sarva-upavarnita", "of": "padartha"}
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "Verse 1.24-26 catalogues the Vākyapadīya's subject matter, presupposing the apoddhara doctrine (word-extraction from sentence). The commentary establishes core axioms: abstracted meanings, fixed-mark meanings, the anvakhyeya/pratipadaka distinction, and two types of relations (causal and fitness-based). The verse adds their ancillary role with respect to dharma and cognition. The selective transmission principle reflects Bhartrhari's realism about disciplinary transmission."
+}

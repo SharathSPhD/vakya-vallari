@@ -1,0 +1,87 @@
+{
+  "verse": "1.15",
+  "entities": [
+    {
+      "id": "sabda_akrti",
+      "name": "śabdākṛti",
+      "sort": "linguisticItem",
+      "cite": "the forms of words"
+    },
+    {
+      "id": "artha_jati",
+      "name": "arthajāti",
+      "sort": "property",
+      "cite": "the classes of objects"
+    },
+    {
+      "id": "vyakarana",
+      "name": "vyākaraṇa",
+      "sort": "linguisticItem",
+      "cite": "this science is the final resort of the sciences"
+    },
+    {
+      "id": "vidya",
+      "name": "vidyā",
+      "sort": "manifestation",
+      "cite": "the sciences"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "sabda_akrti",
+      "to": "artha_jati",
+      "cite": "the classes or universals under which objects fall — are nibandhana, grounded, in sabda-akrti, the forms of words"
+    },
+    {
+      "kind": "relation",
+      "name": "parayana",
+      "from": "vyakarana",
+      "to": "vidya",
+      "cite": "because word-form grounds object-class, the science of word-form must ground the sciences that treat object-classes"
+    }
+  ],
+  "denials": [],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "sabda_akrti",
+        "to": "artha_jati",
+        "cite": "all the classes of objects rest upon the forms of words"
+      },
+      {
+        "kind": "relation",
+        "name": "parayana",
+        "from": "vyakarana",
+        "to": "vidya",
+        "cite": "this science is the final resort of the sciences"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "reversed_grounding",
+      "rendering": "The forms of words rest upon the classes of objects.",
+      "why": "Reverses the direction of the grounding relation: the commentary is explicit that object-classes are grounded in word-forms, not the reverse. This reversal undermines the entire argument for grammar's primacy among sciences.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "asraya", "from": "artha_jati", "to": "sabda_akrti"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "mere_analogy",
+      "rendering": "Word-forms and object-classes have a similar structure, just as grammar and other sciences are similarly structured.",
+      "why": "Treats the 'just as...so' as mere surface analogy without causal force. The commentary insists the relation is 'stronger than analogy': the grounding of classes in words logically entails the priority of grammar among sciences.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "sadrsya", "from": "sabda_akrti", "to": "artha_jati"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse employs analogy as rhetorical form but encodes a causal argument: the grounding of object-universals in word-forms entails grammar's culmination as the final ground of sciences."
+}

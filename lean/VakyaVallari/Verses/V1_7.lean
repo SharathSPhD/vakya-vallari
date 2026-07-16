@@ -7,8 +7,8 @@ namespace VakyaVallari.Verses.V1_7
 
 open VakyaVallari
 
-def smrti : Entity := ⟨"smṛti", Sorta.property⟩
-def veda : Entity := ⟨"veda", Sorta.absolute⟩
+def smrti : Entity := ⟨"smṛti", Sorta.linguisticItem⟩
+def veda : Entity := ⟨"veda", Sorta.linguisticItem⟩
 def linga : Entity := ⟨"liṅga", Sorta.property⟩
 def vedavid : Entity := ⟨"vedavid", Sorta.cognition⟩
 def drishta_prayojana : Entity := ⟨"dṛṣṭa prayojana", Sorta.property⟩

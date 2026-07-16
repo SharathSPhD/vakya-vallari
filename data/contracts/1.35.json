@@ -1,0 +1,122 @@
+{
+ "verse": "1.35",
+ "entities": [
+  {
+   "id": "vijnana",
+   "name": "vijñāna",
+   "sort": "cognition",
+   "cite": "The knowledge of gems, silver and such that experts possess"
+  },
+  {
+   "id": "abhyasa",
+   "name": "abhyāsa",
+   "sort": "power",
+   "cite": "The knowledge came from abhyasa, sheer repeated practice"
+  },
+  {
+   "id": "mani",
+   "name": "maṇi",
+   "sort": "manifestation",
+   "cite": "The knowledge of gems, silver and such"
+  },
+  {
+   "id": "rupya",
+   "name": "rūpya",
+   "sort": "manifestation",
+   "cite": "The knowledge of gems, silver and such"
+  },
+  {
+   "id": "anumana",
+   "name": "anumāna",
+   "sort": "cognition",
+   "cite": "he wants a wedge against the claim that anumana exhausts non-perceptual knowledge"
+  }
+ ],
+ "axioms": [
+  {
+   "kind": "relation",
+   "name": "jayate",
+   "from": "abhyasa",
+   "to": "vijnana",
+   "cite": "The knowledge came from abhyasa, sheer repeated practice"
+  },
+  {
+   "kind": "predication",
+   "name": "asamakhyeyatva",
+   "of": "vijnana",
+   "cite": "asamakhyeyam, it cannot be told to others"
+  },
+  {
+   "kind": "predication",
+   "name": "ananumanika",
+   "of": "vijnana",
+   "cite": "here is knowledge that is neither perception nor inference nor testimony"
+  }
+ ],
+ "denials": [
+  {
+   "kind": "predication",
+   "name": "anumanikat",
+   "of": "vijnana",
+   "cite": "reliable knowledge need not be inferential or communicable"
+  },
+  {
+   "kind": "predication",
+   "name": "samakhyeyatva",
+   "of": "vijnana",
+   "cite": "asamakhyeyam, it cannot be told to others"
+  }
+ ],
+ "accepted_reading": {
+  "claims": [
+   {
+    "kind": "relation",
+    "name": "jayate",
+    "from": "abhyasa",
+    "to": "vijnana",
+    "cite": "arises from practice alone"
+   },
+   {
+    "kind": "predication",
+    "name": "asamakhyeyatva",
+    "of": "vijnana",
+    "cite": "it cannot be conveyed to others"
+   },
+   {
+    "kind": "predication",
+    "name": "ananumanika",
+    "of": "vijnana",
+    "cite": "it is not inferential"
+   }
+  ]
+ },
+ "rejected_readings": [
+  {
+   "label": "inferential_connoisseurship",
+   "rendering": "The connoisseur's knowledge of gems is derived from inference based on marks or signs.",
+   "why": "Claims the knowledge is inferential (anumanikat), which the verse explicitly denies and the commentary emphasizes by noting the connoisseur cannot articulate the inferential mark (linga).",
+   "claims": [
+    {
+     "kind": "predication",
+     "name": "anumanikat",
+     "of": "vijnana"
+    }
+   ],
+   "expect": "contradicted"
+  },
+  {
+   "label": "communicable_connoisseurship",
+   "rendering": "The expert can communicate their knowledge of gems to others through explicit principles or reasoning.",
+   "why": "Claims the knowledge is communicable (samakhyeyatva), contradicting the verse's explicit statement asamakhyeyam and the commentary's emphasis on tacit knowledge that outruns articulation.",
+   "claims": [
+    {
+     "kind": "predication",
+     "name": "samakhyeyatva",
+     "of": "vijnana"
+    }
+   ],
+   "expect": "contradicted"
+  }
+ ],
+ "notes": "The verse articulates tacit knowledge as a reliable and non-inferential epistemic category. The contract captures knowledge arising from practice, its non-communicability, and its independence from inference, establishing the foundation for 1.36-38 on the seer's non-inferential vision."
+}

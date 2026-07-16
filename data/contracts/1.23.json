@@ -1,0 +1,109 @@
+{
+  "verse": "1.23",
+  "entities": [
+    {
+      "id": "sambandha",
+      "name": "śabdārthasaṃbandha",
+      "sort": "power",
+      "cite": "the bond between a word and what it means"
+    },
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "relations between word and meaning"
+    },
+    {
+      "id": "artha",
+      "name": "artha",
+      "sort": "power",
+      "cite": "relations between word and meaning"
+    },
+    {
+      "id": "nityatva",
+      "name": "nityatva",
+      "sort": "property",
+      "cite": "the relations between word and meaning are handed down as eternal"
+    },
+    {
+      "id": "samaya",
+      "name": "samaya",
+      "sort": "power",
+      "cite": "the relation is samaya, convention, established by agreement"
+    },
+    {
+      "id": "veda",
+      "name": "veda",
+      "sort": "linguisticItem",
+      "cite": "a Veda whose words mean by convention is a Veda someone composed"
+    },
+    {
+      "id": "apaurusheya",
+      "name": "apauruṣheya",
+      "sort": "property",
+      "cite": "An eternal relation secures an authorless Veda"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "nityah",
+      "of": "sambandha",
+      "cite": "That the sabda-artha-sambandha is eternal"
+    },
+    {
+      "kind": "relation",
+      "name": "bhavya",
+      "from": "nityatva",
+      "to": "apaurusheya",
+      "cite": "An eternal relation secures an authorless Veda"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "samaya",
+      "of": "sambandha",
+      "cite": "hold against the Naiyayikas, for whom the relation is samaya"
+    },
+    {
+      "kind": "predication",
+      "name": "krita",
+      "of": "sambandha",
+      "cite": "the bond between a word and what it means is not made"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "nityah",
+        "of": "sambandha",
+        "cite": "relations between word and meaning are handed down as eternal"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "conventional_relation",
+      "rendering": "The relation between words and their meanings is established by convention or agreement.",
+      "why": "Directly asserts sambandha is samaya, which the commentary explicitly identifies as the Naiyayika position. This contradicts both the verse's claim of nityatva and Bhartrhari's position. Conventional relations have authors and beginnings, undermining Vedic authorilessness.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "samaya", "of": "sambandha"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "authored_relations",
+      "rendering": "The word-meaning relations were established by the great seers as an authoritative innovation.",
+      "why": "Claims sambandha is krita (made/authored), which the commentary explicitly denies: 'the bond between a word and what it means is not made.' This contradicts the core doctrine that the relations are eternal and uncreated.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "krita", "of": "sambandha"}
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "The verse establishes the eternality of word-meaning relations (nityatva) as self-evident inherited doctrine, securing the Veda's authorilessness (apaurusheya). The contract encodes this through two axioms (nityatva of sambandha, and nityatva entails apaurusheya) and denials of the two major opposed views: Naiyayika conventionalism (samaya) and authorial creation (krita)."
+}

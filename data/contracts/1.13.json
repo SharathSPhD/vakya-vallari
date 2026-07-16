@@ -1,0 +1,105 @@
+{
+  "verse": "1.13",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "Words alone are the basis"
+    },
+    {
+      "id": "arthapravritattva",
+      "name": "arthapravṛttitattvā",
+      "sort": "absolute",
+      "cite": "the realities that govern activity toward objects"
+    },
+    {
+      "id": "vyakaran",
+      "name": "vyākaraṇa",
+      "sort": "linguisticItem",
+      "cite": "apart from grammar"
+    },
+    {
+      "id": "tattvavabodh",
+      "name": "tattvāvabodhaḥ",
+      "sort": "cognition",
+      "cite": "there is no grasp of the reality of words"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "nibandhanam",
+      "from": "sabda",
+      "to": "arthapravritattva",
+      "cite": "words are the nibandhana, the ground or fastening, of artha-pravrtti-tattva — the realities underlying our purposive activity toward objects"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "vyakaran",
+      "to": "tattvavabodh",
+      "cite": "the nature of words is not accessible without grammar"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "sabda",
+      "to": "tattvavabodh",
+      "cite": "the nature of words is not accessible without grammar"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "nibandhanam",
+        "from": "sabda",
+        "to": "arthapravritattva",
+        "cite": "Words alone are the basis of the realities that govern activity toward objects"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "vyakaran",
+        "to": "tattvavabodh",
+        "cite": "there is no grasp of the reality of words apart from grammar"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "reversed_grounding",
+      "rendering": "The realities of activity provide the foundation for words; language is a consequence of objective structures.",
+      "why": "Reverses the priority. The verse insists that words alone (sabda eva) are the nibandhanam of the realities underlying activity, not the reverse.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "nibandhanam",
+          "from": "arthapravritattva",
+          "to": "sabda"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "grammar_optional",
+      "rendering": "Words can be understood independently of grammar; their essence is directly accessible without linguistic analysis.",
+      "why": "Directly contradicts the second premise. The commentary explicitly states there is no grasp (nasti) of word-essence apart from grammar, making vyakaran the essential support (asraya).",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "asraya",
+          "from": "sabda",
+          "to": "tattvavabodh"
+        }
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "The contract captures the two-part structure: (1) words are the sole basis (nibandhanam) of the realities underlying purposive activity, and (2) understanding words requires grammar. The exclusivity particle eva emphasizes the first claim's force."
+}

@@ -1,0 +1,142 @@
+{
+  "vyākaraṇa": {
+    "senses": [
+      {
+        "sort": "linguisticItem",
+        "gloss": "the science of grammar as a textual discipline and body of rules",
+        "justification": "Verses 1.11-15 refer to grammar as a science (vidyā), a discipline, a meta-discipline grounded in textual analysis, and a gateway to the sciences.",
+        "verses": ["1.11", "1.13", "1.14", "1.15"]
+      },
+      {
+        "sort": "power",
+        "gloss": "the transformative power or faculty enabling direct access to the absolute",
+        "justification": "Verses 1.12 and 1.18-22 present grammar as a power (śakti) and method (yoga) that provides the direct path and enables realization of Brahman.",
+        "verses": ["1.12", "1.18-22"]
+      }
+    ]
+  },
+  "akṣara": {
+    "senses": [
+      {
+        "sort": "absolute",
+        "gloss": "the imperishable, eternal reality; Brahman itself",
+        "justification": "Verse 1.9 identifies akṣara as the eternally imperishable that IS purification itself, the syllable through which supreme knowledge comes.",
+        "verses": ["1.9"]
+      },
+      {
+        "sort": "linguisticItem",
+        "gloss": "phonetic signs, syllables, or phonetic elements; sound-letters",
+        "justification": "Verses 1.18-22 refer to aksara-smrti's signs as the phonetic apparatus—the differentiated sounds (varnas) housed within the highest speech.",
+        "verses": ["1.18-22"]
+      }
+    ]
+  },
+  "dharma": {
+    "senses": [
+      {
+        "sort": "absolute",
+        "gloss": "the ultimate principle of righteousness, virtue, and merit; the ethical-ontological ground",
+        "justification": "Verses 1.24-26, 1.27, 1.29 present dharma as the final aim of grammar, the principle whose realization grammar enables and whose means grammar provides.",
+        "verses": ["1.24-26", "1.27", "1.29"]
+      },
+      {
+        "sort": "manifestation",
+        "gloss": "the empirical, transmitted paths and practices of virtue; established customs and traditions",
+        "justification": "Verses 1.30-31 describe dharma as the unbroken paths established through tradition and world-practice, grounded in empirical continuity rather than reasoning alone.",
+        "verses": ["1.30", "1.31"]
+      }
+    ]
+  },
+  "karma": {
+    "senses": [
+      {
+        "sort": "absolute",
+        "gloss": "action as the ultimate principle; the basis of cosmic order and ritual efficacy",
+        "justification": "Verse 1.6 references karma as the absolute ground underlying the manifestation of ritual power and the cosmic order.",
+        "verses": ["1.6"]
+      },
+      {
+        "sort": "power",
+        "gloss": "the causal power or force of past actions; karma as the generative power producing attainments",
+        "justification": "Verse 1.36 states that the siddhis (attainments) of ancestors, raksasas, and pisacas are born of karma—karma as the power that generates supernatural powers.",
+        "verses": ["1.36"]
+      }
+    ]
+  },
+  "artha": {
+    "senses": [
+      {
+        "sort": "power",
+        "gloss": "semantic power; the force by which words signify and mean",
+        "justification": "Verse 1.23 discusses the eternal relation between word and meaning, treating artha as the inherent power (śakti) of words to convey significance.",
+        "verses": ["1.23"]
+      },
+      {
+        "sort": "property",
+        "gloss": "meaning as a property conveyed or as the attribute of meaningfulness",
+        "justification": "Verse 1.27 establishes that both correct and incorrect words succeed equally in artha-pratyayana (conveying meaning), treating artha as a property both possess.",
+        "verses": ["1.27"]
+      },
+      {
+        "sort": "absolute",
+        "gloss": "purpose, aim, or ultimate goal; that for which all activity is undertaken",
+        "justification": "Verse 1.29 invokes purpose (artha): no one establishes a purposeless system, so grammar's codification must serve an ultimate artha (here identified with dharma).",
+        "verses": ["1.29"]
+      },
+      {
+        "sort": "linguisticItem",
+        "gloss": "a matter, subject, or object of knowledge; the thing being discussed or inferred",
+        "justification": "Verse 1.34 refers to a matter inferred with great effort, treating artha as the subject-matter of inference that remains vulnerable to reversal.",
+        "verses": ["1.34"]
+      }
+    ]
+  },
+  "vidyā": {
+    "senses": [
+      {
+        "sort": "absolute",
+        "gloss": "ultimate knowledge of purification and realization",
+        "justification": "Verse 1.9 identifies vidyā as the true purification itself, the ultimate knowledge reached through the syllable Om that contradicts no doctrine.",
+        "verses": ["1.9"]
+      },
+      {
+        "sort": "manifestation",
+        "gloss": "the empirical sciences and disciplined bodies of knowledge",
+        "justification": "Verse 1.15 refers to 'the sciences' (vidyā) as empirical fields of knowledge of which grammar is the final resort and culmination.",
+        "verses": ["1.15"]
+      }
+    ]
+  },
+  "anumāna": {
+    "senses": [
+      {
+        "sort": "power",
+        "gloss": "inference as a means of knowledge; anumāna as a pramāṇa or instrument",
+        "justification": "Verse 1.36 lists anumāna alongside pratyakṣa as one of the two conventional pramāṇas (means of knowledge) whose reach the siddhis transcend.",
+        "verses": ["1.36"]
+      },
+      {
+        "sort": "cognition",
+        "gloss": "inference as an epistemic faculty or cognitive process",
+        "justification": "Verses 1.32, 1.35, 1.37 discuss anumāna as an epistemic capacity—establishing things by inference, the claim that anumāna exhausts knowledge, and what the highest knowledge transcends.",
+        "verses": ["1.32", "1.35", "1.37"]
+      }
+    ]
+  },
+  "pratyakṣa": {
+    "senses": [
+      {
+        "sort": "power",
+        "gloss": "perception as a means of knowledge; pratyakṣa as a pramāṇa or instrument",
+        "justification": "Verse 1.36 lists pratyakṣa alongside anumāna as one of the two conventional pramāṇas (means of knowledge) whose reach the siddhis transcend.",
+        "verses": ["1.36"]
+      },
+      {
+        "sort": "cognition",
+        "gloss": "perception as an epistemic faculty or immediate knowledge",
+        "justification": "Verse 1.37 describes the highest knowledge as having perception's immediacy (aparokṣa), not distinguishable from perception—pratyakṣa as the character of direct epistemic awareness.",
+        "verses": ["1.37"]
+      }
+    ]
+  }
+}

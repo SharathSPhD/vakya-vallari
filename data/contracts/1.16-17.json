@@ -1,0 +1,181 @@
+{
+  "verse": "1.16-17",
+  "entities": [
+    {
+      "id": "pada",
+      "name": "pada",
+      "sort": "linguisticItem",
+      "cite": "pada is equally the grammarian's word for a word"
+    },
+    {
+      "id": "siddhi",
+      "name": "siddhi",
+      "sort": "manifestation",
+      "cite": "the first foothold on the ladder of siddhi is also the standing-place of the word"
+    },
+    {
+      "id": "marga",
+      "name": "mārga",
+      "sort": "manifestation",
+      "cite": "a road that is not crooked is not merely grand but shorter"
+    },
+    {
+      "id": "moksa",
+      "name": "mokṣa",
+      "sort": "absolute",
+      "cite": "those seeking liberation"
+    },
+    {
+      "id": "viparyasa",
+      "name": "viparyāsa",
+      "sort": "cognition",
+      "cite": "viparyasa is inversion, taking one thing for another"
+    },
+    {
+      "id": "vedajna",
+      "name": "vedajña",
+      "sort": "cognition",
+      "cite": "the Veda-knower beholds a body made of Veda"
+    },
+    {
+      "id": "chandomayi_tanu",
+      "name": "chandomayī tanū",
+      "sort": "manifestation",
+      "cite": "the sole body made of Veda"
+    },
+    {
+      "id": "chandas_yoni",
+      "name": "chandas yoni",
+      "sort": "absolute",
+      "cite": "the womb of the Vedas"
+    },
+    {
+      "id": "atman",
+      "name": "ātman",
+      "sort": "absolute",
+      "cite": "the Self"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "identity",
+      "a": "chandomayi_tanu",
+      "b": "chandas_yoni",
+      "cite": "the Veda-knower beholds a body made of Veda which is at the same time the yoni, the womb, of the Vedas"
+    },
+    {
+      "kind": "identity",
+      "a": "chandomayi_tanu",
+      "b": "atman",
+      "cite": "its identification with atman closes the circuit opened in 1.1, where Brahman was declared word-essence"
+    },
+    {
+      "kind": "predication",
+      "name": "pada_sabda",
+      "of": "pada",
+      "cite": "pada is equally the grammarian's word for a word"
+    },
+    {
+      "kind": "predication",
+      "name": "ajihma",
+      "of": "marga",
+      "cite": "Ajihma rajapaddhati, the 'uncrooked royal road'"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "pada",
+      "to": "siddhi",
+      "cite": "the first foothold on the ladder of siddhi is also the standing-place of the word"
+    },
+    {
+      "kind": "relation",
+      "name": "niyati",
+      "from": "marga",
+      "to": "moksa",
+      "cite": "The pair completes the sequence begun at 1.11 by naming first the road and then what stands at the end of it"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "viparyasta",
+      "of": "vedajna",
+      "cite": "the vision opens only once it has fallen away"
+    },
+    {
+      "kind": "relation",
+      "name": "bhinna",
+      "from": "chandomayi_tanu",
+      "to": "atman",
+      "cite": "its identification with atman closes the circuit opened in 1.1, where Brahman was declared word-essence"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "pada",
+        "to": "siddhi",
+        "cite": "This is the first foothold on the rungs of the ladder of attainment"
+      },
+      {
+        "kind": "relation",
+        "name": "niyati",
+        "from": "marga",
+        "to": "moksa",
+        "cite": "this is the straight highroad for those seeking liberation"
+      },
+      {
+        "kind": "identity",
+        "a": "chandomayi_tanu",
+        "b": "atman",
+        "cite": "the sole body made of Veda — the womb of the Vedas, the Self"
+      },
+      {
+        "kind": "predication",
+        "name": "ajihma",
+        "of": "marga",
+        "cite": "straight highroad"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "pada_as_property",
+      "rendering": "Words are merely linguistic tools for communicating about reality.",
+      "why": "Demotes pada to a linguistic property, erasing the double sense (foothold-and-word) that makes it both a means and the metaphysical foundation of realization. The sort error breaks the pun and the claim that grammar is the direct path.",
+      "entities": [
+        {"id": "pada_property", "name": "pada", "sort": "property"}
+      ],
+      "claims": [
+        {"kind": "predication", "name": "avedaka", "of": "pada_property"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "dual_self_and_veda",
+      "rendering": "The Veda-knower perceives the body made of Veda as something other than the Self.",
+      "why": "Introduces dualism between chandomayi_tanu and atman, contradicting the axiom of their identity. The non-dual recognition is the entire force of the vision.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "bhinna", "from": "chandomayi_tanu", "to": "atman"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "plural_equal_paths",
+      "rendering": "Ritual practice and meditation provide equally direct paths to liberation.",
+      "why": "Contradicts the commentary's claim that 'grammar's superiority lies in going directly' — the uniqueness of directness is central, not plurality of equivalent paths.",
+      "entities": [
+        {"id": "yajna", "name": "yajña", "sort": "manifestation"}
+      ],
+      "claims": [
+        {"kind": "relation", "name": "niyati", "from": "yajna", "to": "moksa"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse encodes two core insights: (1) pada's double meaning as both a foothold (means) and a word (metaphysical substance), and (2) the non-dual vision where the manifest body of Veda, the source of Vedas, and the Self are identical. The path (marga) is grammar's directness, and it leads to the realization of this non-duality. Contested: the grammatical structure of 1.17 admits multiple readings; the contract encodes the singular-object reading (chandomayim tanum)."
+}

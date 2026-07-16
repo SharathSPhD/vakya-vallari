@@ -1,0 +1,115 @@
+{
+  "verse": "1.11",
+  "entities": [
+    {
+      "id": "brahman",
+      "name": "brahman",
+      "sort": "absolute",
+      "cite": "The wise call grammar the closest to that Brahman"
+    },
+    {
+      "id": "vyakarana",
+      "name": "vyākaraṇa",
+      "sort": "linguisticItem",
+      "cite": "of all the auxiliary disciplines catalogued in 1.10, grammar is asanna, 'near', to Brahman itself"
+    },
+    {
+      "id": "vedangas",
+      "name": "vedāṅgas",
+      "sort": "linguisticItem",
+      "cite": "meaning both 'first' in the received enumeration of the six Vedangas"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "asanna",
+      "from": "vyakarana",
+      "to": "brahman",
+      "cite": "grammar is asanna, 'near', to Brahman itself"
+    },
+    {
+      "kind": "predication",
+      "name": "uttama_tapas",
+      "of": "vyakarana",
+      "cite": "Calling grammar tapas, austerity — and the highest of them"
+    },
+    {
+      "kind": "relation",
+      "name": "prathamam",
+      "from": "vyakarana",
+      "to": "vedangas",
+      "cite": "meaning both 'first' in the received enumeration of the six Vedangas and 'foremost' in rank"
+    },
+    {
+      "kind": "predication",
+      "name": "ascesis",
+      "of": "vyakarana",
+      "cite": "analysing speech is a spiritual discipline, not a preparation for one"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "propaedeutic",
+      "of": "vyakarana",
+      "cite": "analysing speech is a spiritual discipline, not a preparation for one"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "asanna",
+        "from": "vyakarana",
+        "to": "brahman",
+        "cite": "the closest to that Brahman"
+      },
+      {
+        "kind": "predication",
+        "name": "uttama_tapas",
+        "of": "vyakarana",
+        "cite": "the highest austerity among austerities"
+      },
+      {
+        "kind": "relation",
+        "name": "prathamam",
+        "from": "vyakarana",
+        "to": "vedangas",
+        "cite": "the foremost limb of the Vedas"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "propaedeutic_misreading",
+      "rendering": "Grammar is the highest technical discipline for analyzing speech, which serves as preparation for spiritual practice.",
+      "why": "The commentary explicitly denies that grammar is 'preparation for' spiritual practice, stating instead 'analysing speech is a spiritual discipline, not a preparation for one'. This reading violates the denial and misconstrues grammar's nature as technique rather than ascesis.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "propaedeutic",
+          "of": "vyakarana"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "brahman_near_grammar",
+      "rendering": "Brahman is the principle nearest to grammar, and grammar constitutes the highest austerity.",
+      "why": "Reverses the asymmetrical relation of proximity: grammar approaches Brahman as the ultimate, not the reverse. The axiom establishes vyakarana asanna brahman (grammar near Brahman), not brahman asanna vyakarana. Reversing this direction is not entailed by the axioms.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "asanna",
+          "from": "brahman",
+          "to": "vyakarana"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "Grammar's threefold supremacy (structural proximity to Brahman via subject matter, spiritual status as ascesis not technique, supremacy among Vedangas) is captured through the asanna relation and ascesis predication. The key metaphysical move is distinguishing subject-matter proximity from conventional ranking."
+}

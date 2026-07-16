@@ -1,0 +1,126 @@
+{
+  "verse": "1.36",
+  "entities": [
+    {
+      "id": "siddhi",
+      "name": "siddhi",
+      "sort": "manifestation",
+      "cite": "The siddhis of these beings are karmaja, born of karma"
+    },
+    {
+      "id": "karma",
+      "name": "karma",
+      "sort": "power",
+      "cite": "born of karma"
+    },
+    {
+      "id": "pratyaksa",
+      "name": "pratyakṣa",
+      "sort": "power",
+      "cite": "they lie outside the reach of both pramanas that a critic would accept"
+    },
+    {
+      "id": "anumana",
+      "name": "anumāna",
+      "sort": "power",
+      "cite": "they lie outside the reach of both pramanas that a critic would accept"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "karmaja",
+      "of": "siddhi",
+      "cite": "karmaja, born of karma"
+    },
+    {
+      "kind": "relation",
+      "name": "vyatikramya",
+      "from": "siddhi",
+      "to": "pratyaksa",
+      "cite": "they lie outside the reach of both pramanas that a critic would accept"
+    },
+    {
+      "kind": "relation",
+      "name": "vyatikramya",
+      "from": "siddhi",
+      "to": "anumana",
+      "cite": "they lie outside the reach of both pramanas that a critic would accept"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "grahana",
+      "from": "pratyaksa",
+      "to": "siddhi",
+      "cite": "they lie outside the reach of both pramanas that a critic would accept"
+    },
+    {
+      "kind": "relation",
+      "name": "grahana",
+      "from": "anumana",
+      "to": "siddhi",
+      "cite": "they lie outside the reach of both pramanas that a critic would accept"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "karmaja",
+        "of": "siddhi",
+        "cite": "are born of karma alone"
+      },
+      {
+        "kind": "relation",
+        "name": "vyatikramya",
+        "from": "siddhi",
+        "to": "pratyaksa",
+        "cite": "standing beyond both perception and inference"
+      },
+      {
+        "kind": "relation",
+        "name": "vyatikramya",
+        "from": "siddhi",
+        "to": "anumana",
+        "cite": "standing beyond both perception and inference"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "perception_sufficient",
+      "rendering": "The attainments of ancestors, raksasas and pisacas can be directly perceived.",
+      "why": "Violates the explicit claim that siddhis stand beyond (vyatikramya) perception. The verse grounds its dialectical argument precisely on the insufficiency of perception (and inference) to grasp these attainments; to assert they can be perceived denies the verse's central logical move.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "grahana", "from": "pratyaksa", "to": "siddhi"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "inference_sufficient",
+      "rendering": "The attainments of these beings, while not perceptible, can be inferred from effects or scriptural testimony.",
+      "why": "Violates the explicit claim that siddhis transcend (vyatikramya) inference. The verse pairs perception and inference as jointly insufficient (vyatikramya both), making an appeal to inference alone a misreading. The dialectical force requires that the opponent cannot save their position by invoking a second pramana.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "grahana", "from": "anumana", "to": "siddhi"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "non_karmic_causation",
+      "rendering": "The attainments of these beings arise from divine grace, innate power, or self-causation rather than from karma.",
+      "why": "Contradicts the explicit restriction 'karmaja eva siddhayah' (born of karma alone). The verse's use of eva (alone/only) excludes alternative efficient causes. Any other source violates the causal structure Bhartrhari establishes.",
+      "entities": [
+        {"id": "grace", "name": "grace", "sort": "power"}
+      ],
+      "claims": [
+        {"kind": "relation", "name": "janaka", "from": "grace", "to": "siddhi"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse deploys a dialectical strategy: by adducing beings (ancestors, raksasas, pisacas) whose attainments transcend the standard means of knowledge (perception and inference), Bhartrhari establishes that his opponents already grant counterexamples to the thesis that all knowledge reduces to these two pramanas. The contract formalizes the core ontological claims: siddhis are karmic products (power manifesting) and lie outside the epistemic reach of the most basic pramanas. The three-way denial reflects the main misreadings the commentary defends against."
+}

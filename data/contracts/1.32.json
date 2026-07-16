@@ -1,0 +1,133 @@
+{
+  "verse": "1.32",
+  "entities": [
+    {
+      "id": "sakti",
+      "name": "śakti",
+      "sort": "power",
+      "cite": "the causal powers of things are indexed to circumstances"
+    },
+    {
+      "id": "avastha",
+      "name": "avasthā",
+      "sort": "manifestation",
+      "cite": "with the condition of the thing, where it is, and when"
+    },
+    {
+      "id": "desa",
+      "name": "deśa",
+      "sort": "manifestation",
+      "cite": "with the condition of the thing, where it is, and when"
+    },
+    {
+      "id": "kala",
+      "name": "kāla",
+      "sort": "manifestation",
+      "cite": "with the condition of the thing, where it is, and when"
+    },
+    {
+      "id": "anumana",
+      "name": "anumāna",
+      "sort": "cognition",
+      "cite": "the establishing of them by inference is exceedingly hard to attain"
+    },
+    {
+      "id": "prasiddhi",
+      "name": "prasiddhi",
+      "sort": "cognition",
+      "cite": "the establishing of them by inference is exceedingly hard to attain"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "niyantrite",
+      "from": "sakti",
+      "to": "avastha",
+      "cite": "sakti, Bhartrhari says, varies with avastha, desa and kala"
+    },
+    {
+      "kind": "relation",
+      "name": "niyantrite",
+      "from": "sakti",
+      "to": "desa",
+      "cite": "sakti, Bhartrhari says, varies with avastha, desa and kala"
+    },
+    {
+      "kind": "relation",
+      "name": "niyantrite",
+      "from": "sakti",
+      "to": "kala",
+      "cite": "sakti, Bhartrhari says, varies with avastha, desa and kala"
+    },
+    {
+      "kind": "predication",
+      "name": "atidurlabha",
+      "of": "prasiddhi",
+      "cite": "prasiddhi by inference becomes ati-durlabha: not impossible, but exceedingly hard to come by"
+    }
+  ],
+  "denials": [],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "niyantrite",
+        "from": "sakti",
+        "to": "avastha",
+        "cite": "powers of things are differentiated by differences of state, place and time"
+      },
+      {
+        "kind": "relation",
+        "name": "niyantrite",
+        "from": "sakti",
+        "to": "desa",
+        "cite": "powers of things are differentiated by differences of state, place and time"
+      },
+      {
+        "kind": "relation",
+        "name": "niyantrite",
+        "from": "sakti",
+        "to": "kala",
+        "cite": "powers of things are differentiated by differences of state, place and time"
+      },
+      {
+        "kind": "predication",
+        "name": "atidurlabha",
+        "of": "prasiddhi",
+        "cite": "exceedingly hard to attain"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "universal_unchanging_powers",
+      "rendering": "The powers of things remain constant across all variations in state, place, and time, making them fully establishable by inference from finite observation.",
+      "why": "Denies the core differentiation thesis. The verse explicitly asserts that powers are indexed to avastha, desa, and kala. A reading that claims powers are invariant across these circumstances directly contradicts the axioms and misses why inference becomes ati-durlabha.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "siddha",
+          "of": "prasiddhi"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "radical_skepticism",
+      "rendering": "Inference fails completely because the external world is unknowable and powers cannot be observed at all.",
+      "why": "Misreads the verse's carefully limited argument. The commentary explicitly states Bhartrhari grants that things have powers and can be observed. The failure is specifically at the inductive step—from finite cases to universal principle—not at perception or external reality. This reading imports a broader skepticism the verse does not entail.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "agrahya",
+          "of": "sakti"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse establishes that causal powers (sakti) are indexed/governed by circumstances of state (avastha), place (desa), and time (kala), making universal establishment by inference extremely difficult. The epistemological failure is localized to the inductive step and does not require doubting perception or external reality."
+}

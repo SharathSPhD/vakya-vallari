@@ -30,3 +30,55 @@
 {"ts": "2026-07-16T20:52:16.228039+00:00", "event": "accept", "verse": "1.8", "detail": "adequacy theorem compiled; lake build green, zero sorry"}
 {"ts": "2026-07-16T20:52:16.228060+00:00", "event": "accept", "verse": "1.9", "detail": "adequacy theorem compiled; lake build green, zero sorry"}
 {"ts": "2026-07-16T20:52:16.228080+00:00", "event": "accept", "verse": "1.10", "detail": "adequacy theorem compiled; lake build green, zero sorry"}
+{"ts": "2026-07-16T21:20:02.167783+00:00", "event": "draft", "verse": "1.11", "detail": "round-2 swarm (wf_508f0dbc), hardened checker"}
+{"ts": "2026-07-16T21:20:02.167884+00:00", "event": "draft", "verse": "1.12", "detail": "round-2 swarm (wf_508f0dbc), hardened checker"}
+{"ts": "2026-07-16T21:20:02.167930+00:00", "event": "draft", "verse": "1.13", "detail": "round-2 swarm (wf_508f0dbc), hardened checker"}
+{"ts": "2026-07-16T21:20:02.167962+00:00", "event": "draft", "verse": "1.14", "detail": "round-2 swarm (wf_508f0dbc), hardened checker"}
+{"ts": "2026-07-16T21:20:02.167988+00:00", "event": "draft", "verse": "1.15", "detail": "round-2 swarm (wf_508f0dbc), hardened checker"}
+{"ts": "2026-07-16T21:20:02.168013+00:00", "event": "draft", "verse": "1.16-17", "detail": "round-2 swarm (wf_508f0dbc), hardened checker"}
+{"ts": "2026-07-16T21:20:02.168053+00:00", "event": "draft", "verse": "1.18-22", "detail": "round-2 swarm (wf_508f0dbc), hardened checker"}
+{"ts": "2026-07-16T21:20:02.168083+00:00", "event": "draft", "verse": "1.23", "detail": "round-2 swarm (wf_508f0dbc), hardened checker"}
+{"ts": "2026-07-16T21:20:02.168107+00:00", "event": "draft", "verse": "1.24-26", "detail": "round-2 swarm (wf_508f0dbc), hardened checker"}
+{"ts": "2026-07-16T21:20:02.168130+00:00", "event": "draft", "verse": "1.27", "detail": "round-2 swarm (wf_508f0dbc), hardened checker"}
+{"ts": "2026-07-16T21:20:02.168151+00:00", "event": "draft", "verse": "1.28", "detail": "round-2 swarm (wf_508f0dbc), hardened checker"}
+{"ts": "2026-07-16T21:20:02.168172+00:00", "event": "draft", "verse": "1.29", "detail": "round-2 swarm (wf_508f0dbc), hardened checker"}
+{"ts": "2026-07-16T21:20:02.168194+00:00", "event": "draft", "verse": "1.30", "detail": "round-2 swarm (wf_508f0dbc), hardened checker"}
+{"ts": "2026-07-16T21:20:02.168216+00:00", "event": "draft", "verse": "1.31", "detail": "round-2 swarm (wf_508f0dbc), hardened checker"}
+{"ts": "2026-07-16T21:20:02.168237+00:00", "event": "draft", "verse": "1.32", "detail": "round-2 swarm (wf_508f0dbc), hardened checker"}
+{"ts": "2026-07-16T21:20:02.168258+00:00", "event": "draft", "verse": "1.33", "detail": "round-2 swarm (wf_508f0dbc), hardened checker"}
+{"ts": "2026-07-16T21:20:02.168279+00:00", "event": "draft", "verse": "1.34", "detail": "round-2 swarm (wf_508f0dbc), hardened checker"}
+{"ts": "2026-07-16T21:20:02.168299+00:00", "event": "draft", "verse": "1.35", "detail": "round-2 swarm (wf_508f0dbc), hardened checker"}
+{"ts": "2026-07-16T21:20:02.168320+00:00", "event": "draft", "verse": "1.36", "detail": "round-2 swarm (wf_508f0dbc), hardened checker"}
+{"ts": "2026-07-16T21:20:02.168341+00:00", "event": "draft", "verse": "1.37", "detail": "round-2 swarm (wf_508f0dbc), hardened checker"}
+{"ts": "2026-07-16T21:20:02.168370+00:00", "event": "gate", "detail": "consistency gate: 11 sort conflicts -> 5 corrections + 8 registered homonyms (adjudicator agent)"}
+{"ts": "2026-07-16T21:20:02.168392+00:00", "event": "gate", "detail": "Lean parser rejected IAST entity ids (1.29, 1.35); validator now enforces ASCII ids; mechanical rename applied"}
+{"ts": "2026-07-16T21:20:02.168579+00:00", "event": "accept", "verse": "1.1", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.168615+00:00", "event": "accept", "verse": "1.10", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.168644+00:00", "event": "accept", "verse": "1.11", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.168681+00:00", "event": "accept", "verse": "1.12", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.168705+00:00", "event": "accept", "verse": "1.13", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.168727+00:00", "event": "accept", "verse": "1.14", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.168748+00:00", "event": "accept", "verse": "1.15", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.168767+00:00", "event": "accept", "verse": "1.16-17", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.168794+00:00", "event": "accept", "verse": "1.18-22", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.168816+00:00", "event": "accept", "verse": "1.2", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.168835+00:00", "event": "accept", "verse": "1.23", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.168855+00:00", "event": "accept", "verse": "1.24-26", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.168873+00:00", "event": "accept", "verse": "1.27", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.168892+00:00", "event": "accept", "verse": "1.28", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.168911+00:00", "event": "accept", "verse": "1.29", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.168931+00:00", "event": "accept", "verse": "1.3", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.168949+00:00", "event": "accept", "verse": "1.30", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.168967+00:00", "event": "accept", "verse": "1.31", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.168985+00:00", "event": "accept", "verse": "1.32", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.169003+00:00", "event": "accept", "verse": "1.33", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.169022+00:00", "event": "accept", "verse": "1.34", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.169055+00:00", "event": "accept", "verse": "1.35", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.169076+00:00", "event": "accept", "verse": "1.36", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.169095+00:00", "event": "accept", "verse": "1.37", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.169113+00:00", "event": "accept", "verse": "1.4", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.169131+00:00", "event": "accept", "verse": "1.5", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.169151+00:00", "event": "accept", "verse": "1.6", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.169170+00:00", "event": "accept", "verse": "1.7", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.169188+00:00", "event": "accept", "verse": "1.8", "detail": "adequacy theorem compiled; build green (30-verse state)"}
+{"ts": "2026-07-16T21:20:02.169207+00:00", "event": "accept", "verse": "1.9", "detail": "adequacy theorem compiled; build green (30-verse state)"}

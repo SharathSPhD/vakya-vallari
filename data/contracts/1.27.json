@@ -1,0 +1,171 @@
+{
+  "verse": "1.27",
+  "entities": [
+    {
+      "id": "sadhu",
+      "name": "sādhu",
+      "sort": "linguisticItem",
+      "cite": "Correct words, established from the cultivated by way of tradition"
+    },
+    {
+      "id": "asadhu",
+      "name": "asādhu",
+      "sort": "linguisticItem",
+      "cite": "the incorrect are the reverse"
+    },
+    {
+      "id": "sistha",
+      "name": "śiṣṭa",
+      "sort": "cognition",
+      "cite": "Usage of the learned is the criterion"
+    },
+    {
+      "id": "agama",
+      "name": "āgama",
+      "sort": "power",
+      "cite": "sadhu forms are established sistebhyah agamat — from the cultivated, by tradition"
+    },
+    {
+      "id": "artha",
+      "name": "artha",
+      "sort": "property",
+      "cite": "in conveying the meaning there is no difference between them"
+    },
+    {
+      "id": "pratyayana",
+      "name": "pratyāyana",
+      "sort": "cognition",
+      "cite": "an ungrammatical word conveys its meaning no worse than a grammatical one"
+    },
+    {
+      "id": "dharma",
+      "name": "dharma",
+      "sort": "absolute",
+      "cite": "are the means of dharma"
+    },
+    {
+      "id": "dharmasadhana",
+      "name": "dharmasādhana",
+      "sort": "power",
+      "cite": "correct forms are dharma-sadhana, a means of merit"
+    },
+    {
+      "id": "viparita",
+      "name": "viparīta",
+      "sort": "property",
+      "cite": "incorrect ones are viparita, the reverse"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "pratyayana",
+      "from": "sadhu",
+      "to": "artha",
+      "cite": "an ungrammatical word conveys its meaning no worse than a grammatical one"
+    },
+    {
+      "kind": "relation",
+      "name": "pratyayana",
+      "from": "asadhu",
+      "to": "artha",
+      "cite": "an ungrammatical word conveys its meaning no worse than a grammatical one"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "sadhu",
+      "to": "sistha",
+      "cite": "sadhu forms are established sistebhyah agamat — from the cultivated, by tradition"
+    },
+    {
+      "kind": "relation",
+      "name": "sadhana",
+      "from": "sadhu",
+      "to": "dharma",
+      "cite": "correct forms are dharma-sadhana, a means of merit"
+    },
+    {
+      "kind": "predication",
+      "name": "viparita",
+      "of": "asadhu",
+      "cite": "incorrect ones are viparita, the reverse"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "fails_to_signify",
+      "of": "asadhu",
+      "cite": "Bhartrhari does not try to argue that solecisms fail to signify — he grants that they succeed"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "pratyayana",
+        "from": "sadhu",
+        "to": "artha",
+        "cite": "in conveying the meaning there is no difference between them"
+      },
+      {
+        "kind": "relation",
+        "name": "pratyayana",
+        "from": "asadhu",
+        "to": "artha",
+        "cite": "in conveying the meaning there is no difference between them"
+      },
+      {
+        "kind": "relation",
+        "name": "sadhana",
+        "from": "sadhu",
+        "to": "dharma",
+        "cite": "are the means of dharma"
+      },
+      {
+        "kind": "predication",
+        "name": "viparita",
+        "of": "asadhu",
+        "cite": "the incorrect are the reverse"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "semantic_distinction",
+      "rendering": "Correct words communicate meaning better than incorrect ones.",
+      "why": "Treats sadhu and asadhu as semantically distinguished in their capacity to convey meaning. But the commentary explicitly states 'artha-pratyayana-abhede' — in conveying meaning there is no difference. This misreading collapses the core concession that both words succeed equally in signification.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "pratyayana",
+          "from": "sadhu",
+          "to": "artha"
+        },
+        {
+          "kind": "predication",
+          "name": "superior",
+          "of": "sadhu"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "solecism_fails",
+      "rendering": "Incorrect word-forms fail to convey their meanings.",
+      "why": "Denies that asadhu forms communicate, contradicting the explicit denial that Bhartrhari rejects: 'Bhartrhari does not try to argue that solecisms fail to signify — he grants that they succeed.' This reading reverses the verse's most crucial premise.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "fails_to_signify",
+          "of": "asadhu"
+        }
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "The verse hinges on splitting semantic (pratyayana) from ethical (dharma) function. Both sadhu and asadhu succeed at meaning-making; only sadhu succeeds at merit-making. The sort 'cognition' for sistha and pratyayana captures agency and epistemic act; 'power' for agama, sadhana, and dharma-sadhana captures instrumentality."
+}

@@ -9,7 +9,7 @@ open VakyaVallari
 
 def brahman : Entity := ⟨"brahman", Sorta.absolute⟩
 def veda : Entity := ⟨"veda", Sorta.linguisticItem⟩
-def sakha : Entity := ⟨"śākhā", Sorta.manifestation⟩
+def sakha : Entity := ⟨"śākhā", Sorta.linguisticItem⟩
 
 def contract : Contract :=
   { axioms := [ Claim.relation "upaya" (Node.ent veda) (Node.ent brahman)

@@ -20,10 +20,25 @@ def entity_table(contracts_dir: Path) -> dict[str, list[tuple[str, str]]]:
     return table
 
 
-def sort_conflicts(table: dict[str, list[tuple[str, str]]]) -> list[dict]:
+def sort_conflicts(
+    table: dict[str, list[tuple[str, str]]],
+    homonyms: dict | None = None,
+) -> list[dict]:
+    """Report names with >1 sort, unless the exact (verse, sort) partition is
+    registered as distinct senses in the homonym registry."""
+    homonyms = homonyms or {}
     conflicts = []
     for name, uses in table.items():
         sorts = {s for (_v, s) in uses}
-        if len(sorts) > 1:
-            conflicts.append({"name": name, "uses": [list(u) for u in uses]})
+        if len(sorts) <= 1:
+            continue
+        entry = homonyms.get(name)
+        if entry:
+            allowed: dict[str, str] = {}
+            for sense in entry.get("senses", []):
+                for v in sense.get("verses", []):
+                    allowed[v] = sense["sort"]
+            if all(allowed.get(v) == s for (v, s) in uses):
+                continue
+        conflicts.append({"name": name, "uses": [list(u) for u in uses]})
     return conflicts

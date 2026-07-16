@@ -1,0 +1,113 @@
+{
+  "verse": "1.30",
+  "entities": [
+    {
+      "id": "agama",
+      "name": "āgama",
+      "sort": "power",
+      "cite": "tradition — their jnana too is agama-purvaka, preceded by what was handed down"
+    },
+    {
+      "id": "tarka",
+      "name": "tarka",
+      "sort": "power",
+      "cite": "reasoning apart from tradition"
+    },
+    {
+      "id": "dharma",
+      "name": "dharma",
+      "sort": "manifestation",
+      "cite": "Dharma is not established by reasoning apart from tradition"
+    },
+    {
+      "id": "rsi",
+      "name": "ṛṣi",
+      "sort": "absolute",
+      "cite": "the seers whose authority rests on direct vision"
+    },
+    {
+      "id": "jnana",
+      "name": "jñāna",
+      "sort": "cognition",
+      "cite": "the knowledge that the seers possess"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "dharma",
+      "to": "agama",
+      "cite": "The first line subordinates tarka to agama in matters of dharma"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "jnana",
+      "to": "agama",
+      "cite": "their jnana too is agama-purvaka, preceded by what was handed down"
+    },
+    {
+      "kind": "predication",
+      "name": "samvit",
+      "of": "rsi",
+      "cite": "rsis, whose authority rests on direct vision"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "svatantra",
+      "from": "tarka",
+      "to": "dharma",
+      "cite": "The first line subordinates tarka to agama in matters of dharma"
+    },
+    {
+      "kind": "predication",
+      "name": "aparoksa",
+      "of": "jnana",
+      "cite": "Every seeing is already informed by what was received"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "dharma",
+        "to": "agama",
+        "cite": "not established by reasoning apart from tradition"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "jnana",
+        "to": "agama",
+        "cite": "the knowledge that the seers possess is itself preceded by tradition"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "tarka_sufficient",
+      "rendering": "Reasoning alone is sufficient to establish dharma.",
+      "why": "The verse explicitly negates this: dharma is not established by reasoning apart from tradition. Tarka is not self-sufficient; it depends on agama.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "svatantra", "from": "tarka", "to": "dharma"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "rsi_unmediated_knowledge",
+      "rendering": "The seers possess direct, unmediated knowledge of truth.",
+      "why": "The verse contradicts this in its second line: even rsi-jnana is agama-purvaka, preceded by tradition. The commentary emphasizes: 'There is no such unmediated layer.'",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "aparoksa", "of": "jnana"}
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "The contract captures the verse's two-part subordination of tarka and rsi-knowledge to agama. This creates an acknowledged circularity: tradition is validated by seers whose authority is constituted by tradition. The absolute sort for rsi reflects their foundational epistemic status."
+}

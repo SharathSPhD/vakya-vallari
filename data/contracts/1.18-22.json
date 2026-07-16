@@ -1,0 +1,247 @@
+{
+  "verse": "1.18-22",
+  "entities": [
+    {
+      "id": "param_brahman",
+      "name": "param brahman",
+      "sort": "absolute",
+      "cite": "param brahma adhigamyate"
+    },
+    {
+      "id": "vac_uttama",
+      "name": "vāc uttama",
+      "sort": "absolute",
+      "cite": "Verse 18 names the goal: the uttama rupa of vac, speech's highest form"
+    },
+    {
+      "id": "bheda",
+      "name": "bheda",
+      "sort": "manifestation",
+      "cite": "bheda has 'set' (astamita, the sun-verb: differentiation gone down like daylight)"
+    },
+    {
+      "id": "jyotis",
+      "name": "jyotiḥ",
+      "sort": "manifestation",
+      "cite": "a suddha jyotis that vivartate — the kanda's master-verb again"
+    },
+    {
+      "id": "tamasi",
+      "name": "tamasī",
+      "sort": "property",
+      "cite": "within this very darkness of ordinary divided experience"
+    },
+    {
+      "id": "aloka",
+      "name": "aloka",
+      "sort": "property",
+      "cite": "who have stepped beyond the pair aloka-tamasi, light *and* darkness"
+    },
+    {
+      "id": "murti",
+      "name": "mūrti",
+      "sort": "manifestation",
+      "cite": "those past murti-vyapara-darsana, the seeing of shape and function"
+    },
+    {
+      "id": "vyapara",
+      "name": "vyāpāra",
+      "sort": "power",
+      "cite": "the whole apparatus of ordinary cognition"
+    },
+    {
+      "id": "darsana",
+      "name": "darśana",
+      "sort": "cognition",
+      "cite": "the seeing of shape and function (the whole apparatus of ordinary cognition)"
+    },
+    {
+      "id": "nimitta",
+      "name": "nimitta",
+      "sort": "linguisticItem",
+      "cite": "nimittas of speech (its occasioning apparatus: the phonemes, the aksara-smrti's signs)"
+    },
+    {
+      "id": "aksara",
+      "name": "akṣara",
+      "sort": "linguisticItem",
+      "cite": "the aksara-smrti's signs"
+    },
+    {
+      "id": "yoga",
+      "name": "yoga",
+      "sort": "power",
+      "cite": "by the yoga preceded by the word — union pursued through language itself"
+    },
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "sabda-purvena yogena, by the yoga preceded by the word"
+    },
+    {
+      "id": "varnas",
+      "name": "varṇas",
+      "sort": "linguisticItem",
+      "cite": "the high and low sounds of all four Vedas, Atharvan and Angiras hymns, Saman, Rk, Yajus"
+    },
+    {
+      "id": "vedas",
+      "name": "vedas",
+      "sort": "linguisticItem",
+      "cite": "the entire audible revelation housed, differentiated, within the undifferentiated"
+    },
+    {
+      "id": "prakriya",
+      "name": "prakriyā",
+      "sort": "linguisticItem",
+      "cite": "divided bahudha by prakriya-bhedas — differences of derivational procedure, the grammarian's own term"
+    },
+    {
+      "id": "vyakarana",
+      "name": "vyākaraṇa",
+      "sort": "power",
+      "cite": "is *arrived at through grammar*: tad vyakaranam agamya, param brahma adhigamyate"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "identity",
+      "a": "vac_uttama",
+      "b": "param_brahman",
+      "cite": "is *arrived at through grammar*: tad vyakaranam agamya, param brahma adhigamyate"
+    },
+    {
+      "kind": "relation",
+      "name": "vivartate",
+      "from": "param_brahman",
+      "to": "jyotis",
+      "cite": "a suddha jyotis that vivartate — the kanda's master-verb again — even asminn eva tamasi, within this very darkness of ordinary divided experience"
+    },
+    {
+      "kind": "relation",
+      "name": "sabda_purva",
+      "from": "yoga",
+      "to": "sabda",
+      "cite": "sabda-purvena yogena, by the yoga preceded by the word — union pursued through language itself"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "vac_uttama",
+      "to": "varnas",
+      "cite": "in that highest speech the uccavaca varnas — the high and low sounds of all four Vedas, Atharvan and Angiras hymns, Saman, Rk, Yajus — hold prthak-sthiti, distinct stations"
+    },
+    {
+      "kind": "relation",
+      "name": "agama",
+      "from": "vyakarana",
+      "to": "param_brahman",
+      "cite": "is *arrived at through grammar*: tad vyakaranam agamya, param brahma adhigamyate"
+    },
+    {
+      "kind": "predication",
+      "name": "eka",
+      "of": "param_brahman",
+      "cite": "that One, divided bahudha by prakriya-bhedas — differences of derivational procedure"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "aloka_matra",
+      "of": "param_brahman",
+      "cite": "the highest form is not the bright member of an opposition but what precedes opposition"
+    },
+    {
+      "kind": "predication",
+      "name": "tamasi_matra",
+      "of": "param_brahman",
+      "cite": "the highest form is not the bright member of an opposition but what precedes opposition"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "identity",
+        "a": "vac_uttama",
+        "b": "param_brahman",
+        "cite": "arriving at that through grammar, the supreme Brahman is attained"
+      },
+      {
+        "kind": "relation",
+        "name": "sabda_purva",
+        "from": "yoga",
+        "to": "sabda",
+        "cite": "the yoga that is preceded by the word"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "vac_uttama",
+        "to": "varnas",
+        "cite": "in which the high and low sounds of the Atharvans and Angirases, of the Saman, the Rk and the Yajus, hold their separate stations"
+      },
+      {
+        "kind": "relation",
+        "name": "agama",
+        "from": "vyakarana",
+        "to": "param_brahman",
+        "cite": "arriving at that through grammar"
+      },
+      {
+        "kind": "predication",
+        "name": "eka",
+        "of": "param_brahman",
+        "cite": "that which, though one, is divided manifold by the differences of derivational procedure"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "linguistic_structure_reductionism",
+      "rendering": "The highest form of speech is merely a linguistic structure that underlies all the world's words.",
+      "why": "Reduces vac_uttama from absolute reality to a mere linguistic property. The commentary insists that the ultimate IS language (word-essence), not a linguistic quality of something else. The sort error (property vs absolute) makes the identity claim categorically false.",
+      "entities": [
+        {"id": "vac_structure", "name": "speech structure", "sort": "linguisticItem"}
+      ],
+      "claims": [
+        {"kind": "identity", "a": "vac_structure", "b": "param_brahman"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "parinama_transformation",
+      "rendering": "Brahman directly transforms itself into the differentiated world through the operation of grammatical derivational procedures.",
+      "why": "Asserts parinama (real transformation) instead of vivarta (appearance without loss of unity). The verse emphasizes that param_brahman remains one despite being divided by prakriya-bhedas; it does not undergo real transformation into them.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "parinamate", "from": "param_brahman", "to": "prakriya"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "language_abandonment_path",
+      "rendering": "True knowledge of Brahman requires abandoning all language and discursive thought, transcending the word-based approach.",
+      "why": "Contradicts the central methodological claim (axiom 3) that yoga is sabda-purva, grounded in and preceded by the word. The path is not away from language but through language itself. The verse's entire architecture emphasizes that the word-led yoga is the means.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "sabda_tyaga", "of": "yoga"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "vedas_separate_realism",
+      "rendering": "The Vedic sounds and derivational procedures are distinct realities that merely reflect upon or approximate the highest speech, but are not fundamentally identical with it.",
+      "why": "Contradicts axiom 4 (varnas asrita vac_uttama). The verse is explicit that the sounds of all four Vedas hold their stations IN that highest speech, not outside it. They are not separate reflections but housed within the undifferentiated One.",
+      "entities": [
+        {"id": "vedas_external", "name": "Vedas as external", "sort": "linguisticItem"}
+      ],
+      "claims": [
+        {"kind": "relation", "name": "vibhinna", "from": "vedas_external", "to": "vac_uttama"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The five-verse passage (1.18-22) is a single sentence building systematically: verse 18 names the goal (uttama rupa of vac), 19 the worshippers (those transcending murti-vyapara-darsana and aloka-tamasi opposition), 20 the method (sabda-purvena yoga), 21 the cosmic ground (Vedic varnas housed in highest speech), and 22 the discipline (vyakarana as the path to param brahman). The central ontological claim is that vac_uttama = param_brahman (absolute, not property). The relation vivartate encodes manifestation without transformation. The key innovation is making yoga and vyakarana explicit powers that operate through language toward the absolute. The verse resolves the tension between One and Many through vivarta: the one param_brahman appears as divided by prakriya-bhedas yet remains undivided."
+}

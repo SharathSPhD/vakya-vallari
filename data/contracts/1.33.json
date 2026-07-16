@@ -1,0 +1,119 @@
+{
+  "verse": "1.33",
+  "entities": [
+    {
+      "id": "dravya",
+      "name": "dravya",
+      "sort": "absolute",
+      "cite": "Even in the case of a substance"
+    },
+    {
+      "id": "sakti",
+      "name": "śakti",
+      "sort": "power",
+      "cite": "a substance whose power toward this or that effect is well known"
+    },
+    {
+      "id": "arthakriya",
+      "name": "arthakriya",
+      "sort": "property",
+      "cite": "power toward this or that effect"
+    },
+    {
+      "id": "visesha",
+      "name": "viśeṣa",
+      "sort": "absolute",
+      "cite": "an unsurveyed viseṣa, a particular"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "sakti",
+      "to": "dravya",
+      "cite": "a thing's power"
+    },
+    {
+      "kind": "relation",
+      "name": "prati",
+      "from": "sakti",
+      "to": "arthakriya",
+      "cite": "the inference from 'x has the power to produce y'"
+    },
+    {
+      "kind": "relation",
+      "name": "pratibadhyate",
+      "from": "visesha",
+      "to": "sakti",
+      "cite": "a power we know perfectly well can be pratibadhyate, obstructed, by the presence of something else"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "niyata",
+      "from": "sakti",
+      "to": "arthakriya",
+      "cite": "the inference from 'x has the power to produce y' to 'x will produce y here' is never secure"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "sakti",
+        "to": "dravya",
+        "cite": "a substance whose power"
+      },
+      {
+        "kind": "relation",
+        "name": "prati",
+        "from": "sakti",
+        "to": "arthakriya",
+        "cite": "toward this or that effect"
+      },
+      {
+        "kind": "relation",
+        "name": "pratibadhyate",
+        "from": "visesha",
+        "to": "sakti",
+        "cite": "that power is blocked"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "guaranteed_effect",
+      "rendering": "A well-known power of a substance will reliably produce its effect.",
+      "why": "The verse's central thesis is defeasibility: powers can be defeated by unseen particulars, making reliable inference from power to effect impossible. This reading assumes the opposite—that power guarantees effect.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "niyata",
+          "from": "sakti",
+          "to": "arthakriya"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "substance_obstructed",
+      "rendering": "When a substance enters connection with a particular, the substance itself is obstructed, not its power.",
+      "why": "The verse explicitly states that the power is obstructed (sā śaktiḥ pratibadhyate), not the substance. This misreading reverses the object of obstruction.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "pratibadhyate",
+          "from": "visesha",
+          "to": "dravya"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "Verse 1.33 encodes a defeasibility principle: causal powers, however well-established, can be obstructed by unseen particulars (viśeṣa). This creates an epistemological problem (inference from power to effect is never secure) that motivates the broader philosophical investigation. All six ontological sorts are employed: dravya as absolute substance, śakti as power/capacity, arthakriya as property of efficacy, and viśeṣa as absolute particular."
+}

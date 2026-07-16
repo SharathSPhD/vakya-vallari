@@ -1,0 +1,89 @@
+{
+  "verse": "1.12",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "Of speech that has come to be divided into forms"
+    },
+    {
+      "id": "rasa",
+      "name": "rasa",
+      "sort": "absolute",
+      "cite": "a highest essence; rasa is a word for savour, sap, the concentrated principle of a thing"
+    },
+    {
+      "id": "jyotis",
+      "name": "jyotis",
+      "sort": "absolute",
+      "cite": "The second line identifies that essence with a jyotis, a light"
+    },
+    {
+      "id": "vyakarana",
+      "name": "vyākaraṇa",
+      "sort": "power",
+      "cite": "grammar with the anjasa marga — the straight or direct road to it"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "sabda",
+      "to": "rasa",
+      "cite": "Beneath or within it lies a paramo rasa, a highest essence"
+    },
+    {
+      "kind": "identity",
+      "a": "rasa",
+      "b": "jyotis",
+      "cite": "The second line identifies that essence with a jyotis, a light"
+    },
+    {
+      "kind": "relation",
+      "name": "adhigama",
+      "from": "vyakarana",
+      "to": "rasa",
+      "cite": "grammar with the anjasa marga — the straight or direct road to it"
+    }
+  ],
+  "denials": [],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "sabda",
+        "to": "rasa",
+        "cite": "Of speech that has come to be divided into forms, there is a highest savour"
+      },
+      {
+        "kind": "identity",
+        "a": "rasa",
+        "b": "jyotis",
+        "cite": "of that most holy light"
+      },
+      {
+        "kind": "relation",
+        "name": "adhigama",
+        "from": "vyakarana",
+        "to": "rasa",
+        "cite": "this is the direct path"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "grammar_as_indirect",
+      "rendering": "Grammar is one indirect approach among many possible paths to the highest essence.",
+      "why": "The commentary is precise about grammar's uniqueness: 'other approaches may reach the light, but they go around. Grammar goes at it.' This rendering denies the directness (anjasa marga) that is the verse's defining claim, incorrectly demoting grammar to merely one option among many.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "paroksa", "of": "vyakarana"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse teaches that differentiated speech contains an absolute essence accessible uniquely through grammar's direct method. The core ontology: sabda (linguistic manifestation), rasa and jyotis (the absolute essence, identical), vyakarana (the power/discipline enabling direct access). The commentary explicitly preserves the reality of manifestation: the differentiation is not false, but is the very medium through which the essence becomes accessible. No sort strain: linguisticItem, absolute, and power capture the distinct levels precisely."
+}

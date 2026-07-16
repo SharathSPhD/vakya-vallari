@@ -1,0 +1,134 @@
+{
+  "verse": "1.28",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "on either horn, no adi, no beginning, is found"
+    },
+    {
+      "id": "adi",
+      "name": "ādi",
+      "sort": "property",
+      "cite": "no adi, no beginning, is found"
+    },
+    {
+      "id": "nityata",
+      "name": "nityatā",
+      "sort": "property",
+      "cite": "Bhartrhari declines to settle whether words are nitya or krtaka"
+    },
+    {
+      "id": "krtakatva",
+      "name": "kṛtakatvā",
+      "sort": "property",
+      "cite": "Bhartrhari declines to settle whether words are nitya or krtaka"
+    },
+    {
+      "id": "pranin",
+      "name": "prāṇin",
+      "sort": "power",
+      "cite": "The analogy to praninam carries the argument"
+    },
+    {
+      "id": "vyavastha",
+      "name": "vyavasthā",
+      "sort": "manifestation",
+      "cite": "the settled order in which items stand"
+    },
+    {
+      "id": "anadinidhana",
+      "name": "anādinidhanā",
+      "sort": "property",
+      "cite": "their beginninglessness is perfectly compatible with each member being made"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "anupalabdha_adi",
+      "of": "sabda",
+      "cite": "on either horn, no adi, no beginning, is found"
+    },
+    {
+      "kind": "relation",
+      "name": "iva",
+      "from": "sabda",
+      "to": "pranin",
+      "cite": "The analogy to praninam carries the argument"
+    },
+    {
+      "kind": "predication",
+      "name": "nityata",
+      "of": "vyavastha",
+      "cite": "what is eternal is not necessarily the item but the settled order in which items stand"
+    },
+    {
+      "kind": "predication",
+      "name": "anadinidhana",
+      "of": "vyavastha",
+      "cite": "the series of them has no first term, and their beginninglessness is perfectly compatible with each member being made"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "adi",
+      "of": "sabda",
+      "cite": "no adi, no beginning, is found"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "anupalabdha_adi",
+        "of": "sabda",
+        "cite": "no beginning of them is found"
+      },
+      {
+        "kind": "relation",
+        "name": "iva",
+        "from": "sabda",
+        "to": "pranin",
+        "cite": "as with living beings"
+      },
+      {
+        "kind": "predication",
+        "name": "nityata",
+        "of": "vyavastha",
+        "cite": "this arrangement is what is called eternality"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "individual_eternality",
+      "rendering": "Individual words possess eternality as an intrinsic metaphysical property.",
+      "why": "The verse's concessive opening ('whether they are eternal or made') explicitly declines any commitment to individual eternality. Its thesis is vyavastha-nityata (eternality of arrangement), not the eternality of words themselves. This reading commits to precisely what the verse brackets.",
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "nityata",
+          "of": "sabda"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "words_have_origin",
+      "rendering": "Words, whether eternal or made, possess an identifiable beginning or origin point.",
+      "why": "Directly contradicts the core logical claim: on both horns of the disjunction (nitya or krtaka), no adi, no beginning, is found for them. This is the denial axis of the verse.",
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "adi",
+          "of": "sabda"
+        }
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "The verse proposes vyavastha-nityata (eternality of arrangement) as a weaker, more defensible thesis than individual eternality, preserving the linguistic order's beginninglessness without winning the metaphysical debate about word-substance. The analogy with pranin (living beings)—each produced, yet the series has no first member—anchors the argument. All six sorts fit: sabda and pranin are linguisticItem and power; adi, nityata, krtakatva, anadinidhana are properties; vyavastha is manifestation."
+}

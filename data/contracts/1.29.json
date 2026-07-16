@@ -1,0 +1,126 @@
+{
+ "verse": "1.29",
+ "entities": [
+  {
+   "id": "vyavastha",
+   "name": "vyavastha",
+   "sort": "manifestation",
+   "cite": "nobody codifies an anarthika, purposeless, system"
+  },
+  {
+   "id": "artha",
+   "name": "artha",
+   "sort": "absolute",
+   "cite": "so it must have a purpose"
+  },
+  {
+   "id": "smrti",
+   "name": "smṛti",
+   "sort": "linguisticItem",
+   "cite": "the sistas plainly did codify one"
+  },
+  {
+   "id": "sadhutva",
+   "name": "sādhutva",
+   "sort": "property",
+   "cite": "the tradition concerning correctness"
+  },
+  {
+   "id": "dharma",
+   "name": "dharma",
+   "sort": "absolute",
+   "cite": "that purpose is dharma rather than communication"
+  },
+  {
+   "id": "vyavahara",
+   "name": "vyavahāra",
+   "sort": "manifestation",
+   "cite": "that purpose is dharma rather than communication"
+  }
+ ],
+ "axioms": [
+  {
+   "kind": "relation",
+   "name": "āśrayate",
+   "from": "vyavastha",
+   "to": "artha",
+   "cite": "nobody codifies an anarthika, purposeless, system"
+  },
+  {
+   "kind": "relation",
+   "name": "sampad",
+   "from": "smrti",
+   "to": "artha",
+   "cite": "so it must have a purpose"
+  },
+  {
+   "kind": "identity",
+   "a": "artha",
+   "b": "dharma",
+   "cite": "that purpose is dharma rather than communication"
+  }
+ ],
+ "denials": [
+  {
+   "kind": "identity",
+   "a": "artha",
+   "b": "vyavahara",
+   "cite": "that purpose is dharma rather than communication"
+  }
+ ],
+ "accepted_reading": {
+  "claims": [
+   {
+    "kind": "relation",
+    "name": "āśrayate",
+    "from": "vyavastha",
+    "to": "artha",
+    "cite": "if it served no purpose"
+   },
+   {
+    "kind": "relation",
+    "name": "sampad",
+    "from": "smrti",
+    "to": "artha",
+    "cite": "No one would undertake this arrangement if it served no purpose"
+   }
+  ]
+ },
+ "rejected_readings": [
+  {
+   "label": "anarthika_tradition",
+   "rendering": "The tradition concerning correctness could be purposeless if properly established.",
+   "why": "Reverses the causal principle: the verse establishes that IF something is codified, it MUST have purpose. To say smṛti could be anarthika contradicts the logical framework the verse uses—the fact of its composition by the cultivated entails it must serve an artha.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "predication",
+     "name": "anarthika",
+     "of": "smrti"
+    }
+   ],
+   "expect": "unlicensed"
+  },
+  {
+   "label": "communication_purpose",
+   "rendering": "The tradition of correctness serves the purpose of enabling communication.",
+   "why": "The commentary explicitly rules this out: 'that purpose is dharma rather than communication'. The artha of smṛti is dharma (righteous behavior/linguistic purity in conduct), not mere vyavahāra (communicative function). This reading confuses the vehicle (language) with the destination (dharma).",
+   "entities": [
+    {
+     "id": "vyavahara",
+     "name": "vyavahāra",
+     "sort": "manifestation"
+    }
+   ],
+   "claims": [
+    {
+     "kind": "identity",
+     "a": "artha",
+     "b": "vyavahara"
+    }
+   ],
+   "expect": "contradicted"
+  }
+ ],
+ "notes": "The verse establishes a deductive principle (codified systems must serve purpose) and applies it to resolve that smṛti is not purposeless. The identification artha = dharma is cited from the commentary's reference to 1.27, grounding the philosophical move from logical argument to soteriological claim. The sorts treat vyavastha as manifestation (it is the structured expression), smṛti as linguisticItem (it is textual tradition), and both artha and dharma as absolute (they are the ultimate goals—the purpose itself and righteous conduct)."
+}

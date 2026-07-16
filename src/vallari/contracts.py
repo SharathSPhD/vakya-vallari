@@ -50,8 +50,9 @@ def validate_contract(contract: dict, verse_record: dict) -> list[str]:
     for e in entities:
         if e.get("sort") not in SORTS:
             errors.append(f"entity {e.get('id')!r}: bad sort {e.get('sort')!r}")
-        if not e.get("id", "").isidentifier():
-            errors.append(f"entity id {e.get('id')!r} is not a valid identifier")
+        eid = e.get("id", "")
+        if not eid.isidentifier() or not eid.isascii():
+            errors.append(f"entity id {eid!r} is not a valid ASCII identifier")
 
     commentary_text = verse_record["commentary"] + "\n" + (
         verse_record.get("contested") or ""
@@ -101,8 +102,12 @@ def validate_contract(contract: dict, verse_record: dict) -> list[str]:
 
     for rej in contract.get("rejected_readings", []):
         label = rej.get("label", "?")
-        if not label.isidentifier():
-            errors.append(f"rejected reading label {label!r} is not a valid identifier")
+        if not label.isidentifier() or not label.isascii():
+            errors.append(f"rejected reading label {label!r} is not a valid ASCII identifier")
+        for e in rej.get("entities", []):
+            eid = e.get("id", "")
+            if not eid.isidentifier() or not eid.isascii():
+                errors.append(f"rejected {label}: entity id {eid!r} is not a valid ASCII identifier")
         if not rej.get("why", "").strip():
             errors.append(f"rejected reading {label}: missing why")
         if not rej.get("rendering", "").strip():

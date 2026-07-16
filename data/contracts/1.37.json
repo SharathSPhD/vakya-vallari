@@ -1,0 +1,101 @@
+{
+  "verse": "1.37",
+  "entities": [
+    {
+      "id": "prakasa",
+      "name": "prakāśa",
+      "sort": "power",
+      "cite": "an inner light that has become manifest"
+    },
+    {
+      "id": "jnana_atita_anagata",
+      "name": "atīta-anāgata-jñāna",
+      "sort": "cognition",
+      "cite": "knowledge of atita and anagata"
+    },
+    {
+      "id": "pratyaksa",
+      "name": "pratyakṣa",
+      "sort": "cognition",
+      "cite": "not distinguishable from perception"
+    },
+    {
+      "id": "anumana",
+      "name": "anumāna",
+      "sort": "cognition",
+      "cite": "It is that it is not inference at all"
+    },
+    {
+      "id": "aparoksa",
+      "name": "aparokṣa",
+      "sort": "property",
+      "cite": "it has perception's immediacy"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "aparoksa",
+      "of": "jnana_atita_anagata",
+      "cite": "it has perception's immediacy"
+    },
+    {
+      "kind": "predication",
+      "name": "aparoksa",
+      "of": "pratyaksa",
+      "cite": "inherits perception's freedom from the defeat"
+    },
+    {
+      "kind": "relation",
+      "name": "na_visisyate",
+      "from": "jnana_atita_anagata",
+      "to": "pratyaksa",
+      "cite": "is pratyaksat na visisyate, not distinguishable from perception"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "bhavati",
+      "from": "jnana_atita_anagata",
+      "to": "anumana",
+      "cite": "It is that it is not inference at all"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "na_visisyate",
+        "from": "jnana_atita_anagata",
+        "to": "pratyaksa",
+        "cite": "is not different from perception"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "superior_inference_mode",
+      "rendering": "Knowledge of the past and future is a form of especially refined or powerful inference.",
+      "why": "The commentary explicitly states 'it is that it is NOT inference at all'. This reading misplaces the knowledge within the anumana category when the verse's core move is to declare it is NOT inference at all but rather perception. The denial axiom directly contradicts this rendering.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "bhavati", "from": "jnana_atita_anagata", "to": "anumana"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "mediated_process",
+      "rendering": "Knowledge of the past and future is still a mediated mental process, just using yogic methods rather than standard reasoning.",
+      "why": "This contradicts the core axiom that jnana_atita_anagata has the property aparoksa (immediacy). The commentary emphasizes it 'has perception's immediacy', which means it is non-mediated. Treating it as mediated (saroksa) directly violates the defining property that makes it perception-like.",
+      "entities": [
+        {"id": "saroksa", "name": "sarokṣa", "sort": "property"}
+      ],
+      "claims": [
+        {"kind": "predication", "name": "saroksa", "of": "jnana_atita_anagata"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "Verse 1.37 presents yogic knowledge as an extension of perception, not a superior form of inference. The two conditions (manifest inner light, unclouded mind) are prerequisites but treated implicitly rather than axiomatically. The relation name 'na_visisyate' directly translates the Sanskrit verb 'viśiṣyate' (to be distinguished) with negation. The contract encodes the epistemological category-shift: from anumana (inference) to pratyaksa (perception)."
+}
