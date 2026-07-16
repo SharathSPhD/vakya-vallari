@@ -65,6 +65,26 @@ def validate_contract(contract: dict, verse_record: dict) -> list[str]:
         elif cite not in commentary_text:
             errors.append(f"{where}: cite not found verbatim in commentary: {cite[:60]!r}")
 
+    def key(c: dict) -> tuple:
+        if c.get("kind") == "identity":
+            return ("identity", c.get("a"), c.get("b"))
+        if c.get("kind") == "predication":
+            return ("predication", c.get("name"), c.get("of"))
+        return ("relation", c.get("name"), c.get("from"), c.get("to"))
+
+    axiom_keys = {key(a) for a in contract.get("axioms", [])}
+    denial_keys = {key(d) for d in contract.get("denials", [])}
+
+    def entailed(c: dict) -> bool:
+        # Mirrors VakyaVallari.entails: membership + identity refl/symm.
+        if key(c) in axiom_keys:
+            return True
+        if c.get("kind") == "identity":
+            return c.get("a") == c.get("b") or (
+                ("identity", c.get("b"), c.get("a")) in axiom_keys
+            )
+        return False
+
     accepted = contract.get("accepted_reading", {})
     for i, cl in enumerate(accepted.get("claims", [])):
         where = f"accepted_reading.claims[{i}]"
@@ -74,6 +94,10 @@ def validate_contract(contract: dict, verse_record: dict) -> list[str]:
             errors.append(f"{where}: missing cite")
         elif cite not in verse_record["translation"]:
             errors.append(f"{where}: cite not found verbatim in translation: {cite[:60]!r}")
+        if not entailed(cl):
+            errors.append(f"{where}: not entailed by axioms")
+        if key(cl) in denial_keys:
+            errors.append(f"{where}: claim is denied by the contract")
 
     for rej in contract.get("rejected_readings", []):
         label = rej.get("label", "?")

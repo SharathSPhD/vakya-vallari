@@ -46,6 +46,29 @@ def test_validator_catches_fabricated_cite():
     assert any("not found verbatim" in e for e in errors)
 
 
+def test_validator_catches_unentailed_accepted_claim():
+    """Mirror of the Lean entailment check: every accepted-reading claim must
+    be entailed by the axioms (membership + identity refl/symm), and must not
+    appear among the denials."""
+    idx = corpus_index()
+    contract = load_contract(ROOT / "data" / "contracts" / "1.1.json")
+    contract["accepted_reading"]["claims"].append(
+        {"kind": "predication", "name": "nitya", "of": "brahman", "cite": "Brahman"}
+    )
+    errors = validate_contract(contract, idx["1.1"])
+    assert any("not entailed" in e for e in errors)
+
+
+def test_validator_catches_accepted_claim_that_is_denied():
+    idx = corpus_index()
+    contract = load_contract(ROOT / "data" / "contracts" / "1.1.json")
+    denial = dict(contract["denials"][0])
+    denial["cite"] = "It appears in the mode of objects"  # verbatim in translation
+    contract["accepted_reading"]["claims"].append(denial)
+    errors = validate_contract(contract, idx["1.1"])
+    assert any("denied" in e for e in errors)
+
+
 def test_validator_catches_unknown_entity_reference():
     idx = corpus_index()
     contract = load_contract(ROOT / "data" / "contracts" / "1.1.json")
