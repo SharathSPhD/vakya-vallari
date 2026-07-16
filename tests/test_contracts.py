@@ -69,6 +69,34 @@ def test_validator_catches_accepted_claim_that_is_denied():
     assert any("denied" in e for e in errors)
 
 
+def test_validator_rejects_rejected_reading_that_is_actually_adequate():
+    """A rejected reading whose claims are all entailed (and none denied) would
+    make the ¬Adequate theorem false in Lean — the validator must catch it."""
+    idx = corpus_index()
+    contract = load_contract(ROOT / "data" / "contracts" / "1.1.json")
+    contract["rejected_readings"].append(
+        {
+            "label": "lazy_counterexample",
+            "rendering": "whatever",
+            "why": "claims an axiom verbatim",
+            "entities": [],
+            "claims": [dict(contract["axioms"][0], cite=None)],
+            "expect": "unlicensed",
+        }
+    )
+    errors = validate_contract(contract, idx["1.1"])
+    assert any("adequate" in e and "lazy_counterexample" in e for e in errors)
+
+
+def test_validator_checks_expect_matches_reality():
+    idx = corpus_index()
+    contract = load_contract(ROOT / "data" / "contracts" / "1.1.json")
+    # parinama reading is contradicted, not merely unlicensed
+    contract["rejected_readings"][1]["expect"] = "unlicensed"
+    errors = validate_contract(contract, idx["1.1"])
+    assert any("expect" in e for e in errors)
+
+
 def test_validator_catches_unknown_entity_reference():
     idx = corpus_index()
     contract = load_contract(ROOT / "data" / "contracts" / "1.1.json")

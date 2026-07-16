@@ -114,4 +114,23 @@ def validate_contract(contract: dict, verse_record: dict) -> list[str]:
         for i, cl in enumerate(rej.get("claims", [])):
             errors += _claim_errors(cl, f"rejected {label}.claims[{i}]", local_ids)
 
+        # The reading must PROVABLY fail, mirroring Lean's Contract.Adequate:
+        # licensed (all claims entailed) and not contradicted => Lean's
+        # ¬Adequate theorem would be false and the build would break.
+        claims = rej.get("claims", [])
+        licensed = all(entailed(c) for c in claims) if claims else True
+        contradicted = any(key(c) in denial_keys for c in claims)
+        if licensed and not contradicted:
+            errors.append(
+                f"rejected reading {label} is adequate under the axioms — "
+                "it must contain at least one unlicensed or denied claim"
+            )
+        expect = rej.get("expect")
+        if expect == "unlicensed" and licensed:
+            errors.append(f"rejected {label}: expect=unlicensed but all claims are entailed")
+        if expect == "contradicted" and not contradicted:
+            errors.append(f"rejected {label}: expect=contradicted but no claim is denied")
+        if expect == "unlicensed" and contradicted:
+            errors.append(f"rejected {label}: expect mismatch — reading is contradicted")
+
     return errors
