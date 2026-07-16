@@ -19,3 +19,20 @@ Append-only. Each entry: date, what was attempted, what the gates said, decision
   - `Verse 2.441(a)` is an empty scraping artifact with no commentary unit — excluded
     (it is mūla-side only; canonical units come from commentary).
 - Corpus manifest sha256: `53043bdabcb76b0c8f20f1a7a04f20f8deaef847876cf7450751d177394f230a`.
+
+## 2026-07-16 — M4/M5
+
+- M4: swarm of 9 author agents (workflow) + 3 repair agents produced contracts 1.2–1.10.
+  The Lean gate caught lazy counterexamples the Python mirror missed (1.5, 1.6: rejected
+  readings that merely restated axioms); validator hardened mid-flight — rejected readings
+  must now provably fail, and `expect` must match mechanical reality. Final state:
+  10 verses verified (10 adequacy theorems, 23 refutation theorems), 40 pytest gates green,
+  lake build green, zero sorry. Ledger: draft/reject/repair/accept per verse.
+- M5: **live at https://vakya-vallari.vercel.app** (production, Vercel MCP). Constraint
+  honestly recorded: the classifier blocks CLI publication (gh, hf) and the MCP deploy takes
+  inline content, so the full 3.3MB edition (all 1,796 verses) is built and gated in
+  site/dist/ but not yet bulk-published; the deployed page is a complete, truthful showcase
+  (stats, Verse 1.1 contract + theorems, honesty boundary). One-command publication for the
+  operator: `uv run python scripts/publish.py` then any static host of site/dist.
+- GitHub repo creation remains blocked by permission classifier; CI workflow is committed
+  and will run on first push once the operator creates/pushes the repo.
