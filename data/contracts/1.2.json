@@ -1,0 +1,126 @@
+{
+  "verse": "1.2",
+  "entities": [
+    {
+      "id": "brahman",
+      "name": "brahman",
+      "sort": "absolute",
+      "cite": "Brahman is one"
+    },
+    {
+      "id": "sakti",
+      "name": "śakti",
+      "sort": "power",
+      "cite": "its powers are many"
+    },
+    {
+      "id": "jagat",
+      "name": "jagat",
+      "sort": "manifestation",
+      "cite": "functions as if separate"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "ekam",
+      "of": "brahman",
+      "cite": "Brahman is one"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "brahman",
+      "to": "sakti",
+      "cite": "The sakti doctrine is Bhartrhari's device for holding both"
+    },
+    {
+      "kind": "predication",
+      "name": "apṛthaktva",
+      "of": "brahman",
+      "cite": "even in non-separateness"
+    },
+    {
+      "kind": "relation",
+      "name": "vivartate",
+      "from": "sakti",
+      "to": "jagat",
+      "cite": "functions as if separate"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "parinamate",
+      "from": "brahman",
+      "to": "jagat",
+      "cite": "Remove it and you have either a real plurality (and the unity thesis collapses)"
+    },
+    {
+      "kind": "predication",
+      "name": "prthaktva",
+      "of": "brahman",
+      "cite": "the powers are not other than it"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "ekam",
+        "of": "brahman",
+        "cite": "one alone"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "brahman",
+        "to": "sakti",
+        "cite": "resting on its differentiated powers"
+      },
+      {
+        "kind": "predication",
+        "name": "apṛthaktva",
+        "of": "brahman",
+        "cite": "not separate from those powers"
+      },
+      {
+        "kind": "relation",
+        "name": "vivartate",
+        "from": "sakti",
+        "to": "jagat",
+        "cite": "functions as though it were divided"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "real_transformation",
+      "rendering": "Brahman genuinely transforms itself into the world through its differentiated powers.",
+      "why": "Asserts parinama (real transformation of substance), which the verse rejects through the 'iva' (as if). The commentary emphasizes that removing the 'as if' leaves only real plurality, which the unity thesis cannot accommodate.",
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "parinamate",
+          "from": "brahman",
+          "to": "jagat"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "absolute_separation",
+      "rendering": "Brahman's powers are genuinely separate from Brahman itself, making the world fundamentally independent of its source.",
+      "why": "Denies apṛthaktva (non-separateness), which the verse establishes as the metaphysical foundation. The commentary is explicit: 'the powers are not other than it.'",
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "prthaktva",
+          "of": "brahman"
+        }
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "The contract formalizes bhedabheda (difference-and-non-difference) through the tension between sakti (differentiated multiplicity) and apṛthaktva (non-separateness). The metaphysical level (unity, non-separation) is maintained alongside the phenomenal level (apparent multiplicity through vivartate). The doctrine hinges on 'iva' (as if), which distinguishes this from strict parinama."
+}

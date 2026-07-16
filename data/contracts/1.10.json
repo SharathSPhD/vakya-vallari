@@ -1,0 +1,100 @@
+{
+  "verse": "1.10",
+  "entities": [
+    {
+      "id": "vidya_bhedas",
+      "name": "vidyābhedāḥ",
+      "sort": "linguisticItem",
+      "cite": "The vidya-bhedas are the branches of learning"
+    },
+    {
+      "id": "angas",
+      "name": "aṅgāḥ",
+      "sort": "linguisticItem",
+      "cite": "the angas and upangas, the auxiliary disciplines of the Veda"
+    },
+    {
+      "id": "upangas",
+      "name": "upāṅgāḥ",
+      "sort": "linguisticItem",
+      "cite": "the angas and upangas, the auxiliary disciplines of the Veda"
+    },
+    {
+      "id": "jnana",
+      "name": "jñāna",
+      "sort": "cognition",
+      "cite": "refinement of understanding"
+    },
+    {
+      "id": "samskara",
+      "name": "saṃskāra",
+      "sort": "power",
+      "cite": "the refining, perfecting, preparing"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "anga_upanga_nibandha",
+      "of": "vidya_bhedas",
+      "cite": "The vidya-bhedas are the branches of learning, structured around the angas and upangas"
+    },
+    {
+      "kind": "relation",
+      "name": "hetu",
+      "from": "vidya_bhedas",
+      "to": "samskara",
+      "cite": "They are jnana-samskara-hetu, causes of the samskara — the refining, perfecting, preparing — of knowledge"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "paramarthaprada",
+      "of": "vidya_bhedas",
+      "cite": "They do not deliver the goal"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "anga_upanga_nibandha",
+        "of": "vidya_bhedas",
+        "cite": "bound up with the limbs and sub-limbs"
+      },
+      {
+        "kind": "relation",
+        "name": "hetu",
+        "from": "vidya_bhedas",
+        "to": "samskara",
+        "cite": "the causes of the refinement of understanding"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "angas_as_primary",
+      "rendering": "The auxiliary disciplines are the primary divisions of knowledge causing the refinement of understanding.",
+      "why": "Confuses the auxiliary framework (angas/upangas) with the primary category of vidya-bhedas. The verse indicates vidya-bhedas are bound WITH angas and upangas as a structural framework, not that angas/upangas constitute the primary divisions themselves.",
+      "entities": [
+        {"id": "angas_primary", "name": "aṅgāḥ", "sort": "linguisticItem"}
+      ],
+      "claims": [
+        {"kind": "relation", "name": "hetu", "from": "angas_primary", "to": "samskara"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "direct_goal_delivery",
+      "rendering": "The divisions of knowledge deliver the ultimate fulfillment of understanding as their direct purpose.",
+      "why": "Asserts that vidya-bhedas deliver the ultimate goal, directly contradicting the commentary's explicit statement: 'They do not deliver the goal; they condition the instrument that reaches it.' They are preparatory, not direct deliverers of the ultimate knowledge.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "paramarthaprada", "of": "vidya_bhedas"}
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "The verse establishes a functional ontology of Vedic disciplines: vidya-bhedas (branches of knowledge) are structured around the auxiliary disciplines (angas and upangas) and serve as causes of samskara (refinement/preparation of knowledge), not as direct causes of the ultimate goal. This sets up 1.11's elevation of grammar as the primary means."
+}

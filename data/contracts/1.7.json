@@ -1,0 +1,124 @@
+{
+  "verse": "1.7",
+  "entities": [
+    {
+      "id": "smrti",
+      "name": "smṛti",
+      "sort": "property",
+      "cite": "Smrti texts are prakalpita, framed or constructed, by the veda-vid on the basis of linga"
+    },
+    {
+      "id": "veda",
+      "name": "veda",
+      "sort": "absolute",
+      "cite": "Smrti texts are prakalpita, framed or constructed, by the veda-vid on the basis of linga — inferential marks within the Veda itself"
+    },
+    {
+      "id": "linga",
+      "name": "liṅga",
+      "sort": "property",
+      "cite": "inferential marks within the Veda itself"
+    },
+    {
+      "id": "vedavid",
+      "name": "vedavid",
+      "sort": "cognition",
+      "cite": "by the veda-vid on the basis of linga"
+    },
+    {
+      "id": "drishta_prayojana",
+      "name": "dṛṣṭa prayojana",
+      "sort": "property",
+      "cite": "empirically evident aims"
+    },
+    {
+      "id": "adrshta_prayojana",
+      "name": "adṛṣṭa prayojana",
+      "sort": "property",
+      "cite": "those whose fruit is transcendent"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "prakalpita",
+      "from": "vedavid",
+      "to": "smrti",
+      "cite": "Smrti texts are prakalpita, framed or constructed, by the veda-vid on the basis of linga — inferential marks within the Veda itself"
+    },
+    {
+      "kind": "predication",
+      "name": "paratantra",
+      "of": "smrti",
+      "cite": "The authority of the secondary literature is made derivative"
+    },
+    {
+      "kind": "relation",
+      "name": "asritya",
+      "from": "smrti",
+      "to": "veda",
+      "cite": "it subordinates the whole derivative tradition to the one Word"
+    },
+    {
+      "kind": "predication",
+      "name": "ubhayaprayojana",
+      "of": "smrti",
+      "cite": "The distinction between drsta and adrsta purposes, seen and unseen — that is, empirically evident aims versus those whose fruit is transcendent"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "svatantra",
+      "of": "smrti",
+      "cite": "They are not independent sources"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "prakalpita",
+        "from": "vedavid",
+        "to": "smrti",
+        "cite": "were framed by those who know the Veda from indicatory marks"
+      },
+      {
+        "kind": "relation",
+        "name": "asritya",
+        "from": "smrti",
+        "to": "veda",
+        "cite": "resting upon that alone"
+      },
+      {
+        "kind": "predication",
+        "name": "paratantra",
+        "of": "smrti",
+        "cite": "The smrtis, various in form and having both seen and unseen purposes"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "smrti_as_independent",
+      "rendering": "The smritis are authoritative texts composed independently, with both seen and unseen purposes.",
+      "why": "Asserts independence (svatantra) for smritis, which the commentary explicitly denies. They are derivative (paratantra) and rest upon the Veda alone. Treating smrti as an independent authority contradicts the denial.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "svatantra", "of": "smrti"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "smrti_source_empirical",
+      "rendering": "The smritis were framed by learned scholars directly from observation of the world, not from Vedic inference.",
+      "why": "Asserts that smrtis derive from empirical sources rather than from Vedic linga (inferential marks). The commentary explicitly states they are prakalpita on the basis of linga within the Veda itself.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "prakalpita", "from": "smrti", "to": "linga"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "Verse 1.7 establishes the hierarchical epistemology by making smritis derivative from Veda. The relation between prakalpita (framing by vedavids) and asritya (resting upon) captures the dual dependence. The ontology fits: veda as absolute, smrti/linga/prayojana as properties, vedavid as the cognizing power."
+}

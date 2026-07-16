@@ -1,0 +1,143 @@
+{
+  "verse": "1.3",
+  "entities": [
+    {
+      "id": "brahman",
+      "name": "brahman",
+      "sort": "absolute",
+      "cite": "Time enters as a sakti of Brahman, not as an independent container"
+    },
+    {
+      "id": "kalasakti",
+      "name": "kālaśakti",
+      "sort": "power",
+      "cite": "Time enters as a sakti of Brahman, not as an independent container"
+    },
+    {
+      "id": "sad_bhava_vikara",
+      "name": "sad-bhava-vikāra",
+      "sort": "manifestation",
+      "cite": "the six become yoni, wombs, the generative sources of differentiated being"
+    },
+    {
+      "id": "bhava_bheda",
+      "name": "bhāva-bheda",
+      "sort": "manifestation",
+      "cite": "the generative sources of differentiated being"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "kalasakti",
+      "to": "brahman",
+      "cite": "Time enters as a sakti of Brahman, not as an independent container"
+    },
+    {
+      "kind": "relation",
+      "name": "vivartate",
+      "from": "kalasakti",
+      "to": "sad_bhava_vikara",
+      "cite": "Sequence is thus a feature of how the one appears, not of what it is, which is what the vivarta of 1.1 requires"
+    },
+    {
+      "kind": "relation",
+      "name": "yoni",
+      "from": "sad_bhava_vikara",
+      "to": "bhava_bheda",
+      "cite": "the six become yoni, wombs, the generative sources of differentiated being"
+    },
+    {
+      "kind": "predication",
+      "name": "adhyahita",
+      "of": "kalasakti",
+      "cite": "Time in itself is undivided; the partition into moments is laid onto it, not found in it"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "independent_container",
+      "of": "kalasakti",
+      "cite": "Time enters as a sakti of Brahman, not as an independent container"
+    },
+    {
+      "kind": "predication",
+      "name": "intrinsically_divided",
+      "of": "kalasakti",
+      "cite": "Time in itself is undivided; the partition into moments is laid onto it, not found in it"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "vivartate",
+        "from": "kalasakti",
+        "to": "sad_bhava_vikara",
+        "cite": "arise the six modifications beginning with birth"
+      },
+      {
+        "kind": "relation",
+        "name": "yoni",
+        "from": "sad_bhava_vikara",
+        "to": "bhava_bheda",
+        "cite": "these are the wombs of the differentiation of beings"
+      },
+      {
+        "kind": "predication",
+        "name": "adhyahita",
+        "of": "kalasakti",
+        "cite": "on which divisions are superimposed"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "time_as_independent_absolute",
+      "rendering": "Time is an independent absolute power that directly generates the six modifications.",
+      "why": "Treats time as an independent absolute rather than a power (sakti) of Brahman, contradicting the commentary's explicit teaching that time enters as a sakti of Brahman, not as an independent container.",
+      "entities": [
+        {"id": "kalasakti_ind", "name": "kālaśakti", "sort": "absolute"}
+      ],
+      "claims": [
+        {"kind": "predication", "name": "independent_container", "of": "kalasakti_ind"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "intrinsic_temporal_moments",
+      "rendering": "Time itself is inherently divided into moments, and these real moments generate the six modifications.",
+      "why": "Treats time's divisions as intrinsic to its nature rather than superimposed upon it, reversing the commentary's core teaching about adhyahita-kala (divisions laid onto undivided time, not found in it).",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "intrinsically_divided", "of": "kalasakti"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "brahman_direct_transformation",
+      "rendering": "Brahman transforms into the six modifications of being, which then become differentiated beings.",
+      "why": "Asserts that Brahman undergoes real transformation (parinamate) into the six, bypassing the mediation of kalasakti and replacing vivarta (appearance without modification) with parinama (real change). This violates the structure established by the verse's explicit dependence on the power of Time.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "parinamate", "from": "brahman", "to": "sad_bhava_vikara"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "modifications_equal_beings",
+      "rendering": "The six modifications ARE the differentiated beings themselves, not their sources.",
+      "why": "Conflates the yoni (generative sources/wombs) with what is generated from them, eliminating the distinction the commentary carefully preserves between the six modifications (as generative sources) and the differentiated beings that issue from them.",
+      "entities": [
+        {"id": "sad_bhava_vikara_conflated", "name": "sad-bhava-vikāra", "sort": "manifestation"}
+      ],
+      "claims": [
+        {"kind": "identity", "a": "sad_bhava_vikara_conflated", "b": "bhava_bheda"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "Verse 1.3 extends the vivarta doctrine of 1.1 by making Time (as power of Brahman) the explicit medium of differentiation. The six modifications (birth, existence, alteration, growth, decline, perishes from Nirukta) become yoni—not merely changes in a substance, but generative sources of differentiated being. The key formalization is that these are all manifestations (vivarta) that depend on an undivided power whose divisions are superimposed, not intrinsic—maintaining the non-duality while accounting for multiplicity."
+}

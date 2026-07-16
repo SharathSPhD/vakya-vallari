@@ -1,0 +1,138 @@
+{
+  "verse": "1.9",
+  "entities": [
+    {
+      "id": "vidya",
+      "name": "vidyā",
+      "sort": "absolute",
+      "cite": "knowledge alone, reached through the single syllable, joined with the form of the pranava"
+    },
+    {
+      "id": "satya_visuddhi",
+      "name": "satyā viśuddhi",
+      "sort": "manifestation",
+      "cite": "The true purification is declared to be there"
+    },
+    {
+      "id": "aksara",
+      "name": "akṣara",
+      "sort": "absolute",
+      "cite": "the imperishable that is also the phoneme is now the syllable through which purification comes"
+    },
+    {
+      "id": "pranava",
+      "name": "praṇava",
+      "sort": "absolute",
+      "cite": "a single point of convergence: the pranava, Om"
+    },
+    {
+      "id": "vada",
+      "name": "vāda",
+      "sort": "property",
+      "cite": "which contradicts no doctrine"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "identity",
+      "a": "satya_visuddhi",
+      "b": "vidya",
+      "cite": "the syllable through which purification comes"
+    },
+    {
+      "kind": "identity",
+      "a": "aksara",
+      "b": "pranava",
+      "cite": "the imperishable that is also the phoneme is now the syllable through which purification comes"
+    },
+    {
+      "kind": "relation",
+      "name": "sadhana",
+      "from": "aksara",
+      "to": "vidya",
+      "cite": "The phrase eka-pada-agama — arrival by way of one word"
+    },
+    {
+      "kind": "predication",
+      "name": "na_virodhi_vada",
+      "of": "vidya",
+      "cite": "Sarvavadavirodhina, 'not in conflict with any doctrine'"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "pranava",
+      "to": "vada",
+      "cite": "Om contradicts none of them, because it is the base"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "vada",
+      "to": "vada",
+      "cite": "each is built on a partial base"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "identity",
+        "a": "satya_visuddhi",
+        "b": "vidya",
+        "cite": "knowledge alone"
+      },
+      {
+        "kind": "relation",
+        "name": "sadhana",
+        "from": "aksara",
+        "to": "vidya",
+        "cite": "reached through the single syllable"
+      },
+      {
+        "kind": "predication",
+        "name": "na_virodhi_vada",
+        "of": "vidya",
+        "cite": "contradicts no doctrine"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "vidya_as_cognition",
+      "rendering": "Knowledge as a mental cognition is the path to purification through the sacred syllable Om.",
+      "why": "Demotes vidya from the absolute presented in the verse (true purification itself) to a mere cognition, losing the ontological identity. The sort error (cognition vs absolute) breaks the identity claim with satya-visuddhi.",
+      "entities": [
+        {"id": "vidya_cognition", "name": "vidyā", "sort": "cognition"}
+      ],
+      "claims": [
+        {"kind": "identity", "a": "satya_visuddhi", "b": "vidya_cognition"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "pranava_as_linguistic_device",
+      "rendering": "The sacred syllable Om is a linguistic tool that makes different doctrines compatible with each other.",
+      "why": "Reduces pranava to a mere linguistic property or accommodating tool, missing the commentary's key claim that Om contradicts no doctrine BECAUSE it is the base underneath all systems. Being a base is ontologically different from being a tool.",
+      "entities": [
+        {"id": "pranava_device", "name": "praṇava", "sort": "linguisticItem"}
+      ],
+      "claims": [
+        {"kind": "identity", "a": "aksara", "b": "pranava_device"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "doktrines_independently_founded",
+      "rendering": "Each philosophical doctrine has its own foundation and the syllable Om merely echoes truths found in each.",
+      "why": "Contradicts the relation asraya (pranava as the single base). The commentary states rival doctrines contradict because each is built on a partial base, but Om is THE base—not a derivative harmony.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "asraya", "from": "vada", "to": "vada"}
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "The verse claims that true purification (satya-visuddhi) is knowledge (vidya) achieved through the singular syllable (aksara), which is identical to the pranava (Om) that serves as the base (asraya) of all doctrines without contradicting any. The contested reading of vidya eva (knowledge alone vs. knowledge itself) is noted in the commentary but not formalized as a denial since the verse's grammatical exclusivity is encoded in the primary claims. The circle closes to 1.1: the imperishable (aksara) is both absolute and syllabic."
+}

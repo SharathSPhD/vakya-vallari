@@ -1,0 +1,160 @@
+{
+  "verse": "1.8",
+  "entities": [
+    {
+      "id": "arthavada",
+      "name": "arthavāda",
+      "sort": "linguisticItem",
+      "cite": "Arthavada is the Mimamsa category for the Veda's non-injunctive passages, the explanatory or laudatory material that does not directly command action"
+    },
+    {
+      "id": "vidhi",
+      "name": "vidhi",
+      "sort": "linguisticItem",
+      "cite": "injunctive passages of the Veda that directly command action"
+    },
+    {
+      "id": "ekatva_pravada",
+      "name": "ekativā-pravāda",
+      "sort": "cognition",
+      "cite": "the rival philosophical systems — ekatvin and dvaitin, those who hold for one and those who hold for two"
+    },
+    {
+      "id": "dvaita_pravada",
+      "name": "dvaitā-pravāda",
+      "sort": "cognition",
+      "cite": "the rival philosophical systems — ekatvin and dvaitin, those who hold for one and those who hold for two"
+    },
+    {
+      "id": "vikalpa",
+      "name": "vikalpa",
+      "sort": "cognition",
+      "cite": "conceptual construction, their own vikalpa, their own conceptual construction"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "niśrita",
+      "from": "ekatva_pravada",
+      "to": "arthavada",
+      "cite": "take their stand on precisely these portions"
+    },
+    {
+      "kind": "relation",
+      "name": "niśrita",
+      "from": "dvaita_pravada",
+      "to": "arthavada",
+      "cite": "take their stand on precisely these portions"
+    },
+    {
+      "kind": "relation",
+      "name": "nikalpaja",
+      "from": "ekatva_pravada",
+      "to": "vikalpa",
+      "cite": "born of their own vikalpa, their own conceptual construction"
+    },
+    {
+      "kind": "relation",
+      "name": "nikalpaja",
+      "from": "dvaita_pravada",
+      "to": "vikalpa",
+      "cite": "born of their own vikalpa, their own conceptual construction"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "niśrita",
+      "from": "ekatva_pravada",
+      "to": "vidhi",
+      "cite": "the explanatory or laudatory material that does not directly command action"
+    },
+    {
+      "kind": "relation",
+      "name": "niśrita",
+      "from": "dvaita_pravada",
+      "to": "vidhi",
+      "cite": "the explanatory or laudatory material that does not directly command action"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "niśrita",
+        "from": "ekatva_pravada",
+        "to": "arthavada",
+        "cite": "Resting on its arthavada portions"
+      },
+      {
+        "kind": "relation",
+        "name": "niśrita",
+        "from": "dvaita_pravada",
+        "to": "arthavada",
+        "cite": "the manifold doctrines of the monists and the dualists are held — arising from their own conceptual constructions"
+      },
+      {
+        "kind": "relation",
+        "name": "nikalpaja",
+        "from": "ekatva_pravada",
+        "to": "vikalpa",
+        "cite": "arising from their own conceptual constructions"
+      },
+      {
+        "kind": "relation",
+        "name": "nikalpaja",
+        "from": "dvaita_pravada",
+        "to": "vikalpa",
+        "cite": "arising from their own conceptual constructions"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "injunctive_foundation",
+      "rendering": "The monist and dualist doctrines rest on the injunctive commands of the Veda.",
+      "why": "Misidentifies the foundation as vidhi (injunctive portions) when the verse explicitly states it is arthavada (non-injunctive explanatory material). This category error undermines the commentary's key point: that ambiguous non-injunctive material permits multiple constructions.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "niśrita", "from": "ekatva_pravada", "to": "vidhi"},
+        {"kind": "relation", "name": "niśrita", "from": "dvaita_pravada", "to": "vidhi"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "unified_doctrine",
+      "rendering": "The monist and dualist doctrines converge on a single underlying truth derived from the Veda.",
+      "why": "Ignores the verse's emphasis on manifold (bahudhā) conflicting doctrines arising from their own differing constructions (svavikalpajāh). The commentary explicitly notes they 'multiply and conflict' precisely because they rest on non-injunctive ambiguous material.",
+      "entities": [
+        {
+          "id": "unified_pravada",
+          "name": "ekā pravāda",
+          "sort": "cognition"
+        }
+      ],
+      "claims": [
+        {"kind": "identity", "a": "ekatva_pravada", "b": "unified_pravada"},
+        {"kind": "identity", "a": "dvaita_pravada", "b": "unified_pravada"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "revealed_not_constructed",
+      "rendering": "The monist and dualist doctrines are directly revealed by Vedic knowledge, not mental constructions.",
+      "why": "Contradicts the explicit statement that they are svavikalpajāh (born from their own conceptual constructions). The verse places the doctrines squarely in the domain of vikalpa (conceptual elaboration), not revelation.",
+      "entities": [
+        {
+          "id": "revelation",
+          "name": "śruti",
+          "sort": "cognition"
+        }
+      ],
+      "claims": [
+        {"kind": "relation", "name": "nikalpaja", "from": "ekatva_pravada", "to": "revelation"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "Verse 1.8 emphasizes the constructive basis of rival philosophical systems: monism and dualism build their doctrines on non-injunctive, explanatory Vedic material (arthavada) through their own conceptual elaborations (vikalpa), leading to manifold and conflicting positions. The contract models the asymmetry between arthavada (non-injunctive foundation) and vidhi (injunctive knowledge), capturing Bhartrhari's deflationary placement of philosophical disagreement: not because one side is false, but because both construct from an inherently ambiguous base. The relation 'nikalpaja' (born from construction) and 'niśrita' (resting on) express the core mechanism of doctrinal multiplicity."
+}

@@ -1,0 +1,163 @@
+{
+  "verse": "1.4",
+  "entities": [
+    {
+      "id": "brahman",
+      "name": "brahman",
+      "sort": "absolute",
+      "cite": "The one seed does not divide into three parts"
+    },
+    {
+      "id": "bhoktr",
+      "name": "bhoktṛ",
+      "sort": "manifestation",
+      "cite": "The triad is subject, object, and act: bhoktr, bhoktavya, bhoga"
+    },
+    {
+      "id": "bhoktavya",
+      "name": "bhoktavya",
+      "sort": "manifestation",
+      "cite": "The triad is subject, object, and act: bhoktr, bhoktavya, bhoga"
+    },
+    {
+      "id": "bhoga",
+      "name": "bhoga",
+      "sort": "manifestation",
+      "cite": "The triad is subject, object, and act: bhoktr, bhoktavya, bhoga"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "eka",
+      "of": "brahman",
+      "cite": "The one seed does not divide into three parts; it stands in three modes"
+    },
+    {
+      "kind": "relation",
+      "name": "sthiti",
+      "from": "brahman",
+      "to": "bhoktr",
+      "cite": "its sthiti — its abiding, its standing-as — simply is them"
+    },
+    {
+      "kind": "relation",
+      "name": "sthiti",
+      "from": "brahman",
+      "to": "bhoktavya",
+      "cite": "its sthiti — its abiding, its standing-as — simply is them"
+    },
+    {
+      "kind": "relation",
+      "name": "sthiti",
+      "from": "brahman",
+      "to": "bhoga",
+      "cite": "its sthiti — its abiding, its standing-as — simply is them"
+    },
+    {
+      "kind": "predication",
+      "name": "sakti",
+      "of": "bhoktr",
+      "cite": "experiencer and experienced are powers"
+    },
+    {
+      "kind": "predication",
+      "name": "sakti",
+      "of": "bhoktavya",
+      "cite": "experiencer and experienced are powers"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "parinama",
+      "from": "brahman",
+      "to": "bhoktr",
+      "cite": "Bhartrhari's claim is not that Brahman produces these three"
+    },
+    {
+      "kind": "relation",
+      "name": "parinama",
+      "from": "brahman",
+      "to": "bhoktavya",
+      "cite": "Bhartrhari's claim is not that Brahman produces these three"
+    },
+    {
+      "kind": "relation",
+      "name": "parinama",
+      "from": "brahman",
+      "to": "bhoga",
+      "cite": "Bhartrhari's claim is not that Brahman produces these three"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "eka",
+        "of": "brahman",
+        "cite": "It is one"
+      },
+      {
+        "kind": "relation",
+        "name": "sthiti",
+        "from": "brahman",
+        "to": "bhoktr",
+        "cite": "in the form of the experiencer"
+      },
+      {
+        "kind": "relation",
+        "name": "sthiti",
+        "from": "brahman",
+        "to": "bhoktavya",
+        "cite": "in the form of what is to be experienced"
+      },
+      {
+        "kind": "relation",
+        "name": "sthiti",
+        "from": "brahman",
+        "to": "bhoga",
+        "cite": "in the form of the experiencing"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "brahman_produces_three",
+      "rendering": "Brahman creates and produces the three forms of experiencer, experienced, and experiencing as separate entities.",
+      "why": "Asserts parinama (real transformation or production) between brahman and the three, which the commentary explicitly denies: 'Bhartrhari's claim is not that Brahman produces these three but that its sthiti — its abiding, its standing-as — simply is them.' The three are not products but constitute brahman's very standing-as, not the result of transformation.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "parinama",
+          "from": "brahman",
+          "to": "bhoktr"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "three_as_properties",
+      "rendering": "The experiencer, experienced, and experiencing are merely attributes or properties of brahman, not actual modes of its being.",
+      "why": "Treats the three as properties (sort: property) rather than as manifestations (sort: manifestation). This demotes their ontological status. The commentary emphasizes that the three ARE the sthiti of brahman—its actual standing-as—not mere descriptive properties of it. The sort error breaks the axiom.",
+      "entities": [
+        {
+          "id": "bhoktr_property",
+          "name": "bhoktṛ (property)",
+          "sort": "property"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "sthiti",
+          "from": "brahman",
+          "to": "bhoktr_property"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The contract formalizes the triad doctrine at the heart of 1.4: brahman (undivided absolute) stands in three manifestation-forms (bhoktṛ, bhoktavya, bhoga) without division or transformation. These are powers appearing differentiated yet remaining unified in their single source. The doctrine avoids rigid monism and false dualism alike."
+}

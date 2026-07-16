@@ -1,0 +1,134 @@
+{
+  "verse": "1.6",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "śabdānāṃ yataśaktitvaṃ tasya śākhāsu dṛśyate"
+    },
+    {
+      "id": "sakti",
+      "name": "śakti",
+      "sort": "power",
+      "cite": "The third item, on the power of words, is the one that matters for his own project"
+    },
+    {
+      "id": "yatasakti",
+      "name": "yataśakti",
+      "sort": "power",
+      "cite": "read as yata- ('restrained, fixed') it yields the determinate or fixed power of words"
+    },
+    {
+      "id": "bheda",
+      "name": "bheda",
+      "sort": "manifestation",
+      "cite": "bhedānāṃ bahumārgatvaṃ karmaṇyekatra cāṅgatā"
+    },
+    {
+      "id": "karma",
+      "name": "karma",
+      "sort": "absolute",
+      "cite": "karmaṇyekatra cāṅgatā"
+    },
+    {
+      "id": "saakha",
+      "name": "śākhā",
+      "sort": "linguisticItem",
+      "cite": "tasya śākhāsu dṛśyate"
+    },
+    {
+      "id": "angata",
+      "name": "āṅgatā",
+      "sort": "property",
+      "cite": "Angata is the technical Mimamsa relation of subordination — a subsidiary element standing to a principal rite"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "asti_sakti",
+      "of": "sabda",
+      "cite": "The third item, on the power of words, is the one that matters for his own project"
+    },
+    {
+      "kind": "identity",
+      "a": "sakti",
+      "b": "yatasakti",
+      "cite": "read as yata- ('restrained, fixed') it yields the determinate or fixed power of words"
+    },
+    {
+      "kind": "predication",
+      "name": "drsyate_in_saakha",
+      "of": "yatasakti",
+      "cite": "cataloguing what the recensions display"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "aniyata",
+      "of": "sakti",
+      "cite": "the compound is awkward and the line resists a confident construal on the karika alone"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "asti_sakti",
+        "of": "sabda",
+        "cite": "the determinate power of words"
+      },
+      {
+        "kind": "identity",
+        "a": "sakti",
+        "b": "yatasakti",
+        "cite": "the determinate power of words"
+      },
+      {
+        "kind": "predication",
+        "name": "drsyate_in_saakha",
+        "of": "yatasakti",
+        "cite": "In its branches are seen"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "indeterminate_power",
+      "rendering": "Words possess an indeterminate and variable power that manifests differently across ritual traditions.",
+      "why": "The verse and commentary emphasize yata-saktitvam as determinate and fixed, not variable. This reading contradicts the core assertion that power is restrained and fixed.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "aniyata",
+          "of": "sakti"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "power_as_property",
+      "rendering": "Words have a variable property that depends on context rather than an intrinsic determinate power.",
+      "why": "Demotes the power of words to a contextual property. The axiom licenses sakti (sort=power) as identical with yatasakti, but this mistaken reading treats sakti as a mere property, creating a sort mismatch that leaves the identity unlicensed.",
+      "entities": [
+        {
+          "id": "sakti_property",
+          "name": "śakti",
+          "sort": "property"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "identity",
+          "a": "sakti_property",
+          "b": "yatasakti"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "Verse 1.6 is metacommentary on textual recensions, asserting that observation of ritual and textual variants reveals the determinate power of words. The 'angata' relation provides a Mimamsa context but is not the focus of the formalization; the core claim is that words possess yata-sakti (determinate power), demonstrable across traditions."
+}

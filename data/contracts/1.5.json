@@ -1,0 +1,110 @@
+{
+  "verse": "1.5",
+  "entities": [
+    {
+      "id": "brahman",
+      "name": "brahman",
+      "sort": "absolute",
+      "cite": "If Brahman is word-essence"
+    },
+    {
+      "id": "veda",
+      "name": "veda",
+      "sort": "linguisticItem",
+      "cite": "The Veda is the means of reaching Brahman"
+    },
+    {
+      "id": "sakha",
+      "name": "śākhā",
+      "sort": "manifestation",
+      "cite": "The plurality of sakhas is phenomenal"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "upaya",
+      "from": "veda",
+      "to": "brahman",
+      "cite": "The Veda is the means of reaching Brahman"
+    },
+    {
+      "kind": "relation",
+      "name": "anukara",
+      "from": "veda",
+      "to": "brahman",
+      "cite": "it is also anukara, a likeness or imitation of it"
+    },
+    {
+      "kind": "predication",
+      "name": "eka",
+      "of": "veda",
+      "cite": "if the Veda is one"
+    },
+    {
+      "kind": "relation",
+      "name": "vivartate",
+      "from": "veda",
+      "to": "sakha",
+      "cite": "The plurality of sakhas is phenomenal, like the plurality of saktis"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "parinamate",
+      "from": "veda",
+      "to": "sakha",
+      "cite": "The plurality of sakhas is phenomenal, like the plurality of saktis"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "upaya",
+        "from": "veda",
+        "to": "brahman",
+        "cite": "the means of attaining it"
+      },
+      {
+        "kind": "relation",
+        "name": "anukara",
+        "from": "veda",
+        "to": "brahman",
+        "cite": "its likeness"
+      },
+      {
+        "kind": "predication",
+        "name": "eka",
+        "of": "veda",
+        "cite": "though one"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "veda_as_instructions_only",
+      "rendering": "The Veda serves only as an instrument to reach Brahman, not as Brahman itself.",
+      "why": "Treats veda as purely instrumental by degrading Brahman from absolute reality (word-essence) to a mere external goal (property). This severs the anukara (likeness) dimension; the commentary insists the Veda IS 'the goal in linguistic image', not merely a pointer to it. The claim upaya(veda, brahman-as-goal) is unlicensed: axioms sanction such relations only to brahman-as-absolute.",
+      "entities": [
+        {"id": "brahman_goal", "name": "brahman", "sort": "property"}
+      ],
+      "claims": [
+        {"kind": "relation", "name": "upaya", "from": "veda", "to": "brahman_goal"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "sakhas_as_real_plurality",
+      "rendering": "The Veda genuinely exists as many distinct recensions rather than one appearing as many.",
+      "why": "Treats sakhas as satya (real multiplicity), contradicting the commentary's explicit claim that their plurality is phenomenal, like the plurality of saktis.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "parinamate", "from": "veda", "to": "sakha"}
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "The verse's core tension lies in upaya and anukara—two apparently distinct roles (means and likeness). The commentary resolves this through a non-dual reading: the Veda as a means to Brahman is continuous with attaining it because the Veda is Brahman's linguistic image. The sakhas parallel the saktis: both appear as multiplicities but are phenomenal manifestations of a unitary underlying reality."
+}
