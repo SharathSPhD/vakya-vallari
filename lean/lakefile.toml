@@ -1,0 +1,6 @@
+name = "VakyaVallari"
+version = "0.1.0"
+defaultTargets = ["VakyaVallari"]
+
+[[lean_lib]]
+name = "VakyaVallari"

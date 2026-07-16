@@ -1,0 +1,32 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  corpus:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - name: Run corpus and contract tests
+        run: uv run pytest -q
+
+  lean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install elan
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Build Lean kernel
+        working-directory: lean
+        run: lake build
+      - name: Zero-sorry gate
+        run: |
+          if grep -rnE '\b(sorry|admit)\b' lean/VakyaVallari lean/VakyaVallari.lean; then
+            echo "sorry/admit found — verification gate failed" >&2
+            exit 1
+          fi

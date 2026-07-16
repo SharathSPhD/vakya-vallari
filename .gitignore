@@ -1,0 +1,22 @@
+# AppleDouble / macOS / SMB litter
+._*
+.DS_Store
+.smbdelete*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.egg-info/
+dist/
+
+# Lean
+lean/.lake/
+
+# Site build output
+site/dist/
+
+# Scratch
+*.log
+!docs/build/fetch.log
