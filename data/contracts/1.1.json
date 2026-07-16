@@ -1,0 +1,113 @@
+{
+  "verse": "1.1",
+  "entities": [
+    {
+      "id": "brahman",
+      "name": "brahman",
+      "sort": "absolute",
+      "cite": "The opening karika states the sabdadvaita thesis in a single breath"
+    },
+    {
+      "id": "sabdatattva",
+      "name": "śabdatattva",
+      "sort": "absolute",
+      "cite": "the ultimate is not merely describable by language but is language — sabda-tattva, word-essence"
+    },
+    {
+      "id": "jagat",
+      "name": "jagat",
+      "sort": "manifestation",
+      "cite": "The world issues from Brahman the way a word-form issues from its base"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "identity",
+      "a": "sabdatattva",
+      "b": "brahman",
+      "cite": "the ultimate is not merely describable by language but is language — sabda-tattva, word-essence"
+    },
+    {
+      "kind": "relation",
+      "name": "vivartate",
+      "from": "brahman",
+      "to": "jagat",
+      "cite": "Vivarta is appearance without loss of unity: the one presents itself as many while remaining one"
+    },
+    {
+      "kind": "predication",
+      "name": "anadinidhana",
+      "of": "brahman",
+      "cite": "its plain sense is 'imperishable', which is why it sits naturally beside anadinidhana, 'without beginning or end'"
+    },
+    {
+      "kind": "predication",
+      "name": "aksara",
+      "of": "brahman",
+      "cite": "What is imperishable and what is phonic are, for him, the same thing"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "parinamate",
+      "from": "brahman",
+      "to": "jagat",
+      "cite": "Bhartrhari does not say Brahman becomes the world (parinamate), which would make the world a real transformation of its substance"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "identity",
+        "a": "sabdatattva",
+        "b": "brahman",
+        "cite": "its essence is the Word"
+      },
+      {
+        "kind": "predication",
+        "name": "anadinidhana",
+        "of": "brahman",
+        "cite": "without beginning or end"
+      },
+      {
+        "kind": "predication",
+        "name": "aksara",
+        "of": "brahman",
+        "cite": "imperishable"
+      },
+      {
+        "kind": "relation",
+        "name": "vivartate",
+        "from": "brahman",
+        "to": "jagat",
+        "cite": "It appears in the mode of objects"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "naive_linguistic_structure",
+      "rendering": "The imperishable linguistic structure underlying words has no beginning or end.",
+      "why": "Renders śabdatattva as a mere linguistic property, demoting the ontological identity the commentary insists on: the ultimate IS language, not something described by it. The sort error (property vs absolute) makes the identity claim decidably false.",
+      "entities": [
+        {"id": "sabdatattva_naive", "name": "śabdatattva", "sort": "property"}
+      ],
+      "claims": [
+        {"kind": "identity", "a": "sabdatattva_naive", "b": "brahman"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "parinama_transformation",
+      "rendering": "Brahman transforms itself into the world of objects.",
+      "why": "Asserts a real transformation (parinama) of Brahman's substance, which the commentary explicitly rules out in favor of vivarta (appearance without loss of unity).",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "parinamate", "from": "brahman", "to": "jagat"}
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "Contested: whether vivarta already carries the later Advaitic sense of illusory appearance is disputed; the contract deliberately encodes only the weaker commitment (manifestation) shared by both readings."
+}

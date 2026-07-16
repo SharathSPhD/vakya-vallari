@@ -41,4 +41,24 @@ def Adequate.check (axioms : List Claim) (r : Reading) : Bool :=
 instance : Decidable (Adequate axioms r) := by
   unfold Adequate; infer_instance
 
+/-- A verse contract: claims the commentary licenses, and claims it
+    explicitly rules out. A reading failing `licenses` is *unlicensed*;
+    one hitting `denials` is *contradicted* — a stronger defect. -/
+structure Contract where
+  axioms : List Claim
+  denials : List Claim
+deriving Repr
+
+def Contract.licenses (k : Contract) (r : Reading) : Bool :=
+  r.claims.all (entails k.axioms)
+
+def Contract.contradicts (k : Contract) (r : Reading) : Bool :=
+  r.claims.any (k.denials.contains ·)
+
+def Contract.Adequate (k : Contract) (r : Reading) : Prop :=
+  k.licenses r = true ∧ k.contradicts r = false
+
+instance : Decidable (Contract.Adequate k r) := by
+  unfold Contract.Adequate; infer_instance
+
 end VakyaVallari

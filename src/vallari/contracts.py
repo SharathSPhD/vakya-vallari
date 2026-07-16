@@ -1,0 +1,93 @@
+"""Load and validate semantic contracts against the corpus.
+
+A contract states the formalizable core of one verse's commentary. It is
+admissible only if traceable: axiom/denial cites must occur verbatim in the
+verse's commentary (or contested note); accepted-reading claim cites must
+occur verbatim in the verse's translation. Validation returns a list of
+error strings — empty means admissible.
+"""
+
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+SORTS = {"absolute", "power", "manifestation", "linguisticItem", "property", "cognition"}
+CLAIM_KINDS = {"identity", "predication", "relation"}
+
+
+def load_contract(path: Path) -> dict:
+    return json.loads(path.read_text())
+
+
+def _claim_errors(claim: dict, where: str, entity_ids: set[str]) -> list[str]:
+    errors = []
+    kind = claim.get("kind")
+    if kind not in CLAIM_KINDS:
+        errors.append(f"{where}: bad claim kind {kind!r}")
+        return errors
+    refs = {
+        "identity": ("a", "b"),
+        "predication": ("of",),
+        "relation": ("from", "to"),
+    }[kind]
+    for field in refs:
+        ref = claim.get(field)
+        if ref not in entity_ids:
+            errors.append(f"{where}: unknown entity {ref!r}")
+    if kind in ("predication", "relation") and not claim.get("name"):
+        errors.append(f"{where}: missing name")
+    return errors
+
+
+def validate_contract(contract: dict, verse_record: dict) -> list[str]:
+    errors: list[str] = []
+    if contract.get("verse") != verse_record["id"]:
+        errors.append("verse id mismatch with corpus record")
+
+    entities = contract.get("entities", [])
+    entity_ids = {e.get("id") for e in entities}
+    for e in entities:
+        if e.get("sort") not in SORTS:
+            errors.append(f"entity {e.get('id')!r}: bad sort {e.get('sort')!r}")
+        if not e.get("id", "").isidentifier():
+            errors.append(f"entity id {e.get('id')!r} is not a valid identifier")
+
+    commentary_text = verse_record["commentary"] + "\n" + (
+        verse_record.get("contested") or ""
+    )
+    for i, ax in enumerate(contract.get("axioms", []) + contract.get("denials", [])):
+        where = f"axiom/denial[{i}]"
+        errors += _claim_errors(ax, where, entity_ids)
+        cite = ax.get("cite", "")
+        if not cite.strip():
+            errors.append(f"{where}: missing cite")
+        elif cite not in commentary_text:
+            errors.append(f"{where}: cite not found verbatim in commentary: {cite[:60]!r}")
+
+    accepted = contract.get("accepted_reading", {})
+    for i, cl in enumerate(accepted.get("claims", [])):
+        where = f"accepted_reading.claims[{i}]"
+        errors += _claim_errors(cl, where, entity_ids)
+        cite = cl.get("cite", "")
+        if not cite.strip():
+            errors.append(f"{where}: missing cite")
+        elif cite not in verse_record["translation"]:
+            errors.append(f"{where}: cite not found verbatim in translation: {cite[:60]!r}")
+
+    for rej in contract.get("rejected_readings", []):
+        label = rej.get("label", "?")
+        if not label.isidentifier():
+            errors.append(f"rejected reading label {label!r} is not a valid identifier")
+        if not rej.get("why", "").strip():
+            errors.append(f"rejected reading {label}: missing why")
+        if not rej.get("rendering", "").strip():
+            errors.append(f"rejected reading {label}: missing rendering")
+        local_ids = entity_ids | {e.get("id") for e in rej.get("entities", [])}
+        for e in rej.get("entities", []):
+            if e.get("sort") not in SORTS:
+                errors.append(f"rejected {label}: bad sort {e.get('sort')!r}")
+        for i, cl in enumerate(rej.get("claims", [])):
+            errors += _claim_errors(cl, f"rejected {label}.claims[{i}]", local_ids)
+
+    return errors

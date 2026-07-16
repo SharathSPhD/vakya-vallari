@@ -60,4 +60,20 @@ def badReading : Reading :=
 theorem good_is_adequate : Adequate axioms goodReading := by decide
 theorem bad_is_not_adequate : ¬ Adequate axioms badReading := by decide
 
+/- Contracts distinguish claims that are merely UNLICENSED (not entailed)
+   from claims the commentary explicitly CONTRADICTS (denials). -/
+def contract : Contract :=
+  { axioms := axioms
+  , denials := [ Claim.relation "parinamate" (Node.ent brahman) (Node.ent jagat) ] }
+
+def parinamaReading : Reading :=
+  { claims := [ Claim.relation "parinamate" (Node.ent brahman) (Node.ent jagat) ] }
+
+#guard contract.licenses goodReading = true
+#guard contract.contradicts goodReading = false
+#guard contract.contradicts parinamaReading = true
+
+theorem good_contract_adequate : contract.Adequate goodReading := by decide
+theorem parinama_contradicted : ¬ contract.Adequate parinamaReading := by decide
+
 end VakyaVallari.Tests
