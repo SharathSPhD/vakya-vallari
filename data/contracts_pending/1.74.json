@@ -1,0 +1,129 @@
+{
+  "verse": "1.74",
+  "entities": [
+    {
+      "id": "vyavahara",
+      "name": "vyavahāra",
+      "sort": "linguisticItem",
+      "cite": "Vyavahara, the working practice of grammar and speech"
+    },
+    {
+      "id": "darsana",
+      "name": "darśana",
+      "sort": "linguisticItem",
+      "cite": "on either darsana: one school takes the parts as mukhya, primary, and constructs wholes; the other takes the whole as primary and extracts parts"
+    },
+    {
+      "id": "avayava",
+      "name": "avayava",
+      "sort": "linguisticItem",
+      "cite": "one school takes the parts as mukhya, primary"
+    },
+    {
+      "id": "avayavi",
+      "name": "avayavī",
+      "sort": "linguisticItem",
+      "cite": "the other takes the whole as primary"
+    },
+    {
+      "id": "mukhya",
+      "name": "mukhya",
+      "sort": "property",
+      "cite": "what is primary for some is for others the reverse"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "anugamyate",
+      "from": "vyavahara",
+      "to": "darsana",
+      "cite": "Vyavahara, the working practice of grammar and speech, anugamyate, proceeds, on either darsana"
+    },
+    {
+      "kind": "predication",
+      "name": "mukhya",
+      "of": "avayava",
+      "cite": "one school takes the parts as mukhya, primary, and constructs wholes"
+    },
+    {
+      "kind": "predication",
+      "name": "mukhya",
+      "of": "avayavi",
+      "cite": "the other takes the whole as primary and extracts parts"
+    },
+    {
+      "kind": "relation",
+      "name": "viparyaya",
+      "from": "avayava",
+      "to": "avayavi",
+      "cite": "one school takes the parts as mukhya, primary, and constructs wholes; the other takes the whole as primary and extracts parts"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "nirniyate",
+      "from": "darsana",
+      "to": "vyavahara",
+      "cite": "the choice between part-primacy and whole-primacy will not be settled by grammatical data, which both fit"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "anugamyate",
+        "from": "vyavahara",
+        "to": "darsana",
+        "cite": "Practice is carried on by resort to differing views"
+      },
+      {
+        "kind": "predication",
+        "name": "mukhya",
+        "of": "avayava",
+        "cite": "what is primary for some"
+      },
+      {
+        "kind": "predication",
+        "name": "mukhya",
+        "of": "avayavi",
+        "cite": "what is primary for some"
+      },
+      {
+        "kind": "relation",
+        "name": "viparyaya",
+        "from": "avayava",
+        "to": "avayavi",
+        "cite": "is for others the reverse"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "exclusive_part_primacy",
+      "rendering": "The parts are the only primary elements in grammatical analysis; the whole is always secondary and derived from parts alone.",
+      "why": "Asserts exclusive part-primacy (a stronger claim than the axioms allow), wrongly denying that the whole can also be mukhya. The commentary explicitly states both schools are valid: one takes parts as mukhya, the other takes wholes as mukhya.",
+      "entities": [
+        {"id": "avayavi_secondary", "name": "avayavī (secondary)", "sort": "property"}
+      ],
+      "claims": [
+        {"kind": "predication", "name": "mukhya", "of": "avayavi_secondary"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "mutual_refutation",
+      "rendering": "The two schools of thought refute each other, making practice impossible since the views directly contradict.",
+      "why": "Wrongly asserts contradiction between the darsanas, contradicting the axiom that vyavahara anugamyate darsana (practice proceeds on either darsana equally). The commentary shows both can run the entire practice; viparyaya is a reversal of priority, not mutual refutation.",
+      "entities": [
+        {"id": "mutual_refutation_prop", "name": "mutual refutation", "sort": "property"}
+      ],
+      "claims": [
+        {"kind": "predication", "name": "mutual_refutation_prop", "of": "darsana"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The contract models two rival darsanas: one takes parts (avayava) as mukhya, the other the whole (avayavi). Both are viable for running grammatical practice (vyavahara). The viparyaya relation captures the reversal of priority between them. The denial registers that this philosophical difference cannot be settled by grammatical data alone—practice underdetermines metaphysics."
+}

@@ -1,0 +1,145 @@
+{
+  "verse": "1.70",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "Whether they are produced or eternal"
+    },
+    {
+      "id": "sphota",
+      "name": "sphota",
+      "sort": "linguisticItem",
+      "cite": "is the word one partless entity variously manifested"
+    },
+    {
+      "id": "phoneme",
+      "name": "phoneme",
+      "sort": "linguisticItem",
+      "cite": "a plurality (of phonemes, of tokens)"
+    },
+    {
+      "id": "ekatvavada",
+      "name": "ekatvavāda",
+      "sort": "power",
+      "cite": "The unity in question is the one the sphota doctrine asserts"
+    },
+    {
+      "id": "nanatvavada",
+      "name": "nānātvavāda",
+      "sort": "power",
+      "cite": "or a plurality (of phonemes, of tokens)"
+    },
+    {
+      "id": "karyatva",
+      "name": "kāryatva",
+      "sort": "property",
+      "cite": "produced"
+    },
+    {
+      "id": "nityata",
+      "name": "nityatā",
+      "sort": "property",
+      "cite": "eternal"
+    },
+    {
+      "id": "cognition",
+      "name": "buddhi",
+      "sort": "cognition",
+      "cite": "unified only in cognition"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "asti",
+      "of": "ekatvavada",
+      "cite": "unity-theorists and plurality-theorists exist on both sides of the eternality dispute"
+    },
+    {
+      "kind": "predication",
+      "name": "asti",
+      "of": "nanatvavada",
+      "cite": "unity-theorists and plurality-theorists exist on both sides of the eternality dispute"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "ekatvavada",
+      "to": "sphota",
+      "cite": "The unity in question is the one the sphota doctrine asserts: is the word one partless entity variously manifested"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "nanatvavada",
+      "to": "phoneme",
+      "cite": "or a plurality (of phonemes, of tokens)"
+    }
+  ],
+  "denials": [],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "asti",
+        "of": "ekatvavada",
+        "cite": "some are proponents of unity"
+      },
+      {
+        "kind": "predication",
+        "name": "asti",
+        "of": "nanatvavada",
+        "cite": "some are proponents of plurality"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "ekatvavada",
+        "to": "sphota",
+        "cite": "some are proponents of unity"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "nanatvavada",
+        "to": "phoneme",
+        "cite": "some are proponents of plurality"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "necessary_eternality",
+      "rendering": "Any proponent of unity necessarily holds that words are eternal.",
+      "why": "Assumes a required link between unity and eternality, violating the orthogonality that the verse establishes through repetition and the commentary confirms: 'unity-theorists and plurality-theorists exist on both sides of the eternality dispute.'",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "avasrayate",
+          "from": "ekatvavada",
+          "to": "nityata"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "production_requires_plurality",
+      "rendering": "A word that is produced cannot be one unified entity.",
+      "why": "Falsely links production to plurality, collapsing the two independent questions. Theorists of unity exist on both sides of the eternality/production divide, so production does not entail plurality.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "avasrayate",
+          "from": "karyatva",
+          "to": "nanatvavada"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "Verse 1.70 establishes a two-dimensional doxographic space. The commentary's repeated emphasis on orthogonality is the key: the eternality question and the unity question must be settled independently, with both positions represented on both sides of the eternality divide. The contract encodes this structural insight while remaining neutral on which position Bhartrhari ultimately favors."
+}

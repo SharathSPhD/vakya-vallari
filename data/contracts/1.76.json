@@ -1,0 +1,136 @@
+{
+ "verse": "1.76",
+ "entities": [
+  {
+   "id": "sphota",
+   "name": "sphota",
+   "sort": "linguisticItem",
+   "cite": "Yet the eternal word itself has no duration"
+  },
+  {
+   "id": "prakrta_dhvani",
+   "name": "prākṛta-dhvani",
+   "sort": "manifestation",
+   "cite": "the time of the primary sound"
+  },
+  {
+   "id": "kala",
+   "name": "kāla",
+   "sort": "property",
+   "cite": "the time of the primary sound"
+  },
+  {
+   "id": "vowel_quantity",
+   "name": "vowel quantity",
+   "sort": "property",
+   "cite": "Vowel quantity — hrasva, dirgha, pluta — is linguistically contrastive"
+  }
+ ],
+ "axioms": [
+  {
+   "kind": "predication",
+   "name": "nityatva",
+   "of": "sphota",
+   "cite": "Yet the eternal word itself has no duration"
+  },
+  {
+   "kind": "relation",
+   "name": "asraya",
+   "from": "prakrta_dhvani",
+   "to": "kala",
+   "cite": "the kala belongs to the prakrta dhvani"
+  },
+  {
+   "kind": "relation",
+   "name": "asraya",
+   "from": "prakrta_dhvani",
+   "to": "vowel_quantity",
+   "cite": "it is a property of the manifesting pattern"
+  },
+  {
+   "kind": "relation",
+   "name": "upacaryate",
+   "from": "kala",
+   "to": "sphota",
+   "cite": "is upacaryate — transferred, predicated figuratively — of the word"
+  },
+  {
+   "kind": "predication",
+   "name": "contrastive",
+   "of": "vowel_quantity",
+   "cite": "Vowel quantity — hrasva, dirgha, pluta — is linguistically contrastive"
+  }
+ ],
+ "denials": [
+  {
+   "kind": "relation",
+   "name": "asraya",
+   "from": "sphota",
+   "to": "vowel_quantity",
+   "cite": "it is a property of the manifesting pattern, not of the manifested sphota"
+  },
+  {
+   "kind": "relation",
+   "name": "asraya",
+   "from": "sphota",
+   "to": "kala",
+   "cite": "the kala belongs to the prakrta dhvani"
+  }
+ ],
+ "accepted_reading": {
+  "claims": [
+   {
+    "kind": "predication",
+    "name": "nityatva",
+    "of": "sphota",
+    "cite": "the word is eternal"
+   },
+   {
+    "kind": "relation",
+    "name": "upacaryate",
+    "from": "kala",
+    "to": "sphota",
+    "cite": "is attributed figuratively to the word"
+   },
+   {
+    "kind": "predication",
+    "name": "contrastive",
+    "of": "vowel_quantity",
+    "cite": "according to its natural differences"
+   }
+  ]
+ },
+ "rejected_readings": [
+  {
+   "label": "temporal_sphota",
+   "rendering": "The eternal word itself has real short, long, and prolated forms due to natural phonetic variations.",
+   "why": "Wrongly attributes temporal properties to the sphota itself. The commentary is explicit: vowel-quantity resides in the prakrta-dhvani (manifesting sound), not the eternal sphota. This reading commits a sort error by treating the manifestation's properties as properties of the absolute.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "relation",
+     "name": "asraya",
+     "from": "sphota",
+     "to": "vowel_quantity"
+    }
+   ],
+   "expect": "contradicted"
+  },
+  {
+   "label": "no_figuration",
+   "rendering": "Time belongs equally to both the eternal word and its manifesting sound, with no figurative relation between them.",
+   "why": "Misses the technical point of upacaryate: the kala belongs to prakrta-dhvani literally, but only figuratively to sphota. This reading denies the figuration that rescues eternalism, collapsing the distinction between the manifested word and its eternal essence.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "relation",
+     "name": "asraya",
+     "from": "sphota",
+     "to": "kala"
+    }
+   ],
+   "expect": "contradicted"
+  }
+ ],
+ "notes": "The contract captures Bhartrhari's resolution of the tension between eternalism and phonological reality: temporal properties (time and vowel-quantity) belong literally to prakrta-dhvani (the manifesting sound); sphota is eternal but receives these properties only figuratively via upacaryate."
+}

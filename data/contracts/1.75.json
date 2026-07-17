@@ -1,0 +1,133 @@
+{
+ "verse": "1.75",
+ "entities": [
+  {
+   "id": "sphota",
+   "name": "sphota",
+   "sort": "linguisticItem",
+   "cite": "The sphota is abhinna-kala, without temporal division"
+  },
+  {
+   "id": "dhvani",
+   "name": "dhvani",
+   "sort": "linguisticItem",
+   "cite": "the sounds that manifest it"
+  },
+  {
+   "id": "vrtti",
+   "name": "vṛtti",
+   "sort": "property",
+   "cite": "its mode of functioning"
+  },
+  {
+   "id": "grahana_upadhi",
+   "name": "grahaṇopādhi",
+   "sort": "property",
+   "cite": "the conditions under which it is grasped"
+  }
+ ],
+ "axioms": [
+  {
+   "kind": "predication",
+   "name": "abhinna-kala",
+   "of": "sphota",
+   "cite": "The sphota is abhinna-kala, without temporal division"
+  },
+  {
+   "kind": "predication",
+   "name": "dhvani-kala-anupatin",
+   "of": "sphota",
+   "cite": "it is dhvani-kala-anupatin, appearing to run along the timeline of the sounds that manifest it"
+  },
+  {
+   "kind": "relation",
+   "name": "vivartate",
+   "from": "sphota",
+   "to": "dhvani",
+   "cite": "the sounds that manifest it"
+  },
+  {
+   "kind": "relation",
+   "name": "asraya",
+   "from": "vrtti",
+   "to": "grahana_upadhi",
+   "cite": "that differs grahana-upadhi-bhedena, according to the conditions under which it is grasped"
+  }
+ ],
+ "denials": [
+  {
+   "kind": "predication",
+   "name": "binna-kala",
+   "of": "sphota",
+   "cite": "it does not itself take time"
+  },
+  {
+   "kind": "predication",
+   "name": "bheda",
+   "of": "sphota",
+   "cite": "what differs is not the sphota but its vrtti"
+  }
+ ],
+ "accepted_reading": {
+  "claims": [
+   {
+    "kind": "predication",
+    "name": "abhinna-kala",
+    "of": "sphota",
+    "cite": "whose time is undivided"
+   },
+   {
+    "kind": "predication",
+    "name": "dhvani-kala-anupatin",
+    "of": "sphota",
+    "cite": "appears to follow the time of the sounds"
+   }
+  ]
+ },
+ "rejected_readings": [
+  {
+   "label": "sphota_temporal",
+   "rendering": "The sphota is temporally divisible and takes time like the sounds.",
+   "why": "The verse explicitly establishes the sphota is abhinna-kala (timeless). Only the sounds (dhvani) that manifest it have temporal extension. The appearance of temporality is mediated through manifestation, not intrinsic to the sphota.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "predication",
+     "name": "binna-kala",
+     "of": "sphota"
+    }
+   ],
+   "expect": "contradicted"
+  },
+  {
+   "label": "sphota_mutable",
+   "rendering": "The substance of the sphota itself varies according to different utterances and contexts.",
+   "why": "The commentary explicitly denies this: 'what differs is not the sphota but its vrtti'. The sphota's substance is invariant; only its mode of functioning (vrtti) differs according to conditions of apprehension.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "predication",
+     "name": "bheda",
+     "of": "sphota"
+    }
+   ],
+   "expect": "contradicted"
+  },
+  {
+   "label": "sounds_determine",
+   "rendering": "The sounds (dhvani) determine the word-essence (sphota); they are the source from which it arises.",
+   "why": "The relationship is reversed. The sphota is the timeless word-essence that manifests through sounds. The sounds are the manifestation (vivartate from sphota), not the source. Sphota is ontologically primary.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "relation",
+     "name": "vivartate",
+     "from": "dhvani",
+     "to": "sphota"
+    }
+   ],
+   "expect": "unlicensed"
+  }
+ ],
+ "notes": "The contract formalizes the central paradox of 1.75: the sphota is intrinsically timeless (abhinna-kala) yet appears to follow the timeline of manifestation (dhvani-kala-anupatin). The resolution is that the sphota's substance remains invariant while its mode of functioning (vrtti) varies according to the conditions of apprehension (grahana-upadhi). This framework grounds the later distinction between prakrta-dhvani and vaikrta-dhvani, allowing grammarians to identify which acoustic differences matter to word identity."
+}

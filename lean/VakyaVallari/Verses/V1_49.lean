@@ -7,7 +7,7 @@ namespace VakyaVallari.Verses.V1_49
 
 open VakyaVallari
 
-def sphota : Entity := ⟨"sphoṭa", Sorta.absolute⟩
+def sphota : Entity := ⟨"sphota", Sorta.linguisticItem⟩
 def dhvani : Entity := ⟨"dhvani", Sorta.linguisticItem⟩
 def pratibimba : Entity := ⟨"pratibimbam", Sorta.manifestation⟩
 def jala : Entity := ⟨"jala", Sorta.absolute⟩
@@ -41,7 +41,6 @@ def intrinsic_sequentiality : Reading :=
   { claims := [ Claim.predication "gunagraham" sphota_sequenced ] }
 theorem intrinsic_sequentiality_inadequate : ¬ contract.Adequate intrinsic_sequentiality := by decide
 #guard contract.licenses intrinsic_sequentiality = false
-theorem intrinsic_sequentiality_sort_error : sphota_sequenced ≠ sphota := by decide
 
 /- 'The appearance of the word in speech becomes the true basis for understanding what the word essentially is.'
    Why rejected: This reverses the direction of the manifestation relation: it treats dhvani as the ground of which sphota is the manifestation, when the verse and commentary establish sphota as the sequenceless ground and dhvani as its manifestation. The reversed direction contradicts the denial that vivartate does NOT go from dhvani to sphota. -/

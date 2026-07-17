@@ -1,0 +1,120 @@
+{
+  "verse": "1.65",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "The word that stands settled as the expressible of that"
+    },
+    {
+      "id": "abhidheya",
+      "name": "abhidheya",
+      "sort": "property",
+      "cite": "the expressible of that"
+    },
+    {
+      "id": "vacanarupa",
+      "name": "vacanarūpa",
+      "sort": "manifestation",
+      "cite": "a form distinct from it is discerned"
+    },
+    {
+      "id": "uccara",
+      "name": "ucāraṇa",
+      "sort": "cognition",
+      "cite": "in the uttering of it"
+    },
+    {
+      "id": "sabdatatva",
+      "name": "śabdatattva",
+      "sort": "absolute",
+      "cite": "the duality belongs to the word's essence"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "abhidheya",
+      "of": "sabda",
+      "cite": "the named word is the abhidheya, the expressible"
+    },
+    {
+      "kind": "relation",
+      "name": "vivichyate",
+      "from": "uccara",
+      "to": "vacanarupa",
+      "cite": "viviycate, discerned apart"
+    },
+    {
+      "kind": "relation",
+      "name": "anya",
+      "from": "vacanarupa",
+      "to": "sabda",
+      "cite": "the uttered token is other than the settled type it presents"
+    },
+    {
+      "kind": "predication",
+      "name": "dvaita",
+      "of": "sabdatatva",
+      "cite": "the duality belongs to the word's essence"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "identity",
+      "a": "sabda",
+      "b": "vacanarupa",
+      "cite": "They are not; the token heard in the classroom is a dated acoustic event, the form taught is none of them"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "abhidheya",
+        "of": "sabda",
+        "cite": "as the expressible of that"
+      },
+      {
+        "kind": "relation",
+        "name": "vivichyate",
+        "from": "uccara",
+        "to": "vacanarupa",
+        "cite": "in the uttering of it too, a form distinct from it is discerned"
+      },
+      {
+        "kind": "relation",
+        "name": "anya",
+        "from": "vacanarupa",
+        "to": "sabda",
+        "cite": "a form distinct from it"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "citation_collapse",
+      "rendering": "When we mention a word, the distinction between sound and word disappears; in citation, sound and word are simply identical.",
+      "why": "The verse explicitly discerns a form distinct from the word in utterance. Treating sound and word as identical violates the core relation (anya) that the verse establishes. The commentary rejects this naive picture.",
+      "entities": [],
+      "claims": [
+        {"kind": "identity", "a": "sabda", "b": "vacanarupa"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "form_as_accident",
+      "rendering": "The utterance-form is merely an accidental property of the word, not fundamentally distinct from it.",
+      "why": "The verse's vivichyate (discerned apart) and anya (distinct) establish a necessary relation between word and utterance-form. Treating the form as an accidental property rather than a distinct manifestation demotes the duality below the essential level that the commentary emphasizes: 'the duality belongs to the word's essence'.",
+      "entities": [
+        {"id": "vacanarupa_prop", "name": "vacanarūpa", "sort": "property"}
+      ],
+      "claims": [
+        {"kind": "predication", "name": "accidental_modification", "of": "vacanarupa_prop"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The contract encodes the duality between word-type and utterance-token that recurs even in metalinguistic contexts (mentioning words). The 'duality' property belongs to śabdatattva (word-essence) rather than being circumstantial; this places the essential two-sidedness at the absolute level, consistent with Bharṭhari's philosophy."
+}

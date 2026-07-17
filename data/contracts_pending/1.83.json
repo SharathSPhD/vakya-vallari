@@ -1,0 +1,193 @@
+{
+  "verse": "1.83",
+  "entities": [
+    {
+      "id": "dhvani",
+      "name": "dhvani",
+      "sort": "linguisticItem",
+      "cite": "each stroke of sound"
+    },
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "the word's own form is ascertained"
+    },
+    {
+      "id": "svarupa",
+      "name": "svarūpa",
+      "sort": "property",
+      "cite": "the settled ascertainment of the word's svarupa"
+    },
+    {
+      "id": "pratyaya",
+      "name": "pratyaya",
+      "sort": "cognition",
+      "cite": "The intermediate cognitions in learning"
+    },
+    {
+      "id": "avadharana",
+      "name": "avadharaṇa",
+      "sort": "cognition",
+      "cite": "and it terminates in avadharana, the settled ascertainment of the word's svarupa"
+    },
+    {
+      "id": "grahana",
+      "name": "grahaṇa",
+      "sort": "cognition",
+      "cite": "the *ripened grasp* seizes one undivided thing"
+    },
+    {
+      "id": "sphota",
+      "name": "sphota",
+      "sort": "linguisticItem",
+      "cite": "This gives the sphota theory its account of process without surrendering the unity of the object"
+    },
+    {
+      "id": "anupakhyeya",
+      "name": "anupākhyeya",
+      "sort": "property",
+      "cite": "are anupakhyeya, not separately reportable"
+    },
+    {
+      "id": "grahana_anuguna",
+      "name": "grahaṇa-anuguna",
+      "sort": "property",
+      "cite": "they are grahana-anuguna, conducive to the grasp"
+    },
+    {
+      "id": "ripening",
+      "name": "paripakti",
+      "sort": "power",
+      "cite": "the *ripening* is gradual and many-staged"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "anupakhyeya",
+      "of": "pratyaya",
+      "cite": "The intermediate cognitions in learning — each pass through the verse, each stroke of sound — are anupakhyeya, not separately reportable"
+    },
+    {
+      "kind": "predication",
+      "name": "grahana_anuguna",
+      "of": "pratyaya",
+      "cite": "But they are grahana-anuguna, conducive to the grasp"
+    },
+    {
+      "kind": "relation",
+      "name": "terminates_in",
+      "from": "pratyaya",
+      "to": "avadharana",
+      "cite": "their work is real though silent, and it terminates in avadharana, the settled ascertainment of the word's svarupa"
+    },
+    {
+      "kind": "relation",
+      "name": "avadharana_of",
+      "from": "avadharana",
+      "to": "svarupa",
+      "cite": "and it terminates in avadharana, the settled ascertainment of the word's svarupa"
+    },
+    {
+      "kind": "relation",
+      "name": "prakasayati",
+      "from": "dhvani",
+      "to": "svarupa",
+      "cite": "once the sound has illuminated it"
+    },
+    {
+      "kind": "predication",
+      "name": "ekam_advayam",
+      "of": "sphota",
+      "cite": "the *ripened grasp* seizes one undivided thing"
+    },
+    {
+      "kind": "predication",
+      "name": "bahusamsthanah",
+      "of": "ripening",
+      "cite": "the *ripening* is gradual and many-staged"
+    },
+    {
+      "kind": "relation",
+      "name": "avirbhavati_yugapat",
+      "from": "grahana",
+      "to": "avadharana",
+      "cite": "comprehension does in fact arrive as an all-at-once click after a subpersonal accumulation"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "samkalitaprakara",
+      "from": "grahana",
+      "to": "pratyaya",
+      "cite": "not as a felt summation of parts"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "anupakhyeya",
+        "of": "pratyaya",
+        "cite": "by cognitions that cannot be separately reported"
+      },
+      {
+        "kind": "predication",
+        "name": "grahana_anuguna",
+        "of": "pratyaya",
+        "cite": "yet are conducive to the final grasp"
+      },
+      {
+        "kind": "relation",
+        "name": "avadharana_of",
+        "from": "avadharana",
+        "to": "svarupa",
+        "cite": "the word's own form is ascertained"
+      },
+      {
+        "kind": "relation",
+        "name": "prakasayati",
+        "from": "dhvani",
+        "to": "svarupa",
+        "cite": "once the sound has illuminated it"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "pratyaya_as_final_cognition",
+      "rendering": "The intermediate cognitions directly constitute the final ascertainment of the word's form.",
+      "why": "This reading conflates pratyaya with avadharana, collapsing the careful distinction the commentary maintains: pratyaya are not separately reportable intermediate steps, while avadharana is their unified culmination. The commentary explicitly marks avadharana as a distinct termination point.",
+      "entities": [],
+      "claims": [
+        {"kind": "identity", "a": "pratyaya", "b": "avadharana"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "dhvani_is_svarupa",
+      "rendering": "The sound itself is the word's form.",
+      "why": "The commentary distinguishes the gradual, many-staged process of sound strokes from the unified svarupa they illuminate. Conflating them ignores the phenomenology: the undivided thing that comprehension seizes is not identical to the accumulation of phonemes.",
+      "entities": [
+        {"id": "dhvani_false", "name": "dhvani", "sort": "property"}
+      ],
+      "claims": [
+        {"kind": "identity", "a": "dhvani_false", "b": "svarupa"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "summation_view",
+      "rendering": "The ascertainment of the word's form is a consciously experienced addition of successive cognitions.",
+      "why": "The commentary explicitly rejects this: comprehension arrives as an all-at-once click, not as a felt summation of parts. This reading misses the key phenomenological claim about the discontinuity between gradual ripening and instantaneous grasp.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "samkalitaprakara", "from": "grahana", "to": "pratyaya"}
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "The contract captures the sphota doctrine's central move: how intermediate cognitions that are individually unreportable can still conduct to a unified, all-at-once grasp of the word's form. The six sorts fit the ontological layers: linguistic items (sound, word, unified sphota), properties (the form and reportability-status of those items), cognitions (the graded accumulation and its final culmination), and power (the ripening process itself). The translation provides the accepted reading's cites; the commentary provides the axioms and denials that ground the theory."
+}

@@ -1,0 +1,127 @@
+{
+  "verse": "1.82",
+  "entities": [
+    {
+      "id": "anuvaka",
+      "name": "anuvāka",
+      "sort": "linguisticItem",
+      "cite": "As a Vedic lesson or a verse comes to be mastered through repetition"
+    },
+    {
+      "id": "sodhatva",
+      "name": "soḍhatva",
+      "sort": "property",
+      "cite": "sodhatva, the being-mastered, dawns gradually across repetitions"
+    },
+    {
+      "id": "avrttti",
+      "name": "āvṛtti",
+      "sort": "manifestation",
+      "cite": "comes to be mastered through repetition"
+    },
+    {
+      "id": "grahana",
+      "name": "grahaṇa",
+      "sort": "cognition",
+      "cite": "repetition improves the *grasp* while its object stays fixed"
+    },
+    {
+      "id": "sphota",
+      "name": "sphota",
+      "sort": "absolute",
+      "cite": "the sounds' repeated strokes ripen apprehension of one unchanging sphota"
+    },
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "the sounds' repeated strokes ripen apprehension of one unchanging sphota"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "identity",
+      "a": "anuvaka",
+      "b": "anuvaka",
+      "cite": "the text itself — sa granthah — is not a different object at each pass"
+    },
+    {
+      "kind": "relation",
+      "name": "sadhanam",
+      "from": "avrttti",
+      "to": "sodhatva",
+      "cite": "sodhatva, the being-mastered, dawns gradually across repetitions"
+    },
+    {
+      "kind": "predication",
+      "name": "sthira",
+      "of": "anuvaka",
+      "cite": "the tenth recitation does not present a tenth text, but the same text, better possessed"
+    },
+    {
+      "kind": "relation",
+      "name": "vivartate",
+      "from": "sphota",
+      "to": "sabda",
+      "cite": "the sounds' repeated strokes ripen apprehension of one unchanging sphota"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "navatvam",
+      "from": "avrttti",
+      "to": "anuvaka",
+      "cite": "that text is not discerned anew at each repetition"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "sadhanam",
+        "from": "avrttti",
+        "to": "sodhatva",
+        "cite": "comes to be mastered through repetition"
+      },
+      {
+        "kind": "predication",
+        "name": "sthira",
+        "of": "anuvaka",
+        "cite": "that text is not discerned anew at each repetition"
+      },
+      {
+        "kind": "relation",
+        "name": "vivartate",
+        "from": "sphota",
+        "to": "sabda",
+        "cite": "the sounds' repeated strokes ripen apprehension of one unchanging sphota"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "different_object_each_time",
+      "rendering": "At each recitation, the student grasps a new and different Vedic lesson.",
+      "why": "Contradicts the explicit denial: 'that text is not discerned anew at each repetition'. The commentary insists sa granthah, the text itself, is not a different object at each pass. This rendering falsely treats each repetition as producing a new entity rather than repeatedly grasping the same one.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "navatvam", "from": "avrttti", "to": "anuvaka"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "transformation_of_text",
+      "rendering": "The Vedic lesson itself is transformed by each repetition into a more mastered form.",
+      "why": "Violates the doctrine of unchanging object: the commentary states 'the same text, better possessed'. The text does not become a different object; only the grasp improves. This renders sodhatva as a change in the anuvaka itself (sort error: treating a property of cognition as a modification of the text), when it is actually a state of the learner's mind.",
+      "entities": [
+        {"id": "anuvaka_alt", "name": "anuvāka", "sort": "manifestation"}
+      ],
+      "claims": [
+        {"kind": "predication", "name": "vivartate", "of": "anuvaka_alt"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse introduces a pedagogical example to support manifestation-theory (vivarta-vada) against part-assembly theories. The key insight is that repetition improves the grasp (grahana) of one unchanging object (the text/sphota), paralleling how repeated phonetic utterances ripen the cognition of the eternal word-essence."
+}

@@ -1,0 +1,162 @@
+{
+  "verse": "1.86",
+  "entities": [
+    {
+      "id": "jnana",
+      "name": "jñāna",
+      "sort": "power",
+      "cite": "cognition, whose nature is undivided illumination, perpetually mimics the differentiation of what it grasps"
+    },
+    {
+      "id": "bheda",
+      "name": "bheda",
+      "sort": "property",
+      "cite": "Jnana imitates bheda — cognition, whose nature is undivided illumination, perpetually mimics the differentiation of what it grasps"
+    },
+    {
+      "id": "vac",
+      "name": "vāc",
+      "sort": "power",
+      "cite": "vak suffers upaplava, disturbance, dhruvam, constantly — speech never appears except krama-upasrsta, contaminated by sequence"
+    },
+    {
+      "id": "upaplava",
+      "name": "upaplava",
+      "sort": "property",
+      "cite": "vak suffers upaplava, disturbance, dhruvam, constantly"
+    },
+    {
+      "id": "krama",
+      "name": "krama",
+      "sort": "property",
+      "cite": "speech never appears except krama-upasrsta, contaminated by sequence"
+    },
+    {
+      "id": "jneya",
+      "name": "jñeya",
+      "sort": "manifestation",
+      "cite": "cognition, undivided, borrows division from its objects"
+    },
+    {
+      "id": "sphota",
+      "name": "sphota",
+      "sort": "power",
+      "cite": "the sphota, ultimately the sabda-tattva of 1.1) is undivided"
+    },
+    {
+      "id": "sabdatattva",
+      "name": "śabdatattva",
+      "sort": "absolute",
+      "cite": "the sabda-tattva of 1.1) is undivided"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "anukarati",
+      "from": "jnana",
+      "to": "bheda",
+      "cite": "Jnana imitates bheda — cognition, whose nature is undivided illumination, perpetually mimics the differentiation of what it grasps"
+    },
+    {
+      "kind": "predication",
+      "name": "upaplava",
+      "of": "vac",
+      "cite": "vak suffers upaplava, disturbance, dhruvam, constantly"
+    },
+    {
+      "kind": "predication",
+      "name": "kramopasrsta",
+      "of": "vac",
+      "cite": "speech never appears except krama-upasrsta, contaminated by sequence"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "jnana",
+      "to": "jneya",
+      "cite": "cognition, undivided, borrows division from its objects"
+    },
+    {
+      "kind": "identity",
+      "a": "sphota",
+      "b": "sabdatattva",
+      "cite": "the sphota, ultimately the sabda-tattva of 1.1) is undivided"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "prakasate",
+      "from": "jnana",
+      "to": "jneya",
+      "cite": "Neither ever presents its true face in ordinary transaction"
+    },
+    {
+      "kind": "predication",
+      "name": "avisista",
+      "of": "vac",
+      "cite": "speech never appears except krama-upasrsta, contaminated by sequence"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "anukarati",
+        "from": "jnana",
+        "to": "bheda",
+        "cite": "The imitation of differentiation by cognition"
+      },
+      {
+        "kind": "predication",
+        "name": "upaplava",
+        "of": "vac",
+        "cite": "the disturbance of speech"
+      },
+      {
+        "kind": "predication",
+        "name": "kramopasrsta",
+        "of": "vac",
+        "cite": "speech has a form contaminated by sequence"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "jnana",
+        "to": "jneya",
+        "cite": "cognition rests upon its objects"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "direct_illumination",
+      "rendering": "Cognition directly illuminates objects without any imitation or mediation by differentiation.",
+      "why": "Asserts that jnana directly manifests or illuminates (prakasate) objects, which contradicts the axiom that jnana performs bheda-anukaara (imitation of differentiation). The commentary explicitly states 'Neither ever presents its true face in ordinary transaction', ruling out unmediated direct apprehension.",
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "prakasate",
+          "from": "jnana",
+          "to": "jneya"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "undivided_speech",
+      "rendering": "Speech remains in its true undivided form, uncontaminated by sequence.",
+      "why": "Denies that vac perpetually has the property kramopasrsta (contaminated by sequence), which is an explicit axiom. The verse and commentary repeatedly emphasize that speech 'never appears except krama-upasrsta, contaminated by sequence', making this disturbance a permanent condition.",
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "avisista",
+          "of": "vac"
+        }
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "The contract formalizes the verse's core thesis: a two-fold permanent distortion affecting mind and speech. Jnana (undivided power) imitates the differentiation (bheda) of its objects (jneya), while vac (power of speech) is perpetually contaminated by sequence (krama). Both rest on and arise from this distortion. The undivided essence (sphota = sabdatattva) never appears in its true form in ordinary transaction."
+}

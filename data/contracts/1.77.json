@@ -1,0 +1,142 @@
+{
+ "verse": "1.77",
+ "entities": [
+  {
+   "id": "sabda",
+   "name": "śabda",
+   "sort": "linguisticItem",
+   "cite": "Once the word is manifested"
+  },
+  {
+   "id": "sphota",
+   "name": "sphota",
+   "sort": "linguisticItem",
+   "cite": "the sphota-self is not divided by them"
+  },
+  {
+   "id": "prakrta_dhvani",
+   "name": "prakṛta-dhvani",
+   "sort": "linguisticItem",
+   "cite": "Contrastive sound-properties (quantity, the phonemic pattern) belong to the prakrta dhvani and determine which sphota is manifested"
+  },
+  {
+   "id": "vaikrta_dhvani",
+   "name": "vaikṛta-dhvani",
+   "sort": "linguisticItem",
+   "cite": "the vaikrta dhvanayah, modified sounds, which carry vrtti-bheda, the differences of delivery (the tradition enumerates drutā, madhyamā, vilambitā — fast, medium, slow)"
+  },
+  {
+   "id": "vrtti_bheda",
+   "name": "vṛtti-bheda",
+   "sort": "property",
+   "cite": "which carry vrtti-bheda, the differences of delivery"
+  },
+  {
+   "id": "manifestation_timing",
+   "name": "manifestation-duration",
+   "sort": "property",
+   "cite": "determine only how long the manifesting takes"
+  }
+ ],
+ "axioms": [
+  {
+   "kind": "relation",
+   "name": "vahate",
+   "from": "vaikrta_dhvani",
+   "to": "vrtti_bheda",
+   "cite": "the vaikrta dhvanayah, modified sounds, which carry vrtti-bheda, the differences of delivery (the tradition enumerates drutā, madhyamā, vilambitā — fast, medium, slow)"
+  },
+  {
+   "kind": "relation",
+   "name": "samarthayate",
+   "from": "prakrta_dhvani",
+   "to": "sphota",
+   "cite": "Contrastive sound-properties (quantity, the phonemic pattern) belong to the prakrta dhvani and determine which sphota is manifested"
+  },
+  {
+   "kind": "predication",
+   "name": "avisambhedya",
+   "of": "sphota",
+   "cite": "The sphota itself — tair na bhidyate — is divided by neither"
+  },
+  {
+   "kind": "predication",
+   "name": "avaisambhadika",
+   "of": "vrtti_bheda",
+   "cite": "These affect nothing criterial: the same word said quickly is the same word"
+  }
+ ],
+ "denials": [
+  {
+   "kind": "relation",
+   "name": "bhidyate",
+   "from": "sphota",
+   "to": "vaikrta_dhvani",
+   "cite": "The sphota itself — tair na bhidyate — is divided by neither"
+  }
+ ],
+ "accepted_reading": {
+  "claims": [
+   {
+    "kind": "relation",
+    "name": "vahate",
+    "from": "vaikrta_dhvani",
+    "to": "vrtti_bheda",
+    "cite": "the modified sounds bring in the difference of speed of delivery"
+   },
+   {
+    "kind": "predication",
+    "name": "avisambhedya",
+    "of": "sphota",
+    "cite": "the sphota-self is not divided by them"
+   }
+  ]
+ },
+ "rejected_readings": [
+  {
+   "label": "sphota_divided_by_vaikrta",
+   "rendering": "The modified sounds divide or differentiate the sphota into distinct essences.",
+   "why": "The commentary explicitly denies this: the sphota is not divided by the vaikrta dhvani. The non-contrastive sounds only affect the duration of manifestation, not the underlying essence.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "relation",
+     "name": "bhidyate",
+     "from": "sphota",
+     "to": "vaikrta_dhvani"
+    }
+   ],
+   "expect": "contradicted"
+  },
+  {
+   "label": "tempo_determines_sphota",
+   "rendering": "The differences in speed of delivery determine which word (sphota) is manifested.",
+   "why": "The commentary establishes a clear division of labor: the contrastive properties (prakrta dhvani—quantity, phonemic pattern) determine which sphota manifests, while the tempo differences (vrtti-bheda) only affect the duration of manifestation, not which word is produced.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "relation",
+     "name": "samarthayate",
+     "from": "vrtti_bheda",
+     "to": "sphota"
+    }
+   ],
+   "expect": "unlicensed"
+  },
+  {
+   "label": "prakrta_vaikrta_equivalence",
+   "rendering": "All sound differences, whether related to quantity or tempo, work together uniformly to determine and manifest the sphota.",
+   "why": "The entire explanatory power of the commentary depends on distinguishing prakrta (contrastive: quantity, phonemic pattern) from vaikrta (non-contrastive: tempo, voice) dhvani. Prakrta determines WHICH sphota; vaikrta determines only HOW LONG manifestation takes. This reading collapses that critical distinction and loses the phonemic/phonetic insight.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "identity",
+     "a": "prakrta_dhvani",
+     "b": "vaikrta_dhvani"
+    }
+   ],
+   "expect": "unlicensed"
+  }
+ ],
+ "notes": "The contract encodes Bhartṛhari's phonemic/phonetic distinction as the division between prakṛta (contrastive, sphota-determining) and vaikṛta (non-contrastive, duration-affecting) dhvani. The sphota's indivisibility is the core: neither class of sound-properties divides it; they differ only in what aspect of manifestation they govern."
+}

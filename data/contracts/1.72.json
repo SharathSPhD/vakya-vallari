@@ -1,0 +1,127 @@
+{
+  "verse": "1.72",
+  "entities": [
+    {
+      "id": "varna",
+      "name": "varṇa",
+      "sort": "linguisticItem",
+      "cite": "the varnas alone are eternal"
+    },
+    {
+      "id": "pada",
+      "name": "pada",
+      "sort": "linguisticItem",
+      "cite": "the 'word' a convenient summary"
+    },
+    {
+      "id": "vakya",
+      "name": "vākyaṃ",
+      "sort": "linguisticItem",
+      "cite": "the sentence nothing over phonemes-and-words"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "nasti-atiriktam",
+      "from": "pada",
+      "to": "varna",
+      "cite": "the word is nothing vyatirekena, over and above, its phonemes"
+    },
+    {
+      "kind": "relation",
+      "name": "nasti-atiriktam",
+      "from": "vakya",
+      "to": "varna",
+      "cite": "the sentence nothing over phonemes-and-words — mere collections, with no additional entity anywhere"
+    },
+    {
+      "kind": "relation",
+      "name": "nasti-atiriktam",
+      "from": "vakya",
+      "to": "pada",
+      "cite": "the sentence nothing over phonemes-and-words — mere collections, with no additional entity anywhere"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "asti-atiriktam",
+      "from": "pada",
+      "to": "varna",
+      "cite": "the word is nothing vyatirekena, over and above, its phonemes"
+    },
+    {
+      "kind": "relation",
+      "name": "asti-atiriktam",
+      "from": "vakya",
+      "to": "varna",
+      "cite": "the sentence nothing over phonemes-and-words — mere collections, with no additional entity anywhere"
+    },
+    {
+      "kind": "relation",
+      "name": "asti-atiriktam",
+      "from": "vakya",
+      "to": "pada",
+      "cite": "the sentence nothing over phonemes-and-words — mere collections, with no additional entity anywhere"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "nasti-atiriktam",
+        "from": "pada",
+        "to": "varna",
+        "cite": "no word over and above the phonemes"
+      },
+      {
+        "kind": "relation",
+        "name": "nasti-atiriktam",
+        "from": "vakya",
+        "to": "varna",
+        "cite": "apart from the phonemes"
+      },
+      {
+        "kind": "relation",
+        "name": "nasti-atiriktam",
+        "from": "vakya",
+        "to": "pada",
+        "cite": "nor is the sentence anything whatsoever apart from the phonemes and words"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "emergent_word_properties",
+      "rendering": "Words emerge as novel linguistic entities with meaning-bearing properties distinct from their component phonemes.",
+      "why": "Asserts pada asti-atiriktam varna (words exist as independent entities over and above phonemes), directly contradicting the verse's first claim na varṇavyatirekeṇa padamanyacca vidyate. This grants words a separate ontological status where the verse denies it.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "asti-atiriktam",
+          "from": "pada",
+          "to": "varna"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "holistic_sentence_structure",
+      "rendering": "Sentences form holistic semantic wholes that cannot be decomposed back to individual words without loss of meaning.",
+      "why": "Posits vakya asti-atiriktam pada (sentences as independent wholes over and above their word-components), contradicting the verse's second claim vākyaṃ varṇapadābhyāṃ ca vyatiriktaṃ na kiścana. The holistic unity it claims is exactly what the verse denies.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "asti-atiriktam",
+          "from": "vakya",
+          "to": "pada"
+        }
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "Verse 1.72 presents the pure atomistic analysis: linguistic wholes are exhaustively reducible to their phonemic parts. No emergent properties (powers or absolutes) inhere in the whole. The nasti-atiriktam relations formalize the denial of any entity 'over and above' its constituent parts. This thesis stands in deliberate antinomy to 1.73 and prepares the ground for 1.74's declaration that practice accommodates both analysis-into-parts and synthesis-into-wholes."
+}

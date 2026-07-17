@@ -1,163 +1,180 @@
 {
-  "verse": "1.49",
-  "entities": [
-    {
-      "id": "sphota",
-      "name": "sphoṭa",
-      "sort": "absolute",
-      "cite": "the sphota appears drawn out in slow speech and clipped in fast speech, appears to begin and end, while these are throughout properties of the dhvani"
-    },
-    {
-      "id": "dhvani",
-      "name": "dhvani",
-      "sort": "linguisticItem",
-      "cite": "these are throughout properties of the dhvani, transferred in appearance only"
-    },
-    {
-      "id": "pratibimba",
-      "name": "pratibimbam",
-      "sort": "manifestation",
-      "cite": "As a reflection standing elsewhere seems to follow the movements of the water"
-    },
-    {
-      "id": "jala",
-      "name": "jala",
-      "sort": "absolute",
-      "cite": "the moon's reflection trembles when the water trembles"
-    },
-    {
-      "id": "jalakriya",
-      "name": "jalakriyā",
-      "sort": "property",
-      "cite": "the trembling belongs to the water"
-    },
-    {
-      "id": "dharma",
-      "name": "dharma",
-      "sort": "property",
-      "cite": "such is the relation, that dharma, between sphota and sound"
-    },
-    {
-      "id": "anyatra",
-      "name": "anyatra",
-      "sort": "property",
-      "cite": "the reflected moon, which stands anyatra, elsewhere, unmoved"
-    }
-  ],
-  "axioms": [
-    {
-      "kind": "predication",
-      "name": "sthitam",
-      "of": "sphota",
-      "cite": "which stands anyatra, elsewhere, unmoved"
-    },
-    {
-      "kind": "relation",
-      "name": "vivartate",
-      "from": "sphota",
-      "to": "dhvani",
-      "cite": "manifestation is not neutral, it lends the manifested thing its own dress"
-    },
-    {
-      "kind": "predication",
-      "name": "gunagraham",
-      "of": "dhvani",
-      "cite": "length, speed, accent"
-    },
-    {
-      "kind": "relation",
-      "name": "upalakshyate",
-      "from": "dhvani",
-      "to": "sphota",
-      "cite": "transferred in appearance only"
-    },
-    {
-      "kind": "relation",
-      "name": "anueti",
-      "from": "pratibimba",
-      "to": "jalakriya",
-      "cite": "The moon's reflection trembles when the water trembles"
-    }
-  ],
-  "denials": [
-    {
-      "kind": "predication",
-      "name": "parinamate",
-      "of": "sphota",
-      "cite": "it is sequenceless"
-    },
-    {
-      "kind": "relation",
-      "name": "hetutva",
-      "from": "sphota",
-      "to": "jalakriya",
-      "cite": "the trembling belongs to the water, but presents itself as belonging to the reflected moon"
-    },
-    {
-      "kind": "relation",
-      "name": "vivartate",
-      "from": "dhvani",
-      "to": "sphota",
-      "cite": "the sphota appears drawn out in slow speech and clipped in fast speech, appears to begin and end, while these are throughout properties of the dhvani"
-    }
-  ],
-  "accepted_reading": {
-    "claims": [
-      {
-        "kind": "relation",
-        "name": "anueti",
-        "from": "pratibimba",
-        "to": "jalakriya",
-        "cite": "seems to follow the movements of the water"
-      },
-      {
-        "kind": "predication",
-        "name": "sthitam",
-        "of": "sphota",
-        "cite": "standing elsewhere"
-      },
-      {
-        "kind": "relation",
-        "name": "vivartate",
-        "from": "sphota",
-        "to": "dhvani",
-        "cite": "such is the relation, that dharma, between sphota and sound"
-      }
-    ]
+ "verse": "1.49",
+ "entities": [
+  {
+   "id": "sphota",
+   "name": "sphota",
+   "sort": "linguisticItem",
+   "cite": "the sphota appears drawn out in slow speech and clipped in fast speech, appears to begin and end, while these are throughout properties of the dhvani"
   },
-  "rejected_readings": [
+  {
+   "id": "dhvani",
+   "name": "dhvani",
+   "sort": "linguisticItem",
+   "cite": "these are throughout properties of the dhvani, transferred in appearance only"
+  },
+  {
+   "id": "pratibimba",
+   "name": "pratibimbam",
+   "sort": "manifestation",
+   "cite": "As a reflection standing elsewhere seems to follow the movements of the water"
+  },
+  {
+   "id": "jala",
+   "name": "jala",
+   "sort": "absolute",
+   "cite": "the moon's reflection trembles when the water trembles"
+  },
+  {
+   "id": "jalakriya",
+   "name": "jalakriyā",
+   "sort": "property",
+   "cite": "the trembling belongs to the water"
+  },
+  {
+   "id": "dharma",
+   "name": "dharma",
+   "sort": "property",
+   "cite": "such is the relation, that dharma, between sphota and sound"
+  },
+  {
+   "id": "anyatra",
+   "name": "anyatra",
+   "sort": "property",
+   "cite": "the reflected moon, which stands anyatra, elsewhere, unmoved"
+  }
+ ],
+ "axioms": [
+  {
+   "kind": "predication",
+   "name": "sthitam",
+   "of": "sphota",
+   "cite": "which stands anyatra, elsewhere, unmoved"
+  },
+  {
+   "kind": "relation",
+   "name": "vivartate",
+   "from": "sphota",
+   "to": "dhvani",
+   "cite": "manifestation is not neutral, it lends the manifested thing its own dress"
+  },
+  {
+   "kind": "predication",
+   "name": "gunagraham",
+   "of": "dhvani",
+   "cite": "length, speed, accent"
+  },
+  {
+   "kind": "relation",
+   "name": "upalakshyate",
+   "from": "dhvani",
+   "to": "sphota",
+   "cite": "transferred in appearance only"
+  },
+  {
+   "kind": "relation",
+   "name": "anueti",
+   "from": "pratibimba",
+   "to": "jalakriya",
+   "cite": "The moon's reflection trembles when the water trembles"
+  }
+ ],
+ "denials": [
+  {
+   "kind": "predication",
+   "name": "parinamate",
+   "of": "sphota",
+   "cite": "it is sequenceless"
+  },
+  {
+   "kind": "relation",
+   "name": "hetutva",
+   "from": "sphota",
+   "to": "jalakriya",
+   "cite": "the trembling belongs to the water, but presents itself as belonging to the reflected moon"
+  },
+  {
+   "kind": "relation",
+   "name": "vivartate",
+   "from": "dhvani",
+   "to": "sphota",
+   "cite": "the sphota appears drawn out in slow speech and clipped in fast speech, appears to begin and end, while these are throughout properties of the dhvani"
+  }
+ ],
+ "accepted_reading": {
+  "claims": [
+   {
+    "kind": "relation",
+    "name": "anueti",
+    "from": "pratibimba",
+    "to": "jalakriya",
+    "cite": "seems to follow the movements of the water"
+   },
+   {
+    "kind": "predication",
+    "name": "sthitam",
+    "of": "sphota",
+    "cite": "standing elsewhere"
+   },
+   {
+    "kind": "relation",
+    "name": "vivartate",
+    "from": "sphota",
+    "to": "dhvani",
+    "cite": "such is the relation, that dharma, between sphota and sound"
+   }
+  ]
+ },
+ "rejected_readings": [
+  {
+   "label": "intrinsic_sequentiality",
+   "rendering": "The word is intrinsically extended in time, with distinct temporal phases of length, speed, and accent.",
+   "why": "This reading treats sphota as having the temporal properties intrinsic to it, when the verse and commentary insist these are properties of dhvani only, transferred in appearance. The sort error (treating absolute sphota as having temporal properties of a linguistic item) makes the gunagraham-claim unlicensed.",
+   "entities": [
     {
-      "label": "intrinsic_sequentiality",
-      "rendering": "The word is intrinsically extended in time, with distinct temporal phases of length, speed, and accent.",
-      "why": "This reading treats sphota as having the temporal properties intrinsic to it, when the verse and commentary insist these are properties of dhvani only, transferred in appearance. The sort error (treating absolute sphota as having temporal properties of a linguistic item) makes the gunagraham-claim unlicensed.",
-      "entities": [
-        {"id": "sphota_sequenced", "name": "sphoṭa", "sort": "linguisticItem"}
-      ],
-      "claims": [
-        {"kind": "predication", "name": "gunagraham", "of": "sphota_sequenced"}
-      ],
-      "expect": "unlicensed"
-    },
-    {
-      "label": "manifest_becomes_ground",
-      "rendering": "The appearance of the word in speech becomes the true basis for understanding what the word essentially is.",
-      "why": "This reverses the direction of the manifestation relation: it treats dhvani as the ground of which sphota is the manifestation, when the verse and commentary establish sphota as the sequenceless ground and dhvani as its manifestation. The reversed direction contradicts the denial that vivartate does NOT go from dhvani to sphota.",
-      "entities": [],
-      "claims": [
-        {"kind": "relation", "name": "vivartate", "from": "dhvani", "to": "sphota"}
-      ],
-      "expect": "contradicted"
-    },
-    {
-      "label": "property_transfer_is_real",
-      "rendering": "The properties of sound actually belong to the word itself, not merely in appearance.",
-      "why": "This denies the crucial distinction between the appearance of shared properties (upalakshya) and actual possession. The commentary is explicit: 'the trembling belongs to the water, but presents itself as belonging to the reflected moon.' This reading misses the subtle point of the reflection metaphor entirely.",
-      "entities": [],
-      "claims": [
-        {"kind": "predication", "name": "gunagraham", "of": "sphota"}
-      ],
-      "expect": "unlicensed"
+     "id": "sphota_sequenced",
+     "name": "sphoṭa",
+     "sort": "linguisticItem"
     }
-  ],
-  "notes": "The verse's core contribution is the upalakshya-doctrine: properties of the manifestation (dhvani) appear to transfer to the manifested ground (sphota) via the reflection metaphor. Contested: whether the dharma itself is a relation (sambandha) or a property (guna) of the pair; the contract encodes it as property to capture the transfer mechanism. The six sorts taxonomy strains slightly here: anyatra is location rather than a substance, treated as property to preserve the manifest/ground opposition."
+   ],
+   "claims": [
+    {
+     "kind": "predication",
+     "name": "gunagraham",
+     "of": "sphota_sequenced"
+    }
+   ],
+   "expect": "unlicensed"
+  },
+  {
+   "label": "manifest_becomes_ground",
+   "rendering": "The appearance of the word in speech becomes the true basis for understanding what the word essentially is.",
+   "why": "This reverses the direction of the manifestation relation: it treats dhvani as the ground of which sphota is the manifestation, when the verse and commentary establish sphota as the sequenceless ground and dhvani as its manifestation. The reversed direction contradicts the denial that vivartate does NOT go from dhvani to sphota.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "relation",
+     "name": "vivartate",
+     "from": "dhvani",
+     "to": "sphota"
+    }
+   ],
+   "expect": "contradicted"
+  },
+  {
+   "label": "property_transfer_is_real",
+   "rendering": "The properties of sound actually belong to the word itself, not merely in appearance.",
+   "why": "This denies the crucial distinction between the appearance of shared properties (upalakshya) and actual possession. The commentary is explicit: 'the trembling belongs to the water, but presents itself as belonging to the reflected moon.' This reading misses the subtle point of the reflection metaphor entirely.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "predication",
+     "name": "gunagraham",
+     "of": "sphota"
+    }
+   ],
+   "expect": "unlicensed"
+  }
+ ],
+ "notes": "The verse's core contribution is the upalakshya-doctrine: properties of the manifestation (dhvani) appear to transfer to the manifested ground (sphota) via the reflection metaphor. Contested: whether the dharma itself is a relation (sambandha) or a property (guna) of the pair; the contract encodes it as property to capture the transfer mechanism. The six sorts taxonomy strains slightly here: anyatra is location rather than a substance, treated as property to preserve the manifest/ground opposition."
 }

@@ -1,0 +1,130 @@
+{
+  "verse": "1.63",
+  "entities": [
+    {
+      "id": "upamana",
+      "name": "upamāna",
+      "sort": "manifestation",
+      "cite": "the standard of comparison"
+    },
+    {
+      "id": "upameya",
+      "name": "upameyā",
+      "sort": "manifestation",
+      "cite": "what is compared"
+    },
+    {
+      "id": "samanya",
+      "name": "sāmānya",
+      "sort": "property",
+      "cite": "Whatever common property is relied upon"
+    },
+    {
+      "id": "dharma",
+      "name": "dharma",
+      "sort": "property",
+      "cite": "some further property distinguishes the standard"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "samanya",
+      "of": "upamana",
+      "cite": "Every upamana-upameya pair rides on a samanya, a shared property"
+    },
+    {
+      "kind": "predication",
+      "name": "samanya",
+      "of": "upameya",
+      "cite": "Every upamana-upameya pair rides on a samanya, a shared property"
+    },
+    {
+      "kind": "predication",
+      "name": "dharma",
+      "of": "upamana",
+      "cite": "the standard always retains a dharma the compared item lacks"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "dharma",
+      "of": "upameya",
+      "cite": "the standard always retains a dharma the compared item lacks"
+    },
+    {
+      "kind": "identity",
+      "a": "upamana",
+      "b": "upameya",
+      "cite": "else the two would not be two and comparison would collapse into identity"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "samanya",
+        "of": "upamana",
+        "cite": "Whatever common property is relied upon between the standard of comparison"
+      },
+      {
+        "kind": "predication",
+        "name": "samanya",
+        "of": "upameya",
+        "cite": "Whatever common property is relied upon between the standard of comparison and what is compared"
+      },
+      {
+        "kind": "predication",
+        "name": "dharma",
+        "of": "upamana",
+        "cite": "some further property distinguishes the standard from it"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "samanya_only",
+      "rendering": "The standard of comparison and what is compared are identical in their essential properties, differing only accidentally.",
+      "why": "Ignores the dharma (distinguishing property) which the verse says must characterize the standard and distinguish it from the target. Without dharma, the two would collapse into identity, defeating the purpose of analogy. The commentary is explicit: 'else the two would not be two.'",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "identity",
+          "a": "upamana",
+          "b": "upameya"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "reversed_dharma",
+      "rendering": "What is compared retains a further property that the standard of comparison lacks.",
+      "why": "The verse and commentary are clear that it is the upamana (standard) that always retains the dharma; the compared item (upameya) lacks it. This reading reverses the asymmetry that makes comparison intelligible. The commentary states: 'the standard always retains a dharma the compared item lacks'.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "dharma",
+          "of": "upameya"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "disanalogy_defect",
+      "rendering": "The residual difference between the standard and what is compared is a defect that weakens the analogy.",
+      "why": "The commentary explicitly rejects this: 'Residual disanalogy is thus not a defect of similes but a condition of their possibility.' The dharma that distinguishes the standard is not a weakness but a necessity for the comparison to function without collapsing into claimed identity.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "defect",
+          "of": "dharma"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "Verse 1.63 provides the methodological audit of analogy underlying the sphota analysis. It formalizes the minimal structure of comparison: both samanya and dharma are necessary. Samanya provides the ground for similarity; dharma ensures that similarity does not collapse into identity. The six sorts accommodate this cleanly: upamana and upameya are manifestations (concrete exemplars); samanya and dharma are properties (the logical poles). Ashrita ('relied upon') and the implicit vyatiriccate ('stands out/is distinguished') capture the relational grammar."
+}

@@ -84,3 +84,6 @@
 {"ts": "2026-07-16T21:20:02.169207+00:00", "event": "accept", "verse": "1.9", "detail": "adequacy theorem compiled; build green (30-verse state)"}
 {"ts": "2026-07-16T21:35:37.267505+00:00", "event": "gate", "detail": "round 3 (25 agents, wf_5b29e99e): all OK first pass; 10 sort conflicts adjudicated (3 fixes, 7 new senses); sphota canonicalized as linguisticItem"}
 {"ts": "2026-07-16T21:35:37.267621+00:00", "event": "milestone", "detail": "55 verse units verified (through 1.62), 128 refutation theorems, 91 pytest gates"}
+{"ts": "2026-07-17T06:04:52.531624+00:00", "event": "gate", "detail": "round 4 partial: session limit killed 20/30 agents; 10 completed; 9 unreviewed drafts quarantined to data/contracts_pending (5 failed verbatim-cite gate)"}
+{"ts": "2026-07-17T06:04:52.531686+00:00", "event": "gate", "detail": "main-loop adjudication: sphoṭa→sphota normalized, sphota/dhvani/śabda(1.77) → linguisticItem; dharma 1.63 property sense; kāla polysemy registered"}
+{"ts": "2026-07-17T06:04:52.531703+00:00", "event": "milestone", "detail": "65 verse units verified, 152 refutations, 101 pytest gates, lake green"}

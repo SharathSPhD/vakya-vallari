@@ -1,0 +1,93 @@
+{
+  "verse": "1.68-69",
+  "entities": [
+    {
+      "id": "vyakti",
+      "name": "vyakti",
+      "sort": "linguisticItem",
+      "cite": "the individual utterance-form (vyakti)"
+    },
+    {
+      "id": "jati",
+      "name": "jāti",
+      "sort": "power",
+      "cite": "the form-universal (jati)"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "apparatus_component",
+      "of": "vyakti",
+      "cite": "rule-stated language requires an apparatus of types and tokens"
+    },
+    {
+      "kind": "predication",
+      "name": "apparatus_component",
+      "of": "jati",
+      "cite": "rule-stated language requires an apparatus of types and tokens"
+    },
+    {
+      "kind": "relation",
+      "name": "samsrsta",
+      "from": "jati",
+      "to": "vyakti",
+      "cite": "the class is samsrsta, connected — riding in on the individual"
+    }
+  ],
+  "denials": [],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "apparatus_component",
+        "of": "vyakti",
+        "cite": "it is the individual"
+      },
+      {
+        "kind": "predication",
+        "name": "apparatus_component",
+        "of": "jati",
+        "cite": "the class"
+      },
+      {
+        "kind": "relation",
+        "name": "samsrsta",
+        "from": "jati",
+        "to": "vyakti",
+        "cite": "the class, being connected"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "jati_monopoly",
+      "rendering": "The form-universal (jāti) is the sole and sufficient basis for grammatical reference, with the individual form (vyakti) playing no essential role.",
+      "why": "Directly contradicts the commentary's assertion that 'rule-stated language requires an apparatus of types and tokens' — an irreducible coordination. Denying vyakti's role violates the apparatus structure both reported positions affirm.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "sufficient_alone",
+          "of": "jati"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "conflated_positions",
+      "rendering": "The individual form (vyakti) and the class (jāti) play interchangeable roles in grammatical reference, or are functionally equivalent.",
+      "why": "The verse's force rests on distinguishing two positions: position 1 assigns vyakti and jāti different roles (vyakti as name, jāti as connected operator), while position 2 assigns them mediated roles (vyakti as named-through-jāti). Conflating them erases the reported distinction, which the commentary emphasizes as the 'akrti/vyakti controversy'.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "identity",
+          "a": "vyakti",
+          "b": "jati"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse reports the classical akṛti/vyakti debate within Pāninian exegesis: whether reference is to vyakti-as-name (v.68) or vyakti-as-named-through-jāti (v.69). Bhartṛhari's stance is to accept both as confirming a structural requirement: language needs an apparatus of types and tokens in coordination. The contract captures this shared structural point rather than choosing between the positions."
+}

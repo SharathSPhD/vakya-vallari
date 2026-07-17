@@ -1,0 +1,105 @@
+{
+ "verse": "1.71",
+ "entities": [
+  {
+   "id": "phoneme",
+   "name": "varṇa",
+   "sort": "linguisticItem",
+   "cite": "The 'a' in one word and in another is not two similar sounds but, as competent speakers unhesitatingly judge, the same phoneme"
+  },
+  {
+   "id": "word",
+   "name": "pada",
+   "sort": "linguisticItem",
+   "cite": "the word 'gauh' in two different sentences is one word, not twins"
+  },
+  {
+   "id": "ekatva",
+   "name": "ekatva",
+   "sort": "property",
+   "cite": "This identity-across-occurrence is the most elementary fact a science of language must save"
+  },
+  {
+   "id": "sound_event",
+   "name": "dhvani",
+   "sort": "linguisticItem",
+   "cite": "the acoustic events are numerically distinct and unrepeatable"
+  }
+ ],
+ "axioms": [
+  {
+   "kind": "predication",
+   "name": "ekatva",
+   "of": "phoneme",
+   "cite": "The 'a' in one word and in another is not two similar sounds but, as competent speakers unhesitatingly judge, the same phoneme"
+  },
+  {
+   "kind": "predication",
+   "name": "ekatva",
+   "of": "word",
+   "cite": "the word 'gauh' in two different sentences is one word, not twins"
+  },
+  {
+   "kind": "relation",
+   "name": "vivartate",
+   "from": "phoneme",
+   "to": "sound_event",
+   "cite": "Whatever phonemes and words are, they are repeatables — the type, not the dated token, is the grammarian's object"
+  }
+ ],
+ "denials": [
+  {
+   "kind": "identity",
+   "a": "phoneme",
+   "b": "sound_event",
+   "cite": "crude token-physicalism"
+  }
+ ],
+ "accepted_reading": {
+  "claims": [
+   {
+    "kind": "predication",
+    "name": "ekatva",
+    "of": "phoneme",
+    "cite": "the unity of the phonemes is not abolished"
+   },
+   {
+    "kind": "predication",
+    "name": "ekatva",
+    "of": "word",
+    "cite": "one and the same word is found"
+   }
+  ]
+ },
+ "rejected_readings": [
+  {
+   "label": "token_physicalism",
+   "rendering": "Acoustic events are the true phonemes and words; different utterances produce different phonemic and word units.",
+   "why": "Commits to crude token-physicalism, which the verse rejects. Phonemes and words are types (repeatables), not acoustic tokens. The numerical distinctness of acoustic events does not entail phonemic distinctness.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "identity",
+     "a": "phoneme",
+     "b": "sound_event"
+    }
+   ],
+   "expect": "contradicted"
+  },
+  {
+   "label": "similarity_not_sameness",
+   "rendering": "Phonemes in different words are merely similar to one another; words in different sentences are merely similar.",
+   "why": "Reduces the verse's core claim—identity recognized by competent speakers—to mere similarity. The entire doctrine depends on the 'a' being the same phoneme across contexts, not different-but-similar ones.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "predication",
+     "name": "sadṛśa",
+     "of": "phoneme"
+    }
+   ],
+   "expect": "unlicensed"
+  }
+ ],
+ "notes": "The contract captures the verse's foundational argument: phonemes (varṇa) and words (pada) are linguistic types with the property ekatva (identity-across-occurrence), manifesting as numerically distinct acoustic events without losing their unity. This blocks crude token-physicalism and establishes that the grammarian's object is the repeatable type, not the dated token—essential scaffolding for the parts-and-wholes argument in later verses."
+}

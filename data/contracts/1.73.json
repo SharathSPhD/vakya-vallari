@@ -1,0 +1,145 @@
+{
+  "verse": "1.73",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "In the word — the real, functioning word, the meaning-bearer"
+    },
+    {
+      "id": "varna",
+      "name": "varṇa",
+      "sort": "linguisticItem",
+      "cite": "phonemes na vidyante, are not found"
+    },
+    {
+      "id": "vakya",
+      "name": "vākya",
+      "sort": "linguisticItem",
+      "cite": "the sentence is the primary unit"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "avidyante",
+      "of": "varna",
+      "cite": "phonemes na vidyante, are not found"
+    },
+    {
+      "kind": "predication",
+      "name": "niravayava",
+      "of": "varna",
+      "cite": "Phonemes in turn have no avayavas, no parts"
+    },
+    {
+      "kind": "relation",
+      "name": "apraviveka",
+      "from": "sabda",
+      "to": "vakya",
+      "cite": "words have no atyantam praviveka, no absolute separation, from the sentence"
+    },
+    {
+      "kind": "predication",
+      "name": "mukhya",
+      "of": "vakya",
+      "cite": "the sentence is the primary unit"
+    },
+    {
+      "kind": "relation",
+      "name": "apoddhara",
+      "from": "sabda",
+      "to": "vakya",
+      "cite": "words as apoddhara, extracts"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "vidyante",
+      "of": "varna",
+      "cite": "the sphota that conveys meaning has no phonemic grain"
+    },
+    {
+      "kind": "relation",
+      "name": "praviveka",
+      "from": "sabda",
+      "to": "vakya",
+      "cite": "the parts are nowhere to be found in the functioning whole"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "avidyante",
+        "of": "varna",
+        "cite": "In the word the phonemes do not exist"
+      },
+      {
+        "kind": "predication",
+        "name": "niravayava",
+        "of": "varna",
+        "cite": "in the phonemes there are no parts"
+      },
+      {
+        "kind": "relation",
+        "name": "apraviveka",
+        "from": "sabda",
+        "to": "vakya",
+        "cite": "no absolute separation of the words"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "phonemes_foundational",
+      "rendering": "Phonemes are the ultimate units of speech and are directly found in words.",
+      "why": "Asserts that phonemes exist in words as foundational units, directly contradicting the verse's claim that phonemes are not found in the functioning word. The verse explicitly denies this via the doctrine of sphota—meaning is conveyed without phonemic grain.",
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "vidyante",
+          "of": "varna"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "word_independence",
+      "rendering": "Words are absolutely distinct and independent units, wholly separate from sentences.",
+      "why": "Asserts absolute separation (praviveka) between words and sentences, which the verse explicitly rejects. The commentary establishes that words are apoddhara (extracts) from the sentence and have no absolute separation from it.",
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "praviveka",
+          "from": "sabda",
+          "to": "vakya"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "infinite_partitivity",
+      "rendering": "Phonemes themselves can be endlessly subdivided into smaller and smaller parts.",
+      "why": "Asserts that phonemes have parts (savayava), contradicting the verse's explicit claim that phonemes have no parts (niravayava). The commentary blocks infinite regress by denying sub-parts at the phonemic level.",
+      "entities": [
+        {
+          "id": "varna_decomposable",
+          "name": "varṇa",
+          "sort": "linguisticItem"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "savayava",
+          "of": "varna_decomposable"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The contract encodes the anti-analysis thesis: phonemes and parts are not features of the functioning word but artifacts of analytical decomposition. The relation apraviveka (no absolute separation) establishes words as dependent on sentences, rejecting atomistic theories that treat words as independent units. Sanskrit technical terms used: avidyante (not found), niravayava (without parts), apraviveka (no absolute separation), apoddhara (extracts/abstractions)."
+}

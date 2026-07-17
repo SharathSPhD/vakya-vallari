@@ -51,6 +51,16 @@ import VakyaVallari.Verses.V1_6
 import VakyaVallari.Verses.V1_60
 import VakyaVallari.Verses.V1_61
 import VakyaVallari.Verses.V1_62
+import VakyaVallari.Verses.V1_63
+import VakyaVallari.Verses.V1_65
+import VakyaVallari.Verses.V1_68_69
 import VakyaVallari.Verses.V1_7
+import VakyaVallari.Verses.V1_70
+import VakyaVallari.Verses.V1_71
+import VakyaVallari.Verses.V1_72
+import VakyaVallari.Verses.V1_73
+import VakyaVallari.Verses.V1_75
+import VakyaVallari.Verses.V1_76
+import VakyaVallari.Verses.V1_77
 import VakyaVallari.Verses.V1_8
 import VakyaVallari.Verses.V1_9
