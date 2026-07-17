@@ -12,7 +12,7 @@
 \usepackage{tikz}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
-\usetikzlibrary{shapes.geometric, arrows.meta, positioning, fit, calc, backgrounds}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning, fit, calc, backgrounds, matrix}
 \usepackage{listings}
 \usepackage{amsmath, amssymb, amsthm}
 \usepackage{xcolor}
@@ -34,6 +34,9 @@
 \DeclareUnicodeCharacter{1E45}{\.n}   % ṅ
 
 \definecolor{leanbg}{RGB}{246,241,231}
+\definecolor{gatecol}{RGB}{180,60,50}
+\definecolor{datacol}{RGB}{60,90,160}
+\definecolor{proccol}{RGB}{60,130,80}
 \lstdefinelanguage{lean}{
   keywords={theorem, def, structure, inductive, namespace, end, import, open, by, decide, deriving, where, example},
   sensitive=true, comment=[l]{--},
@@ -47,12 +50,13 @@
 
 \newtheorem{definition}{Definition}
 
-\title{Machine-Checked Translation Adequacy for Bhart\d{r}hari's
-  \emph{V\={a}kyapad\={\i}ya}:\\ Commentary-Driven Verification of a Sanskrit
-  Philosophical Text in Lean~4}
+\title{Machine-Checked Translation Adequacy for the Brahmak\={a}\d{n}\d{d}a of
+  Bhart\d{r}hari's \emph{V\={a}kyapad\={\i}ya}:\\ Commentary-Driven Verification
+  of a Sanskrit Philosophical Text in Lean~4}
 
 \author{Sharath Sathish\\
-  \small with an agentic formalization loop built on Claude (Anthropic)\\
+  \small Independent Researcher\\
+  \small \texttt{sharath.sathish@gmail.com}\\
   \small \url{https://github.com/SharathSPhD/vakya-vallari}}
 
 \date{July 2026}
@@ -61,216 +65,414 @@
 \maketitle
 
 \begin{abstract}
-Translations of dense philosophical Sanskrit are notoriously under-determined:
-a single k\={a}rik\={a} admits multiple grammatically valid renderings whose
-philosophical commitments differ radically, and the commentarial tradition ---
-not surface grammar --- is what fixes the intended reading. We introduce
-\emph{commentary-driven translation validation} (C-TV), to our knowledge the
-first application of an interactive theorem prover to translation adequacy in
-linguistics, and apply it to the complete Brahmak\={a}\d{n}\d{d}a (Book~I, 144
-verse units) of Bhart\d{r}hari's \emph{V\={a}kyapad\={\i}ya}. From an original
-English translation and analytical commentary of all 1,796 verses we derive,
-per verse, a \emph{semantic contract}: sorted entities, identity, relation and
-predication claims, and explicit denials, every axiom citing the commentary
-verbatim --- a mechanical anti-fabrication gate. A generator compiles contracts
-into Lean~4, where a decidable adequacy predicate proves that the accepted
+Translations of dense philosophical Sanskrit are under-determined. A single
+k\={a}rik\={a} admits several grammatically valid renderings whose
+philosophical commitments differ radically, and the commentarial tradition,
+not surface grammar, fixes the intended reading. This paper introduces
+commentary-driven translation validation (C-TV), an adaptation of translation
+validation from compiler verification to natural language, and applies it to
+the complete Brahmak\={a}\d{n}\d{d}a (Book~I, 144 verse units) of
+Bhart\d{r}hari's \emph{V\={a}kyapad\={\i}ya}. A machine-produced English
+translation and analytical commentary, prepared with K.~A. Subramania Iyer's
+edition and translation of Book~I with the V\d{r}tti as the primary reference
+text, is compiled verse by verse into a semantic contract: sorted entities,
+identity, relation, and predication claims, and explicit denials, with every
+axiom citing the commentary verbatim. A generator compiles each contract into
+Lean~4, where a decidable adequacy predicate proves that the accepted
 translation satisfies the contract (144 adequacy theorems) and that 350
-plausible mistranslations provably fail --- 153 contradicted by commentary
-denials, 197 unlicensed by the axioms --- for 549 machine-checked theorems with
-zero \texttt{sorry}. The corpus was formalized by an agentic swarm gated by the
-validator and the Lean kernel; the gates caught real errors at every scale,
-from fabricated citations in degraded agent output to cross-contract
-ontological drift, adjudicated into a registry of 41 polysemous terms with 91
-textually justified senses --- including the ak\d{s}ara pun that
-Bhart\d{r}hari's own commentators call the argument of the opening verse in
-miniature. A GPU embedding audit of all 1,796 translation--commentary pairs
-provides a corpus-scale review queue that correlates with independently flagged
-contested readings. We state precisely what is and is not verified: Lean checks
-the internal coherence of the formalization against the commentary-derived
-contract; the contract--commentary link remains human-auditable by
-construction, through verbatim citations. All artifacts --- corpus, contracts,
-kernel, proofs, edition --- are public and reproducible.
+plausible mistranslations provably fail (153 contradicted by commentary
+denials, 197 unlicensed by the axioms), for 549 machine-checked theorems with
+zero \texttt{sorry}. The contracts were authored by an agent swarm gated by a
+validator and by the Lean kernel; the gates caught errors at every scale,
+including fabricated citations in quota-degraded agent output and
+cross-contract ontological drift, which adjudication resolved into a registry
+of 41 polysemous terms with 91 textually justified senses. An embedding audit
+of translation--commentary pairs provides a ranked review queue and is
+reported with its limits. The verification boundary is stated precisely: Lean
+checks the internal coherence of the formalization against the
+commentary-derived contract, and the contract--commentary link remains
+human-auditable through the verbatim citations. All artifacts, including the
+corpus, contracts, kernel, proofs, and edition, are public and reproducible.
 \end{abstract}
 
 \section{Introduction}
 \label{sec:intro}
 
-The \emph{V\={a}kyapad\={\i}ya} (``Treatise on Sentence and Word,''
-c.~5th century CE) is the foundational text of Indian philosophy of language.
-Its opening verse already illustrates the problem this paper addresses:
+The \emph{V\={a}kyapad\={\i}ya} (Treatise on Sentence and Word, c.~5th
+century CE) is the foundational text of Indian philosophy of language. Its
+opening verse already exhibits the problem this paper addresses:
 
 \begin{quote}
 \emph{an\={a}dinidhana\d{m} brahma \'sabdatattva\d{m} yadak\d{s}aram\,/\\
 vivartate'rthabh\={a}vena prakriy\={a} jagato yata\d{h}\,//} (VP 1.1)
 \end{quote}
 
-A translator must decide whether \emph{\'sabdatattva} (``word-essence'') is a
-\emph{property of language} or \emph{the Absolute itself}; whether
-\emph{vivartate} means the world is a \emph{transformation} of Brahman
-(pari\d{n}\={a}ma) or its \emph{appearance without transformation} (vivarta);
-and whether \emph{ak\d{s}ara} means ``imperishable,'' ``phoneme,'' or ---
-as the grammarian tradition insists --- deliberately both. Each choice yields a
-grammatical English sentence; the choices differ philosophically as much as
-materialism differs from idealism. What disambiguates them is not syntax but
-the commentarial tradition: the vast apparatus of v\d{r}tti and
-\d{t}\={\i}k\={a} that fixes, verse by verse, which reading the text licenses
-\citep{iyer1965vakyapadiya, houben2016vakyapadiya}.
+A translator must decide whether \emph{\'sabdatattva} (word-essence) is a
+property of language or the Absolute itself; whether \emph{vivartate} means
+that the world is a transformation of Brahman (pari\d{n}\={a}ma) or its
+appearance without transformation (vivarta); and whether \emph{ak\d{s}ara}
+means imperishable, phoneme, or, as the grammarian tradition insists,
+deliberately both. Each choice yields a grammatical English sentence. The
+choices differ philosophically as much as materialism differs from idealism.
+What disambiguates them is not syntax but the commentarial apparatus of
+v\d{r}tti and \d{t}\={\i}k\={a} that fixes, verse by verse, which reading the
+text licenses \citep{iyer1965vakyapadiya, houben2016vakyapadiya}.
 
-Translation of such texts has therefore been an art form in which the
-constraints, though real, live only in the philologist's head. This paper makes
-them mechanical. Our claim is not that a theorem prover can read Sanskrit; it
-is that once a scholar's interpretive commitments are stated as data, a
-proof assistant can \emph{hold the translation to them} --- exhaustively,
-incrementally, and publicly.
+Translation of such texts has therefore been a discipline whose constraints,
+though real, live in the philologist's head. This paper makes a subset of
+those constraints mechanical. The claim is not that a theorem prover can read
+Sanskrit. The claim is that once interpretive commitments are stated as data,
+a proof assistant can hold a translation to them exhaustively, incrementally,
+and publicly.
+
+\paragraph{Scope.} The verified object is the Brahmak\={a}\d{n}\d{d}a, the
+first of the text's three books, in its entirety: 144 verse units, of which
+56 carry contested readings. Book~I contains the text's core metaphysics of
+language (\'sabd\={a}dvaita and the spho\d{t}a doctrine) and is the book for
+which \citet{iyer1965vakyapadiya} provides the edition with the V\d{r}tti
+that served as the primary reference for the translation and commentary
+formalized here. Books~II and~III exist in the released corpus as unverified
+context and are outside the scope of the present claims.
 
 \paragraph{Contributions.}
 \begin{enumerate}
-  \item \textbf{Commentary-driven translation validation (C-TV).} We adapt
-    translation validation from compiler verification
-    \citep{pnueli1998translation, leroy2009compcert, tristan2008validators} to
-    natural language: the commentary is compiled into per-verse \emph{semantic
-    contracts} (\S\ref{sec:contracts}), and a translation's reading is verified
-    against the contract, not against the bare source string. To our knowledge
-    this is the first application of an interactive theorem prover to
-    translation adequacy in linguistics, and the first mechanized treatment of
-    any Sanskrit philosophical text.\footnote{Prior mechanizations of Indian
-    logic formalize the logical \emph{systems} (\S\ref{sec:related}); none, to
-    our knowledge, verifies \emph{translations of texts}.}
+  \item \textbf{Commentary-driven translation validation (C-TV).} The paper
+    adapts translation validation from compiler verification
+    \citep{pnueli1998translation, leroy2009compcert, tristan2008validators}
+    to natural language. The commentary is compiled into per-verse semantic
+    contracts (\S\ref{sec:method}), and a translation's reading is verified
+    against the contract rather than against the bare source string. To the
+    author's knowledge this is the first application of an interactive
+    theorem prover to translation adequacy in linguistics, and the first
+    mechanized treatment of a Sanskrit philosophical
+    text.\footnote{Prior mechanizations of Indian logic formalize the logical
+    systems (\S\ref{sec:related}); none, to the author's knowledge, verifies
+    translations of texts.}
   \item \textbf{A verified Brahmak\={a}\d{n}\d{d}a.} All 144 verse units of
-    Book~I carry compiled adequacy theorems, and 350 plausible mistranslations
-    are \emph{compiled counterexamples} --- refuted by theorem, not by footnote
-    (\S\ref{sec:kernel}). The full corpus of 1,796 verses with original
-    translation and commentary is released as a checksummed, schema-validated
-    digital edition.
+    Book~I carry compiled adequacy theorems, and 350 plausible
+    mistranslations are compiled counterexamples, refuted by theorem rather
+    than by footnote (\S\ref{sec:kernel}, \S\ref{sec:results}).
   \item \textbf{An anti-fabrication architecture for agentic formalization.}
-    The contracts were authored by an LLM-agent swarm, and every layer is
-    gated: axioms must cite the commentary \emph{verbatim}; rejected readings
-    must \emph{provably} fail; entity sorts must be globally consistent or
-    adjudicated as polysemy in a justified registry (\S\ref{sec:loop},
-    \S\ref{sec:ontology}). We report what the gates caught --- including
-    fabricated citations in quota-degraded agent output --- as evidence that
-    the architecture, not agent goodwill, carries the epistemic load.
-  \item \textbf{A corpus-scale semantic audit.} A GPU embedding pass over all
-    1,796 translation--commentary pairs yields a drift-ranked review queue
-    that correlates with the edition's independently flagged \emph{contested}
-    readings (\S\ref{sec:audit}).
+    The contracts were authored by an LLM agent swarm, and every layer is
+    gated: axioms must cite the commentary verbatim; rejected readings must
+    provably fail; entity sorts must be globally consistent or adjudicated as
+    polysemy in a justified registry (\S\ref{sec:loop},
+    \S\ref{sec:ontology}). The paper reports what the gates caught, including
+    fabricated citations in quota-degraded agent output, as evidence that the
+    architecture rather than agent reliability carries the epistemic load.
+  \item \textbf{A ranked semantic review queue.} An embedding audit of
+    translation--commentary pairs yields a similarity-ranked queue for
+    editorial attention, reported together with a negative finding about its
+    discriminative power at book scale (\S\ref{sec:audit}).
 \end{enumerate}
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+  node distance=3.6mm and 6mm,
+  box/.style={draw, rounded corners=2pt, align=center, font=\small,
+              inner sep=4pt, minimum height=8mm},
+  gate/.style={box, fill=red!8, draw=gatecol},
+  data/.style={box, fill=blue!6, draw=datacol},
+  proc/.style={box, fill=green!7, draw=proccol},
+  arr/.style={-{Stealth[length=2.2mm]}, semithick}]
+\node[data] (iyer) {Iyer 1965\\ (primary text)};
+\node[data, right=of iyer] (mula) {m\={u}la\\ (Devanagari)};
+\node[proc, right=of mula] (trans) {translation +\\ commentary};
+\node[proc, below=of $(mula.south)!0.5!(trans.south)$] (corpus)
+  {canonical corpus\\ Book~I: 144 units};
+\node[gate, right=of corpus] (g1) {corpus gates\\ (pytest)};
+\node[proc, below=of corpus] (swarm) {agent swarm\\ drafts contracts};
+\node[gate, right=of swarm] (g2) {validator: verbatim cites,\\ entailment, refutability};
+\node[proc, below=of swarm] (leangen) {generator\\ $\to$ Lean modules};
+\node[gate, right=of leangen] (g3) {\texttt{lake build},\\ zero \texttt{sorry}};
+\node[proc, below=of leangen] (adj) {consistency gate +\\ homonym registry};
+\node[gate, right=of adj] (g4) {adjudication\\ (textual merits)};
+\node[data, below=of adj] (out) {verified edition\\ 144 adequacy + 350 refutation thms};
+\draw[arr] (iyer) -- (trans);
+\draw[arr] (mula) -- (corpus);
+\draw[arr] (trans) -- (corpus);
+\draw[arr] (corpus) -- (g1);
+\draw[arr] (corpus) -- (swarm);
+\draw[arr] (swarm) -- (g2);
+\draw[arr] (g2.south) to[bend left=18] (swarm.east);
+\draw[arr] (swarm) -- (leangen);
+\draw[arr] (leangen) -- (g3);
+\draw[arr] (g3.south) to[bend left=18] (leangen.east);
+\draw[arr] (leangen) -- (adj);
+\draw[arr] (adj) -- (g4);
+\draw[arr] (g4.south) to[bend left=18] (adj.east);
+\draw[arr] (adj) -- (out);
+\end{tikzpicture}
+\caption{The C-TV pipeline. Every layer has a mechanical gate (red). Failures
+feed back as repair work, and an append-only research ledger records each
+draft, rejection, repair, and acceptance.}
+\label{fig:pipeline}
+\end{figure}
 
 \section{Background and Related Work}
 \label{sec:related}
 
-\paragraph{Bhart\d{r}hari and the spho\d{t}a doctrine.}
+\subsection{Bhart\d{r}hari and the Brahmak\={a}\d{n}\d{d}a}
 The \emph{V\={a}kyapad\={\i}ya} comprises three books
 (Brahmak\={a}\d{n}\d{d}a, V\={a}kyak\={a}\d{n}\d{d}a, Padak\={a}\d{n}\d{d}a).
-Book~I develops \'sabd\={a}dvaita --- the thesis that the Absolute is of the
-nature of the word --- and the spho\d{t}a doctrine: the meaning-bearing word is
-an undivided whole, merely \emph{manifested} by the temporal sequence of
-sounds \citep{coward1980sphota, biardeau1964theorie, staal1969sanskrit}.
-Both doctrines generate exactly the translation hazards our system checks:
-sort errors (demoting the Absolute to a property), relation errors
-(rendering manifestation as transformation), and homonym errors (collapsing
-the technical senses of ak\d{s}ara, spho\d{t}a, dhvani).
+Book~I develops \'sabd\={a}dvaita, the thesis that the Absolute is of the
+nature of the word, and the spho\d{t}a doctrine: the meaning-bearing word is
+an undivided whole, merely manifested by the temporal sequence of sounds
+\citep{coward1980sphota, biardeau1964theorie, staal1969sanskrit}. Both
+doctrines generate exactly the translation hazards the present system checks:
+sort errors (demoting the Absolute to a property), relation errors (rendering
+manifestation as transformation), and homonym errors (collapsing the
+technical senses of ak\d{s}ara, spho\d{t}a, and dhvani). The standard modern
+edition of Book~I with the V\d{r}tti and an English translation is
+\citet{iyer1965vakyapadiya}; \citet{houben1995sambandha} treats
+Bhart\d{r}hari's theory of relation, which motivates the kernel's nested
+relations (\S\ref{sec:kernel}).
 
-\paragraph{Computational Sanskrit.}
+\subsection{Computational Sanskrit}
 P\={a}\d{n}inian grammar has long been recognized as a formal generative
 system \citep{kiparsky2009panini, cardona1976panini, scharf2009panini}, and a
-mature computational ecosystem exists for segmentation, morphology and
+mature computational ecosystem exists for segmentation, morphology, and
 generation \citep{goyal2016samsaadhanii, hellwig2020sanskrit, vidyut}, with
-TEI-encoded editions in SARIT \citep{sarit}. This work is orthogonal and
-complementary: we verify \emph{semantics against commentary}, not surface
-analysis.
+TEI-encoded editions in SARIT \citep{sarit}. That work is orthogonal and
+complementary: the present system verifies semantics against commentary, not
+surface analysis.
 
-\paragraph{Formalizing Indian logic.}
-Navya-Ny\={a}ya has been studied logically since
-\citet{ingalls1951materials} and \citet{matilal1968navya}; recently
-\citet{panday2026cubical} encoded its core constructs (relational nesting,
-delimitors, typed absence) in cubical type theory, \citet{sathish2026pramana}
-trained LLMs on its six-phase epistemic method, and \citet{diehl2024fourfold}
-mechanized the Buddhist catu\d{s}ko\d{t}i in Lean. These formalize the
-\emph{logics}; none verifies translations of a text. Our kernel borrows
-Navya-Ny\={a}ya's structural insights (\S\ref{sec:kernel}) in plain Lean~4
-\citep{demoura2021lean4}, without cubical machinery.
+\subsection{Formalizing Indian logic}
+Navya-Ny\={a}ya has been studied logically since \citet{ingalls1951materials}
+and \citet{matilal1968navya}. Recently \citet{panday2026cubical} encoded its
+core constructs (relational nesting, delimitors, typed absence) in cubical
+type theory, \citet{sathish2026pramana} trained LLMs on its six-phase
+epistemic method, and \citet{diehl2024fourfold} mechanized the Buddhist
+catu\d{s}ko\d{t}i in Lean. These works formalize the logics; none verifies
+translations of a text. The kernel here borrows Navya-Ny\={a}ya's structural
+insights in plain Lean~4 \citep{demoura2021lean4}, without cubical machinery.
 
-\paragraph{Translation validation and autoformalization.}
-Translation validation checks each compiler run \emph{a posteriori} instead of
+\subsection{Translation validation and autoformalization}
+Translation validation checks each compiler run a posteriori instead of
 verifying the compiler \citep{pnueli1998translation, tristan2008validators}.
-We transplant the pattern: the human translator is the untrusted optimizer;
-the contract is the semantic reference; Lean is the validator. On the
-authoring side, LLM autoformalization \citep{wu2022autoformalization,
-pathak2024gflean} supplies the untrusted draft whose output the kernel gates
---- our loop is an instance of the generate-and-check paradigm with an
-unusually strict checker.
+The present system transplants the pattern: the translator is the untrusted
+optimizer, the contract is the semantic reference, and Lean is the validator.
+On the authoring side, LLM autoformalization \citep{wu2022autoformalization,
+pathak2024gflean} supplies the untrusted draft whose output the kernel gates.
+The loop is an instance of the generate-and-check paradigm with a strict
+checker.
 
-\section{The Corpus}
-\label{sec:corpus}
+\subsection{Gate-audited agentic research programmes}
+The formalization loop follows a discipline developed in two companion
+programmes. Active Circuit Discovery frames mechanistic interpretability
+under a budget as an experimental-design problem and delegates experiment
+selection to an active-inference agent \citep{sathish2026acd}. The Prabodha
+programme runs a pre-registered, gate-audited research loop in which every
+claim must pass both a code gate and a domain gate, with an append-only
+evidence ledger and adversarial review \citep{sathish2026prabodha}. The
+present system inherits the pattern: agents propose, mechanical gates
+dispose, and an append-only ledger records every draft, rejection, repair,
+and acceptance. The difference is the checker. Where those programmes gate on
+statistical criteria, this one gates on a type-checker, so acceptance is a
+theorem rather than a threshold.
 
-The edition is built from two sources: (i) the Devanagari m\={u}la
-k\={a}rik\={a}s scraped from a public edition (wisdomlib.org), and (ii) an
-original English translation and analytical commentary of every verse, written
-from the Sanskrit for this project. Alignment is checked, never assumed: the
-1,796 commentary units (144 / 426 / 1,226 per book) are the canonical keys;
-every unit must match a m\={u}la entry by exact label or be quarantined with a
-reason. The build is test-driven (12 corpus gates), and the tests forced three
-philologically real discoveries: the \emph{contested} field is a prose note
-explaining each disputed reading (286 verses), not a boolean; verse markers
-legitimately embed Latin half-verse letters; and the source edition assigns
-the label 2.127cd to two different pages --- a defect the commentary itself
-documents, which the loader merges and flags rather than silently overwriting.
-The resulting JSONL corpus carries per-record provenance and a manifest with a
-SHA-256 checksum.
+\section{Method: Commentary-Driven Translation Validation}
+\label{sec:method}
 
-\begin{table}[t]
-\centering
-\caption{The V\={a}kya-Vallar\={\i} corpus and the verified subset
-(Brahmak\={a}\d{n}\d{d}a complete).}
-\label{tab:corpus}
-\begin{tabular}{lrrrr}
-\toprule
- & \textbf{Book I} & \textbf{Book II} & \textbf{Book III} & \textbf{Total} \\
-\midrule
-Verse units (canonical)        & 144 & 426 & 1,226 & 1,796 \\
-Contested readings (prose notes) & 56 & 167 & 63 & 286 \\
-Semantic contracts             & 144 & --- & --- & 144 \\
-Adequacy theorems (Lean)       & 144 & --- & --- & 144 \\
-Refutation theorems (Lean)     & 350 & --- & --- & 350 \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\section{Semantic Contracts}
-\label{sec:contracts}
+\subsection{Problem statement}
+Let $v$ be a verse with source text $s_v$, commentary $c_v$, and candidate
+translation $t_v$. Direct verification of $t_v$ against $s_v$ is not well
+posed: the source under-determines the reading, and the commentary is what
+fixes it. C-TV therefore verifies $t_v$ against a formal object derived from
+$c_v$.
 
 \begin{definition}[Semantic contract]
 A contract for verse $v$ is a JSON document with (i) \emph{entities}: named
 terms with ontological sorts drawn from $\{$absolute, power, manifestation,
 linguisticItem, property, cognition$\}$; (ii) \emph{axioms} and
-\emph{denials}: identity, relation and predication claims over those entities,
-each carrying a citation that must occur \emph{verbatim} in the verse's
-commentary; (iii) an \emph{accepted reading}: the claims the translation
-asserts, each citing the translation verbatim; and (iv) \emph{rejected
-readings}: plausible mistranslations rendered as claim sets, each annotated
-with the failure mode it must exhibit --- \texttt{contradicted} (asserts a
-denial) or \texttt{unlicensed} (asserts what no axiom entails).
+\emph{denials}: identity, relation, and predication claims over those
+entities, each carrying a citation that must occur verbatim in $c_v$;
+(iii) an \emph{accepted reading}: the claims that $t_v$ asserts, each citing
+$t_v$ verbatim; and (iv) \emph{rejected readings}: plausible mistranslations
+rendered as claim sets, each annotated with the failure mode it must
+exhibit.
 \end{definition}
 
-The verbatim-citation rule is the anti-fabrication gate: an axiom that cannot
-point to the commentary text that licenses it is rejected mechanically, before
-any proof is attempted. Across the 144 contracts there are 772 entity
-declarations, 610 axioms, 178 denials, 449 accepted-reading claims and 350
-rejected readings. The validator further checks sort membership, ASCII
-identifier hygiene (a Lean requirement discovered the hard way,
-\S\ref{sec:loop}), entailment of the accepted reading, and provable failure of
-every rejected reading --- the last via the same decision procedure the Lean
-kernel uses, so that Python-side acceptance predicts Lean-side theoremhood.
+\begin{definition}[Adequacy and failure modes]
+A reading $r$ is \emph{adequate} for contract $C$ when every claim of $r$ is
+entailed by the axioms of $C$ and no claim of $r$ is denied by $C$. A
+rejected reading must fail in one of two registered modes:
+\texttt{contradicted} (it asserts a denial) or \texttt{unlicensed} (it
+asserts a claim no axiom entails). Both modes are decidable
+(\S\ref{sec:kernel}).
+\end{definition}
+
+\subsection{The anti-fabrication gate}
+The verbatim-citation rule is the load-bearing constraint. An axiom that
+cannot point to the commentary text that licenses it is rejected
+mechanically, before any proof is attempted. This converts the usual
+free-form risk of LLM-authored formal content (invented support) into a
+string-matching check. The same rule applies to the accepted reading, whose
+claims must cite the translation verbatim, so the contract cannot silently
+attribute to the translation a claim it does not make.
+
+\subsection{Worked example: VP 1.1}
+\label{sec:worked}
+Figure~\ref{fig:readings} shows the compiled fate of three candidate
+renderings of the opening verse. The contract for 1.1 declares three
+entities (brahman and \'sabdatattva of sort absolute, jagat of sort
+manifestation), four axioms (the identity of \'sabdatattva and brahman, the
+vivarta relation to the world, and the predications an\={a}dinidhana and
+ak\d{s}ara), and one denial (the pari\d{n}\={a}ma relation). The accepted
+rendering asserts four claims, each citing the translation text. Two
+rejected renderings are registered. The first demotes \'sabdatattva to a
+property of language; its identity claim then crosses sorts and no axiom
+entails it, so it fails as \texttt{unlicensed}, with an auxiliary theorem
+recording the sort error. The second renders vivartate as transformation; it
+asserts exactly the denied pari\d{n}\={a}ma relation and fails as
+\texttt{contradicted}.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+  node distance=4.5mm and 5mm,
+  cand/.style={draw, rounded corners=2pt, align=left, font=\small, inner sep=4pt,
+               fill=blue!5, draw=datacol, text width=56mm},
+  verdict/.style={draw, rounded corners=2pt, align=center, font=\small, inner sep=4pt},
+  ok/.style={verdict, fill=green!10, draw=proccol},
+  bad/.style={verdict, fill=red!8, draw=gatecol},
+  arr/.style={-{Stealth[length=2.2mm]}, semithick}]
+\node[cand] (a) {``That beginningless and endless One, Brahman, whose essence
+  is the Word, imperishable, appears in the mode of objects\ldots''};
+\node[cand, below=of a] (b) {``The imperishable linguistic structure
+  underlying words has no beginning or end.''};
+\node[cand, below=of b] (c) {``Brahman transforms itself into the world of
+  objects.''};
+\node[ok, right=14mm of a] (va) {\texttt{Adequate}\\ theorem by \texttt{decide}};
+\node[bad, right=14mm of b] (vb) {\texttt{unlicensed}\\ sort error:\\
+  property $\neq$ absolute};
+\node[bad, right=14mm of c] (vc) {\texttt{contradicted}\\ asserts denied\\
+  pari\d{n}\={a}ma relation};
+\draw[arr] (a) -- (va);
+\draw[arr] (b) -- (vb);
+\draw[arr] (c) -- (vc);
+\node[font=\small\itshape, above=2mm of a] {candidate renderings of VP 1.1};
+\node[font=\small\itshape, above=2mm of va] {compiled verdict};
+\end{tikzpicture}
+\caption{Three renderings of VP 1.1 and their compiled verdicts. The
+accepted reading is proved adequate; each rejected reading is refuted by a
+theorem in its registered failure mode.}
+\label{fig:readings}
+\end{figure}
+
+\subsection{Verification boundary}
+\label{sec:boundary}
+Lean verifies the internal coherence of the formalization: the accepted
+reading satisfies the contract and the rivals provably do not. Whether the
+contract is faithful to Bhart\d{r}hari is not a theorem and cannot be one.
+That link is kept auditable by construction: every axiom carries the exact
+commentary sentence it derives from, so checking a contract against the
+commentary is a lookup rather than a reconstruction. The division of labor
+is deliberate. The prover keeps commitments; the philologist judges them.
+
+\section{The Corpus}
+\label{sec:corpus}
+
+\subsection{Sources}
+The edition is built from two sources. The Devanagari m\={u}la
+k\={a}rik\={a}s were scraped from a public edition (wisdomlib.org). The
+English translation and analytical commentary were produced afresh for this
+project by a machine-assisted process working from the Sanskrit, with the
+edition and annotated translation of Book~I with the V\d{r}tti by
+\citet{iyer1965vakyapadiya} as the primary reference text. Interpretive
+decisions in the commentary follow the V\d{r}tti as presented there;
+disputed readings are recorded in a per-verse \emph{contested} note rather
+than silently resolved.
+
+\subsection{Alignment and gates}
+Alignment between m\={u}la and commentary is checked, never assumed. The
+commentary units are the canonical keys; every unit must match a m\={u}la
+entry by exact label or be quarantined with a reason. The build is
+test-driven, and the tests forced three philologically real discoveries: the
+\emph{contested} field is a prose note explaining each disputed reading, not
+a boolean; verse markers legitimately embed Latin half-verse letters; and the
+source edition assigns one label to two different pages, a defect the
+commentary itself documents, which the loader merges and flags rather than
+silently overwriting. The resulting JSONL corpus carries per-record
+provenance and a manifest with a SHA-256 checksum.
+Table~\ref{tab:corpus} summarizes the corpus and the verified subset.
+
+\begin{table}[t]
+\centering
+\caption{The corpus and the verified scope. Books~II and~III are released as
+unverified context; all verification claims in this paper concern Book~I.}
+\label{tab:corpus}
+\begin{tabular}{lrrrr}
+\toprule
+ & \textbf{Book I} & \textbf{Book II} & \textbf{Book III} & \textbf{Total} \\
+\midrule
+Verse units (canonical)          & 144 & 426 & 1,226 & 1,796 \\
+Contested readings (prose notes) & 56  & 167 & 63    & 286 \\
+Semantic contracts               & 144 & --- & ---   & 144 \\
+Adequacy theorems (Lean)         & 144 & --- & ---   & 144 \\
+Refutation theorems (Lean)       & 350 & --- & ---   & 350 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Contract Anatomy and Statistics}
+\label{sec:contracts}
+
+Across the 144 contracts there are 772 entity declarations, 610 axioms, 178
+denials, 449 accepted-reading claims, and 350 rejected readings. Most verses
+carry two or three rejected readings (75 and 58 verses respectively; six
+carry one and five carry four). Figure~\ref{fig:stats} shows the
+distribution of entity sorts and axiom kinds. Relations dominate the axioms
+(312 of 610), which reflects the text: Book~I argues chiefly about how
+things stand to one another (manifestation, expression, dependence), not
+about what things are called.
+
+The validator checks, per contract: schema validity; sort membership; ASCII
+identifier hygiene (a Lean requirement discovered during the loop,
+\S\ref{sec:loop}); verbatim presence of every citation; entailment of the
+accepted reading; and provable failure of every rejected reading in its
+registered mode. The last two checks run the same decision procedure the
+Lean kernel uses, so Python-side acceptance predicts Lean-side theoremhood.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+\begin{axis}[width=0.46\textwidth, height=5.2cm, ybar,
+  bar width=7pt, xtick=data, x tick label style={rotate=35, anchor=east, font=\footnotesize},
+  symbolic x coords={linguisticItem, manifestation, property, power, cognition, absolute},
+  ylabel={entities}, label style={font=\small}, tick label style={font=\small},
+  ymin=0, enlarge x limits=0.12, title={\small entity sorts (772)}]
+\addplot+[fill=blue!25, draw=datacol] coordinates {
+ (linguisticItem,192) (manifestation,146) (property,133) (power,125)
+ (cognition,90) (absolute,86)};
+\end{axis}
+\end{tikzpicture}\hfill
+\begin{tikzpicture}
+\begin{axis}[width=0.46\textwidth, height=5.2cm, ybar,
+  bar width=10pt, xtick=data, x tick label style={font=\footnotesize},
+  symbolic x coords={relation, predication, identity, denial},
+  ylabel={claims}, label style={font=\small}, tick label style={font=\small},
+  ymin=0, enlarge x limits=0.2, title={\small axiom kinds (610) and denials}]
+\addplot+[fill=green!25, draw=proccol] coordinates {
+ (relation,312) (predication,267) (identity,31) (denial,178)};
+\end{axis}
+\end{tikzpicture}
+\caption{Contract statistics over the 144 Brahmak\={a}\d{n}\d{d}a contracts.
+Left: entity declarations by ontological sort. Right: axioms by kind, with
+denials shown alongside.}
+\label{fig:stats}
+\end{figure}
 
 \section{The Lean Kernel}
 \label{sec:kernel}
 
+\subsection{Design}
 The kernel (\texttt{VakyaVallari}, Lean~4.32, no external dependencies) is
-deliberately small. Entities are sort-tagged terms; claims are inductive data;
-a contract is axioms plus denials; and adequacy is \emph{decidable}, so every
-verse-level theorem closes by \texttt{decide} --- the proof term is the
-computation.
+deliberately small: the ontology and adequacy core is under 150 lines.
+Entities are sort-tagged terms; claims are inductive data; a contract is
+axioms plus denials; and adequacy is decidable, so every verse-level theorem
+closes by \texttt{decide}. The proof term is the computation.
 
 \begin{lstlisting}[language=lean, caption={Core of the adequacy kernel (abridged).}]
 inductive Sorta | absolute | power | manifestation
@@ -285,20 +487,60 @@ def Adequate (c : Contract) (r : Reading) : Prop :=
   r.claims.all (entails c.axioms) ∧ ¬ r.claims.any (denied c.denials)
 \end{lstlisting}
 
-Three Navya-Ny\={a}ya-inspired choices matter. \emph{Sorted identity}: claims
-of identity are stateable across sorts but decidably false when sorts differ,
-so a mistranslation that demotes the Absolute to a property fails by
-\emph{sort error} --- the C-TV failure mode as a computation. \emph{Nested
+\subsection{Navya-Ny\={a}ya structure}
+Three design choices are drawn from Navya-Ny\={a}ya analysis
+\citep{ingalls1951materials, matilal1968navya}. \emph{Sorted identity}:
+identity claims are stateable across sorts but decidably false when sorts
+differ, so a mistranslation that demotes the Absolute to a property fails by
+sort error, the C-TV failure mode realized as a computation. \emph{Nested
 relations}: \texttt{Node} makes relations first-class relata
-(parampar\={a}-sambandha), so ``Time is the instrumental cause \emph{of the
-manifestation-relation}'' is representable without ad hoc reification.
-\emph{Typed absence}: \texttt{Abhava} carries its counterpositive and locus as
-data, and the kernel proves Raghun\={a}tha's involution (the absence of an
-absence computes to the presence) as a definitional fact.
+(parampar\={a}-sambandha, cf.~\citealp{houben1995sambandha}), so a claim
+such as ``time is the instrumental cause of the manifestation-relation'' is
+representable without ad hoc reification. \emph{Typed absence}:
+\texttt{Abhava} carries its counterpositive and locus as data, and the
+kernel proves the Navya-Ny\={a}ya involution (the absence of an absence
+computes to the presence) as a definitional fact.
 
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+  node distance=4mm and 8mm,
+  ty/.style={draw, rounded corners=2pt, align=center, font=\small\ttfamily,
+             inner sep=4pt, fill=blue!5, draw=datacol},
+  lbl/.style={font=\footnotesize\itshape, text=black!70},
+  arr/.style={-{Stealth[length=2.2mm]}, semithick}]
+\node[ty] (sorta) {Sorta\\ (6 sorts)};
+\node[ty, right=of sorta] (ent) {Entity\\ name $\times$ sort};
+\node[ty, right=of ent] (node) {Node\\ ent $\mid$ rel};
+\node[ty, right=of node] (abh) {Abhava\\ pratiyogin $\times$\\ adhikarana};
+\node[ty, below=of ent] (claim) {Claim\\ identity $\mid$ relation $\mid$\\ predication};
+\node[ty, right=of claim] (contract) {Contract\\ axioms $\times$ denials};
+\node[ty, right=of contract] (reading) {Reading\\ claims};
+\node[ty, below=of contract] (adeq) {Adequate c r : Prop\\ (decidable)};
+\draw[arr] (sorta) -- (ent);
+\draw[arr] (ent) -- (node);
+\draw[arr] (node) -- (abh);
+\draw[arr] (ent) -- (claim);
+\draw[arr] (node) to[bend right=12] (claim);
+\draw[arr] (claim) -- (contract);
+\draw[arr] (claim) -- (reading);
+\draw[arr] (contract) -- (adeq);
+\draw[arr] (reading) -- (adeq);
+\node[lbl, below=1mm of node] {nesting depth unbounded};
+\node[lbl, below=1mm of adeq] {closed by \texttt{decide}};
+\end{tikzpicture}
+\caption{Type structure of the kernel. Relations are first-class relata via
+\texttt{Node}; absence is typed data; adequacy is a decidable proposition
+over a reading and a contract.}
+\label{fig:kernel}
+\end{figure}
+
+\subsection{Generated modules}
 Each contract compiles to a Lean module in which the accepted reading's
 adequacy is a theorem and every rejected reading's failure is a theorem.
-Verse 1.1's module ends, in full:
+Sort-error refutations additionally carry an auxiliary lemma naming the
+mismatch; there are 55 such lemmas across the corpus. Verse 1.1's module
+ends as follows:
 
 \begin{lstlisting}[language=lean, caption={Generated theorems for VP 1.1 (excerpt).}]
 theorem accepted_adequate : contract.Adequate accepted := by decide
@@ -313,75 +555,66 @@ theorem parinama_transformation_inadequate :
 \end{lstlisting}
 
 The build gate is binary and global: \texttt{lake build} must succeed with
-zero \texttt{sorry} across all 144 modules --- 549 theorems at present. A
+zero \texttt{sorry} across all 144 modules, 549 theorems at present. A
 counterexample that stops compiling is a regression, caught in CI.
-
-\paragraph{Honesty boundary.}
-Lean verifies the \emph{internal coherence of the formalization}: that the
-accepted reading satisfies the contract and rivals do not. Whether the
-contract is faithful to Bhart\d{r}hari is not a theorem and cannot be one; it
-is a human-auditable question, and the system is built so that the audit is
-cheap --- every axiom links to the exact commentary sentence it derives from.
-We regard this boundary not as a limitation to apologize for but as the
-correct division of labor between prover and philologist.
-
-\begin{figure}[t]
-\centering
-\begin{tikzpicture}[
-  node distance=4mm and 7mm,
-  box/.style={draw, rounded corners=2pt, align=center, font=\small,
-              inner sep=4pt, minimum height=8.5mm},
-  gate/.style={box, fill=red!8, draw=red!60!black},
-  data/.style={box, fill=blue!6},
-  proc/.style={box, fill=green!7},
-  arr/.style={-{Stealth[length=2.2mm]}, semithick}]
-\node[data] (mula) {m\={u}la\\ (Devanagari)};
-\node[data, right=of mula] (comm) {translation +\\ commentary};
-\node[proc, below=of $(mula.south)!0.5!(comm.south)$] (corpus)
-  {canonical corpus\\ 1,796 units};
-\node[gate, right=of corpus] (g1) {12 pytest\\ gates};
-\node[proc, below=of corpus] (swarm) {agent swarm\\ drafts contracts};
-\node[gate, right=of swarm] (g2) {validator: verbatim cites,\\ entailment, refutability};
-\node[proc, below=of swarm] (leangen) {generator\\ $\to$ Lean modules};
-\node[gate, right=of leangen] (g3) {\texttt{lake build},\\ zero \texttt{sorry}};
-\node[proc, below=of leangen] (adj) {consistency gate +\\ homonym registry};
-\node[gate, right=of adj] (g4) {adjudication\\ (textual merits)};
-\node[data, below=of adj] (out) {verified edition\\ 144 adequacy + 350 refutation thms};
-\draw[arr] (mula) -- (corpus);
-\draw[arr] (comm) -- (corpus);
-\draw[arr] (corpus) -- (g1);
-\draw[arr] (corpus) -- (swarm);
-\draw[arr] (swarm) -- (g2);
-\draw[arr] (g2.south) to[bend left=18] (swarm.east);
-\draw[arr] (swarm) -- (leangen);
-\draw[arr] (leangen) -- (g3);
-\draw[arr] (g3.south) to[bend left=18] (leangen.east);
-\draw[arr] (leangen) -- (adj);
-\draw[arr] (adj) -- (g4);
-\draw[arr] (g4.south) to[bend left=18] (adj.east);
-\draw[arr] (adj) -- (out);
-\end{tikzpicture}
-\caption{The C-TV pipeline. Every layer has a mechanical gate (red); failures
-feed back as repair work, and the append-only research ledger records each
-draft, rejection, repair and acceptance.}
-\label{fig:pipeline}
-\end{figure}
 
 \section{The Agentic Formalization Loop}
 \label{sec:loop}
 
-Contracts were authored by an LLM-agent swarm --- one agent per verse, each
-given the verse record, the schema, an exemplar, and the validator as its exit
-gate --- orchestrated in rounds of 9--30 agents with an adjudication pass
-between rounds and an append-only ledger (96 events) recording every draft,
-rejection, repair and acceptance. The division of labor is the point: agents
-propose; gates dispose. Four episodes illustrate what the gates caught.
+\subsection{Architecture}
+Contracts were authored by an LLM agent swarm: one agent per verse, each
+given the verse record, the schema, an exemplar, and the validator as its
+exit gate. Rounds of 9 to 30 agents ran with an adjudication pass between
+rounds and an append-only ledger recording every event (96 events: 29
+drafts, 40 acceptances, 9 gate runs, 6 validations, 3 rejections, 3 repairs,
+5 milestones, 1 publication). The division of labor is the point: agents
+propose; gates dispose. Figure~\ref{fig:loop} shows one round.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+  box/.style={draw, rounded corners=2pt, align=center, font=\small,
+              inner sep=4pt, minimum height=9mm},
+  gate/.style={box, fill=red!8, draw=gatecol},
+  proc/.style={box, fill=green!7, draw=proccol},
+  data/.style={box, fill=blue!6, draw=datacol},
+  arr/.style={-{Stealth[length=2.2mm]}, semithick},
+  lab/.style={font=\footnotesize, fill=white, inner sep=1pt}]
+\node[data] (queue) at (0,0) {verse queue\\ (Book I)};
+\node[proc] (agent) at (3.2,0) {per-verse agent\\ drafts contract};
+\node[gate] (val) at (7.0,0) {validator: schema, cites,\\ entailment, refutability};
+\node[gate] (lean) at (11.0,0) {generator +\\ \texttt{lake build}};
+\node[proc] (repair) at (3.2,-2.2) {repair agent\\ (bounded retries)};
+\node[proc] (adj) at (11.0,-2.2) {adjudication:\\ consistency gate,\\ homonym registry};
+\node[data] (ledger) at (7.0,-3.8) {append-only ledger (96 events)};
+\draw[arr] (queue) -- (agent);
+\draw[arr] (agent) -- node[lab, above]{draft} (val);
+\draw[arr] (val) -- node[lab, above]{pass} (lean);
+\draw[arr] (lean) -- node[lab, right]{green, zero sorry} (adj);
+\draw[arr, rounded corners=3pt] (val.south) -- (7.0,-1.1) --
+  node[lab, above]{fail} (3.2,-1.1) -- (repair.north);
+\draw[arr, rounded corners=3pt] (lean.south) -- (11.0,-1.0) -- (9.2,-1.0)
+  -- (4.2,-1.6) -- (repair.north east);
+\draw[arr] (repair) -- node[lab, left]{redraft} (agent);
+\draw[arr, rounded corners=3pt] (adj.south) |- (ledger.east);
+\draw[arr, rounded corners=3pt] (ledger.west) -- (0,-3.8) --
+  node[lab, left]{next verse} (queue.south);
+\end{tikzpicture}
+\caption{One round of the formalization loop. Every acceptance passes the
+validator, the Lean kernel, and the cross-contract consistency gate; every
+event is appended to the ledger.}
+\label{fig:loop}
+\end{figure}
+
+\subsection{What the gates caught}
+Four episodes illustrate the gate stack functioning under real failure.
+Table~\ref{tab:catches} summarizes.
 
 \begin{table}[t]
 \centering
-\caption{Errors caught mechanically during formalization. ``Lazy
-counterexample'' = a rejected reading whose claims were secretly entailed;
-``fabricated citation'' = an axiom cite absent from the commentary.}
+\caption{Errors caught mechanically during formalization. A lazy
+counterexample is a rejected reading whose claims were secretly entailed; a
+fabricated citation is an axiom cite absent from the commentary.}
 \label{tab:catches}
 \begin{tabular}{lrl}
 \toprule
@@ -396,89 +629,60 @@ Diacritic name splits (spho\d{t}a/sphota) & 2 episodes & consistency gate \\
 \end{tabular}
 \end{table}
 
-\emph{(i) Lazy counterexamples.} Early agents produced rejected readings that
-merely restated axioms --- theorems of inadequacy would have been false. The
-Lean build failed; the validator was hardened to require provable failure; three
-contracts were repaired.
+\emph{(i) Lazy counterexamples.} Early agents produced rejected readings
+that merely restated axioms. The corresponding inadequacy theorems would
+have been false, and the Lean build failed. The validator was hardened to
+require provable failure in the registered mode, and three contracts were
+repaired.
 
-\emph{(ii) Fabricated citations under degradation.} When an API session limit
-killed 20 of 30 agents mid-round, 9 left unreviewed draft contracts. Five of
-the nine failed the verbatim-citation gate --- paraphrased or invented cites.
-This is the anti-fabrication architecture functioning as designed: degraded
-generation was caught by the gate, quarantined, and re-authored cleanly.
+\emph{(ii) Fabricated citations under degradation.} When an API session
+limit killed 20 of 30 agents mid-round, 9 left unreviewed draft contracts.
+Five of the nine failed the verbatim-citation gate with paraphrased or
+invented cites. This is the anti-fabrication architecture functioning as
+designed: degraded generation was caught by the gate, quarantined, and
+re-authored.
 
 \emph{(iii) Identifier hygiene.} Lean's parser rejected IAST diacritics in
-entity identifiers that Python's \texttt{isidentifier()} accepts; the
-validator now enforces ASCII identifiers, and the incident is a small argument
-for keeping the end-to-end kernel gate even when a faster mirror exists.
+entity identifiers that Python's \texttt{isidentifier()} accepts. The
+validator now enforces ASCII identifiers. The incident argues for keeping
+the end-to-end kernel gate even when a faster mirror exists.
 
 \emph{(iv) Sort drift.} Independent agents assigned different sorts to the
 same term. Across five adjudication rounds the consistency gate surfaced 89
-conflicts; adjudication (below) resolved each as either a correction or
-genuine polysemy.
+conflicts; adjudication resolved each as either a correction or genuine
+polysemy (\S\ref{sec:ontology}).
 
 \section{Ontological Consistency and the Homonym Registry}
 \label{sec:ontology}
 
-The corpus-level gate requires that a named entity carry one sort everywhere
---- unless the exact partition of (verse, sort) uses is registered as
-polysemy, with a gloss and a one-sentence textual justification per sense. The
-registry now holds 41 terms with 91 senses, and it is where the method earns
-its keep philologically: the gate cannot tell drift from doctrine, so every
+The corpus-level gate requires that a named entity carry one sort everywhere,
+unless the exact partition of (verse, sort) uses is registered as polysemy
+with a gloss and a one-sentence textual justification per sense. The
+registry holds 41 terms with 91 senses. This is where the method earns its
+keep philologically: the gate cannot tell drift from doctrine, so every
 split is a documented editorial ruling.
 
-Three registered splits are load-bearing. \emph{ak\d{s}ara}: the imperishable
-Absolute in 1.9 versus phoneme in 1.18--22 --- the pun the commentary calls
-``the argument in miniature'' of verse 1.1, which a same-sort rule would have
-flattened. \emph{\'sabda}: linguisticItem canonically, but the Absolute in the
-fire-in-wood verse (1.46), where the inner word is \'sabdatattva itself.
-\emph{spho\d{t}a}: linguisticItem in Bhart\d{r}hari's own doctrine, but
-verses 1.102--1.106 \emph{report a rival phonetician terminology} in which
-spho\d{t}a names the first-produced acoustic sound --- a distinct sense
-(manifestation) covering exactly the doxographic span, keeping the report from
-contaminating the doctrine.
-
-\section{Corpus-Scale Semantic Audit}
-\label{sec:audit}
-
-Formal verification covers Book~I; the remaining 1,652 verses need a
-prioritized path. We embed every verse's translation and commentary
-(all-mpnet-base-v2 \citep{reimers2019sbert}, mean-pooled, on an NVIDIA GB10)
-and rank verses by cosine similarity. The distribution
-(Fig.~\ref{fig:audit}) has mean $0.591$; verses independently flagged
-\emph{contested} score lower on average ($0.578$ vs.\ $0.593$), and are
-enriched in the lowest tail (10 of the lowest 50, vs.\ a 15.9\% base rate).
-The signal is modest and we use it only as a review queue: low similarity
-flags verses where translation and commentary may have drifted apart, for
-formalization or editorial attention first.
-
-\begin{figure}[t]
-\centering
-\begin{tikzpicture}
-\begin{axis}[width=0.86\textwidth, height=5.6cm, ybar interval,
-  xmin=0.15, xmax=0.9, xlabel={translation--commentary cosine similarity},
-  ylabel={verses}, legend style={font=\small, at={(0.02,0.95)}, anchor=north west},
-  tick label style={font=\small}, label style={font=\small}]
-\addplot+[fill=blue!25, draw=blue!60!black] coordinates {
-(0.175,1) (0.225,1) (0.275,3) (0.325,16) (0.375,39) (0.425,101) (0.475,156)
-(0.525,266) (0.575,348) (0.625,347) (0.675,273) (0.725,164) (0.775,65)
-(0.825,16) (0.875,0)};
-\addplot+[fill=red!45, draw=red!70!black] coordinates {
-(0.175,1) (0.225,0) (0.275,1) (0.325,3) (0.375,6) (0.425,18) (0.475,29)
-(0.525,49) (0.575,50) (0.625,51) (0.675,47) (0.725,26) (0.775,5) (0.825,0)
-(0.875,0)};
-\legend{all 1{,}796 verses, contested (286)}
-\end{axis}
-\end{tikzpicture}
-\caption{GPU semantic audit: distribution of translation--commentary embedding
-similarity over the full corpus, with the contested subset overlaid. Contested
-verses shift left (means $0.578$ vs.\ $0.593$); the lowest tail is the review
-queue.}
-\label{fig:audit}
-\end{figure}
+Three registered splits are load-bearing. \emph{ak\d{s}ara}: the
+imperishable Absolute in 1.9 versus phoneme in 1.18--22. This is the pun
+that the commentarial tradition treats as the argument of the opening verse
+in miniature; a same-sort rule would have flattened it. \emph{\'sabda}:
+linguisticItem canonically, but the Absolute in the fire-in-wood verse
+(1.46), where the inner word is \'sabdatattva itself. \emph{spho\d{t}a}:
+linguisticItem in Bhart\d{r}hari's own doctrine, but verses 1.102--1.106
+report a rival phonetician terminology in which spho\d{t}a names the
+first-produced acoustic sound. Registering that doxographic span as a
+distinct sense (manifestation) keeps the report from contaminating the
+doctrine. A further adjudication round registered polysemy for veda (the
+recited corpus versus the eternal seed-order of 1.132), \'sruti,
+vyavasth\={a}, r\={u}pa, s\={a}dhu, vipar\={\i}ta, and k\={a}rya.
 
 \section{Results}
 \label{sec:results}
+
+\subsection{Verification results}
+Table~\ref{tab:results} summarizes the verified state. CI reproduces it from
+a clean checkout (corpus gates, \texttt{lake build}, zero-\texttt{sorry}
+sweep).
 
 \begin{table}[t]
 \centering
@@ -486,12 +690,13 @@ queue.}
 \label{tab:results}
 \begin{tabular}{lr}
 \toprule
-Verse units formalized \& verified & 144 / 144 \\
+Verse units formalized and verified & 144 / 144 \\
 Entity declarations                & 772 \\
 Contract axioms / denials          & 610 / 178 \\
 Accepted-reading claims (all proved adequate) & 449 \\
 Rejected readings, \texttt{contradicted} (denial asserted) & 153 \\
 Rejected readings, \texttt{unlicensed} (no axiom entails)  & 197 \\
+Auxiliary sort-error lemmas        & 55 \\
 Lean theorems (all by \texttt{decide}, zero \texttt{sorry}) & 549 \\
 Homonym registry (terms / senses)  & 41 / 91 \\
 Python gates (pytest)              & 180 \\
@@ -500,72 +705,134 @@ Ledger events (append-only)        & 96 \\
 \end{tabular}
 \end{table}
 
-Table~\ref{tab:results} summarizes the verified state; CI reproduces it from a
-clean checkout (corpus gates, \texttt{lake build}, zero-\texttt{sorry} sweep).
-Beyond the counts, the qualitative yield is a machine-checked map of \emph{how
-Book~I can be mistranslated}: each of the 350 refutations is a specific,
-named failure --- pari\d{n}\={a}ma for vivarta (1.1), grammar demoted from
-discipline to convention (1.11--1.14), spho\d{t}a temporalized (1.75--1.77),
-inference granted autonomy the text denies it (1.30--1.42), the corrupt form
-elevated to equal standing with the correct (1.147--1.155) --- together a
-negative image of the doctrine, in theorem form.
+\subsection{A map of how Book I can be mistranslated}
+Beyond the counts, the qualitative yield is a machine-checked map of the
+ways Book~I goes wrong in translation. Each of the 350 refutations is a
+specific, named failure: pari\d{n}\={a}ma for vivarta (1.1); grammar demoted
+from discipline to convention (1.11--1.14); inference granted an autonomy
+the text denies it (1.30--1.42); spho\d{t}a temporalized (1.75--1.77); the
+corrupt form elevated to equal standing with the correct (1.147--1.155).
+Together the refutations form a negative image of the doctrine, in theorem
+form. Because each is a compiled theorem, the map regresses: an edit to any
+contract that would quietly license a refuted reading breaks the build.
 
-The edition is deployed as a static site (per-verse pages with Devanagari,
-IAST, translation, commentary, contested notes, and per-verse proof status)
-with the repository, contracts, kernel and ledger public.
+\subsection{The edition}
+The edition is deployed as a static site with per-verse pages carrying
+Devanagari, IAST, translation, commentary, contested notes, and per-verse
+proof status, with the repository, contracts, kernel, and ledger public.
+
+\section{Embedding Audit as a Review Queue}
+\label{sec:audit}
+
+Formal verification establishes coherence between translation and contract.
+A separate instrument screens for drift between translation and commentary
+prose. Every verse's translation and commentary are embedded
+(all-mpnet-base-v2 \citep{reimers2019sbert}, mean-pooled, on an NVIDIA
+GB10) and verses are ranked by cosine similarity.
+
+Within Book~I the distribution has mean 0.557
+(Figure~\ref{fig:audit}). The audit is reported with a negative finding: at
+book scale the contested flag does not separate. Contested verses average
+0.567 against 0.550 for uncontested verses, and the lowest tail is not
+enriched (7 of the lowest 20 are contested, against a 38.9\% base rate).
+Across the full 1,796-verse corpus the direction reverses and contested
+verses shift left (0.578 versus 0.593), but that observation concerns
+material outside the verified scope. The instrument is accordingly used
+only as a review queue: low similarity flags verses where translation and
+commentary may have drifted apart, for editorial attention first. The
+queue's head is informative in practice; its lowest-ranked verse (1.74,
+similarity 0.301) is a contested verse whose commentary is dominated by a
+doxographic dispute the translation cannot carry.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+\begin{axis}[width=0.86\textwidth, height=5.6cm, ybar interval,
+  xmin=0.3, xmax=0.8, xlabel={translation--commentary cosine similarity (Book I)},
+  ylabel={verses}, legend style={font=\small, at={(0.02,0.95)}, anchor=north west},
+  tick label style={font=\small}, label style={font=\small}]
+\addplot+[fill=blue!25, draw=datacol] coordinates {
+(0.325,3) (0.375,2) (0.425,8) (0.475,21) (0.525,32) (0.575,35) (0.625,29)
+(0.675,11) (0.725,3) (0.775,0)};
+\addplot+[fill=red!45, draw=gatecol] coordinates {
+(0.325,2) (0.375,0) (0.425,2) (0.475,8) (0.525,12) (0.575,11) (0.625,12)
+(0.675,6) (0.725,3) (0.775,0)};
+\legend{all 144 verses, contested (56)}
+\end{axis}
+\end{tikzpicture}
+\caption{Embedding audit over the Brahmak\={a}\d{n}\d{d}a: distribution of
+translation--commentary similarity, with the contested subset overlaid. At
+book scale the contested flag does not separate; the low tail serves as a
+review queue.}
+\label{fig:audit}
+\end{figure}
 
 \section{Discussion}
 \label{sec:discussion}
 
-\paragraph{What mechanization buys.} Three things, in our experience of
-building this. \emph{Regression}: interpretive commitments, once contracted,
-are protected --- an edit to verse 1.46's treatment of the inner word that
+\paragraph{What mechanization buys.} Three things, on the evidence of this
+build. \emph{Regression}: interpretive commitments, once contracted, are
+protected. An edit to verse 1.46's treatment of the inner word that
 contradicts 1.1's identity axioms breaks the build. \emph{Explicitness}: the
-contract format forced decisions (is \emph{ved\-a} here the corpus or the
-eternal seed-order?) that prose translation lets one defer; the homonym
+contract format forces decisions that prose translation lets one defer (is
+\emph{veda} here the corpus or the eternal seed-order?), and the homonym
 registry is a by-product catalogue of exactly those decisions.
 \emph{Adversarial coverage}: requiring every contract to carry provably
-failing rival readings institutionalizes the question ``what would it mean to
-get this verse wrong?'' --- a question translators ask irregularly and
-reviewers cannot ask at scale.
+failing rival readings institutionalizes the question of what it would mean
+to get each verse wrong. Translators ask that question irregularly;
+reviewers cannot ask it at scale.
+
+\paragraph{Relation to the companion programmes.} The loop's discipline
+(propose, gate, ledger, adjudicate) is shared with Active Circuit Discovery
+and Prabodha \citep{sathish2026acd, sathish2026prabodha}. The instructive
+difference is the character of the gate. A statistical gate bounds the
+probability of a wrong acceptance; a type-checking gate makes a wrong
+acceptance a compile error. The episodes of \S\ref{sec:loop} suggest that
+when LLM agents author formal content, the strictest available gate should
+sit at the end of the pipeline even when cheaper mirrors exist, because the
+mirrors drift (the identifier-hygiene episode) and the agents degrade (the
+fabricated-citation episode).
 
 \paragraph{Limitations.} The entailment relation is deliberately shallow
 (closure of literal claims under identity symmetry), so adequacy is
-membership-like rather than inferential; a richer relation (e.g.\ transitive
-sambandha chains, or defeasible generics) would strengthen the theorems at the
-cost of decidability discipline. Contracts formalize the \emph{formalizable
-core} of a verse, not its full rhetorical content. The six-sort ontology is
-coarse --- persons, for instance, are shoehorned (the child of 1.121/1.151 as
-epistemic subject). And the whole edifice inherits the interpretive standpoint
-of one commentary; contracts keyed to rival commentaries (V\d{r}\d{s}abha,
-Pu\d{n}yar\={a}ja) would turn inter-commentarial disagreement itself into
-diffable, checkable data --- to us the most interesting extension.
+membership-like rather than inferential. A richer relation, for example
+transitive sambandha chains or defeasible generics, would strengthen the
+theorems at the cost of decidability discipline. Contracts formalize the
+formalizable core of a verse, not its full rhetorical content. The six-sort
+ontology is coarse; persons, for instance, are shoehorned (the child of
+1.121 and 1.151 as epistemic subject). The translation and commentary carry
+the interpretive standpoint of a single primary source
+\citep{iyer1965vakyapadiya}, and the contracts inherit it. Contracts keyed
+to rival commentaries (V\d{r}\d{s}abha, Pu\d{n}yar\={a}ja) would turn
+inter-commentarial disagreement into diffable, checkable data, and are the
+most interesting extension. Finally, the audit instrument is a screen, not
+a measure of fidelity, and \S\ref{sec:audit} reports where it fails to
+discriminate.
 
 \paragraph{On agents.} The swarm wrote in hours what would take a solo
 formalizer months, and its failures were institutionally useful: every class
-of agent error that occurred is now a mechanical gate. We suggest this as a
-general pattern for LLM-assisted scholarship: design so that the interesting
-question is never ``did the model hallucinate?'' but ``did the artifact pass
-the gate?''
+of agent error that occurred is now a mechanical gate. The suggested general
+pattern for LLM-assisted scholarship is to design so that the operative
+question is never whether the model hallucinated, but whether the artifact
+passed the gate.
 
 \section{Conclusion}
 \label{sec:conclusion}
 
-We introduced commentary-driven translation validation and delivered, for the
-first time to our knowledge, a machine-verified translation layer for a
-classical Sanskrit philosophical text: the complete Brahmak\={a}\d{n}\d{d}a of
-the \emph{V\={a}kyapad\={\i}ya}, with 144 adequacy theorems and 350 compiled
-refutations over a checksummed 1,796-verse edition, produced by a gated
-agentic loop whose every acceptance is replayable from an append-only ledger.
-The method treats the prover not as a reader of Sanskrit but as a keeper of
-commitments --- and Bhart\d{r}hari, for whom the sentence's meaning is an
-undivided whole only manifested by its parts, would perhaps have appreciated a
-verifier that refuses to let the parts of a translation contradict the whole
-of its commentary. Books~II and~III (1,652 verses), richer entailment, and
-multi-commentary contracts are the open vine.
+This paper introduced commentary-driven translation validation and
+delivered a machine-verified translation layer for the complete
+Brahmak\={a}\d{n}\d{d}a of the \emph{V\={a}kyapad\={\i}ya}: 144 adequacy
+theorems and 350 compiled refutations over a checksummed edition, produced
+by a gated agentic loop whose every acceptance is replayable from an
+append-only ledger. The method treats the prover not as a reader of
+Sanskrit but as a keeper of commitments. Bhart\d{r}hari holds that the
+sentence's meaning is an undivided whole, merely manifested by its parts; a
+verifier that refuses to let the parts of a translation contradict the
+whole of its commentary is in that spirit. Books~II and~III, richer
+entailment, and multi-commentary contracts are open work.
 
-\paragraph{Availability.} Code, corpus, contracts, kernel, proofs, ledger and
-the living edition: \url{https://github.com/SharathSPhD/vakya-vallari};
+\paragraph{Availability.} Code, corpus, contracts, kernel, proofs, ledger,
+and the living edition: \url{https://github.com/SharathSPhD/vakya-vallari};
 edition mirrors at \url{https://vakya-vallari.vercel.app} and
 \url{https://huggingface.co/spaces/qbz506/vakya-vallari}.
 
