@@ -1,0 +1,155 @@
+{
+  "verse": "1.123",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "no cognition whatsoever without the accompaniment of word"
+    },
+    {
+      "id": "pratyaya",
+      "name": "pratyaya",
+      "sort": "cognition",
+      "cite": "There is no cognition in the world that does not follow upon word"
+    },
+    {
+      "id": "jnana",
+      "name": "jñāna",
+      "sort": "cognition",
+      "cite": "all knowledge appears as if interpenetrated by word"
+    },
+    {
+      "id": "anuviddha",
+      "name": "anuviddha",
+      "sort": "property",
+      "cite": "anuviddha is the weaver's and jeweller's word, thread through cloth, thread through pearls"
+    },
+    {
+      "id": "nirvikalpaka_pratyaksa",
+      "name": "nirvikalpaka pratyaksa",
+      "sort": "cognition",
+      "cite": "the Buddhist doctrine that perception proper (nirvikalpaka pratyaksa) is precisely wordless"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "anugamadapeksam",
+      "from": "pratyaya",
+      "to": "sabda",
+      "cite": "no cognition whatsoever without the accompaniment of word"
+    },
+    {
+      "kind": "predication",
+      "name": "anuviddha",
+      "of": "jnana",
+      "cite": "as if interwoven, shot through, with word"
+    },
+    {
+      "kind": "relation",
+      "name": "vivartate",
+      "from": "sabda",
+      "to": "jnana",
+      "cite": "Cognition is not first accomplished wordlessly and then labelled; the wording is *in* the seeing, as the thread is in the fabric — remove it and no fabric remains"
+    },
+    {
+      "kind": "predication",
+      "name": "arthakriyakari",
+      "of": "sabda",
+      "cite": "attend to any actual cognition and the attending is already articulate"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "anugamadapeksam",
+      "from": "nirvikalpaka_pratyaksa",
+      "to": "sabda",
+      "cite": "Against this stands the great counter-tradition — the Buddhist doctrine that perception proper (nirvikalpaka pratyaksa) is precisely wordless"
+    },
+    {
+      "kind": "relation",
+      "name": "utpatti_anantaram_labha",
+      "from": "jnana",
+      "to": "sabda",
+      "cite": "Cognition is not first accomplished wordlessly and then labelled"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "anugamadapeksam",
+        "from": "pratyaya",
+        "to": "sabda",
+        "cite": "no cognition in the world that does not follow upon word"
+      },
+      {
+        "kind": "predication",
+        "name": "anuviddha",
+        "of": "jnana",
+        "cite": "all knowledge appears as if interpenetrated by word"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "wordless_perception",
+      "rendering": "Perception can occur in a wordless state, with conceptualization and verbal articulation added afterwards.",
+      "why": "The commentary explicitly rejects the Buddhist doctrine of nirvikalpaka pratyaksa (wordless perception), stating that attending to actual cognition reveals it is already articulate. This reading allows a mode of cognition without word dependency.",
+      "entities": [
+        {
+          "id": "nirvikalpaka_pratyaksa",
+          "name": "nirvikalpaka pratyaksa",
+          "sort": "cognition"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "anugamadapeksam",
+          "from": "nirvikalpaka_pratyaksa",
+          "to": "sabda"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "post_hoc_labeling",
+      "rendering": "Knowledge is first independently accomplished, and then subsequently labeled with words.",
+      "why": "Commits the dualism the verse and commentary reject: cognition first, word second. The commentary states 'the wording is *in* the seeing, as the thread is in the fabric'; remove the thread and fabric remains is false. Word is constitutive, not post-hoc attribution.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "utpatti_anantaram_labha",
+          "from": "jnana",
+          "to": "sabda"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "linguistic_description_only",
+      "rendering": "Word is merely a tool for describing cognitions that can occur and be known independently of it.",
+      "why": "Demotes word to a property (descriptive instrument) rather than recognizing it as constitutive to the structure of all knowing. The sort error (property vs. linguisticItem with constitutive role) treats the relation as contingent rather than necessary.",
+      "entities": [
+        {
+          "id": "sabda_tool",
+          "name": "śabda",
+          "sort": "property"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "vacanika",
+          "of": "sabda_tool"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse asserts the intimate co-constitution of all cognition with word. The commentary's metaphor of 'thread in cloth' captures the weaving rather than mere accompaniment; the iva (as if) honors the phenomenological impossibility of introspecting behind articulation, not skepticism about the dependence itself. By 1.124 it becomes constitutive. The denial of nirvikalpaka pratyaksa is direct polemics against Buddhist epistemology."
+}

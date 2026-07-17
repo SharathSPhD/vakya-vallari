@@ -1,0 +1,115 @@
+{
+  "verse": "1.106",
+  "entities": [
+    {
+      "id": "karana",
+      "name": "karaṇa",
+      "sort": "linguisticItem",
+      "cite": "While the karana still trembles — the articulation not yet settled"
+    },
+    {
+      "id": "sphota",
+      "name": "sphoṭa",
+      "sort": "manifestation",
+      "cite": "from the first-produced sound itself (1.102's usage)"
+    },
+    {
+      "id": "dhvani",
+      "name": "dhvani",
+      "sort": "linguisticItem",
+      "cite": "apare dhvanayah, further sounds, arise"
+    },
+    {
+      "id": "regeneration",
+      "name": "punarjanana",
+      "sort": "power",
+      "cite": "Each ring of sound begets the next outward ring"
+    },
+    {
+      "id": "flame",
+      "name": "jvālā",
+      "sort": "manifestation",
+      "cite": "the torch passed, not the torch stretched"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "utpadyate",
+      "from": "sphota",
+      "to": "dhvani",
+      "cite": "apare dhvanayah, further sounds, arise sphotad eva: from the first-produced sound itself"
+    },
+    {
+      "kind": "relation",
+      "name": "anugatam",
+      "from": "dhvani",
+      "to": "dhvani",
+      "cite": "Each ring of sound begets the next outward ring, jvala jvalantarad iva, as one flame kindles another"
+    },
+    {
+      "kind": "predication",
+      "name": "anavasthita",
+      "of": "karana",
+      "cite": "While the karana still trembles — the articulation not yet settled"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "utpadyate",
+      "from": "karana",
+      "to": "dhvani",
+      "cite": "not from fresh strokes of the organ"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "utpadyate",
+        "from": "sphota",
+        "to": "dhvani",
+        "cite": "further sounds are generated from the sphota itself"
+      },
+      {
+        "kind": "relation",
+        "name": "anugatam",
+        "from": "dhvani",
+        "to": "dhvani",
+        "cite": "as flame from another flame"
+      },
+      {
+        "kind": "predication",
+        "name": "anavasthita",
+        "of": "karana",
+        "cite": "while the vibration of the organ persists unsettled"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "continued_organ_motion",
+      "rendering": "Further sounds are continuously produced by the unsettled vibration of the organ itself.",
+      "why": "Misreads the negation 'not from fresh strokes of the organ' and treats karana as the ongoing source of all sounds. The commentary explicitly states sounds arise from sphota, not from karana's continued motion. The verse's point is precisely that the initial sounding source (karana) is needed only to seed the process; subsequent sounds regenerate without it.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "utpadyate", "from": "karana", "to": "dhvani"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "no_self_replication",
+      "rendering": "All sounds, both initial and distant, must originate directly from the organ's articulation.",
+      "why": "Denies the serial regeneration model (Each dhvani generating the next). This misses the verse's core mechanism: sounds propagate by local self-replication in the medium, not by transmission of force from the original source. The flame simile explicitly encodes this—fire kindles fire without the original torch reaching across.",
+      "entities": [
+        {"id": "dhvani_static", "name": "dhvani", "sort": "property"}
+      ],
+      "claims": [
+        {"kind": "predication", "name": "anavayava", "of": "dhvani_static"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse models sound propagation as wave-like self-replication: karana seeds sphota; sphota generates dhvani; each dhvani generates the next. The commentary emphasizes that only the initial articulation is needed; the subsequent sounds arise 'from the first-produced sound itself'. No strain in sorting: the organs (karana) and sounds (sphota, dhvani) are linguisticItems; the causal power of self-regeneration is a power; the flame serves as a manifestation analogue. The contested note flags ambiguity in sphota's sense (first-produced sound vs. Bhartrhari's own category), but the contract's axioms hold under the 1.102 reading invoked by the commentary."
+}

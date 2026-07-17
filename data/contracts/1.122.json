@@ -1,0 +1,158 @@
+{
+  "verse": "1.122",
+  "entities": [
+    {
+      "id": "sabda_bhavana",
+      "name": "śabda-bhāvanā",
+      "sort": "cognition",
+      "cite": "a conceiving or intending in word"
+    },
+    {
+      "id": "karana_vinyasa",
+      "name": "karaṇa-vinyāsa",
+      "sort": "property",
+      "cite": "the initial karana-vinyasa (tongue and lips taking position)"
+    },
+    {
+      "id": "samirana",
+      "name": "samīraṇa",
+      "sort": "property",
+      "cite": "the upward samirana of breath"
+    },
+    {
+      "id": "abhighata",
+      "name": "abhighāta",
+      "sort": "property",
+      "cite": "the abhighata at the sthanas"
+    },
+    {
+      "id": "sthana",
+      "name": "sthāna",
+      "sort": "property",
+      "cite": "the striking upon the places of articulation"
+    },
+    {
+      "id": "ajasra_vrtti",
+      "name": "ajasra-vṛtti",
+      "sort": "power",
+      "cite": "the unceasing inner operation that no act initiates because it never began"
+    },
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "a wording that is always already under way"
+    },
+    {
+      "id": "vak",
+      "name": "vāk",
+      "sort": "manifestation",
+      "cite": "audible speaking is a local intensification (the fan of 1.116) of a wording that is always already under way"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "sabda_bhavana",
+      "to": "karana_vinyasa",
+      "cite": "Each of these, the verse notes, is itself a piece of itikartavyata — a procedure — and so by 1.121 requires sabda-bhavana, a conceiving or intending in word, to occur at all."
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "sabda_bhavana",
+      "to": "samirana",
+      "cite": "Each of these, the verse notes, is itself a piece of itikartavyata — a procedure — and so by 1.121 requires sabda-bhavana, a conceiving or intending in word, to occur at all."
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "sabda_bhavana",
+      "to": "abhighata",
+      "cite": "Each of these, the verse notes, is itself a piece of itikartavyata — a procedure — and so by 1.121 requires sabda-bhavana, a conceiving or intending in word, to occur at all."
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "ajasra_vrtti",
+      "to": "sabda_bhavana",
+      "cite": "it terminates, non-viciously, in the ajasra-vrtti word of 1.116 — the unceasing inner operation that no act initiates because it never began."
+    },
+    {
+      "kind": "relation",
+      "name": "vivartate",
+      "from": "ajasra_vrtti",
+      "to": "vak",
+      "cite": "audible speaking is a local intensification (the fan of 1.116) of a wording that is always already under way."
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "originates_from_silence",
+      "of": "vak",
+      "cite": "Speech does not start from silence; audible speaking is a local intensification (the fan of 1.116) of a wording that is always already under way."
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "sabda_bhavana",
+        "to": "karana_vinyasa",
+        "cite": "none occurs without a conceiving in word"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "sabda_bhavana",
+        "to": "samirana",
+        "cite": "none occurs without a conceiving in word"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "sabda_bhavana",
+        "to": "abhighata",
+        "cite": "none occurs without a conceiving in word"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "silent_private_act",
+      "rendering": "Conceiving in word is a purely private mental act isolated from the motor acts of speech production.",
+      "why": "Misconstrues sabda-bhavana as an autonomous inner state divorced from the utterance machinery it grounds. The axioms establish that word-conceiving is the asraya (ground) of all three motor acts; treating it as independent breaks the unified model of speech the commentary enforces.",
+      "entities": [
+        {"id": "sabda_bhavana_private", "name": "śabda-bhāvanā (private)", "sort": "property"}
+      ],
+      "claims": [
+        {"kind": "predication", "name": "isolated_from_utterance", "of": "sabda_bhavana_private"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "origin_from_silence",
+      "rendering": "Speech originates from an initial silence and then becomes activated into word-forming.",
+      "why": "Asserts that utterance emerges from a pre-linguistic void, contradicting the cardinal denial: 'Speech does not start from silence.' The commentary insists audible speaking is a 'local intensification' of a wording 'always already under way', grounded eternally in ajasra-vrtti.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "originates_from_silence", "of": "vak"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "sequential_motor_autonomy",
+      "rendering": "The motor acts of speech (positioning, breathing, striking) happen independently and then sabda-bhavana coordinates them afterward.",
+      "why": "Reverses the dependence: makes motor acts autonomous and word-conceiving their post-hoc orchestrator. The axioms invert this—sabda-bhavana is the asraya (ground/support) of the motor acts, not their consequence. Motor acts occur *only* because they are grounded in word-conceiving.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "autonomous_motor_action", "of": "karana_vinyasa"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse articulates the paradox of speech: even physical motor acts (positioning, breathing, striking) require inner word-conceiving (sabda-bhavana), which is itself grounded in the unceasing subtle wording (ajasra-vrtti of 1.116). The regress is non-vicious because it terminates in an operation that no act initiates. Audible utterance is a local intensification of an inner wording already always under way. This welds physiology (1.108-115) to epistemology: even the body's speech machinery runs on the very medium it outputs."
+}

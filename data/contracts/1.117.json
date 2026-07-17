@@ -1,0 +1,140 @@
+{
+  "verse": "1.117",
+  "entities": [
+    {
+      "id": "sakti",
+      "name": "śakti",
+      "sort": "power",
+      "cite": "one sakti doubly stationed"
+    },
+    {
+      "id": "prana",
+      "name": "prāṇa",
+      "sort": "manifestation",
+      "cite": "What stands in prana"
+    },
+    {
+      "id": "buddhi",
+      "name": "buddhi",
+      "sort": "manifestation",
+      "cite": "what stands in buddhi"
+    },
+    {
+      "id": "sthanas",
+      "name": "sthānāḥ",
+      "sort": "manifestation",
+      "cite": "places of articulation"
+    },
+    {
+      "id": "bheda",
+      "name": "bheda",
+      "sort": "manifestation",
+      "cite": "attains differentiation"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "sakti",
+      "to": "prana",
+      "cite": "What stands in prana"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "sakti",
+      "to": "buddhi",
+      "cite": "what stands in buddhi"
+    },
+    {
+      "kind": "predication",
+      "name": "eka",
+      "of": "sakti",
+      "cite": "one sakti doubly stationed"
+    },
+    {
+      "kind": "relation",
+      "name": "vivartate",
+      "from": "sakti",
+      "to": "bheda",
+      "cite": "bhedam prapadyate"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "parinamate",
+      "from": "sakti",
+      "to": "bheda",
+      "cite": "mind-word and breath-word are not successive entities handed a baton but one power viewed at two stations, its 'motion' from one to the other being appearance, not transit"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "eka",
+        "of": "sakti",
+        "cite": "that very power"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "sakti",
+        "to": "prana",
+        "cite": "stands in the breath"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "sakti",
+        "to": "buddhi",
+        "cite": "stands settled in the intellect"
+      },
+      {
+        "kind": "relation",
+        "name": "vivartate",
+        "from": "sakti",
+        "to": "bheda",
+        "cite": "turning itself about in the places of articulation, attains differentiation"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "dualist_hand_off",
+      "rendering": "The vital power in the breath and the intellectual power in the intellect are two distinct forces that successively coordinate in producing differentiated speech.",
+      "why": "Treats the two stations as separate powers rather than expressions of one sakti. The commentary explicitly forecloses this dualist misreading: 'mind-word and breath-word are not successive entities handed a baton but one power viewed at two stations.'",
+      "entities": [
+        {"id": "sakti_prana", "name": "prāṇa-śakti", "sort": "power"},
+        {"id": "sakti_buddhi", "name": "buddhi-śakti", "sort": "power"}
+      ],
+      "claims": [
+        {"kind": "relation", "name": "kramena", "from": "sakti_prana", "to": "sakti_buddhi"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "real_transformation",
+      "rendering": "The power actually transforms and modifies as it moves from the intellect to the breath to the articulation places, producing real changes in its own substance.",
+      "why": "Asserts parinama (real transformation) rather than vivarta (appearance without change). The commentary rules this out explicitly: 'its motion from one to the other being appearance, not transit.'",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "parinamate", "from": "sakti", "to": "bheda"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "passive_production",
+      "rendering": "Differentiation is something that happens to the power as it moves through the articulation places, an inevitable process the power undergoes passively.",
+      "why": "Reverses the agency relation: treats the power as passively suffering differentiation rather than actively presenting it. The commentary insists: 'it is something the power *presents*, not something it suffers.' The power has agency, not passivity.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "bhunjate", "of": "sakti"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "1.117 establishes sakti's non-dual presence at prana and buddhi (two inner stations) and the vivarta-based appearance of differentiation at the sthanas. The power actively presents distinction without undergoing real transformation. The contract captures the key truth: one power, two stations, appearance (not change)."
+}

@@ -1,0 +1,146 @@
+{
+  "verse": "1.118",
+  "entities": [
+    {
+      "id": "sakti",
+      "name": "śakti",
+      "sort": "power",
+      "cite": "The power residing in words themselves is what binds this universe"
+    },
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "The power residing in words themselves"
+    },
+    {
+      "id": "visva",
+      "name": "viśva",
+      "sort": "manifestation",
+      "cite": "this universe"
+    },
+    {
+      "id": "atman",
+      "name": "ātman",
+      "sort": "absolute",
+      "cite": "this self, whose essence is the flash of insight"
+    },
+    {
+      "id": "pratibha",
+      "name": "pratibha",
+      "sort": "cognition",
+      "cite": "the immediate flash of understanding"
+    },
+    {
+      "id": "bheda",
+      "name": "bheda",
+      "sort": "manifestation",
+      "cite": "is perceived in the form of difference"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "asrita",
+      "from": "sakti",
+      "to": "sabda",
+      "cite": "the sakti lodged sabdesv eva, in words themselves"
+    },
+    {
+      "kind": "predication",
+      "name": "nibandhani",
+      "of": "sakti",
+      "cite": "is the *binder of this universe*"
+    },
+    {
+      "kind": "predication",
+      "name": "svarupa",
+      "of": "atman",
+      "cite": "the atman, pratibha-atma, whose essence is pratibha — the immediate flash of understanding"
+    },
+    {
+      "kind": "relation",
+      "name": "netra",
+      "from": "atman",
+      "to": "sakti",
+      "cite": "sees *through* that word-power (yan-netra, 'whose eye is it')"
+    },
+    {
+      "kind": "predication",
+      "name": "bheda-rupa",
+      "of": "atman",
+      "cite": "pratiyate bheda-rupah, is perceived in the form of difference"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "bheda",
+      "of": "atman",
+      "cite": "an undivided seer, seeing through the instrument of the word-power, appears divided *because its eye is the differentiating instrument*"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "asrita",
+        "from": "sakti",
+        "to": "sabda",
+        "cite": "power residing in words themselves"
+      },
+      {
+        "kind": "predication",
+        "name": "nibandhani",
+        "of": "sakti",
+        "cite": "binds this universe"
+      },
+      {
+        "kind": "relation",
+        "name": "netra",
+        "from": "atman",
+        "to": "sakti",
+        "cite": "whose eye is that power"
+      },
+      {
+        "kind": "predication",
+        "name": "bheda-rupa",
+        "of": "atman",
+        "cite": "is perceived in the form of difference"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "atman_truly_divided",
+      "rendering": "The self is truly divided into many forms; difference is its real nature.",
+      "why": "The commentary explicitly states the seer is undivided (akhaṇḍa) and only *appears* divided because its differentiating instrument (the word-power) colours its perception. Making bheda an actual property of ātman contradicts the vivarta structure where multiplicity arises from the lens, not from the subject.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "bheda", "of": "atman"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "sakti_without_instrument_role",
+      "rendering": "The word-power stands apart from the self and independently generates the appearance of the universe.",
+      "why": "Severs the constitutive unity in 'whose eye is that power': the commentary emphasizes that the power IS the self's very organ of self-perception, not an external force. The atman perceives *through* the word-power as its instrument (netra); they are inseparable in the perceptual act.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "svatantra", "from": "sakti", "to": "visva"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "parinama_appearance",
+      "rendering": "The atman actually transforms (parinama) into the differentiated world through the word-power's action.",
+      "why": "The verse's metaphor of the eye colouring the seen denies real transformation. The atman remains undivided; the appearance of difference is an artefact of the perceptual instrument (word-power), not a real change in the ātman's substance.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "parinamate", "from": "atman", "to": "visva"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "Verse 1.118 answers 1.1 by explaining non-duality's apparent paradox: how the one Brahman-ātman appears as the many. The mechanism is not substance-transformation (parinama) but perceptual appearance through the word-power's differentiating lens (vivarta). The verse deliberately preserves the parinama/vivarta ambiguity opened in 1.1 by using 'bheda-rupa pratiyate' — whether difference is illusory appearance or real manifestation remains contested and foundational to Advaita's later development."
+}

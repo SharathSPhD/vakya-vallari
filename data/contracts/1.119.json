@@ -1,0 +1,115 @@
+{
+  "verse": "1.119",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "even these are vyakhyata and rupyate sabdena — explained, and *given their form*, through word"
+    },
+    {
+      "id": "svara",
+      "name": "svara",
+      "sort": "manifestation",
+      "cite": "The notes of the scale — sadja and its fellows, the seven svaras — are pure audition, the least conceptual of objects"
+    },
+    {
+      "id": "sadja",
+      "name": "sadja",
+      "sort": "manifestation",
+      "cite": "the named scale is what carves it into sadja-versus-rsabha"
+    },
+    {
+      "id": "bheda",
+      "name": "bheda",
+      "sort": "property",
+      "cite": "the notes are individuated as notes, held apart as a system of seven, only through their names and the theory that names them"
+    },
+    {
+      "id": "artha",
+      "name": "artha",
+      "sort": "manifestation",
+      "cite": "all the varieties of objects, rest on sabda-matras, the measures of word"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "vyakhyate",
+      "from": "sabda",
+      "to": "bheda",
+      "cite": "even these are vyakhyata and rupyate sabdena — explained, and *given their form*, through word"
+    },
+    {
+      "kind": "relation",
+      "name": "rupyate",
+      "from": "sabda",
+      "to": "bheda",
+      "cite": "even these are vyakhyata and rupyate sabdena — explained, and *given their form*, through word"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "sabda",
+      "to": "artha",
+      "cite": "all the varieties of objects, rest on sabda-matras, the measures of word"
+    }
+  ],
+  "denials": [],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "vyakhyate",
+        "from": "sabda",
+        "to": "bheda",
+        "cite": "the differences beginning with the note sadja are explained and given form by word"
+      },
+      {
+        "kind": "relation",
+        "name": "rupyate",
+        "from": "sabda",
+        "to": "bheda",
+        "cite": "given form by word"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "sabda",
+        "to": "artha",
+        "cite": "all the varieties of objects rest upon the measures of word"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "intrinsic_distinction",
+      "rendering": "The musical notes have an intrinsic, pre-given distinction that word merely names and describes.",
+      "why": "Makes the distinction (bheda) prior to word, contradicting the verse's core claim that word GIVES FORM to the distinction. The commentary explicitly shows: 'the named scale is what carves it into sadja-versus-rsabha'—the carving requires word; there is no pre-existing division to discover.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "svatantra",
+          "of": "bheda"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "semantic_layer_only",
+      "rendering": "Only the meanings and conceptual categories of objects depend on word; the audible phenomena themselves exist independently.",
+      "why": "Restricts word-dependence to the cognitive layer, contradicting the verse's a fortiori argument. The commentary states: 'The untrained ear hears continuous pitch; the named scale is what carves it into sadja-versus-rsabha.' If even immediate auditory distinction (the hardest case) requires word for its individuation, then all objects certainly depend on word for their differentiation.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "niralambin",
+          "of": "svara"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse presents an a fortiori argument: if even the most immediate sensory distinction (the audible notes) is word-formed, then all varieties of objects must rest on word-measures. Entities map cleanly to the ontology; the core insight is that sabda constitutes (rupyate) the distinction of notes and thereby grounds (asraya) all object-varieties."
+}

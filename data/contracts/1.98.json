@@ -1,0 +1,133 @@
+{
+  "verse": "1.98",
+  "entities": [
+    {
+      "id": "dravya",
+      "name": "dravya",
+      "sort": "absolute",
+      "cite": "standing distinct for each substance"
+    },
+    {
+      "id": "gandha",
+      "name": "gandha",
+      "sort": "manifestation",
+      "cite": "smells and the rest"
+    },
+    {
+      "id": "nimitta",
+      "name": "nimitta",
+      "sort": "power",
+      "cite": "the illuminating condition"
+    },
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "similar words"
+    },
+    {
+      "id": "svara",
+      "name": "svara",
+      "sort": "manifestation",
+      "cite": "dedicated sound-patterns"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "prakasaka",
+      "from": "nimitta",
+      "to": "gandha",
+      "cite": "the nimitta that releases each — the crushing of this sandal, the burning of that resin"
+    },
+    {
+      "kind": "predication",
+      "name": "niyata",
+      "of": "nimitta",
+      "cite": "is niyata and pratidravyam avasthita, fixed and lodged substance by substance"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "nimitta",
+      "to": "dravya",
+      "cite": "fixed and lodged substance by substance"
+    },
+    {
+      "kind": "relation",
+      "name": "prakasaka",
+      "from": "svara",
+      "to": "sabda",
+      "cite": "So likewise similar words each have their own dedicated sound-patterns"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "constitutes",
+      "of": "svara",
+      "cite": "the dedication is no argument that the pattern constitutes the word"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "prakasaka",
+        "from": "nimitta",
+        "to": "gandha",
+        "cite": "the illuminating condition even of things similarly apprehended — smells and the rest"
+      },
+      {
+        "kind": "predication",
+        "name": "niyata",
+        "of": "nimitta",
+        "cite": "is fixed"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "nimitta",
+        "to": "dravya",
+        "cite": "standing distinct for each substance"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "manifestable_as_nimitta",
+      "rendering": "The manifestables themselves—smells—are the illuminating condition for similar things perceived.",
+      "why": "Confuses the manifestable (gandha, sort=manifestation) with the manifestor (nimitta, sort=power). The commentary explicitly identifies the nimitta as the crushing or burning, not the smell itself. This sort error makes the prakāśaka relation unlicensed.",
+      "entities": [
+        {"id": "gandha_nimitta", "name": "gandha", "sort": "power"}
+      ],
+      "claims": [
+        {"kind": "relation", "name": "prakasaka", "from": "gandha_nimitta", "to": "gandha"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "nimitta_universal",
+      "rendering": "The same instrumental cause (crushing) produces the scent in all sandals indifferently.",
+      "why": "Asserts that nimitta is universal/non-specific, which contradicts the pratidravyavasthita property: it must be lodged substance by substance. The axioms require asraya (ground) to each dravya individually.",
+      "entities": [
+        {"id": "nimitta_univ", "name": "nimitta", "sort": "power"}
+      ],
+      "claims": [
+        {"kind": "predication", "name": "visva", "of": "nimitta_univ"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "pattern_constitutes_word",
+      "rendering": "The dedicated sound-pattern for each word is what constitutes that word.",
+      "why": "The commentary explicitly rejects this: 'the dedication is no argument that the pattern constitutes the word.' The relation is manifestation (prakāśaka), not constitution or composition. The word is not made of the sound.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "constitutes", "of": "svara"}
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "The verse exemplifies the manifestation-relation via analogy: just as similar smells have dedicated, fixed, substance-specific nimittas (crushings, burnings), similar words have dedicated sound-patterns. This normalizes the word-sound relation, rendering it non-mysterious within everyday perception. The core claim is asymmetrical (nimitta is power, gandha is manifestation), and the denial of constitution is key to the doctrine: relation does not entail composition."
+}

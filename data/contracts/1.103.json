@@ -1,0 +1,118 @@
+{
+  "verse": "1.103",
+  "entities": [
+    {
+      "id": "sphota_kala",
+      "name": "sphoṭakāla",
+      "sort": "linguisticItem",
+      "cite": "the initial articulated form is what it is"
+    },
+    {
+      "id": "sabda_santana",
+      "name": "śabdasantāna",
+      "sort": "manifestation",
+      "cite": "the after-train, waxes and wanes (pracaya-apacaya) with the force of utterance"
+    },
+    {
+      "id": "prakrta",
+      "name": "prakṛta",
+      "sort": "power",
+      "cite": "the structure of prakrta versus vaikrta (1.76-77) reappears inside pure acoustics"
+    },
+    {
+      "id": "vaikrta",
+      "name": "vaikṛta",
+      "sort": "manifestation",
+      "cite": "the structure of prakrta versus vaikrta (1.76-77) reappears inside pure acoustics"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "na_bhidyate",
+      "of": "sphota_kala",
+      "cite": "that first event's time 'does not differ' with loudness — alpa or mahat, whispered or bellowed"
+    },
+    {
+      "kind": "predication",
+      "name": "pracaya_apacaya_atmaka",
+      "of": "sabda_santana",
+      "cite": "the after-train, waxes and wanes (pracaya-apacaya) with the force of utterance"
+    },
+    {
+      "kind": "identity",
+      "a": "sphota_kala",
+      "b": "prakrta",
+      "cite": "even theorists who deny the transcendent word are driven to split the invariant from the variable within speech"
+    },
+    {
+      "kind": "identity",
+      "a": "sabda_santana",
+      "b": "vaikrta",
+      "cite": "the structure of prakrta versus vaikrta (1.76-77) reappears inside pure acoustics"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "pracaya_apacaya_atmaka",
+      "of": "sphota_kala",
+      "cite": "that first event's time 'does not differ' with loudness — alpa or mahat, whispered or bellowed"
+    },
+    {
+      "kind": "predication",
+      "name": "na_bhidyate",
+      "of": "sabda_santana",
+      "cite": "the after-train, waxes and wanes (pracaya-apacaya) with the force of utterance"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "na_bhidyate",
+        "of": "sphota_kala",
+        "cite": "the time of the sphota does not differ"
+      },
+      {
+        "kind": "predication",
+        "name": "pracaya_apacaya_atmaka",
+        "of": "sabda_santana",
+        "cite": "has the nature of increase and decrease"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "reversed_invariance",
+      "rendering": "The time of the sphota increases and decreases with the loudness of the utterance, while the after-train remains constant.",
+      "why": "Reverses the verse's explicit assertion: the sphota-kala does not differ (is invariant), while the sabda-santana varies. This misreads which acoustic phenomenon carries the invariance structure.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "pracaya_apacaya_atmaka", "of": "sphota_kala"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "collapse_distinction",
+      "rendering": "The sphota and the subsequent train of sounds are the same acoustic phenomenon, subject to the same variation.",
+      "why": "Ignores the critical distinction between the invariant first-produced sphota (prakrta) and the variable propagated train (vaikrta). The verse carefully separates what does and does not differ with loudness.",
+      "entities": [],
+      "claims": [
+        {"kind": "identity", "a": "sphota_kala", "b": "sabda_santana"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "propagation_invariant",
+      "rendering": "Both the sphota-kala and the subsequent train are invariant because both derive from the same articulation.",
+      "why": "Incorrectly generalizes the sphota-kala's invariance to the sabda-santana. The commentary is explicit: loudness is a property of propagation, not articulation. The after-train must vary with utterance force.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "na_bhidyate", "of": "sabda_santana"}
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "The verse reports the acoustic reductionist view from 1.102, where sphota is the first produced sound (sphoṭakāla) and sabdasantāna is the propagated echo. The contract captures the key invariant structure: prakṛta (invariant articulation) splits from vaikṛta (variable propagation) within pure acoustics. Strain: the contested note flags that whether 1.103 voices Bhartrhari's own position or continues reporting the rival view of 1.102 is ambiguous in the tradition."
+}

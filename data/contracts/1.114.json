@@ -1,0 +1,135 @@
+{
+  "verse": "1.114",
+  "entities": [
+    {
+      "id": "vayu",
+      "name": "vāyu",
+      "sort": "power",
+      "cite": "The breath, having come to rest upon the principle of the inner organ"
+    },
+    {
+      "id": "antahkarana_tattva",
+      "name": "antaḥkaraṇa-tattva",
+      "sort": "absolute",
+      "cite": "the principle of the inner organ"
+    },
+    {
+      "id": "tejas",
+      "name": "tejas",
+      "sort": "power",
+      "cite": "by the agency of the fire itself"
+    },
+    {
+      "id": "dharma",
+      "name": "dharma",
+      "sort": "property",
+      "cite": "that principle's properties"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "vayu",
+      "to": "antahkarana_tattva",
+      "cite": "it has gone asrayatam, taken the antahkarana-tattva as its resort"
+    },
+    {
+      "kind": "predication",
+      "name": "samavista",
+      "of": "vayu",
+      "cite": "tad-dharmena samavista — suffused, occupied, by the inner organ's properties"
+    },
+    {
+      "kind": "predication",
+      "name": "vivartate",
+      "of": "vayu",
+      "cite": "the vivarta verb now applied to the physiological process itself"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "parinamate",
+      "from": "vayu",
+      "to": "tejas",
+      "cite": "the vivarta verb tells against mere element-transformation"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "vayu",
+        "to": "antahkarana_tattva",
+        "cite": "having come to rest upon the principle of the inner organ"
+      },
+      {
+        "kind": "predication",
+        "name": "samavista",
+        "of": "vayu",
+        "cite": "pervaded by that principle's properties"
+      },
+      {
+        "kind": "predication",
+        "name": "vivartate",
+        "of": "vayu",
+        "cite": "appears — by the agency of the fire itself"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "physical_breath_mechanics",
+      "rendering": "Ordinary breath, having become associated with mental consciousness, gains the qualities of the mind and appears as visible wind.",
+      "why": "Treats vayu as mere physical substance (manifestation sort) rather than a subtle power. The sort error makes this reading incompatible with the axioms, which require vayu as power.",
+      "entities": [
+        {
+          "id": "vayu_physical",
+          "name": "vāyu",
+          "sort": "manifestation"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "samavista",
+          "of": "vayu_physical"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "element_transmutation",
+      "rendering": "The breath transforms into the luminous/visual element through the agency of the fire.",
+      "why": "Asserts parinamate (real transformation) of vayu into tejas, which the commentary explicitly rejects: vivarta indicates appearance without loss of identity, not elemental transmutation.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "parinamate",
+          "from": "vayu",
+          "to": "tejas"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "reversed_dependency",
+      "rendering": "The inner organ, having come to rest upon the breath as its base, is pervaded by the breath's qualities.",
+      "why": "Reverses the asraya relation: it is the breath that takes the inner organ as its resort, not the inverse. The reversed relation is not entailed by the axioms.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "asraya",
+          "from": "antahkarana_tattva",
+          "to": "vayu"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse explains how shaped breath becomes meaningful utterance by formalizing the middle joint of the speech-production cascade. The breath (vāyu), a subtle power, takes the inner organ (antaḥkaraṇa-tattva) as its substratum, becomes pervaded by its properties (dharma), and thereby manifests (vivartate) through the ripening fire (tejas)—revealing that physiological process is always already an appearance-of-mind rather than independent production. Avoids the element-physics reading by insisting vivarta (appearance without loss of identity) over parinama (transformation)."
+}

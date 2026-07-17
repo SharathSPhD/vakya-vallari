@@ -1,0 +1,123 @@
+{
+  "verse": "1.120",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "absolute",
+      "cite": "This is the transformation of the word"
+    },
+    {
+      "id": "amnaya",
+      "name": "āmnāya",
+      "sort": "linguisticItem",
+      "cite": "those who know the tradition understand"
+    },
+    {
+      "id": "chandas",
+      "name": "chandas",
+      "sort": "linguisticItem",
+      "cite": "from the Vedic hymns"
+    },
+    {
+      "id": "visva",
+      "name": "viśva",
+      "sort": "manifestation",
+      "cite": "this universe unrolled"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "vivartate",
+      "from": "sabda",
+      "to": "visva",
+      "cite": "Bhartrhari's own considered verb has been vivartate since 1.1"
+    },
+    {
+      "kind": "relation",
+      "name": "source",
+      "from": "chandas",
+      "to": "visva",
+      "cite": "from the metres, the hymns, first of all, this universe vyavartata, turned forth"
+    },
+    {
+      "kind": "predication",
+      "name": "teaches_cosmic_unity",
+      "of": "amnaya",
+      "cite": "the verse is doing legitimating work: the extravagant claims of 1.119 and 1.121-123 are being shown to be not a grammarian's professional inflation but the oldest teaching of the tradition itself"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "parinamate",
+      "from": "sabda",
+      "to": "visva",
+      "cite": "parinama here sits in reported speech: it is the amnaya-knowers' formulation, and Bhartrhari's own considered verb has been vivartate since 1.1"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "vivartate",
+        "from": "sabda",
+        "to": "visva",
+        "cite": "this universe unrolled"
+      },
+      {
+        "kind": "relation",
+        "name": "source",
+        "from": "chandas",
+        "to": "visva",
+        "cite": "from the Vedic hymns"
+      },
+      {
+        "kind": "predication",
+        "name": "teaches_cosmic_unity",
+        "of": "amnaya",
+        "cite": "those who know the tradition understand"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "endorse_parinama",
+      "rendering": "Bhartrhari endorses the doctrine that the word truly transforms into the universe, as the Vedic tradition teaches.",
+      "why": "Takes parinama as Bhartrhari's own philosophical position. The commentary is explicit: parinama is the amnaya-knowers' scriptural idiom; Bhartrhari's own verb, held consistently since 1.1, is vivartate (appearance without real transformation). This is the central distinction the commentary enforces.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "parinamate",
+          "from": "sabda",
+          "to": "visva"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "sabda_as_description",
+      "rendering": "The word is a descriptive property of the universe, not its generative source.",
+      "why": "Demotes sabda from absolute principle to property, reversing the asymmetry established by the axioms. An absolute can vivartate into a manifestation; a property cannot. This is a sort error that breaks the ontological hierarchy.",
+      "entities": [
+        {
+          "id": "sabda_property",
+          "name": "śabda",
+          "sort": "property"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "vivartate",
+          "from": "sabda_property",
+          "to": "visva"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse orchestrates two interpretive registers: the Vedic cosmogonic idiom (sabdasya parinamah, what the amnaya-knowers formulate) and Bhartrhari's Advaitic ontology (vivartate, what he actually holds since 1.1). The commentary's work is to justify citation of scriptural authority without endorsing scriptural language as truth-apt at the philosophical level. The contested note flags that readers divide on whether this is tacit endorsement or strategic appropriation; the contract encodes the reading the commentary explicitly states."
+}

@@ -1,0 +1,95 @@
+{
+  "verse": "1.96",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "absolute",
+      "cite": "the word they manifest is not parcelled among the locations"
+    },
+    {
+      "id": "dhvani",
+      "name": "dhvani",
+      "sort": "manifestation",
+      "cite": "the sounds are many and located"
+    },
+    {
+      "id": "desa",
+      "name": "deśa",
+      "sort": "property",
+      "cite": "even under the alternative of difference of place"
+    },
+    {
+      "id": "kaya",
+      "name": "kāya",
+      "sort": "manifestation",
+      "cite": "even kayavat things, bodies, stand in place-connections"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "abheda",
+      "from": "dhvani",
+      "to": "sabda",
+      "cite": "there is still no bheda between dhvani and sabda beyond what the theory already grants"
+    },
+    {
+      "kind": "predication",
+      "name": "sambandha",
+      "of": "kaya",
+      "cite": "even kayavat things, bodies, stand in place-connections that multiply without multiplying them"
+    },
+    {
+      "kind": "relation",
+      "name": "uparcarena_sambandha",
+      "from": "sabda",
+      "to": "desa",
+      "cite": "spatial predicates attach to the word upacarena, by transfer from its manifestors"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "bheda",
+      "from": "dhvani",
+      "to": "sabda",
+      "cite": "the word they manifest is not parcelled among the locations"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "abheda",
+        "from": "dhvani",
+        "to": "sabda",
+        "cite": "there is no difference between sound and word"
+      },
+      {
+        "kind": "predication",
+        "name": "sambandha",
+        "of": "kaya",
+        "cite": "Connection with place and the rest is observed even for embodied things"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "spatial_parcellation_of_word",
+      "rendering": "The eternal word becomes parcelled and differentiated as utterances occur in different places.",
+      "why": "Violates the explicit assertion that despite place-difference in sounds (desa-bheda in dhvani), there is no difference in the word itself. The analogy with embodied things shows that location-predicates can be multiple without creating real division.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "bheda",
+          "from": "dhvani",
+          "to": "sabda"
+        }
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "The verse establishes non-difference (abheda) between sound and word even under place-difference, paralleling how embodied things stand in multiple locations without division. Core doctrine: spatial predicates are transferred to the eternal word from its manifestors, not constitutive of its own nature."
+}

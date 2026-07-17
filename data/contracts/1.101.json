@@ -1,0 +1,158 @@
+{
+  "verse": "1.101",
+  "entities": [
+    {
+      "id": "varna",
+      "name": "varṇa",
+      "sort": "linguisticItem",
+      "cite": "for phonemes, sentences, words and the rest"
+    },
+    {
+      "id": "vakya",
+      "name": "vākya",
+      "sort": "linguisticItem",
+      "cite": "for phonemes, sentences, words and the rest"
+    },
+    {
+      "id": "pada",
+      "name": "pada",
+      "sort": "linguisticItem",
+      "cite": "for phonemes, sentences, words and the rest"
+    },
+    {
+      "id": "nada",
+      "name": "nāda",
+      "sort": "manifestation",
+      "cite": "the felt durations belong to nada"
+    },
+    {
+      "id": "abhinna_kala",
+      "name": "abhinna-kāla",
+      "sort": "property",
+      "cite": "whose time is undivided"
+    },
+    {
+      "id": "vrtti_kala",
+      "name": "vṛtti-kāla",
+      "sort": "power",
+      "cite": "the time of functioning — how long the manifesting takes, a real property of the sound-process"
+    },
+    {
+      "id": "sva_kala",
+      "name": "sva-kāla",
+      "sort": "property",
+      "cite": "their own time, which exists only as the figurative shadow the vrtti casts"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "abhinna_kala",
+      "of": "varna",
+      "cite": "All linguistic units, at every grain, are abhinna-kala, temporally undivided in themselves"
+    },
+    {
+      "kind": "predication",
+      "name": "abhinna_kala",
+      "of": "vakya",
+      "cite": "All linguistic units, at every grain, are abhinna-kala, temporally undivided in themselves"
+    },
+    {
+      "kind": "predication",
+      "name": "abhinna_kala",
+      "of": "pada",
+      "cite": "All linguistic units, at every grain, are abhinna-kala, temporally undivided in themselves"
+    },
+    {
+      "kind": "predication",
+      "name": "asraya",
+      "of": "nada",
+      "cite": "the felt durations belong to nada"
+    },
+    {
+      "kind": "relation",
+      "name": "vibhajyate",
+      "from": "vrtti_kala",
+      "to": "sva_kala",
+      "cite": "vrtti-kala, the time of functioning — how long the manifesting takes, a real property of the sound-process — versus sva-kala"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "actual_duration",
+      "of": "varna",
+      "cite": "no sphota differs from any other in sva-kala, since none has any"
+    },
+    {
+      "kind": "predication",
+      "name": "actual_duration",
+      "of": "pada",
+      "cite": "no sphota differs from any other in sva-kala, since none has any"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "abhinna_kala",
+        "of": "varna",
+        "cite": "whose time is undivided"
+      },
+      {
+        "kind": "predication",
+        "name": "abhinna_kala",
+        "of": "pada",
+        "cite": "whose time is undivided"
+      },
+      {
+        "kind": "predication",
+        "name": "asraya",
+        "of": "nada",
+        "cite": "the time of functioning and their own time are distinguished according to the difference of the sound"
+      },
+      {
+        "kind": "relation",
+        "name": "vibhajyate",
+        "from": "vrtti_kala",
+        "to": "sva_kala",
+        "cite": "are distinguished according to the difference of the sound"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "linguistic_units_temporal",
+      "rendering": "Linguistic units (phonemes and words) themselves possess distinct time-properties that differ according to length and speed of utterance.",
+      "why": "Assigns actual duration to linguistic units, but the commentary insists linguistic units have only figurative time (sva-kala) — the real duration is a property of nada. This reverses the ontological priority: units are temporally undivided in themselves.",
+      "entities": [
+        {"id": "varna_dur", "name": "varṇa", "sort": "property"}
+      ],
+      "claims": [
+        {"kind": "predication", "name": "actual_duration", "of": "varna_dur"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "sva_kala_real",
+      "rendering": "Each linguistic unit has its own intrinsic time-measure, distinct from the time of utterance.",
+      "why": "Treats sva-kala as a real property of linguistic units themselves, but the commentary explicitly states it 'exists only as the figurative shadow the vrtti casts' — it is upacara (metaphorical), not a real property. The sort error (property vs manifestation of units themselves) makes this contradicted by the denial.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "actual_duration", "of": "pada"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "no_distinction_time",
+      "rendering": "There is no meaningful distinction between the time-measurements of sound and the time-measurements of linguistic units — they are the same property.",
+      "why": "Collapses the central distinction the verse establishes: vrtti-kala (real, of sound) vs sva-kala (figurative, of units). The commentary insists on the separation: 'vrtti-kala, the time of functioning — a real property of the sound-process — versus sva-kala... which exists only as figurative'.",
+      "entities": [],
+      "claims": [
+        {"kind": "identity", "a": "vrtti_kala", "b": "sva_kala"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse closes the temporal dossier (1.75–1.101) by settling the bearer of duration: linguistic units are ontologically distinct from time-properties. The six-entity schema captures this cleanly: units (varna, vakya, pada) as linguisticItem, nada as manifestation-bearer, and the two temporal properties (vrtti-kala as power, sva-kala as figurative property). The accepted_reading claims entail all axioms; rejected_readings test whether the validator correctly enforces ontological category constraints (sort errors) and denials."
+}

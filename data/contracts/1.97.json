@@ -1,0 +1,148 @@
+{
+  "verse": "1.97",
+  "entities": [
+    {
+      "id": "grahana",
+      "name": "grahaṇa",
+      "sort": "cognition",
+      "cite": "the fitness between an apprehension and its object"
+    },
+    {
+      "id": "grahya",
+      "name": "grāhya",
+      "sort": "manifestation",
+      "cite": "the fitness between an apprehension and its object"
+    },
+    {
+      "id": "yogyata",
+      "name": "yogyatā",
+      "sort": "property",
+      "cite": "The answer offered is yogyata, fitness"
+    },
+    {
+      "id": "sphota",
+      "name": "sphota",
+      "sort": "linguisticItem",
+      "cite": "between sphota and sounds"
+    },
+    {
+      "id": "dhvani",
+      "name": "dhvani",
+      "sort": "linguisticItem",
+      "cite": "between sphota and sounds"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "siddha",
+      "of": "yogyata",
+      "cite": "that fitness is siddha and niyata, established and fixed"
+    },
+    {
+      "kind": "predication",
+      "name": "niyata",
+      "of": "yogyata",
+      "cite": "that fitness is siddha and niyata, established and fixed"
+    },
+    {
+      "kind": "relation",
+      "name": "yogyate",
+      "from": "grahana",
+      "to": "grahya",
+      "cite": "the same fixed, unexplained aptitude that pairs sight with colour"
+    },
+    {
+      "kind": "relation",
+      "name": "yogyate",
+      "from": "sphota",
+      "to": "dhvani",
+      "cite": "The vyanya-vyanjaka relation between word and its sounds has, Bhartrhari claims, the same standing: constitutive, regular, not further derivable"
+    },
+    {
+      "kind": "relation",
+      "name": "vyanjya-vyanjaka",
+      "from": "dhvani",
+      "to": "sphota",
+      "cite": "The vyanya-vyanjaka relation between word and its sounds has, Bhartrhari claims, the same standing: constitutive, regular, not further derivable"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "dhvani",
+      "to": "sphota",
+      "cite": "without conceding that the word is assembled from that pattern: fit, not composition"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "yogyate",
+        "from": "grahana",
+        "to": "grahya",
+        "cite": "As the fitness between an apprehension and its object is established and fixed"
+      },
+      {
+        "kind": "relation",
+        "name": "yogyate",
+        "from": "sphota",
+        "to": "dhvani",
+        "cite": "just so is that between sphota and sounds"
+      },
+      {
+        "kind": "predication",
+        "name": "siddha",
+        "of": "yogyata",
+        "cite": "is established"
+      },
+      {
+        "kind": "predication",
+        "name": "niyata",
+        "of": "yogyata",
+        "cite": "and fixed"
+      },
+      {
+        "kind": "relation",
+        "name": "vyanjya-vyanjaka",
+        "from": "dhvani",
+        "to": "sphota",
+        "cite": "in the relation of manifested and manifestor"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "compositional_assembly",
+      "rendering": "The word is assembled or composed from the right combination of phonemes according to a structural principle.",
+      "why": "The commentary explicitly rejects this: 'without conceding that the word is assembled from that pattern: fit, not composition.' The point is that yogyatā (fitness) explains the manifestation of sphota by sounds without making the word composed of sounds. Asserting asraya (grounding-in) from sounds to sphota contradicts this denial.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "asraya",
+          "from": "dhvani",
+          "to": "sphota"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "derived_fitness",
+      "rendering": "The fitness between sound and word-meaning is derived from or explained by causal processes or learned associations.",
+      "why": "The verse insists that yogyatā is siddha (established) and niyata (fixed)—bedrock properties that cannot be derived or explained further. To derive fitness from causes would contradict these essential predicates and violate the 'primitive' status the commentary assigns to this relation.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "hetusamuppanna",
+          "of": "yogyata"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "Verse 1.97 establishes yogyatā (fitness/aptitude) as a primitive, bedrock relation in both cognition and language. Just as the fitness between perception and its object is unexplained yet given (siddha, niyata), so too is the fitness between sphota and sounds, in their vyañjya-vyañjaka (manifested-manifestor) mode. The contract captures this through dual yogyate relations and shared predicates on yogyatā. One denial explicitly rules out asraya (grounding) from sounds to sphota, blocking the reductive 'assembly' interpretation. The framework preserves the verse's ontological commitments without strain."
+}

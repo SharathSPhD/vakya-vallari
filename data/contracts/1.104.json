@@ -1,0 +1,106 @@
+{
+  "verse": "1.104",
+  "entities": [
+    {
+      "id": "dhvani",
+      "name": "dhvani",
+      "sort": "linguisticItem",
+      "cite": "dhvani-matram, bare sound, reaching the ear while the word does not"
+    },
+    {
+      "id": "sphota",
+      "name": "sphota",
+      "sort": "linguisticItem",
+      "cite": "the sphota-dhvani split from two everyday observations"
+    },
+    {
+      "id": "prabha",
+      "name": "prabha",
+      "sort": "manifestation",
+      "cite": "exactly as a lamp's prabha announces the lamp from a distance"
+    },
+    {
+      "id": "dipa",
+      "name": "dīpa",
+      "sort": "absolute",
+      "cite": "the glow of a lamp"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "abhivyakti",
+      "from": "dhvani",
+      "to": "sphota",
+      "cite": "The manifestor, then, is separable in experience from what it manifests —"
+    },
+    {
+      "kind": "predication",
+      "name": "vyakta",
+      "of": "dhvani",
+      "cite": "dhvani-matram, bare sound, reaching the ear while the word does not"
+    },
+    {
+      "kind": "relation",
+      "name": "vivartate",
+      "from": "dipa",
+      "to": "prabha",
+      "cite": "exactly as a lamp's prabha announces the lamp from a distance at which the flame itself cannot be made out"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "avyakta",
+      "of": "dhvani",
+      "cite": "settling against 1.81's second position (that the dhvani is never itself sensed)"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "vyakta",
+        "of": "dhvani",
+        "cite": "only the sound is discerned"
+      },
+      {
+        "kind": "relation",
+        "name": "abhivyakti",
+        "from": "dhvani",
+        "to": "sphota",
+        "cite": "that difference is plainly seen"
+      },
+      {
+        "kind": "relation",
+        "name": "vivartate",
+        "from": "dipa",
+        "to": "prabha",
+        "cite": "like the glow of a lamp"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "dhvani_imperceptible",
+      "rendering": "From afar, the underlying sound cannot be discerned separately, and only the meaning survives the distance; in bells, only the lingering resonance reaches the ear, not the strike.",
+      "why": "Asserts that dhvani is imperceptible (avyakta), contradicting the verse's central empirical claim that one hears the bare sound even when the word is not understood. This violates the denial that the position 'dhvani is never sensed' is false.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "avyakta", "of": "dhvani"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "identity_conflation",
+      "rendering": "From afar, the sound and meaning are utterly indistinguishable; in bells, the strike and resonance are one phenomenon.",
+      "why": "Collapses dhvani and sphota into identity, erasing the distinction (bheda) the verse's observations establish as patent (vyakto bhedah). The axiom that dhvani manifests sphota presupposes they are distinct entities, so this claim is not derivable from the verse's foundation.",
+      "entities": [],
+      "claims": [
+        {"kind": "identity", "a": "dhvani", "b": "sphota"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The contract encodes the verse's dual empirical demonstration: (1) the distant voice shows dhvani (bare sound) is perceivable independently of sphota (the word/meaning); (2) the bell illustrates temporal distinction (strike vs. lingering resonance) in sound itself, mirroring the alpa/mahat principle. The prabha/dipa analogy is captured as an axiom because it structurally parallels and reinforces the main dhvani-sphota split. Contested: whether the bell example chiefly illustrates the alpa/mahat (small/large forms) of sound or the sphota/dhvani distinction proper in non-linguistic sound; the contract is neutral, encoding the observable facts both readings accommodate."
+}

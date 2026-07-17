@@ -1,0 +1,159 @@
+{
+  "verse": "1.105",
+  "entities": [
+    {
+      "id": "dravya",
+      "name": "dravya",
+      "sort": "absolute",
+      "cite": "Dravya-abhighata, the striking of the sounding body"
+    },
+    {
+      "id": "pracaya",
+      "name": "pracaya",
+      "sort": "manifestation",
+      "cite": "yields the pracaya, the amplified initial sound"
+    },
+    {
+      "id": "dirgha",
+      "name": "dīrgha",
+      "sort": "property",
+      "cite": "dirgha and pluta arise as distinct"
+    },
+    {
+      "id": "pluta",
+      "name": "pluta",
+      "sort": "property",
+      "cite": "dirgha and pluta arise as distinct"
+    },
+    {
+      "id": "nada",
+      "name": "nāda",
+      "sort": "linguisticItem",
+      "cite": "the nadas born kampe uparate, once the vibration has ceased"
+    },
+    {
+      "id": "vrittera",
+      "name": "vṛttera",
+      "sort": "linguisticItem",
+      "cite": "vrtter visesakah, differentiators only of delivery"
+    },
+    {
+      "id": "vibration",
+      "name": "kampana",
+      "sort": "power",
+      "cite": "once the vibration has ceased"
+    },
+    {
+      "id": "contrast",
+      "name": "viśeṣa",
+      "sort": "property",
+      "cite": "contrastive properties ride the driven phase of the sound"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "arise_distinct",
+      "of": "dirgha",
+      "cite": "dirgha and pluta arise as distinct"
+    },
+    {
+      "kind": "predication",
+      "name": "arise_distinct",
+      "of": "pluta",
+      "cite": "dirgha and pluta arise as distinct"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "contrast",
+      "to": "pracaya",
+      "cite": "contrastive properties ride the driven phase of the sound"
+    },
+    {
+      "kind": "relation",
+      "name": "vivartate",
+      "from": "vibration",
+      "to": "nada",
+      "cite": "the nadas born kampe uparate, once the vibration has ceased"
+    },
+    {
+      "kind": "relation",
+      "name": "visesakah",
+      "from": "nada",
+      "to": "vrittera",
+      "cite": "vrtter visesakah, differentiators only of delivery"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "contrast",
+      "to": "nada",
+      "cite": "they mark how the utterance decays, never which word it was"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "arise_distinct",
+        "of": "dirgha",
+        "cite": "even the long and prolated arise distinct"
+      },
+      {
+        "kind": "predication",
+        "name": "arise_distinct",
+        "of": "pluta",
+        "cite": "even the long and prolated arise distinct"
+      },
+      {
+        "kind": "relation",
+        "name": "visesakah",
+        "from": "nada",
+        "to": "vrittera",
+        "cite": "but the sounds born when the vibration has ceased are the differentiators of delivery"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "contrast_after_decay",
+      "rendering": "The sounds that remain after vibration ceases carry the long and prolated vowel distinctions that identify words.",
+      "why": "Reverses the acoustic division the commentary insists on: contrastive properties (vowel length) belong to the driven phase, not the free decay. The decay phase marks only stylistic delivery, never contrastive identity. This inverts the relation's direction.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "asraya",
+          "from": "contrast",
+          "to": "nada"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "decay_phase_contrast",
+      "rendering": "The long and prolated vowel distinctions belong to the post-vibration resonances that differentiate utterance styles.",
+      "why": "Assigns contrastive vowel properties to the decay phase, when the commentary explicitly locates them in the amplified driven phase. This demotes a contrastive property to a stylistic one (sort error), making the axiom unlicensed.",
+      "entities": [
+        {
+          "id": "contrast_style",
+          "name": "viśeṣa-śaili",
+          "sort": "property"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "asraya",
+          "from": "contrast_style",
+          "to": "nada"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse formalizes the acoustic foundation of the contrast/style distinction (1.76-77): driven vs. decaying oscillation. The practical Dravya (substance) is what is struck, but treated here as absolute ground. 'Contrast' as a property name abstracts the semantic function carried by vowel length distinctions; it is licensed by the commentary's language 'never which word it was'."
+}

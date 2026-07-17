@@ -1,0 +1,223 @@
+{
+  "verse": "1.110-111",
+  "entities": [
+    {
+      "id": "anu",
+      "name": "aṇu",
+      "sort": "absolute",
+      "cite": "aṇavaḥ sarvaśaktitvādbhedasaṃsargavṛttayaḥ — atoms possessing all powers"
+    },
+    {
+      "id": "sakti",
+      "name": "śakti",
+      "sort": "power",
+      "cite": "sarvaśaktitvāt — omnipotent in the small, each carrying every power"
+    },
+    {
+      "id": "chaya",
+      "name": "chāya",
+      "sort": "manifestation",
+      "cite": "take on word-being as one parinama among siblings: chaya, atapa, tamas, sabda"
+    },
+    {
+      "id": "atapa",
+      "name": "atapa",
+      "sort": "manifestation",
+      "cite": "take on word-being as one parinama among siblings: chaya, atapa, tamas, sabda"
+    },
+    {
+      "id": "tamas",
+      "name": "tamas",
+      "sort": "manifestation",
+      "cite": "take on word-being as one parinama among siblings: chaya, atapa, tamas, sabda"
+    },
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "manifestation",
+      "cite": "transform themselves as shadow, light, darkness and word"
+    },
+    {
+      "id": "sabda_akhya",
+      "name": "śabdākhyāḥ",
+      "sort": "linguisticItem",
+      "cite": "the atoms called 'word', a name conceding that wordhood is a functional designation, not a natural kind"
+    },
+    {
+      "id": "prayatna",
+      "name": "prayatna",
+      "sort": "power",
+      "cite": "prayatnena samīritāḥ — impelled by effort"
+    },
+    {
+      "id": "parinama",
+      "name": "parināma",
+      "sort": "property",
+      "cite": "take on word-being as one parinama among siblings"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "parinamate",
+      "from": "anu",
+      "to": "sabda",
+      "cite": "take on word-being as one parinama among siblings: chaya, atapa, tamas, sabda"
+    },
+    {
+      "kind": "predication",
+      "name": "sarvasaktitvat",
+      "of": "anu",
+      "cite": "sarva-saktitvat — omnipotent in the small, each carrying every power"
+    },
+    {
+      "kind": "relation",
+      "name": "vyajyamana",
+      "from": "sakti",
+      "to": "sabda_akhya",
+      "cite": "under prayatna the sabda-akhyah paramanavah"
+    },
+    {
+      "kind": "relation",
+      "name": "pracyante",
+      "from": "sabda_akhya",
+      "to": "prayatna",
+      "cite": "pracyante abhranive, mass like clouds: scattered potency condensing into audible weather"
+    },
+    {
+      "kind": "predication",
+      "name": "functional_designation",
+      "of": "sabda_akhya",
+      "cite": "'the atoms called word', a name conceding that wordhood is a functional designation, not a natural kind"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "eka_dravya",
+      "of": "sabda_akhya",
+      "cite": "clouds are aggregates with edges only from a distance, form without unity"
+    },
+    {
+      "kind": "predication",
+      "name": "paryapta",
+      "of": "sabda_akhya",
+      "cite": "a cloud of word-atoms has no principled oneness for the hearer's single grasp"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "parinamate",
+        "from": "anu",
+        "to": "sabda",
+        "cite": "transform themselves as shadow, light, darkness and word"
+      },
+      {
+        "kind": "predication",
+        "name": "sarvasaktitvat",
+        "of": "anu",
+        "cite": "because they possess all powers"
+      },
+      {
+        "kind": "relation",
+        "name": "pracyante",
+        "from": "sabda_akhya",
+        "to": "prayatna",
+        "cite": "the atoms called 'word' accumulate like clouds"
+      },
+      {
+        "kind": "predication",
+        "name": "functional_designation",
+        "of": "sabda_akhya",
+        "cite": "the atoms called 'word'"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "unified_word_substance",
+      "rendering": "The atoms combine into a single, unified word-substance that hearer can grasp as one.",
+      "why": "The commentary explicitly denies this: clouds are 'aggregates with edges only from a distance, form without unity' and 'a cloud of word-atoms has no principled oneness for the hearer's single grasp'. The theory fails precisely because it cannot deliver the unity word requires.",
+      "entities": [
+        {
+          "id": "sabda_unified",
+          "name": "śabda",
+          "sort": "absolute"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "identity",
+          "a": "anu",
+          "b": "sabda_unified"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "eternal_word_property",
+      "rendering": "Atoms eternally possess wordhood as an intrinsic property rather than generating it through transformation.",
+      "why": "The verse uses parinamirah (transform), not dharana (inherently possess). The commentary says atoms 'take on word-being as one parinama among siblings', stressing this is a transformation into one mode among others (shadow, light, darkness), not an eternal property. The functional designation ('a name conceding that wordhood is a functional designation, not a natural kind') is generated, not pre-existing.",
+      "entities": [
+        {
+          "id": "sabda_property",
+          "name": "śabda",
+          "sort": "property"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "nityatva",
+          "of": "anu"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "consciousness_orchestrates",
+      "rendering": "A conscious agent directs the effort by which atom-clouds condense into articulate words.",
+      "why": "The verse treats prayatna as a force property of the atoms themselves ('When their own power is being manifested, impelled by effort'), not as conscious direction from a speaker. The atomistic theory attributes word-generation to mechanical effort within nature, not intentional acts of agency. Introducing consciousness would solve the unity problem the commentary identifies—but the purvapaksa theory explicitly denies it, and that denial is part of what makes it a coherent (if incomplete) position.",
+      "entities": [
+        {
+          "id": "conscious_agent",
+          "name": "kartṛ",
+          "sort": "cognition"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "prayojanam",
+          "from": "conscious_agent",
+          "to": "prayatna"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "atoms_unified_like_vayu",
+      "rendering": "Like the vayu theory, atoms form a continuous medium that carries wordhood through the air.",
+      "why": "The verse explicitly denies this: the commentary contrasts this atom-theory with 'the vayu theory [which] made word a *state* of one continuous stuff', and says 'this view grinds the substrate finer: anavah, atoms'. The atomistic theory uses scattered particles (prakiya-dravya), not a continuous medium like air. The cloud simile emphasizes aggregation of discrete units, not a single flowing substance.",
+      "entities": [
+        {
+          "id": "sabda_vayu",
+          "name": "vāyu",
+          "sort": "manifestation"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "ananta_dravya",
+          "from": "sabda_vayu",
+          "to": "sabda_akhya"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse presents the atomistic alternative to both Bhartrhari's own sphoṭa doctrine and the vayu theory of 1.108-109. The contract captures the theory's core claims: atoms are fundamental (omnipotent in the small), transform into various manifestation-modes (shadow, light, darkness, word), and accumulate like clouds under effort. The commentary's critique is encoded in the denials: the theory fails because word-atoms, like clouds, have 'no principled oneness' for the hearer to grasp as a single word. This contract presents what the purvapaksa theory commits to without endorsing it; Bhartrhari will later argue that such scattered aggregation cannot explain why the hearer understands a word as one unified meaning (1.84). The functional designation (sabda-akhya) itself registers the theory's self-awareness that 'wordhood' is a convenient label, not a natural kind."
+}

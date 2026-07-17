@@ -1,0 +1,148 @@
+{
+  "verse": "1.94",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "absolute",
+      "cite": "Of the unchanging word"
+    },
+    {
+      "id": "dhvani",
+      "name": "dhvani",
+      "sort": "manifestation",
+      "cite": "the sound — modified by causes"
+    },
+    {
+      "id": "nimitta",
+      "name": "nimitta",
+      "sort": "power",
+      "cite": "being the condition of apprehension"
+    },
+    {
+      "id": "upalabdhi",
+      "name": "upalabdhi",
+      "sort": "cognition",
+      "cite": "comes to be the condition for apprehension"
+    },
+    {
+      "id": "prakasa",
+      "name": "prakāśa",
+      "sort": "absolute",
+      "cite": "like a light"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "avikara",
+      "of": "sabda",
+      "cite": "while the sabda is avikara, unchanging"
+    },
+    {
+      "kind": "relation",
+      "name": "vikrta",
+      "from": "nimitta",
+      "to": "dhvani",
+      "cite": "The dhvani is vikrta nimittaih — modified by its causes"
+    },
+    {
+      "kind": "relation",
+      "name": "nimitta",
+      "from": "dhvani",
+      "to": "upalabdhi",
+      "cite": "The sound's role is nimittatvam upalabdhau, being the condition of apprehension"
+    },
+    {
+      "kind": "relation",
+      "name": "vivartate",
+      "from": "sabda",
+      "to": "dhvani",
+      "cite": "the sound's modifications condition the apprehending (speed, clarity, audibility) without transferring change to the word apprehended"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "parinamate",
+      "from": "dhvani",
+      "to": "sabda",
+      "cite": "do not put flicker into the pot"
+    },
+    {
+      "kind": "predication",
+      "name": "vikara",
+      "of": "sabda",
+      "cite": "the sound's modifications condition the apprehending (speed, clarity, audibility) without transferring change to the word apprehended"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "avikara",
+        "of": "sabda",
+        "cite": "unchanging"
+      },
+      {
+        "kind": "relation",
+        "name": "vikrta",
+        "from": "nimitta",
+        "to": "dhvani",
+        "cite": "modified by causes"
+      },
+      {
+        "kind": "relation",
+        "name": "nimitta",
+        "from": "dhvani",
+        "to": "upalabdhi",
+        "cite": "condition for apprehension"
+      },
+      {
+        "kind": "relation",
+        "name": "vivartate",
+        "from": "sabda",
+        "to": "dhvani",
+        "cite": "like a light"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "transfer_of_change",
+      "rendering": "The sound's modifications are transferred to the unchanging word, making it also modified.",
+      "why": "The commentary explicitly states that modifications condition apprehension without transferring change: 'do not put flicker into the pot.' This reading commits a kind error by asserting parinamate (real transformation) instead of vivarta (manifestation without transfer).",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "parinamate",
+          "from": "dhvani",
+          "to": "sabda"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "shared_modification",
+      "rendering": "Both the sound and the word are modified, since the sound is the manifestation of the word.",
+      "why": "Conflates the sound's causal modifications (by speaker's organs, effort, pace) with the word's nature. The commentary's lamp analogy makes clear that the intermediary's changes do not affect what is mediated: the lamp's flicker does not put flicker in the pot.",
+      "entities": [
+        {
+          "id": "sabda_modified",
+          "name": "śabda",
+          "sort": "manifestation"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "vikara",
+          "of": "sabda_modified"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse establishes the manifestation (vivarta) structure: the sound (dhvani) is modified by external causes, yet serves as an uncontaminating condition for apprehending the unchanging word (sabda). The lamp analogy carries the proof: illumination mediates without corrupting. Strain: nimitta is modeled as both a power (the causal capacity) and a relation (the conditional link); this is resolvable if nimitta denotes the power-in-relation, but the six-sort system does not explicitly accommodate functional roles that span categories."
+}

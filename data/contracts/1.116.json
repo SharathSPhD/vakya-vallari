@@ -1,0 +1,136 @@
+{
+  "verse": "1.116",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "absolute",
+      "cite": "The sabda meant here is ajasra-vrtti, of unceasing operation"
+    },
+    {
+      "id": "sabda_suksma",
+      "name": "śabda (subtle form)",
+      "sort": "absolute",
+      "cite": "the inner word-nature of 1.112, never silent, only suksma, too subtle for apprehension"
+    },
+    {
+      "id": "vyajana",
+      "name": "vyajana",
+      "sort": "linguisticItem",
+      "cite": "the fan does not create it but pracyate, concentrates and quickens it past the threshold of feeling"
+    },
+    {
+      "id": "abhivyakti",
+      "name": "abhivyakti",
+      "sort": "power",
+      "cite": "abhivyakti and not production was the right category from 1.44 onward"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "ajasra_vrtti",
+      "of": "sabda",
+      "cite": "The sabda meant here is ajasra-vrtti, of unceasing operation"
+    },
+    {
+      "kind": "predication",
+      "name": "anupalabdha",
+      "of": "sabda",
+      "cite": "only suksma, too subtle for apprehension"
+    },
+    {
+      "kind": "identity",
+      "a": "sabda",
+      "b": "sabda_suksma",
+      "cite": "the inner word-nature of 1.112, never silent, only suksma, too subtle for apprehension"
+    },
+    {
+      "kind": "relation",
+      "name": "sva_nimitta",
+      "from": "vyajana",
+      "to": "abhivyakti",
+      "cite": "articulation is the fan, a sva-nimitta that raises the perpetual subtle operation to gross perceptibility for a moment"
+    },
+    {
+      "kind": "relation",
+      "name": "abhivyakti",
+      "from": "vyajana",
+      "to": "sabda",
+      "cite": "articulation is the fan, a sva-nimitta that raises the perpetual subtle operation to gross perceptibility for a moment"
+    },
+    {
+      "kind": "predication",
+      "name": "satya_anupalabdhi_anutthita",
+      "of": "sabda_suksma",
+      "cite": "Its non-appearance is thus an epistemic fact, not an ontological absence"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "utpatti",
+      "from": "vyajana",
+      "to": "sabda",
+      "cite": "one does not produce what never pauses; one occasions its detection"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "ajasra_vrtti",
+        "of": "sabda",
+        "cite": "The word whose functioning is unceasing"
+      },
+      {
+        "kind": "predication",
+        "name": "anupalabdha",
+        "of": "sabda",
+        "cite": "is not apprehended because of its subtlety"
+      },
+      {
+        "kind": "relation",
+        "name": "abhivyakti",
+        "from": "vyajana",
+        "to": "sabda",
+        "cite": "it is made manifest through its own occasioning cause"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "productive_utterance",
+      "rendering": "The utterance produces the word from nothing.",
+      "why": "Asserts production (utpatti) of sabda by vyajana. The commentary explicitly denies this: 'one does not produce what never pauses; one occasions its detection.' The correct category is manifestation (abhivyakti), not creation.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "utpatti", "from": "vyajana", "to": "sabda"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "episodic_word_nature",
+      "rendering": "The word ceases to exist when not articulated, only coming into being through utterance.",
+      "why": "Treats unmanifested sabda as ontologically non-existent (asat) rather than epistemically imperceptible. The commentary explicitly rules this out: 'Its non-appearance is thus an epistemic fact, not an ontological absence.' Sabda eternally operates; non-apprehension reflects limitation of perception, not lack of being.",
+      "entities": [
+        {"id": "sabda_asat", "name": "śabda (non-existent)", "sort": "property"}
+      ],
+      "claims": [
+        {"kind": "predication", "name": "asat", "of": "sabda_asat"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "no_perpetual_subtle_operation",
+      "rendering": "The word pauses or ceases entirely when not being articulated.",
+      "why": "Denies the axiom of ajasra-vrtti (unceasing functioning). The verse and commentary insist: 'sabda meant here is ajasra-vrtti, of unceasing operation' and 'one does not produce what never pauses.' This contradicts the foundational claim of eternal subtle operation.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "intermittent_vrtti", "of": "sabda"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "Encodes the epistemology of subtle manifestation: sabda eternally operates in unceasing subtle form (ajasra-vrtti, suksma) but remains imperceptible due to its subtlety. Utterance (vyajana) occasions manifestation (abhivyakti)—not through production but by concentrating/quickening the perpetual subtle operation past the threshold of gross perceptibility. The contrast between ontological presence and epistemic absence (non-apprehension) is central."
+}

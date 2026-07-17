@@ -1,0 +1,211 @@
+{
+  "verse": "1.108-109",
+  "entities": [
+    {
+      "id": "vayu",
+      "name": "vāyu",
+      "sort": "manifestation",
+      "cite": "Air, set in motion by the effort that follows the speaker's wish, striking upon the places of articulation, attains the condition of the word"
+    },
+    {
+      "id": "sabdatva",
+      "name": "śabdatva",
+      "sort": "property",
+      "cite": "air attains the condition of the word: sabdatvam pratipadyate"
+    },
+    {
+      "id": "iccha",
+      "name": "icchā",
+      "sort": "cognition",
+      "cite": "the causal chain runs unbroken from mind to matter: iccha, the wish"
+    },
+    {
+      "id": "prayatna",
+      "name": "prayatna",
+      "sort": "property",
+      "cite": "effort conforming to it; air labdha-kriya, endowed with motion"
+    },
+    {
+      "id": "sthanani",
+      "name": "sthānāni",
+      "sort": "property",
+      "cite": "striking the eight classical places of articulation"
+    },
+    {
+      "id": "vega",
+      "name": "vega",
+      "sort": "property",
+      "cite": "this moving air carries vega and pracaya, velocity and mass-accumulation"
+    },
+    {
+      "id": "pracaya",
+      "name": "pracaya",
+      "sort": "property",
+      "cite": "possessing the properties of velocity and accumulation"
+    },
+    {
+      "id": "samarthya",
+      "name": "sāmarthya",
+      "sort": "property",
+      "cite": "Through the potency of its cause"
+    },
+    {
+      "id": "sannipata",
+      "name": "sannipāta",
+      "sort": "property",
+      "cite": "at full sannipata it splits even solid bodies"
+    },
+    {
+      "id": "murta",
+      "name": "mūrta",
+      "sort": "manifestation",
+      "cite": "bodies that possess solidity"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "anuvartati",
+      "from": "iccha",
+      "to": "prayatna",
+      "cite": "effort conforming to it"
+    },
+    {
+      "kind": "relation",
+      "name": "pratipadyate",
+      "from": "vayu",
+      "to": "sabdatva",
+      "cite": "sabdatvam pratipadyate, air attains wordhood"
+    },
+    {
+      "kind": "relation",
+      "name": "abhihati",
+      "from": "vayu",
+      "to": "sthanani",
+      "cite": "striking the eight classical places of articulation"
+    },
+    {
+      "kind": "predication",
+      "name": "yuktavega",
+      "of": "vayu",
+      "cite": "this moving air carries vega and pracaya, velocity and mass-accumulation, from the samarthya of its cause"
+    },
+    {
+      "kind": "predication",
+      "name": "yukti-pracaya",
+      "of": "vayu",
+      "cite": "carries vega and pracaya, velocity and mass-accumulation"
+    },
+    {
+      "kind": "relation",
+      "name": "vibhajyante",
+      "from": "sannipata",
+      "to": "murta",
+      "cite": "at full sannipata it splits even solid bodies"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "paryapta",
+      "of": "vayu",
+      "cite": "air shaped at the lips has still to be *grasped as one word* by a hearer"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "anuvartati",
+        "from": "iccha",
+        "to": "prayatna",
+        "cite": "effort that follows the speaker's wish"
+      },
+      {
+        "kind": "relation",
+        "name": "pratipadyate",
+        "from": "vayu",
+        "to": "sabdatva",
+        "cite": "attains the condition of the word"
+      },
+      {
+        "kind": "relation",
+        "name": "abhihati",
+        "from": "vayu",
+        "to": "sthanani",
+        "cite": "striking upon the places of articulation"
+      },
+      {
+        "kind": "predication",
+        "name": "yuktavega",
+        "of": "vayu",
+        "cite": "possessing the properties of velocity"
+      },
+      {
+        "kind": "predication",
+        "name": "yukti-pracaya",
+        "of": "vayu",
+        "cite": "possessing the properties of velocity and accumulation"
+      },
+      {
+        "kind": "relation",
+        "name": "vibhajyante",
+        "from": "sannipata",
+        "to": "murta",
+        "cite": "divides by its impact even bodies that possess solidity"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "vayu_is_sufficient",
+      "rendering": "Air alone, shaped by the speaker's will and striking the places of articulation, is fully the word itself, capable of being understood by any hearer.",
+      "why": "The verse presents the vayu doctrine as mechanist explanation of word-formation, but the commentary explicitly notes this is incomplete: shaped air must be grasped as one word by the hearer, which requires the epistemic unity that air-collision alone cannot provide. This reading treats the material mechanism as sufficient when Bhartrhari shows it is necessary but not sufficient.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "paryapta",
+          "of": "vayu"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "vayu_primary_cause",
+      "rendering": "The air itself is the primary cause of wordhood, generated by the speaker's wish without any intervening mechanism.",
+      "why": "The axioms establish a chain: iccha → prayatna → vayu's motion → collision with sthanani → sabdatva. This reading elides the causal stages and treats vayu as originating from wish directly, losing the mechanistic precision Bhartrhari is documenting. The chain is what the doctrine claims.",
+      "entities": [
+        {
+          "id": "vayu_naive",
+          "name": "vāyu",
+          "sort": "absolute"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "anuvartati",
+          "from": "iccha",
+          "to": "vayu_naive"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "sabdatva_achieved_passively",
+      "rendering": "Air naturally carries the property of wordhood without requiring the effort of the speaker to direct its motion.",
+      "why": "The verse is explicit: effort (prayatna) following the wish (iccha) is what sets the air in motion. Wordhood is achieved through this intentional, effortful shaping, not passively. This reading treats sabdatva as an inherent property rather than an attainment (pratipadyate), contradicting the causal structure.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "sabdatva",
+          "of": "vayu"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse presents the vayu doctrine (mechanism of word-formation through air shaped by intention and striking articulation points) in full empirical detail. The contract captures the causal chain: iccha→prayatna→vayu's motion→collision→sabdatva-pratti, and the physical robustness (vega, pracaya) that allows air to divide even solid bodies. The key tension Bhartrhari raises (without adopting the doctrine) is that material mechanism alone cannot explain how shaped air is *grasped* as one word by the hearer—that requires the unity-dimension that lives in the order documented in 1.82-92. Denial registers this incompleteness without overstating it; vayu-mechanism is real but not the whole story."
+}

@@ -1,0 +1,157 @@
+{
+  "verse": "1.107",
+  "entities": [
+    {
+      "id": "vayu",
+      "name": "vāyu",
+      "sort": "power",
+      "cite": "vayu, air — the phonetician's answer"
+    },
+    {
+      "id": "anu",
+      "name": "anu",
+      "sort": "power",
+      "cite": "anavah, atoms — an atomist refinement"
+    },
+    {
+      "id": "jnana",
+      "name": "jñāna",
+      "sort": "cognition",
+      "cite": "jnana, cognition — the idealist answer, word as a modification of awareness itself"
+    },
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "manifestation",
+      "cite": "word as a modification of awareness itself"
+    },
+    {
+      "id": "darsana",
+      "name": "darśana",
+      "sort": "property",
+      "cite": "the divergence among doctrines settles nowhere"
+    },
+    {
+      "id": "yogyata",
+      "name": "yogyatā",
+      "sort": "property",
+      "cite": "whatever the substrate-story, the manifested word's undividedness, its transfer-properties, its yogyata with sounds"
+    },
+    {
+      "id": "sphota",
+      "name": "sphoṭa",
+      "sort": "manifestation",
+      "cite": "the sphota doctrine is compatible with every physics on offer"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "vayu",
+      "to": "sabda",
+      "cite": "vayu, air — the phonetician's answer, speech as wind shaped"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "anu",
+      "to": "sabda",
+      "cite": "anavah, atoms — an atomist refinement in which sound-particles accumulate"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "jnana",
+      "to": "sabda",
+      "cite": "jnana, cognition — the idealist answer, word as a modification of awareness itself"
+    },
+    {
+      "kind": "predication",
+      "name": "anavasthita",
+      "of": "darsana",
+      "cite": "the divergence among doctrines settles nowhere"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "sphota",
+      "to": "yogyata",
+      "cite": "whatever the substrate-story, the manifested word's undividedness, its transfer-properties, its yogyata with sounds"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "siddha",
+      "of": "darsana",
+      "cite": "the divergence among doctrines settles nowhere"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "vayu",
+        "to": "sabda",
+        "cite": "By some, it is air"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "anu",
+        "to": "sabda",
+        "cite": "by some the atoms"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "jnana",
+        "to": "sabda",
+        "cite": "by some cognition that is held to attain the condition of the word"
+      },
+      {
+        "kind": "predication",
+        "name": "anavasthita",
+        "of": "darsana",
+        "cite": "the divergence of views among the doctrines is unsettled"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "settled_substrate",
+      "rendering": "Air is definitively established as the sole substrate for the word.",
+      "why": "Commits to a single substrate view, contradicting the commentary's explicit statement that the divergence of views settles nowhere and Bhartrhari's demonstration that the sphota doctrine is compatible with all three substrates.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "siddha", "of": "darsana"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "substrate_determines_sphota",
+      "rendering": "The manifested word's undividedness depends on which substrate theory one accepts.",
+      "why": "Asserts a dependence between substrate choice and the core sphota properties that the commentary explicitly severs: yogyata and undividedness stand unaffected by the substrate story.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "asraya", "from": "darsana", "to": "sphota"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "jnana_as_property",
+      "rendering": "Cognition is a mere linguistic property, one view among others that carries no ontological weight.",
+      "why": "Demotes jnana (cognition) from a substantive candidate substrate to a mere descriptive property. The commentary's phrasing — 'the idealist answer, word as a modification of awareness' — treats it as a genuine ontological contender, not a surface property.",
+      "entities": [
+        {"id": "jnana_prop", "name": "jñāna", "sort": "property"}
+      ],
+      "claims": [
+        {"kind": "identity", "a": "jnana_prop", "b": "jnana"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "Verse 1.107 presents three candidate substrate theories without resolving which is correct. The core formalization captures the doxographic structure: three possible asraya (substrate) relations and the key predication that the divergence of views is anavasthita (unsettled). The commentary's strategic point — that the sphota doctrine is compatible with all three — is preserved by ensuring the yogyata and undividedness properties are not entailed by any single substrate choice. The sort assignments (vayu and anu as power, jnana as cognition, sabda and sphota as manifestations) track the ontological categories the text deploys."
+}

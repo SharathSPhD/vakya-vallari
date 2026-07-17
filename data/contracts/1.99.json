@@ -1,0 +1,155 @@
+{
+  "verse": "1.99",
+  "entities": [
+    {
+      "id": "prakasya",
+      "name": "prakāśya",
+      "sort": "manifestation",
+      "cite": "the illuminated object conforms to the differences of its illuminators"
+    },
+    {
+      "id": "prakasaka",
+      "name": "prakāśaka",
+      "sort": "power",
+      "cite": "the illuminated object conforms to the differences of its illuminators"
+    },
+    {
+      "id": "pratibimba",
+      "name": "pratibimba",
+      "sort": "manifestation",
+      "cite": "One face, reflected in water, in oil, in a sword-blade: the pratibimba differs"
+    },
+    {
+      "id": "medium",
+      "name": "medium",
+      "sort": "property",
+      "cite": "the differences are patently the medium's contribution"
+    },
+    {
+      "id": "bheda",
+      "name": "bheda",
+      "sort": "property",
+      "cite": "the praktbimba differs — dim, dark, elongated — as the medium differs"
+    },
+    {
+      "id": "face",
+      "name": "face",
+      "sort": "linguisticItem",
+      "cite": "One face, reflected in water, in oil, in a sword-blade"
+    },
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "the word heard through a child's voice, a shout, a drawl 'conforms' likewise"
+    },
+    {
+      "id": "appearance",
+      "name": "appearance",
+      "sort": "manifestation",
+      "cite": "everyone already distinguishes the thing from its medium-conditioned appearance"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "anuvartate",
+      "from": "prakasya",
+      "to": "prakasaka",
+      "cite": "Prakasya anuvartate prakasakanam bhedan: the revealed conforms to its revealers"
+    },
+    {
+      "kind": "relation",
+      "name": "hetutva",
+      "from": "medium",
+      "to": "bheda",
+      "cite": "the differences are patently the medium's contribution, since the face has not changed"
+    },
+    {
+      "kind": "predication",
+      "name": "aniruddha",
+      "of": "face",
+      "cite": "since the face has not changed"
+    },
+    {
+      "kind": "relation",
+      "name": "anueti",
+      "from": "pratibimba",
+      "to": "medium",
+      "cite": "the pratibimba differs — dim, dark, elongated — as the medium differs"
+    },
+    {
+      "kind": "relation",
+      "name": "anuvartate",
+      "from": "sabda",
+      "to": "prakasaka",
+      "cite": "the word heard through a child's voice, a shout, a drawl 'conforms' likewise — its apparent duration, pitch and colour are the sounds' vicissitudes worn borrowed"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "parinamate",
+      "of": "face",
+      "cite": "the face has not changed"
+    },
+    {
+      "kind": "relation",
+      "name": "hetutva",
+      "from": "face",
+      "to": "bheda",
+      "cite": "the differences are patently the medium's contribution, since the face has not changed"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "anuvartate",
+        "from": "prakasya",
+        "to": "prakasaka",
+        "cite": "the illuminated object conforms to the differences of its illuminators"
+      },
+      {
+        "kind": "relation",
+        "name": "anueti",
+        "from": "pratibimba",
+        "to": "medium",
+        "cite": "that is directly seen in a reflection when the oil, water and the like differ"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "intrinsic_change",
+      "rendering": "The reflected object itself changes in its intrinsic nature when observed through different media.",
+      "why": "Treats the face as having properties intrinsic to it that change based on the medium. But the commentary explicitly states 'the face has not changed' and 'the differences are patently the medium's contribution.' This misreading confuses the manifestation (pratibimba) with its ground (face), assigning to the ground properties that belong only to the manifestation.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "parinamate", "of": "face"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "medium_irrelevant",
+      "rendering": "The differences in reflections occur regardless of the medium, showing that the illuminated object is self-determining.",
+      "why": "Denies the causal role of the medium in producing the differences. But the verse and commentary are explicit: 'when the oil, water and the like differ' the pratibimba differs. This reading severs the causal relation between medium and differences that the verse centrally asserts.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "hetutva", "from": "face", "to": "bheda"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "appearance_is_illusion",
+      "rendering": "The medium deceives us about the true nature of the revealed object; only the unchanging ground is real.",
+      "why": "While the verse establishes that the face remains unchanged, it does not claim that the appearance is illusory or that perception through media is unreliable. The commentary emphasizes 'this is not speculation but something seen' — treating the appearance as directly observable and informative, not deceptive.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "mayic", "of": "appearance"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse establishes the hetutva (causal relation) between the medium (prakasaka qua distinguishing feature) and the differences (bheda) in how prakasya appears. This is the transfer-doctrine from 1.49 applied to the illumination metaphor: the revealed thing conforms to its revealers, just as a reflection conforms to its medium. The sort taxonomy strains minimally: 'medium' is technically a vehicle or locus rather than a property, but is encoded as property to capture its role in determining appearance. The verse bridges physical reflection (water, oil, metal) and linguistic manifestation (voice of child, shout, drawl), applying the same principle to both."
+}

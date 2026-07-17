@@ -1,0 +1,151 @@
+{
+  "verse": "1.125",
+  "entities": [
+    {
+      "id": "vak",
+      "name": "vāk",
+      "sort": "absolute",
+      "cite": "all are 'bound together' by the word-power"
+    },
+    {
+      "id": "vidya",
+      "name": "vidyā",
+      "sort": "manifestation",
+      "cite": "sciences, crafts, arts — the theoretical, the technical, the aesthetic"
+    },
+    {
+      "id": "silpa",
+      "name": "śilpa",
+      "sort": "manifestation",
+      "cite": "sciences, crafts, arts — the theoretical, the technical, the aesthetic"
+    },
+    {
+      "id": "kala",
+      "name": "kalā",
+      "sort": "manifestation",
+      "cite": "sciences, crafts, arts — the theoretical, the technical, the aesthetic"
+    },
+    {
+      "id": "vastu",
+      "name": "vastu",
+      "sort": "manifestation",
+      "cite": "the pot thrown, the hymn composed, the dance performed"
+    },
+    {
+      "id": "vibhajanam",
+      "name": "vibhajanam",
+      "sort": "property",
+      "cite": "is differentiated, given its internal articulation, under the word's control"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "upabandhati",
+      "from": "vak",
+      "to": "vidya",
+      "cite": "all are 'bound together' by the word-power"
+    },
+    {
+      "kind": "relation",
+      "name": "upabandhati",
+      "from": "vak",
+      "to": "silpa",
+      "cite": "all are 'bound together' by the word-power"
+    },
+    {
+      "kind": "relation",
+      "name": "upabandhati",
+      "from": "vak",
+      "to": "kala",
+      "cite": "all are 'bound together' by the word-power"
+    },
+    {
+      "kind": "predication",
+      "name": "vibhajyate",
+      "of": "vastu",
+      "cite": "is differentiated, given its internal articulation, under the word's control"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "vibhajanam",
+      "to": "vak",
+      "cite": "that articulation is word-borne"
+    }
+  ],
+  "denials": [],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "upabandhati",
+        "from": "vak",
+        "to": "vidya",
+        "cite": "binder of all sciences, crafts and arts"
+      },
+      {
+        "kind": "relation",
+        "name": "upabandhati",
+        "from": "vak",
+        "to": "silpa",
+        "cite": "binder of all sciences, crafts and arts"
+      },
+      {
+        "kind": "relation",
+        "name": "upabandhati",
+        "from": "vak",
+        "to": "kala",
+        "cite": "binder of all sciences, crafts and arts"
+      },
+      {
+        "kind": "predication",
+        "name": "vibhajyate",
+        "of": "vastu",
+        "cite": "everything that is brought forth is differentiated"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "vibhajanam",
+        "to": "vak",
+        "cite": "by its power everything that is brought forth is differentiated"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "passive_word_labels",
+      "rendering": "Sciences, crafts and arts have their own structure independent of word; the word merely labels or describes them.",
+      "why": "Demotes vāk from the absolute binding principle to a passive property or linguistic labeling device, contradicting the commentary's insistence that word-power actively binds (upabandhati) all domains of human competence. The sort error (absolute vs property) makes the binding relation impossible.",
+      "entities": [
+        {"id": "vak_property", "name": "vāk", "sort": "property"}
+      ],
+      "claims": [
+        {"kind": "relation", "name": "abhidhayate", "from": "vak_property", "to": "vidya"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "self_differentiated_artifacts",
+      "rendering": "Artifacts differentiate themselves into parts through their own nature; word plays no role.",
+      "why": "Severs the word's causal role in differentiation (vibhajanam). The commentary explicitly states that articulation of the craft-object is word-borne, and the artifact's very identity as this kind of thing depends on the word-guided maker's projection of rationale onto matter. The claimed relation (vibhajanam depends on vastu's own nature) is not derivable from axioms establishing that vibhajanam is instead word-borne.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "asraya", "from": "vibhajanam", "to": "vastu"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "word_secondary_effect",
+      "rendering": "Things are first brought to completion, then the word simply reflects or records their articulation.",
+      "why": "Reverses the temporal and causal order. The commentary makes clear that differentiation (vibhajanam) happens under word's control (tad-vasat), not after. The word-guided maker projects the rationale onto matter; differentiation is not a secondary labeling.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "anuvartin", "from": "vibhajanam", "to": "vak"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse generalizes vāk's function from the previous unit (1.118–1.121 on word's role in manufacture) to encompass all domains of human culture: theory, technique, and aesthetics. Entities are bound together by word; their products are differentiated under word's control. The contract emphasizes vāk as absolute principle (not merely a linguistic tool) and captures the bidirectional dependency: sciences/crafts/arts are bound by word, and their artifacts' articulation is word-borne."
+}

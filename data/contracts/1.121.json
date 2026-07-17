@@ -1,0 +1,121 @@
+{
+  "verse": "1.121",
+  "entities": [
+    {
+      "id": "itikartavyata",
+      "name": "itikartavyatā",
+      "sort": "power",
+      "cite": "know-how, the whole practical intelligence by which life is conducted"
+    },
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "absolute",
+      "cite": "is sarva sabda-vyapasraya, wholly word-dependent"
+    },
+    {
+      "id": "samskara",
+      "name": "saṃskāra",
+      "sort": "manifestation",
+      "cite": "the child comprehends through residues laid down before — in prior lives, on the tradition's reckoning; in any case, antecedently to this learning"
+    },
+    {
+      "id": "bala",
+      "name": "bāla",
+      "sort": "cognition",
+      "cite": "the bala acts purposively"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "vyapasrita",
+      "from": "itikartavyata",
+      "to": "sabda",
+      "cite": "is sarva sabda-vyapasraya, wholly word-dependent"
+    },
+    {
+      "kind": "relation",
+      "name": "pratipadyate",
+      "from": "bala",
+      "to": "samskara",
+      "cite": "the child comprehends through residues laid down before"
+    },
+    {
+      "kind": "predication",
+      "name": "sabdamula",
+      "of": "samskara",
+      "cite": "word-formed traces not presently audible"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "anindriya",
+      "of": "itikartavyata",
+      "cite": "Infant know-how is not word-free cognition but the operation of word-formed traces"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "vyapasrita",
+        "from": "itikartavyata",
+        "to": "sabda",
+        "cite": "rests upon word"
+      },
+      {
+        "kind": "relation",
+        "name": "pratipadyate",
+        "from": "bala",
+        "to": "samskara",
+        "cite": "the child comprehends, through the residues deposited in it before"
+      },
+      {
+        "kind": "predication",
+        "name": "sabdamula",
+        "of": "samskara",
+        "cite": "residues deposited in it before"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "word_free_infant",
+      "rendering": "The child's purposive behavior before language-acquisition demonstrates knowledge independent of word.",
+      "why": "Treats pre-linguistic infant competence as a counterexample to word-dependence, ignoring that Bhartrhari dissolves this by grounding infant know-how in samskara—word-formed traces operating below conscious speech. This reading denies the sabdamula predication, cutting the explanatory link.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "anindriya",
+          "of": "itikartavyata"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "empirical_nativism",
+      "rendering": "The child carries innate procedural capacities that are not themselves linguistic in nature.",
+      "why": "Acknowledges the empirical fact (pre-linguistic competence) but rejects the commentary's resolution: that samskara are word-formed. This reduces samskara to mere neurological residue, stripping the sabdamula predication and leaving the axiom unsupported.",
+      "entities": [
+        {
+          "id": "samskara_nonlinguistic",
+          "name": "saṃskāra",
+          "sort": "property"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "pratipadyate",
+          "from": "bala",
+          "to": "samskara_nonlinguistic"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse defends universal word-dependence against empirical objection: infant competence is not a word-free counterexample but an operation of word-formed traces (samskara) that are themselves linguistic. Formalization encodes itikartavyata as a power dependent on sabda, with samskara as the manifestation through which this dependence persists beneath audible speech. Strain: the commentary invokes prior-life residues, which sits uneasily in a secular reading; the contract treats samskara as an abstract manifestation to bracket metaphysical commitment while preserving the ontological structure."
+}

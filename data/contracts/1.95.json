@@ -1,0 +1,154 @@
+{
+  "verse": "1.95",
+  "entities": [
+    {
+      "id": "sphota",
+      "name": "śphoṭa",
+      "sort": "absolute",
+      "cite": "sounds stand to the eternal word as the cow stands to cowhood"
+    },
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "sounds stand to the eternal word as the cow stands to cowhood"
+    },
+    {
+      "id": "jati",
+      "name": "jāti",
+      "sort": "power",
+      "cite": "universals, nitya by everyone's admission"
+    },
+    {
+      "id": "asraya",
+      "name": "āśraya",
+      "sort": "manifestation",
+      "cite": "universals are manifested by their asrayas, the substrates in which they inhere"
+    },
+    {
+      "id": "gatvam",
+      "name": "gatvam",
+      "sort": "power",
+      "cite": "cowhood becomes apprehensible exactly where a cow stands"
+    },
+    {
+      "id": "gau",
+      "name": "gau",
+      "sort": "manifestation",
+      "cite": "cowhood becomes apprehensible exactly where a cow stands"
+    },
+    {
+      "id": "anitya",
+      "name": "anitya",
+      "sort": "manifestation",
+      "cite": "manifestation is at home only among anitya things"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "vyakti",
+      "from": "jati",
+      "to": "asraya",
+      "cite": "universals, nitya by everyone's admission, are manifested (vyaktir isyate) by their asrayas, the substrates in which they inhere"
+    },
+    {
+      "kind": "predication",
+      "name": "nitya",
+      "of": "jati",
+      "cite": "universals, nitya by everyone's admission"
+    },
+    {
+      "kind": "predication",
+      "name": "aparinami",
+      "of": "gatvam",
+      "cite": "cowhood neither arrives nor departs"
+    },
+    {
+      "kind": "predication",
+      "name": "nitya",
+      "of": "sphota",
+      "cite": "sounds stand to the eternal word as the cow stands to cowhood"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "anitya",
+      "of": "sphota",
+      "cite": "how can the *eternal* be manifested without being dragged into time?"
+    },
+    {
+      "kind": "predication",
+      "name": "anitya",
+      "of": "jati",
+      "cite": "cowhood neither arrives nor departs"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "nitya",
+        "of": "jati",
+        "cite": "eternal universals"
+      },
+      {
+        "kind": "relation",
+        "name": "vyakti",
+        "from": "jati",
+        "to": "asraya",
+        "cite": "manifestation of the eternal universals by their substrates is likewise accepted"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "eternal_temporalized_sphota",
+      "rendering": "To manifest the eternal word (sphota) through sounds would drag it into time and make it transient.",
+      "why": "Asserts that manifestation of eternal things necessarily makes them temporal. The verse refutes this through the precedent of eternal universals: cowhood is manifested whenever a cow appears, yet cowhood neither arrives nor departs. The manifestation relation does not transmit transience to what is manifested.",
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "anitya",
+          "of": "sphota"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "eternal_temporalized_jati",
+      "rendering": "Manifestation of eternal universals would render them subject to temporal change, arriving and departing with their substrates.",
+      "why": "Asserts that manifestation of eternals makes them transient. The commentary directly refutes this: cowhood is manifested by the cow standing, yet 'cowhood neither arrives nor departs.' The axiom of eternals excludes the anitya property.",
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "anitya",
+          "of": "jati"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "substrate_manifests_property",
+      "rendering": "The manifestation of universals by substrates shows that universals are mere properties dependent on their substrates, not eternal principles.",
+      "why": "Confuses manifestation (occurrence of apprehension) with ontological dependence (sort error: power vs property). The commentary emphasizes that cowhood is eternally real and neither arrives nor departs when the substrate appears or disappears. Manifestation is an epistemic/phenomenal relation, not an ontological one.",
+      "entities": [
+        {
+          "id": "gatvam_property",
+          "name": "gatvam",
+          "sort": "property"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "ontologically_dependent",
+          "of": "gatvam_property"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse uses manifestation (vyakti) of eternals as a dialectical move to dissolve an objection. It does not establish that the word-essence (sphota) IS eternal (that is asserted elsewhere); it removes the incoherence of saying so. The key strain: manifestation is a relation that works across the eternal-transient divide, which challenges simple ontological categorization. The contract encodes this by treating manifestation as a relation between power (jati) and manifestation (asraya), parallel to the brahman-sakti-jagat structure in 1.1-1.2."
+}

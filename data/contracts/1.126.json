@@ -1,0 +1,154 @@
+{
+  "verse": "1.126",
+  "entities": [
+    {
+      "id": "caitanya",
+      "name": "caitanya",
+      "sort": "absolute",
+      "cite": "sentience in every order of beings"
+    },
+    {
+      "id": "vagrupata",
+      "name": "vāgrupata",
+      "sort": "absolute",
+      "cite": "vag-rupata a feature of caitanya as such, not of human acculturation"
+    },
+    {
+      "id": "samjna",
+      "name": "samjñā",
+      "sort": "cognition",
+      "cite": "it is the samjna, the consciousness or awareness-function, of all transmigrators"
+    },
+    {
+      "id": "bahir",
+      "name": "bahir",
+      "sort": "property",
+      "cite": "operating outward (in speech, in practice)"
+    },
+    {
+      "id": "antas",
+      "name": "antas",
+      "sort": "property",
+      "cite": "inward (in thought, in the silent taking-as of 1.124)"
+    },
+    {
+      "id": "samsarin",
+      "name": "samsārin",
+      "sort": "manifestation",
+      "cite": "the consciousness of transmigrating beings"
+    },
+    {
+      "id": "jati",
+      "name": "jāti",
+      "sort": "property",
+      "cite": "every order of beings — down through animals, to whatever stirs"
+    },
+    {
+      "id": "tanmatram",
+      "name": "tanmātram",
+      "sort": "property",
+      "cite": "does not overstep its measure"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "identity",
+      "a": "caitanya",
+      "b": "vagrupata",
+      "cite": "Wherever there is consciousness at all, there is word-formedness"
+    },
+    {
+      "kind": "predication",
+      "name": "vivartate",
+      "of": "caitanya",
+      "cite": "caitanyam sarva-jatisu, sentience in every order of beings"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "samjna",
+      "to": "samsarin",
+      "cite": "it is the samjna, the consciousness or awareness-function, of all transmigrators"
+    },
+    {
+      "kind": "predication",
+      "name": "vartate",
+      "of": "samjna",
+      "cite": "operating outward (in speech, in practice) and inward (in thought, in the silent taking-as of 1.124)"
+    },
+    {
+      "kind": "relation",
+      "name": "avyatikranti",
+      "from": "caitanya",
+      "to": "tanmatram",
+      "cite": "tan-matram avyatikrantam, does not overstep its measure"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "atikranti",
+      "from": "caitanya",
+      "to": "tanmatram",
+      "cite": "tan-matram avyatikrantam, does not overstep its measure"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "vivartate",
+        "of": "caitanya",
+        "cite": "This it is that operates as the consciousness of transmigrating beings, without and within"
+      },
+      {
+        "kind": "identity",
+        "a": "caitanya",
+        "b": "vagrupata",
+        "cite": "sentience in all the kinds of beings does not step beyond its measure"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "samjna",
+        "to": "samsarin",
+        "cite": "operates as the consciousness of transmigrating beings"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "human_cognitive_exclusivity",
+      "rendering": "This consciousness operates only in human transmigrating beings, in speech and thought.",
+      "why": "Restricts caitanya to humans alone, ignoring the explicit universalization sarvajatisu ('in all kinds of beings'). The commentary requires extension through animals and all sentient orders to establish word-essence as a feature of consciousness as such, not learned language.",
+      "entities": [
+        {"id": "caitanya_human_only", "name": "caitanya", "sort": "property"}
+      ],
+      "claims": [
+        {"kind": "identity", "a": "caitanya_human_only", "b": "caitanya"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "consciousness_exceeds_measure",
+      "rendering": "Sentience in beings exceeds and transgresses the measure of word-formedness.",
+      "why": "Contradicts the core tenet that consciousness does not step beyond the word-measure (tanmatram avyatikrantam). The commentary insists sentience, however dim, remains within word-bounds in all beings.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "atikranti", "from": "caitanya", "to": "tanmatram"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "separation_of_consciousness_and_language",
+      "rendering": "The consciousness of beings is independent from and operates separately from any word-essence or linguistic structure.",
+      "why": "Asserts independence where the verse and commentary establish coextensiveness and identity. The identity axiom makes this reading's key claim unlicensed.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "bhinnam", "from": "caitanya", "to": "vagrupata"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse establishes caitanya (consciousness/sentience) as coextensive with vagrupata (word-essence) across all sentient beings. The identity between consciousness and word-formedness is the core commitment; samjna (awareness) is the cognitive manifestation of this. The measure (tanmatram) that consciousness does not overstep is precisely the word-measure (vagrupata). The pun on samjna (consciousness vs. designation/name) is noted in the contested field; the contract formalizes the upanisadic reading (consciousness) as the dominant commitment."
+}

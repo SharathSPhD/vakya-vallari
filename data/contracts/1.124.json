@@ -1,0 +1,124 @@
+{
+  "verse": "1.124",
+  "entities": [
+    {
+      "id": "vagrupa",
+      "name": "vāgrūpatā",
+      "sort": "power",
+      "cite": "the vag-rupata, the word-formedness, sasvati, standing, were utkramet"
+    },
+    {
+      "id": "avabodha",
+      "name": "avabodha",
+      "sort": "cognition",
+      "cite": "to withdraw from avabodha, awareness"
+    },
+    {
+      "id": "prakasha",
+      "name": "prakāśa",
+      "sort": "cognition",
+      "cite": "the light would not illuminate — cognition would lose precisely what makes it *cognition of* something"
+    },
+    {
+      "id": "pratyavamarsa",
+      "name": "pratyavamarśa",
+      "sort": "power",
+      "cite": "the power of pratyavamarsa, that taking-as, that inner 'this is such-and-such', by which a bare impingement becomes an apprehension"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "sasvata",
+      "of": "vagrupa",
+      "cite": "the vag-rupata, the word-formedness, sasvati, standing"
+    },
+    {
+      "kind": "identity",
+      "a": "vagrupa",
+      "b": "pratyavamarsa",
+      "cite": "it, the word-form, is the recognizer, the power of pratyavamarsa"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "vagrupa",
+      "to": "prakasha",
+      "cite": "Light that reveals nothing determinate is not light; awareness stripped of the articulating thread would be a shining that shines on nothing, which is no shining at all"
+    },
+    {
+      "kind": "relation",
+      "name": "niyamaka",
+      "from": "vagrupa",
+      "to": "avabodha",
+      "cite": "to be aware is to be articulately aware, and articulation is the word's work"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "svatantra",
+      "from": "prakasha",
+      "to": "vagrupa",
+      "cite": "So the interweaving of 1.123 is not an empirical regularity that might have exceptions but a condition of the possibility of cognition as such"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "sasvata",
+        "of": "vagrupa",
+        "cite": "eternal word-formedness"
+      },
+      {
+        "kind": "identity",
+        "a": "vagrupa",
+        "b": "pratyavamarsa",
+        "cite": "it is that which makes recognition possible"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "vagrupa",
+        "to": "prakasha",
+        "cite": "the light would not shine"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "prakasha_svatantra",
+      "rendering": "The light of consciousness shines independently, even without word-formedness or articulation.",
+      "why": "The verse explicitly denies this: prakasha cannot illuminate if vagrupa departs from avabodha. The commentary insists this is not empirical contingency but transcendental necessity — bare impingement without articulation is no cognition at all, hence no light.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "svatantra", "from": "prakasha", "to": "vagrupa"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "vagrupa_contingent_feature",
+      "rendering": "Word-formedness is merely a contingent feature that happens to accompany awareness but could be absent.",
+      "why": "The commentary makes this necessity explicit: 'to be aware is to be articulately aware, and articulation is the word's work' — vagrupa is not incidental but constitutive of avabodha itself. This reading treats the niyamaka relation as absent or optional, contradicting the axiom that vagrupa niyamaka avabodha.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "apadartham", "of": "vagrupa"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "pratyavamarsa_mere_reflective_act",
+      "rendering": "Recognition (pratyavamarsa) is merely a reflective mental act that can occur independently of the fundamental word-power.",
+      "why": "Treats pratyavamarsa as a contingent operation of mind rather than identifying it with the essential word-formedness power itself. The identity vagrupa = pratyavamarsa forbids treating them as separable; this reading implicitly denies that identity by demoting pratyavamarsa to a secondary reflective operation.",
+      "entities": [
+        {"id": "pratyavamarsa_act", "name": "pratyavamarśa-kriyā", "sort": "manifestation"}
+      ],
+      "claims": [
+        {"kind": "identity", "a": "pratyavamarsa_act", "b": "vagrupa"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "This verse establishes a transcendental condition: word-formedness (vagrupa), the power of articulation and determination, is not a contingent feature of awareness but its very ground. Without it, prakasha (illumination/cognition) cannot function — bare impingement collapses into non-cognition. The identity vagrupa = pratyavamarsa encodes that articulation IS the determining act of consciousness. The Vrtti's strong reading (extending word-association into sleep and indeterminate cognitions) is encoded here: no wordless stratum of awareness exists. The contested note flags the range from weak (all judgement is verbal) to strong (all sentience is verbal); the contract encodes the strong reading that became foundational to Kashmir Saiva Tantra."
+}

@@ -90,3 +90,5 @@
 {"ts": "2026-07-17T06:14:34.937660+00:00", "event": "publish", "detail": "GitHub repo live (operator-created), CI green; full edition on HF Space qbz506/vakya-vallari; Vercel showcase live"}
 {"ts": "2026-07-17T06:25:20.347266+00:00", "event": "gate", "detail": "round 5 (20 agents) all OK; adjudicator-3: 13 sort corrections + guna homonym; sphoṭa name normalized; quarantine dir removed"}
 {"ts": "2026-07-17T06:25:20.347329+00:00", "event": "milestone", "detail": "85 verse units verified, 199 refutations, 121 pytest gates, lake green"}
+{"ts": "2026-07-17T06:38:14.377354+00:00", "event": "gate", "detail": "round 6 (30 agents) all OK; adjudicator-4: 25 conflicts -> 14 new homonym entries incl. phonetician sphota sense (1.102-1.106 rival terminology)"}
+{"ts": "2026-07-17T06:38:14.377413+00:00", "event": "milestone", "detail": "115 verse units verified, 277 refutations, 151 pytest gates"}

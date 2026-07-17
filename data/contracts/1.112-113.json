@@ -1,0 +1,170 @@
+{
+  "verse": "1.112-113",
+  "entities": [
+    {
+      "id": "antara_jnata",
+      "name": "antara-jñātā",
+      "sort": "cognition",
+      "cite": "The subject now is the antarah jnata, the inner knower"
+    },
+    {
+      "id": "vag_atman",
+      "name": "vāg-ātman",
+      "sort": "absolute",
+      "cite": "already standing suksme vagatmani, in a subtle speech-self — language is not something the knower produces but a dimension it inhabits"
+    },
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "it *appears as* wordhood"
+    },
+    {
+      "id": "manobhava",
+      "name": "mano-bhāva",
+      "sort": "manifestation",
+      "cite": "The word-nature attains mano-bhava (mind-condition)"
+    },
+    {
+      "id": "tejas",
+      "name": "tejas",
+      "sort": "power",
+      "cite": "is ripened tejasa — by the inner heat, the old physiological fire of the Upanisads"
+    },
+    {
+      "id": "prana",
+      "name": "prāṇa",
+      "sort": "manifestation",
+      "cite": "enters prana"
+    },
+    {
+      "id": "utterance",
+      "name": "samudīraṇa",
+      "sort": "linguisticItem",
+      "cite": "is samudirya, uttered forth"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "antara_jnata",
+      "to": "vag_atman",
+      "cite": "the antarah jnata, the inner knower, already standing suksme vagatmani, in a subtle speech-self"
+    },
+    {
+      "kind": "relation",
+      "name": "vivartate",
+      "from": "antara_jnata",
+      "to": "sabda",
+      "cite": "the verb is vivartate (112d): it *appears as* wordhood, the same appearance-without-transformation that 1.1 predicated of Brahman"
+    },
+    {
+      "kind": "relation",
+      "name": "apadyate",
+      "from": "sabda",
+      "to": "manobhava",
+      "cite": "The word-nature attains mano-bhava (mind-condition), is ripened tejasa — by the inner heat, the old physiological fire of the Upanisads"
+    },
+    {
+      "kind": "relation",
+      "name": "paka",
+      "from": "tejas",
+      "to": "manobhava",
+      "cite": "is ripened tejasa — by the inner heat"
+    },
+    {
+      "kind": "relation",
+      "name": "avisat",
+      "from": "manobhava",
+      "to": "prana",
+      "cite": "enters prana"
+    },
+    {
+      "kind": "predication",
+      "name": "samudirya",
+      "of": "prana",
+      "cite": "and is samudirya, uttered forth"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "parinamate",
+      "from": "antara_jnata",
+      "to": "sabda",
+      "cite": "the same appearance-without-transformation that 1.1 predicated of Brahman and 1.48 of the sphota"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "antara_jnata",
+        "to": "vag_atman",
+        "cite": "standing in the subtle self-of-speech"
+      },
+      {
+        "kind": "relation",
+        "name": "vivartate",
+        "from": "antara_jnata",
+        "to": "sabda",
+        "cite": "turns itself, for the manifestation of its own form, into wordhood"
+      },
+      {
+        "kind": "relation",
+        "name": "apadyate",
+        "from": "sabda",
+        "to": "manobhava",
+        "cite": "Attaining the condition of mind"
+      },
+      {
+        "kind": "relation",
+        "name": "avisat",
+        "from": "manobhava",
+        "to": "prana",
+        "cite": "it enters the breath-wind"
+      },
+      {
+        "kind": "predication",
+        "name": "samudirya",
+        "of": "prana",
+        "cite": "it is uttered forth"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "actual_transformation",
+      "rendering": "The inner knower actually transforms into wordhood as a real alteration of substance.",
+      "why": "Asserts parinamate (real transformation) rather than vivarta (appearance-without-transformation), which the commentary explicitly contrasts with the vivarta doctrine of 1.1 and 1.48.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "parinamate", "from": "antara_jnata", "to": "sabda"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "speech_as_instrument",
+      "rendering": "The knower produces wordhood as an external tool for communication.",
+      "why": "Treats speech as something the knower makes rather than a dimension it inhabits. The commentary is explicit: 'language is not something the knower produces but a dimension it inhabits', making this a fundamental ontological category error.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "asraya", "from": "vag_atman", "to": "antara_jnata"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "direct_utterance",
+      "rendering": "The knower-as-wordhood directly becomes utterance without intermediate mental or physiological stages.",
+      "why": "Omits the mandatory three-stage descent — knower's subtle speech → mental word → breath-borne utterance — which the verse explicitly elaborates. The commentary identifies this as 'the embryo of the pasyanti/madhyama/vaikhari hierarchy made explicit at 1.142'.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "avisat", "from": "sabda", "to": "utterance"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "Verse 1.112-113 formalizes the descent-mechanism connecting idealist metaphysics (knower in speech-essence via vivarta) to pneumatic physiology (mind→fire→breath→utterance). The cascade of relations encodes what the commentary calls the 'three-stage descent — knower's subtle speech, mental word, breath-borne utterance' that anticipates the explicit pasyanti/madhyama/vaikhari taxonomy. Fire (tejas) appears as a ripening agent, integrating the Upanisadic pneumatic framework into Bhartrhari's epistemology."
+}

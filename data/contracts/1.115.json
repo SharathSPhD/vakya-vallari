@@ -1,0 +1,135 @@
+{
+  "verse": "1.115",
+  "entities": [
+    {
+      "id": "prana",
+      "name": "prāṇa",
+      "sort": "power",
+      "cite": "The breath ascends carrying the undivided word"
+    },
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "absolute",
+      "cite": "The breath ascends carrying the undivided word"
+    },
+    {
+      "id": "granthi",
+      "name": "granthi",
+      "sort": "manifestation",
+      "cite": "The knots (granthi, the Vrtti's own word for the involutions of 1.1) are the word's condensed unity as lodged in the moving prana"
+    },
+    {
+      "id": "varna",
+      "name": "varṇa",
+      "sort": "linguisticItem",
+      "cite": "the breath, varnan abhivyajya, having manifested the phonemes"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "vahati",
+      "from": "prana",
+      "to": "sabda",
+      "cite": "The breath ascends carrying the undivided word"
+    },
+    {
+      "kind": "relation",
+      "name": "vibhajati",
+      "from": "prana",
+      "to": "granthi",
+      "cite": "The knots (granthi, the Vrtti's own word for the involutions of 1.1) are the word's condensed unity as lodged in the moving prana; articulation unties them into sruti-rupaih prthagvidhaih, the differentiated audible forms"
+    },
+    {
+      "kind": "relation",
+      "name": "abhivyajati",
+      "from": "prana",
+      "to": "varna",
+      "cite": "the breath, varnan abhivyajya, having manifested the phonemes, varnesv eva upaliyate — dissolves into those very phonemes"
+    },
+    {
+      "kind": "relation",
+      "name": "upaliyate",
+      "from": "prana",
+      "to": "varna",
+      "cite": "the breath, varnan abhivyajya, having manifested the phonemes, varnesv eva upaliyate — dissolves into those very phonemes"
+    },
+    {
+      "kind": "predication",
+      "name": "prthagvidha",
+      "of": "varna",
+      "cite": "articulation unties them into sruti-rupaih prthagvidhaih, the differentiated audible forms"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "guhyavastha",
+      "of": "prana",
+      "cite": "The carrier does not survive its delivery; prana spends itself utterly into what it manifests, as if the messenger became the message's letters"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "abhivyajati",
+        "from": "prana",
+        "to": "varna",
+        "cite": "the breath, having manifested the phonemes"
+      },
+      {
+        "kind": "relation",
+        "name": "upaliyate",
+        "from": "prana",
+        "to": "varna",
+        "cite": "dissolves into those very phonemes"
+      },
+      {
+        "kind": "predication",
+        "name": "prthagvidha",
+        "of": "varna",
+        "cite": "the differentiated forms of audible sound"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "prana_persists_hidden",
+      "rendering": "The breath, having manifested the phonemes, remains concealed within those very phonemes.",
+      "why": "Contradicts the commentary's core assertion that the carrier does not survive delivery. The verse emphasizes total consumption (upaliyate as 'dissolves into'), not latent persistence ('merges/hides within'), which the contested note identifies as the less supported reading.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "guhyavastha",
+          "of": "prana"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "granthi_as_final_product",
+      "rendering": "The breath divides itself into the knots of audible sound, which then dissolve into the phonemes.",
+      "why": "Mistakes granthi (the word's condensed form as lodged in prana) for an intermediate product. Granthi is not a separate phonetic entity but the unified form before articulation; the phonemes (varna) are the sole final product of manifestation. This reverses the ontological structure: granthi is predicate to vibhajati, not object.",
+      "entities": [
+        {
+          "id": "granthi_final",
+          "name": "granthi",
+          "sort": "linguisticItem"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "upaliyate",
+          "from": "granthi",
+          "to": "varna"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The contract encodes the production-side sequence: prana carries sabda, divides granthi at articulation sites, manifests varna as differentiated forms, and dissolves utterly into them. The 'dissolution' is specifically rejection of any latent persistence (the 'merges/hides within' reading of upaliyate). The verse's cosmological force—'the one, descending into difference, is wholly in the difference, nothing held back'—is captured by the asymmetry between prana's complete consumption and sabda's inexhaustibility (addressed by the next verse)."
+}

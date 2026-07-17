@@ -1,0 +1,133 @@
+{
+  "verse": "1.100",
+  "entities": [
+    {
+      "id": "pratibimba",
+      "name": "pratibimba",
+      "sort": "manifestation",
+      "cite": "A mountain shows in the facet of a jewel"
+    },
+    {
+      "id": "bimba",
+      "name": "bimba",
+      "sort": "absolute",
+      "cite": "the original object being reflected"
+    },
+    {
+      "id": "parimana",
+      "name": "parimāṇa",
+      "sort": "property",
+      "cite": "the measures contradict"
+    },
+    {
+      "id": "bhava",
+      "name": "bhāva",
+      "sort": "absolute",
+      "cite": "entities really of like form with the mountain reflected"
+    },
+    {
+      "id": "sajatiya",
+      "name": "sārūpya",
+      "sort": "property",
+      "cite": "entities really of like form"
+    },
+    {
+      "id": "abhasavikara",
+      "name": "abhāsavikāra",
+      "sort": "manifestation",
+      "cite": "only the one word under different manifesting conditions"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "pratibimba",
+      "to": "bimba",
+      "cite": "it is the original *as appearing under* an alien condition, and its size-in-the-mirror is a fact about the mirroring"
+    },
+    {
+      "kind": "predication",
+      "name": "viruddhaparimana",
+      "of": "pratibimba",
+      "cite": "viruddha-parimana, the measures contradict"
+    },
+    {
+      "kind": "identity",
+      "a": "pratibimba",
+      "b": "abhasavikara",
+      "cite": "there are no duplicates at all, only the one word under different manifesting conditions"
+    },
+    {
+      "kind": "predication",
+      "name": "na_dvitiya",
+      "of": "pratibimba",
+      "cite": "a reflection is not a second entity resembling the first"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "satya_bhava",
+      "of": "pratibimba",
+      "cite": "If reflections were real duplicates — entities sarupa with their originals — the facet would have to contain a mountain-sized thing, which is absurd"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "viruddhaparimana",
+        "of": "pratibimba",
+        "cite": "In mirrors of contrary measure"
+      },
+      {
+        "kind": "predication",
+        "name": "na_dvitiya",
+        "of": "pratibimba",
+        "cite": "there is no possibility of entities really of like form with the mountain reflected"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "pratibimba",
+        "to": "bimba",
+        "cite": "a gem-facet, a blade-surface and the like"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "literal_duplicate_entity",
+      "rendering": "A mountain reflected in a mirror is a real entity with the same form as the original mountain.",
+      "why": "Treats the reflection as possessing satya-bhava (real entity status) and sarupa (same-form property), which the commentary explicitly refutes. The denial forbids treating reflections as real duplicates; this reading asserts exactly that contradiction.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "satya_bhava",
+          "of": "pratibimba"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "size_transfer_doctrine",
+      "rendering": "The size-in-the-mirror is a real property transferred from the original to the reflection.",
+      "why": "Proposes that parimana literally transfers from the original to the reflection as a real transferrable property. The commentary refutes this: size-in-the-mirror is a fact about the mirroring condition (abhasavikara), not a transferred property. This incorrectly sorts the mirrored-size as a property rather than an appearance-dependent manifestation.",
+      "entities": [
+        {"id": "parimana_bhava", "name": "parimāṇa-bhāva", "sort": "property"}
+      ],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "sankriya",
+          "from": "bimba",
+          "to": "parimana_bhava"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "This verse provides the strongest reductio in the reflection-series because it uses quantitative transfer (the size contradiction in small mirrors) to demonstrate that reflections cannot be real duplicates. Applied to the word: the sphota appearing in quick or slow utterance is not a short or long duplicate but the same word under different manifestation conditions. The contract avoids committing to whether the reflection is completely illusory (a later Advaitic position) vs. a real appearance-dependent manifestation, capturing only the shared anti-duplication principle."
+}
