@@ -59,3 +59,30 @@ Append-only. Each entry: date, what was attempted, what the gates said, decision
   quota-degraded agents), homonym registry, GPU audit (contested verses shift left:
   0.578 vs 0.593), honesty boundary. All statistics harvested from repo artifacts.
 - Full edition refreshed on HF Space; Vercel showcase current; GitHub CI green.
+
+## 2026-07-17 — verification pass (push, CI, Lean, rendering)
+
+- Confirmed local `main` == `origin/main` (69637b1); no lock/credential issues found
+  in this session (a separate sandboxed session had hit a stale `.git/index.lock` and
+  host-credential gaps, resolved there before this check).
+- Confirmed CI's `lean` job actually runs `lake build` + the zero-sorry grep on GitHub's
+  runners (verified via `gh run view --log`) — the earlier concern that "Lean wasn't
+  running" was specific to a sandbox without Lean installed, not to CI.
+- Confirmed the "1 skipped" in CI's `corpus` job is `test_leangen.py`'s
+  `skipif(shutil.which("lake") is None)` — expected, since that job doesn't install
+  Lean (a separate `lean` job does the real proof build). Not a failure.
+- Confirmed `datetime.UTC` (ledger.py) is a Python 3.11+ API; project requires >=3.12
+  and both local (3.12.3) and CI (3.12) pass cleanly — the earlier failure was a
+  3.10 sandbox artifact, not a real defect.
+- Found the Vercel showcase was stale (still the M5-era page) versus the newest commits
+  (essay landing page, restructured paper). Rebuilt the site, refreshed the HF Space
+  with the full current build, and redeployed Vercel with the new essay index —
+  patched to point its internal links (edition/kanda-1/proof-1.1) at the live HF Space
+  since Vercel here hosts only the single-page showcase.
+- Verified rendering live via a real browser (claude-in-chrome MCP; Playwright/
+  chrome-devtools MCP had no local Chromium in this sandbox and no sudo to install
+  one): essay loads with correct Devanagari/IAST, click-to-reveal verdict interaction
+  works, cross-link to the HF proof page and edition index both render correctly,
+  zero console errors on any page.
+- No GitHub Pages site exists for this repo (confirmed via API, 404) — living editions
+  are Vercel (showcase) + HF Space (full 1,796-verse edition), as documented above.
