@@ -46,3 +46,16 @@ Append-only. Each entry: date, what was attempted, what the gates said, decision
   the hf CLI's upload path 402s on create_repo).
 - Round 4 recovery: quota-killed drafts (9) quarantined; adjudicated conflicts in main
   loop; 65 verified committed. Round 5 swarm running for remaining 20 kāṇḍa-1 units.
+
+## 2026-07-17 — Brahmakāṇḍa complete + paper (M7)
+
+- **All 144 kāṇḍa-1 units verified**: 549 Lean theorems (144 adequacy + 350 refutations
+  + kernel), zero sorry, zero ontology conflicts; 180 pytest gates; registry at 41
+  terms / 91 senses. Final 28 conflicts adjudicated in main loop during quota outage
+  (veda/śruti/vyavasthā/rūpa/sādhu/viparīta/kārya polysemy registered).
+- **Paper written and compiled** (`paper/paper.pdf`, 10pp): "Machine-Checked Translation
+  Adequacy for Bhartṛhari's Vākyapadīya" — C-TV method, kernel, agentic loop with
+  gate-catch taxonomy (table of caught errors incl. 5 fabricated citations from
+  quota-degraded agents), homonym registry, GPU audit (contested verses shift left:
+  0.578 vs 0.593), honesty boundary. All statistics harvested from repo artifacts.
+- Full edition refreshed on HF Space; Vercel showcase current; GitHub CI green.
