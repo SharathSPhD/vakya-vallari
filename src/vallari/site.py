@@ -13,6 +13,7 @@ import json
 import re
 from pathlib import Path
 
+from vallari.essay import essay_page
 from vallari.leangen import module_name
 
 _CSS = """
@@ -187,5 +188,6 @@ def build_site(
         "contract is faithful to Bhartṛhari is a human-auditable question; every axiom "
         "carries its verbatim citation for exactly that audit.</p>"
     )
-    (out_dir / "index.html").write_text(_page("Vākya-Vallarī", body))
+    (out_dir / "edition.html").write_text(_page("Vākya-Vallarī", body))
+    (out_dir / "index.html").write_text(essay_page(stats))
     return stats
