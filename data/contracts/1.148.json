@@ -1,0 +1,126 @@
+{
+ "verse": "1.148",
+ "entities": [
+  {
+   "id": "sabda",
+   "name": "śabda",
+   "sort": "linguisticItem",
+   "cite": "Words like asva and goni"
+  },
+  {
+   "id": "sadhutvam",
+   "name": "sādhutva",
+   "sort": "property",
+   "cite": "Words like asva and goni are correct in another domain; correctness everywhere is settled by difference of ground"
+  },
+  {
+   "id": "nimitta",
+   "name": "nimitta",
+   "sort": "power",
+   "cite": "correctness everywhere is settled by difference of ground"
+  },
+  {
+   "id": "rupa",
+   "name": "rūpa",
+   "sort": "linguisticItem",
+   "cite": "No form is corrupt as acoustics"
+  },
+  {
+   "id": "visaya",
+   "name": "viṣaya",
+   "sort": "manifestation",
+   "cite": "Words like asva and goni are correct in another domain"
+  },
+  {
+   "id": "artha",
+   "name": "artha",
+   "sort": "manifestation",
+   "cite": "the meaning-domain, the derivational warrant"
+  }
+ ],
+ "axioms": [
+  {
+   "kind": "relation",
+   "name": "vyavasthitam",
+   "from": "nimitta",
+   "to": "sadhutvam",
+   "cite": "correctness is fixed by the *ground* of use — the meaning-domain, the derivational warrant — not by the sound in itself"
+  },
+  {
+   "kind": "relation",
+   "name": "visayabheda",
+   "from": "visaya",
+   "to": "sadhutvam",
+   "cite": "same phonetic form, different visaya, different verdict"
+  },
+  {
+   "kind": "predication",
+   "name": "relational",
+   "of": "sadhutvam",
+   "cite": "corruption is a relation between form, meaning and derivational title"
+  }
+ ],
+ "denials": [
+  {
+   "kind": "predication",
+   "name": "vyavasthitam",
+   "of": "rupa",
+   "cite": "No form is corrupt as acoustics; corruption is a relation between form, meaning and derivational title"
+  },
+  {
+   "kind": "predication",
+   "name": "independent",
+   "of": "sabda",
+   "cite": "it is a failure of entitlement, a form appearing where it holds no warrant"
+  }
+ ],
+ "accepted_reading": {
+  "claims": [
+   {
+    "kind": "relation",
+    "name": "vyavasthitam",
+    "from": "nimitta",
+    "to": "sadhutvam",
+    "cite": "correctness everywhere is settled by difference of ground"
+   },
+   {
+    "kind": "relation",
+    "name": "visayabheda",
+    "from": "visaya",
+    "to": "sadhutvam",
+    "cite": "in another domain"
+   }
+  ]
+ },
+ "rejected_readings": [
+  {
+   "label": "intrinsic_form_correctness",
+   "rendering": "A word-form is correct or incorrect based entirely on its phonetic shape.",
+   "why": "Ignores the relational nature of sadhutvam and its dependence on nimitta-bheda. Violates the axiom that correctness is determined by ground-difference, not by rupa alone. The commentary explicitly denies this: 'No form is corrupt as acoustics.'",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "predication",
+     "name": "vyavasthitam",
+     "of": "rupa"
+    }
+   ],
+   "expect": "contradicted"
+  },
+  {
+   "label": "context_independent",
+   "rendering": "The correctness of asva or goni is fixed uniformly; their status does not change across different meaning-domains.",
+   "why": "Denies the visaya-dependence established by 'in another domain' and confirmed by the commentary's example: the same form goni is sadhu as 'sack' but asadhu as 'cow'. This violates the axiom visayabheda -> sadhutvam.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "predication",
+     "name": "universal",
+     "of": "sadhutvam"
+    }
+   ],
+   "expect": "unlicensed"
+  }
+ ],
+ "notes": "The contract captures the doctrine of nimitta-bheda (relational correctness): sadhutvam depends on ground-difference and meaning-domain, not on phonetic form alone. No sort strain; 'nimitta' as power reflects its role as the determinant cause of correctness. The axioms and denials together encode Bhartrhari's refusal of essentialist views of propriety."
+}

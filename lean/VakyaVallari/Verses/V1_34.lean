@@ -8,7 +8,7 @@ namespace VakyaVallari.Verses.V1_34
 open VakyaVallari
 
 def artha : Entity := ⟨"artha", Sorta.linguisticItem⟩
-def anumana : Entity := ⟨"anumana", Sorta.power⟩
+def anumana : Entity := ⟨"anumāna", Sorta.power⟩
 def anumiti : Entity := ⟨"anumiti", Sorta.cognition⟩
 def satya : Entity := ⟨"satya", Sorta.property⟩
 

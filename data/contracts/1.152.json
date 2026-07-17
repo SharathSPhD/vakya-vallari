@@ -1,0 +1,115 @@
+{
+  "verse": "1.152",
+  "entities": [
+    {
+      "id": "sadhu",
+      "name": "sādhu",
+      "sort": "linguisticItem",
+      "cite": "where the sadhu form is the one *to be* employed"
+    },
+    {
+      "id": "apabhramsa",
+      "name": "apabhraṃśa",
+      "sort": "linguisticItem",
+      "cite": "when a corrupt one is employed"
+    },
+    {
+      "id": "artha",
+      "name": "artha",
+      "sort": "absolute",
+      "cite": "some meaning is expressed by it"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "prayoktavye",
+      "of": "sadhu",
+      "cite": "where the sadhu form is the one *to be* employed (the normative participle carrying 1.139's ethics)"
+    },
+    {
+      "kind": "predication",
+      "name": "vyavahita",
+      "of": "sadhu",
+      "cite": "with the correct form *intervening*, standing between the corrupt sound and the meaning as the relay through which expression passes"
+    },
+    {
+      "kind": "relation",
+      "name": "abhidhiyate",
+      "from": "apabhramsa",
+      "to": "artha",
+      "cite": "the apabhramsa that actually issues expresses its meaning"
+    },
+    {
+      "kind": "relation",
+      "name": "vachaka",
+      "from": "sadhu",
+      "to": "artha",
+      "cite": "the sadhu form doing the expressing from behind the screen"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "vachaka",
+      "from": "apabhramsa",
+      "to": "artha",
+      "cite": "their conveying is parasitic — borrowed light, the sadhu form doing the expressing from behind the screen"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "prayoktavye",
+        "of": "sadhu",
+        "cite": "where the correct form is to be employed"
+      },
+      {
+        "kind": "predication",
+        "name": "vyavahita",
+        "of": "sadhu",
+        "cite": "with the correct form intervening"
+      },
+      {
+        "kind": "relation",
+        "name": "abhidhiyate",
+        "from": "apabhramsa",
+        "to": "artha",
+        "cite": "some meaning is expressed by it"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "apabhramsa_autonomous_expression",
+      "rendering": "A corrupt form possesses the independent power to express meaning, functioning as the primary expressor without reliance on the correct form.",
+      "why": "Wrongly attributes the vachaka (expressor/revealer) relation to apabhramsa. The doctrine insists only sadhu is vachaka; apabhramsa's expression is parasitic. Sadhu is 'doing the expressing from behind the screen', making apabhramsa merely the vehicle for meaning's transmission. This reverses the semantic hierarchy.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "vachaka",
+          "from": "apabhramsa",
+          "to": "artha"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "apabhramsa_normative",
+      "rendering": "Corrupt forms are equally valid and appropriate for use in communication as correct forms.",
+      "why": "Wrongly attributes prayoktavye (normativity/obligation to use) to apabhramsa. Only sadhu is prayoktavye—the form that *should* be employed. Apabhramsa may convey meaning, but it is not normative. The normativity is constitutive of the doctrine: sadhu's prayoktavye status is internal to the mechanism through which competence operates.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "prayoktavye",
+          "of": "apabhramsa"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse articulates the parasitic theory of corrupt-form meaning: apabhramsa expresses artha, but sadhu alone is vachaka (the true expressor) and vyavahita (the interposed relay). Only sadhu is prayoktavye; this normativity is internal to the semantics, constituting the mechanism by which hearer competence (sista-smrti) enables comprehension. The hedge in 'kascidarthah' admits both determinate meaning (normal case with sadhu available) and indeterminate meaning (1.153's case where sadhu is lost from the community)."
+}

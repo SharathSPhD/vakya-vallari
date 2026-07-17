@@ -1,0 +1,167 @@
+{
+ "verse": "1.133",
+ "entities": [
+  {
+   "id": "vada",
+   "name": "vāda",
+   "sort": "linguisticItem",
+   "cite": "Vadas — the philosophical systems, with their founders and their fortunes — asta yatesu, set like stars"
+  },
+  {
+   "id": "kartr",
+   "name": "kartṛ",
+   "sort": "power",
+   "cite": "their authors pass, their schools scatter"
+  },
+  {
+   "id": "karma",
+   "name": "karma",
+   "sort": "manifestation",
+   "cite": "the karma declared in sruti and smrti, the ritual and practical order"
+  },
+  {
+   "id": "sruti",
+   "name": "śruti",
+   "sort": "linguisticItem",
+   "cite": "Yet the karma declared in sruti and smrti"
+  },
+  {
+   "id": "smrti",
+   "name": "smṛti",
+   "sort": "linguisticItem",
+   "cite": "Yet the karma declared in sruti and smrti"
+  },
+  {
+   "id": "loka",
+   "name": "loka",
+   "sort": "manifestation",
+   "cite": "the world does not step across it"
+  }
+ ],
+ "axioms": [
+  {
+   "kind": "predication",
+   "name": "anta",
+   "of": "vada",
+   "cite": "doctrines are mortal in a way that rites are not"
+  },
+  {
+   "kind": "predication",
+   "name": "anta",
+   "of": "kartr",
+   "cite": "their authors pass, their schools scatter"
+  },
+  {
+   "kind": "relation",
+   "name": "udita",
+   "from": "sruti",
+   "to": "karma",
+   "cite": "the karma declared in sruti and smrti"
+  },
+  {
+   "kind": "relation",
+   "name": "udita",
+   "from": "smrti",
+   "to": "karma",
+   "cite": "the karma declared in sruti and smrti"
+  },
+  {
+   "kind": "relation",
+   "name": "avyativartita",
+   "from": "loka",
+   "to": "karma",
+   "cite": "the world does not step across it"
+  },
+  {
+   "kind": "predication",
+   "name": "nitya",
+   "of": "karma",
+   "cite": "teachings-with-authors perish, the practice-bearing core persists"
+  }
+ ],
+ "denials": [
+  {
+   "kind": "predication",
+   "name": "anta",
+   "of": "karma",
+   "cite": "doctrines are mortal in a way that rites are not"
+  },
+  {
+   "kind": "relation",
+   "name": "vyativartate",
+   "from": "loka",
+   "to": "karma",
+   "cite": "the world does not step across it"
+  }
+ ],
+ "accepted_reading": {
+  "claims": [
+   {
+    "kind": "predication",
+    "name": "anta",
+    "of": "vada",
+    "cite": "When the doctrines have set, and other authors are no more"
+   },
+   {
+    "kind": "predication",
+    "name": "anta",
+    "of": "kartr",
+    "cite": "and other authors are no more"
+   },
+   {
+    "kind": "relation",
+    "name": "avyativartita",
+    "from": "loka",
+    "to": "karma",
+    "cite": "the world does not transgress the rite declared by sruti and smrti"
+   }
+  ]
+ },
+ "rejected_readings": [
+  {
+   "label": "symmetrical_mortality",
+   "rendering": "When doctrines and their authors pass away, the world likewise abandons its practices.",
+   "why": "Inverts the asymmetry: the commentary insists doctrines are mortal but rites are not. This reading asserts that karma also perishes, contradicting the core observation.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "relation",
+     "name": "vyativartate",
+     "from": "loka",
+     "to": "karma"
+    }
+   ],
+   "expect": "contradicted"
+  },
+  {
+   "label": "doctrine_dependent_ritual",
+   "rendering": "The ritual order exists only so long as the philosophical systems that originally justified it continue to be argued and defended.",
+   "why": "Treats karma as parasitic on vada-s. The commentary's point is that karma persists precisely because it is practice-borne, not doctrine-borne. This reading makes karma as mortal as the doctrines, contradicting the declared independence.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "predication",
+     "name": "anta",
+     "of": "karma"
+    }
+   ],
+   "expect": "contradicted"
+  },
+  {
+   "label": "practice_as_source",
+   "rendering": "The rituals establish themselves through constant practice, while śruti and smṛti merely record what the world has already established.",
+   "why": "Reverses the logical and textual priority. The verse and commentary make clear that it is the declaration in śruti and smṛti that grounds the karma, not the other way around. This reading asserts an unlicensed source relation (loka creates/authorizes karma) that the axioms do not warrant.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "relation",
+     "name": "asraya",
+     "from": "karma",
+     "to": "loka"
+    }
+   ],
+   "expect": "unlicensed"
+  }
+ ],
+ "notes": "Verse 1.133 grounds the persistence of ritual practice in the dual textual authority (śruti and smṛti) rather than in any doctrinal system. The commentary's asymmetry between mortal doctrines and persistent rites becomes the empirical correlate of 1.132's cosmological claim: the practice-bearing core endures across the rise and fall of philosophical schools. The contract does not encode the full cosmic scope but focuses on the observable historical phenomenon."
+}

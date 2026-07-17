@@ -1,0 +1,146 @@
+{
+  "verse": "1.154",
+  "entities": [
+    {
+      "id": "daivi_vag",
+      "name": "daivī vāg",
+      "sort": "linguisticItem",
+      "cite": "divine speech, the Sanskrit of the seed-tradition"
+    },
+    {
+      "id": "aksakta_abhidhatri",
+      "name": "aśaktair abhidhātṛbhiḥ",
+      "sort": "cognition",
+      "cite": "by speakers without capacity"
+    },
+    {
+      "id": "vyatikirana",
+      "name": "vyatikīrṇā",
+      "sort": "manifestation",
+      "cite": "change as corruption, history as the silting of a pure source"
+    },
+    {
+      "id": "anitya_darsin",
+      "name": "anityadarśin",
+      "sort": "cognition",
+      "cite": "for the seers of non-eternality, those whose darsana makes impermanence fundamental"
+    },
+    {
+      "id": "buddhi_viparyaya",
+      "name": "buddhiviparyayaḥ",
+      "sort": "cognition",
+      "cite": "in this dispute their judgement is the exact reverse"
+    },
+    {
+      "id": "vada",
+      "name": "vāda",
+      "sort": "linguisticItem",
+      "cite": "the Sanskrit-Prakrit priority dispute is theory-laden all the way down"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "vyatikirana",
+      "of": "daivi_vag",
+      "cite": "vyatikirnā, overspread, scattered through, asaktaih abhidhatrbhih, by speakers without capacity"
+    },
+    {
+      "kind": "relation",
+      "name": "pratikula_buddhi",
+      "from": "anitya_darsin",
+      "to": "vada",
+      "cite": "in this dispute their judgement is the exact reverse"
+    },
+    {
+      "kind": "predication",
+      "name": "viparyaya",
+      "of": "anitya_darsin",
+      "cite": "On their view the current speech of peoples is the natural datum and 'divine Sanskrit' the artifact — a fixed, frozen elaboration raised out of living vernaculars; the direction of derivation flips with the metaphysics"
+    },
+    {
+      "kind": "predication",
+      "name": "anisthaniya",
+      "of": "aksakta_abhidhatri",
+      "cite": "by speakers without capacity (the vigunas of 1.153)"
+    }
+  ],
+  "denials": [],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "vyatikirana",
+        "of": "daivi_vag",
+        "cite": "This divine speech has been overspread by incapable speakers"
+      },
+      {
+        "kind": "predication",
+        "name": "viparyaya",
+        "of": "anitya_darsin",
+        "cite": "the judgement is the reverse"
+      },
+      {
+        "kind": "relation",
+        "name": "pratikula_buddhi",
+        "from": "anitya_darsin",
+        "to": "vada",
+        "cite": "among the seers of non-eternality, in this matter, the judgement is the reverse"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "refutation_reading",
+      "rendering": "The seers of non-eternality have a reversed and therefore false judgement about language.",
+      "why": "Projects refutation onto the text when the commentary explicitly states Bhartṛhari does not refute the opposite view. This violates the neutrality and structural honesty the verse embodies.",
+      "entities": [
+        {"id": "anitya_darsin_false", "name": "anityadarśin", "sort": "cognition"}
+      ],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "asatya",
+          "of": "anitya_darsin_false",
+          "cite": "The seers of non-eternality are wrong"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "corruption_causation",
+      "rendering": "Incapable speakers caused the corruption of what was originally one unified language.",
+      "why": "Treats speakers as active agents responsible for corruption rather than simply operating within corrupted speech. The verse says the divine speech HAS BEEN overspread (passive voice), not that speakers actively corrupted it.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "karana",
+          "from": "aksakta_abhidhatri",
+          "to": "vyatikirana",
+          "cite": "Incapable speakers caused the corruption"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "modern_priority",
+      "rendering": "The seers of non-eternality are correct that modern speech is the natural source from which Sanskrit is derived.",
+      "why": "Treats the anti-eternalist position as epistemically privileged, when Bhartṛhari's insight is that both views flow from incompatible metaphysical commitments (eternality vs. impermanence), not from evidence alone.",
+      "entities": [
+        {"id": "modern_sabda", "name": "adhunika-sabda", "sort": "linguisticItem"}
+      ],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "mula",
+          "from": "modern_sabda",
+          "to": "daivi_vag",
+          "cite": "modern speech is the natural source from which Sanskrit is derived"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The contract encodes the two competing frames (eternalist priority vs. anti-eternalist priority) as cognitions rather than absolute facts. Vyatikirana is rendered as manifestation (the state of being corrupted/overspread) rather than property, following the commentary's emphasis on historical process. The key insight is structural: Bhartṛhari presents both views without refutation, showing that the dispute is grounded in incompatible metaphysical commitments (eternality vs. impermanence), not in observable linguistic facts alone."
+}

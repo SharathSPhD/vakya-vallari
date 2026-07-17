@@ -1,0 +1,145 @@
+{
+  "verse": "1.141",
+  "entities": [
+    {
+      "id": "vyakarana_smrti",
+      "name": "vyākaraṇasmṛti",
+      "sort": "linguisticItem",
+      "cite": "This grammatical tradition"
+    },
+    {
+      "id": "sadhutva_jnana",
+      "name": "sādhutvajñāna",
+      "sort": "cognition",
+      "cite": "Its visaya: sadhutva-jnana, knowledge of which forms are correct"
+    },
+    {
+      "id": "sistas",
+      "name": "śiṣṭa",
+      "sort": "power",
+      "cite": "usage of the learned as criterion"
+    },
+    {
+      "id": "smrti",
+      "name": "smṛti",
+      "sort": "linguisticItem",
+      "cite": "grammar as a *smrti*, a remembrance-tradition"
+    },
+    {
+      "id": "sadhutva",
+      "name": "sādhutva",
+      "sort": "property",
+      "cite": "correctness as such, the dharma-bearing property"
+    },
+    {
+      "id": "sruti",
+      "name": "śruti",
+      "sort": "linguisticItem",
+      "cite": "not a sruti"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "identity",
+      "a": "vyakarana_smrti",
+      "b": "smrti",
+      "cite": "grammar as a *smrti*, a remembrance-tradition, not a sruti"
+    },
+    {
+      "kind": "relation",
+      "name": "visaya",
+      "from": "vyakarana_smrti",
+      "to": "sadhutva_jnana",
+      "cite": "Its visaya: sadhutva-jnana, knowledge of which forms are correct"
+    },
+    {
+      "kind": "relation",
+      "name": "nibandhana",
+      "from": "vyakarana_smrti",
+      "to": "sistas",
+      "cite": "Its ground: avicchedena sistanam — the *unbrokenness* of the cultivated line, idam smrti-nibandhanam, this is what fastens the remembrance"
+    },
+    {
+      "kind": "predication",
+      "name": "dharma_bearing",
+      "of": "sadhutva",
+      "cite": "correctness as such, the dharma-bearing property"
+    },
+    {
+      "kind": "predication",
+      "name": "avicchinna",
+      "of": "sistas",
+      "cite": "the chain of cultivated speakers never broke"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "identity",
+      "a": "vyakarana_smrti",
+      "b": "sruti",
+      "cite": "not a sruti"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "visaya",
+        "from": "vyakarana_smrti",
+        "to": "sadhutva_jnana",
+        "cite": "whose object is the knowledge of correctness"
+      },
+      {
+        "kind": "relation",
+        "name": "nibandhana",
+        "from": "vyakarana_smrti",
+        "to": "sistas",
+        "cite": "grounded in the unbroken remembrance of the cultivated"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "meaning_conflation",
+      "rendering": "The grammatical tradition studies the meaning conveyed by correct forms.",
+      "why": "The verse specifies the object is knowledge of correctness (sadhutva-jnana), not meaning. The commentary emphasizes that corrupt forms convey meaning equally (1.27), so meaning cannot be what uniquely defines grammar. This misinterprets the visaya (object/domain) of the tradition.",
+      "entities": [
+        {
+          "id": "artha_jnana",
+          "name": "arthajñāna",
+          "sort": "cognition"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "visaya",
+          "from": "vyakarana_smrti",
+          "to": "artha_jnana"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "sruti_confusion",
+      "rendering": "Grammar is a revealed tradition (sruti) directly communicated by the gods.",
+      "why": "The commentary explicitly distinguishes grammar as a smrti (remembrance-tradition) from sruti (revealed tradition). Grammar is derivative of the Veda through secondary markers (lingas), not revealed directly. This reverses the established classification of grammar's epistemic status.",
+      "entities": [
+        {
+          "id": "sruti",
+          "name": "śruti",
+          "sort": "linguisticItem"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "identity",
+          "a": "vyakarana_smrti",
+          "b": "sruti"
+        }
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "The verse defines grammar (vyakarana-smrti) as a remembrance-tradition grounded in the unbroken continuity of cultivated speakers, whose domain is the knowledge of correctness. The contract encodes the three core relations: visaya (object), nibandhana (ground), and the identity with smrti. Sistas as power reflects their role as foundational epistemic authority in the commentary."
+}

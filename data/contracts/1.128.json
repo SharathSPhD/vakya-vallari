@@ -1,0 +1,167 @@
+{
+ "verse": "1.128",
+ "entities": [
+  {
+   "id": "vak",
+   "name": "vāk",
+   "sort": "manifestation",
+   "cite": "however it is set going by the utterance"
+  },
+  {
+   "id": "artha",
+   "name": "artha",
+   "sort": "manifestation",
+   "cite": "for it is by utterance that the object is determined"
+  },
+  {
+   "id": "rudhi",
+   "name": "rudhi",
+   "sort": "power",
+   "cite": "just so does it become established"
+  },
+  {
+   "id": "matra",
+   "name": "mātrā",
+   "sort": "property",
+   "cite": "Whether as its own measure or as the measure of another"
+  },
+  {
+   "id": "svamatra",
+   "name": "sva-mātrā",
+   "sort": "property",
+   "cite": "as its own measure"
+  },
+  {
+   "id": "paramatra",
+   "name": "para-mātrā",
+   "sort": "property",
+   "cite": "as the measure of another"
+  },
+  {
+   "id": "vikara",
+   "name": "vikarā",
+   "sort": "property",
+   "cite": "the contour settles along the lines speech first draws"
+  }
+ ],
+ "axioms": [
+  {
+   "kind": "relation",
+   "name": "prakramyate",
+   "from": "vak",
+   "to": "artha",
+   "cite": "set going, by the utterance"
+  },
+  {
+   "kind": "predication",
+   "name": "rudhatameti",
+   "of": "artha",
+   "cite": "attains rudhi, established currency"
+  },
+  {
+   "kind": "relation",
+   "name": "vidhiyate",
+   "from": "vak",
+   "to": "artha",
+   "cite": "for the object is *ordained* by utterance"
+  },
+  {
+   "kind": "predication",
+   "name": "characterizes",
+   "of": "matra",
+   "cite": "the contour settles along the lines speech first draws, and repeated saying is what fixes it"
+  }
+ ],
+ "denials": [
+  {
+   "kind": "predication",
+   "name": "nitya_akara",
+   "of": "artha",
+   "cite": "Objects do not first possess determinate contours which speech then reports"
+  },
+  {
+   "kind": "relation",
+   "name": "paurvapya",
+   "from": "artha",
+   "to": "vak",
+   "cite": "the contour settles along the lines speech first draws"
+  }
+ ],
+ "accepted_reading": {
+  "claims": [
+   {
+    "kind": "relation",
+    "name": "prakramyate",
+    "from": "vak",
+    "to": "artha",
+    "cite": "set going by the utterance"
+   },
+   {
+    "kind": "predication",
+    "name": "rudhatameti",
+    "of": "artha",
+    "cite": "just so does it become established"
+   },
+   {
+    "kind": "relation",
+    "name": "vidhiyate",
+    "from": "vak",
+    "to": "artha",
+    "cite": "by utterance that the object is determined"
+   }
+  ]
+ },
+ "rejected_readings": [
+  {
+   "label": "object_preexistence",
+   "rendering": "Objects possess determinate contours before being reported by speech, which merely describes existing objective realities.",
+   "why": "Directly contradicts the commentary's explicit statement that objects do not pre-exist with determinate form; speech does not report pre-existing contours but creates them through utterance.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "predication",
+     "name": "nitya_akara",
+     "of": "artha"
+    }
+   ],
+   "expect": "contradicted"
+  },
+  {
+   "label": "speech_as_passive",
+   "rendering": "The utterance merely reflects or passively conveys objects that are independently established through other means.",
+   "why": "Treats vak as a passive mirror rather than the active determinant (vidhiyate) that the verse emphasizes. The verb vidhiyate is explicitly described as 'strong and chosen: the verb of injunction and ordination', making speech the generative principle, not a passive report.",
+   "entities": [
+    {
+     "id": "vak_passive",
+     "name": "vāk",
+     "sort": "property"
+    }
+   ],
+   "claims": [
+    {
+     "kind": "relation",
+     "name": "paurvapya",
+     "from": "artha",
+     "to": "vak"
+    }
+   ],
+   "expect": "contradicted"
+  },
+  {
+   "label": "measure_determines_essence",
+   "rendering": "The object's essence is determined by whether the utterance uses its own measure or another's measure; different measures yield different objects.",
+   "why": "The verse explicitly uses a disjunctive (vā) to show that measure (own or another's) does not matter to the establishment: 'Whether as its own measure or as the measure of another... just so does it become established.' The establishment (rudhi) follows regardless of which measure is adopted.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "relation",
+     "name": "samadhibheda",
+     "from": "matra",
+     "to": "artha"
+    }
+   ],
+   "expect": "unlicensed"
+  }
+ ],
+ "notes": "The verse captures the mechanism of word-dependence: speech does not describe pre-existing objects but launches and determines them, with their contours settling along the lines speech draws. The apparent tension between 'own/another's measure' and 'just so becomes established' is resolved by the disjunctive: the measure is indifferent to the establishment process, which depends solely on utterance. Contested reading (sva-matra/para-matra as phonological vs. semantic adaptation) does not affect the core claim that utterance determines object-form."
+}

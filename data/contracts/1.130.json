@@ -1,0 +1,156 @@
+{
+ "verse": "1.130",
+ "entities": [
+  {
+   "id": "sabda",
+   "name": "śabda",
+   "sort": "absolute",
+   "cite": "the word standing within the speaker's self"
+  },
+  {
+   "id": "brahman",
+   "name": "brahman",
+   "sort": "absolute",
+   "cite": "language at its own root, which by 1.1 *is* the ultimate"
+  },
+  {
+   "id": "sabdantar",
+   "name": "śabdāntar",
+   "sort": "manifestation",
+   "cite": "the word stationed *within the speaker's self*: not the audible fourth part but the inner totality of speech"
+  },
+  {
+   "id": "atman",
+   "name": "ātman",
+   "sort": "absolute",
+   "cite": "standing within the speaker's self"
+  },
+  {
+   "id": "maharsabha",
+   "name": "mahāṛṣabha",
+   "sort": "property",
+   "cite": "the 'great bull' is the mahan rsabha of the old texts"
+  },
+  {
+   "id": "sayujya",
+   "name": "sāyujya",
+   "sort": "power",
+   "cite": "union, the technical term of Vedic soteriology (con-yoking, being joined-with), is what is sought"
+  },
+  {
+   "id": "audita",
+   "name": "audita",
+   "sort": "property",
+   "cite": "the audible fourth part"
+  }
+ ],
+ "axioms": [
+  {
+   "kind": "identity",
+   "a": "sabda",
+   "b": "brahman",
+   "cite": "language at its own root, which by 1.1 *is* the ultimate"
+  },
+  {
+   "kind": "relation",
+   "name": "vivartate",
+   "from": "sabda",
+   "to": "sabdantar",
+   "cite": "the inner totality of speech"
+  },
+  {
+   "kind": "relation",
+   "name": "asraya",
+   "from": "atman",
+   "to": "sabdantar",
+   "cite": "the word stationed *within the speaker's self*"
+  },
+  {
+   "kind": "predication",
+   "name": "maharsabha",
+   "of": "sabdantar",
+   "cite": "The 'great bull' is the mahan rsabha of the old texts"
+  },
+  {
+   "kind": "predication",
+   "name": "isyate",
+   "of": "sayujya",
+   "cite": "union, the technical term of Vedic soteriology (con-yoking, being joined-with), is what is sought"
+  }
+ ],
+ "denials": [
+  {
+   "kind": "identity",
+   "a": "sabdantar",
+   "b": "audita",
+   "cite": "not the audible fourth part but the inner totality of speech"
+  }
+ ],
+ "accepted_reading": {
+  "claims": [
+   {
+    "kind": "relation",
+    "name": "asraya",
+    "from": "atman",
+    "to": "sabdantar",
+    "cite": "the word standing within the speaker's self"
+   },
+   {
+    "kind": "predication",
+    "name": "maharsabha",
+    "of": "sabdantar",
+    "cite": "the great bull"
+   },
+   {
+    "kind": "predication",
+    "name": "isyate",
+    "of": "sayujya",
+    "cite": "union with which is what is sought"
+   }
+  ]
+ },
+ "rejected_readings": [
+  {
+   "label": "audible_word_confusion",
+   "rendering": "The audible fourth part of speech standing within the speaker is declared to be the great bull.",
+   "why": "The commentary explicitly contrasts the inner word (sabdantar) with the audible fourth part: 'not the audible fourth part but the inner totality of speech'. This reading violates that essential ontological distinction and confuses two different levels of the word.",
+   "entities": [
+    {
+     "id": "audita",
+     "name": "audita",
+     "sort": "property"
+    }
+   ],
+   "claims": [
+    {
+     "kind": "identity",
+     "a": "sabdantar",
+     "b": "audita"
+    }
+   ],
+   "expect": "contradicted"
+  },
+  {
+   "label": "external_deity_goal",
+   "rendering": "Union with an external deity is what is sought.",
+   "why": "The commentary states the goal is 'union with language at its own root', not with a transcendent deity outside language. This reading misplaces the soteriological object and misunderstands the non-dualistic character of the soteriology.",
+   "entities": [
+    {
+     "id": "devata",
+     "name": "devatā",
+     "sort": "absolute"
+    }
+   ],
+   "claims": [
+    {
+     "kind": "relation",
+     "name": "sayujya_with",
+     "from": "sayujya",
+     "to": "devata"
+    }
+   ],
+   "expect": "unlicensed"
+  }
+ ],
+ "notes": "The verse inaugurates the soteriology, locating the ultimate goal within language itself via the inner word (sabdantar). This grounds the system's later claim that grammar is the path to liberation (dvaram apavargasya, 1.14). Entities map to six sorts naturally: sabda and brahman are absolute; sabdantar is manifestation; atman and sayujya are powers; maharsabha is appellative property."
+}

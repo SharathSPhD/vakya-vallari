@@ -1,0 +1,151 @@
+{
+  "verse": "1.135",
+  "entities": [
+    {
+      "id": "tarka",
+      "name": "tarka",
+      "sort": "power",
+      "cite": "reasoning that keeps concord with Veda and sastra, is caksur apasyatam — an *eye for the sightless*"
+    },
+    {
+      "id": "veda",
+      "name": "veda",
+      "sort": "linguisticItem",
+      "cite": "veda-sastra-avirodhi tarkah, reasoning that keeps concord with Veda and sastra"
+    },
+    {
+      "id": "sastra",
+      "name": "sastra",
+      "sort": "linguisticItem",
+      "cite": "veda-sastra-avirodhi tarkah, reasoning that keeps concord with Veda and sastra"
+    },
+    {
+      "id": "vakyartha",
+      "name": "vākyārtha",
+      "sort": "linguisticItem",
+      "cite": "vakyarthah na avatisthate — the meaning of a sentence does not settle"
+    },
+    {
+      "id": "rupa",
+      "name": "rūpa",
+      "sort": "property",
+      "cite": "from the bare form alone, vakyarthah na avatisthate — the meaning of a sentence does not settle"
+    },
+    {
+      "id": "vivitti",
+      "name": "vivitti",
+      "sort": "power",
+      "cite": "demands construal, and construal is reasoning's proper province"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "avirodhi",
+      "of": "tarka",
+      "cite": "veda-sastra-avirodhi tarkah, reasoning that keeps concord with Veda and sastra"
+    },
+    {
+      "kind": "predication",
+      "name": "caksur",
+      "of": "tarka",
+      "cite": "is caksur apasyatam — an *eye for the sightless*"
+    },
+    {
+      "kind": "predication",
+      "name": "na_avatisthate",
+      "of": "vakyartha",
+      "cite": "vakyarthah na avatisthate — the meaning of a sentence does not settle"
+    },
+    {
+      "kind": "relation",
+      "name": "apeksha",
+      "from": "vakyartha",
+      "to": "vivitti",
+      "cite": "from the bare form alone, vakyarthah na avatisthate — the meaning of a sentence does not settle"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "nimitta",
+      "from": "rupa",
+      "to": "vakyartha",
+      "cite": "from the bare form alone, vakyarthah na avatisthate"
+    },
+    {
+      "kind": "predication",
+      "name": "asraya",
+      "of": "tarka",
+      "cite": "tarka is blind as a foundation"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "avirodhi",
+        "of": "tarka",
+        "cite": "reasoning that does not conflict with Veda and sastra"
+      },
+      {
+        "kind": "predication",
+        "name": "caksur",
+        "of": "tarka",
+        "cite": "is an eye for those who do not see"
+      },
+      {
+        "kind": "predication",
+        "name": "na_avatisthate",
+        "of": "vakyartha",
+        "cite": "the meaning of a sentence does not stand settled"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "tarka_autonomous",
+      "rendering": "Reasoning alone, without reference to Veda and sastra, is sufficient to establish sentence-meaning.",
+      "why": "The verse explicitly conditions tarka's validity on non-conflict with Veda and sastra (vedaśāstrāvirodhī). This reading ignores the concord requirement, treating reasoning as self-sufficient, contrary to the commentary's insistence that it is an instrument, not a foundation.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "svatasiddha",
+          "of": "tarka"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "form_sufficient",
+      "rendering": "The bare form of words alone is sufficient to determine their meaning.",
+      "why": "This directly contradicts the verse's second half and the commentary's explicit statement that from the bare form alone (rūpamātrāddhi), meaning does not settle (na-avatiṣṭhate). The verse teaches that form requires construal, not standalone determination.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "nimitta",
+          "from": "rupa",
+          "to": "vakyartha"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "tarka_foundation",
+      "rendering": "Reasoning serves as the foundational pramana for establishing sentence-meaning.",
+      "why": "The commentary explicitly states that 'tarka is blind as a foundation', meaning it cannot stand alone as a pramana. The verse depicts reasoning as an eye (instrument) for the sightless, explicitly auxiliary, not foundational.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "asraya",
+          "of": "tarka"
+        }
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "Verse 1.135 closes the Brahmakanda's epistemological ledger by licensing tarka instrumentally (eye, construal-faculty) within Vedic tradition, barring it both from foundational status and autonomous authority. The thesis that vakyartha exceeds rupa anticipates kanda 2, where sentence-meaning is undivided pratibha only occasioned (not determined) by parsed form. Concord with tradition is the 'frame' that makes reasoning's 'glass' operative."
+}

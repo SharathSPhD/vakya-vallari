@@ -1,0 +1,96 @@
+{
+  "verse": "1.143",
+  "entities": [
+    {
+      "id": "param_padam",
+      "name": "param padam",
+      "sort": "absolute",
+      "cite": "the supreme word-station of 1.142"
+    },
+    {
+      "id": "sabda_saktayah",
+      "name": "śabda-śaktayaḥ",
+      "sort": "power",
+      "cite": "the powers of words — the whole system of them, from mantra-efficacy (1.138) to world-binding (1.118)"
+    },
+    {
+      "id": "svabhava_jna",
+      "name": "svabhāva-jña",
+      "sort": "cognition",
+      "cite": "those who know the nature of things"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "avasthita",
+      "of": "param_padam",
+      "cite": "the param padam is unmoved through the entire cycle of speech's emanation and return"
+    },
+    {
+      "kind": "predication",
+      "name": "drsyante",
+      "of": "sabda_saktayah",
+      "cite": "drsyante svabhava-jnaih bhavanam: are *seen* by knowers of the natures of things"
+    },
+    {
+      "kind": "predication",
+      "name": "saksad_drsya",
+      "of": "sabda_saktayah",
+      "cite": "the deep powers of speech are not inferred from usage but beheld by those whose cognition has climbed the very gradient 1.142 mapped"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "parinamate",
+      "of": "param_padam",
+      "cite": "avasthitam: stands, unaltered"
+    },
+    {
+      "kind": "predication",
+      "name": "anumita",
+      "of": "sabda_saktayah",
+      "cite": "the deep powers of speech are not inferred from usage"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "avasthita",
+        "of": "param_padam",
+        "cite": "remains established"
+      },
+      {
+        "kind": "predication",
+        "name": "drsyante",
+        "of": "sabda_saktayah",
+        "cite": "the powers of words are seen by those who know the nature of things"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "real_transformation",
+      "rendering": "As the supreme word-station manifests through utterance and returns to unity, it undergoes real change in substance.",
+      "why": "Asserts parinamate (real transformation of substance), which the axiom and commentary explicitly deny. The param padam stands unaltered; the commentary invokes vivarta (appearance without loss of unity) precisely to rule out parinama. The hierarchy doctrine of 1.75-77 and 1.101 is lifted to the summit to demonstrate invariance through the entire emanation-return cycle.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "parinamate", "of": "param_padam"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "inferential_access",
+      "rendering": "The powers of words are discovered by scholars through careful analysis of linguistic patterns and inference.",
+      "why": "The commentary explicitly denies this: powers are directly seen/beheld (drsyante), not inferred from usage. This is vision-knowledge (rsi's mode), not inference. The rendering mistakes the epistemology: powers are not derived conclusions but immediate vision, visible only to those whose cognition has reached the level where they operate.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "anumita", "of": "sabda_saktayah"}
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "The verse pairs ontological invariance (param padam unmoved through emanation-return) with epistemological immediacy (word-powers directly visible to the knower of natures). The three entities suffice: param padam as the absolute summit, sabda-saktayah as the operative powers, svabhava-jna as the cognition that beholds them. No strain in the six sorts. Contested: the referent of 'tat' and whether kriyamanam describes the param padam's emanation or smrti-work (analysis-synthesis)—the contract follows the commentary's dominant reading of param padam as the fixed summit persisting through all levels."
+}

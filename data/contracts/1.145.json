@@ -1,0 +1,204 @@
+{
+  "verse": "1.145",
+  "entities": [
+    {
+      "id": "avibhaga",
+      "name": "avibhāga",
+      "sort": "absolute",
+      "cite": "unrolled out of the undivided"
+    },
+    {
+      "id": "bhava",
+      "name": "bhava",
+      "sort": "manifestation",
+      "cite": "The bhavas, things, are vivrtta avibhagat"
+    },
+    {
+      "id": "sruti",
+      "name": "śruti",
+      "sort": "linguisticItem",
+      "cite": "the naming in sruti is as in a dream"
+    },
+    {
+      "id": "abhikhya",
+      "name": "abhikhyā",
+      "sort": "property",
+      "cite": "Their abhikhya, their naming-and-appearing in sruti"
+    },
+    {
+      "id": "svapna_sakti",
+      "name": "svapna-śakti",
+      "sort": "power",
+      "cite": "dream-presentation is immediate, involuntary, whole"
+    },
+    {
+      "id": "bhava_tattva",
+      "name": "bhava-tattvam",
+      "sort": "cognition",
+      "cite": "having *understood* the reality"
+    },
+    {
+      "id": "linga",
+      "name": "liṅga",
+      "sort": "property",
+      "cite": "framed from the indicatory marks"
+    },
+    {
+      "id": "smrti",
+      "name": "smṛti",
+      "sort": "linguisticItem",
+      "cite": "smrti, however, is framed from the indicatory marks"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "vivartate",
+      "from": "avibhaga",
+      "to": "bhava",
+      "cite": "The bhavas, things, are vivrtta avibhagat — unrolled out of the undivided"
+    },
+    {
+      "kind": "predication",
+      "name": "abhikhya",
+      "of": "bhava",
+      "cite": "Their abhikhya, their naming-and-appearing in sruti, is svapnavat: *as in a dream*"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "abhikhya",
+      "to": "svapna_sakti",
+      "cite": "Their abhikhya, their naming-and-appearing in sruti, is svapnavat: *as in a dream*"
+    },
+    {
+      "kind": "predication",
+      "name": "immediate",
+      "of": "sruti",
+      "cite": "dream-presentation is immediate, involuntary, whole — the dreamer does not compose the dream but undergoes its self-showing; so the rsi does not construct the Veda but receives"
+    },
+    {
+      "kind": "relation",
+      "name": "vihita",
+      "from": "linga",
+      "to": "smrti",
+      "cite": "Smrti by contrast is work: bhava-tattvam vijnaya, having *understood* the reality, lingebhyah vihita — framed from marks, inferentially, deliberately (1.7 verbatim). Revelation is thus dream-like showing; tradition-literature is waking construction upon it"
+    },
+    {
+      "kind": "relation",
+      "name": "requires",
+      "from": "smrti",
+      "to": "bhava_tattva",
+      "cite": "bhava-tattvam vijnaya, having *understood* the reality, lingebhyah vihita — framed from marks"
+    },
+    {
+      "kind": "predication",
+      "name": "deliberate",
+      "of": "smrti",
+      "cite": "Smrti by contrast is work: bhava-tattvam vijnaya, having *understood* the reality, lingebhyah vihita — framed from marks, inferentially, deliberately (1.7 verbatim)"
+    },
+    {
+      "kind": "predication",
+      "name": "unconstructed",
+      "of": "sruti",
+      "cite": "The pairing dignifies both: sruti's authority is its unconstructedness, smrti's is its method"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "false_knowledge",
+      "of": "sruti",
+      "cite": "The comparison is precise, not deflationary: dream-presentation is immediate, involuntary, whole"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "vivartate",
+        "from": "avibhaga",
+        "to": "bhava",
+        "cite": "Of the things unrolled out of the undivided"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "abhikhya",
+        "to": "svapna_sakti",
+        "cite": "the naming in sruti is as in a dream"
+      },
+      {
+        "kind": "predication",
+        "name": "immediate",
+        "of": "sruti",
+        "cite": "the naming in sruti is as in a dream"
+      },
+      {
+        "kind": "relation",
+        "name": "vihita",
+        "from": "linga",
+        "to": "smrti",
+        "cite": "is framed from the indicatory marks"
+      },
+      {
+        "kind": "predication",
+        "name": "deliberate",
+        "of": "smrti",
+        "cite": "after knowing the reality of things"
+      },
+      {
+        "kind": "relation",
+        "name": "requires",
+        "from": "smrti",
+        "to": "bhava_tattva",
+        "cite": "after knowing the reality of things"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "dream_illusionism",
+      "rendering": "Since sruti presents things in a dream-like manner, sruti's teachings are illusory and lack true authority.",
+      "why": "Misreads svapnavat (dream-like mode of presentation) as implying the non-reality of what is presented, when the commentary explicitly dignifies the immediacy and unconstructedness of sruti's showing. The denial of false_knowledge on sruti blocks this reading.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "false_knowledge",
+          "of": "sruti"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "smrti_superiority",
+      "rendering": "Smrti, being constructed through understanding and inference, is more reliable and authoritative than the dream-like presentation of sruti.",
+      "why": "Flattens the verse's careful distinction into a hierarchy; the verse dignifies both modes — sruti's authority lies in its unconstructedness and immediacy, smrti's in its method. The verse says both are necessary, not that one grades the other.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "primary_authority",
+          "of": "smrti"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "constructed_sruti",
+      "rendering": "Sruti, like smrti, is a deliberate construction from marks and inferences about reality.",
+      "why": "Erases the fundamental distinction the verse establishes: sruti is immediate and unconstructed, while smrti is deliberate and inferential. This sort error (treating sruti as deliberate when it is predicated as immediate) makes the entire epistemological framework collapse.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "deliberate",
+          "of": "sruti"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse establishes two epistemological modes: sruti's dream-like showing (immediate, whole, received) and smrti's deliberate construction (understood, marked, inferred). The challenge is that 'dream-like' (svapnavat) could be read either as (1) characterizing the phenomenology of reception (the commentary's reading), or (2) implying illusory content (the contested reading). The contract follows the commentary's disambiguation, preserving svapna-sakti as a power of presentation, not truth-negation. The sort assignments treat bhava-tattva as cognition (the act of understanding) rather than as a manifestation or absolute, capturing its epistemological function in the sanskrit-epistemic framework."
+}

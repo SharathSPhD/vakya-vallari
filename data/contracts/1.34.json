@@ -1,120 +1,120 @@
 {
-  "verse": "1.34",
-  "entities": [
-    {
-      "id": "artha",
-      "name": "artha",
-      "sort": "linguisticItem",
-      "cite": "Even a matter inferred with great effort"
-    },
-    {
-      "id": "anumana",
-      "name": "anumana",
-      "sort": "power",
-      "cite": "inference is unreliable because of something about inference itself"
-    },
-    {
-      "id": "anumiti",
-      "name": "anumiti",
-      "sort": "cognition",
-      "cite": "a matter inferred with great effort by skilled reasoners"
-    },
-    {
-      "id": "satya",
-      "name": "satya",
-      "sort": "property",
-      "cite": "the mere carefulness of an inference is no guarantee of its truth"
-    }
-  ],
-  "axioms": [
-    {
-      "kind": "predication",
-      "name": "aniyata",
-      "of": "anumana",
-      "cite": "careful inferences are routinely reversed by more careful ones"
-    },
-    {
-      "kind": "relation",
-      "name": "apavada",
-      "from": "anumana",
-      "to": "anumiti",
-      "cite": "overturn the result and demonstrate the opposite"
-    },
-    {
-      "kind": "predication",
-      "name": "no_terminal_expertise",
-      "of": "anumana",
-      "cite": "there is no level of expertise at which the regress terminates"
-    }
-  ],
-  "denials": [
-    {
-      "kind": "relation",
-      "name": "pramana",
-      "from": "anumana",
-      "to": "satya",
-      "cite": "the mere carefulness of an inference is no guarantee of its truth"
-    }
-  ],
-  "accepted_reading": {
-    "claims": [
-      {
-        "kind": "predication",
-        "name": "aniyata",
-        "of": "anumana",
-        "cite": "established quite otherwise by others of still greater skill"
-      },
-      {
-        "kind": "relation",
-        "name": "apavada",
-        "from": "anumana",
-        "to": "anumiti",
-        "cite": "is established quite otherwise by others"
-      },
-      {
-        "kind": "predication",
-        "name": "no_terminal_expertise",
-        "of": "anumana",
-        "cite": "of still greater skill"
-      }
-    ]
+ "verse": "1.34",
+ "entities": [
+  {
+   "id": "artha",
+   "name": "artha",
+   "sort": "linguisticItem",
+   "cite": "Even a matter inferred with great effort"
   },
-  "rejected_readings": [
+  {
+   "id": "anumana",
+   "name": "anumāna",
+   "sort": "power",
+   "cite": "inference is unreliable because of something about inference itself"
+  },
+  {
+   "id": "anumiti",
+   "name": "anumiti",
+   "sort": "cognition",
+   "cite": "a matter inferred with great effort by skilled reasoners"
+  },
+  {
+   "id": "satya",
+   "name": "satya",
+   "sort": "property",
+   "cite": "the mere carefulness of an inference is no guarantee of its truth"
+  }
+ ],
+ "axioms": [
+  {
+   "kind": "predication",
+   "name": "aniyata",
+   "of": "anumana",
+   "cite": "careful inferences are routinely reversed by more careful ones"
+  },
+  {
+   "kind": "relation",
+   "name": "apavada",
+   "from": "anumana",
+   "to": "anumiti",
+   "cite": "overturn the result and demonstrate the opposite"
+  },
+  {
+   "kind": "predication",
+   "name": "no_terminal_expertise",
+   "of": "anumana",
+   "cite": "there is no level of expertise at which the regress terminates"
+  }
+ ],
+ "denials": [
+  {
+   "kind": "relation",
+   "name": "pramana",
+   "from": "anumana",
+   "to": "satya",
+   "cite": "the mere carefulness of an inference is no guarantee of its truth"
+  }
+ ],
+ "accepted_reading": {
+  "claims": [
+   {
+    "kind": "predication",
+    "name": "aniyata",
+    "of": "anumana",
+    "cite": "established quite otherwise by others of still greater skill"
+   },
+   {
+    "kind": "relation",
+    "name": "apavada",
+    "from": "anumana",
+    "to": "anumiti",
+    "cite": "is established quite otherwise by others"
+   },
+   {
+    "kind": "predication",
+    "name": "no_terminal_expertise",
+    "of": "anumana",
+    "cite": "of still greater skill"
+   }
+  ]
+ },
+ "rejected_readings": [
+  {
+   "label": "expertise_guarantees_truth",
+   "rendering": "Greater expertise in reasoning produces reliable, stable conclusions about matters.",
+   "why": "Claims that increased expertise guarantees reliability, contradicting the denial that anumana is a pramana of satya. The verse shows that greater expertise produces contrary conclusions, not convergence.",
+   "entities": [],
+   "claims": [
     {
-      "label": "expertise_guarantees_truth",
-      "rendering": "Greater expertise in reasoning produces reliable, stable conclusions about matters.",
-      "why": "Claims that increased expertise guarantees reliability, contradicting the denial that anumana is a pramana of satya. The verse shows that greater expertise produces contrary conclusions, not convergence.",
-      "entities": [],
-      "claims": [
-        {
-          "kind": "relation",
-          "name": "pramana",
-          "from": "anumana",
-          "to": "satya"
-        }
-      ],
-      "expect": "contradicted"
-    },
-    {
-      "label": "inference_completely_invalid",
-      "rendering": "Because inference is unreliable and subject to reversal, it has no epistemic validity whatsoever and should be abandoned entirely.",
-      "why": "Over-interprets fallibilism into complete invalidity. The verse shows anumana is aniyata (undetermined by expertise), not that it is invalid or avidya. The point is regress without terminal guarantee, not total rejection of inference.",
-      "entities": [
-        {
-          "id": "avidya",
-          "name": "avidya",
-          "sort": "power"
-        }
-      ],
-      "claims": [
-        {
-          "kind": "identity",
-          "a": "anumana",
-          "b": "avidya"
-        }
-      ],
-      "expect": "unlicensed"
+     "kind": "relation",
+     "name": "pramana",
+     "from": "anumana",
+     "to": "satya"
     }
-  ],
-  "notes": "The verse presents epistemic fallibilism through regress: even maximally careful inference (kusala anumatr, yatnena) can be overturned by more expert reasoners (abhiyuktatara). This denies that any level of expertise terminates the possibility of reversal. The ontology captures inference (anumana) as an epistemic power, its result (anumiti) as a cognition, and its object (artha) as semantic content to be inferred."
+   ],
+   "expect": "contradicted"
+  },
+  {
+   "label": "inference_completely_invalid",
+   "rendering": "Because inference is unreliable and subject to reversal, it has no epistemic validity whatsoever and should be abandoned entirely.",
+   "why": "Over-interprets fallibilism into complete invalidity. The verse shows anumana is aniyata (undetermined by expertise), not that it is invalid or avidya. The point is regress without terminal guarantee, not total rejection of inference.",
+   "entities": [
+    {
+     "id": "avidya",
+     "name": "avidya",
+     "sort": "power"
+    }
+   ],
+   "claims": [
+    {
+     "kind": "identity",
+     "a": "anumana",
+     "b": "avidya"
+    }
+   ],
+   "expect": "unlicensed"
+  }
+ ],
+ "notes": "The verse presents epistemic fallibilism through regress: even maximally careful inference (kusala anumatr, yatnena) can be overturned by more expert reasoners (abhiyuktatara). This denies that any level of expertise terminates the possibility of reversal. The ontology captures inference (anumana) as an epistemic power, its result (anumiti) as a cognition, and its object (artha) as semantic content to be inferred."
 }

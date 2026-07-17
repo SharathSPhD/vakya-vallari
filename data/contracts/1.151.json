@@ -1,0 +1,131 @@
+{
+ "verse": "1.151",
+ "entities": [
+  {
+   "id": "bala",
+   "name": "bāla",
+   "sort": "cognition",
+   "cite": "The infant calls amba amba"
+  },
+  {
+   "id": "avyakta",
+   "name": "avyaktaṃ",
+   "sort": "linguisticItem",
+   "cite": "avyaktam, indistinctly: the form is blurred, half-made"
+  },
+  {
+   "id": "vyakta",
+   "name": "vyakte",
+   "sort": "linguisticItem",
+   "cite": "at the vyakta, not at the noise"
+  },
+  {
+   "id": "amba",
+   "name": "amba",
+   "sort": "linguisticItem",
+   "cite": "The infant calls amba amba — 'mama'"
+  },
+  {
+   "id": "tad_vida",
+   "name": "tad-vidām",
+   "sort": "property",
+   "cite": "tad-vidam, for those who know — the mother, the household"
+  },
+  {
+   "id": "niscaya",
+   "name": "niścayaḥ",
+   "sort": "cognition",
+   "cite": "certainty arises *about the distinct form*"
+  },
+  {
+   "id": "mediation",
+   "name": "antarala",
+   "sort": "property",
+   "cite": "the mediation is undisguised"
+  }
+ ],
+ "axioms": [
+  {
+   "kind": "predication",
+   "name": "utter_indistinctly",
+   "of": "bala",
+   "cite": "The infant calls amba amba — 'mama' — avyaktam, indistinctly: the form is blurred, half-made"
+  },
+  {
+   "kind": "relation",
+   "name": "mediated_inference",
+   "from": "avyakta",
+   "to": "vyakta",
+   "cite": "everyone hears *through* them to amba — inference (1.149) with its workings still visible"
+  },
+  {
+   "kind": "predication",
+   "name": "niscaya_arising",
+   "of": "niscaya",
+   "cite": "niscayah bhavati vyakte: certainty arises *about the distinct form*; the hearers pass through the blur to the word the child is reaching for, and understanding happens there, at the vyakta, not at the noise"
+  },
+  {
+   "kind": "relation",
+   "name": "knower_cognition",
+   "from": "tad_vida",
+   "to": "vyakta",
+   "cite": "tad-vidam, for those who know — the mother, the household — niscayah bhavati vyakte: certainty arises *about the distinct form*"
+  }
+ ],
+ "denials": [
+  {
+   "kind": "predication",
+   "name": "direct_signification",
+   "of": "avyakta",
+   "cite": "no one thinks the infant's syllables signify in their own right"
+  }
+ ],
+ "accepted_reading": {
+  "claims": [
+   {
+    "kind": "predication",
+    "name": "utter_indistinctly",
+    "of": "bala",
+    "cite": "a child learning to speak utters 'amba, amba' indistinctly"
+   },
+   {
+    "kind": "relation",
+    "name": "mediated_inference",
+    "from": "avyakta",
+    "to": "vyakta",
+    "cite": "by it those who know become certain about the distinct form"
+   }
+  ]
+ },
+ "rejected_readings": [
+  {
+   "label": "direct_signification_error",
+   "rendering": "The child's indistinct utterance directly and independently signifies the distinct form, without requiring the hearer's inference.",
+   "why": "Violates the commentary's explicit teaching that 'no one thinks the infant's syllables signify in their own right'. The mediation through inference is constitutive, not incidental. Confusing it treats the avyakta as an autonomous signifier rather than a gateway.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "predication",
+     "name": "direct_signification",
+     "of": "avyakta"
+    }
+   ],
+   "expect": "contradicted"
+  },
+  {
+   "label": "certainty_at_utterance",
+   "rendering": "The hearers become certain about the indistinct utterance itself, as if the blurred syllables were the target of knowledge.",
+   "why": "The commentary insists 'certainty arises *about the distinct form*; the hearers pass through the blur to the word the child is reaching for, and understanding happens there, at the vyakta, not at the noise.' Placing certainty at the avyakta inverts the epistemic structure.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "predication",
+     "name": "niscaya_about_utterance",
+     "of": "avyakta"
+    }
+   ],
+   "expect": "unlicensed"
+  }
+ ],
+ "notes": "Formalization captures the bridge role of the indistinct utterance in inference: avyakta is not itself a signifier but a mediated gateway (tad-vida → niscaya) to the distinct form (vyakta). The verse's purpose is to exhibit inference with its workings visible before habit conceals them. Four axioms anchor the ontology: the utterance event, the mediation relation, the target certainty, and the knower's role. Two rejections block the sort errors (treating avyakta as a direct signifier or as the target of knowledge) that would collapse the mediation."
+}

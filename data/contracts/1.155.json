@@ -1,0 +1,137 @@
+{
+ "verse": "1.155",
+ "entities": [
+  {
+   "id": "sabda",
+   "name": "śabda",
+   "sort": "linguisticItem",
+   "cite": "when a word is employed with the intention of another word"
+  },
+  {
+   "id": "vivaksa",
+   "name": "vivakṣā",
+   "sort": "cognition",
+   "cite": "the speaker's vivaksa actually deploys"
+  },
+  {
+   "id": "artha",
+   "name": "artha",
+   "sort": "absolute",
+   "cite": "that uttered word is not the expressor of meaning"
+  },
+  {
+   "id": "aviccheda",
+   "name": "aviccheda",
+   "sort": "property",
+   "cite": "both lines, sadhu and apabhramsa, sista-transmission and vernacular transmission, are *unbroken*"
+  }
+ ],
+ "axioms": [
+  {
+   "kind": "predication",
+   "name": "aviccheda",
+   "of": "sabda",
+   "cite": "both lines, sadhu and apabhramsa, sista-transmission and vernacular transmission, are *unbroken*"
+  },
+  {
+   "kind": "relation",
+   "name": "niyantrita",
+   "from": "sabda",
+   "to": "vivaksa",
+   "cite": "the speaker's vivaksa actually deploys"
+  },
+  {
+   "kind": "relation",
+   "name": "na_abhidhayaka",
+   "from": "sabda",
+   "to": "artha",
+   "cite": "that uttered word is not the expressor; the intended word is, through it"
+  }
+ ],
+ "denials": [
+  {
+   "kind": "relation",
+   "name": "abhidhayati",
+   "from": "sabda",
+   "to": "artha",
+   "cite": "that uttered word is not the expressor"
+  }
+ ],
+ "accepted_reading": {
+  "claims": [
+   {
+    "kind": "relation",
+    "name": "niyantrita",
+    "from": "sabda",
+    "to": "vivaksa",
+    "cite": "when a word is employed with the intention of another word"
+   },
+   {
+    "kind": "relation",
+    "name": "na_abhidhayaka",
+    "from": "sabda",
+    "to": "artha",
+    "cite": "that word is not the expressor of the meaning"
+   },
+   {
+    "kind": "predication",
+    "name": "aviccheda",
+    "of": "sabda",
+    "cite": "Because both streams are unbroken"
+   }
+  ]
+ },
+ "rejected_readings": [
+  {
+   "label": "employed_word_expresses",
+   "rendering": "When a word is employed with the intention of another word, that employed word expresses the meaning directly.",
+   "why": "Directly contradicts the verse's explicit claim that the employed word is not the expressor. Confuses the conduit (employed form) with the actual expressor (intended word governed by vivaksa).",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "relation",
+     "name": "abhidhayati",
+     "from": "sabda",
+     "to": "artha"
+    }
+   ],
+   "expect": "contradicted"
+  },
+  {
+   "label": "apabhramsa_only_scope",
+   "rendering": "Apabhramsa vernacular forms alone are not expressors of Sanskrit meanings; only Sanskrit forms express.",
+   "why": "Narrows the verse's universal principle (any word employed with intention of another) to a specific case, missing the verse's indifference to which stream is 'first' (gavi/gauh either direction). The commentary makes clear the doctrine applies equally whether sadhu reaches through apabhramsa or vice versa.",
+   "entities": [
+    {
+     "id": "apabhramsa",
+     "name": "apabhramśa",
+     "sort": "linguisticItem"
+    }
+   ],
+   "claims": [
+    {
+     "kind": "relation",
+     "name": "na_abhidhayaka",
+     "from": "apabhramsa",
+     "to": "artha"
+    }
+   ],
+   "expect": "unlicensed"
+  },
+  {
+   "label": "vivaksa_irrelevant",
+   "rendering": "Both the employed word and the intended word equally express the meaning regardless of intention.",
+   "why": "Eliminates the role of vivaksa (intention) that the verse places at the center of the determination. The whole point is that expression is *determined by* which form the vivaksa deploys, not independent of it.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "predication",
+     "name": "aviccheda",
+     "of": "artha"
+    }
+   ],
+   "expect": "unlicensed"
+  }
+ ],
+ "notes": "The verse resolves the Brahmakanda's standoff (1.153–154) between two equally continuous transmission lines by introducing intention (vivaksa) as the criterion for expression. Contested: whether this generalizes beyond apabhramsa to all cases of one word reaching through another (citation, metalepsis, even dhvani-sphota); the kanda-closing position and the commentary's 'employment-through' locution favor the broad reading, encoding that here. Ontological strain: 'expressor' (abhidhayaka) is modeled as a relation rather than an independent entity, reflecting its dependency on vivaksa."
+}

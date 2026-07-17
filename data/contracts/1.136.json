@@ -1,0 +1,177 @@
+{
+  "verse": "1.136",
+  "entities": [
+    {
+      "id": "vivaksa",
+      "name": "vivakṣā",
+      "sort": "cognition",
+      "cite": "sato 'vivakṣā — a real feature of the situation may be *unintended*, present but not meant"
+    },
+    {
+      "id": "pararthya",
+      "name": "pārārthya",
+      "sort": "property",
+      "cite": "an element may stand wholly in service of another, its sense exhausted in subordination"
+    },
+    {
+      "id": "linga",
+      "name": "linga",
+      "sort": "linguisticItem",
+      "cite": "a meaning may be delivered only through its linga, its indicatory mark, never said outright"
+    },
+    {
+      "id": "artha",
+      "name": "artha",
+      "sort": "manifestation",
+      "cite": "a meaning may be delivered only through its linga"
+    },
+    {
+      "id": "tarka",
+      "name": "tarka",
+      "sort": "power",
+      "cite": "tarkena pravibhajyate, reasoning is what articulates and applies them"
+    },
+    {
+      "id": "nyaya",
+      "name": "nyāya",
+      "sort": "linguisticItem",
+      "cite": "Iti nyayo bahuvidhah: and such maxims are many"
+    },
+    {
+      "id": "form",
+      "name": "rūpa",
+      "sort": "linguisticItem",
+      "cite": "The verse is a window onto the actual exegetical culture; form alone cannot tell you what was not-intended, what is subordinate, what is marked-at"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "vivaksite",
+      "of": "vivaksa",
+      "cite": "a real feature of the situation may be *unintended*, present but not meant"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "pararthya",
+      "to": "nyaya",
+      "cite": "an element may stand wholly in service of another, its sense exhausted in subordination"
+    },
+    {
+      "kind": "relation",
+      "name": "vyanjaka",
+      "from": "linga",
+      "to": "artha",
+      "cite": "a meaning may be delivered only through its linga, its indicatory mark, never said outright"
+    },
+    {
+      "kind": "predication",
+      "name": "bahuvidha",
+      "of": "nyaya",
+      "cite": "Iti nyayo bahuvidhah: and such maxims are many"
+    },
+    {
+      "kind": "relation",
+      "name": "vibhajyate",
+      "from": "tarka",
+      "to": "nyaya",
+      "cite": "tarkena pravibhajyate, reasoning is what articulates and applies them"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "samarpita",
+      "from": "form",
+      "to": "artha",
+      "cite": "form alone cannot tell you what was not-intended, what is subordinate, what is marked-at — judgement must"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "vivaksite",
+        "of": "vivaksa",
+        "cite": "Non-intention of what is present"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "pararthya",
+        "to": "nyaya",
+        "cite": "subservience to another"
+      },
+      {
+        "kind": "relation",
+        "name": "vyanjaka",
+        "from": "linga",
+        "to": "artha",
+        "cite": "indication of a meaning through a mark"
+      },
+      {
+        "kind": "predication",
+        "name": "bahuvidha",
+        "of": "nyaya",
+        "cite": "such manifold interpretive principle"
+      },
+      {
+        "kind": "relation",
+        "name": "vibhajyate",
+        "from": "tarka",
+        "to": "nyaya",
+        "cite": "articulated by reasoning"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "form_complete_meaning",
+      "rendering": "Form alone exhaustively determines meaning through intention, subordination, and marking.",
+      "why": "Asserts that form can directly establish artha without judgment, contradicting the verse's core point that gap between form and meaning requires tarka (reasoning) to bridge it. Denies the necessity of interpretive principles.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "samarpita",
+          "from": "form",
+          "to": "artha"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "reversed_linga",
+      "rendering": "The meaning through its mark delivers an indicatory mark, reversing the relation.",
+      "why": "Reverses the direction: linga does not derive from artha but rather artha is only reached through linga. This inverts the foundational hermeneutical relation the verse establishes.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "vyanjaka",
+          "from": "artha",
+          "to": "linga"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "tarka_unnecessary",
+      "rendering": "The interpretive principles are self-evident and require no reasoning to apply.",
+      "why": "Denies that tarka (reasoning/judgment) articulates and applies the nyaya (maxims), contradicting the explicit statement that tarkena pravibhajyate — reasoning articulates them. Makes tarka superfluous.",
+      "entities": [
+        {"id": "vivaksa_selfevident", "name": "vivakṣā", "sort": "power"}
+      ],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "svatahpp",
+          "of": "vivaksa_selfevident"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse is compressed and technical; the three canons (vivakṣā, pārārthya, vyakti laiṅgikī) are exegetical jurisprudence from Mimamsa, and the contract encodes them as named hermeneutical principles. The key claim is that tarka (reasoning/judgment) is the instrument that bridges the gap between form and meaning by applying these canons."
+}

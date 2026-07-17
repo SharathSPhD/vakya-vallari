@@ -1,0 +1,162 @@
+{
+  "verse": "1.132",
+  "entities": [
+    {
+      "id": "veda",
+      "name": "veda",
+      "sort": "absolute",
+      "cite": "the triple Veda re-establishes itself"
+    },
+    {
+      "id": "agama",
+      "name": "agama",
+      "sort": "manifestation",
+      "cite": "every current of teaching"
+    },
+    {
+      "id": "kartr",
+      "name": "kartṛ",
+      "sort": "power",
+      "cite": "received as *someone's*"
+    },
+    {
+      "id": "bija",
+      "name": "bīja",
+      "sort": "power",
+      "cite": "a seed persists"
+    },
+    {
+      "id": "vyavastha",
+      "name": "vyavasthā",
+      "sort": "power",
+      "cite": "the vyavastha, the seed-order"
+    },
+    {
+      "id": "rshi",
+      "name": "rṣi",
+      "sort": "power",
+      "cite": "the rsis who *see* it"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "identity",
+      "a": "bija",
+      "b": "vyavastha",
+      "cite": "the vyavastha, the seed-order"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "agama",
+      "to": "kartr",
+      "cite": "every current of teaching is received as *someone's*"
+    },
+    {
+      "kind": "relation",
+      "name": "vivartate",
+      "from": "bija",
+      "to": "veda",
+      "cite": "from which the triple Veda re-establishes itself"
+    },
+    {
+      "kind": "relation",
+      "name": "drś",
+      "from": "rshi",
+      "to": "veda",
+      "cite": "the rsis who *see* it again"
+    },
+    {
+      "kind": "predication",
+      "name": "akartr",
+      "of": "veda",
+      "cite": "authorless as the seed"
+    },
+    {
+      "kind": "predication",
+      "name": "eternal",
+      "of": "vyavastha",
+      "cite": "what is eternal is not any authored text-body but the vyavastha, the seed-order"
+    },
+    {
+      "kind": "predication",
+      "name": "eternal",
+      "of": "bija",
+      "cite": "when all traditions pass away (in the dissolution between world-ages, on the cosmology in play), a seed persists"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "eternal",
+      "of": "agama",
+      "cite": "when all traditions pass away"
+    },
+    {
+      "kind": "relation",
+      "name": "karta",
+      "from": "rshi",
+      "to": "veda",
+      "cite": "not composers"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "agama",
+        "to": "kartr",
+        "cite": "Never does anyone accept a tradition to be without an author"
+      },
+      {
+        "kind": "predication",
+        "name": "eternal",
+        "of": "bija",
+        "cite": "the seed remains"
+      },
+      {
+        "kind": "relation",
+        "name": "vivartate",
+        "from": "bija",
+        "to": "veda",
+        "cite": "hence the triple Veda stands established"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "eternal_agama",
+      "rendering": "A teaching-tradition, once established, persists eternally and requires a constant sustaining agent.",
+      "why": "Confuses the temporal manifestation (agama, which the verse says perish) with the eternal essence (the seed). Agama is established in each age by a kartṛ but doesn't persist eternally.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "eternal", "of": "agama"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "rsi_composers",
+      "rendering": "The wise seers (rṣis) compose the Veda anew in each age according to their insights.",
+      "why": "Misrepresents the role of rṣis as creators/composers rather than perceivers. The verse says rṣis 'see' the eternal Veda, meaning they perceive what already exists (the eternal seed-order), not invent new teachings.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "karta", "from": "rshi", "to": "veda"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "seed_needs_agent",
+      "rendering": "The eternal seed-order also requires an originating agent (Ishvara/God) to establish it.",
+      "why": "Incorrectly extends the need for a kartṛ (which applies to the temporal manifestation agama) to the eternal seed (bīja). The verse distinguishes: agama needs a kartṛ; the seed is self-persisting and eternal.",
+      "entities": [
+        {"id": "ishvara", "name": "īśvara", "sort": "power"}
+      ],
+      "claims": [
+        {"kind": "relation", "name": "asraya", "from": "bija", "to": "ishvara"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse threads between two levels of reality: manifestation (agama, which is authored and temporal) and essence (veda/seed, which is eternal and self-establishing). The key distinction is that the eternal principle (bīja = vyavasthā) is not itself authored but re-establishes the Veda each cycle through the perception of rṣis (not composition). The verse resolves the apparent paradox (how can the Veda be both eternal and need an author?) by distinguishing essence from manifestation."
+}

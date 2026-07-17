@@ -1,0 +1,144 @@
+{
+  "verse": "1.131",
+  "entities": [
+    {
+      "id": "sabda_samskara",
+      "name": "śabdasaṃskāra",
+      "sort": "linguisticItem",
+      "cite": "sabda-samskara, the perfecting or refinement of the word (the grammarian's daily work: samskara is what grammar *does* to speech)"
+    },
+    {
+      "id": "siddhih",
+      "name": "siddhiḥ",
+      "sort": "manifestation",
+      "cite": "simply is siddhih paramatmanah, the attainment of the supreme self"
+    },
+    {
+      "id": "paramatman",
+      "name": "paramātman",
+      "sort": "absolute",
+      "cite": "the supreme self"
+    },
+    {
+      "id": "pravrtti_tattva",
+      "name": "pravṛttitattva",
+      "sort": "power",
+      "cite": "the principle of the word's functioning, its descent from undivided source through mind and breath to audible difference and its return"
+    },
+    {
+      "id": "pravrtti_tattva_jna",
+      "name": "pravṛttitattvajna",
+      "sort": "cognition",
+      "cite": "one who knows the principle of the word's functioning"
+    },
+    {
+      "id": "brahma_amrta",
+      "name": "brahma-amṛta",
+      "sort": "absolute",
+      "cite": "the deathless Brahman"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "identity",
+      "a": "sabda_samskara",
+      "b": "siddhih",
+      "cite": "sabda-samskara, the perfecting or refinement of the word (the grammarian's daily work: samskara is what grammar *does* to speech), simply is siddhih paramatmanah, the attainment of the supreme self"
+    },
+    {
+      "kind": "relation",
+      "name": "is-attainment-of",
+      "from": "siddhih",
+      "to": "paramatman",
+      "cite": "simply is siddhih paramatmanah, the attainment of the supreme self"
+    },
+    {
+      "kind": "predication",
+      "name": "functioning-principle",
+      "of": "pravrtti_tattva",
+      "cite": "the principle of the word's functioning, its descent from undivided source through mind and breath to audible difference and its return"
+    },
+    {
+      "kind": "relation",
+      "name": "asnute",
+      "from": "pravrtti_tattva_jna",
+      "to": "brahma_amrta",
+      "cite": "tad brahma-amrtam asnute, enjoys that deathless Brahman"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "asnute",
+      "from": "sabda_samskara",
+      "to": "brahma_amrta",
+      "cite": "one who knows the principle of the word's functioning, its descent from undivided source through mind and breath to audible difference and its return — tad brahma-amrtam asnute, enjoys that deathless Brahman"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "identity",
+        "a": "sabda_samskara",
+        "b": "siddhih",
+        "cite": "that perfecting of the word is the attainment"
+      },
+      {
+        "kind": "relation",
+        "name": "is-attainment-of",
+        "from": "siddhih",
+        "to": "paramatman",
+        "cite": "the attainment of the supreme self"
+      },
+      {
+        "kind": "predication",
+        "name": "functioning-principle",
+        "of": "pravrtti_tattva",
+        "cite": "the principle of its functioning"
+      },
+      {
+        "kind": "relation",
+        "name": "asnute",
+        "from": "pravrtti_tattva_jna",
+        "to": "brahma_amrta",
+        "cite": "enjoys the deathless Brahman"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "mechanical_grammar",
+      "rendering": "Those who master the technical rules of grammar automatically attain the supreme self.",
+      "why": "Reduces sabda-samskara to mechanical linguistic skill rather than the deeper principle (pravrtti-tattva) of the word's functioning. The verse requires active knowledge (tattva-jna) of the principle, not mere grammatical competence. Also treats attainment as automatic rather than as realization.",
+      "entities": [
+        {"id": "sabda_samskara_technical", "name": "śabdasaṃskāra", "sort": "property"}
+      ],
+      "claims": [
+        {"kind": "predication", "name": "technical-rules", "of": "sabda_samskara_technical"},
+        {"kind": "relation", "name": "achieves", "from": "sabda_samskara_technical", "to": "paramatman"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "skip_the_principle",
+      "rendering": "Grammar practitioners enjoy the deathless Brahman through their practice alone.",
+      "why": "The verse explicitly conditions enjoyment on knowing the principle (pravrtti-tattva-jna), not on practice or technical skill. The commentary stresses this is knowledge of 'the principle of the word's functioning, its descent and return,' which is a cognitive and metaphysical realization, not mechanical application. This reading drops the knowledge requirement (tattva-jna) and falsely attributes the enjoyment (asnute) to the practice itself rather than to the knower.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "asnute", "from": "sabda_samskara", "to": "brahma_amrta"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "paramatman_vs_brahma",
+      "rendering": "The perfecting of language is the attainment of the supreme self, separate from the deathless Brahman which is enjoyed as a different goal.",
+      "why": "Treats paramatman (supreme self) and brahma-amrta (deathless Brahman) as distinct end-goals rather than the same realization. The commentary frames them as continuous: attainment of the supreme self via word-perfecting and the enjoyment of brahma-amrta are manifestations of a single realization, tasted differently (recalling 'paramo rasa' of 1.12). The principle of functioning bridges them as a unified path.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "is-separate-from", "from": "paramatman", "to": "brahma_amrta"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse concludes the Brahmakāṇḍa's constructive arc by collapsing means and end: sabda-samskara (the grammarian's daily work) IS siddhih (attainment), which is OF paramatman (the absolute). The knowledge of pravrtti-tattva—how the word descends from unity through mind and breath to audible form and returns—is the cognitive gate to enjoying brahma-amrta. The contract encodes this as a chain: perfecting = attainment (identity), attainment = realization-of-the-supreme (relation), knowing-the-principle = tasting-the-absolute (relation). No significant strain; the six sorts accommodate the metaphysics clearly."
+}

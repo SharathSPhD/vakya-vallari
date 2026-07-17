@@ -1,0 +1,154 @@
+{
+ "verse": "1.134",
+ "entities": [
+  {
+   "id": "jnana",
+   "name": "jñāna",
+   "sort": "cognition",
+   "cite": "cognition arises naturally, needing no instruction"
+  },
+  {
+   "id": "svabhavika",
+   "name": "svābhāvika",
+   "sort": "property",
+   "cite": "If knowledge were natural"
+  },
+  {
+   "id": "sastras",
+   "name": "śāstras",
+   "sort": "linguisticItem",
+   "cite": "there would be no purpose whatever in the sastras"
+  },
+  {
+   "id": "dharma",
+   "name": "dharma",
+   "sort": "manifestation",
+   "cite": "dharma conditions knowing"
+  },
+  {
+   "id": "amnaya",
+   "name": "amnāya",
+   "sort": "linguisticItem",
+   "cite": "amnayo nibandhanam: tradition is knowledge's ground"
+  },
+  {
+   "id": "artha",
+   "name": "artha",
+   "sort": "property",
+   "cite": "there would be no purpose whatever in the sastras"
+  }
+ ],
+ "axioms": [
+  {
+   "kind": "relation",
+   "name": "hetutvam",
+   "from": "dharma",
+   "to": "jnana",
+   "cite": "grant what the tradition holds: that dharma conditions knowing — the knower's moral-ritual formation is causally upstream of his cognitive reach"
+  },
+  {
+   "kind": "relation",
+   "name": "asraya",
+   "from": "amnaya",
+   "to": "jnana",
+   "cite": "since dharma is not established by unaided reason (1.30), amnayo nibandhanam: tradition is knowledge's ground"
+  },
+  {
+   "kind": "predication",
+   "name": "qualifies_knower",
+   "of": "dharma",
+   "cite": "disciplines do not merely inform; they *qualify the knower*"
+  }
+ ],
+ "denials": [
+  {
+   "kind": "predication",
+   "name": "svabhavika",
+   "of": "jnana",
+   "cite": "Either the sastras are idle (which practice refutes) or they are load-bearing via dharma (which makes agama foundational)"
+  },
+  {
+   "kind": "relation",
+   "name": "artha_rahita",
+   "from": "sastras",
+   "to": "artha",
+   "cite": "then the sastras are pointless; yet no party to the debate, least of all the naturalist writing books, treats them so"
+  }
+ ],
+ "accepted_reading": {
+  "claims": [
+   {
+    "kind": "relation",
+    "name": "hetutvam",
+    "from": "dharma",
+    "to": "jnana",
+    "cite": "if dharma is the cause of knowledge"
+   },
+   {
+    "kind": "relation",
+    "name": "asraya",
+    "from": "amnaya",
+    "to": "jnana",
+    "cite": "then tradition is its ground"
+   }
+  ]
+ },
+ "rejected_readings": [
+  {
+   "label": "innate_knowledge",
+   "rendering": "Knowledge is innate and arises naturally without instruction or tradition.",
+   "why": "Asserts that jñāna is svābhāvika (naturally given), which leads to the false consequence that śāstras are purposeless. The commentary uses this as a reductio: no one, especially not rationalist philosophers, actually treats scriptures as useless.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "predication",
+     "name": "svabhavika",
+     "of": "jnana"
+    }
+   ],
+   "expect": "contradicted"
+  },
+  {
+   "label": "rational_sufficiency",
+   "rendering": "Knowledge can be established by reason alone, without the need for moral-ritual formation.",
+   "why": "Denies that dharma is causally necessary for knowledge. It treats jñāna as self-standing, independent of the knower's moral-ritual preparation. The commentary explicitly rejects this: 'the knower's moral-ritual formation is causally upstream of his cognitive reach'.",
+   "entities": [
+    {
+     "id": "jnana_rational",
+     "name": "jñāna-rational",
+     "sort": "cognition"
+    }
+   ],
+   "claims": [
+    {
+     "kind": "identity",
+     "a": "jnana",
+     "b": "jnana_rational"
+    }
+   ],
+   "expect": "unlicensed"
+  },
+  {
+   "label": "scriptures_descriptive_only",
+   "rendering": "The scriptures serve only to describe knowledge that is already established by reason, not to ground it.",
+   "why": "Denies that amnāya is the ground (nibandhanam) of jñāna, treating it as merely descriptive rather than foundational. The commentary is explicit: 'since dharma is not established by unaided reason, amnayo nibandhanam: tradition is knowledge's ground'.",
+   "entities": [
+    {
+     "id": "sastre_prasanskrit",
+     "name": "śāstra-descriptive",
+     "sort": "linguisticItem"
+    }
+   ],
+   "claims": [
+    {
+     "kind": "relation",
+     "name": "asraya",
+     "from": "sastre_prasanskrit",
+     "to": "jnana"
+    }
+   ],
+   "expect": "unlicensed"
+  }
+ ],
+ "notes": "The verse formalizes a strategic dilemma (dilemma/dvayasrama): the naturalist position (svabhavika-vada) either trivializes all pedagogy via reductio, or concedes that dharma and amnaya are foundational to knowledge. The contract encodes the endorsed horn: dharma (moral-ritual formation) conditions the knower, amnaya (transmitted teaching) grounds knowledge. Contested: whether the second pada should be read as Bhartrhari's endorsement or continued presentation of alternatives; contract follows the prima facie reading where the conditional is endorsed."
+}

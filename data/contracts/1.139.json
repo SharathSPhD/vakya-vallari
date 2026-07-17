@@ -1,0 +1,97 @@
+{
+  "verse": "1.139",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "words have real form-bound powers"
+    },
+    {
+      "id": "samarthya",
+      "name": "sāmarthya",
+      "sort": "power",
+      "cite": "yatha esam tatra samarthyam"
+    },
+    {
+      "id": "dharma",
+      "name": "dharma",
+      "sort": "absolute",
+      "cite": "where the fruit is unseen: in dharma"
+    },
+    {
+      "id": "sadhu",
+      "name": "sādhu",
+      "sort": "property",
+      "cite": "correct words are to be spoken, by the cultivated"
+    },
+    {
+      "id": "abhyudaya",
+      "name": "abhyudaya",
+      "sort": "absolute",
+      "cite": "the rising good"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "samarthya",
+      "to": "sabda",
+      "cite": "words have real form-bound powers"
+    },
+    {
+      "kind": "relation",
+      "name": "extends",
+      "from": "samarthya",
+      "to": "dharma",
+      "cite": "let the same be acknowledged where the fruit is unseen: in dharma"
+    },
+    {
+      "kind": "predication",
+      "name": "sadhu",
+      "of": "sabda",
+      "cite": "correct words are to be spoken, by the cultivated"
+    }
+  ],
+  "denials": [],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "samarthya",
+        "to": "sabda",
+        "cite": "their capacity"
+      },
+      {
+        "kind": "relation",
+        "name": "extends",
+        "from": "samarthya",
+        "to": "dharma",
+        "cite": "so let it be acknowledged with respect to dharma as well"
+      },
+      {
+        "kind": "predication",
+        "name": "sadhu",
+        "of": "sabda",
+        "cite": "what is correct is to be spoken"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "form_indifference",
+      "rendering": "Correct and incorrect word-forms are equally efficacious in pursuing dharma.",
+      "why": "Denies that samarthya (capacity/power) is form-bound. The verse's doctrine holds that power resides specifically in sadhu (correct) forms. Incorrect forms (asadhu) lack this power and cannot efficaciously support dharmic aims.",
+      "entities": [
+        {"id": "asadhu", "name": "asādhu", "sort": "property"}
+      ],
+      "claims": [
+        {"kind": "predication", "name": "sadhu", "of": "asadhu"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "Verse 1.139 extends the doctrine of words' form-bound power (established in 1.138) to the ethical domain (dharma). The logical move: if samarthya (capacity) operates demonstrably in the visible domain, then equally in the unseen domain of dharma. This form-binding makes grammar into ethics—correctness is not mere convention but efficacious practice toward abhyudaya (felicity/the rising good)."
+}

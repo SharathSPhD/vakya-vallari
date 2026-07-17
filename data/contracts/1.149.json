@@ -1,0 +1,129 @@
+{
+ "verse": "1.149",
+ "entities": [
+  {
+   "id": "sadhu",
+   "name": "sadhu",
+   "sort": "linguisticItem",
+   "cite": "The sadhu signifies directly"
+  },
+  {
+   "id": "apabhramsa",
+   "name": "apabhramsa",
+   "sort": "linguisticItem",
+   "cite": "Te, the apabhramsas (continuing 1.147-148): amid the sadhus they cause understanding anumanena, by way of inference"
+  },
+  {
+   "id": "pratyaya",
+   "name": "pratyaya",
+   "sort": "cognition",
+   "cite": "causes of the arising of cognition by way of inference"
+  },
+  {
+   "id": "artha",
+   "name": "artha",
+   "sort": "property",
+   "cite": "they illuminate the word's meaning"
+  },
+  {
+   "id": "anumana",
+   "name": "anumāna",
+   "sort": "cognition",
+   "cite": "by way of inference"
+  }
+ ],
+ "axioms": [
+  {
+   "kind": "relation",
+   "name": "hetave",
+   "from": "apabhramsa",
+   "to": "pratyaya",
+   "cite": "amid the sadhus they cause understanding anumanena, by way of inference"
+  },
+  {
+   "kind": "relation",
+   "name": "prakasaka",
+   "from": "apabhramsa",
+   "to": "artha",
+   "cite": "the deviant form illuminates tadatmyam upagamya iva, *as if* it had become identical with the meaning"
+  },
+  {
+   "kind": "relation",
+   "name": "prakasaka",
+   "from": "sadhu",
+   "to": "artha",
+   "cite": "The sadhu signifies directly"
+  },
+  {
+   "kind": "relation",
+   "name": "signifies_through",
+   "from": "apabhramsa",
+   "to": "sadhu",
+   "cite": "the apabhramsa signifies through the sadhu"
+  },
+  {
+   "kind": "predication",
+   "name": "mediated_by_anumana",
+   "of": "apabhramsa",
+   "cite": "by way of inference"
+  }
+ ],
+ "denials": [
+  {
+   "kind": "identity",
+   "a": "apabhramsa",
+   "b": "sadhu",
+   "cite": "the corrupt form is evidence of the correct one, not its equal"
+  }
+ ],
+ "accepted_reading": {
+  "claims": [
+   {
+    "kind": "relation",
+    "name": "hetave",
+    "from": "apabhramsa",
+    "to": "pratyaya",
+    "cite": "causes of the arising of cognition by way of inference"
+   },
+   {
+    "kind": "relation",
+    "name": "prakasaka",
+    "from": "apabhramsa",
+    "to": "artha",
+    "cite": "they illuminate the word's meaning as if having attained identity with it"
+   }
+  ]
+ },
+ "rejected_readings": [
+  {
+   "label": "apabhramsa_equal_to_sadhu",
+   "rendering": "Corrupt and correct word-forms are equivalent in status and function.",
+   "why": "The commentary explicitly states the corrupt form is evidence of the correct one, not equal to it. An equality claim contradicts the foundational asymmetry established between them.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "identity",
+     "a": "apabhramsa",
+     "b": "sadhu"
+    }
+   ],
+   "expect": "contradicted"
+  },
+  {
+   "label": "mediation_reversed",
+   "rendering": "Correct forms derive their meaning from corrupt ones; the correct signifies through the deviant.",
+   "why": "Reverses the causal and semiotic order. The commentary is explicit that apabhramsa signifies THROUGH sadhu, not the reverse. Sadhu is the base; corruption is parasitic on correctness. The reversed direction inverts the entire doctrine.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "relation",
+     "name": "signifies_through",
+     "from": "sadhu",
+     "to": "apabhramsa"
+    }
+   ],
+   "expect": "unlicensed"
+  }
+ ],
+ "notes": "Verse 1.149 formalizes how corrupt word-forms (apabhramsa) function within the space of correct ones (sadhu): they cause understanding via an inferential recovery process, thereby illuminating meaning as if with identity—seeming, not actual. The asymmetry (not equal; signifies through, not independently) preserves both pragmatic efficacy and normative hierarchy. The iva-qualification is encoded in the denial of direct tadatmya, and the mediation is explicit in signifies_through."
+}

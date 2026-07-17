@@ -1,0 +1,101 @@
+{
+  "verse": "1.129",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "by resort to the utterance"
+    },
+    {
+      "id": "nimitte",
+      "name": "nimitte",
+      "sort": "property",
+      "cite": "the occasioning ground"
+    },
+    {
+      "id": "alata",
+      "name": "alata",
+      "sort": "manifestation",
+      "cite": "Perception supplies moving light"
+    },
+    {
+      "id": "cakra",
+      "name": "cakra",
+      "sort": "manifestation",
+      "cite": "the fire-brand circle"
+    },
+    {
+      "id": "vastvakara",
+      "name": "vastvākāra",
+      "sort": "manifestation",
+      "cite": "the determination of a thing-form"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "atyantam_atathabhute",
+      "of": "nimitte",
+      "cite": "the ground being utterly otherwise (a single moving point)"
+    },
+    {
+      "kind": "relation",
+      "name": "nirupayati",
+      "from": "sabda",
+      "to": "vastvakara",
+      "cite": "it is vac, the word, that builds the circle out of the whirl"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "parinama",
+      "from": "alata",
+      "to": "cakra",
+      "cite": "Perception supplies moving light; the word supplies the cakra"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "atyantam_atathabhute",
+        "of": "nimitte",
+        "cite": "the occasioning ground is utterly not so"
+      },
+      {
+        "kind": "relation",
+        "name": "nirupayati",
+        "from": "sabda",
+        "to": "vastvakara",
+        "cite": "by resort to the utterance one sees the determination of a thing-form"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "perception_produces_circle",
+      "rendering": "The whirling torch through perceptual contact naturally produces the circular form.",
+      "why": "Attributes form-production to perception (the alata/torch), contradicting the verse's explicit point that it is the word which supplies the cakra. Reverses the locus of determination from utterance to perceptual sensation.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "parinama", "from": "alata", "to": "cakra"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "ground_sufficient_for_reality",
+      "rendering": "When a real and adequate ground exists, language determines how we apprehend the resulting object.",
+      "why": "Misses the verse's core teaching: it is precisely where the ground is NOT adequate (utterly otherwise) that language's independent form-giving power is most evident. This reading makes the word merely descriptive rather than constitutive of form.",
+      "entities": [
+        {"id": "nimitte_yathartha", "name": "nimitte", "sort": "property"}
+      ],
+      "claims": [
+        {"kind": "predication", "name": "yatharthabhute", "of": "nimitte_yathartha"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "Verse 1.129 demonstrates language's form-constitutive power through the fire-brand circle, where no real object exists yet a thing-form is nonetheless determined purely through utterance. The contract captures three core principles: (1) the ground (nimitte) for the circle is utterly otherwise, (2) the word (sabda) determines the thing-form (vastvakara) despite this absence, (3) perception supplies the moving light but the word supplies the circular form. This exemplifies the conclusion of 1.128 by showing the extreme case where utterance alone furnishes object-form."
+}

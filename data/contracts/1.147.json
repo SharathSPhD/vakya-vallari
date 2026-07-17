@@ -1,0 +1,145 @@
+{
+ "verse": "1.147",
+ "entities": [
+  {
+   "id": "apabhramsa",
+   "name": "apabhramśa",
+   "sort": "linguisticItem",
+   "cite": "That deviation is apabhramsa, the 'fallen-away' form"
+  },
+  {
+   "id": "samskara",
+   "name": "saṃskāra",
+   "sort": "power",
+   "cite": "samskara-hina, lacking the refinement grammar names"
+  },
+  {
+   "id": "visistartha",
+   "name": "viśiṣṭārtha",
+   "sort": "property",
+   "cite": "the fallen form settles on the distinguished meaning perfectly well"
+  },
+  {
+   "id": "intention",
+   "name": "prayukti",
+   "sort": "cognition",
+   "cite": "A speaker intends the correct gauh, 'cow'"
+  },
+  {
+   "id": "sadhu",
+   "name": "sadhu",
+   "sort": "linguisticItem",
+   "cite": "the sadhu form it deviates from"
+  }
+ ],
+ "axioms": [
+  {
+   "kind": "predication",
+   "name": "samskara-hina",
+   "of": "apabhramsa",
+   "cite": "samskara-hina, lacking the refinement grammar names (1.131's sabda-samskara, here in its technical sense)"
+  },
+  {
+   "kind": "relation",
+   "name": "nivesinam",
+   "from": "apabhramsa",
+   "to": "visistartha",
+   "cite": "visistartha-nivesinam — the fallen form *settles on the distinguished meaning perfectly well*; the hearer gets the cow"
+  },
+  {
+   "kind": "predication",
+   "name": "intention-relative",
+   "of": "apabhramsa",
+   "cite": "prayuyuksite ('when one intends to employ') marks the definition as intention-relative: the same phonetic form is apabhramsa only against a meant sadhu target"
+  },
+  {
+   "kind": "relation",
+   "name": "asrita",
+   "from": "apabhramsa",
+   "to": "sadhu",
+   "cite": "the apabhramsa conveys, but conveys *through* the sadhu form it deviates from (as 1.152 will say), like a mispronounced name that reaches its bearer only because the right name is recoverable through it"
+  }
+ ],
+ "denials": [
+  {
+   "kind": "predication",
+   "name": "determined-by-success",
+   "of": "apabhramsa",
+   "cite": "Corruption is thus defined against intention and norm, not against communicative success"
+  }
+ ],
+ "accepted_reading": {
+  "claims": [
+   {
+    "kind": "predication",
+    "name": "samskara-hina",
+    "of": "apabhramsa",
+    "cite": "devoid of the refinement"
+   },
+   {
+    "kind": "relation",
+    "name": "nivesinam",
+    "from": "apabhramsa",
+    "to": "visistartha",
+    "cite": "settles on the distinguished meaning"
+   },
+   {
+    "kind": "predication",
+    "name": "intention-relative",
+    "of": "apabhramsa",
+    "cite": "when 'gauh' is what one intends to employ"
+   }
+  ]
+ },
+ "rejected_readings": [
+  {
+   "label": "ignore_norm_criterion",
+   "rendering": "Since corrupt forms successfully communicate meaning, there is no difference between them and correct forms.",
+   "why": "Ignores the explicit doctrine: corruption is defined by norm and intention, not by communicative success. The axioms establish that apabhramsa both lacks samskara AND settles on meaning as independent features. Success does not erase the norm-violation.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "identity",
+     "a": "apabhramsa",
+     "b": "sadhu"
+    }
+   ],
+   "expect": "unlicensed"
+  },
+  {
+   "label": "elide_intention_dependence",
+   "rendering": "The form 'gavi' is simply a variant pronunciation of 'gauh', with neither more correct than the other.",
+   "why": "Erases the intention-relative definition captured in the axioms. The contested point makes explicit: the same phonetic form is apabhramsa only against a meant sadhu target. This reading treats gavi and gauh as symmetric variants, missing that apabhramsa-status depends on what the speaker intends to say.",
+   "entities": [
+    {
+     "id": "gavi",
+     "name": "gavi",
+     "sort": "linguisticItem"
+    }
+   ],
+   "claims": [
+    {
+     "kind": "identity",
+     "a": "gavi",
+     "b": "sadhu"
+    }
+   ],
+   "expect": "unlicensed"
+  },
+  {
+   "label": "deny_communicative_power",
+   "rendering": "Corrupted utterances like 'gavi' fail to reach their hearers or leave them confused about the meaning.",
+   "why": "Contradicts the nivesinam axiom: the fallen form settles on the distinguished meaning perfectly well; the hearer gets the meaning. Apabhramsa is communicatively successful by definition, even while being corrupt (norm-violating). These are independent properties in the Bhartṛhari framework.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "predication",
+     "name": "asamveditartha",
+     "of": "apabhramsa"
+    }
+   ],
+   "expect": "unlicensed"
+  }
+ ],
+ "notes": "Verse 1.147 introduces apabhramsa (linguistic corruption) within a normative frame: corruption is relative to intention and standard form, not to communicative outcome. The contract captures four core axioms: apabhramsa as samskara-hina (lacking refinement), nivesinam (settling on distinguished meaning), intention-relative (definition depends on intended form), and asrita (conveyed through the sadhu form). The denial encodes what the verse explicitly rejects: defining corruption by success. The three rejected readings target common misinterpretations: treating success as a criterion, erasing intention-dependence, and denying communicative power. Together with 1.153-154, this verse establishes the edge-case status of forms native to speakers who intend nothing else."
+}

@@ -1,0 +1,112 @@
+{
+  "verse": "1.140",
+  "entities": [
+    {
+      "id": "agama",
+      "name": "āgama",
+      "sort": "absolute",
+      "cite": "are reached agamat, through tradition, by *everyone*: there is no other road"
+    },
+    {
+      "id": "artha",
+      "name": "artha",
+      "sort": "manifestation",
+      "cite": "adrsta-phala objects — dharma, the felicities of 1.139, everything whose fruit no one living has seen"
+    },
+    {
+      "id": "adrstaphala",
+      "name": "adṛṣṭa-phala",
+      "sort": "property",
+      "cite": "objects whose fruit no one living has seen"
+    },
+    {
+      "id": "viparita",
+      "name": "viparīta",
+      "sort": "cognition",
+      "cite": "Counter-traditions exist; every agama has a rival"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "adrstaphala",
+      "of": "artha",
+      "cite": "adrsta-phala objects — dharma, the felicities of 1.139, everything whose fruit no one living has seen"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "agama",
+      "to": "artha",
+      "cite": "are reached agamat, through tradition, by *everyone*: there is no other road"
+    },
+    {
+      "kind": "predication",
+      "name": "sakyate",
+      "of": "viparita",
+      "cite": "the opposite can always be said"
+    },
+    {
+      "kind": "relation",
+      "name": "virodha",
+      "from": "viparita",
+      "to": "agama",
+      "cite": "no received teaching is immune to contradiction by another received teaching"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "niscaya",
+      "of": "agama",
+      "cite": "tradition-dependence cannot be *demonstrated* into safety"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "adrstaphala",
+        "of": "artha",
+        "cite": "whose fruit is unseen"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "agama",
+        "to": "artha",
+        "cite": "through tradition"
+      },
+      {
+        "kind": "predication",
+        "name": "sakyate",
+        "of": "viparita",
+        "cite": "the contrary can everywhere be alleged"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "agama_certain",
+      "rendering": "Tradition provides certain and conclusive knowledge of unseen objects, and no opposing view can be validly stated.",
+      "why": "Directly contradicts the niscaya denial and the virodha axiom. The verse explicitly acknowledges that for any agama, an opposite can be alleged, making tradition necessarily contested and indemonstrable.",
+      "claims": [
+        {"kind": "predication", "name": "niscaya", "of": "agama"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "perception_primary",
+      "rendering": "Unseen objects are primarily known through direct perception; tradition is secondary.",
+      "why": "The verse emphasizes sarva (everyone, universal scope) arrives at these objects through agama, treating tradition as the universal and primary means. The commentary stresses there is no other road. Reversing this hierarchy contradicts the core asraya axiom.",
+      "entities": [
+        {"id": "pratyaksa", "name": "pratyakṣa", "sort": "power"}
+      ],
+      "claims": [
+        {"kind": "relation", "name": "asraya", "from": "pratyaksa", "to": "artha"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "Verse 1.140 is the Brahma-kanda's moment of epistemic candor: tradition (agama) is universal and necessary—the sole means to access unseen-fruit objects—yet fundamentally non-demonstrable, admitting contradiction at every point. This is not a logical contradiction but the precondition for 1.141's stance: reliance on unbroken usage (sampradaya) is obligatory not because proof is available, but because standing somewhere is necessary and tradition is the only stable footing."
+}

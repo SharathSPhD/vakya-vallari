@@ -11,7 +11,7 @@ def vidya : Entity := ⟨"vidyā", Sorta.absolute⟩
 def satya_visuddhi : Entity := ⟨"satyā viśuddhi", Sorta.manifestation⟩
 def aksara : Entity := ⟨"akṣara", Sorta.absolute⟩
 def pranava : Entity := ⟨"praṇava", Sorta.absolute⟩
-def vada : Entity := ⟨"vāda", Sorta.property⟩
+def vada : Entity := ⟨"vāda", Sorta.linguisticItem⟩
 
 def contract : Contract :=
   { axioms := [ Claim.identity satya_visuddhi vidya

@@ -14,7 +14,7 @@ def prayatna : Entity := ⟨"prayatna", Sorta.property⟩
 def sthanani : Entity := ⟨"sthānāni", Sorta.property⟩
 def vega : Entity := ⟨"vega", Sorta.property⟩
 def pracaya : Entity := ⟨"pracaya", Sorta.property⟩
-def samarthya : Entity := ⟨"sāmarthya", Sorta.property⟩
+def samarthya : Entity := ⟨"sāmarthya", Sorta.power⟩
 def sannipata : Entity := ⟨"sannipāta", Sorta.property⟩
 def murta : Entity := ⟨"mūrta", Sorta.manifestation⟩
 

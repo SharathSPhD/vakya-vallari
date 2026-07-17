@@ -1,0 +1,121 @@
+{
+  "verse": "1.150",
+  "entities": [
+    {
+      "id": "suddha_rupa",
+      "name": "śuddha-rūpa",
+      "sort": "linguisticItem",
+      "cite": "correct forms"
+    },
+    {
+      "id": "ashuddha_rupa",
+      "name": "aśuddha-rūpa",
+      "sort": "linguisticItem",
+      "cite": "the corrupt forms"
+    },
+    {
+      "id": "vackaka",
+      "name": "vāchaka",
+      "sort": "power",
+      "cite": "directly expressive"
+    },
+    {
+      "id": "smrti_sastra",
+      "name": "smṛti-śāstra",
+      "sort": "power",
+      "cite": "the received science"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "na_anugamyante_paryaya",
+      "from": "ashuddha_rupa",
+      "to": "suddha_rupa",
+      "cite": "the sistas do not so treat them: na anugamyante paryaya iva"
+    },
+    {
+      "kind": "predication",
+      "name": "samskara_sadhita",
+      "of": "ashuddha_rupa",
+      "cite": "gavi is *corrected to* gauh, never the reverse"
+    },
+    {
+      "kind": "relation",
+      "name": "pratipannas",
+      "from": "smrti_sastra",
+      "to": "ashuddha_rupa",
+      "cite": "the asymmetry is codified smrti-sastrena, by the received science"
+    },
+    {
+      "kind": "predication",
+      "name": "asaksat_vackaka",
+      "of": "ashuddha_rupa",
+      "cite": "the corrupt forms are not *directly* expressive"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "paryaya_bhava",
+      "from": "ashuddha_rupa",
+      "to": "suddha_rupa",
+      "cite": "in cultivated usage the pair never behaves as a synonym-pair does"
+    },
+    {
+      "kind": "predication",
+      "name": "vackaka",
+      "of": "ashuddha_rupa",
+      "cite": "the corrupt forms are not *directly* expressive"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "asaksat_vackaka",
+        "of": "ashuddha_rupa",
+        "cite": "not directly expressive"
+      },
+      {
+        "kind": "relation",
+        "name": "na_anugamyante_paryaya",
+        "from": "ashuddha_rupa",
+        "to": "suddha_rupa",
+        "cite": "synonyms"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "synonym_equivalence",
+      "rendering": "Corrupt and correct forms are complete synonyms used interchangeably by cultivated speakers.",
+      "why": "Contradicts the core finding that cultivated speakers treat them asymmetrically (gavi corrected to gauh, never reverse). The commentary states in cultivated usage they never behave as a synonym-pair. This erases the directional correction that grounds the semantic consequence.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "paryaya_bhava",
+          "from": "ashuddha_rupa",
+          "to": "suddha_rupa"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "direct_expressiveness",
+      "rendering": "Corrupt forms directly express meaning with the same immediacy as correct forms.",
+      "why": "The commentary explicitly states the corrupt forms are not *directly* expressive; their conveying is mediated and inferential (1.149). This reading contradicts the semantic thesis the verse establishes.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "vackaka",
+          "of": "ashuddha_rupa"
+        }
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "The contract formalizes the verse's argument from sociological datum (corrective asymmetry: gavi→gauh, not vice versa) to semantic thesis (corrupt forms lack direct expressiveness). smṛti-śāstra certifies the asymmetry, grounding theory in the practice of śiṣṭas (1.27-31, 1.137). The contested reading (smṛti as cause vs. certifier) is resolved toward the epistemology where practice is deep evidence and theory follows it."
+}

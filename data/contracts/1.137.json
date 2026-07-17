@@ -1,0 +1,132 @@
+{
+ "verse": "1.137",
+ "entities": [
+  {
+   "id": "sabda",
+   "name": "śabda",
+   "sort": "linguisticItem",
+   "cite": "That power belongs to words themselves"
+  },
+  {
+   "id": "sakti",
+   "name": "śakti",
+   "sort": "power",
+   "cite": "That power belongs to words themselves; to the structure of the received language"
+  },
+  {
+   "id": "tarka",
+   "name": "tarka",
+   "sort": "power",
+   "cite": "Tarka as it lives in a reasoner — purusasraya, person-based, the wit of Devadatta"
+  },
+  {
+   "id": "purusa",
+   "name": "puruṣa",
+   "sort": "cognition",
+   "cite": "the reasoning that rests on a person"
+  },
+  {
+   "id": "nyaya",
+   "name": "nyāya",
+   "sort": "linguisticItem",
+   "cite": "when it follows the words, is interpretive principle"
+  },
+  {
+   "id": "agama",
+   "name": "āgama",
+   "sort": "linguisticItem",
+   "cite": "apart from the traditions it is without ground"
+  }
+ ],
+ "axioms": [
+  {
+   "kind": "relation",
+   "name": "asraya",
+   "from": "sakti",
+   "to": "sabda",
+   "cite": "their sakti, their authority, sabdanam eva: belongs to the words themselves"
+  },
+  {
+   "kind": "relation",
+   "name": "asraya",
+   "from": "tarka",
+   "to": "purusa",
+   "cite": "Tarka as it lives in a reasoner — purusasraya, person-based"
+  },
+  {
+   "kind": "predication",
+   "name": "sabdanugata",
+   "of": "tarka",
+   "cite": "is authoritative only sabda-anugata, when it follows the words: tracking, subserving, drawing out"
+  },
+  {
+   "kind": "predication",
+   "name": "anibandhana",
+   "of": "tarka",
+   "cite": "Cut loose — anagamesu, where there is no received text to follow — it is anibandhana, groundless"
+  }
+ ],
+ "denials": [
+  {
+   "kind": "predication",
+   "name": "svatantra",
+   "of": "tarka",
+   "cite": "reasoning is real as an *instrument of the word* and nothing as an independent source"
+  }
+ ],
+ "accepted_reading": {
+  "claims": [
+   {
+    "kind": "relation",
+    "name": "asraya",
+    "from": "sakti",
+    "to": "sabda",
+    "cite": "That power belongs to words themselves"
+   },
+   {
+    "kind": "relation",
+    "name": "asraya",
+    "from": "tarka",
+    "to": "purusa",
+    "cite": "the reasoning that rests on a person"
+   },
+   {
+    "kind": "predication",
+    "name": "sabdanugata",
+    "of": "tarka",
+    "cite": "when it follows the words"
+   }
+  ]
+ },
+ "rejected_readings": [
+  {
+   "label": "tarka_coequal",
+   "rendering": "The personal reasoning power and word-power are essentially equivalent sources of interpretive authority; both work together as equal instruments.",
+   "why": "This misses the verse's radical subordination: sakti belongs to words; tarka has authority only when following words. The commentary emphasizes asymmetry, not equivalence. Reading tarka and sakti as coequal violates the axiomatic structure.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "identity",
+     "a": "sakti",
+     "b": "tarka"
+    }
+   ],
+   "expect": "unlicensed"
+  },
+  {
+   "label": "tarka_independent",
+   "rendering": "Reasoning, when exercised by a skilled person, can be an independent and authoritative source of truth, even without textual support.",
+   "why": "The verse explicitly denies this: tarka without agama is anibandhana (groundless). The verse rules out freestanding authority for reasoning.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "predication",
+     "name": "svatantra",
+     "of": "tarka"
+    }
+   ],
+   "expect": "contradicted"
+  }
+ ],
+ "notes": "The verse settles a key epistemological question: reasoning (tarka) is not rejected, but its authority is strictly conditional — it works only as an instrument of word-power (sabda-sakti) and tradition (agama). The Vakyapadiya's own arguments claim authority not through independent wit but through fidelity to the grammarians' teachings, exemplifying the doctrine it states."
+}

@@ -1,0 +1,175 @@
+{
+  "verse": "1.144",
+  "entities": [
+    {
+      "id": "sruti",
+      "name": "śruti",
+      "sort": "absolute",
+      "cite": "the seed-order of 1.132 in its manifestation, received by seers (1.37), never made"
+    },
+    {
+      "id": "smrti",
+      "name": "smṛti",
+      "sort": "manifestation",
+      "cite": "Smrti: sistair nibadhyamana — *presently being composed*, the participle notably continuous"
+    },
+    {
+      "id": "sista",
+      "name": "śiṣṭa",
+      "sort": "power",
+      "cite": "the cultivated are always writing it, codifying usage and duty age by age"
+    },
+    {
+      "id": "eternality_seed",
+      "name": "eternality_as_seed",
+      "sort": "property",
+      "cite": "sruti eternal in substance (or as the recurrent seed)"
+    },
+    {
+      "id": "eternality_process",
+      "name": "eternality_as_process",
+      "sort": "property",
+      "cite": "smrti eternal only as continuity of composition"
+    },
+    {
+      "id": "authorship",
+      "name": "authorship",
+      "sort": "property",
+      "cite": "authored at every point"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "anadi",
+      "of": "sruti",
+      "cite": "Sruti: anadi, avyavacchinna, akartrka — beginningless, uninterrupted, authorless"
+    },
+    {
+      "kind": "predication",
+      "name": "avyavacchinna",
+      "of": "sruti",
+      "cite": "Sruti: anadi, avyavacchinna, akartrka — beginningless, uninterrupted, authorless"
+    },
+    {
+      "kind": "predication",
+      "name": "akartrka",
+      "of": "sruti",
+      "cite": "Sruti: anadi, avyavacchinna, akartrka — beginningless, uninterrupted, authorless"
+    },
+    {
+      "kind": "relation",
+      "name": "nibadhyamana",
+      "from": "sista",
+      "to": "smrti",
+      "cite": "the cultivated are always writing it, codifying usage and duty age by age"
+    },
+    {
+      "kind": "predication",
+      "name": "avyavacchinna",
+      "of": "smrti",
+      "cite": "tu na vyavacchidyate, and yet it too is never severed: authored at every point, unbroken as a stream"
+    },
+    {
+      "kind": "predication",
+      "name": "kratritva",
+      "of": "smrti",
+      "cite": "authored at every point"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "smrti",
+      "to": "sruti",
+      "cite": "the authority of the second derives from unbroken contact with the first (1.7's lingas)"
+    },
+    {
+      "kind": "predication",
+      "name": "eternality_seed",
+      "of": "sruti",
+      "cite": "The two eternities are thus of different types — sruti eternal in substance (or as the recurrent seed)"
+    },
+    {
+      "kind": "predication",
+      "name": "eternality_process",
+      "of": "smrti",
+      "cite": "The two eternities are thus of different types — sruti eternal in substance (or as the recurrent seed), smrti eternal only as continuity of composition"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "akartrka",
+      "of": "smrti",
+      "cite": "authored at every point"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "anadi",
+        "of": "sruti",
+        "cite": "beginningless"
+      },
+      {
+        "kind": "predication",
+        "name": "avyavacchinna",
+        "of": "sruti",
+        "cite": "unbroken"
+      },
+      {
+        "kind": "predication",
+        "name": "akartrka",
+        "of": "sruti",
+        "cite": "without author"
+      },
+      {
+        "kind": "relation",
+        "name": "nibadhyamana",
+        "from": "sista",
+        "to": "smrti",
+        "cite": "being composed by the cultivated"
+      },
+      {
+        "kind": "predication",
+        "name": "avyavacchinna",
+        "of": "smrti",
+        "cite": "not discontinued"
+      },
+      {
+        "kind": "predication",
+        "name": "kratritva",
+        "of": "smrti",
+        "cite": "being composed by the cultivated"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "smrti_absolute_like_sruti",
+      "rendering": "Smṛti, though continuously composed, is eternal in substance just like śruti, with no distinction in their types of eternality.",
+      "why": "The commentary is emphatic about the difference: 'The two eternities are thus of different types — sruti eternal in substance (or as the recurrent seed), smrti eternal only as continuity of composition.' Treating smṛti as having the same eternality-type as śruti (eternality_seed instead of eternality_process) directly contradicts the contrast the verse establishes. This is a sort confusion: attempting to grant smṛti absoluteness where only manifestation applies.",
+      "entities": [
+        {"id": "smrti_as_absolute_wrong", "name": "smṛti", "sort": "absolute"}
+      ],
+      "claims": [
+        {"kind": "predication", "name": "eternality_seed", "of": "smrti_as_absolute_wrong"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "smrti_absolute_eternality",
+      "rendering": "Smṛti is eternal in its substance through continuous composition by the cultivated, equal to śruti's eternality.",
+      "why": "The commentary distinguishes two kinds of eternality: 'The two eternities are thus of different types — sruti eternal in substance (or as the recurrent seed), smrti eternal only as continuity of composition.' To treat smṛti as eternally substantive like śruti conflates these distinctions and loses the key contrast between absolute and manifestation.",
+      "entities": [
+        {"id": "smrti_absolute_error", "name": "smṛti", "sort": "absolute"}
+      ],
+      "claims": [
+        {"kind": "predication", "name": "eternality_seed", "of": "smrti_absolute_error"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The contract formalizes the two-mode transmission system: śruti as eternal absolute seed, smṛti as eternal manifestation through continuous re-composition. The axioms distinguish eternality-types while maintaining the asraya (grounding) relation. The verse completes the threading of 1.132: the seed survives because it is never made; the stream survives because it is always being remade in contact with the seed."
+}

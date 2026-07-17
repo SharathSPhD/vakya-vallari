@@ -1,0 +1,139 @@
+{
+  "verse": "1.138",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "just so are words seen to have theirs — in the removal of poison and the like"
+    },
+    {
+      "id": "rupa",
+      "name": "rūpa",
+      "sort": "property",
+      "cite": "colour and the rest are seen to have their powers fixed"
+    },
+    {
+      "id": "sakti",
+      "name": "śakti",
+      "sort": "power",
+      "cite": "their powers fixed with respect to each object"
+    },
+    {
+      "id": "visapaharana",
+      "name": "viṣāpaharaṇa",
+      "sort": "manifestation",
+      "cite": "in the removal of poison and the like"
+    },
+    {
+      "id": "yata_sakti",
+      "name": "yata-śakti",
+      "sort": "power",
+      "cite": "sensible qualities have yata-sakti, determinate powers indexed to their bearers"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "asraya",
+      "of": "rupa",
+      "cite": "sensible qualities have yata-sakti, determinate powers indexed to their bearers"
+    },
+    {
+      "kind": "predication",
+      "name": "asraya",
+      "of": "sabda",
+      "cite": "words exhibit the same fixity"
+    },
+    {
+      "kind": "relation",
+      "name": "vivartate",
+      "from": "yata_sakti",
+      "to": "visapaharana",
+      "cite": "mantra-efficacy is form-bound — substitute a synonym and the power is gone"
+    },
+    {
+      "kind": "predication",
+      "name": "powers",
+      "of": "sabda",
+      "cite": "words are powers before they are signs"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "merely_conventional",
+      "of": "sabda",
+      "cite": "if words are arbitrary labels whose whole being is conventional reference"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "asraya",
+        "of": "rupa",
+        "cite": "colour and the rest are seen to have their powers fixed with respect to each object"
+      },
+      {
+        "kind": "predication",
+        "name": "asraya",
+        "of": "sabda",
+        "cite": "are words seen to have theirs"
+      },
+      {
+        "kind": "relation",
+        "name": "vivartate",
+        "from": "yata_sakti",
+        "to": "visapaharana",
+        "cite": "in the removal of poison and the like"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "conventional_reference",
+      "rendering": "Words are conventional signs whose meaning depends entirely on social agreement and shared reference conventions, possessing no intrinsic power of their own.",
+      "why": "Treats sabda as merely_conventional, contradicting the verse's core claim that words exhibit the same fixed powers as sensible qualities do. This denies yata-sakti for words entirely.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "merely_conventional",
+          "of": "sabda"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "transferable_efficacy",
+      "rendering": "The efficacy of mantra formulas is transferable to synonymous words that express the same meaning.",
+      "why": "Violates the form-boundness axiom: if word-efficacy were transferable to synonyms, the verse's evidence from mantra-healing would collapse. The commentary is explicit: 'substitute a synonym and the power is gone'. This treats sakti as meaning-dependent rather than form-bound.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "transferable",
+          "from": "sabda",
+          "to": "visapaharana"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "sensible_qualities_non_intrinsic",
+      "rendering": "The powers attributed to sensible qualities like colour are merely conventional categorizations, not intrinsic determinations.",
+      "why": "Denies yata-sakti for the analogy base itself (rupa), which would make the entire argument vacuous. The verse grounds the claim about word-power in the observable fixity of colour's powers: 'this herb's colour signals this virtue; fire's touch burns and water's cools, invariably'.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "merely_conventional",
+          "of": "rupa"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The contract captures the core argument: an analogy between sensible qualities and words, both indexed to yata-sakti (determinate, form-bound powers), with mantra-efficacy as empirical evidence. This supports the sabdavada thesis that words are powers before they are signs. Contested: whether yata-sakti refers to intrinsic physical powers (for colours) in a way that can be meaningfully extended to word-forms; the commentary's confidence in mantra-efficacy as decisive evidence depends on the tradition's acceptance of that practice."
+}

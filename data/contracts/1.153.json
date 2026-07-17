@@ -1,0 +1,187 @@
+{
+ "verse": "1.153",
+ "entities": [
+  {
+   "id": "apabhransa",
+   "name": "apabhraṃśa",
+   "sort": "linguisticItem",
+   "cite": "apabhramsas prasiddhim agatah — have attained establishment"
+  },
+  {
+   "id": "sadhurupa",
+   "name": "sādhurūpa",
+   "sort": "linguisticItem",
+   "cite": "for those speakers, sadhur avacakah — it is the *correct* form that fails to express"
+  },
+  {
+   "id": "prasiddhi",
+   "name": "prasiddhī",
+   "sort": "power",
+   "cite": "become the *current* forms, rudhi (1.128) now running entirely on the fallen side"
+  },
+  {
+   "id": "vigunasamudaya",
+   "name": "viguṇasamudāya",
+   "sort": "power",
+   "cite": "among vigunesu abhidhatrsu, speakers gone defective"
+  },
+  {
+   "id": "vacakatva",
+   "name": "vācakatva",
+   "sort": "property",
+   "cite": "expressiveness follows establishment, and establishment follows transmission, wherever transmission goes"
+  },
+  {
+   "id": "adrsta",
+   "name": "adrṣṭa",
+   "sort": "absolute",
+   "cite": "the one ground (adrsta) where observation cannot follow to contest it"
+  },
+  {
+   "id": "parampara",
+   "name": "pāramparyā",
+   "sort": "power",
+   "cite": "Paramparyat: by transmission, generation upon generation"
+  }
+ ],
+ "axioms": [
+  {
+   "kind": "relation",
+   "name": "prasiddhim_agatah",
+   "from": "apabhransa",
+   "to": "prasiddhi",
+   "cite": "apabhramsas prasiddhim agatah — have attained establishment, become the *current* forms"
+  },
+  {
+   "kind": "predication",
+   "name": "asraya_vigunasamudaya",
+   "of": "apabhransa",
+   "cite": "among vigunesu abhidhatrsu, speakers gone defective (communities severed from the sista line)"
+  },
+  {
+   "kind": "relation",
+   "name": "avacakah",
+   "from": "prasiddhi",
+   "to": "sadhurupa",
+   "cite": "for those speakers, sadhur avacakah — it is the *correct* form that fails to express"
+  },
+  {
+   "kind": "predication",
+   "name": "vacakatva_niyamita_prasiddhya",
+   "of": "vacakatva",
+   "cite": "expressiveness follows establishment, and establishment follows transmission, wherever transmission goes"
+  },
+  {
+   "kind": "relation",
+   "name": "sadhutva_amangala",
+   "from": "sadhurupa",
+   "to": "vigunasamudaya",
+   "cite": "sadhutva confers no magical reach beyond the community that sustains it"
+  },
+  {
+   "kind": "predication",
+   "name": "adrsta_rakshana",
+   "of": "adrsta",
+   "cite": "What survives the concession is only, but exactly, the dharma-claim (1.27, 1.139): the established corrupt form expresses, in its own domain, as well as Sanskrit ever did — what it does not do is bear the unseen fruit"
+  }
+ ],
+ "denials": [
+  {
+   "kind": "predication",
+   "name": "sadhurupa_atma_vacak",
+   "of": "sadhurupa",
+   "cite": "sadhutva confers no magical reach beyond the community that sustains it"
+  },
+  {
+   "kind": "relation",
+   "name": "parampara_sadhut_rakshan",
+   "from": "parampara",
+   "to": "sadhurupa",
+   "cite": "The relay of 1.152 has inverted: where gavi is what everyone says and gauh is heard as strange noise, the mediation runs the other way or not at all"
+  }
+ ],
+ "accepted_reading": {
+  "claims": [
+   {
+    "kind": "relation",
+    "name": "prasiddhim_agatah",
+    "from": "apabhransa",
+    "to": "prasiddhi",
+    "cite": "corrupt forms have attained establishment"
+   },
+   {
+    "kind": "relation",
+    "name": "avacakah",
+    "from": "prasiddhi",
+    "to": "sadhurupa",
+    "cite": "it is the correct form that is non-expressive"
+   },
+   {
+    "kind": "predication",
+    "name": "asraya_vigunasamudaya",
+    "of": "apabhransa",
+    "cite": "among defective speakers"
+   }
+  ]
+ },
+ "rejected_readings": [
+  {
+   "label": "intrinsic_correctness",
+   "rendering": "The correct form remains expressive and authoritative regardless of speaker community.",
+   "why": "Violates the core doctrine that expressiveness follows establishment and community. The verse teaches that correctness (sadhutva) confers no reach beyond the community—this reading inappropriately grants the correct form trans-community authority that the commentary explicitly denies.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "predication",
+     "name": "sadhurupa_atma_vacak",
+     "of": "sadhurupa"
+    }
+   ],
+   "expect": "contradicted"
+  },
+  {
+   "label": "ignorance_model",
+   "rendering": "Defective speakers simply fail to recognize the superiority of the correct form due to ignorance.",
+   "why": "Treats 1.153 as a normative lament about speaker failure, when the commentary insists on a descriptive reading that grants the Prakrits full semantic citizenship within their communities. This misses the fundamental inversion: it is not that the correct form is truly expressive but unknown; rather, in those communities, the established corrupt form *is* the expressive form.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "predication",
+     "name": "vigunasamudaya_ajnana",
+     "of": "vigunasamudaya"
+    }
+   ],
+   "expect": "unlicensed"
+  },
+  {
+   "label": "transmission_preserves",
+   "rendering": "Transmission through established lineages preserves the correct form and its authority.",
+   "why": "Contradicts the verse's explicit teaching that transmission can degrade forms (when it runs through broken lineages), and that the established form—even if corrupt—is what is expressive. The commentary shows transmission as value-neutral: it carries what it carries, and expressiveness follows what is carried, not what should have been carried.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "relation",
+     "name": "parampara_sadhut_rakshan",
+     "from": "parampara",
+     "to": "sadhurupa"
+    }
+   ],
+   "expect": "contradicted"
+  },
+  {
+   "label": "normative_retreat",
+   "rendering": "Correctness and establishment are ultimately reconciled by a hidden normative standard that applies universally.",
+   "why": "Misses the intentional concession: the verse shows that the normative claim survives *only* in the realm of the unseen (adrsta), beyond observation. Any attempt to reconcile correctness and presiding usage within the observable domain violates the verse's retreat to this single unseen ground.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "predication",
+     "name": "sadhutva_siddhanta_sarva",
+     "of": "sadhurupa"
+    }
+   ],
+   "expect": "unlicensed"
+  }
+ ],
+ "notes": "Strain: the doctrine is purely relational—no intrinsic essences, only establishment and expressiveness relative to communities. The six sorts (absolute, power, manifestation, property, linguistic-item, cognition) capture the anatomy, but the verse's radical claim is that expressiveness is not intrinsic to the correct form but determined by prasiddhī and community. The only refuge for normativity is adrsta (unseen fruit), which lies outside the observable domain entirely. This is unusually honest for a grammarian: language works how language communities work; correctness becomes a claim about consequences (the unseen fruit) rather than present fact."
+}

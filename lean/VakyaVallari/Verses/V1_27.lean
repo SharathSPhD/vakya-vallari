@@ -9,7 +9,7 @@ open VakyaVallari
 
 def sadhu : Entity := ⟨"sādhu", Sorta.linguisticItem⟩
 def asadhu : Entity := ⟨"asādhu", Sorta.linguisticItem⟩
-def sistha : Entity := ⟨"śiṣṭa", Sorta.cognition⟩
+def sistha : Entity := ⟨"śiṣṭa", Sorta.power⟩
 def agama : Entity := ⟨"āgama", Sorta.power⟩
 def artha : Entity := ⟨"artha", Sorta.property⟩
 def pratyayana : Entity := ⟨"pratyāyana", Sorta.cognition⟩

@@ -1,0 +1,109 @@
+{
+  "verse": "1.127",
+  "entities": [
+    {
+      "id": "karta",
+      "name": "kartā",
+      "sort": "manifestation",
+      "cite": "the karta proceeds"
+    },
+    {
+      "id": "karya",
+      "name": "kārya",
+      "sort": "manifestation",
+      "cite": "toward his karya"
+    },
+    {
+      "id": "sabda_sakti",
+      "name": "śabda-śakti",
+      "sort": "power",
+      "cite": "that very power"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "sadhana",
+      "from": "sabda_sakti",
+      "to": "karya",
+      "cite": "the karta proceeds toward his karya"
+    },
+    {
+      "kind": "identity",
+      "a": "sabda_sakti",
+      "b": "karya",
+      "cite": "stands as the deed"
+    },
+    {
+      "kind": "relation",
+      "name": "gati",
+      "from": "karta",
+      "to": "karya",
+      "cite": "the karta proceeds toward his karya"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "sadhana",
+      "from": "sabda_sakti",
+      "to": "karya",
+      "cite": "the word-power does not mediate the deed"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "identity",
+        "a": "sabda_sakti",
+        "b": "karya",
+        "cite": "it is that very power which stands as the deed itself"
+      },
+      {
+        "kind": "relation",
+        "name": "gati",
+        "from": "karta",
+        "to": "karya",
+        "cite": "the agent proceeds"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "persistent_mediation",
+      "rendering": "Word-power serves as a mediating instrument between agent and deed in both the divided and undivided states.",
+      "why": "Asserts that the sadhana (mediation) relation persists universally, but the verse teaches a shift: in differentiation it mediates, in non-differentiation it IS the deed (no mediation). The commentary explicitly denies this: 'the word-power does not mediate the deed; it is it.'",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "sadhana",
+          "from": "sabda_sakti",
+          "to": "karya"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "demote_power",
+      "rendering": "Word-power is merely a useful property or tool that agents employ to accomplish their deeds.",
+      "why": "Treats śabda-śakti as a dependent property rather than a fundamental power. This inverts the ontology: the identity axiom (sabda-sakti = karya) reveals word-power as the ultimate substance of action itself, not a tool. The sort error (property vs power) exposes the misreading.",
+      "entities": [
+        {
+          "id": "sabda_sakti_property",
+          "name": "śabda-śakti",
+          "sort": "property"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "dependent_instrument",
+          "of": "sabda_sakti_property"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse establishes a two-level metaphysics of action: in differentiation (pravibhāga), word-power is the sadhana (instrumental means) by which agent reaches deed; in non-differentiation (avibhāga), word-power IS the deed itself (identity). The axiom and denial encode the same relation name but in opposing contexts, capturing the shift from mediation to identity. The contract prioritizes the undivided insight (identity axiom) while acknowledging the divided state structure."
+}

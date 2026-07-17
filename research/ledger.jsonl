@@ -92,3 +92,5 @@
 {"ts": "2026-07-17T06:25:20.347329+00:00", "event": "milestone", "detail": "85 verse units verified, 199 refutations, 121 pytest gates, lake green"}
 {"ts": "2026-07-17T06:38:14.377354+00:00", "event": "gate", "detail": "round 6 (30 agents) all OK; adjudicator-4: 25 conflicts -> 14 new homonym entries incl. phonetician sphota sense (1.102-1.106 rival terminology)"}
 {"ts": "2026-07-17T06:38:14.377413+00:00", "event": "milestone", "detail": "115 verse units verified, 277 refutations, 151 pytest gates"}
+{"ts": "2026-07-17T18:08:19.261316+00:00", "event": "gate", "detail": "final round (29 agents) all OK; adjudicator-5 quota-killed; main-loop adjudication: 25 rulings (17 contract fixes, 9 registry entries incl. veda/śruti/rūpa/sādhu polysemy), 3 auto-extensions"}
+{"ts": "2026-07-17T18:08:19.261447+00:00", "event": "milestone", "detail": "KANDA 1 COMPLETE: all 144 Brahmakanda units verified, 350 refutations, 180 pytest gates, zero conflicts"}

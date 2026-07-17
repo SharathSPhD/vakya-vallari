@@ -1,0 +1,208 @@
+{
+ "verse": "1.146",
+ "entities": [
+  {
+   "id": "mala",
+   "name": "mala",
+   "sort": "property",
+   "cite": "Malas, impurities, station themselves in kaya, vac, buddhi"
+  },
+  {
+   "id": "kaya",
+   "name": "kāya",
+   "sort": "manifestation",
+   "cite": "the tradition's standard trio of act-channels (karma is done by body, word and mind)"
+  },
+  {
+   "id": "vac",
+   "name": "vāc",
+   "sort": "absolute",
+   "cite": "the tradition's standard trio of act-channels (karma is done by body, word and mind)"
+  },
+  {
+   "id": "buddhi",
+   "name": "buddhi",
+   "sort": "cognition",
+   "cite": "the tradition's standard trio of act-channels (karma is done by body, word and mind)"
+  },
+  {
+   "id": "cikitsa",
+   "name": "cikitsā",
+   "sort": "absolute",
+   "cite": "cikitsa, medicine, for the body's disorders"
+  },
+  {
+   "id": "laksana",
+   "name": "lakṣaṇa",
+   "sort": "absolute",
+   "cite": "laksana, 'the science of characteristics' — grammar's own honorific title"
+  },
+  {
+   "id": "adhyatmasastra",
+   "name": "adhyātmaśāstra",
+   "sort": "absolute",
+   "cite": "adhyatma-sastra, the science of the self, for the mind's"
+  }
+ ],
+ "axioms": [
+  {
+   "kind": "relation",
+   "name": "avastitah",
+   "from": "mala",
+   "to": "kaya",
+   "cite": "Malas, impurities, station themselves in kaya, vac, buddhi"
+  },
+  {
+   "kind": "relation",
+   "name": "avastitah",
+   "from": "mala",
+   "to": "vac",
+   "cite": "Malas, impurities, station themselves in kaya, vac, buddhi"
+  },
+  {
+   "kind": "relation",
+   "name": "avastitah",
+   "from": "mala",
+   "to": "buddhi",
+   "cite": "Malas, impurities, station themselves in kaya, vac, buddhi"
+  },
+  {
+   "kind": "relation",
+   "name": "viśuddhi",
+   "from": "cikitsa",
+   "to": "kaya",
+   "cite": "Each has its cathartic science: cikitsa, medicine, for the body's disorders"
+  },
+  {
+   "kind": "relation",
+   "name": "viśuddhi",
+   "from": "laksana",
+   "to": "vac",
+   "cite": "laksana, 'the science of characteristics' — grammar's own honorific title, the discipline of laksya and laksana, usage and rule — for speech"
+  },
+  {
+   "kind": "relation",
+   "name": "viśuddhi",
+   "from": "adhyatmasastra",
+   "to": "buddhi",
+   "cite": "adhyatma-sastra, the science of the self, for the mind's"
+  },
+  {
+   "kind": "relation",
+   "name": "madhya",
+   "from": "vac",
+   "to": "kaya",
+   "cite": "speech stands between body and spirit as the hinge-channel"
+  },
+  {
+   "kind": "relation",
+   "name": "madhya",
+   "from": "vac",
+   "to": "buddhi",
+   "cite": "speech stands between body and spirit as the hinge-channel"
+  }
+ ],
+ "denials": [
+  {
+   "kind": "relation",
+   "name": "upamana",
+   "from": "laksana",
+   "to": "cikitsa",
+   "cite": "grammar is not *like* medicine; it occupies the middle seat in a single therapeutic system of the person, flanked by medicine and metaphysics"
+  }
+ ],
+ "accepted_reading": {
+  "claims": [
+   {
+    "kind": "relation",
+    "name": "avastitah",
+    "from": "mala",
+    "to": "kaya",
+    "cite": "The impurities that stand settled in body, speech and mind"
+   },
+   {
+    "kind": "relation",
+    "name": "avastitah",
+    "from": "mala",
+    "to": "vac",
+    "cite": "The impurities that stand settled in body, speech and mind"
+   },
+   {
+    "kind": "relation",
+    "name": "avastitah",
+    "from": "mala",
+    "to": "buddhi",
+    "cite": "The impurities that stand settled in body, speech and mind"
+   },
+   {
+    "kind": "relation",
+    "name": "viśuddhi",
+    "from": "cikitsa",
+    "to": "kaya",
+    "cite": "their purifications are through the sciences of medicine, grammar and the self"
+   },
+   {
+    "kind": "relation",
+    "name": "viśuddhi",
+    "from": "laksana",
+    "to": "vac",
+    "cite": "their purifications are through the sciences of medicine, grammar and the self"
+   },
+   {
+    "kind": "relation",
+    "name": "viśuddhi",
+    "from": "adhyatmasastra",
+    "to": "buddhi",
+    "cite": "their purifications are through the sciences of medicine, grammar and the self"
+   }
+  ]
+ },
+ "rejected_readings": [
+  {
+   "label": "medicine_on_speech",
+   "rendering": "Medicine serves as the therapeutic science for purifying the faults of speech.",
+   "why": "The commentary assigns each science to its proper domain: medicine for body, grammar for speech, and metaphysics for mind. This reading misassigns medicine to speech, violating the categorical structure that makes the system work.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "relation",
+     "name": "viśuddhi",
+     "from": "cikitsa",
+     "to": "vac"
+    }
+   ],
+   "expect": "unlicensed"
+  },
+  {
+   "label": "reversed_hinge",
+   "rendering": "The body stands between speech and the mind as the intermediary channel of the therapeutic system.",
+   "why": "The commentary explicitly states that 'speech stands between body and spirit as the hinge-channel'. This reading reverses the structural ordering, placing body in the mediating position that the text assigns only to speech.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "relation",
+     "name": "madhya",
+     "from": "kaya",
+     "to": "vac"
+    }
+   ],
+   "expect": "unlicensed"
+  },
+  {
+   "label": "grammar_as_analogy",
+   "rendering": "Grammar functions as an analogy or metaphor for how medicine purifies the body, but operates through a fundamentally different principle.",
+   "why": "The commentary rejects the analogical reading: 'grammar is not *like* medicine; it occupies the middle seat in a single therapeutic system'. This reading treats the system as merely metaphorical rather than as a unified ontological structure.",
+   "entities": [],
+   "claims": [
+    {
+     "kind": "relation",
+     "name": "upamana",
+     "from": "laksana",
+     "to": "cikitsa"
+    }
+   ],
+   "expect": "contradicted"
+  }
+ ],
+ "notes": "The contract formalizes the therapeutic system of purifications: impurities (mala) stationed in three act-channels (body, speech, mind) are purified by their corresponding sciences (medicine, grammar, metaphysics). The key structural insight is the madhya (hinge-channel) role of speech, which mediates between physical health and mental wisdom. The denial of analogical status (upamana) is critical—the three sciences form a single system, not separate analogies."
+}

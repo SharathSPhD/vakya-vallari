@@ -60,7 +60,16 @@
     "gloss": "tradition as a transcendent standing condition; the unbroken continuity presupposed by all reasoning",
     "justification": "Verse 1.41 presents āgama as persisting without break (avicchedena) like consciousness itself (caitanyam iva), transcending argumentative reach—a transcendent presupposition rather than a mere means of knowledge.",
     "verses": [
+     "1.140",
      "1.41"
+    ]
+   },
+   {
+    "sort": "linguisticItem",
+    "gloss": "tradition as the transmitted corpus",
+    "justification": "1.137: authority resides in the received words",
+    "verses": [
+     "1.137"
     ]
    }
   ]
@@ -72,6 +81,7 @@
     "gloss": "inference as a means of knowledge; anumāna as a pramāṇa or instrument",
     "justification": "Verses 1.36, 1.38, and 1.42 list anumāna alongside pratyakṣa as one of the conventional pramāṇas (means of knowledge) whose reach the siddhis transcend, or whose limit the highest knowledge exceeds.",
     "verses": [
+     "1.34",
      "1.36",
      "1.38",
      "1.42"
@@ -82,6 +92,7 @@
     "gloss": "inference as an epistemic faculty or cognitive process",
     "justification": "Verses 1.32, 1.35, 1.37 discuss anumāna as an epistemic capacity—establishing things by inference, the claim that anumāna exhausts knowledge, and what the highest knowledge transcends.",
     "verses": [
+     "1.149",
      "1.32",
      "1.35",
      "1.37"
@@ -96,6 +107,7 @@
     "gloss": "the ultimate principle of righteousness, virtue, and merit; the ethical-ontological ground",
     "justification": "Verses 1.24-26, 1.27, 1.29 present dharma as the final aim of grammar, the principle whose realization grammar enables and whose means grammar provides.",
     "verses": [
+     "1.139",
      "1.24-26",
      "1.27",
      "1.29"
@@ -106,6 +118,7 @@
     "gloss": "the empirical, transmitted paths and practices of virtue; established customs and traditions",
     "justification": "Verses 1.30-31 describe dharma as the unbroken paths established through tradition and world-practice, grounded in empirical continuity rather than reasoning alone.",
     "verses": [
+     "1.134",
      "1.30",
      "1.31"
     ]
@@ -115,9 +128,9 @@
     "gloss": "the specific relational character or nature; the dharma between ground and manifestation",
     "justification": "Verses 1.49, 1.63, 1.114 use dharma to mean the relational character or dharma-connection, referring to the vivarta (manifestation) relation or causal properties where effects appear transferred without ontological change.",
     "verses": [
+     "1.114",
      "1.49",
-     "1.63",
-     "1.114"
+     "1.63"
     ]
    }
   ]
@@ -139,6 +152,14 @@
     "verses": [
      "1.36"
     ]
+   },
+   {
+    "sort": "manifestation",
+    "gloss": "the prescribed ritual order as ongoing practice",
+    "justification": "1.133: the order declared by śruti and smṛti persists in practice",
+    "verses": [
+     "1.133"
+    ]
    }
   ]
  },
@@ -149,13 +170,15 @@
     "gloss": "the transcendent, inner word as an unchanging principle; the word residing in intellect before utterance; śabdatattva",
     "justification": "Verse 1.46 presents śabda as buddhistha (residing in intellect), complete and unsounded, latent as fire in the fire-stick—the absolute sphoṭa that manifests without transformation. Verses 1.94, 1.96, 1.115, 1.116, 1.120, 1.121 continue this usage of śabda as the unchanging word-absolute that persists through manifestation, with manifestation of the many sounds dependent on this transcendent śabda.",
     "verses": [
-     "1.46",
-     "1.94",
-     "1.96",
      "1.115",
      "1.116",
      "1.120",
-     "1.121"
+     "1.121",
+     "1.130",
+     "1.142",
+     "1.46",
+     "1.94",
+     "1.96"
     ]
    },
    {
@@ -163,9 +186,19 @@
     "gloss": "the linguistic term or word as used in utterance, grammar, and communication",
     "justification": "Verses across Brahmakāṇḍa refer to śabda as the linguistic item operating in communication and grammar, including the undivided word in various manifestations and contexts.",
     "verses": [
-     "1.6",
+     "1.112-113",
+     "1.118",
+     "1.119",
      "1.12",
+     "1.122",
+     "1.123",
+     "1.129",
      "1.13",
+     "1.137",
+     "1.138",
+     "1.139",
+     "1.148",
+     "1.155",
      "1.18-22",
      "1.23",
      "1.24-26",
@@ -183,6 +216,7 @@
      "1.56",
      "1.57",
      "1.58",
+     "1.6",
      "1.61",
      "1.65",
      "1.70",
@@ -196,12 +230,7 @@
      "1.91",
      "1.95",
      "1.98",
-     "1.99",
-     "1.112-113",
-     "1.118",
-     "1.119",
-     "1.122",
-     "1.123"
+     "1.99"
     ]
    },
    {
@@ -230,6 +259,8 @@
     "gloss": "meaning as a property conveyed or as the attribute of meaningfulness",
     "justification": "Verses 1.27, 1.44, 1.47, 1.62, and 1.67 establish that words succeed in conveying meaning or in standing for referents, treating artha as a property they possess or the relational character that justifies derivation.",
     "verses": [
+     "1.134",
+     "1.149",
      "1.27",
      "1.44",
      "1.47",
@@ -242,6 +273,8 @@
     "gloss": "purpose, aim, or ultimate goal; that for which all activity is undertaken",
     "justification": "Verse 1.29 invokes purpose (artha): no one establishes a purposeless system, so grammar's codification must serve an ultimate artha (here identified with dharma).",
     "verses": [
+     "1.152",
+     "1.155",
      "1.29"
     ]
    },
@@ -258,6 +291,11 @@
     "gloss": "the manifested referent; the object as revealed or manifested through word and cognition",
     "justification": "Verses 1.50, 1.53-57, 1.61, 1.74, 1.119 present artha as the manifested object (jneya), the thing that is known and expressed—artha as the empirical manifestation revealed through the speaker and hearer's understanding, and as the undivided meaning that language conveys.",
     "verses": [
+     "1.119",
+     "1.128",
+     "1.136",
+     "1.140",
+     "1.148",
      "1.50",
      "1.53",
      "1.54",
@@ -265,8 +303,7 @@
      "1.56",
      "1.57",
      "1.61",
-     "1.74",
-     "1.119"
+     "1.74"
     ]
    }
   ]
@@ -321,9 +358,20 @@
     "gloss": "traditional transmitted texts and knowledge; the body of secondary literature derived from the Veda",
     "justification": "Verses 1.7, 1.29, and 1.43 refer to smṛti as the traditional texts framed by vedavid (those who know the Veda), transmitted without interruption, providing the grounds for the regulation of words.",
     "verses": [
-     "1.7",
+     "1.133",
+     "1.141",
+     "1.145",
      "1.29",
-     "1.43"
+     "1.43",
+     "1.7"
+    ]
+   },
+   {
+    "sort": "manifestation",
+    "gloss": "the ever-being-composed living tradition",
+    "justification": "1.144: śiṣṭair nibadhyamāna — presently being composed, never severed",
+    "verses": [
+     "1.144"
     ]
    }
   ]
@@ -537,6 +585,7 @@
     "gloss": "the instrumental cause or efficient condition; the conditioning power",
     "justification": "Verses 1.94, 1.98 refer to nimitta as the condition or efficient cause of manifestation—'being the condition of apprehension' (1.94) and the grounds on which manifestation depends.",
     "verses": [
+     "1.148",
      "1.94",
      "1.98"
     ]
@@ -654,6 +703,7 @@
     "gloss": "intellect or intelligence as the epistemic faculty; the faculty of understanding and discrimination",
     "justification": "Verses 1.45, 1.46, 1.47, 1.53, 1.70, 1.84, 1.90, 1.91 refer to buddhi as the intellectual faculty where the word resides, through which meaning is grasped, and by which discrimination and knowledge operate.",
     "verses": [
+     "1.146",
      "1.45",
      "1.46",
      "1.47",
@@ -706,8 +756,9 @@
     "gloss": "speech, utterance, or the manifested word as spoken sound",
     "justification": "Verses 1.86, 1.122 refer to vāk as speech or utterance—the manifested, audible word appearing in the world through phonetic forms.",
     "verses": [
-     "1.86",
-     "1.122"
+     "1.122",
+     "1.128",
+     "1.86"
     ]
    },
    {
@@ -838,6 +889,7 @@
     "justification": "Verses 1.10, 1.78, 1.80, 1.87 refer to saṃskāra as the power of refinement or preparation—a causal force that prepares or conditions both objects and organs for further effects. Per 1.80 precedent: 'the preparation (saṃskāra) of both — object and organ — is accepted' as a power.",
     "verses": [
      "1.10",
+     "1.147",
      "1.78",
      "1.80",
      "1.87"
@@ -849,6 +901,155 @@
     "justification": "Verse 1.121 uses saṃskāra to mean word-formed residues or impressions—'the child comprehends through residues laid down before'—the manifested traces through which prior conditioning appears and operates.",
     "verses": [
      "1.121"
+    ]
+   }
+  ]
+ },
+ "kārya": {
+  "senses": [
+   {
+    "sort": "manifestation",
+    "gloss": "the deed / manifest action",
+    "justification": "1.127: word-power IS the deed in non-differentiation",
+    "verses": [
+     "1.127"
+    ]
+   },
+   {
+    "sort": "power",
+    "gloss": "the grammatical operation attaching to items",
+    "justification": "1.62: operations construed with what elements mean",
+    "verses": [
+     "1.62"
+    ]
+   }
+  ]
+ },
+ "veda": {
+  "senses": [
+   {
+    "sort": "linguisticItem",
+    "gloss": "the recited Vedic corpus",
+    "justification": "anukāra and upāya of Brahman, an empirical text",
+    "verses": [
+     "1.135",
+     "1.23",
+     "1.5",
+     "1.7"
+    ]
+   },
+   {
+    "sort": "absolute",
+    "gloss": "the eternal seed-order re-manifested each aeon",
+    "justification": "1.132: eternal bīja persists through dissolutions",
+    "verses": [
+     "1.132"
+    ]
+   }
+  ]
+ },
+ "vyavasthā": {
+  "senses": [
+   {
+    "sort": "manifestation",
+    "gloss": "systematic arrangement as observed order",
+    "justification": "1.28: eternality belongs to the arrangement",
+    "verses": [
+     "1.28"
+    ]
+   },
+   {
+    "sort": "power",
+    "gloss": "the eternal ordering principle",
+    "justification": "1.132: seed-order that re-establishes the Veda",
+    "verses": [
+     "1.132"
+    ]
+   }
+  ]
+ },
+ "śruti": {
+  "senses": [
+   {
+    "sort": "linguisticItem",
+    "gloss": "the received revealed text",
+    "justification": "recited canon alongside smṛti",
+    "verses": [
+     "1.133",
+     "1.141",
+     "1.145",
+     "1.46"
+    ]
+   },
+   {
+    "sort": "absolute",
+    "gloss": "revelation as beginningless, authorless order",
+    "justification": "1.144: anādi, avyavacchinna, akartṛka",
+    "verses": [
+     "1.144"
+    ]
+   }
+  ]
+ },
+ "rūpa": {
+  "senses": [
+   {
+    "sort": "property",
+    "gloss": "sensible quality/form of things",
+    "justification": "1.135, 1.138: form-bound powers of sensible qualities",
+    "verses": [
+     "1.135",
+     "1.138"
+    ]
+   },
+   {
+    "sort": "linguisticItem",
+    "gloss": "the word-form",
+    "justification": "1.136, 1.148: linguistic form vs meaning",
+    "verses": [
+     "1.136",
+     "1.148"
+    ]
+   }
+  ]
+ },
+ "sādhu": {
+  "senses": [
+   {
+    "sort": "property",
+    "gloss": "correctness as dharmic efficacy",
+    "justification": "1.139: sādhu enables abhyudaya",
+    "verses": [
+     "1.139"
+    ]
+   },
+   {
+    "sort": "linguisticItem",
+    "gloss": "the correct word-form",
+    "justification": "1.27, 1.152: sādhu vs apabhraṃśa forms",
+    "verses": [
+     "1.152",
+     "1.27"
+    ]
+   }
+  ]
+ },
+ "viparīta": {
+  "senses": [
+   {
+    "sort": "property",
+    "gloss": "corruptedness of a form",
+    "justification": "1.27: incorrect forms",
+    "verses": [
+     "1.27"
+    ]
+   },
+   {
+    "sort": "cognition",
+    "gloss": "inverted understanding",
+    "justification": "1.140: viparīta cognition from wrong reading",
+    "verses": [
+     "1.140"
     ]
    }
   ]

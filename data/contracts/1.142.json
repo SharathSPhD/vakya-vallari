@@ -1,0 +1,176 @@
+{
+  "verse": "1.142",
+  "entities": [
+    {
+      "id": "vaikhari",
+      "name": "vaikharī",
+      "sort": "linguisticItem",
+      "cite": "vaikhari, the elaborated — audible, articulated, sequence-ridden speech"
+    },
+    {
+      "id": "madhyama",
+      "name": "madhyamā",
+      "sort": "linguisticItem",
+      "cite": "madhyama, the middle — the inner word, mentally deployed, sequenced in thought though unsounded"
+    },
+    {
+      "id": "pasyanti",
+      "name": "paśyantī",
+      "sort": "linguisticItem",
+      "cite": "pasyanti, the seeing — speech at the station where it *sees* rather than says: undivided, sequence-swallowed, intentionality without articulation"
+    },
+    {
+      "id": "param_padam",
+      "name": "param padam",
+      "sort": "absolute",
+      "cite": "beyond even the triad, a supreme station of speech"
+    },
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "absolute",
+      "cite": "the sabda-tattva of 1.1 stands at (or as) the summit of an accessible gradient"
+    },
+    {
+      "id": "tirtha",
+      "name": "tīrtha",
+      "sort": "manifestation",
+      "cite": "each level has many fords, many descents and crossings"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "is_audible",
+      "of": "vaikhari",
+      "cite": "vaikhari, the elaborated — audible, articulated, sequence-ridden speech"
+    },
+    {
+      "kind": "predication",
+      "name": "is_unsounded",
+      "of": "madhyama",
+      "cite": "madhyama, the middle — the inner word, mentally deployed, sequenced in thought though unsounded"
+    },
+    {
+      "kind": "predication",
+      "name": "is_undivided",
+      "of": "pasyanti",
+      "cite": "pasyanti, the seeing — speech at the station where it *sees* rather than says: undivided, sequence-swallowed, intentionality without articulation"
+    },
+    {
+      "kind": "predication",
+      "name": "aneka_tirtha_bheda",
+      "of": "vaikhari",
+      "cite": "each level has many fords, many descents and crossings"
+    },
+    {
+      "kind": "predication",
+      "name": "aneka_tirtha_bheda",
+      "of": "madhyama",
+      "cite": "each level has many fords, many descents and crossings"
+    },
+    {
+      "kind": "predication",
+      "name": "aneka_tirtha_bheda",
+      "of": "pasyanti",
+      "cite": "each level has many fords, many descents and crossings"
+    },
+    {
+      "kind": "predication",
+      "name": "is_supreme",
+      "of": "param_padam",
+      "cite": "beyond even the triad, a supreme station of speech"
+    },
+    {
+      "kind": "relation",
+      "name": "transcends",
+      "from": "param_padam",
+      "to": "pasyanti",
+      "cite": "beyond even the triad, a supreme station of speech"
+    },
+    {
+      "kind": "identity",
+      "a": "param_padam",
+      "b": "sabda",
+      "cite": "the sabda-tattva of 1.1 stands at (or as) the summit of an accessible gradient"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "is_ultimate",
+      "of": "pasyanti",
+      "cite": "beyond even the triad, a supreme station of speech"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "aneka_tirtha_bheda",
+        "of": "vaikhari",
+        "cite": "with their many distinct fords"
+      },
+      {
+        "kind": "predication",
+        "name": "aneka_tirtha_bheda",
+        "of": "madhyama",
+        "cite": "with their many distinct fords"
+      },
+      {
+        "kind": "predication",
+        "name": "aneka_tirtha_bheda",
+        "of": "pasyanti",
+        "cite": "with their many distinct fords"
+      },
+      {
+        "kind": "relation",
+        "name": "transcends",
+        "from": "param_padam",
+        "to": "pasyanti",
+        "cite": "beyond the threefold speech"
+      },
+      {
+        "kind": "predication",
+        "name": "is_supreme",
+        "of": "param_padam",
+        "cite": "the supreme station of the Word"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "para_vac_fourth_level",
+      "rendering": "Four entirely distinct and non-hierarchical levels of speech exist: vaikhari, madhyama, pasyanti, and a separate para-vac level.",
+      "why": "The verse speaks of the 'param padam of the threefold vac', suggesting a summit or culmination of the three-level hierarchy rather than an additional level standing apart from them. The commentary leaves this ambiguous on purpose—whether param padam is pasyanti's absolute aspect or the later-systematized para-vac—but the karika's syntax supports the minimal reading of param padam as the pinnacle of the existing three.",
+      "entities": [
+        {"id": "para_vac_separate", "name": "para-vāc", "sort": "linguisticItem"}
+      ],
+      "claims": [
+        {"kind": "relation", "name": "non_hierarchical", "from": "para_vac_separate", "to": "pasyanti"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "denies_hierarchy",
+      "rendering": "Vaikhari, madhyama, and pasyanti are three unrelated modes of speech with no connection between them.",
+      "why": "The commentary establishes each as a stage in a unified gradient: 'the sabda-tattva of 1.1 stands at the summit of an accessible gradient — which makes the return-path of 1.131 (union by the word's perfecting) a climb through one's own speaking, from voice through mind to vision.' This explicit description of ascent through the levels contradicts a reading that treats them as disconnected.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "is_independent", "of": "vaikhari"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "denies_supremacy",
+      "rendering": "The three levels of speech—vaikhari, madhyama, and pasyanti—constitute the final, ultimate reality; there is no station beyond them.",
+      "why": "The verse's central assertion, marked as 'adbhuta' (wonder), is precisely that there IS a supreme station (param padam) beyond the threefold speech. To deny the existence of param padam directly contradicts the verse's primary claim.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "is_ultimate", "of": "pasyanti"}
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "The contract formalizes 1.142's declaration of three hierarchically-arranged levels of speech (vaikhari, madhyama, pasyanti), each with multiple modes (aneka-tirtha-bheda), and the existence of a supreme station (param padam) that transcends them and identifies with sabda-tattva. The verse's ambiguity—left open by the commentary—between param padam as pasyanti's absolute aspect vs. a fourth para-vac level is not resolved in the axioms; instead, the contract encodes the 'minimal reading' the commentary prefers (that param padam is the summit of the three), while the denied reading avoids commitment to para-vac as a separate level."
+}
