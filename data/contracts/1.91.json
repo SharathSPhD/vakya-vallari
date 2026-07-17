@@ -1,0 +1,143 @@
+{
+  "verse": "1.91",
+  "entities": [
+    {
+      "id": "vikara",
+      "name": "vikāra",
+      "sort": "manifestation",
+      "cite": "the transformation of milk or of a seed"
+    },
+    {
+      "id": "anupurvi_niyama",
+      "name": "anupurvī-niyama",
+      "sort": "property",
+      "cite": "natural transformation has anupurvi-niyama, fixed serial order"
+    },
+    {
+      "id": "pratipatti",
+      "name": "pratipattṝ",
+      "sort": "cognition",
+      "cite": "the sequence in the cognitions of comprehenders"
+    },
+    {
+      "id": "buddhi",
+      "name": "buddhi",
+      "sort": "cognition",
+      "cite": "the sequence in the cognitions of comprehenders fixed"
+    },
+    {
+      "id": "krama",
+      "name": "kramaḥ",
+      "sort": "property",
+      "cite": "a fixed order of succession"
+    },
+    {
+      "id": "niyata_krama",
+      "name": "niyata krama",
+      "sort": "property",
+      "cite": "a niyata krama, a law-governed ripening"
+    },
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "same sounds, same prepared faculty, same staged path"
+    },
+    {
+      "id": "process",
+      "name": "process",
+      "sort": "manifestation",
+      "cite": "manifestation is a causal process with the same fixity as any other maturation"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "anupurvi_niyama",
+      "of": "vikara",
+      "cite": "natural transformation has anupurvi-niyama, fixed serial order"
+    },
+    {
+      "kind": "predication",
+      "name": "niyata_krama",
+      "of": "pratipatti",
+      "cite": "the part-seizures of 1.90 are not a random walk that happens to end at the whole but a niyata krama, a law-governed ripening"
+    },
+    {
+      "kind": "predication",
+      "name": "lawlike",
+      "of": "process",
+      "cite": "Error with lawlike trajectory is process, not accident"
+    },
+    {
+      "kind": "relation",
+      "name": "exemplifies",
+      "from": "vikara",
+      "to": "pratipatti",
+      "cite": "Because manifestation is a causal process with the same fixity as any other maturation"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "arbitrary",
+      "of": "pratipatti",
+      "cite": "if the intermediate graspings are errors, why do all competent hearers commit the *same* ones, in the same order, and converge on the same whole?"
+    },
+    {
+      "kind": "predication",
+      "name": "aniyama",
+      "of": "vikara",
+      "cite": "aniyama excluded"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "anupurvi_niyama",
+        "of": "vikara",
+        "cite": "As there is a fixed order of succession in the transformation of milk or of a seed"
+      },
+      {
+        "kind": "predication",
+        "name": "niyata_krama",
+        "of": "pratipatti",
+        "cite": "so is the sequence in the cognitions of comprehenders fixed"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "arbitrary_cognitions",
+      "rendering": "The sequence of cognitions in comprehenders is arbitrary and varies unpredictably from hearer to hearer.",
+      "why": "Contradicts the verse's assertion of niyata krama (fixed, law-governed sequence), and ignores the evidence that all competent hearers follow the same staged path.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "arbitrary", "of": "pratipatti"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "accidental_errors",
+      "rendering": "Errors in comprehension are accidental deviations from the correct path, not lawlike stages.",
+      "why": "The commentary explicitly states 'Error with lawlike trajectory is process, not accident', insisting that even the errors are integral to the causal process, not random deviations.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "accidental", "of": "pratipatti"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "formless_transformation",
+      "rendering": "Natural transformations like milk becoming cheese have no necessary order of succession.",
+      "why": "The verse explicitly grounds cognition's ordered nature in the fixed serial order of natural transformation, which the commentary stresses is governed by anupurvi-niyama, not aniyama (disorder).",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "aniyama", "of": "vikara"}
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "The verse defends incremental comprehension by paralleling it with natural causation: both milk-transformation and cognition exemplify niyata krama (law-governed sequence), not randomness. The central ontological move equates understanding with growth-process, subordinating it to general causal fixity."
+}

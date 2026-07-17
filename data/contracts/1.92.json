@@ -10,7 +10,7 @@
     {
       "id": "bhaga",
       "name": "bhāga",
-      "sort": "property",
+      "sort": "manifestation",
       "cite": "Either they have parts or they do not"
     },
     {
@@ -22,7 +22,7 @@
     {
       "id": "dhvani",
       "name": "dhvani",
-      "sort": "manifestation",
+      "sort": "linguisticItem",
       "cite": "the manifesting stream"
     },
     {
@@ -50,7 +50,7 @@
       "name": "arises_from",
       "from": "rupabheda",
       "to": "dhvani",
-      "cite": "their apparent internal form-differences arise from the sound's sequence — the ordering belongs to the manifesting stream, projected onto the unit"
+      "cite": "the ordering belongs to the manifesting stream, projected onto the unit"
     },
     {
       "kind": "predication",
@@ -63,7 +63,7 @@
       "name": "is_abhyupaya",
       "from": "bhaga",
       "to": "abhyupaya",
-      "cite": "the very positing of parts is abhyupaya — a device, the analyst's and the hearer's working fiction"
+      "cite": "the very positing of parts, is abhyupaya — a device, the analyst's and the hearer's working fiction"
     }
   ],
   "denials": [
@@ -110,20 +110,20 @@
       "label": "intrinsic_divisibility",
       "rendering": "Linguistic units possess real internal parts arranged in sequence.",
       "why": "Ignores the dilemma: both horns deny intrinsic divisibility. The first horn locates sequence in the manifesting stream (not the unit); the second denies that parts belong to the unit at all—they are posited as a device. This reading mistakes the analyst's projection for the unit's actual structure.",
-      "entities": [
-        {"id": "unit_intrinsic", "name": "unit", "sort": "property"}
-      ],
+      "entities": [],
       "claims": [
-        {"kind": "relation", "name": "inherent_to", "from": "krama", "to": "unit_intrinsic"}
+        {"kind": "relation", "name": "inherent_to", "from": "krama", "to": "unit"}
       ],
       "expect": "contradicted"
     },
     {
-      "label": "part_whole_real",
-      "rendering": "The part-whole antinomy of 1.72–74 stands unresolved because the unit's divisibility is genuinely ambiguous.",
-      "why": "Misses the resolution: both decompositions are projections—differently sourced—onto the undivided manifestable. The first is a projection of manifesting sequence onto the static unit; the second is the analyst's fiction. The ambiguity dissolves when both are seen as external impositions. The reading mistakes the dilemma for an impasse.",
+      "label": "asymmetric_dilemma",
+      "rendering": "Only the partless horn (nirbhaga) resolves the part-whole paradox; the parted horn (bhagavat) leaves real divisibility intact.",
+      "why": "Misses that Bhartrhari uses both horns symmetrically: each denies real internal sequence to the unit. The first locates it in the stream; the second demotes it to device. Neither concedes intrinsic divisibility. A reading that privileges one horn over the other fractures the solution.",
       "entities": [],
-      "claims": [],
+      "claims": [
+        {"kind": "relation", "name": "is_essential", "from": "bhaga", "to": "unit"}
+      ],
       "expect": "unlicensed"
     }
   ],

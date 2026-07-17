@@ -1,0 +1,97 @@
+{
+  "verse": "1.93",
+  "entities": [
+    {
+      "id": "sphota",
+      "name": "sphota",
+      "sort": "linguisticItem",
+      "cite": "the sphota is a jati, a universal"
+    },
+    {
+      "id": "jati",
+      "name": "jāti",
+      "sort": "power",
+      "cite": "the sphota is a jati, a universal"
+    },
+    {
+      "id": "vyakti",
+      "name": "vyakti",
+      "sort": "manifestation",
+      "cite": "gauh-said-by-Devadatta and gauh-said-by-Yajnadatta are vyaktis, individual instances"
+    },
+    {
+      "id": "dhvani",
+      "name": "dhvani",
+      "sort": "linguisticItem",
+      "cite": "the vyaktis in question just *are* the dhvanis"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "identity",
+      "a": "sphota",
+      "b": "jati",
+      "cite": "the sphota is a jati, a universal"
+    },
+    {
+      "kind": "relation",
+      "name": "abhivyangya",
+      "from": "jati",
+      "to": "vyakti",
+      "cite": "anekavyakti-abhivyangya, manifested by its many particulars, as cowhood is by cows"
+    },
+    {
+      "kind": "identity",
+      "a": "vyakti",
+      "b": "dhvani",
+      "cite": "the vyaktis in question just *are* the dhvanis"
+    }
+  ],
+  "denials": [],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "identity",
+        "a": "sphota",
+        "b": "jati",
+        "cite": "universal"
+      },
+      {
+        "kind": "relation",
+        "name": "abhivyangya",
+        "from": "jati",
+        "to": "vyakti",
+        "cite": "manifested by its several individuals"
+      },
+      {
+        "kind": "identity",
+        "a": "vyakti",
+        "b": "dhvani",
+        "cite": "individuals are construed as the sounds"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "sphota_as_particular",
+      "rendering": "The sphota is an individual sound instance, not a universal type.",
+      "why": "Confuses the sphota (universal jati) with vyaktis (individual instances). Demoting sphota to a particular entity breaks the whole universal-particular framework and makes the identity with jati false.",
+      "entities": [
+        {
+          "id": "sphota_particular",
+          "name": "sphota",
+          "sort": "manifestation"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "identity",
+          "a": "sphota_particular",
+          "b": "jati"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "Verse 1.93 reports the jati-sphota systematization as received doctrine (smrta) without necessarily endorsing it as Bhartrhari's own position; the contract encodes the view's internal coherence: sphota = universal, manifested by individual instances that are identical with sounds."
+}

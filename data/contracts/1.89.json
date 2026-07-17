@@ -1,0 +1,98 @@
+{
+  "verse": "1.89",
+  "entities": [
+    {
+      "id": "darsana",
+      "name": "darśana",
+      "sort": "cognition",
+      "cite": "Just as, by its earlier perceivings — from afar, or in deep gloom — sight"
+    },
+    {
+      "id": "visaya",
+      "name": "viṣaya",
+      "sort": "manifestation",
+      "cite": "makes the object other than it is and determines it quite otherwise"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "anyathakrtya",
+      "from": "darsana",
+      "to": "visaya",
+      "cite": "making the object otherwise"
+    },
+    {
+      "kind": "relation",
+      "name": "adhyavasyati",
+      "from": "darsana",
+      "to": "visaya",
+      "cite": "determining it with full assertoric confidence"
+    },
+    {
+      "kind": "predication",
+      "name": "purva",
+      "of": "darsana",
+      "cite": "each earlier darsana"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "avasthapayati",
+      "of": "darsana",
+      "cite": "sight does not withhold judgement until conditions improve"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "anyathakrtya",
+        "from": "darsana",
+        "to": "visaya",
+        "cite": "sight makes the object other than it is"
+      },
+      {
+        "kind": "relation",
+        "name": "adhyavasyati",
+        "from": "darsana",
+        "to": "visaya",
+        "cite": "determines it quite otherwise"
+      },
+      {
+        "kind": "predication",
+        "name": "purva",
+        "of": "darsana",
+        "cite": "by its earlier perceivings"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "epistemic_caution",
+      "rendering": "Sight, from a distance or in deep gloom, provisionally determines the object while reserving final judgment until closer inspection.",
+      "why": "The rendering suggests epistemic caution — withholding confident judgment until conditions improve. But the commentary and axioms show the opposite: darsana delivers determinate, confident verdicts at each stage (adhyavasyati), which are wrong but asserted with full confidence. This contradicts the denial that darsana does NOT withhold judgment.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "avasthapayati", "of": "darsana"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "object_multiplicity",
+      "rendering": "Sight perceives different objects when viewing from a distance versus close up, with the distant view showing one object and the close view revealing another.",
+      "why": "Treats the staged misapprehension as evidence of multiple objects, when the commentary emphasizes there is one object throughout: 'The endpoint is veridical, and the errors were its road.' The axioms show darsana making a single viṣaya appear otherwise at each stage, not perceiving different objects. Multiple distinct objects would not illustrate the normal path to truth through committed error.",
+      "entities": [
+        {"id": "visaya_distant", "name": "viṣaya_distant", "sort": "manifestation"},
+        {"id": "visaya_near", "name": "viṣaya_near", "sort": "manifestation"}
+      ],
+      "claims": [
+        {"kind": "relation", "name": "anyathakrtya", "from": "darsana", "to": "visaya_distant"},
+        {"kind": "relation", "name": "anyathakrtya", "from": "darsana", "to": "visaya_near"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "Verse 1.89 is the protasis for 1.90, establishing perception (darsana) as the model for staged apprehension. The core commitment: darsana makes the object appear otherwise (anyathakrtya) and asserts it with full confidence (adhyavasyati) at each stage, yet reaches truth through this committed error. The six-sort system fits naturally: cognition (perception) and manifestation (the object as it appears) are the primary sorts."
+}

@@ -4,13 +4,13 @@
     {
       "id": "jnana",
       "name": "jñāna",
-      "sort": "power",
+      "sort": "cognition",
       "cite": "cognition, whose nature is undivided illumination, perpetually mimics the differentiation of what it grasps"
     },
     {
       "id": "bheda",
       "name": "bheda",
-      "sort": "property",
+      "sort": "manifestation",
       "cite": "Jnana imitates bheda — cognition, whose nature is undivided illumination, perpetually mimics the differentiation of what it grasps"
     },
     {
@@ -33,8 +33,8 @@
     },
     {
       "id": "sphota",
-      "name": "sphoṭa",
-      "sort": "absolute",
+      "name": "sphota",
+      "sort": "linguisticItem",
       "cite": "the sphota, ultimately the sabda-tattva of 1.1, is undivided"
     },
     {

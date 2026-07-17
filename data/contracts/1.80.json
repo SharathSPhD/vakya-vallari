@@ -28,7 +28,7 @@
     {
       "id": "samskara",
       "name": "saṃskāra",
-      "sort": "property",
+      "sort": "power",
       "cite": "the preparation of both — object and organ — is accepted"
     },
     {
@@ -174,15 +174,15 @@
       "expect": "unlicensed"
     },
     {
-      "label": "no_analogy_sound_light",
-      "rendering": "Sound and light work by completely different mechanisms; there is no pattern that connects them.",
-      "why": "The verse's entire structure is the claim that sound follows the same double-conditioning pattern as light. Denying the predication that establishes this analogy denies the verse's central point.",
+      "label": "sound_essence_equals_light",
+      "rendering": "Sound and light are essentially the same substance, differing only in their sensory appearance.",
+      "why": "The commentary explicitly defers the question of whether sound is separately perceived (1.81). Identifying them in substance would prematurely close a debate that Bhartrhari intentionally leaves open. The verse establishes only a functional parallel, not an identity.",
       "entities": [],
       "claims": [
         {
-          "kind": "predication",
-          "name": "kramo_tulya_tejasam",
-          "of": "dhvani"
+          "kind": "identity",
+          "a": "dhvani",
+          "b": "tejas"
         }
       ],
       "expect": "contradicted"

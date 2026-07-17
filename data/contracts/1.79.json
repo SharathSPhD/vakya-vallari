@@ -8,7 +8,7 @@
       "cite": "the yogin's concentration and the doctor's eye-salve improve the eye"
     },
     {
-      "id": "viṣaya",
+      "id": "visaya",
       "name": "viṣaya",
       "sort": "manifestation",
       "cite": "crushing sandalwood readies the wood's own gandha for apprehension"
@@ -20,13 +20,13 @@
       "cite": "readies the wood's own gandha for apprehension"
     },
     {
-      "id": "samādhāna",
+      "id": "samadhana",
       "name": "samādhāna",
       "sort": "power",
       "cite": "the yogin's concentration improve the eye"
     },
     {
-      "id": "śabda",
+      "id": "sabda",
       "name": "śabda",
       "sort": "linguisticItem",
       "cite": "applied to sound and word"
@@ -36,29 +36,29 @@
     {
       "kind": "relation",
       "name": "samskārayate",
-      "from": "samādhāna",
+      "from": "samadhana",
       "to": "indriya",
       "cite": "the yogin's concentration and the doctor's eye-salve improve the eye while leaving the object untouched"
     },
     {
       "kind": "relation",
       "name": "samskārayate",
-      "from": "viṣaya",
+      "from": "visaya",
       "to": "gandha",
       "cite": "crushing sandalwood readies the wood's own gandha for apprehension"
     },
     {
       "kind": "relation",
       "name": "samskārayate",
-      "from": "samādhāna",
-      "to": "śabda",
+      "from": "samadhana",
+      "to": "sabda",
       "cite": "neither samskara-model is ad hoc when applied to sound and word"
     },
     {
       "kind": "relation",
       "name": "samskārayate",
-      "from": "viṣaya",
-      "to": "śabda",
+      "from": "visaya",
+      "to": "sabda",
       "cite": "neither samskara-model is ad hoc when applied to sound and word"
     }
   ],
@@ -66,14 +66,14 @@
     {
       "kind": "relation",
       "name": "samskārayate",
-      "from": "samādhāna",
-      "to": "viṣaya",
+      "from": "samadhana",
+      "to": "visaya",
       "cite": "the yogin's concentration and the doctor's eye-salve improve the eye while leaving the object untouched"
     },
     {
       "kind": "relation",
       "name": "samskārayate",
-      "from": "viṣaya",
+      "from": "visaya",
       "to": "indriya",
       "cite": "crushing sandalwood readies the wood's own gandha for apprehension while doing nothing to the nose"
     }
@@ -83,14 +83,14 @@
       {
         "kind": "relation",
         "name": "samskārayate",
-        "from": "samādhāna",
+        "from": "samadhana",
         "to": "indriya",
         "cite": "preparation of the sense-organ alone by concentration, collyrium and the like"
       },
       {
         "kind": "relation",
         "name": "samskārayate",
-        "from": "viṣaya",
+        "from": "visaya",
         "to": "gandha",
         "cite": "preparation of the object for the apprehension of its smell"
       }
@@ -103,16 +103,20 @@
       "why": "The verse distinguishes two independent pathways: organ-preparation (concentration improves the eye) operates 'while leaving the object untouched,' and object-preparation (crushing readies scent) operates 'while doing nothing to the nose.' Requiring both falsifies this independence.",
       "entities": [],
       "claims": [
-        {"kind": "relation", "name": "samskārayate", "from": "samādhāna", "to": "viṣaya"}
+        {"kind": "relation", "name": "samskārayate", "from": "samadhana", "to": "visaya"}
       ],
       "expect": "contradicted"
     },
     {
-      "label": "organ_only",
-      "rendering": "Only the sense-organ can be prepared for perception; object-modification has no role in manifestation.",
-      "why": "The second half of the verse and the scent example refute this: 'crushing sandalwood readies the wood's own gandha for apprehension.' Object-modification is an equally valid, empirically attested pathway for making hidden qualities perceptible.",
-      "entities": [],
-      "claims": [],
+      "label": "reverse_causation",
+      "rendering": "The hidden property (scent) itself causes the object to be prepared, rather than the object's preparation revealing the property.",
+      "why": "Reverses the direction of causation. The commentary shows that processing prepares/readies the object's gandha for apprehension; the gandha does not do the preparing. A sort error since gandha is a property (not a power) and cannot be a samskara-source.",
+      "entities": [
+        {"id": "gandha_agent", "name": "gandha", "sort": "power"}
+      ],
+      "claims": [
+        {"kind": "relation", "name": "samskārayate", "from": "gandha_agent", "to": "visaya"}
+      ],
       "expect": "unlicensed"
     }
   ],

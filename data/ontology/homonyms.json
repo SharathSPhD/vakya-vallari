@@ -154,8 +154,9 @@
    {
     "sort": "linguisticItem",
     "gloss": "the linguistic term or word as used in utterance, grammar, and communication",
-    "justification": "Twenty-one verses (1.6, 1.12-13, 1.18-28, 1.44-45, 1.47-48, 1.50-58, 1.61) refer to śabda as the linguistic item operating in communication and grammar.",
+    "justification": "Verses across Brahmakāṇḍa refer to śabda as the linguistic item operating in communication and grammar, including the undivided word in various manifestations and contexts.",
     "verses": [
+     "1.6",
      "1.12",
      "1.13",
      "1.18-22",
@@ -175,12 +176,17 @@
      "1.56",
      "1.57",
      "1.58",
-     "1.6",
      "1.61",
      "1.65",
      "1.70",
      "1.73",
-     "1.77"
+     "1.77",
+     "1.78",
+     "1.79",
+     "1.80",
+     "1.83",
+     "1.85",
+     "1.91"
     ]
    }
   ]
@@ -198,12 +204,13 @@
    {
     "sort": "property",
     "gloss": "meaning as a property conveyed or as the attribute of meaningfulness",
-    "justification": "Verses 1.27, 1.44, 1.47, and 1.62 establish that words succeed in conveying meaning or in standing for referents, treating artha as a property they possess.",
+    "justification": "Verses 1.27, 1.44, 1.47, 1.62, and 1.67 establish that words succeed in conveying meaning or in standing for referents, treating artha as a property they possess or the relational character that justifies derivation.",
     "verses": [
      "1.27",
      "1.44",
      "1.47",
-     "1.62"
+     "1.62",
+     "1.67"
     ]
    },
    {
@@ -225,7 +232,7 @@
    {
     "sort": "manifestation",
     "gloss": "the manifested referent; the object as revealed or manifested through word and cognition",
-    "justification": "Verses 1.50, 1.53-57, and 1.61 present artha as the manifested object (jneya), the thing that is known and expressed—artha as the empirical manifestation revealed through the speaker and hearer's understanding.",
+    "justification": "Verses 1.50, 1.53-57, 1.61, and 1.74 present artha as the manifested object (jneya), the thing that is known and expressed—artha as the empirical manifestation revealed through the speaker and hearer's understanding, and as the undivided meaning that language conveys.",
     "verses": [
      "1.50",
      "1.53",
@@ -233,7 +240,8 @@
      "1.55",
      "1.56",
      "1.57",
-     "1.61"
+     "1.61",
+     "1.74"
     ]
    }
   ]
@@ -309,6 +317,26 @@
      "1.75",
      "1.76",
      "1.77"
+    ]
+   }
+  ]
+ },
+ "guṇa": {
+  "senses": [
+   {
+    "sort": "linguisticItem",
+    "gloss": "a grammatical constituent; a dependent member in a compound or larger unit",
+    "justification": "Verse 1.62 presents guṇa as a dependent linguistic element (constituent inside a compound or bare stem), explicitly contrasting it with metaphysical quality.",
+    "verses": [
+     "1.62"
+    ]
+   },
+   {
+    "sort": "property",
+    "gloss": "a quality or attribute; the ground of pre-eminence or distinction",
+    "justification": "Verse 1.64 uses guṇa to mean a quality that is the prakarsa-hetu (ground of pre-eminence), resting on its substrate and enabling distinction.",
+    "verses": [
+     "1.64"
     ]
    }
   ]

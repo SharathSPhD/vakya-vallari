@@ -1,0 +1,126 @@
+{
+  "verse": "1.87",
+  "entities": [
+    {
+      "id": "adya_samkhya_grahanam",
+      "name": "ādya-saṃkhyā-grahaṇam",
+      "sort": "cognition",
+      "cite": "The grasp of adya-samkhya, the first number, is the upaya through which the numbers beyond it — genuinely different items — become cognizable"
+    },
+    {
+      "id": "samkhya_antara_pratipatti",
+      "name": "saṃkhyāntara-pratipatti",
+      "sort": "cognition",
+      "cite": "the numbers beyond it become cognizable"
+    },
+    {
+      "id": "sabdantara_sruti",
+      "name": "śabdāntara-śruti",
+      "sort": "power",
+      "cite": "hearing one word opens cognitive access to other words not yet heard"
+    },
+    {
+      "id": "sabda_antara_pratipatti",
+      "name": "śabda-antara-pratipatti",
+      "sort": "cognition",
+      "cite": "cognitive access to other words not yet heard"
+    },
+    {
+      "id": "upaya",
+      "name": "upāya",
+      "sort": "power",
+      "cite": "The grasp of adya-samkhya, the first number, is the upaya through which the numbers beyond it become cognizable"
+    },
+    {
+      "id": "sabda_tattva",
+      "name": "śabda-tattva",
+      "sort": "absolute",
+      "cite": "all words are variously-manifested configurations of one underlying word-nature (and ultimately of the one sabda-tattva)"
+    },
+    {
+      "id": "samskara",
+      "name": "saṃskāra",
+      "sort": "power",
+      "cite": "mastering some words confers a capacity for the rest, as mastering early numbers confers the number-series"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "upaya",
+      "from": "adya_samkhya_grahanam",
+      "to": "samkhya_antara_pratipatti",
+      "cite": "The grasp of adya-samkhya, the first number, is the upaya through which the numbers beyond it — genuinely different items — become cognizable"
+    },
+    {
+      "kind": "relation",
+      "name": "upaya",
+      "from": "sabdantara_sruti",
+      "to": "sabda_antara_pratipatti",
+      "cite": "hearing one word opens cognitive access to other words not yet heard"
+    },
+    {
+      "kind": "relation",
+      "name": "hetu",
+      "from": "sabdantara_sruti",
+      "to": "samskara",
+      "cite": "mastering some words confers a capacity for the rest, as mastering early numbers confers the number-series"
+    },
+    {
+      "kind": "predication",
+      "name": "vivartamana",
+      "of": "sabda_tattva",
+      "cite": "all words are variously-manifested configurations of one underlying word-nature (and ultimately of the one sabda-tattva)"
+    }
+  ],
+  "denials": [],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "upaya",
+        "from": "adya_samkhya_grahanam",
+        "to": "samkhya_antara_pratipatti",
+        "cite": "the grasp of the first number is a means to the cognition of further numbers"
+      },
+      {
+        "kind": "relation",
+        "name": "upaya",
+        "from": "sabdantara_sruti",
+        "to": "sabda_antara_pratipatti",
+        "cite": "the hearing of one word a means to the cognition of another"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "exclusive_arithmetic",
+      "rendering": "The means by which one grasps numbers operates only in arithmetic, not in linguistic learning.",
+      "why": "Contradicts the verse's explicit parallelism. The verse states 'so too' (tathā) for words, establishing that the systematic means applies equally to linguistic and numerical domains. Reading it as number-exclusive denies the verse's central argumentative structure.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "arithmetic_only",
+          "of": "upaya"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "independent_competences",
+      "rendering": "Word-learning and number-learning are completely independent intellectual capacities with no systematic connection.",
+      "why": "Contradicts the verse's yathā-tathā (as...so) structure, which establishes an explicit systematic analogy. The commentary emphasizes that 'mastering some words confers a capacity for the rest, as mastering early numbers confers the number-series,' showing they share a unified structure of acquisition. Treating them as isolated denies this systematic unity.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "systematically_isolated",
+          "of": "upaya"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The contract captures the core systematicity doctrine: learning is not atomistic but systematic, with mastery of one element enabling mastery of others through a common principle. The sorts reflect: cognition events (grasp of first number, cognition of others), powers (the means itself, hearing, samskara), and the absolute (sabda-tattva as underlying unity). The contested note mentions ambiguity about scope (systematicity of acquisition vs. phoneme-schema transfer), but both readings rely on the upaya (means) relations captured in axioms 1-2. Axioms 3-4 add the deeper manifestation theory implied by the commentary."
+}

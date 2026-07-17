@@ -1,0 +1,158 @@
+{
+  "verse": "1.84",
+  "entities": [
+    {
+      "id": "dhvani",
+      "name": "dhvani",
+      "sort": "linguisticItem",
+      "cite": "Each dhvani deposits a bija, a seed or trace, in the hearer's buddhi"
+    },
+    {
+      "id": "bija",
+      "name": "bija",
+      "sort": "manifestation",
+      "cite": "Each dhvani deposits a bija, a seed or trace, in the hearer's buddhi"
+    },
+    {
+      "id": "buddhi",
+      "name": "buddhi",
+      "sort": "cognition",
+      "cite": "Each dhvani deposits a bija, a seed or trace, in the hearer's buddhi"
+    },
+    {
+      "id": "sphota",
+      "name": "sphota",
+      "sort": "linguisticItem",
+      "cite": "it is the occasion on which a cognition prepared by all the traces seizes the entire sphota"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "ahita",
+      "from": "dhvani",
+      "to": "bija",
+      "cite": "Each dhvani deposits a bija, a seed or trace, in the hearer's buddhi"
+    },
+    {
+      "kind": "predication",
+      "name": "paripaka",
+      "of": "buddhi",
+      "cite": "the sequence is a sowing, avrtta-paripaka, ripening through the repeated strokes"
+    },
+    {
+      "kind": "relation",
+      "name": "avadharyate",
+      "from": "buddhi",
+      "to": "sphota",
+      "cite": "together with the last sound, the whole word is ascertained at once"
+    },
+    {
+      "kind": "predication",
+      "name": "nimitta",
+      "of": "dhvani",
+      "cite": "The final phoneme is not a final part completing a sum — it is the occasion on which a cognition prepared by all the traces seizes the entire sphota"
+    },
+    {
+      "kind": "predication",
+      "name": "yogyata",
+      "of": "buddhi",
+      "cite": "what accumulates is a readiness in the cognizer, not an assembly of the object"
+    },
+    {
+      "kind": "predication",
+      "name": "samanya",
+      "of": "sphota",
+      "cite": "a unity over and above it"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "samavayavata",
+      "of": "sphota",
+      "cite": "what accumulates is a readiness in the cognizer, not an assembly of the object"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "ahita",
+        "from": "dhvani",
+        "to": "bija",
+        "cite": "The seed having been sown by the sounds"
+      },
+      {
+        "kind": "predication",
+        "name": "paripaka",
+        "of": "buddhi",
+        "cite": "in a cognition brought to ripeness by repetition"
+      },
+      {
+        "kind": "relation",
+        "name": "avadharyate",
+        "from": "buddhi",
+        "to": "sphota",
+        "cite": "the word is ascertained"
+      },
+      {
+        "kind": "predication",
+        "name": "nimitta",
+        "of": "dhvani",
+        "cite": "together with the final sound"
+      },
+      {
+        "kind": "predication",
+        "name": "samanya",
+        "of": "sphota",
+        "cite": "together with the final sound"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "mimamsa_phoneme_series",
+      "rendering": "The word-meaning is conveyed by the last phoneme working together with memory-traces of preceding phonemes to form a connected series of meanings.",
+      "why": "This is the Mimamsa rival account that the verse and commentary explicitly contrast with sphota doctrine. The commentary states: 'the argument between the two schools turns on whether the object of the final cognition is a mere phoneme-series remembered, or a unity over and above it'. Asserting sphota as a phoneme-series contradicts the axiom that sphota has samanya (unified whole), and contradicts the denial of samavayavata (composition from parts).",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "samavayavata",
+          "of": "sphota"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "piecemeal_construction",
+      "rendering": "The word is progressively built up by adding the contributions of each successive sound, until the final sound completes the whole.",
+      "why": "This misses the central distinction the verse makes: 'The final phoneme is not a final part completing a sum'. The commentary emphasizes: 'what accumulates is a readiness in the cognizer, not an assembly of the object'. The whole word (sphota) is ascertained as a unity when the final sound occurs, not constructed from accumulated parts. The reading denies that sphota is samanya (a non-composite unity).",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "samavayavata",
+          "of": "sphota"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "final_phoneme_as_part",
+      "rendering": "The final sound is the last phonetic part of the word, and its utterance completes the audible sequence in which the word's meaning is conveyed.",
+      "why": "Treats the final dhvani as a constitutive part (samavayavata) of the word, when the verse insists it is merely the occasion (nimitta) for grasping. The commentary is explicit: 'The final phoneme is not a final part completing a sum'. This reading fails to distinguish the final sound's role (occasion for ascertainment) from the constitution of the object (which remains whole and unassembled).",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "bhaga",
+          "of": "dhvani"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse encodes the sphota mechanism for grasping a partless whole through temporal sound-sequence. Each sound deposits a trace (bija-ahita) in the hearer's awareness, ripening it through repetition (paripaka), and the final sound occasions the sudden ascertainment of the complete word as an undivided unity (sphota-samanya-avadharyate). Crucially, what accumulates is readiness-in-the-subject (yogyata-of-buddhi), not composition-of-the-object. This separates Bhartrhari's sphota theory from Mimamsa memory-plus-phoneme accounts."
+}

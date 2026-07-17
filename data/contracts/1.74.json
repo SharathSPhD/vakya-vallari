@@ -1,0 +1,157 @@
+{
+  "verse": "1.74",
+  "entities": [
+    {
+      "id": "vyavahara",
+      "name": "vyavahāra",
+      "sort": "manifestation",
+      "cite": "Vyavahara, the working practice of grammar and speech, anugamyate, proceeds, on either darsana"
+    },
+    {
+      "id": "darsana",
+      "name": "darśana",
+      "sort": "cognition",
+      "cite": "one school takes the parts as mukhya, primary, and constructs wholes; the other takes the whole as primary and extracts parts"
+    },
+    {
+      "id": "amsa",
+      "name": "aṃśa",
+      "sort": "linguisticItem",
+      "cite": "one school takes the parts as mukhya, primary, and constructs wholes"
+    },
+    {
+      "id": "avayavi",
+      "name": "avayavī",
+      "sort": "linguisticItem",
+      "cite": "the other takes the whole as primary and extracts parts"
+    },
+    {
+      "id": "artha",
+      "name": "artha",
+      "sort": "manifestation",
+      "cite": "by which starting point better coheres with what language *does*, namely convey undivided meaning"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "vyavahara",
+      "to": "darsana",
+      "cite": "Vyavahara, the working practice of grammar and speech, anugamyate, proceeds, on either darsana"
+    },
+    {
+      "kind": "predication",
+      "name": "mukhya",
+      "of": "amsa",
+      "cite": "one school takes the parts as mukhya, primary, and constructs wholes"
+    },
+    {
+      "kind": "predication",
+      "name": "mukhya",
+      "of": "avayavi",
+      "cite": "the other takes the whole as primary and extracts parts"
+    },
+    {
+      "kind": "predication",
+      "name": "vyavahara_siddhi",
+      "of": "darsana",
+      "cite": "each can run the entire practice from its chosen starting point, the other's primitive appearing in its ledger as derived"
+    },
+    {
+      "kind": "predication",
+      "name": "viparyaya",
+      "of": "amsa",
+      "cite": "the other takes the whole as primary and extracts parts; and each can run the entire practice from its chosen starting point, the other's primitive appearing in its ledger as derived"
+    },
+    {
+      "kind": "predication",
+      "name": "viparyaya",
+      "of": "avayavi",
+      "cite": "the other's primitive appearing in its ledger as derived"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "vikranta",
+      "of": "amsa",
+      "cite": "the verse is careful to register that the loser is not refuted, only outweighed"
+    },
+    {
+      "kind": "relation",
+      "name": "nirnayaka",
+      "from": "vyavahara",
+      "to": "darsana",
+      "cite": "the choice between part-primacy and whole-primacy will not be settled by grammatical data, which both fit"
+    },
+    {
+      "kind": "identity",
+      "a": "vyavahara",
+      "b": "darsana",
+      "cite": "That practice underdetermines metaphysics"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "vyavahara",
+        "to": "darsana",
+        "cite": "Practice is carried on by resort to differing views"
+      },
+      {
+        "kind": "predication",
+        "name": "mukhya",
+        "of": "amsa",
+        "cite": "what is primary for some"
+      },
+      {
+        "kind": "predication",
+        "name": "mukhya",
+        "of": "avayavi",
+        "cite": "what is primary for some"
+      },
+      {
+        "kind": "predication",
+        "name": "viparyaya",
+        "of": "amsa",
+        "cite": "for others the reverse"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "refutation_of_parts_view",
+      "rendering": "The part-primary school is definitively refuted by Bhartrhari; only the whole-primary view stands as valid metaphysics.",
+      "why": "The verse presents both views symmetrically and the commentary explicitly states the part-primary view is 'not refuted, only outweighed.' The preference for the whole-primary view comes from a higher philosophical criterion (how the view coheres with meaning-conveyance), not from refutation of the part-view itself. This reading collapses outweighing into refutation, contradicting the commentary's careful distinction.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "vikranta", "of": "amsa"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "grammatical_determinism",
+      "rendering": "The choice between part-primary and whole-primary metaphysics is settled by grammatical evidence; whichever better fits the phenomena is the true metaphysical framework.",
+      "why": "The commentary explicitly denies this: 'the choice between part-primacy and whole-primacy will not be settled by grammatical data, which both fit.' Both views equally satisfy the grammatical phenomena; the deciding criterion is meaning-conveyance, which operates at a higher level of analysis than grammatical fit. A reading that asserts grammatical data determines the metaphysical choice contradicts the commentary's methodological hierarchy.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "nirnayaka", "from": "vyavahara", "to": "darsana"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "indifference",
+      "rendering": "Bhartrhari remains indifferent between the two views and assigns no philosophical weight to either; both are equally valid and equally unimportant.",
+      "why": "The commentary explicitly characterizes Bhartrhari's position as 'methodological, not indifferent' and states 'On that criterion the whole wins.' While both views work equally for linguistic practice, the commentary identifies a criterion (meaning-conveyance) that privileges the whole-primary view. A reading of complete indifference contradicts the commentary's assertion that there is a principled hierarchy among the views.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "sama_pratiṣṭha", "of": "darsana"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse establishes a framework of methodological equivalence: either parts-primary or whole-primary metaphysics can sustain the full practice of grammar and speech. The commentary adds that this equivalence holds at the grammatical level—both views can 'save the phenomena'—but that a higher criterion (how well the starting point coheres with language's actual function of conveying undivided meaning) distinguishes them philosophically. The classification of darsana as 'property' is provisonal; it might better be understood as a 'framework' or 'analytical stance,' but no more specific category exists in the schema. Artha (meaning) is classified as 'cognition' but could also be 'manifestation' or warrant its own category for abstract semantic content. The contract captures the core claim (what is mukhya in one view is viparyaya in the other, and practice proceeds equally from either foundation) and the commentary's methodological lesson (practice underdetermines metaphysics, but philosophical criteria can still distinguish among underdetermined options)."
+}

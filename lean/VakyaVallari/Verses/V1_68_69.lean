@@ -7,7 +7,7 @@ namespace VakyaVallari.Verses.V1_68_69
 
 open VakyaVallari
 
-def vyakti : Entity := ⟨"vyakti", Sorta.linguisticItem⟩
+def vyakti : Entity := ⟨"vyakti", Sorta.manifestation⟩
 def jati : Entity := ⟨"jāti", Sorta.power⟩
 
 def contract : Contract :=

@@ -7,7 +7,7 @@ namespace VakyaVallari.Verses.V1_55
 
 open VakyaVallari
 
-def tejas : Entity := ⟨"tejas", Sorta.absolute⟩
+def tejas : Entity := ⟨"tejas", Sorta.power⟩
 def grahakatva : Entity := ⟨"grahakatva", Sorta.power⟩
 def grahyatva : Entity := ⟨"grāhyatva", Sorta.power⟩
 def sabda : Entity := ⟨"śabda", Sorta.linguisticItem⟩
