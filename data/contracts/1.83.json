@@ -1,0 +1,128 @@
+{
+  "verse": "1.83",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "the word's own form is ascertained once the sound has illuminated it"
+    },
+    {
+      "id": "svarupa",
+      "name": "svarūpa",
+      "sort": "property",
+      "cite": "the word's own form is ascertained once the sound has illuminated it"
+    },
+    {
+      "id": "pratyaya",
+      "name": "pratyaya",
+      "sort": "cognition",
+      "cite": "by cognitions that cannot be separately reported, yet are conducive to the final grasp"
+    },
+    {
+      "id": "grahana",
+      "name": "grahaṇa",
+      "sort": "cognition",
+      "cite": "conducive to the final grasp, the word's own form is ascertained"
+    },
+    {
+      "id": "dhvani",
+      "name": "dhvani",
+      "sort": "manifestation",
+      "cite": "once the sound has illuminated it"
+    },
+    {
+      "id": "avadharana",
+      "name": "avadharaṇa",
+      "sort": "cognition",
+      "cite": "it terminates in avadharana, the settled ascertainment of the word's svarupa"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "anupakhyeya",
+      "of": "pratyaya",
+      "cite": "anupakhyeya, not separately reportable"
+    },
+    {
+      "kind": "relation",
+      "name": "grahana-anuguna",
+      "from": "pratyaya",
+      "to": "grahana",
+      "cite": "But they are grahana-anuguna, conducive to the grasp"
+    },
+    {
+      "kind": "relation",
+      "name": "terminates",
+      "from": "pratyaya",
+      "to": "avadharana",
+      "cite": "it terminates in avadharana, the settled ascertainment of the word's svarupa"
+    },
+    {
+      "kind": "relation",
+      "name": "ascertains",
+      "from": "avadharana",
+      "to": "svarupa",
+      "cite": "the settled ascertainment of the word's svarupa"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "summation",
+      "from": "avadharana",
+      "to": "pratyaya",
+      "cite": "comprehension does in fact arrive as an all-at-once click after a subpersonal accumulation, not as a felt summation of parts"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "anupakhyeya",
+        "of": "pratyaya",
+        "cite": "by cognitions that cannot be separately reported"
+      },
+      {
+        "kind": "relation",
+        "name": "grahana-anuguna",
+        "from": "pratyaya",
+        "to": "grahana",
+        "cite": "yet are conducive to the final grasp"
+      },
+      {
+        "kind": "relation",
+        "name": "ascertains",
+        "from": "avadharana",
+        "to": "svarupa",
+        "cite": "the word's own form is ascertained"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "composite_grasp",
+      "rendering": "The word's form is understood as a gradual accumulation of the meanings of its successive phonemes.",
+      "why": "Treats avadharana as a summation of individual pratyayas, which the commentary explicitly rejects. The unity of the object is surrendered, and the spontaneity of comprehension (the all-at-once click) is lost.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "summation", "from": "avadharana", "to": "pratyaya"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "reportable_cognitions",
+      "rendering": "Each intermediate stage in learning the word can be separately named and reported.",
+      "why": "Directly contradicts the commentary's characterization of intermediate cognitions as anupakhyeya. Sort error: treats pratyaya as explicitly reportable when the text insists they are not separately reportable.",
+      "entities": [
+        {"id": "pratyaya_reportable", "name": "pratyaya", "sort": "property"}
+      ],
+      "claims": [
+        {"kind": "predication", "name": "pakhyeya", "of": "pratyaya_reportable"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The contract encodes the sphota doctrine's phenomenology of learning: a gradual ripening through unreportable intermediate cognitions (pratyaya) that culminates in a sudden, unified grasp (avadharana) of the word's intrinsic form (svarupa). The sound (dhvani) illuminates but is not itself the object; the real work is subpersonal accumulation. This resolves the apparent paradox of gradual process yielding non-composite knowledge."
+}

@@ -1,0 +1,139 @@
+{
+  "verse": "1.82",
+  "entities": [
+    {
+      "id": "anuvaka",
+      "name": "anuvāka",
+      "sort": "linguisticItem",
+      "cite": "A student masters an anuvaka by reciting it again and again"
+    },
+    {
+      "id": "shloka",
+      "name": "śloka",
+      "sort": "linguisticItem",
+      "cite": "As a Vedic lesson or a verse comes to be mastered through repetition"
+    },
+    {
+      "id": "grantha",
+      "name": "grantha",
+      "sort": "linguisticItem",
+      "cite": "Yet the text itself — sa granthah — is not a different object at each pass"
+    },
+    {
+      "id": "sodhatva",
+      "name": "soḍhatva",
+      "sort": "property",
+      "cite": "sodhatva, the being-mastered, dawns gradually across repetitions"
+    },
+    {
+      "id": "adhyayana",
+      "name": "adhyayana",
+      "sort": "power",
+      "cite": "A student masters an anuvaka by reciting it again and again"
+    },
+    {
+      "id": "avabodha",
+      "name": "avabodha",
+      "sort": "cognition",
+      "cite": "repetition improves the *grasp* while its object stays fixed"
+    },
+    {
+      "id": "sphota",
+      "name": "sphota",
+      "sort": "absolute",
+      "cite": "the sounds' repeated strokes ripen apprehension of one unchanging sphota"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "janayati",
+      "from": "adhyayana",
+      "to": "sodhatva",
+      "cite": "sodhatva, the being-mastered, dawns gradually across repetitions"
+    },
+    {
+      "kind": "predication",
+      "name": "anavartya",
+      "of": "grantha",
+      "cite": "is not a different object at each pass, na pratyavrtti nirupyate"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "sphota",
+      "to": "avabodha",
+      "cite": "the sounds' repeated strokes ripen apprehension of one unchanging sphota"
+    },
+    {
+      "kind": "predication",
+      "name": "avikriya",
+      "of": "grantha",
+      "cite": "the tenth recitation does not present a tenth text, but the same text, better possessed"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "pratyavrtti",
+      "of": "grantha",
+      "cite": "is not a different object at each pass, na pratyavrtti nirupyate"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "janayati",
+        "from": "adhyayana",
+        "to": "sodhatva",
+        "cite": "comes to be mastered through repetition"
+      },
+      {
+        "kind": "predication",
+        "name": "anavartya",
+        "of": "grantha",
+        "cite": "that text is not discerned anew at each repetition"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "text_multiplied_by_repetition",
+      "rendering": "Each act of recitation produces a new text instance, so the tenth recitation presents a tenth distinct text.",
+      "why": "Directly contradicts the verse's core claim that the same text (anavartya) is possessed across repetitions. The commentary explicitly rejects the idea that pratyavrtti (new discernment) applies to the text itself—mastery multiplies but the text does not. This error confuses the property (sodhatva) that grows with the object (grantha) that remains.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "pratyavrtti", "of": "grantha"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "mastery_is_new_object",
+      "rendering": "The being-mastered (sodhatva) is itself a new linguistic item generated at each repetition.",
+      "why": "Renders sodhatva as a linguistic item rather than a property of cognition. The verse sets up a contrast: while sodhatva changes and accumulates across repetitions, the text (grantha) remains fixed—exactly parallel to how sphota's apprehension ripens while the sphota itself stays unchanged. Confusing sodhatva's sort breaks this parallel structure.",
+      "entities": [
+        {
+          "id": "sodhatva_item",
+          "name": "soḍhatva",
+          "sort": "linguisticItem"
+        }
+      ],
+      "claims": [
+        {"kind": "identity", "a": "sodhatva_item", "b": "grantha"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "sound_strokes_create_sphota",
+      "rendering": "The repeated sounds themselves create or generate the sphota, rather than ripening apprehension of it.",
+      "why": "The verse and commentary explicitly state that the sounds' strokes ripen (paripakva-like) the apprehension of one unchanging sphota—sphota is not generated but better grasped. This misreading attributes a causal-generative power to the sounds that the manifestation theory explicitly denies: the sphota is absolute, the sounds are its vehicles of audition, and repetition matures understanding, not the object.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "janayati", "from": "adhyayana", "to": "sphota"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse introduces a pedagogical phenomenon (learning by repetition) to support sphoṭa theory: mastery grows while its object stays fixed. This parallels the sound-sphota distinction: audition is serial and repeated, but the meaning-bearer (sphota) is whole and unchanging. The challenge is modeling 'avabodha' (apprehension) as cognition rather than a new linguistic item; treated as a property of the cognizing subject, it remains stable across repetitions while its accuracy/depth improves. The denial of pratyavrtti is the key gate—the text is not newly discerned, only better grasped."
+}

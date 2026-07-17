@@ -36,3 +36,13 @@ Append-only. Each entry: date, what was attempted, what the gates said, decision
   operator: `uv run python scripts/publish.py` then any static host of site/dist.
 - GitHub repo creation remains blocked by permission classifier; CI workflow is committed
   and will run on first push once the operator creates/pushes the repo.
+
+## 2026-07-17 — publication complete + round 4/5
+
+- Operator created `SharathSPhD/vakya-vallari` on GitHub; pushed; **Actions CI green**
+  (pytest + lake build + zero-sorry on clean checkout).
+- Operator granted HF: **full edition live** (all 1,796 verses + proof pages) at
+  https://huggingface.co/spaces/qbz506/vakya-vallari (uploaded via HfApi.upload_folder;
+  the hf CLI's upload path 402s on create_repo).
+- Round 4 recovery: quota-killed drafts (9) quarantined; adjudicated conflicts in main
+  loop; 65 verified committed. Round 5 swarm running for remaining 20 kāṇḍa-1 units.

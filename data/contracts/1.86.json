@@ -1,0 +1,183 @@
+{
+  "verse": "1.86",
+  "entities": [
+    {
+      "id": "jnana",
+      "name": "jñāna",
+      "sort": "power",
+      "cite": "cognition, whose nature is undivided illumination, perpetually mimics the differentiation of what it grasps"
+    },
+    {
+      "id": "bheda",
+      "name": "bheda",
+      "sort": "property",
+      "cite": "Jnana imitates bheda — cognition, whose nature is undivided illumination, perpetually mimics the differentiation of what it grasps"
+    },
+    {
+      "id": "vak",
+      "name": "vāk",
+      "sort": "manifestation",
+      "cite": "speech never appears except krama-upasrsta, contaminated by sequence"
+    },
+    {
+      "id": "upaplava",
+      "name": "upaplava",
+      "sort": "property",
+      "cite": "vak suffers upaplava, disturbance, dhruvam, constantly"
+    },
+    {
+      "id": "krama",
+      "name": "krama",
+      "sort": "property",
+      "cite": "speech never appears except krama-upasrsta, contaminated by sequence"
+    },
+    {
+      "id": "sphota",
+      "name": "sphoṭa",
+      "sort": "absolute",
+      "cite": "the sphota, ultimately the sabda-tattva of 1.1, is undivided"
+    },
+    {
+      "id": "sabdatattva",
+      "name": "śabdatattva",
+      "sort": "absolute",
+      "cite": "the sphota, ultimately the sabda-tattva of 1.1, is undivided"
+    },
+    {
+      "id": "jneya",
+      "name": "jñeya",
+      "sort": "manifestation",
+      "cite": "cognition, undivided, borrows division from its objects"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "identity",
+      "a": "sphota",
+      "b": "sabdatattva",
+      "cite": "whose essence (the sphota, ultimately the sabda-tattva of 1.1) is undivided"
+    },
+    {
+      "kind": "relation",
+      "name": "anukaroti",
+      "from": "jnana",
+      "to": "bheda",
+      "cite": "Jnana imitates bheda — cognition, whose nature is undivided illumination, perpetually mimics the differentiation of what it grasps"
+    },
+    {
+      "kind": "predication",
+      "name": "upaplava",
+      "of": "vak",
+      "cite": "vak suffers upaplava, disturbance, dhruvam, constantly"
+    },
+    {
+      "kind": "predication",
+      "name": "dhruvam",
+      "of": "upaplava",
+      "cite": "vak suffers upaplava, disturbance, dhruvam, constantly"
+    },
+    {
+      "kind": "predication",
+      "name": "kramopasrsta",
+      "of": "vak",
+      "cite": "speech never appears except krama-upasrsta, contaminated by sequence"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "jnana",
+      "to": "jneya",
+      "cite": "cognition, undivided, borrows division from its objects"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "anutthanna",
+      "of": "vak",
+      "cite": "Neither ever presents its true face in ordinary transaction"
+    },
+    {
+      "kind": "predication",
+      "name": "anutthanna",
+      "of": "jnana",
+      "cite": "Neither ever presents its true face in ordinary transaction"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "anukaroti",
+        "from": "jnana",
+        "to": "bheda",
+        "cite": "The imitation of differentiation by cognition"
+      },
+      {
+        "kind": "predication",
+        "name": "upaplava",
+        "of": "vak",
+        "cite": "the disturbance of speech, are constant"
+      },
+      {
+        "kind": "predication",
+        "name": "kramopasrsta",
+        "of": "vak",
+        "cite": "speech has a form contaminated by sequence"
+      },
+      {
+        "kind": "relation",
+        "name": "asraya",
+        "from": "jnana",
+        "to": "jneya",
+        "cite": "cognition rests upon its objects"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "uncontaminated_speech",
+      "rendering": "Speech can appear in its pure undivided form, free from the contamination of sequence.",
+      "why": "Directly contradicts the verse's assertion that vak suffers upaplava constantly (dhruvam) and never appears except when contaminated by krama-upasrsta. The commentary explicitly denies that speech can present its true undivided face.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "anutthanna",
+          "of": "vak"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "undistorted_cognition",
+      "rendering": "In ordinary transaction, cognition presents its true undivided nature without imitating differentiation.",
+      "why": "Directly violates the verse's core doctrine that jnana perpetually imitates (anukaroti) bheda. The commentary states that neither cognition nor speech 'ever presents its true face in ordinary transaction', ruling out the possibility of unmediated presentation.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "anutthanna",
+          "of": "jnana"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "cognition_independent",
+      "rendering": "Cognition is self-sufficient and does not depend upon objects for its operation.",
+      "why": "Violates the explicit claim that jnana is jneya-vyapasraya — cognition rests upon its objects. The mimicry of differentiation occurs precisely because cognition must conform to the structure of what it grasps.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "nirasraya",
+          "from": "jnana",
+          "to": "jneya"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse marks the permanent condition of ordinary mind and speech: neither can present itself undistorted. Jnana (cognition) operates as a power that inevitably mimics differentiation; vak (speech) cannot escape sequence-contamination. This is not a limitation to be overcome but the structural basis for all ordinary knowledge—the distortion is the means (upaya). The sort assignment strains slightly: jnana as 'power' bridges its ultimate undividedness with its functional necessity of mimicry; vak as 'manifestation' acknowledges that speech's true nature (sphota/sabdatattva) is absolute yet only appears in divided form. This tension mirrors the philosophical paradox the verse articulates."
+}

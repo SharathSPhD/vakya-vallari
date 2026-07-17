@@ -1,0 +1,131 @@
+{
+  "verse": "1.92",
+  "entities": [
+    {
+      "id": "unit",
+      "name": "unit",
+      "sort": "linguisticItem",
+      "cite": "Take the units — phoneme, word, sentence"
+    },
+    {
+      "id": "bhaga",
+      "name": "bhāga",
+      "sort": "property",
+      "cite": "Either they have parts or they do not"
+    },
+    {
+      "id": "rupabheda",
+      "name": "rūpabheda",
+      "sort": "property",
+      "cite": "their apparent internal form-differences"
+    },
+    {
+      "id": "dhvani",
+      "name": "dhvani",
+      "sort": "manifestation",
+      "cite": "the manifesting stream"
+    },
+    {
+      "id": "krama",
+      "name": "krama",
+      "sort": "property",
+      "cite": "the sound's sequence"
+    },
+    {
+      "id": "abhyupaya",
+      "name": "abhyupāya",
+      "sort": "power",
+      "cite": "a device, the analyst's and the hearer's working fiction"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "bhagavat",
+      "of": "unit",
+      "cite": "Either they have parts"
+    },
+    {
+      "kind": "relation",
+      "name": "arises_from",
+      "from": "rupabheda",
+      "to": "dhvani",
+      "cite": "their apparent internal form-differences arise from the sound's sequence — the ordering belongs to the manifesting stream, projected onto the unit"
+    },
+    {
+      "kind": "predication",
+      "name": "nirbhaga",
+      "of": "unit",
+      "cite": "or they do not"
+    },
+    {
+      "kind": "relation",
+      "name": "is_abhyupaya",
+      "from": "bhaga",
+      "to": "abhyupaya",
+      "cite": "the very positing of parts is abhyupaya — a device, the analyst's and the hearer's working fiction"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "inherent_to",
+      "from": "krama",
+      "to": "unit",
+      "cite": "no real internal sequence belongs to the linguistic unit itself"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "bhagavat",
+        "of": "unit",
+        "cite": "if they have parts"
+      },
+      {
+        "kind": "relation",
+        "name": "arises_from",
+        "from": "rupabheda",
+        "to": "dhvani",
+        "cite": "the difference of form arises from the sequence of the sound"
+      },
+      {
+        "kind": "predication",
+        "name": "nirbhaga",
+        "of": "unit",
+        "cite": "if they are partless"
+      },
+      {
+        "kind": "relation",
+        "name": "is_abhyupaya",
+        "from": "bhaga",
+        "to": "abhyupaya",
+        "cite": "the construing of a difference of parts is a device"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "intrinsic_divisibility",
+      "rendering": "Linguistic units possess real internal parts arranged in sequence.",
+      "why": "Ignores the dilemma: both horns deny intrinsic divisibility. The first horn locates sequence in the manifesting stream (not the unit); the second denies that parts belong to the unit at all—they are posited as a device. This reading mistakes the analyst's projection for the unit's actual structure.",
+      "entities": [
+        {"id": "unit_intrinsic", "name": "unit", "sort": "property"}
+      ],
+      "claims": [
+        {"kind": "relation", "name": "inherent_to", "from": "krama", "to": "unit_intrinsic"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "part_whole_real",
+      "rendering": "The part-whole antinomy of 1.72–74 stands unresolved because the unit's divisibility is genuinely ambiguous.",
+      "why": "Misses the resolution: both decompositions are projections—differently sourced—onto the undivided manifestable. The first is a projection of manifesting sequence onto the static unit; the second is the analyst's fiction. The ambiguity dissolves when both are seen as external impositions. The reading mistakes the dilemma for an impasse.",
+      "entities": [],
+      "claims": [],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The contract captures Bhartrhari's resolution of the part-whole paradox: no real sequence belongs to the unit itself; apparent sequences are either manifestations in the phonetic stream (bhāgavat horn) or the analyst's device (nirbhāga horn). The six sorts fit: absolute is absent (no ultimate here), but power (abhyupaya), manifestation (dhvani), linguisticItem (unit), and property (bhāga, rūpabheda, krama) all appear naturally. The dilemma's two-horned structure is encoded in two separate axioms addressing each case."
+}

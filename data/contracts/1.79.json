@@ -1,0 +1,120 @@
+{
+  "verse": "1.79",
+  "entities": [
+    {
+      "id": "indriya",
+      "name": "indriya",
+      "sort": "power",
+      "cite": "the yogin's concentration and the doctor's eye-salve improve the eye"
+    },
+    {
+      "id": "viṣaya",
+      "name": "viṣaya",
+      "sort": "manifestation",
+      "cite": "crushing sandalwood readies the wood's own gandha for apprehension"
+    },
+    {
+      "id": "gandha",
+      "name": "gandha",
+      "sort": "property",
+      "cite": "readies the wood's own gandha for apprehension"
+    },
+    {
+      "id": "samādhāna",
+      "name": "samādhāna",
+      "sort": "power",
+      "cite": "the yogin's concentration improve the eye"
+    },
+    {
+      "id": "śabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "applied to sound and word"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "samskārayate",
+      "from": "samādhāna",
+      "to": "indriya",
+      "cite": "the yogin's concentration and the doctor's eye-salve improve the eye while leaving the object untouched"
+    },
+    {
+      "kind": "relation",
+      "name": "samskārayate",
+      "from": "viṣaya",
+      "to": "gandha",
+      "cite": "crushing sandalwood readies the wood's own gandha for apprehension"
+    },
+    {
+      "kind": "relation",
+      "name": "samskārayate",
+      "from": "samādhāna",
+      "to": "śabda",
+      "cite": "neither samskara-model is ad hoc when applied to sound and word"
+    },
+    {
+      "kind": "relation",
+      "name": "samskārayate",
+      "from": "viṣaya",
+      "to": "śabda",
+      "cite": "neither samskara-model is ad hoc when applied to sound and word"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "samskārayate",
+      "from": "samādhāna",
+      "to": "viṣaya",
+      "cite": "the yogin's concentration and the doctor's eye-salve improve the eye while leaving the object untouched"
+    },
+    {
+      "kind": "relation",
+      "name": "samskārayate",
+      "from": "viṣaya",
+      "to": "indriya",
+      "cite": "crushing sandalwood readies the wood's own gandha for apprehension while doing nothing to the nose"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "samskārayate",
+        "from": "samādhāna",
+        "to": "indriya",
+        "cite": "preparation of the sense-organ alone by concentration, collyrium and the like"
+      },
+      {
+        "kind": "relation",
+        "name": "samskārayate",
+        "from": "viṣaya",
+        "to": "gandha",
+        "cite": "preparation of the object for the apprehension of its smell"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "unified_samskara",
+      "rendering": "Both sense-organ and object must always be prepared together to enable perception.",
+      "why": "The verse distinguishes two independent pathways: organ-preparation (concentration improves the eye) operates 'while leaving the object untouched,' and object-preparation (crushing readies scent) operates 'while doing nothing to the nose.' Requiring both falsifies this independence.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "samskārayate", "from": "samādhāna", "to": "viṣaya"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "organ_only",
+      "rendering": "Only the sense-organ can be prepared for perception; object-modification has no role in manifestation.",
+      "why": "The second half of the verse and the scent example refute this: 'crushing sandalwood readies the wood's own gandha for apprehension.' Object-modification is an equally valid, empirically attested pathway for making hidden qualities perceptible.",
+      "entities": [],
+      "claims": [],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "Verse 1.79 establishes two parallel pathways to manifestation via saṃskāra: (1) organ-preparation through concentration and collyrium (shown by the eye-salve example) and (2) object-preparation through processing (shown by crushing sandalwood). These are independent mechanisms with equal standing as empirical precedents that both apply to word/sound, positioning language within a general theory of manifestation rather than as a special case."
+}

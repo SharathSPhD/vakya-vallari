@@ -1,0 +1,142 @@
+{
+  "verse": "1.67",
+  "entities": [
+    {
+      "id": "samjna_sabda",
+      "name": "saṃjñā-śabda",
+      "sort": "linguisticItem",
+      "cite": "the name-word, at the moment of definition, has its meaning"
+    },
+    {
+      "id": "prathamaa",
+      "name": "prathamā",
+      "sort": "property",
+      "cite": "takes the case of independent standing"
+    },
+    {
+      "id": "genitive",
+      "name": "genitive case",
+      "sort": "property",
+      "cite": "The genitive construal, asya iti, 'of this', is not thereby lost"
+    },
+    {
+      "id": "artha",
+      "name": "artha",
+      "sort": "absolute",
+      "cite": "out of that same meaning"
+    },
+    {
+      "id": "vyatireka",
+      "name": "vyatireka",
+      "sort": "property",
+      "cite": "it arises tadarthat eva, out of that same meaning"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "has_meaning",
+      "of": "samjna_sabda",
+      "cite": "the name-word, at the moment of definition, has its meaning"
+    },
+    {
+      "kind": "relation",
+      "name": "justified_by_meaning",
+      "from": "prathamaa",
+      "to": "samjna_sabda",
+      "cite": "The nominative in the defining rule is justified arthavattvat — the name-word, at the moment of definition, has its meaning"
+    },
+    {
+      "kind": "relation",
+      "name": "arises_from_meaning",
+      "from": "vyatireka",
+      "to": "artha",
+      "cite": "it arises tadarthat eva, out of that same meaning"
+    },
+    {
+      "kind": "relation",
+      "name": "expresses_moments",
+      "from": "prathamaa",
+      "to": "genitive",
+      "cite": "The two cases thus express two logical moments of one act — the name in itself, the name as belonging"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "separate_derivations",
+      "from": "prathamaa",
+      "to": "genitive",
+      "cite": "once the assignment has related name to named and the name can be viewed as the named item's property"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "has_meaning",
+        "of": "samjna_sabda",
+        "cite": "because it possesses the meaning"
+      },
+      {
+        "kind": "relation",
+        "name": "justified_by_meaning",
+        "from": "prathamaa",
+        "to": "samjna_sabda",
+        "cite": "the first case-ending is prescribed after the name-word"
+      },
+      {
+        "kind": "relation",
+        "name": "arises_from_meaning",
+        "from": "vyatireka",
+        "to": "artha",
+        "cite": "the differentiation 'of this' arises precisely from that meaning"
+      },
+      {
+        "kind": "relation",
+        "name": "expresses_moments",
+        "from": "prathamaa",
+        "to": "genitive",
+        "cite": "There, because it possesses the meaning, the first case-ending is prescribed after the name-word; and the differentiation 'of this' arises precisely from that meaning"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "unrelated_cases_error",
+      "rendering": "The nominative and genitive case-endings are independently justified grammatical forms with no intrinsic connection to each other.",
+      "why": "Treats the two cases as grammatically arbitrary rather than expressing two logical moments of a single naming act. The commentary explicitly states they express unified structure through the naming relation.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "separate_derivations",
+          "from": "prathamaa",
+          "to": "genitive"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "genitive_denied",
+      "rendering": "Only the nominative case-ending applies to the name-word; the genitive 'of this' is not a valid grammatical form.",
+      "why": "The verse explicitly states the differentiation arises from the meaning. Denying the genitive violates the unified structure of naming that both cases express.",
+      "entities": [
+        {
+          "id": "samjna_sabda_nom_only",
+          "name": "saṃjñā-śabda",
+          "sort": "linguisticItem"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "nominative_only",
+          "of": "samjna_sabda_nom_only"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse resolves a grammatical puzzle (nominative vs genitive) into an ontological claim about the two-fold logic of naming. The contract captures the name-word's dual case-marking as reflecting the duality of the naming relation itself: name-as-independent (nominative) and name-as-property (genitive), both grounded in meaning."
+}

@@ -1,0 +1,192 @@
+{
+  "verse": "1.80",
+  "entities": [
+    {
+      "id": "caksu",
+      "name": "cakṣuḥ",
+      "sort": "power",
+      "cite": "If the eye acts by reaching its object"
+    },
+    {
+      "id": "tejas",
+      "name": "tejas",
+      "sort": "power",
+      "cite": "by light the preparation of both — object and organ — is accepted"
+    },
+    {
+      "id": "visaya",
+      "name": "viṣaya",
+      "sort": "manifestation",
+      "cite": "the object that becomes visible in it"
+    },
+    {
+      "id": "indriya",
+      "name": "indriya",
+      "sort": "power",
+      "cite": "the eye that operates by it"
+    },
+    {
+      "id": "samskara",
+      "name": "saṃskāra",
+      "sort": "property",
+      "cite": "the preparation of both — object and organ — is accepted"
+    },
+    {
+      "id": "dhvani",
+      "name": "dhvani",
+      "sort": "linguisticItem",
+      "cite": "that is the pattern for sound"
+    },
+    {
+      "id": "kramo",
+      "name": "kramo",
+      "sort": "property",
+      "cite": "that is the pattern for sound"
+    },
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "bring the word to manifestable condition at once"
+    },
+    {
+      "id": "shrota",
+      "name": "śrota",
+      "sort": "power",
+      "cite": "they condition the hearer's faculty"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "samskara_gives",
+      "from": "tejas",
+      "to": "indriya",
+      "cite": "light plays a double role, readying the eye that operates by it"
+    },
+    {
+      "kind": "relation",
+      "name": "samskara_gives",
+      "from": "tejas",
+      "to": "visaya",
+      "cite": "bathing the object that becomes visible in it"
+    },
+    {
+      "kind": "predication",
+      "name": "kramo_tulya_tejasam",
+      "of": "dhvani",
+      "cite": "the sounds' way — they condition the hearer's faculty and bring the word to manifestable condition at once"
+    },
+    {
+      "kind": "relation",
+      "name": "samskara_gives",
+      "from": "dhvani",
+      "to": "shrota",
+      "cite": "they condition the hearer's faculty and bring the word to manifestable condition at once"
+    },
+    {
+      "kind": "relation",
+      "name": "samskara_gives",
+      "from": "dhvani",
+      "to": "sabda",
+      "cite": "bring the word to manifestable condition at once"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "identity",
+      "a": "dhvani",
+      "b": "tejas",
+      "cite": "Bhartrhari still does not legislate; the argument continues into 1.81 with the question of whether the dhvani is separately perceived at all"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "samskara_gives",
+        "from": "tejas",
+        "to": "indriya",
+        "cite": "by light the preparation of both — object and organ — is accepted"
+      },
+      {
+        "kind": "relation",
+        "name": "samskara_gives",
+        "from": "tejas",
+        "to": "visaya",
+        "cite": "by light the preparation of both — object and organ — is accepted"
+      },
+      {
+        "kind": "predication",
+        "name": "kramo_tulya_tejasam",
+        "of": "dhvani",
+        "cite": "that is the pattern for sound"
+      },
+      {
+        "kind": "relation",
+        "name": "samskara_gives",
+        "from": "dhvani",
+        "to": "shrota",
+        "cite": "that is the pattern for sound"
+      },
+      {
+        "kind": "relation",
+        "name": "samskara_gives",
+        "from": "dhvani",
+        "to": "sabda",
+        "cite": "that is the pattern for sound"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "sound_determines_object_alone",
+      "rendering": "Sound operates only to manifest the word directly; it does not condition the hearer's faculty at all.",
+      "why": "The verse establishes that sound works like light: conditioning both receiver and object. Denying the receiver-side (hearer's faculty conditioning) severs the complete analogy and misses the phenomenology of how repetition ripens understanding.",
+      "entities": [
+        {"id": "dhvani_agent", "name": "dhvani", "sort": "manifestation"}
+      ],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "vivartate",
+          "from": "dhvani_agent",
+          "to": "sabda"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "light_determines_object_alone",
+      "rendering": "In vision, light only makes the object visible; it does not prepare the eye's capacity to see.",
+      "why": "The commentary says light plays a double role, preparing both eye and object. If light worked only on the object, the analogy to sound would not establish that sound conditions both hearer and word.",
+      "entities": [
+        {"id": "tejas_manifestive", "name": "tejas", "sort": "manifestation"}
+      ],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "vivartate",
+          "from": "tejas_manifestive",
+          "to": "visaya"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "no_analogy_sound_light",
+      "rendering": "Sound and light work by completely different mechanisms; there is no pattern that connects them.",
+      "why": "The verse's entire structure is the claim that sound follows the same double-conditioning pattern as light. Denying the predication that establishes this analogy denies the verse's central point.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "kramo_tulya_tejasam",
+          "of": "dhvani"
+        }
+      ],
+      "expect": "contradicted"
+    }
+  ],
+  "notes": "Verse 1.80 establishes the double-conditioning model: as light prepares both the eye and the object in vision, sound (dhvani) conditions both the hearer's faculty and the word's manifestation in audition. This two-sided samskara is critical to Bhartṛhari's phonological theory. The metaphysical question of whether dhvani is separately perceived remains open (1.81)."
+}

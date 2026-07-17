@@ -1,0 +1,99 @@
+{
+  "verse": "1.66",
+  "entities": [
+    {
+      "id": "samjna",
+      "name": "samjñā",
+      "sort": "linguisticItem",
+      "cite": "the samjna before its connection to the samjnin"
+    },
+    {
+      "id": "samjnin",
+      "name": "samjñin",
+      "sort": "property",
+      "cite": "Before connection with the named"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "rupa_padarthika",
+      "of": "samjna",
+      "cite": "the samjna before its connection to the samjnin is rupa-padarthika — its meaning is just the form"
+    },
+    {
+      "kind": "predication",
+      "name": "swatantra",
+      "of": "samjna",
+      "cite": "the name has a standing of its own prior to the assignment"
+    },
+    {
+      "kind": "predication",
+      "name": "nimitta",
+      "of": "samjna",
+      "cite": "Both constructions are licensed, nimittatvaya kalpate, because the name has a standing of its own prior to the assignment"
+    },
+    {
+      "kind": "relation",
+      "name": "sambandha",
+      "from": "samjna",
+      "to": "samjnin",
+      "cite": "the definitional act then relates two items each with its own claim to case"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "liyate",
+      "from": "samjna",
+      "to": "samjnin",
+      "cite": "designation is a relation between two reals, not an absorption of one into the other"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "rupa_padarthika",
+        "of": "samjna",
+        "cite": "the name has the form itself as its meaning"
+      },
+      {
+        "kind": "predication",
+        "name": "nimitta",
+        "of": "samjna",
+        "cite": "it becomes fit to be the occasion for both the sixth case and the first"
+      },
+      {
+        "kind": "relation",
+        "name": "sambandha",
+        "from": "samjna",
+        "to": "samjnin",
+        "cite": "Before connection with the named"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "absorption_identity",
+      "rendering": "The name is ultimately identical with and absorbed into the named thing.",
+      "why": "Violates the verse's explicit teaching that samjna and samjnin are distinct reals in relation, not a case of identity or absorption. The designation is a relation (sambandha) between two pre-existing entities, each with its own ontological standing.",
+      "entities": [],
+      "claims": [
+        {"kind": "identity", "a": "samjna", "b": "samjnin"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "dependent_meaning",
+      "rendering": "The name has no meaningful reference except through its connection to the named thing.",
+      "why": "Contradicts the axiom that samjna is rupa-padarthika before connection. The form (rupa) provides the name's meaning-object independently of assignment to the samjnin. Without this prior standing (swatantra), the name could not function as nimitta for dual grammatical cases.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "samjnin_padarthika", "of": "samjna"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse articulates a realist semantics for grammatical designation: the samjna has independent ontological standing (rupa-padarthika, 'form as meaning-object') prior to its assignment to the samjnin. This independent status explains why grammar can license both nominative expressions (treating the name as self-standing: 'vrddhi is a-ai-au') and genitive expressions (treating the name as referring: 'of these, the name is vrddhi'). The relation (sambandha) between samjna and samjnin is one between two pre-existing reals, not an absorption of one into the other."
+}

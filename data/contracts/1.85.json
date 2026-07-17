@@ -1,0 +1,124 @@
+{
+  "verse": "1.85",
+  "entities": [
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "absolute",
+      "cite": "One cannot seize the undivided word directly"
+    },
+    {
+      "id": "chandana",
+      "name": "chandanah",
+      "sort": "linguisticItem",
+      "cite": "the hearer takes part-cognitions to be cognitions of real parts of the word"
+    },
+    {
+      "id": "antarala",
+      "name": "antarāla",
+      "sort": "property",
+      "cite": "In the antarala, the interval before the final ascertainment"
+    },
+    {
+      "id": "asaktih",
+      "name": "aśaktiḥ",
+      "sort": "property",
+      "cite": "this, says the verse, is asaktih, an incapacity of the apprehender"
+    },
+    {
+      "id": "grahanam",
+      "name": "grahaṇam",
+      "sort": "cognition",
+      "cite": "that very incapacity is the means of grasping"
+    },
+    {
+      "id": "pratipattar",
+      "name": "pratipattṛ",
+      "sort": "cognition",
+      "cite": "that is the apprehender's incapacity"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "asata",
+      "of": "chandana",
+      "cite": "the appearance of phonemic parts is itself diagnosed as error — but productive error"
+    },
+    {
+      "kind": "relation",
+      "name": "vivartate",
+      "from": "sabda",
+      "to": "chandana",
+      "cite": "cognition proceeds through a staged fiction of parts that ripens (1.84) into the true unitary grasp"
+    },
+    {
+      "kind": "identity",
+      "a": "asaktih",
+      "b": "grahanam",
+      "cite": "sa grahanopaya eva sah — that very incapacity is the means of grasping"
+    },
+    {
+      "kind": "predication",
+      "name": "na-siddha-bhava",
+      "of": "chandana",
+      "cite": "taking the non-existent as existent"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "pratibandha",
+      "of": "asaktih",
+      "cite": "The mistake is not an obstacle the theory must explain away; it is the mechanism"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "asata",
+        "of": "chandana",
+        "cite": "what is non-existent exists"
+      },
+      {
+        "kind": "relation",
+        "name": "vivartate",
+        "from": "sabda",
+        "to": "chandana",
+        "cite": "the parts of the word exist in the interval"
+      },
+      {
+        "kind": "identity",
+        "a": "asaktih",
+        "b": "grahanam",
+        "cite": "that is the apprehender's incapacity; that, in fact, is the very means of the grasping"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "obstacle_model",
+      "rendering": "The apprehender's incapacity to perceive parts directly is an obstacle to grasping the word.",
+      "why": "Treats incapacity as a defect or barrier rather than as the productive mechanism itself. The commentary explicitly inverts this: the incapacity IS the means, not an impediment to it. This denial appears in the axioms.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "pratibandha", "of": "asaktih"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "real_parts",
+      "rendering": "The phonemic parts truly exist as distinct entities within the interval before final ascertainment.",
+      "why": "Asserts the phonemic parts as real (sat), whereas the verse and commentary insist they are asata (non-existent) — a productive appearance, but not substantial reality. This reverses the sort: chandana would be an absolute rather than a manifestation.",
+      "entities": [
+        {"id": "chandana_real", "name": "chandanah", "sort": "absolute"}
+      ],
+      "claims": [
+        {"kind": "predication", "name": "sat", "of": "chandana_real"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse articulates the paradox of staged cognition: the phonemic parts are neither fully real nor mere illusion, but a productive fiction (vivarta) that enables the mind to ascend to unified comprehension. The incapacity-as-means structure parallels the world-as-appearance doctrine (1.86 generalizes this). The contested note in the corpus flags syntactic ambiguity (double sah), but the doctrine — that error is mechanism — is secure."
+}

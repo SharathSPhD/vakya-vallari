@@ -1,0 +1,105 @@
+{
+  "verse": "1.81",
+  "entities": [
+    {
+      "id": "dhvani",
+      "name": "dhvani",
+      "sort": "linguisticItem",
+      "cite": "the apprehension of the sound is accepted"
+    },
+    {
+      "id": "sphota",
+      "name": "sphota",
+      "sort": "linguisticItem",
+      "cite": "the form of the sphota"
+    },
+    {
+      "id": "grahaṇa",
+      "name": "grahaṇa",
+      "sort": "cognition",
+      "cite": "the apprehension of the sound"
+    },
+    {
+      "id": "vyañjana",
+      "name": "vyañjana",
+      "sort": "power",
+      "cite": "the manifesting power of sound"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "vyañjaka",
+      "from": "dhvani",
+      "to": "sphota",
+      "cite": "the sound is manifesting relative to the sphota"
+    },
+    {
+      "kind": "predication",
+      "name": "grahaṇa",
+      "of": "grahaṇa",
+      "cite": "the apprehension of the sound is accepted"
+    },
+    {
+      "kind": "relation",
+      "name": "saṃband",
+      "from": "dhvani",
+      "to": "grahaṇa",
+      "cite": "three distinct relationships hold between sound and apprehension"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "anirūpita",
+      "of": "dhvani",
+      "cite": "the sound's role cannot remain unspecified in the theory of manifestation"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "vyañjaka",
+        "from": "dhvani",
+        "to": "sphota",
+        "cite": "the sound manifests the sphota"
+      },
+      {
+        "kind": "predication",
+        "name": "nitya",
+        "of": "grahaṇa",
+        "cite": "the question of apprehension remains disputed"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "sound_as_primary",
+      "rendering": "Sound is a primary and independently perceivable physical phenomenon in hearing.",
+      "why": "This ignores the entire manifestation-theoretic frame that all three positions in the verse presuppose: sound is always grasped as manifesting the sphota, not as a self-standing object. Treating sound as phenomenologically primary reverses the hierarchy Bhartrhari maintains throughout.",
+      "entities": [
+        {
+          "id": "dhvani_naive",
+          "name": "dhvani",
+          "sort": "property"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "svatantra",
+          "of": "dhvani_naive"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "confusion_of_mechanism",
+      "rendering": "The three theories differ in what is perceived, not in how sound functions as manifesto",
+      "why": "The verse presents three theories that all agree sound manifests sphota but disagree about the phenomenological character of that manifestation: whether it is inseparable, completely hidden, or independently audible. Confusing the object of dispute (the mechanism) with the object itself (what is manifested) misreads the phenomenology.",
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "Verse 1.81 presents three competing phenomenological theories of sound-apprehension (avibhāgena, asaṃvedya, svatantra) while Bhartrhari remains uncommitted. The common ground is the manifestation-framework: all three presuppose dhvani's role as the manifesting medium. The dispute concerns only how that manifestation structures the hearer's experience. The contract captures this dual consensus-and-disagreement, reflecting the verse's doxographic method."
+}

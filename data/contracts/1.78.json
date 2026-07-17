@@ -1,0 +1,136 @@
+{
+  "verse": "1.78",
+  "entities": [
+    {
+      "id": "dhvani",
+      "name": "dhvani",
+      "sort": "linguisticItem",
+      "cite": "The sounds effect a preparation"
+    },
+    {
+      "id": "indriya",
+      "name": "indriya",
+      "sort": "power",
+      "cite": "preparation of the sense-organ alone"
+    },
+    {
+      "id": "sabda",
+      "name": "śabda",
+      "sort": "linguisticItem",
+      "cite": "preparation of the word alone"
+    },
+    {
+      "id": "samskara",
+      "name": "saṃskāra",
+      "sort": "power",
+      "cite": "the sounds effect a preparation"
+    },
+    {
+      "id": "abhivyakti",
+      "name": "abhivyakti",
+      "sort": "power",
+      "cite": "these are the three positions among the proponents of manifestation"
+    },
+    {
+      "id": "sphota",
+      "name": "sphota",
+      "sort": "absolute",
+      "cite": "the sphota doctrine is not hostage to one mechanism, and Bhartrhari characteristically secures the doctrine by showing every available mechanism leads to it"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "kriyate",
+      "from": "dhvani",
+      "to": "indriya",
+      "cite": "either the dhvanis prepare the *ear* (as collyrium prepares the eye, sharpening the receiver until the ever-present word registers)"
+    },
+    {
+      "kind": "relation",
+      "name": "kriyate",
+      "from": "dhvani",
+      "to": "sabda",
+      "cite": "or they prepare the *word* (bringing the object itself into manifestable condition, as grinding releases fragrance)"
+    },
+    {
+      "kind": "relation",
+      "name": "kriyate",
+      "from": "dhvani",
+      "to": "samskara",
+      "cite": "or both at once (as light readies both the eye it strikes and the pot it falls on)"
+    },
+    {
+      "kind": "predication",
+      "name": "asraya",
+      "of": "abhivyakti",
+      "cite": "Manifestation requires that something be made ready"
+    },
+    {
+      "kind": "predication",
+      "name": "samuccaya",
+      "of": "sphota",
+      "cite": "the sphota doctrine is not hostage to one mechanism, and Bhartrhari characteristically secures the doctrine by showing every available mechanism leads to it"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "utpatti",
+      "of": "sabda",
+      "cite": "the word is manifested, not produced"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "kriyate",
+        "from": "dhvani",
+        "to": "indriya",
+        "cite": "The sounds effect a preparation of the sense-organ alone, or of the word alone, or of both"
+      },
+      {
+        "kind": "predication",
+        "name": "asraya",
+        "of": "abhivyakti",
+        "cite": "these are the three positions among the proponents of manifestation"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "production_theory",
+      "rendering": "The sounds produce the word itself through their phonetic vibrations.",
+      "why": "Asserts production (utpatti) of the word by sounds, which contradicts the manifestation doctrine's commitment that the word is eternally present and only revealed. The commentary explicitly rules out production (utpatti) in favor of manifestation (abhivyakti).",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "utpatti", "of": "sabda"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "single_mechanism",
+      "rendering": "The word is manifested only through conditioning of the ear; the word itself does not require conditioning.",
+      "why": "Treats the first mechanism as the sole operative mode, contradicting the verse's presentation of three logically equivalent alternatives. The axioms establish that dhvani conditions indriya, sabda, AND both together, not indriya alone. Restricting to ear-only conditioning is not entailed by the axioms.",
+      "entities": [
+        {"id": "sabda_unconditioned", "name": "śabda", "sort": "absolute"}
+      ],
+      "claims": [
+        {"kind": "identity", "a": "sabda_unconditioned", "b": "sabda"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "efficient_causation",
+      "rendering": "The sounds are the efficient causes that generate the word's meaning through phonetic vibrations.",
+      "why": "Reinterprets conditioning (preparation/asraya) as efficient causation. The verse presents dhvani as conditioning agent (preparing ear or word for manifestation), not as causal producer. This interpretation of dhvani's role is not supported by any axiom.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "karana", "from": "dhvani", "to": "sabda"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse presents a systematic doxography of three positions on what sounds do in manifestation—conditioning the ear, the word, or both. The commentary's emphasis on exhaustiveness and mechanism-independence (the doctrine survives all three) requires treating the three options as coherent alternatives rather than mutually exclusive claims about a single fixed mechanism. The challenge: 'power' (samskara, abhivyakti) may underspecify the causal structure—neither efficient nor formal causation captures 'conditioning'—but the six sorts lack a dedicated category for relational preparation."
+}

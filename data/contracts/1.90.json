@@ -1,0 +1,153 @@
+{
+  "verse": "1.90",
+  "entities": [
+    {
+      "id": "vakya",
+      "name": "vākya",
+      "sort": "manifestation",
+      "cite": "while the sentence is being manifested by the causes of its manifestation"
+    },
+    {
+      "id": "buddhi",
+      "name": "buddhi",
+      "sort": "cognition",
+      "cite": "cognition first proceeds in the form of a seizing of parts"
+    },
+    {
+      "id": "bhagavagraha",
+      "name": "bhāgāvagraha",
+      "sort": "power",
+      "cite": "the hearer's buddhi runs ahead in bhaga-avagraha-rupa, the form of part-seizure"
+    },
+    {
+      "id": "sphota",
+      "name": "sphota",
+      "sort": "absolute",
+      "cite": "when the vakya-sphota is seized whole"
+    },
+    {
+      "id": "bhaga",
+      "name": "bhāga",
+      "sort": "property",
+      "cite": "it takes words, phrases, apparent constituents, as so many determinate grasps"
+    },
+    {
+      "id": "avagraha",
+      "name": "avagraha",
+      "sort": "cognition",
+      "cite": "the form of part-seizure — it takes words, phrases, apparent constituents"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "pravartate",
+      "from": "buddhi",
+      "to": "bhagavagraha",
+      "cite": "cognition first proceeds in the form of a seizing of parts"
+    },
+    {
+      "kind": "predication",
+      "name": "anyatha",
+      "of": "bhaga",
+      "cite": "These part-graspings are the anyatha-determinations of 1.89: committed, useful, and destined to be superseded when the vakya-sphota is seized whole"
+    },
+    {
+      "kind": "relation",
+      "name": "vivartate",
+      "from": "bhagavagraha",
+      "to": "sphota",
+      "cite": "destined to be superseded when the vakya-sphota is seized whole"
+    },
+    {
+      "kind": "predication",
+      "name": "paurvapravartana",
+      "of": "bhagavagraha",
+      "cite": "cognition first proceeds in the form of a seizing of parts"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "nitya",
+      "of": "bhaga",
+      "cite": "destined to be superseded when the vakya-sphota is seized whole"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "relation",
+        "name": "pravartate",
+        "from": "buddhi",
+        "to": "bhagavagraha",
+        "cite": "cognition first proceeds in the form of a seizing of parts"
+      },
+      {
+        "kind": "predication",
+        "name": "anyatha",
+        "of": "bhaga",
+        "cite": "committed, useful, and destined to be superseded when the vakya-sphota is seized whole"
+      },
+      {
+        "kind": "relation",
+        "name": "vivartate",
+        "from": "bhagavagraha",
+        "to": "sphota",
+        "cite": "destined to be superseded when the vakya-sphota is seized whole"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "direct_whole_grasp",
+      "rendering": "Cognition directly grasps the undivided meaning without first proceeding through part-seizure.",
+      "why": "Contradicts the verse's explicit statement that cognition proceeds 'first' (pūrvaṃ) in the form of part-seizure. The commentary emphasizes the necessary intermediate stage of part-graspings before whole apprehension.",
+      "entities": [],
+      "claims": [],
+      "expect": "contradicted"
+    },
+    {
+      "label": "permanent_parts",
+      "rendering": "The part-seizures constitute the final and permanent grasp of meaning.",
+      "why": "Directly contradicts the commentary's explicit statement that part-graspings are 'destined to be superseded when the vakya-sphota is seized whole'. Part-grasps are provisional scaffolding, not endpoint.",
+      "entities": [
+        {
+          "id": "bhaga_final",
+          "name": "bhāga",
+          "sort": "manifestation"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "nitya",
+          "of": "bhaga_final"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "sentence_as_object",
+      "rendering": "The sentence (vākya) itself is the final object of comprehension, not the undivided sphota.",
+      "why": "Confuses the audible manifestation (vākya) with its meaning-whole (sphota). The commentary makes clear that the sentence is the medium through which part-grasps arise, but the sphota is the true endpoint, retrospectively conferring meaning on the intermediate words.",
+      "entities": [
+        {
+          "id": "vakya_final",
+          "name": "vākya",
+          "sort": "absolute"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "vivartate",
+          "from": "bhagavagraha",
+          "to": "vakya_final"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "Verse 1.90 encodes the phenomenology of sentential comprehension: part-seizure (bhāgāvagraha) is the cognitive mode through which the hearer apprehends a sentence, but this mode is provisional and destined to collapse into whole apprehension of sphota. The six sorts fit well: buddhi (cognition), bhāgāvagraha (power), sphota (absolute), vakya (manifestation), bhāga and avagraha (properties/powers of the cognitive process)."
+}

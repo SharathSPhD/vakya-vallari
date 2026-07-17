@@ -1,0 +1,134 @@
+{
+  "verse": "1.64",
+  "entities": [
+    {
+      "id": "guna",
+      "name": "guṇa",
+      "sort": "property",
+      "cite": "the guna is the prakarsa-hetu, the ground of the 'more'"
+    },
+    {
+      "id": "asraya",
+      "name": "āśraya",
+      "sort": "manifestation",
+      "cite": "from that quality, itself resting on its substrate, the pre-eminence of the substrate is understood"
+    },
+    {
+      "id": "prakarsha_hetu",
+      "name": "prakarṣa-hetu",
+      "sort": "power",
+      "cite": "the guna is the prakarsa-hetu, the ground of the 'more'"
+    },
+    {
+      "id": "prakrishtatva",
+      "name": "prakṛṣṭatva",
+      "sort": "property",
+      "cite": "the pre-eminence of the substrate is understood"
+    },
+    {
+      "id": "svatantrya",
+      "name": "svatantrya",
+      "sort": "property",
+      "cite": "grammar treats it svatantryena, as if it were a free-standing item"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "relation",
+      "name": "asrita",
+      "from": "guna",
+      "to": "asraya",
+      "cite": "though in reality it exists only asrita, resting on its substrate"
+    },
+    {
+      "kind": "predication",
+      "name": "prakarsa_hetu",
+      "of": "guna",
+      "cite": "the guna is the prakarsa-hetu, the ground of the 'more'"
+    },
+    {
+      "kind": "predication",
+      "name": "svatantryena_upadishyate",
+      "of": "guna",
+      "cite": "grammar treats it svatantryena, as if it were a free-standing item"
+    },
+    {
+      "kind": "relation",
+      "name": "pratiyate",
+      "from": "guna",
+      "to": "prakrishtatva",
+      "cite": "the comparative reaches the cloth through its whiteness"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "svatantra",
+      "of": "guna",
+      "cite": "analysis grants provisional independence to what is ontologically dependent"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "prakarsa_hetu",
+        "of": "guna",
+        "cite": "The quality that is the ground of pre-eminence"
+      },
+      {
+        "kind": "predication",
+        "name": "svatantryena_upadishyate",
+        "of": "guna",
+        "cite": "is indicated as though independent"
+      },
+      {
+        "kind": "relation",
+        "name": "asrita",
+        "from": "guna",
+        "to": "asraya",
+        "cite": "itself resting on its substrate"
+      },
+      {
+        "kind": "relation",
+        "name": "pratiyate",
+        "from": "guna",
+        "to": "prakrishtatva",
+        "cite": "the pre-eminence of the substrate is understood"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "guna_as_absolute",
+      "rendering": "The quality that grounds pre-eminence is truly independent, self-standing linguistic or ontological atom.",
+      "why": "The verse and commentary are explicit that the guna appears to be independent only as a provisional analytical move: 'though in reality it exists only asrita, resting on its substrate.' Treating it as truly svatantra contradicts the asrita relation the verse asserts. The sort error (property being treated as absolute) makes this analysis fundamentally mistaken.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "svatantra", "of": "guna"}
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "inverted_dependence",
+      "rendering": "The substrate rests on the quality; only the substrate's pre-eminence grounds understanding of the quality.",
+      "why": "This reverses the critical asymmetry the verse establishes. The guna is asrita to the asraya, not the reverse. The commentary is clear: from the quality, the substrate's pre-eminence is understood. Reversing the dependence direction makes the logical structure backwards.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "asrita", "from": "asraya", "to": "guna"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "analytical_mistake_as_error",
+      "rendering": "Because grammar provisionally grants independence to the quality as a mistake, treating it as if independent is a flaw that weakens grammatical analysis.",
+      "why": "The commentary explicitly reframes analytical independence as a legitimate abstraction, not an error: 'analysis grants provisional independence to what is ontologically dependent, in order to state generalizations.' Grammar's method—treating asrita entities as if svatantra for rule-making—is not a flaw but a necessary feature. Misreading this as a mistake misses Bhartrhari's point.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "defect", "of": "guna"}
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "Verse 1.64 extends the methodology of analysis introduced in earlier verses (1.24, 1.58) to the theory of grammatical causation: gunas are treated as if independent (svatantryena) to serve as the formal grounds of grammatical operations, but they remain ontologically dependent (asrita) on their substrate. The six sorts accommodate this: guna and prakrishtatva are properties; asraya is a manifestation; prakarsha-hetu is a power; svatantrya is a property marking the analytical fiction. The key strain: 'svatantryena_upadishyate' conflates a speech-act predicate (how grammar presents the guna) with an ontological predicate (what the guna is). The contract treats it as a predication, acknowledging that the analytical presentation is formally real even as the commentary insists the guna's actual ontological status is asrita."
+}

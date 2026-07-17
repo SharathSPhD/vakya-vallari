@@ -1,0 +1,177 @@
+{
+  "verse": "1.88",
+  "entities": [
+    {
+      "id": "varna_sphota",
+      "name": "varṇa-sphota",
+      "sort": "absolute",
+      "cite": "The theory recognizes sphotas at three grains — varna, pada, vakya"
+    },
+    {
+      "id": "pada_sphota",
+      "name": "pada-sphota",
+      "sort": "absolute",
+      "cite": "The theory recognizes sphotas at three grains — varna, pada, vakya"
+    },
+    {
+      "id": "vakya_sphota",
+      "name": "vākya-sphota",
+      "sort": "absolute",
+      "cite": "The theory recognizes sphotas at three grains — varna, pada, vakya"
+    },
+    {
+      "id": "vyanjaka",
+      "name": "vyañjaka",
+      "sort": "linguisticItem",
+      "cite": "each has its own vyanjakas, its own manifesting sounds"
+    },
+    {
+      "id": "sakti",
+      "name": "śakti",
+      "sort": "power",
+      "cite": "their powers appear as though commingled"
+    }
+  ],
+  "axioms": [
+    {
+      "kind": "predication",
+      "name": "atyantabhinna",
+      "of": "varna_sphota",
+      "cite": "the manifested items are atyanta-bhinna, absolutely distinct"
+    },
+    {
+      "kind": "predication",
+      "name": "atyantabhinna",
+      "of": "pada_sphota",
+      "cite": "the manifested items are atyanta-bhinna, absolutely distinct"
+    },
+    {
+      "kind": "predication",
+      "name": "atyantabhinna",
+      "of": "vakya_sphota",
+      "cite": "the manifested items are atyanta-bhinna, absolutely distinct"
+    },
+    {
+      "kind": "relation",
+      "name": "vyanjaka",
+      "from": "varna_sphota",
+      "to": "vyanjaka",
+      "cite": "each has its own vyanjakas, its own manifesting sounds"
+    },
+    {
+      "kind": "relation",
+      "name": "vyanjaka",
+      "from": "pada_sphota",
+      "to": "vyanjaka",
+      "cite": "each has its own vyanjakas, its own manifesting sounds"
+    },
+    {
+      "kind": "relation",
+      "name": "vyanjaka",
+      "from": "vakya_sphota",
+      "to": "vyanjaka",
+      "cite": "each has its own vyanjakas, its own manifesting sounds"
+    },
+    {
+      "kind": "predication",
+      "name": "samkirana",
+      "of": "sakti",
+      "cite": "in the single stream of speech these manifesting powers appear sankirna iva, as if commingled"
+    },
+    {
+      "kind": "predication",
+      "name": "paraspara_bhinna",
+      "of": "varna_sphota",
+      "cite": "they are distinct manifestables sharing manifestors"
+    },
+    {
+      "kind": "predication",
+      "name": "paraspara_bhinna",
+      "of": "pada_sphota",
+      "cite": "they are distinct manifestables sharing manifestors"
+    },
+    {
+      "kind": "predication",
+      "name": "paraspara_bhinna",
+      "of": "vakya_sphota",
+      "cite": "they are distinct manifestables sharing manifestors"
+    }
+  ],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "samghata",
+      "from": "varna_sphota",
+      "to": "pada_sphota",
+      "cite": "the sentence-sphota is not a sum of word-sphotas any more than the word was a sum of phonemes"
+    },
+    {
+      "kind": "relation",
+      "name": "samghata",
+      "from": "pada_sphota",
+      "to": "vakya_sphota",
+      "cite": "the sentence-sphota is not a sum of word-sphotas any more than the word was a sum of phonemes"
+    }
+  ],
+  "accepted_reading": {
+    "claims": [
+      {
+        "kind": "predication",
+        "name": "atyantabhinna",
+        "of": "varna_sphota",
+        "cite": "these differ absolutely"
+      },
+      {
+        "kind": "predication",
+        "name": "atyantabhinna",
+        "of": "pada_sphota",
+        "cite": "these differ absolutely"
+      },
+      {
+        "kind": "predication",
+        "name": "atyantabhinna",
+        "of": "vakya_sphota",
+        "cite": "these differ absolutely"
+      },
+      {
+        "kind": "predication",
+        "name": "samkirana",
+        "of": "sakti",
+        "cite": "their powers appear as though commingled"
+      }
+    ]
+  },
+  "rejected_readings": [
+    {
+      "label": "compositional_hierarchy",
+      "rendering": "The word-sphota is composed of constituent phoneme-sphotas arranged in sequence.",
+      "why": "Treats the hierarchy among sphotas as mereological composition, which the commentary explicitly denies: hierarchy among sphotas is a hierarchy of alternative unities, not of containment. This contradicts the denial that the word is a sum of phonemes.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "samghata",
+          "from": "varna_sphota",
+          "to": "pada_sphota"
+        }
+      ],
+      "expect": "contradicted"
+    },
+    {
+      "label": "acoustic_stream_partitioned",
+      "rendering": "One can mark off distinct temporal segments of the speech stream as manifesting phonemes, others as manifesting words, and still others as manifesting the sentence.",
+      "why": "Asserts that portions of the acoustic stream can be definitively assigned to distinct manifestational levels. The commentary explicitly denies this: the hearer cannot assign portions of the acoustic flow to levels. The iva signals that apparent commingling blocks any such partition.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "sakshi",
+          "from": "vyanjaka",
+          "to": "varna_sphota"
+        }
+      ],
+      "expect": "unlicensed"
+    }
+  ],
+  "notes": "The verse centrally addresses the structure of multi-level manifestation: three absolutely distinct sphotas (varna, pada, vakya) are manifestable via the same medium (vyanjaka sounds) in a single speech stream. The commingling (sankirna iva) is not real but apparent, allowing distinct manifestables to share manifestors without mereological hierarchy. This solves the regress objection while preserving the non-compositional nature of the sphota levels."
+}
