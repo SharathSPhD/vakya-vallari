@@ -42,6 +42,25 @@ def main() -> int:
         lake_build_ok=lake_ok and zero_sorry,
     )
     print("site:", stats)
+
+    # Emit the committed Vercel showcase (web/index.html): the essay landing
+    # page with internal links repointed at the HF Space full edition. Keeping
+    # it in the build prevents web/ from drifting from the essay source, and a
+    # committed web/ makes GitHub auto-deploy serve the correct page (vercel.json
+    # sets outputDirectory=web), instead of racing the MCP inline deploys.
+    showcase = (ROOT / "site" / "dist" / "index.html").read_text(encoding="utf-8")
+    hf = "https://qbz506-vakya-vallari.static.hf.space"
+    for local, remote in (
+        ('href="edition.html"', f'href="{hf}/edition.html"'),
+        ('href="kanda-1.html"', f'href="{hf}/kanda-1.html"'),
+        ('href="proofs/1.1.html"', f'href="{hf}/proofs/1.1.html"'),
+    ):
+        showcase = showcase.replace(local, remote)
+    web = ROOT / "web"
+    web.mkdir(exist_ok=True)
+    (web / "index.html").write_text(showcase, encoding="utf-8")
+    print("web/index.html:", len(showcase), "bytes")
+
     return 0 if (lake_ok and zero_sorry) else 1
 
 
