@@ -19,7 +19,8 @@ def contract : Contract :=
     , Claim.relation "pratikula_buddhi" (Node.ent anitya_darsin) (Node.ent vada)
     , Claim.predication "viparyaya" anitya_darsin
     , Claim.predication "anisthaniya" aksakta_abhidhatri ]
-  , denials := [] }
+  , denials := []
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "vyatikirana" daivi_vag

@@ -26,6 +26,18 @@
       "name": "lokaprasiddha",
       "of": "dharma",
       "cite": "their being established in the world, functions as the warrant"
+    },
+    {
+      "kind": "predication",
+      "name": "paramparanga_sthita",
+      "of": "dharma",
+      "cite": "what secures these paths is the sheer continuity of their transmission"
+    },
+    {
+      "kind": "predication",
+      "name": "sthiti_pramana",
+      "of": "dharma",
+      "cite": "the practice's persistence is its credential"
     }
   ],
   "denials": [
@@ -75,5 +87,5 @@
       "expect": "unlicensed"
     }
   ],
-  "notes": "The contract captures the asymmetry with 1.30: reasoning cannot establish dharma (1.30) and cannot overturn it (1.31). The verse's structure is: unbroken paths + worldly establishment = invulnerability to reasoning. This clarifies reasoning's scope rather than negating its validity."
+  "notes": "The contract captures the asymmetry with 1.30: reasoning cannot establish dharma (1.30) and cannot overturn it (1.31). Added two axioms from commentary: transmission continuity (sampradaya) secures dharma, and practice's persistence self-validates. Extended accepted reading to include negated badhate relation. The verse's deeper structure: dharma is unbroken + established in world + sustained by transmission + self-warranting, therefore invulnerable to tarka's scrutiny. This clarifies what reasoning is *for* (evaluating novel claims) rather than negating its validity."
 }

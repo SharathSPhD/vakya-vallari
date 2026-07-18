@@ -14,10 +14,14 @@ def regeneration : Entity := ⟨"punarjanana", Sorta.power⟩
 def flame : Entity := ⟨"jvālā", Sorta.manifestation⟩
 
 def contract : Contract :=
-  { axioms := [ Claim.relation "utpadyate" (Node.ent sphota) (Node.ent dhvani)
+  { axioms := []
+  , denials := [ Claim.relation "utpadyate" (Node.ent karana) (Node.ent dhvani) ]
+  , reported := [ Claim.relation "utpadyate" (Node.ent sphota) (Node.ent dhvani)
     , Claim.relation "anugatam" (Node.ent dhvani) (Node.ent dhvani)
-    , Claim.predication "anavasthita" karana ]
-  , denials := [ Claim.relation "utpadyate" (Node.ent karana) (Node.ent dhvani) ] }
+    , Claim.predication "anavasthita" karana ] }
+
+-- pūrvapakṣa: this contract carries reported (non-endorsed) claims
+#guard contract.doxographic = true
 
 def accepted : Reading :=
   { claims := [ Claim.relation "utpadyate" (Node.ent sphota) (Node.ent dhvani)

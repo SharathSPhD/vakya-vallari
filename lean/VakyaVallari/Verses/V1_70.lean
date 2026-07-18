@@ -17,11 +17,15 @@ def nityata : Entity := ⟨"nityatā", Sorta.property⟩
 def cognition : Entity := ⟨"buddhi", Sorta.cognition⟩
 
 def contract : Contract :=
-  { axioms := [ Claim.predication "asti" ekatvavada
+  { axioms := []
+  , denials := []
+  , reported := [ Claim.predication "asti" ekatvavada
     , Claim.predication "asti" nanatvavada
     , Claim.relation "asraya" (Node.ent ekatvavada) (Node.ent sphota)
-    , Claim.relation "asraya" (Node.ent nanatvavada) (Node.ent phoneme) ]
-  , denials := [] }
+    , Claim.relation "asraya" (Node.ent nanatvavada) (Node.ent phoneme) ] }
+
+-- pūrvapakṣa: this contract carries reported (non-endorsed) claims
+#guard contract.doxographic = true
 
 def accepted : Reading :=
   { claims := [ Claim.predication "asti" ekatvavada

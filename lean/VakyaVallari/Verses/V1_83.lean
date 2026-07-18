@@ -19,7 +19,8 @@ def contract : Contract :=
     , Claim.relation "grahana-anuguna" (Node.ent pratyaya) (Node.ent grahana)
     , Claim.relation "terminates" (Node.ent pratyaya) (Node.ent avadharana)
     , Claim.relation "ascertains" (Node.ent avadharana) (Node.ent svarupa) ]
-  , denials := [ Claim.relation "summation" (Node.ent avadharana) (Node.ent pratyaya) ] }
+  , denials := [ Claim.relation "summation" (Node.ent avadharana) (Node.ent pratyaya) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "anupakhyeya" pratyaya

@@ -16,7 +16,8 @@ def contract : Contract :=
   { axioms := [ Claim.relation "asraya" (Node.ent sabda) (Node.ent rasa)
     , Claim.identity rasa jyotis
     , Claim.relation "adhigama" (Node.ent vyakarana) (Node.ent rasa) ]
-  , denials := [] }
+  , denials := []
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "asraya" (Node.ent sabda) (Node.ent rasa)
@@ -33,6 +34,13 @@ def grammar_as_indirect : Reading :=
   { claims := [ Claim.predication "paroksa" vyakarana ] }
 theorem grammar_as_indirect_inadequate : ¬ contract.Adequate grammar_as_indirect := by decide
 #guard contract.licenses grammar_as_indirect = false
+
+/- 'The highest essence is merely a conventional appearance arising from conceptualization.'
+   Why rejected: This reading projects a maya-theory onto the verse that the commentary explicitly rejects. The commentary states: 'Note that the verse does not say ordinary differentiated speech is false; it says it has an essence.' The essence (rasa) is identified with a 'light' (jyotis)—a real, intrinsic principle—not a conceptual construct. To treat rasa itself as mere appearance inverts the verse's teaching about reality and manifestation. -/
+def rasa_as_appearance : Reading :=
+  { claims := [ Claim.predication "maya" rasa ] }
+theorem rasa_as_appearance_inadequate : ¬ contract.Adequate rasa_as_appearance := by decide
+#guard contract.licenses rasa_as_appearance = false
 
 end Counterexamples
 

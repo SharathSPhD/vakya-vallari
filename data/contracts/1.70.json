@@ -55,27 +55,31 @@
       "kind": "predication",
       "name": "asti",
       "of": "ekatvavada",
-      "cite": "unity-theorists and plurality-theorists exist on both sides of the eternality dispute"
+      "cite": "unity-theorists and plurality-theorists exist on both sides of the eternality dispute",
+      "stance": "reported"
     },
     {
       "kind": "predication",
       "name": "asti",
       "of": "nanatvavada",
-      "cite": "unity-theorists and plurality-theorists exist on both sides of the eternality dispute"
+      "cite": "unity-theorists and plurality-theorists exist on both sides of the eternality dispute",
+      "stance": "reported"
     },
     {
       "kind": "relation",
       "name": "asraya",
       "from": "ekatvavada",
       "to": "sphota",
-      "cite": "The unity in question is the one the sphota doctrine asserts: is the word one partless entity variously manifested"
+      "cite": "The unity in question is the one the sphota doctrine asserts: is the word one partless entity variously manifested",
+      "stance": "reported"
     },
     {
       "kind": "relation",
       "name": "asraya",
       "from": "nanatvavada",
       "to": "phoneme",
-      "cite": "or a plurality (of phonemes, of tokens)"
+      "cite": "or a plurality (of phonemes, of tokens)",
+      "stance": "reported"
     }
   ],
   "denials": [],

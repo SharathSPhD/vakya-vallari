@@ -19,7 +19,8 @@ def contract : Contract :=
     , Claim.relation "sadhana" (Node.ent aksara) (Node.ent vidya)
     , Claim.predication "na_virodhi_vada" vidya
     , Claim.relation "asraya" (Node.ent pranava) (Node.ent vada) ]
-  , denials := [ Claim.relation "asraya" (Node.ent vada) (Node.ent vada) ] }
+  , denials := [ Claim.relation "asraya" (Node.ent vada) (Node.ent vada) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.identity satya_visuddhi vidya

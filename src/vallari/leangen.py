@@ -53,12 +53,23 @@ def generate_verse_module(contract: dict) -> str:
     ]
     for e in contract["entities"]:
         lines.append(_entity(e))
+    endorsed = [a for a in contract["axioms"] if a.get("stance", "endorsed") == "endorsed"]
+    reported = [a for a in contract["axioms"] if a.get("stance") == "reported"]
     lines += [
         "",
         "def contract : Contract :=",
-        f"  {{ axioms := {_claim_list(contract['axioms'])}",
-        f"  , denials := {_claim_list(contract.get('denials', []))} }}",
+        f"  {{ axioms := {_claim_list(endorsed)}",
+        f"  , denials := {_claim_list(contract.get('denials', []))}",
+        f"  , reported := {_claim_list(reported)} }}",
         "",
+    ]
+    if reported:
+        lines += [
+            "-- pūrvapakṣa: this contract carries reported (non-endorsed) claims",
+            "#guard contract.doxographic = true",
+            "",
+        ]
+    lines += [
         "def accepted : Reading :=",
         f"  {{ claims := {_claim_list(contract['accepted_reading']['claims'])} }}",
         "",

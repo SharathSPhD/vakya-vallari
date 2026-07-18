@@ -20,7 +20,8 @@ def contract : Contract :=
     , Claim.predication "svarupa" atman
     , Claim.relation "netra" (Node.ent atman) (Node.ent sakti)
     , Claim.predication "bheda-rupa" atman ]
-  , denials := [ Claim.predication "bheda" atman ] }
+  , denials := [ Claim.predication "bheda" atman ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "asrita" (Node.ent sakti) (Node.ent sabda)

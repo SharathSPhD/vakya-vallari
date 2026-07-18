@@ -25,7 +25,8 @@ def contract : Contract :=
     , Claim.predication "dvaya-sakti-sambhava" sabda
     , Claim.predication "na-niyata-karyabhak" sabda ]
   , denials := [ Claim.relation "exhausts" (Node.ent sabda) (Node.ent sakti)
-    , Claim.relation "determines-operation" (Node.ent sabda) (Node.ent vyakarana) ] }
+    , Claim.relation "determines-operation" (Node.ent sabda) (Node.ent vyakarana) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "na-niyata-karyabhak" sabda

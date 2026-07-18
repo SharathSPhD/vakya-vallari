@@ -83,6 +83,16 @@
         {"kind": "predication", "name": "paroksa", "of": "vyakarana"}
       ],
       "expect": "unlicensed"
+    },
+    {
+      "label": "rasa_as_appearance",
+      "rendering": "The highest essence is merely a conventional appearance arising from conceptualization.",
+      "why": "This reading projects a maya-theory onto the verse that the commentary explicitly rejects. The commentary states: 'Note that the verse does not say ordinary differentiated speech is false; it says it has an essence.' The essence (rasa) is identified with a 'light' (jyotis)—a real, intrinsic principle—not a conceptual construct. To treat rasa itself as mere appearance inverts the verse's teaching about reality and manifestation.",
+      "entities": [],
+      "claims": [
+        {"kind": "predication", "name": "maya", "of": "rasa"}
+      ],
+      "expect": "unlicensed"
     }
   ],
   "notes": "The verse teaches that differentiated speech contains an absolute essence accessible uniquely through grammar's direct method. The core ontology: sabda (linguistic manifestation), rasa and jyotis (the absolute essence, identical), vyakarana (the power/discipline enabling direct access). The commentary explicitly preserves the reality of manifestation: the differentiation is not false, but is the very medium through which the essence becomes accessible. No sort strain: linguisticItem, absolute, and power capture the distinct levels precisely."

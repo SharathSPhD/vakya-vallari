@@ -58,7 +58,14 @@
       "cite": "Ordinary moral competence does not wait upon learning"
     }
   ],
-  "denials": [],
+  "denials": [
+    {
+      "kind": "predication",
+      "name": "apeksa",
+      "of": "jnana",
+      "cite": "Ordinary moral competence does not wait upon learning"
+    }
+  ],
   "accepted_reading": {
     "claims": [
       {
@@ -90,6 +97,20 @@
         }
       ],
       "expect": "unlicensed"
+    },
+    {
+      "label": "learning_dependent_ethics",
+      "rendering": "Moral knowledge requires formal instruction; the common person cannot grasp the distinction between merit and sin without studying the treatise.",
+      "why": "Claims that jnana is dependent on formal learning (apeksa); contradicts the explicit denial established by the commentary that 'Ordinary moral competence does not wait upon learning,' which asserts moral knowledge's independence (anapeksita) from textual instruction.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "apeksa",
+          "of": "jnana"
+        }
+      ],
+      "expect": "contradicted"
     }
   ],
   "notes": "The verse establishes that moral knowledge (punya/papa distinction) is universal and independent of formal learning, limiting the sastra's purpose (prayojana) to refinement at the margins rather than foundational teaching."

@@ -17,7 +17,8 @@ def contract : Contract :=
     , Claim.identity vagrupa pratyavamarsa
     , Claim.relation "asraya" (Node.ent vagrupa) (Node.ent prakasha)
     , Claim.relation "niyamaka" (Node.ent vagrupa) (Node.ent avabodha) ]
-  , denials := [ Claim.relation "svatantra" (Node.ent prakasha) (Node.ent vagrupa) ] }
+  , denials := [ Claim.relation "svatantra" (Node.ent prakasha) (Node.ent vagrupa) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "sasvata" vagrupa

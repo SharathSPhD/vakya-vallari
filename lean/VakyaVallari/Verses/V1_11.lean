@@ -16,7 +16,8 @@ def contract : Contract :=
     , Claim.predication "uttama_tapas" vyakarana
     , Claim.relation "prathamam" (Node.ent vyakarana) (Node.ent vedangas)
     , Claim.predication "ascesis" vyakarana ]
-  , denials := [ Claim.predication "propaedeutic" vyakarana ] }
+  , denials := [ Claim.predication "propaedeutic" vyakarana ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "asanna" (Node.ent vyakarana) (Node.ent brahman)

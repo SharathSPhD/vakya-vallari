@@ -19,7 +19,8 @@ def contract : Contract :=
     , Claim.relation "arises_from" (Node.ent rupabheda) (Node.ent dhvani)
     , Claim.predication "nirbhaga" unit
     , Claim.relation "is_abhyupaya" (Node.ent bhaga) (Node.ent abhyupaya) ]
-  , denials := [ Claim.relation "inherent_to" (Node.ent krama) (Node.ent unit) ] }
+  , denials := [ Claim.relation "inherent_to" (Node.ent krama) (Node.ent unit) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "bhagavat" unit

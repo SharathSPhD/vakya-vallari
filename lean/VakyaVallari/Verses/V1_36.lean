@@ -17,7 +17,8 @@ def contract : Contract :=
     , Claim.relation "vyatikramya" (Node.ent siddhi) (Node.ent pratyaksa)
     , Claim.relation "vyatikramya" (Node.ent siddhi) (Node.ent anumana) ]
   , denials := [ Claim.relation "grahana" (Node.ent pratyaksa) (Node.ent siddhi)
-    , Claim.relation "grahana" (Node.ent anumana) (Node.ent siddhi) ] }
+    , Claim.relation "grahana" (Node.ent anumana) (Node.ent siddhi) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "karmaja" siddhi

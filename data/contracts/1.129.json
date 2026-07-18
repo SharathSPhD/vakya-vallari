@@ -40,6 +40,12 @@
       "cite": "the ground being utterly otherwise (a single moving point)"
     },
     {
+      "kind": "predication",
+      "name": "drsyate",
+      "of": "vastvakara",
+      "cite": "vastvakara-nirupana drsyate: a thing-form is determined, seen, held"
+    },
+    {
       "kind": "relation",
       "name": "nirupayati",
       "from": "sabda",
@@ -95,7 +101,17 @@
         {"kind": "predication", "name": "yatharthabhute", "of": "nimitte_yathartha"}
       ],
       "expect": "unlicensed"
+    },
+    {
+      "label": "perception_mediates_form_manifestation",
+      "rendering": "Perception of the moving light directly enables or constitutes the manifestation of the circular form-determination.",
+      "why": "Misattributes to perception the form-constitutive function that the verse assigns to the word. The verse's structure (Perception supplies moving light; the word supplies the cakra) establishes that perception and word supply different aspects—perception does not supply the vastvakara, which is what the word alone accomplishes.",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "nimitta_drsyata", "from": "alata", "to": "vastvakara"}
+      ],
+      "expect": "unlicensed"
     }
   ],
-  "notes": "Verse 1.129 demonstrates language's form-constitutive power through the fire-brand circle, where no real object exists yet a thing-form is nonetheless determined purely through utterance. The contract captures three core principles: (1) the ground (nimitte) for the circle is utterly otherwise, (2) the word (sabda) determines the thing-form (vastvakara) despite this absence, (3) perception supplies the moving light but the word supplies the circular form. This exemplifies the conclusion of 1.128 by showing the extreme case where utterance alone furnishes object-form."
+  "notes": "Verse 1.129 demonstrates language's form-constitutive power through the fire-brand circle, where no real object exists yet a thing-form is nonetheless determined purely through utterance. The contract captures four core principles through its three axioms: (1) the ground (nimitte) is utterly otherwise, (2) the thing-form-determination IS seen/appears (drsyate), (3) the word (sabda) constitutively determines the thing-form, (4) perception supplies the moving light but the word supplies the circular form. The addition of the drsyate axiom captures the paradoxical resolution of the teaching—despite having no real substrate, the word-constituted form is genuinely manifested, not merely imagined. This exemplifies 1.128 by showing the extreme case where utterance alone furnishes object-form."
 }

@@ -21,7 +21,8 @@ def contract : Contract :=
     , Claim.relation "vyakhyāyate" (Node.ent pratipadaka) (Node.ent anvakhyeya)
     , Claim.predication "kāryakāraṇa-bhāva" sambandha
     , Claim.predication "yogya-bhāva" sambandha ]
-  , denials := [ Claim.predication "sarva-upavarnita" padartha ] }
+  , denials := [ Claim.predication "sarva-upavarnita" padartha ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "apoddhāra" sabda

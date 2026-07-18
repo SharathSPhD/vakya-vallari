@@ -21,7 +21,8 @@ def contract : Contract :=
     , Claim.relation "vyanjaka" (Node.ent linga) (Node.ent artha)
     , Claim.predication "bahuvidha" nyaya
     , Claim.relation "vibhajyate" (Node.ent tarka) (Node.ent nyaya) ]
-  , denials := [ Claim.relation "samarpita" (Node.ent form) (Node.ent artha) ] }
+  , denials := [ Claim.relation "samarpita" (Node.ent form) (Node.ent artha) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "vivaksite" vivaksa

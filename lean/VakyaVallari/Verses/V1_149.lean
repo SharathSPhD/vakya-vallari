@@ -19,7 +19,8 @@ def contract : Contract :=
     , Claim.relation "prakasaka" (Node.ent sadhu) (Node.ent artha)
     , Claim.relation "signifies_through" (Node.ent apabhramsa) (Node.ent sadhu)
     , Claim.predication "mediated_by_anumana" apabhramsa ]
-  , denials := [ Claim.identity apabhramsa sadhu ] }
+  , denials := [ Claim.identity apabhramsa sadhu ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "hetave" (Node.ent apabhramsa) (Node.ent pratyaya)

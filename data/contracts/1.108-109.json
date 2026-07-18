@@ -68,40 +68,46 @@
    "name": "anuvartati",
    "from": "iccha",
    "to": "prayatna",
-   "cite": "effort conforming to it"
+   "cite": "effort conforming to it",
+   "stance": "reported"
   },
   {
    "kind": "relation",
    "name": "pratipadyate",
    "from": "vayu",
    "to": "sabdatva",
-   "cite": "sabdatvam pratipadyate, air attains wordhood"
+   "cite": "sabdatvam pratipadyate, air attains wordhood",
+   "stance": "reported"
   },
   {
    "kind": "relation",
    "name": "abhihati",
    "from": "vayu",
    "to": "sthanani",
-   "cite": "striking the eight classical places of articulation"
+   "cite": "striking the eight classical places of articulation",
+   "stance": "reported"
   },
   {
    "kind": "predication",
    "name": "yuktavega",
    "of": "vayu",
-   "cite": "this moving air carries vega and pracaya, velocity and mass-accumulation, from the samarthya of its cause"
+   "cite": "this moving air carries vega and pracaya, velocity and mass-accumulation, from the samarthya of its cause",
+   "stance": "reported"
   },
   {
    "kind": "predication",
    "name": "yukti-pracaya",
    "of": "vayu",
-   "cite": "carries vega and pracaya, velocity and mass-accumulation"
+   "cite": "carries vega and pracaya, velocity and mass-accumulation",
+   "stance": "reported"
   },
   {
    "kind": "relation",
    "name": "vibhajyante",
    "from": "sannipata",
    "to": "murta",
-   "cite": "at full sannipata it splits even solid bodies"
+   "cite": "at full sannipata it splits even solid bodies",
+   "stance": "reported"
   }
  ],
  "denials": [

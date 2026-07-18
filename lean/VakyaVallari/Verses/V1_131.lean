@@ -19,7 +19,8 @@ def contract : Contract :=
     , Claim.relation "is-attainment-of" (Node.ent siddhih) (Node.ent paramatman)
     , Claim.predication "functioning-principle" pravrtti_tattva
     , Claim.relation "asnute" (Node.ent pravrtti_tattva_jna) (Node.ent brahma_amrta) ]
-  , denials := [ Claim.relation "asnute" (Node.ent sabda_samskara) (Node.ent brahma_amrta) ] }
+  , denials := [ Claim.relation "asnute" (Node.ent sabda_samskara) (Node.ent brahma_amrta) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.identity sabda_samskara siddhih

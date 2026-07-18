@@ -22,7 +22,8 @@ def contract : Contract :=
     , Claim.predication "lawlike" process
     , Claim.relation "exemplifies" (Node.ent vikara) (Node.ent pratipatti) ]
   , denials := [ Claim.predication "arbitrary" pratipatti
-    , Claim.predication "aniyama" vikara ] }
+    , Claim.predication "aniyama" vikara ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "anupurvi_niyama" vikara

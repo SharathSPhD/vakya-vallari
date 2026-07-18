@@ -21,7 +21,8 @@ def contract : Contract :=
     , Claim.relation "asraya" (Node.ent atman) (Node.ent sabdantar)
     , Claim.predication "maharsabha" sabdantar
     , Claim.predication "isyate" sayujya ]
-  , denials := [ Claim.identity sabdantar audita ] }
+  , denials := [ Claim.identity sabdantar audita ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "asraya" (Node.ent atman) (Node.ent sabdantar)

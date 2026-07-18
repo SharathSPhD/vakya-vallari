@@ -17,12 +17,17 @@ def apaurusheya : Entity := ⟨"apauruṣheya", Sorta.property⟩
 
 def contract : Contract :=
   { axioms := [ Claim.predication "nityah" sambandha
-    , Claim.relation "bhavya" (Node.ent nityatva) (Node.ent apaurusheya) ]
+    , Claim.predication "transmitted" sambandha
+    , Claim.predication "parampara_siddhah" nityatva
+    , Claim.relation "bhavya" (Node.ent nityatva) (Node.ent apaurusheya)
+    , Claim.relation "samaya_bhavya_krita" (Node.ent samaya) (Node.ent apaurusheya) ]
   , denials := [ Claim.predication "samaya" sambandha
-    , Claim.predication "krita" sambandha ] }
+    , Claim.predication "krita" sambandha ]
+  , reported := [] }
 
 def accepted : Reading :=
-  { claims := [ Claim.predication "nityah" sambandha ] }
+  { claims := [ Claim.predication "nityah" sambandha
+    , Claim.predication "transmitted" sambandha ] }
 
 theorem accepted_adequate : contract.Adequate accepted := by decide
 

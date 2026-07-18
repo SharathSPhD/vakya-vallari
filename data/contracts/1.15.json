@@ -40,6 +40,13 @@
       "from": "vyakarana",
       "to": "vidya",
       "cite": "because word-form grounds object-class, the science of word-form must ground the sciences that treat object-classes"
+    },
+    {
+      "kind": "relation",
+      "name": "asraya",
+      "from": "sabda_akrti",
+      "to": "artha_jati",
+      "cite": "the generality by which we group things is borrowed from language rather than found in things"
     }
   ],
   "denials": [],
@@ -79,6 +86,16 @@
       "entities": [],
       "claims": [
         {"kind": "relation", "name": "sadrsya", "from": "sabda_akrti", "to": "artha_jati"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "intrinsic_generality",
+      "rendering": "Objects possess their class-structure and generality intrinsically, independent of linguistic categorization; words merely reflect this natural structure.",
+      "why": "Contradicts the commentary's core ontological claim: generality is not an intrinsic property of objects but is 'borrowed from language rather than found in things.' This reading treats language as derivative (reflecting nature) rather than constitutive (grounding categories).",
+      "entities": [],
+      "claims": [
+        {"kind": "relation", "name": "asraya", "from": "artha_jati", "to": "sabda_akrti"}
       ],
       "expect": "unlicensed"
     }

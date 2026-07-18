@@ -16,7 +16,8 @@ def contract : Contract :=
     , Claim.relation "anukara" (Node.ent veda) (Node.ent brahman)
     , Claim.predication "eka" veda
     , Claim.relation "vivartate" (Node.ent veda) (Node.ent sakha) ]
-  , denials := [ Claim.relation "parinamate" (Node.ent veda) (Node.ent sakha) ] }
+  , denials := [ Claim.relation "parinamate" (Node.ent veda) (Node.ent sakha) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "upaya" (Node.ent veda) (Node.ent brahman)

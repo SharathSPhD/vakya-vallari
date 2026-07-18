@@ -40,6 +40,13 @@
       "from": "vyakaran",
       "to": "tattvavabodh",
       "cite": "the nature of words is not accessible without grammar"
+    },
+    {
+      "kind": "relation",
+      "name": "linguistic_carving",
+      "from": "sabda",
+      "to": "arthapravritattva",
+      "cite": "we act toward a world already carved by language, and the carving is what our activity answers to"
     }
   ],
   "denials": [
@@ -99,6 +106,21 @@
         }
       ],
       "expect": "contradicted"
+    },
+    {
+      "label": "plural_access_routes",
+      "rendering": "The structures governing activity are accessible through multiple independent means: direct cognition (tattvavabodh) can ground understanding of activity-realities without mediation through words.",
+      "why": "Violates the exclusive claim. The commentary insists words alone (sabda eva) rule out any non-linguistic access to the structures of purposive activity. Direct understanding cannot bypass the requirement for linguistic grounding.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "asraya",
+          "from": "tattvavabodh",
+          "to": "arthapravritattva"
+        }
+      ],
+      "expect": "unlicensed"
     }
   ],
   "notes": "The contract captures the two-part structure: (1) words are the sole basis (nibandhanam) of the realities underlying purposive activity, and (2) understanding words requires grammar. The exclusivity particle eva emphasizes the first claim's force."

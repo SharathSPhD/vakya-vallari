@@ -14,8 +14,10 @@ def tattvavabodh : Entity := ⟨"tattvāvabodhaḥ", Sorta.cognition⟩
 
 def contract : Contract :=
   { axioms := [ Claim.relation "nibandhanam" (Node.ent sabda) (Node.ent arthapravritattva)
-    , Claim.relation "asraya" (Node.ent vyakaran) (Node.ent tattvavabodh) ]
-  , denials := [ Claim.relation "asraya" (Node.ent sabda) (Node.ent tattvavabodh) ] }
+    , Claim.relation "asraya" (Node.ent vyakaran) (Node.ent tattvavabodh)
+    , Claim.relation "linguistic_carving" (Node.ent sabda) (Node.ent arthapravritattva) ]
+  , denials := [ Claim.relation "asraya" (Node.ent sabda) (Node.ent tattvavabodh) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "nibandhanam" (Node.ent sabda) (Node.ent arthapravritattva)
@@ -38,6 +40,13 @@ def grammar_optional : Reading :=
   { claims := [ Claim.relation "asraya" (Node.ent sabda) (Node.ent tattvavabodh) ] }
 theorem grammar_optional_inadequate : ¬ contract.Adequate grammar_optional := by decide
 #guard contract.contradicts grammar_optional = true
+
+/- 'The structures governing activity are accessible through multiple independent means: direct cognition (tattvavabodh) can ground understanding of activity-realities without mediation through words.'
+   Why rejected: Violates the exclusive claim. The commentary insists words alone (sabda eva) rule out any non-linguistic access to the structures of purposive activity. Direct understanding cannot bypass the requirement for linguistic grounding. -/
+def plural_access_routes : Reading :=
+  { claims := [ Claim.relation "asraya" (Node.ent tattvavabodh) (Node.ent arthapravritattva) ] }
+theorem plural_access_routes_inadequate : ¬ contract.Adequate plural_access_routes := by decide
+#guard contract.licenses plural_access_routes = false
 
 end Counterexamples
 

@@ -79,15 +79,20 @@ text, is compiled verse by verse into a semantic contract: sorted entities,
 identity, relation, and predication claims, and explicit denials, with every
 axiom citing the commentary verbatim. A generator compiles each contract into
 Lean~4, where a decidable adequacy predicate proves that the accepted
-translation satisfies the contract (144 adequacy theorems) and that 350
-plausible mistranslations provably fail (153 contradicted by commentary
-denials, 197 unlicensed by the axioms), for 549 machine-checked theorems with
+translation satisfies the contract (144 adequacy theorems) and that 361
+plausible mistranslations provably fail (156 contradicted by commentary
+denials, 205 unlicensed by the axioms), for 566 machine-checked theorems with
 zero \texttt{sorry}. The contracts were authored by an agent swarm gated by a
 validator and by the Lean kernel; the gates caught errors at every scale,
 including fabricated citations in quota-degraded agent output and
 cross-contract ontological drift, which adjudication resolved into a registry
-of 41 polysemous terms with 91 textually justified senses. An embedding audit
-of translation--commentary pairs provides a ranked review queue and is
+of 41 polysemous terms with 91 textually justified senses. A structured
+adversarial review (\S\ref{sec:adversarial}) stress-tested the method: most
+attacks failed, a cross-verse swap test found zero of 20{,}592 pairs
+interchangeable, and the one major finding---that a verbatim-citation gate
+cannot distinguish endorsed doctrine from reported p\={u}rvapak\d{s}a---led to
+an explicit doxographic-stance mechanism. An embedding audit of
+translation--commentary pairs provides a ranked review queue and is
 reported with its limits. The verification boundary is stated precisely: Lean
 checks the internal coherence of the formalization against the
 commentary-derived contract, and the contract--commentary link remains
@@ -149,7 +154,7 @@ context and are outside the scope of the present claims.
     systems (\S\ref{sec:related}); none, to the author's knowledge, verifies
     translations of texts.}
   \item \textbf{A verified Brahmak\={a}\d{n}\d{d}a.} All 144 verse units of
-    Book~I carry compiled adequacy theorems, and 350 plausible
+    Book~I carry compiled adequacy theorems, and 361 plausible
     mistranslations are compiled counterexamples, refuted by theorem rather
     than by footnote (\S\ref{sec:kernel}, \S\ref{sec:results}).
   \item \textbf{An anti-fabrication architecture for agentic formalization.}
@@ -188,7 +193,7 @@ context and are outside the scope of the present claims.
 \node[gate, right=of leangen] (g3) {\texttt{lake build},\\ zero \texttt{sorry}};
 \node[proc, below=of leangen] (adj) {consistency gate +\\ homonym registry};
 \node[gate, right=of adj] (g4) {adjudication\\ (textual merits)};
-\node[data, below=of adj] (out) {verified edition\\ 144 adequacy + 350 refutation thms};
+\node[data, below=of adj] (out) {verified edition\\ 144 adequacy + 361 refutation thms};
 \draw[arr] (iyer) -- (trans);
 \draw[arr] (mula) -- (corpus);
 \draw[arr] (trans) -- (corpus);
@@ -411,7 +416,7 @@ Verse units (canonical)          & 144 & 426 & 1,226 & 1,796 \\
 Contested readings (prose notes) & 56  & 167 & 63    & 286 \\
 Semantic contracts               & 144 & --- & ---   & 144 \\
 Adequacy theorems (Lean)         & 144 & --- & ---   & 144 \\
-Refutation theorems (Lean)       & 350 & --- & ---   & 350 \\
+Refutation theorems (Lean)       & 361 & --- & ---   & 361 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -419,21 +424,25 @@ Refutation theorems (Lean)       & 350 & --- & ---   & 350 \\
 \section{Contract Anatomy and Statistics}
 \label{sec:contracts}
 
-Across the 144 contracts there are 772 entity declarations, 610 axioms, 178
-denials, 449 accepted-reading claims, and 350 rejected readings. Most verses
-carry two or three rejected readings (75 and 58 verses respectively; six
-carry one and five carry four). Figure~\ref{fig:stats} shows the
-distribution of entity sorts and axiom kinds. Relations dominate the axioms
-(312 of 610), which reflects the text: Book~I argues chiefly about how
-things stand to one another (manifestation, expression, dependence), not
-about what things are called.
+Across the 144 contracts there are 776 entity declarations, 624 axioms (of
+which 32, across nine doxographic verses, carry a \emph{reported} stance;
+\S\ref{sec:kernel}), 181 denials, 450 accepted-reading claims, and 361
+rejected readings. Every contract carries at least two rejected readings (76
+carry two, 63 carry three, five carry four), a floor imposed after the
+adversarial evaluation of \S\ref{sec:adversarial}. Figure~\ref{fig:stats}
+shows the distribution of entity sorts and axiom kinds. Relations dominate
+the axioms (320 of 624), which reflects the text: Book~I argues chiefly
+about how things stand to one another (manifestation, expression,
+dependence), not about what things are called.
 
 The validator checks, per contract: schema validity; sort membership; ASCII
 identifier hygiene (a Lean requirement discovered during the loop,
-\S\ref{sec:loop}); verbatim presence of every citation; entailment of the
-accepted reading; and provable failure of every rejected reading in its
-registered mode. The last two checks run the same decision procedure the
-Lean kernel uses, so Python-side acceptance predicts Lean-side theoremhood.
+\S\ref{sec:loop}); verbatim presence of every citation; stance well-formedness;
+disjointness of axioms and denials (no claim may be both licensed and denied);
+at least two rejected readings; entailment of the accepted reading; and
+provable failure of every rejected reading in its registered mode. The
+entailment and refutation checks run the same decision procedure the Lean
+kernel uses, so Python-side acceptance predicts Lean-side theoremhood.
 
 \begin{figure}[t]
 \centering
@@ -442,10 +451,10 @@ Lean kernel uses, so Python-side acceptance predicts Lean-side theoremhood.
   bar width=7pt, xtick=data, x tick label style={rotate=35, anchor=east, font=\footnotesize},
   symbolic x coords={linguisticItem, manifestation, property, power, cognition, absolute},
   ylabel={entities}, label style={font=\small}, tick label style={font=\small},
-  ymin=0, enlarge x limits=0.12, title={\small entity sorts (772)}]
+  ymin=0, enlarge x limits=0.12, title={\small entity sorts (776)}]
 \addplot+[fill=blue!25, draw=datacol] coordinates {
- (linguisticItem,192) (manifestation,146) (property,133) (power,125)
- (cognition,90) (absolute,86)};
+ (linguisticItem,192) (manifestation,149) (property,134) (power,126)
+ (cognition,90) (absolute,85)};
 \end{axis}
 \end{tikzpicture}\hfill
 \begin{tikzpicture}
@@ -453,9 +462,9 @@ Lean kernel uses, so Python-side acceptance predicts Lean-side theoremhood.
   bar width=10pt, xtick=data, x tick label style={font=\footnotesize},
   symbolic x coords={relation, predication, identity, denial},
   ylabel={claims}, label style={font=\small}, tick label style={font=\small},
-  ymin=0, enlarge x limits=0.2, title={\small axiom kinds (610) and denials}]
+  ymin=0, enlarge x limits=0.2, title={\small axiom kinds (624) and denials}]
 \addplot+[fill=green!25, draw=proccol] coordinates {
- (relation,312) (predication,267) (identity,31) (denial,178)};
+ (relation,320) (predication,273) (identity,31) (denial,181)};
 \end{axis}
 \end{tikzpicture}
 \caption{Contract statistics over the 144 Brahmak\={a}\d{n}\d{d}a contracts.
@@ -483,8 +492,11 @@ inductive Node | ent : Entity → Node
               | rel : String → Node → Node → Node
 structure Abhava where  pratiyogin : Node;  adhikarana : Node
 structure Contract where  axioms : List Claim;  denials : List Claim
+                         reported : List Claim := []   -- purvapaksa
+def Contract.doxographic (c : Contract) : Bool := !c.reported.isEmpty
 def Adequate (c : Contract) (r : Reading) : Prop :=
-  r.claims.all (entails c.axioms) ∧ ¬ r.claims.any (denied c.denials)
+  r.claims.all (entails (c.axioms ++ c.reported))
+    ∧ ¬ r.claims.any (denied c.denials)
 \end{lstlisting}
 
 \subsection{Navya-Ny\={a}ya structure}
@@ -499,7 +511,30 @@ such as ``time is the instrumental cause of the manifestation-relation'' is
 representable without ad hoc reification. \emph{Typed absence}:
 \texttt{Abhava} carries its counterpositive and locus as data, and the
 kernel proves the Navya-Ny\={a}ya involution (the absence of an absence
-computes to the presence) as a definitional fact.
+computes to the presence) as a definitional fact. We are precise about this
+last item's status: \texttt{Abhava} and the involution are exercised by the
+kernel's own tests (\texttt{Tests.lean}), not by any verse module in the
+present corpus. They are provided machinery that the negation-heavy verses of
+Books~II--III are expected to use, not load-bearing in the Book-I results;
+the Book-I refutations rest on sorted identity and relation matching.
+
+\subsection{Doxographic stance}
+\label{sec:stance}
+A verbatim-citation gate proves a cite \emph{occurs} in the commentary; it
+cannot tell an endorsed doctrine from a reported rival view
+(p\={u}rvapak\d{s}a), since both are present in the prose. Book~I contains a
+doxographic stretch---the phonetician theories of sound (1.102--1.106), the
+substrate doctrines (1.107--1.113), and the position-reporting verses
+1.68--69, 1.70, 1.81---where a naive contract would encode ``some say $X$'' as
+an endorsed axiom. The kernel therefore separates \texttt{reported} claims
+from \texttt{axioms}. Reported claims still \emph{license} a reading, because a
+faithful translation of a doxographic verse must be free to assert the report;
+but the split is machine-visible (\texttt{Contract.doxographic}), the validator
+requires reported axioms to be marked, and the edition surfaces the distinction
+per verse. Nine contracts carry 32 reported axioms. This does not make the
+system able to \emph{judge} endorsement---that remains the human's job, audited
+through the citation---but it removes the false suggestion that a doxographic
+report is Bhart\d{r}hari's own commitment.
 
 \begin{figure}[t]
 \centering
@@ -539,7 +574,7 @@ over a reading and a contract.}
 Each contract compiles to a Lean module in which the accepted reading's
 adequacy is a theorem and every rejected reading's failure is a theorem.
 Sort-error refutations additionally carry an auxiliary lemma naming the
-mismatch; there are 55 such lemmas across the corpus. Verse 1.1's module
+mismatch; there are 56 such lemmas across the corpus. Verse 1.1's module
 ends as follows:
 
 \begin{lstlisting}[language=lean, caption={Generated theorems for VP 1.1 (excerpt).}]
@@ -555,7 +590,7 @@ theorem parinama_transformation_inadequate :
 \end{lstlisting}
 
 The build gate is binary and global: \texttt{lake build} must succeed with
-zero \texttt{sorry} across all 144 modules, 549 theorems at present. A
+zero \texttt{sorry} across all 144 modules, 566 theorems at present. A
 counterexample that stops compiling is a regression, caught in CI.
 
 \section{The Agentic Formalization Loop}
@@ -623,7 +658,7 @@ fabricated citation is an axiom cite absent from the commentary.}
 Lazy counterexamples             & 3 & Lean kernel, then hardened validator \\
 Fabricated / paraphrased citations & 5 & verbatim-cite gate \\
 Non-ASCII Lean identifiers       & 2 contracts & Lean parser, then validator \\
-Cross-contract sort drift        & 89 conflicts & consistency gate \\
+Cross-contract sort drift        & 95 conflicts & consistency gate \\
 Diacritic name splits (spho\d{t}a/sphota) & 2 episodes & consistency gate \\
 \bottomrule
 \end{tabular}
@@ -648,9 +683,11 @@ validator now enforces ASCII identifiers. The incident argues for keeping
 the end-to-end kernel gate even when a faster mirror exists.
 
 \emph{(iv) Sort drift.} Independent agents assigned different sorts to the
-same term. Across five adjudication rounds the consistency gate surfaced 89
-conflicts; adjudication resolved each as either a correction or genuine
-polysemy (\S\ref{sec:ontology}).
+same term. Across six adjudication rounds the consistency gate surfaced 95
+conflicts (some terms recurring across rounds as new verses entered);
+adjudication resolved each as either a correction or genuine polysemy,
+converging on the registry of \S\ref{sec:ontology}. The per-round counts are
+recorded in the research ledger.
 
 \section{Ontological Consistency and the Homonym Registry}
 \label{sec:ontology}
@@ -691,23 +728,26 @@ sweep).
 \begin{tabular}{lr}
 \toprule
 Verse units formalized and verified & 144 / 144 \\
-Entity declarations                & 772 \\
-Contract axioms / denials          & 610 / 178 \\
-Accepted-reading claims (all proved adequate) & 449 \\
-Rejected readings, \texttt{contradicted} (denial asserted) & 153 \\
-Rejected readings, \texttt{unlicensed} (no axiom entails)  & 197 \\
-Auxiliary sort-error lemmas        & 55 \\
-Lean theorems (all by \texttt{decide}, zero \texttt{sorry}) & 549 \\
+Entity declarations                & 776 \\
+Contract axioms (endorsed / reported) & 592 / 32 \\
+Denials                            & 181 \\
+Doxographic contracts (carry reported axioms) & 9 \\
+Accepted-reading claims (all proved adequate) & 450 \\
+Rejected readings, \texttt{contradicted} (denial asserted) & 156 \\
+Rejected readings, \texttt{unlicensed} (no axiom entails)  & 205 \\
+Auxiliary sort-error lemmas        & 56 \\
+Lean theorems (all by \texttt{decide}, zero \texttt{sorry}) & 566 \\
 Homonym registry (terms / senses)  & 41 / 91 \\
-Python gates (pytest)              & 180 \\
-Ledger events (append-only)        & 96 \\
+Cross-licensed verse pairs (of 20{,}592) & 0 \\
+Python gates (pytest)              & 190 \\
+Ledger events (append-only)        & 99 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 \subsection{A map of how Book I can be mistranslated}
 Beyond the counts, the qualitative yield is a machine-checked map of the
-ways Book~I goes wrong in translation. Each of the 350 refutations is a
+ways Book~I goes wrong in translation. Each of the 361 refutations is a
 specific, named failure: pari\d{n}\={a}ma for vivarta (1.1); grammar demoted
 from discipline to convention (1.11--1.14); inference granted an autonomy
 the text denies it (1.30--1.42); spho\d{t}a temporalized (1.75--1.77); the
@@ -767,6 +807,57 @@ review queue.}
 \label{fig:audit}
 \end{figure}
 
+\section{Adversarial Evaluation}
+\label{sec:adversarial}
+
+The strongest test of a verification claim is a hostile attempt to break it.
+We ran one as a structured red-team: six independent reviewers, each given
+only the artifacts and a distinct attacking lens (logical triviality,
+fabrication, kernel soundness, completeness, philological faithfulness, and
+paper-versus-repository), instructed to falsify rather than confirm; every
+serious finding was then reproduced by a separate verifier before being
+acted on. We summarize both what held and what did not, because a defense
+is only as credible as the attacks it survived.
+
+\paragraph{Attacks that failed.} No \texttt{sorry} or \texttt{admit}, and no
+proof-faking construct (\texttt{axiom}, \texttt{native\_decide},
+\texttt{implemented\_by}), appears anywhere in the kernel; \texttt{lake
+build} succeeds from a clean checkout. Every headline count reproduced from
+the artifacts. An independent re-run of the citation gate found all 624
+axiom/denial cites and all 450 accepted-reading cites present verbatim in
+their sources. Relations were confirmed directional (a reversed relation is
+correctly refused), verse namespaces isolated (no cross-verse relation-name
+collision), and the Python mirror agreed with the Lean kernel on a battery
+of adversarial fragments (empty readings, self-identity, duplicated claims,
+a denial equal to an axiom). A swap test---does verse $i$'s accepted reading
+pass verse $j$'s contract?---licensed \emph{zero} of all $144 \times 143 =
+20{,}592$ ordered pairs, and no rejected reading fails by a dangling entity
+identifier (all 361 fail on genuine sort or entailment grounds).
+
+\paragraph{The tautology objection, made falsifiable.} A correct observation
+is that each accepted reading is, by construction, a subset of the axioms the
+author also wrote (48 of 144 are exact matches), so \texttt{accepted\_adequate}
+verifies internal coherence of the author's choices rather than their
+independent correctness---exactly the boundary of \S\ref{sec:boundary}. The
+objection has force only if the contracts lack discriminative content. The
+zero-cross-licensing result answers this mechanically and is now a permanent
+regression gate: every accepted reading is licensed by its own contract and
+no other. A contract edit that made two verses interchangeable would trip it.
+
+\paragraph{The finding that landed: doxographic conflation.} The one major
+finding confirmed on verification was philological, and it is the sharpest
+limit of a verbatim-citation gate: the gate cannot distinguish
+\emph{endorsing} a claim from \emph{reporting} it. Nine verses in the
+doxographic stretch had encoded reported rival views as endorsed axioms. The
+fix is the \texttt{reported}-stance mechanism of \S\ref{sec:stance}, which
+makes the distinction machine-visible without pretending the machine can
+judge it. Two lesser findings---a single contract that both licensed and
+denied a claim (1.127), and six contracts with only one refuted reading---were
+closed by new validator gates (axiom/denial disjointness; a two-refutation
+floor) and by deepening the thin contracts. All fixes are gated and
+regression-tested; the review, its verified findings, and the resulting
+upgrades are recorded in the ledger.
+
 \section{Discussion}
 \label{sec:discussion}
 
@@ -822,9 +913,9 @@ passed the gate.
 This paper introduced commentary-driven translation validation and
 delivered a machine-verified translation layer for the complete
 Brahmak\={a}\d{n}\d{d}a of the \emph{V\={a}kyapad\={\i}ya}: 144 adequacy
-theorems and 350 compiled refutations over a checksummed edition, produced
+theorems and 361 compiled refutations over a checksummed edition, produced
 by a gated agentic loop whose every acceptance is replayable from an
-append-only ledger. The method treats the prover not as a reader of
+append-only ledger, and hardened against a structured adversarial review. The method treats the prover not as a reader of
 Sanskrit but as a keeper of commitments. Bhart\d{r}hari holds that the
 sentence's meaning is an undivided whole, merely manifested by its parts; a
 verifier that refuses to let the parts of a translation contradict the

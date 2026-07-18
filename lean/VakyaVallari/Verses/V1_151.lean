@@ -20,7 +20,8 @@ def contract : Contract :=
     , Claim.relation "mediated_inference" (Node.ent avyakta) (Node.ent vyakta)
     , Claim.predication "niscaya_arising" niscaya
     , Claim.relation "knower_cognition" (Node.ent tad_vida) (Node.ent vyakta) ]
-  , denials := [ Claim.predication "direct_signification" avyakta ] }
+  , denials := [ Claim.predication "direct_signification" avyakta ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "utter_indistinctly" bala

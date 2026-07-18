@@ -13,12 +13,15 @@ def prakrta : Entity := ⟨"prakṛta", Sorta.power⟩
 def vaikrta : Entity := ⟨"vaikṛta", Sorta.manifestation⟩
 
 def contract : Contract :=
-  { axioms := [ Claim.predication "na_bhidyate" sphota_kala
-    , Claim.predication "pracaya_apacaya_atmaka" sabda_santana
-    , Claim.identity sphota_kala prakrta
+  { axioms := [ Claim.identity sphota_kala prakrta
     , Claim.identity sabda_santana vaikrta ]
   , denials := [ Claim.predication "pracaya_apacaya_atmaka" sphota_kala
-    , Claim.predication "na_bhidyate" sabda_santana ] }
+    , Claim.predication "na_bhidyate" sabda_santana ]
+  , reported := [ Claim.predication "na_bhidyate" sphota_kala
+    , Claim.predication "pracaya_apacaya_atmaka" sabda_santana ] }
+
+-- pūrvapakṣa: this contract carries reported (non-endorsed) claims
+#guard contract.doxographic = true
 
 def accepted : Reading :=
   { claims := [ Claim.predication "na_bhidyate" sphota_kala

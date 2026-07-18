@@ -47,7 +47,15 @@
       "cite": "the vyaktis in question just *are* the dhvanis"
     }
   ],
-  "denials": [],
+  "denials": [
+    {
+      "kind": "relation",
+      "name": "generative_cause",
+      "from": "dhvani",
+      "to": "sphota",
+      "cite": "so that the sound-word relation becomes a special case of the particular-universal relation"
+    }
+  ],
   "accepted_reading": {
     "claims": [
       {
@@ -91,6 +99,20 @@
         }
       ],
       "expect": "unlicensed"
+    },
+    {
+      "label": "dhvani_as_generative_cause",
+      "rendering": "Sounds (dhvani) are the generative/productive cause of the sphota, rather than its manifestations.",
+      "why": "Misreads the manifestation relation as a causal generation. The commentary establishes that 'the sound-word relation becomes a special case of the particular-universal relation'—sounds must be instances of the universal (type), not independent causes. Treating dhvani as a generative cause of sphota contradicts this denial and reintroduces the two-relation problem: one causal relation (dhvani→sphota) plus the type-instance relation. The economy argument requires only one unified relation.",
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "generative_cause",
+          "from": "dhvani",
+          "to": "sphota"
+        }
+      ],
+      "expect": "contradicted"
     }
   ],
   "notes": "Verse 1.93 reports the jati-sphota systematization as received doctrine (smrta) without necessarily endorsing it as Bhartrhari's own position; the contract encodes the view's internal coherence: sphota = universal, manifested by individual instances that are identical with sounds."

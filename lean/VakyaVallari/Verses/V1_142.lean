@@ -24,7 +24,8 @@ def contract : Contract :=
     , Claim.predication "is_supreme" param_padam
     , Claim.relation "transcends" (Node.ent param_padam) (Node.ent pasyanti)
     , Claim.identity param_padam sabda ]
-  , denials := [ Claim.predication "is_ultimate" pasyanti ] }
+  , denials := [ Claim.predication "is_ultimate" pasyanti ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "aneka_tirtha_bheda" vaikhari

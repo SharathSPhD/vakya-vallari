@@ -14,8 +14,10 @@ def vidya : Entity := ⟨"vidyā", Sorta.manifestation⟩
 
 def contract : Contract :=
   { axioms := [ Claim.relation "asraya" (Node.ent sabda_akrti) (Node.ent artha_jati)
-    , Claim.relation "parayana" (Node.ent vyakarana) (Node.ent vidya) ]
-  , denials := [] }
+    , Claim.relation "parayana" (Node.ent vyakarana) (Node.ent vidya)
+    , Claim.relation "asraya" (Node.ent sabda_akrti) (Node.ent artha_jati) ]
+  , denials := []
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "asraya" (Node.ent sabda_akrti) (Node.ent artha_jati)
@@ -38,6 +40,13 @@ def mere_analogy : Reading :=
   { claims := [ Claim.relation "sadrsya" (Node.ent sabda_akrti) (Node.ent artha_jati) ] }
 theorem mere_analogy_inadequate : ¬ contract.Adequate mere_analogy := by decide
 #guard contract.licenses mere_analogy = false
+
+/- 'Objects possess their class-structure and generality intrinsically, independent of linguistic categorization; words merely reflect this natural structure.'
+   Why rejected: Contradicts the commentary's core ontological claim: generality is not an intrinsic property of objects but is 'borrowed from language rather than found in things.' This reading treats language as derivative (reflecting nature) rather than constitutive (grounding categories). -/
+def intrinsic_generality : Reading :=
+  { claims := [ Claim.relation "asraya" (Node.ent artha_jati) (Node.ent sabda_akrti) ] }
+theorem intrinsic_generality_inadequate : ¬ contract.Adequate intrinsic_generality := by decide
+#guard contract.licenses intrinsic_generality = false
 
 end Counterexamples
 

@@ -15,7 +15,8 @@ def contract : Contract :=
     , Claim.predication "swatantra" samjna
     , Claim.predication "nimitta" samjna
     , Claim.relation "sambandha" (Node.ent samjna) (Node.ent samjnin) ]
-  , denials := [ Claim.relation "liyate" (Node.ent samjna) (Node.ent samjnin) ] }
+  , denials := [ Claim.relation "liyate" (Node.ent samjna) (Node.ent samjnin) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "rupa_padarthika" samjna

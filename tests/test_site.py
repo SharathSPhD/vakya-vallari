@@ -68,3 +68,23 @@ def test_proof_page_for_verified_verse(site):
     assert "accepted_adequate" in proof
     assert "naive_linguistic_structure_sort_error" in proof
     assert "vivartate" in proof
+
+
+def test_doxographic_verse_marks_reported_axioms(site):
+    """1.102 reports a rival phonetician theory; its proof page must carry the
+    designed doxographic badge and a distinct 'Reported (pūrvapakṣa)' axiom
+    section, not present reported axioms as endorsed doctrine."""
+    out, _ = site
+    proof = (out / "proofs" / "1.102.html").read_text()
+    assert "badge doxographic" in proof  # designed CSS-class badge, not prose
+    assert "Reported (pūrvapakṣa)" in proof
+    # an endorsed-only verse must NOT carry the badge or the reported section
+    endorsed = (out / "proofs" / "1.1.html").read_text()
+    assert "badge doxographic" not in endorsed
+    assert "Reported (pūrvapakṣa)" not in endorsed
+
+
+def test_kanda1_page_flags_doxographic_verses(site):
+    out, _ = site
+    html = (out / "kanda-1.html").read_text()
+    assert "badge doxographic" in html  # designed badge on the verse header

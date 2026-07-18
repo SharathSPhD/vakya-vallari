@@ -19,7 +19,8 @@ def contract : Contract :=
     , Claim.relation "vivartate" (Node.ent sabda) (Node.ent jnana)
     , Claim.predication "arthakriyakari" sabda ]
   , denials := [ Claim.relation "anugamadapeksam" (Node.ent nirvikalpaka_pratyaksa) (Node.ent sabda)
-    , Claim.relation "utpatti_anantaram_labha" (Node.ent jnana) (Node.ent sabda) ] }
+    , Claim.relation "utpatti_anantaram_labha" (Node.ent jnana) (Node.ent sabda) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "anugamadapeksam" (Node.ent pratyaya) (Node.ent sabda)

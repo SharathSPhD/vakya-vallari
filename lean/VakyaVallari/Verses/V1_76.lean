@@ -19,7 +19,8 @@ def contract : Contract :=
     , Claim.relation "upacaryate" (Node.ent kala) (Node.ent sphota)
     , Claim.predication "contrastive" vowel_quantity ]
   , denials := [ Claim.relation "asraya" (Node.ent sphota) (Node.ent vowel_quantity)
-    , Claim.relation "asraya" (Node.ent sphota) (Node.ent kala) ] }
+    , Claim.relation "asraya" (Node.ent sphota) (Node.ent kala) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "nityatva" sphota

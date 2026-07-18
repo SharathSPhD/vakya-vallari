@@ -30,6 +30,12 @@
       "name": "saṃskāra",
       "sort": "power",
       "cite": "the refining, perfecting, preparing"
+    },
+    {
+      "id": "jnana_instrument",
+      "name": "instrument",
+      "sort": "power",
+      "cite": "the instrument that reaches it"
     }
   ],
   "axioms": [
@@ -45,6 +51,19 @@
       "from": "vidya_bhedas",
       "to": "samskara",
       "cite": "They are jnana-samskara-hetu, causes of the samskara — the refining, perfecting, preparing — of knowledge"
+    },
+    {
+      "kind": "predication",
+      "name": "anga_upanga_enumeration",
+      "of": "angas",
+      "cite": "phonetics, metre, grammar, etymology, ritual, astronomy, and their subsidiaries"
+    },
+    {
+      "kind": "relation",
+      "name": "instrument_conditioning",
+      "from": "vidya_bhedas",
+      "to": "jnana_instrument",
+      "cite": "they condition the instrument that reaches it"
     }
   ],
   "denials": [

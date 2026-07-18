@@ -38,20 +38,23 @@
       "name": "utpadyate",
       "from": "sphota",
       "to": "dhvani",
-      "cite": "apare dhvanayah, further sounds, arise sphotad eva: from the first-produced sound itself"
+      "cite": "apare dhvanayah, further sounds, arise sphotad eva: from the first-produced sound itself",
+      "stance": "reported"
     },
     {
       "kind": "relation",
       "name": "anugatam",
       "from": "dhvani",
       "to": "dhvani",
-      "cite": "Each ring of sound begets the next outward ring, jvala jvalantarad iva, as one flame kindles another"
+      "cite": "Each ring of sound begets the next outward ring, jvala jvalantarad iva, as one flame kindles another",
+      "stance": "reported"
     },
     {
       "kind": "predication",
       "name": "anavasthita",
       "of": "karana",
-      "cite": "While the karana still trembles — the articulation not yet settled"
+      "cite": "While the karana still trembles — the articulation not yet settled",
+      "stance": "reported"
     }
   ],
   "denials": [

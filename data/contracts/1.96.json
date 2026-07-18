@@ -55,6 +55,13 @@
       "from": "dhvani",
       "to": "sabda",
       "cite": "the word they manifest is not parcelled among the locations"
+    },
+    {
+      "kind": "relation",
+      "name": "bheda",
+      "from": "kaya",
+      "to": "desa",
+      "cite": "even kayavat things, bodies, stand in place-connections that multiply without multiplying them"
     }
   ],
   "accepted_reading": {
@@ -89,7 +96,22 @@
         }
       ],
       "expect": "contradicted"
+    },
+    {
+      "label": "embodied_thing_localization_error",
+      "rendering": "Bodies themselves are differentiated across the multiple places where they occur, and by the same logic, the word too is differentiated across utterance-locations.",
+      "why": "Misreads the analogy. The verse's point is to show that embodied things stand in multiple place-connections WITHOUT becoming differentiated or divided—one body in many places remains one body (multiply without multiplying them). This demonstrates that place-multiplicity is compatible with essential non-difference, justifying the denial of difference (bheda) between sound and word despite sounds being multiply-located. Claiming bodies ARE differentiated by place inverts the analogy's structural argument and undermines the parallel reasoning for the word.",
+      "entities": [],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "bheda",
+          "from": "kaya",
+          "to": "desa"
+        }
+      ],
+      "expect": "contradicted"
     }
   ],
-  "notes": "The verse establishes non-difference (abheda) between sound and word even under place-difference, paralleling how embodied things stand in multiple locations without division. Core doctrine: spatial predicates are transferred to the eternal word from its manifestors, not constitutive of its own nature."
+  "notes": "The verse establishes non-difference (abheda) between sound and word even under place-difference, paralleling how embodied things stand in multiple locations without division (sambandha without bheda). Core doctrine: spatial predicates attach to the eternal word upacarena (by transfer from manifestors), not constitutive of its own nature. The embodied-thing analogy blocks two distinct mistranslations: direct parcellation of the word by utterance-places, and misreading the analogy as conceding that bodies ARE localized/differentiated."
 }

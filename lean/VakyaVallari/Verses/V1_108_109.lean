@@ -19,13 +19,17 @@ def sannipata : Entity := ⟨"sannipāta", Sorta.property⟩
 def murta : Entity := ⟨"mūrta", Sorta.manifestation⟩
 
 def contract : Contract :=
-  { axioms := [ Claim.relation "anuvartati" (Node.ent iccha) (Node.ent prayatna)
+  { axioms := []
+  , denials := [ Claim.predication "paryapta" vayu ]
+  , reported := [ Claim.relation "anuvartati" (Node.ent iccha) (Node.ent prayatna)
     , Claim.relation "pratipadyate" (Node.ent vayu) (Node.ent sabdatva)
     , Claim.relation "abhihati" (Node.ent vayu) (Node.ent sthanani)
     , Claim.predication "yuktavega" vayu
     , Claim.predication "yukti-pracaya" vayu
-    , Claim.relation "vibhajyante" (Node.ent sannipata) (Node.ent murta) ]
-  , denials := [ Claim.predication "paryapta" vayu ] }
+    , Claim.relation "vibhajyante" (Node.ent sannipata) (Node.ent murta) ] }
+
+-- pūrvapakṣa: this contract carries reported (non-endorsed) claims
+#guard contract.doxographic = true
 
 def accepted : Reading :=
   { claims := [ Claim.relation "anuvartati" (Node.ent iccha) (Node.ent prayatna)

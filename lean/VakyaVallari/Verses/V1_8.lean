@@ -19,7 +19,8 @@ def contract : Contract :=
     , Claim.relation "nikalpaja" (Node.ent ekatva_pravada) (Node.ent vikalpa)
     , Claim.relation "nikalpaja" (Node.ent dvaita_pravada) (Node.ent vikalpa) ]
   , denials := [ Claim.relation "niśrita" (Node.ent ekatva_pravada) (Node.ent vidhi)
-    , Claim.relation "niśrita" (Node.ent dvaita_pravada) (Node.ent vidhi) ] }
+    , Claim.relation "niśrita" (Node.ent dvaita_pravada) (Node.ent vidhi) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "niśrita" (Node.ent ekatva_pravada) (Node.ent arthavada)

@@ -21,7 +21,8 @@ def contract : Contract :=
     , Claim.relation "vivartate" (Node.ent vrtti) (Node.ent kriya)
     , Claim.predication "kramam" bhaga
     , Claim.predication "sarva_atra" sabda ]
-  , denials := [ Claim.predication "kramam" sabda ] }
+  , denials := [ Claim.predication "kramam" sabda ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.identity sabda kratu

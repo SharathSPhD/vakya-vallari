@@ -50,21 +50,24 @@
       "name": "asraya",
       "from": "vayu",
       "to": "sabda",
-      "cite": "vayu, air — the phonetician's answer, speech as wind shaped"
+      "cite": "vayu, air — the phonetician's answer, speech as wind shaped",
+      "stance": "reported"
     },
     {
       "kind": "relation",
       "name": "asraya",
       "from": "anu",
       "to": "sabda",
-      "cite": "anavah, atoms — an atomist refinement in which sound-particles accumulate"
+      "cite": "anavah, atoms — an atomist refinement in which sound-particles accumulate",
+      "stance": "reported"
     },
     {
       "kind": "relation",
       "name": "asraya",
       "from": "jnana",
       "to": "sabda",
-      "cite": "jnana, cognition — the idealist answer, word as a modification of awareness itself"
+      "cite": "jnana, cognition — the idealist answer, word as a modification of awareness itself",
+      "stance": "reported"
     },
     {
       "kind": "predication",

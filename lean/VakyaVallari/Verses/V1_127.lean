@@ -12,10 +12,11 @@ def karya : Entity := ⟨"kārya", Sorta.manifestation⟩
 def sabda_sakti : Entity := ⟨"śabda-śakti", Sorta.power⟩
 
 def contract : Contract :=
-  { axioms := [ Claim.relation "sadhana" (Node.ent sabda_sakti) (Node.ent karya)
+  { axioms := [ Claim.relation "sadhana_divided" (Node.ent sabda_sakti) (Node.ent karya)
     , Claim.identity sabda_sakti karya
     , Claim.relation "gati" (Node.ent karta) (Node.ent karya) ]
-  , denials := [ Claim.relation "sadhana" (Node.ent sabda_sakti) (Node.ent karya) ] }
+  , denials := [ Claim.relation "sadhana" (Node.ent sabda_sakti) (Node.ent karya) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.identity sabda_sakti karya

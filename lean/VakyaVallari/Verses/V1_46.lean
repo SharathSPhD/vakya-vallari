@@ -24,7 +24,8 @@ def contract : Contract :=
     , Claim.predication "asananta" sabda ]
   , denials := [ Claim.identity sabda sruti
     , Claim.identity agni jvala
-    , Claim.relation "parinamate" (Node.ent sabda) (Node.ent sruti) ] }
+    , Claim.relation "parinamate" (Node.ent sabda) (Node.ent sruti) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "asraya" (Node.ent sabda) (Node.ent buddhi)

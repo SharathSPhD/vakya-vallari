@@ -43,14 +43,25 @@ instance : Decidable (Adequate axioms r) := by
 
 /-- A verse contract: claims the commentary licenses, and claims it
     explicitly rules out. A reading failing `licenses` is *unlicensed*;
-    one hitting `denials` is *contradicted* — a stronger defect. -/
+    one hitting `denials` is *contradicted* — a stronger defect.
+
+    `reported` holds pūrvapakṣa claims: views the commentary *reports*
+    (doxography) without endorsing. A faithful translation of a doxographic
+    verse asserts the report, so reported claims license readings exactly
+    like axioms — but their stance is machine-visible via `doxographic`,
+    and the edition and paper surface it. -/
 structure Contract where
   axioms : List Claim
   denials : List Claim
+  reported : List Claim := []
 deriving Repr
 
+/-- A contract is doxographic iff it carries reported (pūrvapakṣa) claims. -/
+def Contract.doxographic (k : Contract) : Bool :=
+  !k.reported.isEmpty
+
 def Contract.licenses (k : Contract) (r : Reading) : Bool :=
-  r.claims.all (entails k.axioms)
+  r.claims.all (entails (k.axioms ++ k.reported))
 
 def Contract.contradicts (k : Contract) (r : Reading) : Bool :=
   r.claims.any (k.denials.contains ·)

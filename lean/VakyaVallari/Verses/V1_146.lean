@@ -24,7 +24,8 @@ def contract : Contract :=
     , Claim.relation "viśuddhi" (Node.ent adhyatmasastra) (Node.ent buddhi)
     , Claim.relation "madhya" (Node.ent vac) (Node.ent kaya)
     , Claim.relation "madhya" (Node.ent vac) (Node.ent buddhi) ]
-  , denials := [ Claim.relation "upamana" (Node.ent laksana) (Node.ent cikitsa) ] }
+  , denials := [ Claim.relation "upamana" (Node.ent laksana) (Node.ent cikitsa) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "avastitah" (Node.ent mala) (Node.ent kaya)

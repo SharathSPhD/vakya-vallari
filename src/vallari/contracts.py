@@ -65,6 +65,9 @@ def validate_contract(contract: dict, verse_record: dict) -> list[str]:
             errors.append(f"{where}: missing cite")
         elif cite not in commentary_text:
             errors.append(f"{where}: cite not found verbatim in commentary: {cite[:60]!r}")
+        stance = ax.get("stance", "endorsed")
+        if stance not in ("endorsed", "reported"):
+            errors.append(f"{where}: bad stance {stance!r} (endorsed|reported)")
 
     def key(c: dict) -> tuple:
         if c.get("kind") == "identity":
@@ -75,6 +78,11 @@ def validate_contract(contract: dict, verse_record: dict) -> list[str]:
 
     axiom_keys = {key(a) for a in contract.get("axioms", [])}
     denial_keys = {key(d) for d in contract.get("denials", [])}
+    for k in axiom_keys & denial_keys:
+        errors.append(
+            f"claim {k!r} is both an axiom and a denial — a contract may not "
+            "license and deny the same claim"
+        )
 
     def entailed(c: dict) -> bool:
         # Mirrors VakyaVallari.entails: membership + identity refl/symm.
@@ -99,6 +107,12 @@ def validate_contract(contract: dict, verse_record: dict) -> list[str]:
             errors.append(f"{where}: not entailed by axioms")
         if key(cl) in denial_keys:
             errors.append(f"{where}: claim is denied by the contract")
+
+    if len(contract.get("rejected_readings", [])) < 2:
+        errors.append(
+            "contract must carry at least 2 rejected readings — one refuted "
+            "mistranslation is too thin a negative image"
+        )
 
     for rej in contract.get("rejected_readings", []):
         label = rej.get("label", "?")

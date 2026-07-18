@@ -12,8 +12,11 @@ def tarka : Entity := ⟨"tarka", Sorta.power⟩
 
 def contract : Contract :=
   { axioms := [ Claim.predication "avyavacchinna" dharma
-    , Claim.predication "lokaprasiddha" dharma ]
-  , denials := [ Claim.relation "badhate" (Node.ent tarka) (Node.ent dharma) ] }
+    , Claim.predication "lokaprasiddha" dharma
+    , Claim.predication "paramparanga_sthita" dharma
+    , Claim.predication "sthiti_pramana" dharma ]
+  , denials := [ Claim.relation "badhate" (Node.ent tarka) (Node.ent dharma) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "avyavacchinna" dharma

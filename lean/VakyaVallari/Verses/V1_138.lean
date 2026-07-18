@@ -18,7 +18,8 @@ def contract : Contract :=
     , Claim.predication "asraya" sabda
     , Claim.relation "vivartate" (Node.ent yata_sakti) (Node.ent visapaharana)
     , Claim.predication "powers" sabda ]
-  , denials := [ Claim.predication "merely_conventional" sabda ] }
+  , denials := [ Claim.predication "merely_conventional" sabda ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "asraya" rupa

@@ -21,7 +21,8 @@ def contract : Contract :=
     , Claim.predication "aparinami" gatvam
     , Claim.predication "nitya" sphota ]
   , denials := [ Claim.predication "anitya" sphota
-    , Claim.predication "anitya" jati ] }
+    , Claim.predication "anitya" jati ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "nitya" jati

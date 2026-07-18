@@ -18,7 +18,8 @@ def contract : Contract :=
     , Claim.relation "justified_by_meaning" (Node.ent prathamaa) (Node.ent samjna_sabda)
     , Claim.relation "arises_from_meaning" (Node.ent vyatireka) (Node.ent artha)
     , Claim.relation "expresses_moments" (Node.ent prathamaa) (Node.ent genitive) ]
-  , denials := [ Claim.relation "separate_derivations" (Node.ent prathamaa) (Node.ent genitive) ] }
+  , denials := [ Claim.relation "separate_derivations" (Node.ent prathamaa) (Node.ent genitive) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "has_meaning" samjna_sabda

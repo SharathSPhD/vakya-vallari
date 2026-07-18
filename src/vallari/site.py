@@ -34,6 +34,8 @@ a { color: var(--accent); }
          border-radius:1rem; border:1px solid currentColor; }
 .badge.verified { color: var(--ok); } .badge.contracted { color: var(--mid); }
 .badge.unformalized { color: var(--none); }
+.badge.doxographic { color: var(--mid); border-style: dashed; }
+.reported { border-left: 3px solid var(--mid); padding-left:.6rem; }
 .commentary { margin-top: .75rem; } .contested { border-left: 3px solid var(--mid);
   padding-left: .75rem; margin-top:.75rem; color: var(--muted); }
 pre { background: var(--card); padding: 1rem; border-radius:.5rem; overflow-x:auto;
@@ -64,10 +66,21 @@ def _status(record: dict, contracts: set[str], modules: set[str], build_ok: bool
     return "unformalized"
 
 
-def _verse_html(r: dict, status: str) -> str:
+def _is_doxographic(contract: dict | None) -> bool:
+    if not contract:
+        return False
+    return any(a.get("stance") == "reported" for a in contract.get("axioms", []))
+
+
+def _verse_html(r: dict, status: str, doxographic: bool = False) -> str:
     deva = "<br>".join(html.escape(x) for x in r["mula_deva"])
     iast = "<br>".join(html.escape(x) for x in r["mula_iast"])
     badge = f"<span class='badge {status}'>{status}</span>"
+    if doxographic:
+        badge += (
+            " <span class='badge doxographic' title='reports a pūrvapakṣa "
+            "(rival view) the commentary does not endorse'>doxographic</span>"
+        )
     proof = f" <a href='proofs/{r['id']}.html'>proof</a>" if status == "verified" else ""
     contested = (
         f"<div class='contested'><strong>contested:</strong> {html.escape(r['contested'])}</div>"
@@ -88,12 +101,19 @@ def _samuddesa_number(unit_title: str) -> int:
     return int(m.group(1)) if m else 0
 
 
-def _proof_page(record: dict, contract: dict, lean_src: str) -> str:
-    ax = "".join(
-        f"<li><code>{html.escape(json.dumps({k: v for k, v in a.items() if k != 'cite'}, ensure_ascii=False))}</code>"
+def _axiom_li(a: dict) -> str:
+    shown = {k: v for k, v in a.items() if k not in ("cite", "stance")}
+    return (
+        f"<li><code>{html.escape(json.dumps(shown, ensure_ascii=False))}</code>"
         f"<cite>“{html.escape(a['cite'])}”</cite></li>"
-        for a in contract["axioms"]
     )
+
+
+def _proof_page(record: dict, contract: dict, lean_src: str) -> str:
+    endorsed = [a for a in contract["axioms"] if a.get("stance", "endorsed") == "endorsed"]
+    reported = [a for a in contract["axioms"] if a.get("stance") == "reported"]
+    ax = "".join(_axiom_li(a) for a in endorsed)
+    rep = "".join(_axiom_li(a) for a in reported)
     dn = "".join(
         f"<li><code>{html.escape(json.dumps({k: v for k, v in d.items() if k != 'cite'}, ensure_ascii=False))}</code>"
         f"<cite>“{html.escape(d['cite'])}”</cite></li>"
@@ -103,11 +123,30 @@ def _proof_page(record: dict, contract: dict, lean_src: str) -> str:
         f"<li><em>“{html.escape(x['rendering'])}”</em> — {html.escape(x['why'])}</li>"
         for x in contract.get("rejected_readings", [])
     )
+    dox_badge = (
+        " <span class='badge doxographic'>doxographic</span>" if reported else ""
+    )
+    dox_note = (
+        "<p class='reported'>This verse is <strong>doxographic</strong>: the "
+        "commentary reports a rival view (pūrvapakṣa) it does not itself endorse. "
+        "Reported axioms are held separately in the Lean contract "
+        "(<code>Contract.reported</code>); they license a faithful translation of "
+        "the report without being asserted as Bhartṛhari's doctrine.</p>"
+        if reported
+        else ""
+    )
     body = (
-        f"<h1>Proof — Verse {record['id']}</h1>"
+        f"<h1>Proof — Verse {record['id']}{dox_badge}</h1>"
         f"<p class='deva'>{'<br>'.join(html.escape(x) for x in record['mula_deva'])}</p>"
         f"<p><strong>{html.escape(record['translation'])}</strong></p>"
-        f"<h2>Contract axioms (each cite is verbatim commentary)</h2><ul>{ax}</ul>"
+        + dox_note
+        + f"<h2>Endorsed axioms (each cite is verbatim commentary)</h2><ul>{ax}</ul>"
+        + (
+            f"<h2>Reported (pūrvapakṣa) axioms — commentary reports, does not endorse</h2>"
+            f"<ul class='reported'>{rep}</ul>"
+            if rep
+            else ""
+        )
         + (f"<h2>Denials</h2><ul>{dn}</ul>" if dn else "")
         + (f"<h2>Rejected readings (refuted by compiled theorems)</h2><ul>{rej}</ul>" if rej else "")
         + f"<h2>Lean module</h2><pre>{html.escape(lean_src)}</pre>"
@@ -130,6 +169,14 @@ def build_site(
 
     statuses = {r["id"]: _status(r, contracts, modules, lake_build_ok) for r in records}
 
+    doxographic: dict[str, bool] = {}
+    for r in records:
+        if r["id"] in contracts:
+            c = json.loads((contracts_dir / f"{r['id']}.json").read_text())
+            doxographic[r["id"]] = _is_doxographic(c)
+        else:
+            doxographic[r["id"]] = False
+
     # Group pages: kanda 1, kanda 2, kanda 3 by samuddeśa.
     pages: dict[str, list[dict]] = {}
     titles: dict[str, str] = {}
@@ -145,7 +192,7 @@ def build_site(
 
     for key, rs in pages.items():
         body = f"<h1>{html.escape(titles[key])}</h1>" + "".join(
-            _verse_html(r, statuses[r["id"]]) for r in rs
+            _verse_html(r, statuses[r["id"]], doxographic[r["id"]]) for r in rs
         )
         (out_dir / f"{key}.html").write_text(_page(titles[key], body))
 
@@ -162,6 +209,7 @@ def build_site(
         "verified": len(verified),
         "contracted": sum(1 for s in statuses.values() if s == "contracted"),
         "contested": sum(1 for r in records if r["contested"]),
+        "doxographic": sum(1 for v in doxographic.values() if v),
     }
     nav = "".join(
         f"<li><a href='{k}.html'>{html.escape(titles[k])}</a> ({len(pages[k])} verses)</li>"

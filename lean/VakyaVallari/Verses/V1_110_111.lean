@@ -18,13 +18,17 @@ def prayatna : Entity := ⟨"prayatna", Sorta.power⟩
 def parinama : Entity := ⟨"parināma", Sorta.property⟩
 
 def contract : Contract :=
-  { axioms := [ Claim.relation "parinamate" (Node.ent anu) (Node.ent sabda)
+  { axioms := []
+  , denials := [ Claim.predication "eka_dravya" sabda_akhya
+    , Claim.predication "paryapta" sabda_akhya ]
+  , reported := [ Claim.relation "parinamate" (Node.ent anu) (Node.ent sabda)
     , Claim.predication "sarvasaktitvat" anu
     , Claim.relation "vyajyamana" (Node.ent sakti) (Node.ent sabda_akhya)
     , Claim.relation "pracyante" (Node.ent sabda_akhya) (Node.ent prayatna)
-    , Claim.predication "functional_designation" sabda_akhya ]
-  , denials := [ Claim.predication "eka_dravya" sabda_akhya
-    , Claim.predication "paryapta" sabda_akhya ] }
+    , Claim.predication "functional_designation" sabda_akhya ] }
+
+-- pūrvapakṣa: this contract carries reported (non-endorsed) claims
+#guard contract.doxographic = true
 
 def accepted : Reading :=
   { claims := [ Claim.relation "parinamate" (Node.ent anu) (Node.ent sabda)

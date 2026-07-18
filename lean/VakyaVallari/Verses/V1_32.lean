@@ -19,7 +19,8 @@ def contract : Contract :=
     , Claim.relation "niyantrite" (Node.ent sakti) (Node.ent desa)
     , Claim.relation "niyantrite" (Node.ent sakti) (Node.ent kala)
     , Claim.predication "atidurlabha" prasiddhi ]
-  , denials := [] }
+  , denials := []
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "niyantrite" (Node.ent sakti) (Node.ent avastha)

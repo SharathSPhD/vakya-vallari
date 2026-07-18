@@ -8,16 +8,20 @@ namespace VakyaVallari.Verses.V1_37
 open VakyaVallari
 
 def prakasa : Entity := ⟨"prakāśa", Sorta.power⟩
+def anupapluta_cetas : Entity := ⟨"anupapluta-cetas", Sorta.property⟩
 def jnana_atita_anagata : Entity := ⟨"atīta-anāgata-jñāna", Sorta.cognition⟩
 def pratyaksa : Entity := ⟨"pratyakṣa", Sorta.cognition⟩
 def anumana : Entity := ⟨"anumāna", Sorta.cognition⟩
 def aparoksa : Entity := ⟨"aparokṣa", Sorta.property⟩
 
 def contract : Contract :=
-  { axioms := [ Claim.predication "aparoksa" jnana_atita_anagata
+  { axioms := [ Claim.relation "nimitta" (Node.ent prakasa) (Node.ent jnana_atita_anagata)
+    , Claim.relation "nimitta" (Node.ent anupapluta_cetas) (Node.ent jnana_atita_anagata)
+    , Claim.predication "aparoksa" jnana_atita_anagata
     , Claim.predication "aparoksa" pratyaksa
     , Claim.relation "na_visisyate" (Node.ent jnana_atita_anagata) (Node.ent pratyaksa) ]
-  , denials := [ Claim.relation "bhavati" (Node.ent jnana_atita_anagata) (Node.ent anumana) ] }
+  , denials := [ Claim.relation "bhavati" (Node.ent jnana_atita_anagata) (Node.ent anumana) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "na_visisyate" (Node.ent jnana_atita_anagata) (Node.ent pratyaksa) ] }
@@ -40,6 +44,14 @@ def mediated_process : Reading :=
   { claims := [ Claim.predication "saroksa" jnana_atita_anagata ] }
 theorem mediated_process_inadequate : ¬ contract.Adequate mediated_process := by decide
 #guard contract.licenses mediated_process = false
+
+/- 'The knowledge of past and future arises spontaneously without requirement of a manifest inner light or clear mind; these circumstances are merely contexts, not conditions.'
+   Why rejected: The commentary explicitly states 'Two conditions are named: avirbhuta-prakasa, an inner light that has become manifest, and anupapluta-cetas, a mind not flooded or disturbed. Where they are met, knowledge of atita and anagata is pratyaksat na visisyate'. By establishing prakasa and anupapluta_cetas as nimitta (occasions/necessary conditions) for jnana_atita_anagata, the axioms license only qualified cognition, not spontaneous cognition independent of these prerequisites. A reading that denies the necessity of these named conditions contradicts the core semantic structure of the verse. -/
+def svayabhava : Entity := ⟨"svayabhāva", Sorta.property⟩
+def conditions_unnecessary : Reading :=
+  { claims := [ Claim.predication "svayabhava" jnana_atita_anagata ] }
+theorem conditions_unnecessary_inadequate : ¬ contract.Adequate conditions_unnecessary := by decide
+#guard contract.licenses conditions_unnecessary = false
 
 end Counterexamples
 

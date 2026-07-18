@@ -52,11 +52,30 @@
       "cite": "That the sabda-artha-sambandha is eternal"
     },
     {
+      "kind": "predication",
+      "name": "transmitted",
+      "of": "sambandha",
+      "cite": "The nityatva thesis, stated as inherited rather than argued"
+    },
+    {
+      "kind": "predication",
+      "name": "parampara_siddhah",
+      "of": "nityatva",
+      "cite": "The nityatva thesis, stated as inherited rather than argued"
+    },
+    {
       "kind": "relation",
       "name": "bhavya",
       "from": "nityatva",
       "to": "apaurusheya",
       "cite": "An eternal relation secures an authorless Veda"
+    },
+    {
+      "kind": "relation",
+      "name": "samaya_bhavya_krita",
+      "from": "samaya",
+      "to": "apaurusheya",
+      "cite": "a conventional relation has an author and a beginning, and a Veda whose words mean by convention is a Veda someone composed"
     }
   ],
   "denials": [
@@ -80,6 +99,12 @@
         "name": "nityah",
         "of": "sambandha",
         "cite": "relations between word and meaning are handed down as eternal"
+      },
+      {
+        "kind": "predication",
+        "name": "transmitted",
+        "of": "sambandha",
+        "cite": "relations between word and meaning are handed down"
       }
     ]
   },
@@ -105,5 +130,5 @@
       "expect": "contradicted"
     }
   ],
-  "notes": "The verse establishes the eternality of word-meaning relations (nityatva) as self-evident inherited doctrine, securing the Veda's authorilessness (apaurusheya). The contract encodes this through two axioms (nityatva of sambandha, and nityatva entails apaurusheya) and denials of the two major opposed views: Naiyayika conventionalism (samaya) and authorial creation (krita)."
+  "notes": "The verse establishes the eternality of word-meaning relations (nityatva) as inherited, transmitted doctrine, securing the Veda's authorilessness (apaurusheya). Five axioms encode: (1) sambandha is nityah; (2) sambandha are transmitted through the lineage; (3) nityatva is inherited rather than argued; (4) eternality entails apaurusheya; (5) conventionality (samaya) entails Vedic authorship—explaining the philosophical stakes. The accepted reading captures both eternality and transmission from the translation. Two substantive denials reject samaya and krita, with corresponding rejected readings grounded in the commentary's explicit refutations."
 }

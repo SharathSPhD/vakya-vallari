@@ -31,13 +31,15 @@
       "kind": "predication",
       "name": "na_bhidyate",
       "of": "sphota_kala",
-      "cite": "that first event's time 'does not differ' with loudness — alpa or mahat, whispered or bellowed"
+      "cite": "that first event's time 'does not differ' with loudness — alpa or mahat, whispered or bellowed",
+      "stance": "reported"
     },
     {
       "kind": "predication",
       "name": "pracaya_apacaya_atmaka",
       "of": "sabda_santana",
-      "cite": "the after-train, waxes and wanes (pracaya-apacaya) with the force of utterance"
+      "cite": "the after-train, waxes and wanes (pracaya-apacaya) with the force of utterance",
+      "stance": "reported"
     },
     {
       "kind": "identity",

@@ -14,11 +14,15 @@ def sabda_ja : Entity := ⟨"śabdajāḥ", Sorta.manifestation⟩
 def partless_sphota : Entity := ⟨"partless sphoṭa", Sorta.absolute⟩
 
 def contract : Contract :=
-  { axioms := [ Claim.relation "utpadyate" (Node.ent karana) (Node.ent sphota)
+  { axioms := []
+  , denials := [ Claim.identity sphota partless_sphota ]
+  , reported := [ Claim.relation "utpadyate" (Node.ent karana) (Node.ent sphota)
     , Claim.relation "sabda_ja" (Node.ent sphota) (Node.ent sabda_ja)
     , Claim.identity sabda_ja dhvani
-    , Claim.predication "acoustic" sphota ]
-  , denials := [ Claim.identity sphota partless_sphota ] }
+    , Claim.predication "acoustic" sphota ] }
+
+-- pūrvapakṣa: this contract carries reported (non-endorsed) claims
+#guard contract.doxographic = true
 
 def accepted : Reading :=
   { claims := [ Claim.relation "utpadyate" (Node.ent karana) (Node.ent sphota)

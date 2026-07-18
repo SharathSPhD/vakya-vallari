@@ -12,7 +12,7 @@ def sadhurupa : Entity := ⟨"sādhurūpa", Sorta.linguisticItem⟩
 def prasiddhi : Entity := ⟨"prasiddhī", Sorta.power⟩
 def vigunasamudaya : Entity := ⟨"viguṇasamudāya", Sorta.power⟩
 def vacakatva : Entity := ⟨"vācakatva", Sorta.property⟩
-def adrsta : Entity := ⟨"adrṣṭa", Sorta.absolute⟩
+def adrsta : Entity := ⟨"adrṣṭa", Sorta.manifestation⟩
 def parampara : Entity := ⟨"pāramparyā", Sorta.power⟩
 
 def contract : Contract :=
@@ -23,7 +23,8 @@ def contract : Contract :=
     , Claim.relation "sadhutva_amangala" (Node.ent sadhurupa) (Node.ent vigunasamudaya)
     , Claim.predication "adrsta_rakshana" adrsta ]
   , denials := [ Claim.predication "sadhurupa_atma_vacak" sadhurupa
-    , Claim.relation "parampara_sadhut_rakshan" (Node.ent parampara) (Node.ent sadhurupa) ] }
+    , Claim.relation "parampara_sadhut_rakshan" (Node.ent parampara) (Node.ent sadhurupa) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "prasiddhim_agatah" (Node.ent apabhransa) (Node.ent prasiddhi)

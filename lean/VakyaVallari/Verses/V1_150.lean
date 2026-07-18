@@ -18,7 +18,8 @@ def contract : Contract :=
     , Claim.relation "pratipannas" (Node.ent smrti_sastra) (Node.ent ashuddha_rupa)
     , Claim.predication "asaksat_vackaka" ashuddha_rupa ]
   , denials := [ Claim.relation "paryaya_bhava" (Node.ent ashuddha_rupa) (Node.ent suddha_rupa)
-    , Claim.predication "vackaka" ashuddha_rupa ] }
+    , Claim.predication "vackaka" ashuddha_rupa ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "asaksat_vackaka" ashuddha_rupa

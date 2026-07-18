@@ -33,7 +33,8 @@ def contract : Contract :=
     , Claim.relation "agama" (Node.ent vyakarana) (Node.ent param_brahman)
     , Claim.predication "eka" param_brahman ]
   , denials := [ Claim.predication "aloka_matra" param_brahman
-    , Claim.predication "tamasi_matra" param_brahman ] }
+    , Claim.predication "tamasi_matra" param_brahman ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.identity vac_uttama param_brahman

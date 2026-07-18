@@ -19,7 +19,8 @@ def contract : Contract :=
     , Claim.predication "viruddhaparimana" pratibimba
     , Claim.identity pratibimba abhasavikara
     , Claim.predication "na_dvitiya" pratibimba ]
-  , denials := [ Claim.predication "satya_bhava" pratibimba ] }
+  , denials := [ Claim.predication "satya_bhava" pratibimba ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "viruddhaparimana" pratibimba

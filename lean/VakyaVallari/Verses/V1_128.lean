@@ -21,7 +21,8 @@ def contract : Contract :=
     , Claim.relation "vidhiyate" (Node.ent vak) (Node.ent artha)
     , Claim.predication "characterizes" matra ]
   , denials := [ Claim.predication "nitya_akara" artha
-    , Claim.relation "paurvapya" (Node.ent artha) (Node.ent vak) ] }
+    , Claim.relation "paurvapya" (Node.ent artha) (Node.ent vak) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "prakramyate" (Node.ent vak) (Node.ent artha)

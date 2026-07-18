@@ -30,6 +30,18 @@
       "name": "abhyudaya",
       "sort": "absolute",
       "cite": "the rising good"
+    },
+    {
+      "id": "drsta",
+      "name": "drṣṭa",
+      "sort": "manifestation",
+      "cite": "poison-cure example in visible domain"
+    },
+    {
+      "id": "adrsta",
+      "name": "adrṣṭa",
+      "sort": "manifestation",
+      "cite": "where the fruit is unseen"
     }
   ],
   "axioms": [
@@ -52,6 +64,13 @@
       "name": "sadhu",
       "of": "sabda",
       "cite": "correct words are to be spoken, by the cultivated"
+    },
+    {
+      "kind": "relation",
+      "name": "enables",
+      "from": "sadhu",
+      "to": "abhyudaya",
+      "cite": "for those (or: by those) who seek abhyudaya, felicity, the rising good"
     }
   ],
   "denials": [],
@@ -89,6 +108,24 @@
       ],
       "claims": [
         {"kind": "predication", "name": "sadhu", "of": "asadhu"}
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "domain_restriction",
+      "rendering": "Word-forms have demonstrable causal efficacy in the visible domain (poison cures illness), but dharmic effects operate through different metaphysical principles; the form-bound power of language cannot be transferred to the unseen realm.",
+      "why": "The verse's foundational inference extends samarthya from the visible domain (drṣṭa, with perceptible poison-cure effects) to the unseen domain (adrṣṭa, dharma with invisible fruits). The commentary explicitly identifies this as 'the standard extension from drṣṭa to adrṣṭa efficacy that ritual reasoning always makes.' This reading denies that extension, treating samarthya as domain-specific to visible phenomena. It fails because it rejects the cross-domain transferability that grounds the entire ethical doctrine.",
+      "entities": [
+        {"id": "domain_restrict_drsta", "name": "drṣṭa", "sort": "manifestation"},
+        {"id": "domain_restrict_adrsta", "name": "adrṣṭa", "sort": "manifestation"}
+      ],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "restricted",
+          "from": "samarthya",
+          "to": "domain_restrict_drsta"
+        }
       ],
       "expect": "unlicensed"
     }

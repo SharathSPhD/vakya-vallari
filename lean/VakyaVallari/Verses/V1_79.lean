@@ -19,7 +19,8 @@ def contract : Contract :=
     , Claim.relation "samskārayate" (Node.ent samadhana) (Node.ent sabda)
     , Claim.relation "samskārayate" (Node.ent visaya) (Node.ent sabda) ]
   , denials := [ Claim.relation "samskārayate" (Node.ent samadhana) (Node.ent visaya)
-    , Claim.relation "samskārayate" (Node.ent visaya) (Node.ent indriya) ] }
+    , Claim.relation "samskārayate" (Node.ent visaya) (Node.ent indriya) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "samskārayate" (Node.ent samadhana) (Node.ent indriya)

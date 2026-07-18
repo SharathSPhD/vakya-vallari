@@ -19,7 +19,8 @@ def contract : Contract :=
     , Claim.predication "paratantra" smrti
     , Claim.relation "asritya" (Node.ent smrti) (Node.ent veda)
     , Claim.predication "ubhayaprayojana" smrti ]
-  , denials := [ Claim.predication "svatantra" smrti ] }
+  , denials := [ Claim.predication "svatantra" smrti ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "prakalpita" (Node.ent vedavid) (Node.ent smrti)

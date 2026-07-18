@@ -16,7 +16,8 @@ def contract : Contract :=
     , Claim.relation "vivartate" (Node.ent brahman) (Node.ent jagat)
     , Claim.predication "anadinidhana" brahman
     , Claim.predication "aksara" brahman ]
-  , denials := [ Claim.relation "parinamate" (Node.ent brahman) (Node.ent jagat) ] }
+  , denials := [ Claim.relation "parinamate" (Node.ent brahman) (Node.ent jagat) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.identity sabdatattva brahman

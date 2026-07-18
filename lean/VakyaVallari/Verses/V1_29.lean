@@ -18,7 +18,8 @@ def contract : Contract :=
   { axioms := [ Claim.relation "āśrayate" (Node.ent vyavastha) (Node.ent artha)
     , Claim.relation "sampad" (Node.ent smrti) (Node.ent artha)
     , Claim.identity artha dharma ]
-  , denials := [ Claim.identity artha vyavahara ] }
+  , denials := [ Claim.identity artha vyavahara ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "āśrayate" (Node.ent vyavastha) (Node.ent artha)

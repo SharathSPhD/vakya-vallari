@@ -23,7 +23,8 @@ def contract : Contract :=
     , Claim.predication "serial_slow" anumana
     , Claim.predication "na_durlabha" vinipata ]
   , denials := [ Claim.predication "pramana" vinipata
-    , Claim.relation "vivartate" (Node.ent anumana) (Node.ent vinipata) ] }
+    , Claim.relation "vivartate" (Node.ent anumana) (Node.ent vinipata) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "pramana" anumana

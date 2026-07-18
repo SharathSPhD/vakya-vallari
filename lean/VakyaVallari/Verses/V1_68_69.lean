@@ -12,9 +12,13 @@ def jati : Entity := ⟨"jāti", Sorta.power⟩
 
 def contract : Contract :=
   { axioms := [ Claim.predication "apparatus_component" vyakti
-    , Claim.predication "apparatus_component" jati
-    , Claim.relation "samsrsta" (Node.ent jati) (Node.ent vyakti) ]
-  , denials := [] }
+    , Claim.predication "apparatus_component" jati ]
+  , denials := []
+  , reported := [ Claim.relation "samsrsta" (Node.ent jati) (Node.ent vyakti)
+    , Claim.relation "jati_pratyayita" (Node.ent jati) (Node.ent vyakti) ] }
+
+-- pūrvapakṣa: this contract carries reported (non-endorsed) claims
+#guard contract.doxographic = true
 
 def accepted : Reading :=
   { claims := [ Claim.predication "apparatus_component" vyakti

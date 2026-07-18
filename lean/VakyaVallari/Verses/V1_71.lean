@@ -16,7 +16,8 @@ def contract : Contract :=
   { axioms := [ Claim.predication "ekatva" phoneme
     , Claim.predication "ekatva" word
     , Claim.relation "vivartate" (Node.ent phoneme) (Node.ent sound_event) ]
-  , denials := [ Claim.identity phoneme sound_event ] }
+  , denials := [ Claim.identity phoneme sound_event ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "ekatva" phoneme

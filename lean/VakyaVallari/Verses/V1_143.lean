@@ -16,7 +16,8 @@ def contract : Contract :=
     , Claim.predication "drsyante" sabda_saktayah
     , Claim.predication "saksad_drsya" sabda_saktayah ]
   , denials := [ Claim.predication "parinamate" param_padam
-    , Claim.predication "anumita" sabda_saktayah ] }
+    , Claim.predication "anumita" sabda_saktayah ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "avasthita" param_padam

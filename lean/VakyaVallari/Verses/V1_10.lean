@@ -12,11 +12,15 @@ def angas : Entity := ⟨"aṅgāḥ", Sorta.linguisticItem⟩
 def upangas : Entity := ⟨"upāṅgāḥ", Sorta.linguisticItem⟩
 def jnana : Entity := ⟨"jñāna", Sorta.cognition⟩
 def samskara : Entity := ⟨"saṃskāra", Sorta.power⟩
+def jnana_instrument : Entity := ⟨"instrument", Sorta.power⟩
 
 def contract : Contract :=
   { axioms := [ Claim.predication "anga_upanga_nibandha" vidya_bhedas
-    , Claim.relation "hetu" (Node.ent vidya_bhedas) (Node.ent samskara) ]
-  , denials := [ Claim.predication "paramarthaprada" vidya_bhedas ] }
+    , Claim.relation "hetu" (Node.ent vidya_bhedas) (Node.ent samskara)
+    , Claim.predication "anga_upanga_enumeration" angas
+    , Claim.relation "instrument_conditioning" (Node.ent vidya_bhedas) (Node.ent jnana_instrument) ]
+  , denials := [ Claim.predication "paramarthaprada" vidya_bhedas ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "anga_upanga_nibandha" vidya_bhedas

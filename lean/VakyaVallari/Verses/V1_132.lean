@@ -23,7 +23,8 @@ def contract : Contract :=
     , Claim.predication "eternal" vyavastha
     , Claim.predication "eternal" bija ]
   , denials := [ Claim.predication "eternal" agama
-    , Claim.relation "karta" (Node.ent rshi) (Node.ent veda) ] }
+    , Claim.relation "karta" (Node.ent rshi) (Node.ent veda) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "asraya" (Node.ent agama) (Node.ent kartr)

@@ -22,7 +22,8 @@ def contract : Contract :=
     , Claim.predication "asraya" nada
     , Claim.relation "vibhajyate" (Node.ent vrtti_kala) (Node.ent sva_kala) ]
   , denials := [ Claim.predication "actual_duration" varna
-    , Claim.predication "actual_duration" pada ] }
+    , Claim.predication "actual_duration" pada ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "abhinna_kala" varna

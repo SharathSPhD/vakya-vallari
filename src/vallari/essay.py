@@ -314,6 +314,32 @@ keyed to rival commentaries would turn inter-commentarial disagreement into
 diffable, checkable data. That is the open vine.</p>
 </div>
 
+<div class="sec"><div class="num">10 · Stress-tested against itself</div>
+<h3>What an adversarial team could and could not break</h3>
+<p>Six independent reviewers, each with a fresh context and a hostile lens
+(logical triviality, fabrication, kernel soundness, completeness, philology,
+paper-versus-reality), were told to break the method, not admire it; every
+serious finding was then reproduced by a separate verifier. Most attacks
+failed — and a failed attack is evidence for the defense: no
+<code>sorry</code>, no fabricated citations, relations correctly directional,
+verse namespaces isolated, and a swap test that licensed <em>zero</em> of one
+verse's readings by another's contract (0 of 20,592 ordered pairs).</p>
+<p>Three critiques landed, and each became a fix. The strongest was
+philological: a verbatim-citation gate cannot tell <em>“we hold X”</em> from
+<em>“some say X”</em>, so a handful of doxographic verses (1.102–1.113,
+1.68–69, 1.70, 1.81) had encoded reported rival views as if endorsed. Those
+axioms now carry a <code>reported</code> stance held in a separate
+<code>Contract.reported</code> field, the verse wears a <span class="stat"
+style="border-style:dashed">doxographic</span> badge, and the proof page shows
+endorsed and reported axioms in separate sections. The other two: a
+“tautology” objection (accepted readings are subsets of the author's axioms by
+design — true, and now made falsifiable by the corpus-wide discriminativity
+gate above), and hygiene (a contract may no longer both license and deny the
+same claim; every contract now carries at least two refuted misreadings).</p>
+<p class="receipt">receipts: research/ledger.jsonl (review, upgrade events) ·
+tests/test_stance_and_hygiene.py · src/vallari/discriminativity.py · paper §Adversarial evaluation</p>
+</div>
+
 <div class="act"><div class="n">Act VI</div>
 <h2>Go Deeper</h2>
 <p>Every number above has a receipt. Follow any of them.</p></div>

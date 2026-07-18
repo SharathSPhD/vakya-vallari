@@ -25,7 +25,8 @@ def contract : Contract :=
     , Claim.predication "defeasible" anumana
     , Claim.relation "stronger_than" (Node.ent direct_seeing) (Node.ent anumana) ]
   , denials := [ Claim.relation "can_overrule" (Node.ent anumana) (Node.ent vacana)
-    , Claim.relation "can_overrule" (Node.ent anumana) (Node.ent direct_seeing) ] }
+    , Claim.relation "can_overrule" (Node.ent anumana) (Node.ent direct_seeing) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "arsa_caksu" rsi

@@ -18,7 +18,8 @@ def contract : Contract :=
     , Claim.relation "nivesinam" (Node.ent apabhramsa) (Node.ent visistartha)
     , Claim.predication "intention-relative" apabhramsa
     , Claim.relation "asrita" (Node.ent apabhramsa) (Node.ent sadhu) ]
-  , denials := [ Claim.predication "determined-by-success" apabhramsa ] }
+  , denials := [ Claim.predication "determined-by-success" apabhramsa ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "samskara-hina" apabhramsa

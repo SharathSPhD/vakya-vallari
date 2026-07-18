@@ -24,7 +24,8 @@ def contract : Contract :=
     , Claim.relation "asraya" (Node.ent smrti) (Node.ent sruti)
     , Claim.predication "eternality_seed" sruti
     , Claim.predication "eternality_process" smrti ]
-  , denials := [ Claim.predication "akartrka" smrti ] }
+  , denials := [ Claim.predication "akartrka" smrti ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "anadi" sruti

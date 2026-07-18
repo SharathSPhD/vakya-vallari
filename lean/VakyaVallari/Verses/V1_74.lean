@@ -22,7 +22,8 @@ def contract : Contract :=
     , Claim.predication "viparyaya" avayavi ]
   , denials := [ Claim.predication "vikranta" amsa
     , Claim.relation "nirnayaka" (Node.ent vyavahara) (Node.ent darsana)
-    , Claim.identity vyavahara darsana ] }
+    , Claim.identity vyavahara darsana ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "asraya" (Node.ent vyavahara) (Node.ent darsana)

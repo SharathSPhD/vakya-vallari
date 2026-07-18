@@ -20,7 +20,8 @@ def contract : Contract :=
     , Claim.predication "has_grahyatva" sabda
     , Claim.relation "prthag_avasthite" (Node.ent grahyatva) (Node.ent grahakatva)
     , Claim.predication "sarva_sabdanam" sabda ]
-  , denials := [ Claim.identity grahyatva grahakatva ] }
+  , denials := [ Claim.identity grahyatva grahakatva ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "has_grahakatva" sabda

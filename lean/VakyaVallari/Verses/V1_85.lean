@@ -19,7 +19,8 @@ def contract : Contract :=
     , Claim.relation "vivartate" (Node.ent sabda) (Node.ent chandana)
     , Claim.identity asaktih grahanam
     , Claim.predication "na-siddha-bhava" chandana ]
-  , denials := [ Claim.predication "pratibandha" asaktih ] }
+  , denials := [ Claim.predication "pratibandha" asaktih ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "asata" chandana

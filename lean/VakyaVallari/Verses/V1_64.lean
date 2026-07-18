@@ -18,7 +18,8 @@ def contract : Contract :=
     , Claim.predication "prakarsa_hetu" guna
     , Claim.predication "svatantryena_upadishyate" guna
     , Claim.relation "pratiyate" (Node.ent guna) (Node.ent prakrishtatva) ]
-  , denials := [ Claim.predication "svatantra" guna ] }
+  , denials := [ Claim.predication "svatantra" guna ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "prakarsa_hetu" guna

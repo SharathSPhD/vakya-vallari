@@ -23,7 +23,7 @@
   "axioms": [
     {
       "kind": "relation",
-      "name": "sadhana",
+      "name": "sadhana_divided",
       "from": "sabda_sakti",
       "to": "karya",
       "cite": "the karta proceeds toward his karya"

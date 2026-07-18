@@ -17,7 +17,8 @@ def contract : Contract :=
     , Claim.predication "samanya" upameya
     , Claim.predication "dharma" upamana ]
   , denials := [ Claim.predication "dharma" upameya
-    , Claim.identity upamana upameya ] }
+    , Claim.identity upamana upameya ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "samanya" upamana

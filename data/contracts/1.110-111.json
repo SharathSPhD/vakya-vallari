@@ -62,33 +62,38 @@
       "name": "parinamate",
       "from": "anu",
       "to": "sabda",
-      "cite": "take on word-being as one parinama among siblings: chaya, atapa, tamas, sabda"
+      "cite": "take on word-being as one parinama among siblings: chaya, atapa, tamas, sabda",
+      "stance": "reported"
     },
     {
       "kind": "predication",
       "name": "sarvasaktitvat",
       "of": "anu",
-      "cite": "sarva-saktitvat — omnipotent in the small, each carrying every power"
+      "cite": "sarva-saktitvat — omnipotent in the small, each carrying every power",
+      "stance": "reported"
     },
     {
       "kind": "relation",
       "name": "vyajyamana",
       "from": "sakti",
       "to": "sabda_akhya",
-      "cite": "under prayatna the sabda-akhyah paramanavah"
+      "cite": "under prayatna the sabda-akhyah paramanavah",
+      "stance": "reported"
     },
     {
       "kind": "relation",
       "name": "pracyante",
       "from": "sabda_akhya",
       "to": "prayatna",
-      "cite": "pracyante abhranive, mass like clouds: scattered potency condensing into audible weather"
+      "cite": "pracyante abhranive, mass like clouds: scattered potency condensing into audible weather",
+      "stance": "reported"
     },
     {
       "kind": "predication",
       "name": "functional_designation",
       "of": "sabda_akhya",
-      "cite": "'the atoms called word', a name conceding that wordhood is a functional designation, not a natural kind"
+      "cite": "'the atoms called word', a name conceding that wordhood is a functional designation, not a natural kind",
+      "stance": "reported"
     }
   ],
   "denials": [

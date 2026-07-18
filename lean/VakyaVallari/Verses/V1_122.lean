@@ -22,7 +22,8 @@ def contract : Contract :=
     , Claim.relation "asraya" (Node.ent sabda_bhavana) (Node.ent abhighata)
     , Claim.relation "asraya" (Node.ent ajasra_vrtti) (Node.ent sabda_bhavana)
     , Claim.relation "vivartate" (Node.ent ajasra_vrtti) (Node.ent vak) ]
-  , denials := [ Claim.predication "originates_from_silence" vak ] }
+  , denials := [ Claim.predication "originates_from_silence" vak ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "asraya" (Node.ent sabda_bhavana) (Node.ent karana_vinyasa)

@@ -19,7 +19,8 @@ def contract : Contract :=
     , Claim.relation "visayabheda" (Node.ent visaya) (Node.ent sadhutvam)
     , Claim.predication "relational" sadhutvam ]
   , denials := [ Claim.predication "vyavasthitam" rupa
-    , Claim.predication "independent" sabda ] }
+    , Claim.predication "independent" sabda ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "vyavasthitam" (Node.ent nimitta) (Node.ent sadhutvam)

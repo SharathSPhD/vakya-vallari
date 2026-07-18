@@ -23,7 +23,8 @@ def contract : Contract :=
     , Claim.predication "kramo_tulya_tejasam" dhvani
     , Claim.relation "samskara_gives" (Node.ent dhvani) (Node.ent shrota)
     , Claim.relation "samskara_gives" (Node.ent dhvani) (Node.ent sabda) ]
-  , denials := [ Claim.identity dhvani tejas ] }
+  , denials := [ Claim.identity dhvani tejas ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "samskara_gives" (Node.ent tejas) (Node.ent indriya)

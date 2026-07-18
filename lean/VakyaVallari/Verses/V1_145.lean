@@ -25,7 +25,8 @@ def contract : Contract :=
     , Claim.relation "requires" (Node.ent smrti) (Node.ent bhava_tattva)
     , Claim.predication "deliberate" smrti
     , Claim.predication "unconstructed" sruti ]
-  , denials := [ Claim.predication "false_knowledge" sruti ] }
+  , denials := [ Claim.predication "false_knowledge" sruti ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "vivartate" (Node.ent avibhaga) (Node.ent bhava)

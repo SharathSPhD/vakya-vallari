@@ -22,7 +22,8 @@ def contract : Contract :=
     , Claim.relation "asraya" (Node.ent contrast) (Node.ent pracaya)
     , Claim.relation "vivartate" (Node.ent vibration) (Node.ent nada)
     , Claim.relation "visesakah" (Node.ent nada) (Node.ent vrittera) ]
-  , denials := [ Claim.relation "asraya" (Node.ent contrast) (Node.ent nada) ] }
+  , denials := [ Claim.relation "asraya" (Node.ent contrast) (Node.ent nada) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "arise_distinct" dirgha

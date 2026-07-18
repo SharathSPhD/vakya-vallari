@@ -23,7 +23,8 @@ def contract : Contract :=
     , Claim.relation "asraya" (Node.ent sadhu) (Node.ent sistha)
     , Claim.relation "sadhana" (Node.ent sadhu) (Node.ent dharma)
     , Claim.predication "viparita" asadhu ]
-  , denials := [ Claim.predication "fails_to_signify" asadhu ] }
+  , denials := [ Claim.predication "fails_to_signify" asadhu ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "pratyayana" (Node.ent sadhu) (Node.ent artha)

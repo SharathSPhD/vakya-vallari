@@ -18,7 +18,8 @@ def contract : Contract :=
     , Claim.predication "asamakhyeyatva" vijnana
     , Claim.predication "ananumanika" vijnana ]
   , denials := [ Claim.predication "anumanikat" vijnana
-    , Claim.predication "samakhyeyatva" vijnana ] }
+    , Claim.predication "samakhyeyatva" vijnana ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "jayate" (Node.ent abhyasa) (Node.ent vijnana)

@@ -18,7 +18,8 @@ def contract : Contract :=
     , Claim.relation "yoni" (Node.ent sad_bhava_vikara) (Node.ent bhava_bheda)
     , Claim.predication "adhyahita" kalasakti ]
   , denials := [ Claim.predication "independent_container" kalasakti
-    , Claim.predication "intrinsically_divided" kalasakti ] }
+    , Claim.predication "intrinsically_divided" kalasakti ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "vivartate" (Node.ent kalasakti) (Node.ent sad_bhava_vikara)

@@ -17,7 +17,8 @@ def contract : Contract :=
     , Claim.relation "nasti-atiriktam" (Node.ent vakya) (Node.ent pada) ]
   , denials := [ Claim.relation "asti-atiriktam" (Node.ent pada) (Node.ent varna)
     , Claim.relation "asti-atiriktam" (Node.ent vakya) (Node.ent varna)
-    , Claim.relation "asti-atiriktam" (Node.ent vakya) (Node.ent pada) ] }
+    , Claim.relation "asti-atiriktam" (Node.ent vakya) (Node.ent pada) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "nasti-atiriktam" (Node.ent pada) (Node.ent varna)

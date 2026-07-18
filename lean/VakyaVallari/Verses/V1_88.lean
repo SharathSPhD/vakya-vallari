@@ -25,7 +25,8 @@ def contract : Contract :=
     , Claim.predication "paraspara_bhinna" pada_sphota
     , Claim.predication "paraspara_bhinna" vakya_sphota ]
   , denials := [ Claim.relation "samghata" (Node.ent varna_sphota) (Node.ent pada_sphota)
-    , Claim.relation "samghata" (Node.ent pada_sphota) (Node.ent vakya_sphota) ] }
+    , Claim.relation "samghata" (Node.ent pada_sphota) (Node.ent vakya_sphota) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "atyantabhinna" varna_sphota

@@ -8,6 +8,12 @@
       "cite": "an inner light that has become manifest"
     },
     {
+      "id": "anupapluta_cetas",
+      "name": "anupapluta-cetas",
+      "sort": "property",
+      "cite": "a mind not flooded or disturbed"
+    },
+    {
       "id": "jnana_atita_anagata",
       "name": "atīta-anāgata-jñāna",
       "sort": "cognition",
@@ -33,6 +39,20 @@
     }
   ],
   "axioms": [
+    {
+      "kind": "relation",
+      "name": "nimitta",
+      "from": "prakasa",
+      "to": "jnana_atita_anagata",
+      "cite": "an inner light that has become manifest"
+    },
+    {
+      "kind": "relation",
+      "name": "nimitta",
+      "from": "anupapluta_cetas",
+      "to": "jnana_atita_anagata",
+      "cite": "a mind not flooded or disturbed"
+    },
     {
       "kind": "predication",
       "name": "aparoksa",
@@ -95,7 +115,19 @@
         {"kind": "predication", "name": "saroksa", "of": "jnana_atita_anagata"}
       ],
       "expect": "unlicensed"
+    },
+    {
+      "label": "conditions_unnecessary",
+      "rendering": "The knowledge of past and future arises spontaneously without requirement of a manifest inner light or clear mind; these circumstances are merely contexts, not conditions.",
+      "why": "The commentary explicitly states 'Two conditions are named: avirbhuta-prakasa, an inner light that has become manifest, and anupapluta-cetas, a mind not flooded or disturbed. Where they are met, knowledge of atita and anagata is pratyaksat na visisyate'. By establishing prakasa and anupapluta_cetas as nimitta (occasions/necessary conditions) for jnana_atita_anagata, the axioms license only qualified cognition, not spontaneous cognition independent of these prerequisites. A reading that denies the necessity of these named conditions contradicts the core semantic structure of the verse.",
+      "entities": [
+        {"id": "svayabhava", "name": "svayabhāva", "sort": "property"}
+      ],
+      "claims": [
+        {"kind": "predication", "name": "svayabhava", "of": "jnana_atita_anagata"}
+      ],
+      "expect": "unlicensed"
     }
   ],
-  "notes": "Verse 1.37 presents yogic knowledge as an extension of perception, not a superior form of inference. The two conditions (manifest inner light, unclouded mind) are prerequisites but treated implicitly rather than axiomatically. The relation name 'na_visisyate' directly translates the Sanskrit verb 'viśiṣyate' (to be distinguished) with negation. The contract encodes the epistemological category-shift: from anumana (inference) to pratyaksa (perception)."
+  "notes": "Verse 1.37 presents yogic knowledge as an extension of perception, not a superior form of inference. The two named conditions (manifest inner light = prakasa; unclouded mind = anupapluta-cetas) are captured as nimitta (necessary occasions) for the knowledge. The relation name 'na_visisyate' directly translates the Sanskrit verb 'viśiṣyate' (to be distinguished) with negation. The contract encodes the epistemological category-shift: from anumana (inference) to pratyaksa (perception). Three rejected readings cover the primary misreadings: treating it as inference, as mediated, and as non-conditional."
 }

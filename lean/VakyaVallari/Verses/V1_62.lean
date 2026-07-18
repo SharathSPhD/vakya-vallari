@@ -15,7 +15,8 @@ def contract : Contract :=
   { axioms := [ Claim.predication "paratantra" guna
     , Claim.relation "na_yujyate" (Node.ent karya) (Node.ent guna)
     , Claim.relation "parikalpyate" (Node.ent karya) (Node.ent artha) ]
-  , denials := [] }
+  , denials := []
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "paratantra" guna

@@ -21,7 +21,8 @@ def contract : Contract :=
     , Claim.predication "sakti" bhoktavya ]
   , denials := [ Claim.relation "parinama" (Node.ent brahman) (Node.ent bhoktr)
     , Claim.relation "parinama" (Node.ent brahman) (Node.ent bhoktavya)
-    , Claim.relation "parinama" (Node.ent brahman) (Node.ent bhoga) ] }
+    , Claim.relation "parinama" (Node.ent brahman) (Node.ent bhoga) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "eka" brahman

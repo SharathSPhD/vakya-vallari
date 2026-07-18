@@ -26,19 +26,22 @@
       "name": "avibhagena",
       "from": "grahana",
       "to": "sphota",
-      "cite": "the dhvani is grasped only aviBhagena, in non-separation from the sphota"
+      "cite": "the dhvani is grasped only aviBhagena, in non-separation from the sphota",
+      "stance": "reported"
     },
     {
       "kind": "predication",
       "name": "asamvedya",
       "of": "dhvani",
-      "cite": "the dhvani is asamvedya, never itself an object of awareness at all"
+      "cite": "the dhvani is asamvedya, never itself an object of awareness at all",
+      "stance": "reported"
     },
     {
       "kind": "predication",
       "name": "svatantra",
       "of": "dhvani",
-      "cite": "it is svatantra, independent — separately audible"
+      "cite": "it is svatantra, independent — separately audible",
+      "stance": "reported"
     }
   ],
   "denials": [],
@@ -82,6 +85,47 @@
           "kind": "predication",
           "name": "svatantra",
           "of": "dhvani_naive"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "meaning_without_sound",
+      "rendering": "Sphota (meaning) manifests independently of sound; sound is dispensable to the cognition of word-meaning.",
+      "why": "All three positions presuppose that sound (dhvani) plays a constitutive role in the grahana (apprehension-and-manifestation process), whether inseparable from, inferred from, or independently of sphota. Eliminating sound's role abandons the phenomenological problem the verse addresses: what is the relationship between sound and word-form in linguistic experience?",
+      "entities": [
+        {
+          "id": "sphota_autonomous",
+          "name": "sphota",
+          "sort": "linguisticItem"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "relation",
+          "name": "independent_manifestation",
+          "from": "grahana",
+          "to": "sphota_autonomous"
+        }
+      ],
+      "expect": "unlicensed"
+    },
+    {
+      "label": "asamvedya_as_nonexistence",
+      "rendering": "In the asamvedya view, sound is non-existent or not real; meaning manifests entirely without any acoustic substrate or vehicle.",
+      "why": "Asamvedya means 'never itself an object of awareness'—an epistemic claim about perception—not an ontological assertion that sound is non-existent. The commentary clarifies: sound is 'a pure vehicle, doing its manifesting work entirely offstage, inferred by theorists but absent from experience.' Sound still functions and exists; it simply escapes perceptual grasp. Confusing the epistemic claim with ontological negation severs the acoustic substrate that all three positions presuppose to play a constitutive role in manifestation.",
+      "entities": [
+        {
+          "id": "dhvani_nonexistent",
+          "name": "dhvani",
+          "sort": "property"
+        }
+      ],
+      "claims": [
+        {
+          "kind": "predication",
+          "name": "asamvedya",
+          "of": "dhvani_nonexistent"
         }
       ],
       "expect": "unlicensed"

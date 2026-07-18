@@ -18,7 +18,8 @@ def contract : Contract :=
   { axioms := [ Claim.predication "sarvagata" jnana
     , Claim.predication "alpa" prayojana
     , Claim.predication "anapeksita" jnana ]
-  , denials := [] }
+  , denials := [ Claim.predication "apeksa" jnana ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "alpa" prayojana
@@ -34,6 +35,13 @@ def sastra_foundational : Reading :=
   { claims := [ Claim.relation "asraya" (Node.ent jnana) (Node.ent sastra) ] }
 theorem sastra_foundational_inadequate : ¬ contract.Adequate sastra_foundational := by decide
 #guard contract.licenses sastra_foundational = false
+
+/- 'Moral knowledge requires formal instruction; the common person cannot grasp the distinction between merit and sin without studying the treatise.'
+   Why rejected: Claims that jnana is dependent on formal learning (apeksa); contradicts the explicit denial established by the commentary that 'Ordinary moral competence does not wait upon learning,' which asserts moral knowledge's independence (anapeksita) from textual instruction. -/
+def learning_dependent_ethics : Reading :=
+  { claims := [ Claim.predication "apeksa" jnana ] }
+theorem learning_dependent_ethics_inadequate : ¬ contract.Adequate learning_dependent_ethics := by decide
+#guard contract.contradicts learning_dependent_ethics = true
 
 end Counterexamples
 

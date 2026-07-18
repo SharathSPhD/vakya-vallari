@@ -19,7 +19,8 @@ def contract : Contract :=
     , Claim.relation "yogyate" (Node.ent grahana) (Node.ent grahya)
     , Claim.relation "yogyate" (Node.ent sphota) (Node.ent dhvani)
     , Claim.relation "vyanjya-vyanjaka" (Node.ent dhvani) (Node.ent sphota) ]
-  , denials := [ Claim.relation "asraya" (Node.ent dhvani) (Node.ent sphota) ] }
+  , denials := [ Claim.relation "asraya" (Node.ent dhvani) (Node.ent sphota) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "yogyate" (Node.ent grahana) (Node.ent grahya)

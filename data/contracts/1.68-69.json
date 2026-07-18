@@ -32,7 +32,16 @@
       "name": "samsrsta",
       "from": "jati",
       "to": "vyakti",
-      "cite": "the class is samsrsta, connected — riding in on the individual"
+      "cite": "the class is samsrsta, connected — riding in on the individual",
+      "stance": "reported"
+    },
+    {
+      "kind": "relation",
+      "name": "jati_pratyayita",
+      "from": "jati",
+      "to": "vyakti",
+      "cite": "conveyed through the class",
+      "stance": "reported"
     }
   ],
   "denials": [],

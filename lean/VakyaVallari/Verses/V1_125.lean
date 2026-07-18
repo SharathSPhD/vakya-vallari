@@ -20,7 +20,8 @@ def contract : Contract :=
     , Claim.relation "upabandhati" (Node.ent vak) (Node.ent kala)
     , Claim.predication "vibhajyate" vastu
     , Claim.relation "asraya" (Node.ent vibhajanam) (Node.ent vak) ]
-  , denials := [] }
+  , denials := []
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "upabandhati" (Node.ent vak) (Node.ent vidya)

@@ -15,7 +15,8 @@ def contract : Contract :=
   { axioms := [ Claim.relation "nibandhana" (Node.ent agni_sabda) (Node.ent agni_sabda)
     , Claim.relation "sambandha" (Node.ent agni_sabda) (Node.ent agni_sruti)
     , Claim.predication "atmadesananukulata" agni_sabda ]
-  , denials := [ Claim.relation "abhidheya" (Node.ent agni_sabda) (Node.ent fire) ] }
+  , denials := [ Claim.relation "abhidheya" (Node.ent agni_sabda) (Node.ent fire) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "nibandhana" (Node.ent agni_sabda) (Node.ent agni_sabda)

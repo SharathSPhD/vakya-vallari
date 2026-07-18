@@ -20,7 +20,8 @@ def contract : Contract :=
     , Claim.relation "nibandhana" (Node.ent vyakarana_smrti) (Node.ent sistas)
     , Claim.predication "dharma_bearing" sadhutva
     , Claim.predication "avicchinna" sistas ]
-  , denials := [ Claim.identity vyakarana_smrti sruti ] }
+  , denials := [ Claim.identity vyakarana_smrti sruti ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "visaya" (Node.ent vyakarana_smrti) (Node.ent sadhutva_jnana)

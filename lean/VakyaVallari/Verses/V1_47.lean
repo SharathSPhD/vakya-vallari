@@ -18,7 +18,8 @@ def contract : Contract :=
     , Claim.relation "vitarkita" (Node.ent buddhi) (Node.ent sabda)
     , Claim.relation "anugrhyate" (Node.ent dhvani) (Node.ent sabda)
     , Claim.relation "vivartate" (Node.ent karanas) (Node.ent dhvani) ]
-  , denials := [ Claim.relation "is_substance" (Node.ent dhvani) (Node.ent sabda) ] }
+  , denials := [ Claim.relation "is_substance" (Node.ent dhvani) (Node.ent sabda) ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.relation "vitarkita" (Node.ent buddhi) (Node.ent sabda)

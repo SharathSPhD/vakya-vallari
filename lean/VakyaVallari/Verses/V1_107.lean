@@ -16,12 +16,15 @@ def yogyata : Entity := ⟨"yogyatā", Sorta.property⟩
 def sphota : Entity := ⟨"sphoṭa", Sorta.manifestation⟩
 
 def contract : Contract :=
-  { axioms := [ Claim.relation "asraya" (Node.ent vayu) (Node.ent sabda)
-    , Claim.relation "asraya" (Node.ent anu) (Node.ent sabda)
-    , Claim.relation "asraya" (Node.ent jnana) (Node.ent sabda)
-    , Claim.predication "anavasthita" darsana
+  { axioms := [ Claim.predication "anavasthita" darsana
     , Claim.relation "asraya" (Node.ent sphota) (Node.ent yogyata) ]
-  , denials := [ Claim.predication "siddha" darsana ] }
+  , denials := [ Claim.predication "siddha" darsana ]
+  , reported := [ Claim.relation "asraya" (Node.ent vayu) (Node.ent sabda)
+    , Claim.relation "asraya" (Node.ent anu) (Node.ent sabda)
+    , Claim.relation "asraya" (Node.ent jnana) (Node.ent sabda) ] }
+
+-- pūrvapakṣa: this contract carries reported (non-endorsed) claims
+#guard contract.doxographic = true
 
 def accepted : Reading :=
   { claims := [ Claim.relation "asraya" (Node.ent vayu) (Node.ent sabda)

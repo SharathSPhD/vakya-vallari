@@ -19,7 +19,8 @@ def contract : Contract :=
   { axioms := [ Claim.predication "asti_sakti" sabda
     , Claim.identity sakti yatasakti
     , Claim.predication "drsyate_in_saakha" yatasakti ]
-  , denials := [ Claim.predication "aniyata" sakti ] }
+  , denials := [ Claim.predication "aniyata" sakti ]
+  , reported := [] }
 
 def accepted : Reading :=
   { claims := [ Claim.predication "asti_sakti" sabda

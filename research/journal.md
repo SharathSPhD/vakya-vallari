@@ -86,3 +86,36 @@ Append-only. Each entry: date, what was attempted, what the gates said, decision
   zero console errors on any page.
 - No GitHub Pages site exists for this repo (confirmed via API, 404) — living editions
   are Vercel (showcase) + HF Space (full 1,796-verse edition), as documented above.
+
+## 2026-07-18 — adversarial defense review (isolated-context agent team)
+
+- Ran a 13-agent workflow: six hostile reviewers with fresh contexts (lenses:
+  logical triviality, fabrication, kernel soundness, completeness, philology,
+  paper-vs-reality), then independent verifiers reproducing every fatal/major
+  finding. Full reports: workflow wf_891cd5ee transcripts.
+- **Defense held**: fabrication sweep clean (all headline numbers reproduced;
+  zero sorry; all `decide`; verbatim cites verified independently); kernel sound
+  (9/9 attacks failed: directionality, namespace collision, Unicode typo,
+  Python↔Lean divergence, vacuity, structural equality); 21/22 paper claims
+  verified; contract-swap attack found zero cross-licensing; 0/350 rejected
+  readings fail by dangling entity.
+- **Confirmed findings → fixes**:
+  1. Doxographic conflation (major): pūrvapakṣa verses encode reported views as
+     endorsed axioms → added per-axiom `stance: reported` flowing to Lean
+     `Contract.reported` + `doxographic` flag; stance audit swarm over
+     1.102–1.113, 1.68-69, 1.70, 1.81.
+  2. Tautology critique (partial): accepted ⊆ axioms by design (48/144 exact);
+     converted the failed swap-attack into a mechanical gate:
+     cross_licensing_matrix over all 144×143 ordered pairs = **0 cross-licensed**
+     (tests/test_stance_and_hygiene.py, pinned exact).
+  3. Hygiene: 1.127 axiom∩denial overlap → validator now forbids overlap;
+     ≥2 rejected readings required (6 contracts deepened); thinnest contracts
+     strengthened with verbatim-cited content.
+  4. Abhava/Presence machinery is kernel-level (exercised by kernel tests, not
+     verse modules) — paper wording corrected to say exactly that.
+  5. Table 2 "89 sort conflicts" lacked a committed artifact. Reconstruction
+     from this session's adjudication gates, now the citable record:
+     round-1: 2 (veda, śākhā); round-2: 11; round-3: 10; round-4 (post-quarantine
+     main-loop): 5; round-5: 14; round-6: 25; final: 28. Total surfaced: **95**
+     (some names recur across rounds; final registry 41 terms / 91 senses).
+     Paper corrected 89 → 95 with provenance pointing here.
