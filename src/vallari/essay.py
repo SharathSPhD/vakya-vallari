@@ -209,10 +209,10 @@ when its contract passes the validator, its Lean module compiles with zero
 <div class="stats">
   <div><b>@VERSES@</b><span>verses in the corpus</span></div>
   <div><b>144</b><span>Book-I units verified</span></div>
-  <div><b>549</b><span>Lean theorems</span></div>
+  <div><b>566</b><span>Lean theorems</span></div>
   <div><b>0</b><span>sorry</span></div>
 </div>
-<p class="receipt">receipts: research/ledger.jsonl (96 events) · CI: pytest + lake build + zero-sorry sweep</p>
+<p class="receipt">receipts: research/ledger.jsonl (99 events) · CI: pytest + lake build + zero-sorry sweep</p>
 </div>
 
 <div class="sec"><div class="num">05 · On the record</div>
@@ -228,7 +228,7 @@ occurred is now a mechanical gate.</p>
     <p>An API limit killed 20 of 30 agents mid-round, leaving 9 unreviewed drafts.
     Five failed the verbatim-citation gate with paraphrased or invented quotes.
     Degraded output, caught by string match, quarantined, re-authored.</p></div>
-  <div class="card"><h4>Sort drift · 89 conflicts</h4>
+  <div class="card"><h4>Sort drift · 95 conflicts</h4>
     <p>Independent agents gave the same term different sorts. The consistency gate
     surfaced every conflict; adjudication resolved each as correction or as
     documented polysemy.</p></div>
@@ -248,14 +248,14 @@ occurred is now a mechanical gate.</p>
 <h3>The verified Brahmakāṇḍa</h3>
 <div class="stats">
   <div><b>144</b><span>adequacy theorems</span></div>
-  <div><b>350</b><span>refutation theorems</span></div>
-  <div><b>610</b><span>axioms, all verbatim-cited</span></div>
-  <div><b>178</b><span>denials</span></div>
+  <div><b>361</b><span>refutation theorems</span></div>
+  <div><b>624</b><span>axioms, all verbatim-cited</span></div>
+  <div><b>181</b><span>denials</span></div>
   <div><b>41 / 91</b><span>homonym terms / senses</span></div>
-  <div><b>180</b><span>pytest gates</span></div>
+  <div><b>190</b><span>pytest gates</span></div>
 </div>
-<p>Of the 350 refuted mistranslations, 153 assert something the commentary
-explicitly denies and 197 assert what no axiom licenses. Together they form a
+<p>Of the 361 refuted mistranslations, 156 assert something the commentary
+explicitly denies and 205 assert what no axiom licenses. Together they form a
 negative image of the doctrine, in theorem form: pariṇāma for vivarta (1.1),
 grammar demoted from discipline to convention (1.11–1.14), inference granted an
 autonomy the text denies it (1.30–1.42), sphoṭa temporalized (1.75–1.77), the
