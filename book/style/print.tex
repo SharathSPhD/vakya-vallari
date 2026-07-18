@@ -1,0 +1,22 @@
+% Print interior preamble: 6x9 in trim, no bleed, KDP-safe margins.
+% Compile path: pandoc --pdf-engine=xelatex -H book/style/print.tex
+\usepackage[paperwidth=6in, paperheight=9in,
+            top=0.75in, bottom=0.75in, inner=0.75in, outer=0.5in]{geometry}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella}
+
+% Devanagari font family, resolved from the repo's embedded OFL fonts.
+\newfontfamily\devafont[Path=./book/assets/fonts/, Script=Devanagari]{NotoSerifDevanagari.ttf}
+
+% Automatically switch to the Devanagari font for any character in the
+% Devanagari Unicode block, wherever it appears (verse divs or inline).
+\usepackage{ucharclasses}
+\setTransitionsForDevanagari{\begingroup\devafont}{\endgroup}
+
+% Center the mula/IAST verse divs pandoc emits from ::: {.deva} / ::: {.iast}.
+\newenvironment{deva}{\begin{center}\devafont\large}{\end{center}}
+\newenvironment{iast}{\begin{center}\itshape}{\end{center}}
+
+\usepackage{microtype}
+\usepackage{xcolor}
+\hypersetup{colorlinks=false, pdfborder={0 0 0}}

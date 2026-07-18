@@ -1,0 +1,15 @@
+{"ts": "2026-07-18T20:38:25.831776+00:00", "event": "generate", "files": 11}
+{"ts": "2026-07-18T20:38:32.174152+00:00", "event": "generate", "files": 11}
+{"ts": "2026-07-18T22:52:14.125841+00:00", "event": "generate", "files": 11}
+{"ts": "2026-07-18T22:52:15.075682+00:00", "event": "generate", "files": 11}
+{"ts": "2026-07-18T22:52:56.514569+00:00", "event": "generate", "files": 11}
+{"ts": "2026-07-18T22:53:15.841719+00:00", "event": "generate", "files": 11}
+{"ts": "2026-07-18T22:53:17.812431+00:00", "event": "build", "artifact": "/sessions/exciting-charming-lamport/tmp/pytest-of-exciting-charming-lamport/pytest-8/test_epub_builds_and_passes_ep0/book.epub", "bytes": 700400}
+{"ts": "2026-07-18T22:53:27.502800+00:00", "event": "generate", "files": 11}
+{"ts": "2026-07-18T22:53:29.453137+00:00", "event": "build", "artifact": "book/dist/the-proven-word.epub", "bytes": 700398}
+{"ts": "2026-07-18T22:53:59.328105+00:00", "event": "generate", "files": 11}
+{"ts": "2026-07-18T22:54:07.265638+00:00", "event": "build", "artifact": "book/dist/the-proven-word-print.pdf", "bytes": 885472}
+{"ts": "2026-07-18T22:54:42.170885+00:00", "event": "generate", "files": 11}
+{"ts": "2026-07-18T22:54:49.167082+00:00", "event": "build", "artifact": "book/dist/the-proven-word-print.pdf", "bytes": 926575}
+{"ts": "2026-07-18T22:55:59.896541+00:00", "event": "generate", "files": 11}
+{"ts": "2026-07-18T22:56:02.049389+00:00", "event": "build", "artifact": "/sessions/exciting-charming-lamport/tmp/pytest-of-exciting-charming-lamport/pytest-9/test_epub_builds_and_passes_ep0/book.epub", "bytes": 700395}

@@ -41,3 +41,23 @@ contract axiom cites the commentary text it derives from.
 uv run pytest            # corpus + contract gates
 cd lean && lake build    # proof gate (CI also enforces zero sorry)
 ```
+
+## The book
+
+`book/` holds *The Proven Word*, a trade book built from this repository for
+Kindle Direct Publishing (ebook first, 6×9 print second, audiobook later).
+Planning artifacts (PRD, SPEC, chapter plan, TRIZ and market research) are in
+`docs/book/`. Part IV (the verse walk) and the theorem index are generated
+deterministically from the corpus, contracts, and Lean modules, so every
+number and verse in them traces to a committed artifact.
+
+```sh
+python scripts/build_book.py generate   # regenerate Part IV + theorem index
+python scripts/build_book.py epub        # build the EPUB (EPUBCheck-clean)
+python scripts/build_book.py pdf         # build the 6×9 print interior (xelatex)
+uv run pytest tests/test_book.py         # book gates (verse coverage, IAST adjacency, EPUBCheck)
+```
+
+Devanagari mūla verses are set in the embedded, OFL-licensed Noto Serif
+Devanagari (`book/assets/fonts/`), with IAST alongside every Devanagari
+passage so no content depends on script rendering.
