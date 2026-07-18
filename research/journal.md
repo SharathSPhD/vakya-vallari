@@ -119,3 +119,21 @@ Append-only. Each entry: date, what was attempted, what the gates said, decision
      main-loop): 5; round-5: 14; round-6: 25; final: 28. Total surfaced: **95**
      (some names recur across rounds; final registry 41 terms / 91 senses).
      Paper corrected 89 → 95 with provenance pointing here.
+
+## 2026-07-18 — upgrades across all artifacts (post-review)
+
+- **Kernel**: Contract.reported (pūrvapakṣa) + Contract.doxographic; Adequate now
+  licenses over axioms++reported. 566 theorems (144 adequacy + 361 refutation +
+  56 sort-error + 5 kernel), zero sorry.
+- **Validator**: new gates — stance well-formedness, axiom∩denial disjointness,
+  ≥2 rejected readings. discriminativity.py: cross_licensing_matrix, 0/20,592 pairs.
+- **Contracts**: 9 doxographic (32 reported axioms) labelled; 1.127 overlap fixed;
+  6 thin contracts deepened; adṛṣṭa sort reconciled (1.153). 190 pytest gates.
+- **App**: proof pages split endorsed vs Reported(pūrvapakṣa) axioms; doxographic
+  badge on verse headers + edition; essay Act "Stress-tested against itself";
+  all stat tiles refreshed. Live: Vercel + HF Space.
+- **Paper**: 15pp; §Adversarial Evaluation + §Doxographic stance added; all numbers
+  refreshed (350→361, 549→566, 89→95 with ledger provenance); Abhava wording
+  corrected (kernel-tested, not verse-load-bearing); Results table updated incl.
+  0 cross-licensed pairs. Clean compile, 0 undefined refs.
+- CI green on both commits; HF full edition + Vercel showcase current.
