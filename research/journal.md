@@ -137,3 +137,16 @@ Append-only. Each entry: date, what was attempted, what the gates said, decision
   corrected (kernel-tested, not verse-load-bearing); Results table updated incl.
   0 cross-licensed pairs. Clean compile, 0 undefined refs.
 - CI green on both commits; HF full edition + Vercel showcase current.
+
+## 2026-07-18 — Vercel 404 fixed (deploy race)
+
+- Symptom: vakya-vallari.vercel.app returned 404 NOT_FOUND. Cause was NOT a Vercel
+  app limit. The repo has GitHub auto-deploy connected; every `git push` created a
+  new production deployment that took the alias and overrode the MCP inline deploys.
+  Those GitHub builds had no servable index.html at root (site/dist is gitignored),
+  so they reached READY but served 404.
+- Fix (durable): committed web/index.html (the essay showcase, links repointed to the
+  HF Space full edition) + vercel.json (framework:null, buildCommand:null,
+  outputDirectory:web, cleanUrls). publish.py now regenerates web/index.html from the
+  built essay so it never drifts. GitHub auto-deploy now serves web/ correctly; the
+  two deploy paths no longer race. Verified: alias 200, content current, HF links 200.
