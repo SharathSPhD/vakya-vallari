@@ -27,3 +27,14 @@ paper/*.log
 paper/*.out
 paper/*.bbl
 paper/*.blg
+
+# Local-only working material (not published to the remote).
+# The book, its planning docs, and the research ledger/journal stay on the
+# author's machine; the remote carries the code, data, proofs, paper and the
+# Vercel-served edition only.
+book/
+docs/
+research/
+scripts/build_book.py
+scripts/make_figures.py
+tests/test_book.py
