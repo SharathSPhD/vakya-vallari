@@ -20,6 +20,8 @@ The blind spot is just as easy to state. The consistency gate cannot tell drift 
 
 Across six adjudication rounds the gate surfaced 95 sort conflicts, some terms recurring as new verses entered the corpus; every one was resolved as either a correction or a registered polysemy (paper §7). What survived that filter is the registry as it now stands.
 
+![Three words with two registered senses each, kept from colliding by the homonym registry.](book/assets/figures/fig14-homonym-splits.png "Diagram of three small trees: akshara splitting into the imperishable Absolute of verse 1.9 and the phoneme of verses 1.18 to 22, shabda splitting into the canonical linguistic item and the Absolute of 1.46, and sphota splitting into the doctrinal meaning-bearer and the phoneticians' first sound of 1.102 to 106.")
+
 ## Rulings that become data
 
 An entry in the registry has four parts per sense: the sort; a gloss saying what the term means in this sense; a one-sentence justification pointing at the textual grounds; and the exact list of verses this sense covers. Here is the entry that settled the dispute our two agents started, verbatim from the file:

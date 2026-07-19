@@ -22,19 +22,19 @@ The rejected reading here demotes grammar from a discipline of liberation to a s
 
 **Axioms, each with its verbatim license.**
 
-- relation `dvara(vyakarana → apavarga)` — “Dvaram apavargasya makes grammar the door to liberation outright”
-- relation `cikitsa(vyakarana → vangmala)` — “Cikitsita is a medical term, 'treatment' or 'therapy', and casts corrupt speech as pathology and the grammarian as physician”
-- relation `pavitrate(vyakarana → sarvavidya)` — “Pavitram sarvavidyanam extends the therapeutic claim across the disciplines: grammar does not merely sit beside the other sciences but purifies them”
-- identity `vyakarana = adhividya` — “Adhividyam then names the resulting position — a science *above* sciences, a meta-discipline”
+- relation `dvara(vyakarana → apavarga)`: “Dvaram apavargasya makes grammar the door to liberation outright”
+- relation `cikitsa(vyakarana → vangmala)`: “Cikitsita is a medical term, 'treatment' or 'therapy', and casts corrupt speech as pathology and the grammarian as physician”
+- relation `pavitrate(vyakarana → sarvavidya)`: “Pavitram sarvavidyanam extends the therapeutic claim across the disciplines: grammar does not merely sit beside the other sciences but purifies them”
+- identity `vyakarana = adhividya`: “Adhividyam then names the resulting position, a science *above* sciences, a meta-discipline”
 
 **Denials.**
 
-- `samavaya(vyakarana → sarvavidya)` — “grammar does not merely sit beside the other sciences but purifies them”
+- `samavaya(vyakarana → sarvavidya)`: “grammar does not merely sit beside the other sciences but purifies them”
 
 **Rejected readings and their compiled fates.**
 
-- “Grammar is a practical tool for mastering the other sciences more effectively.” → **unlicensed**. Reduces vyakarana to an instrumental property or manifestation rather than recognizing its ontological identity with adhividya (metadisciplinary power). This sort error loses the verse's central metaphysical claim about grammar's absolute status.
-- “Grammar is the most important science, standing at the apex of a hierarchy of disciplines.” → **unlicensed**. Treats adhividya as a property (comparative rank) rather than recognizing it as power (metadisciplinary authority that encompasses all). This sort error makes the identity between vyakarana and adhividya appear merely prudential rather than essential.
+- “Grammar is a practical tool for mastering the other sciences more effectively.” → **unlicensed**. Reduces vyākaraṇa to an instrumental property or manifestation rather than recognizing its ontological identity with adhividya (metadisciplinary power). This sort error loses the verse's central metaphysical claim about grammar's absolute status.
+- “Grammar is the most important science, standing at the apex of a hierarchy of disciplines.” → **unlicensed**. Treats adhividya as a property (comparative rank) rather than recognizing it as power (metadisciplinary authority that encompasses all). This sort error makes the identity between vyākaraṇa and adhividya appear merely prudential rather than essential.
 - “Grammar metaphorically 'heals' speech through stylistic convention, but speech defects are not real pathologies.” → **unlicensed**. Evacuates the therapeutic relation of ontological force. The commentary insists: 'if speech is Brahman then disordered speech is disordered being, and correcting it is not pedantry but cure.' The therapy is not poetic but real.
 
 **Theorems in `V1_14.lean`.** `accepted_adequate`, `instrumental_tool_inadequate`, `instrumental_tool_sort_error`, `hierarchical_rank_inadequate`, `hierarchical_rank_sort_error`, `metaphorical_medicine_inadequate`, `metaphorical_medicine_sort_error`. All close by `decide`; the build carries zero `sorry`.
@@ -56,7 +56,7 @@ prathamaṃ chandasāmaṅgamāhurvyākaraṇaṃ budhāḥ || 11 ||
 
 > The wise call grammar the closest to that Brahman, the highest austerity among austerities, the foremost limb of the Vedas.
 
-*Gist.* The promised elevation, and it is unembarrassed: of all the auxiliary disciplines catalogued in 1.10, grammar is asanna, 'near', to Brahman itself.
+The promised elevation, and it is unembarrassed: of all the auxiliary disciplines catalogued in 1.10, grammar is asanna, 'near', to Brahman itself. The claim would be mere professional self-regard were it not entailed by 1.1. If the ultimate is word-essence, then the science whose object is the word stands nearer to it than any other, not by dignity but by subject matter, proximity here is a structural fact, not an honour conferred. The other two predicates extend the point in different registers. Calling grammar tapas, austerity, and the highest of them, moves it out of the domain of technical skill and into the domain of ascesis: analysing speech is a spiritual discipline, not a preparation for one. And prathamam does double duty, meaning both 'first' in the received enumeration of the six Vedangas and 'foremost' in rank. Patañjali had already made a version of this claim for grammar in the Mahabhasya; what Bhartṛhari adds is a metaphysics that makes it follow rather than merely assert it.
 
 *Contract.* 3 entities · 4 axioms · 1 denials; adequacy proved in `V1_11`.
 
@@ -77,7 +77,7 @@ yattat puṇyatamaṃ jyotistasya mārgo'yamāñjasaḥ || 12 ||
 
 > Of speech that has come to be divided into forms, there is a highest savour; and of that most holy light, this is the direct path.
 
-*Gist.* Prapta-rupa-vibhaga describes ordinary language — speech that has already arrived at its division into distinct forms, the differentiated medium we actually speak.
+Prapta-rūpa-vibhaga describes ordinary language, speech that has already arrived at its division into distinct forms, the differentiated medium we actually speak. Beneath or within it lies a paramo rasa, a highest essence; rasa is a word for savour, sap, the concentrated principle of a thing, and it carries a suggestion of what is tasted rather than merely known. The second line identifies that essence with a jyotis, a light, and grammar with the anjasa marga, the straight or direct road to it, from anjas, 'straightaway'. The image is precise: other approaches may reach the light, but they go around. Grammar goes at it. Note that the verse does not say ordinary differentiated speech is false; it says it has an essence, and that the essence is reachable through the discipline that studies the differentiation itself.
 
 *Contract.* 4 entities · 3 axioms · 0 denials; adequacy proved in `V1_12`.
 
@@ -98,7 +98,7 @@ tattvāvabodhaḥ śabdānāṃ nāsti vyākaraṇādṛte || 13 ||
 
 > Words alone are the basis of the realities that govern activity toward objects; and there is no grasp of the reality of words apart from grammar.
 
-*Gist.* The argument for 1.11 and 1.12, compressed into a syllogism.
+The argument for 1.11 and 1.12, compressed into a syllogism. First premise: words are the nibandhana, the ground or fastening, of artha-pravrtti-tattva, the realities underlying our purposive activity toward objects. We do not act toward a bare world; we act toward a world already carved by language, and the carving is what our activity answers to. Second premise: the nature of words is not accessible without grammar. The conclusion, unstated because obvious: grammar grounds everything we do. The eva in the first line is doing real work, śabda eva, words *alone*, and it is the strongest form of the claim, ruling out any non-linguistic access to the structures that govern activity. This is the verse a critic would attack first, and it is where the sabdadvaita thesis stops being cosmology and starts making claims about ordinary cognition.
 
 *Contract.* 4 entities · 3 axioms · 1 denials; adequacy proved in `V1_13`.
 
@@ -119,11 +119,11 @@ pavitraṃ sarvavidyānāmadhividyaṃ prakāśate || 14 ||
 
 > That is the gateway to liberation, the therapy for the impurities of speech, the purifier of all the sciences; it shines as the science standing above the sciences.
 
-*Gist.* Four predicates, escalating.
+Four predicates, escalating. Dvaram apavargasya makes grammar the door to liberation outright, not a preparation for the door, the door. Cikitsita is a medical term, 'treatment' or 'therapy', and casts corrupt speech as pathology and the grammarian as physician; the metaphor is inherited (Patañjali uses the register) but it is sharpened here by the metaphysics, since if speech is Brahman then disordered speech is disordered being, and correcting it is not pedantry but cure. Pavitram sarvavidyanam extends the therapeutic claim across the disciplines: grammar does not merely sit beside the other sciences but purifies them, since each of them is conducted in words. Adhividyam then names the resulting position, a science *above* sciences, a meta-discipline. The verse is the high-water mark of the first kanda's claims for vyākaraṇa.
 
 *Contract.* 5 entities · 4 axioms · 1 denials; adequacy proved in `V1_14`.
 
-*Refuted.* “Grammar is a practical tool for mastering the other sciences more effectively.” (unlicensed): Reduces vyakarana to an instrumental property or manifestation rather than recognizing its ontological identity with adhividya (metadisciplinary power).
+*Refuted.* “Grammar is a practical tool for mastering the other sciences more effectively.” (unlicensed): Reduces vyākaraṇa to an instrumental property or manifestation rather than recognizing its ontological identity with adhividya (metadisciplinary power).
 
 
 ### 1.15
@@ -140,7 +140,7 @@ tathaiva loke vidyānāmeṣā vidyā parāyaṇam || 15 ||
 
 > Just as all the classes of objects rest upon the forms of words, so in the world this science is the final resort of the sciences.
 
-*Gist.* An analogy whose two halves are not merely parallel but causally linked.
+An analogy whose two halves are not merely parallel but causally linked. The first half asserts that artha-jati, the classes or universals under which objects fall, are nibandhana, grounded, in śabda-akrti, the forms of words. That is a substantive ontological claim: the world's joints are word-shaped, and the generality by which we group things is borrowed from language rather than found in things. The second half concludes that grammar is parayana, the final resort or culmination, of the sciences. The 'just as ... so' presents this as analogy, but the relation is stronger than analogy: because word-form grounds object-class, the science of word-form must ground the sciences that treat object-classes. Bhartṛhari repeatedly builds arguments in this shape, where the rhetorical form is comparison and the logical form is entailment.
 
 *Contract.* 4 entities · 3 axioms · 0 denials; adequacy proved in `V1_15`.
 
@@ -163,16 +163,16 @@ atrātītaviparyāsaḥ kevalāmanupaśyati |
 chandasyaśchandasāṃ yonimātmā chandomayīṃ tanum || 17 ||
 :::
 
-> (16) This is the first foothold on the rungs of the ladder of attainment; this is the straight highroad for those seeking liberation. (17) Here one whose error has passed away, being versed in the Veda, beholds the sole body made of Veda — the womb of the Vedas, the Self.
+> (16) This is the first foothold on the rungs of the ladder of attainment; this is the straight highroad for those seeking liberation. (17) Here one whose error has passed away, being versed in the Veda, beholds the sole body made of Veda, the womb of the Vedas, the Self.
 
-*Gist.* The pair completes the sequence begun at 1.11 by naming first the road and then what stands at the end of it.
+The pair completes the sequence begun at 1.11 by naming first the road and then what stands at the end of it. In 16, two images for one point, and the first carries a pun that does not survive into English: pada-sthana is a 'place for the foot', a foothold, but pada is equally the grammarian's word for a word, so the first foothold on the ladder of siddhi is also the standing-place of the word. Ajihma rajapaddhati, the 'uncrooked royal road', then answers an objection, a road that is not crooked is not merely grand but shorter, and the claim, consistent with the anjasa marga of 1.12, is that grammar's superiority lies in going directly rather than in going somewhere the other disciplines cannot reach at all. Verse 17 supplies the vision itself, and it is reflexive: the Veda-knower beholds a body made of Veda which is at the same time the yoni, the womb, of the Vedas. What is seen is both the origin of the scriptures and their own form, and its identification with ātman closes the circuit opened in 1.1, where Brahman was declared word-essence. Atita-viparyasa names the condition, viparyasa is inversion, taking one thing for another, and the vision opens only once it has fallen away.
 
 *Contract.* 9 entities · 6 axioms · 2 denials; adequacy proved in `V1_16_17`.
 
 *Refuted.* “Words are merely linguistic tools for communicating about reality.” (unlicensed): Demotes pada to a linguistic property, erasing the double sense (foothold-and-word) that makes it both a means and the metaphysical foundation of realization.
 
 ::: {.contested}
-*Contested.* 1.17 resists confident construal: kevalam ... chandomayim tanum are feminine accusatives and plausibly form a single object ('the sole body made of Veda'), with chandasam yonim in apposition and atma as subject — but the alignment of atma with chandasyah, and whether kevalam qualifies the body or stands alone as 'the pure one', are both open; our rendering picks one reading among several defensible ones
+*Contested.* 1.17 resists confident construal: kevalam ... chandomayim tanum are feminine accusatives and plausibly form a single object ('the sole body made of Veda'), with chandasam yonim in apposition and atma as subject, but the alignment of atma with chandasyah, and whether kevalam qualifies the body or stands alone as 'the pure one', are both open; our rendering picks one reading among several defensible ones
 :::
 
 
@@ -204,15 +204,15 @@ adekaṃ prakriyābhedairbahudhā pravibhajyate |
 tad vyākaraṇamāgamya paraṃ brahmādhigamyate || 22 ||
 :::
 
-> (18) That highest form of speech, whose differentiations have set like the sun, the pure light that appears even within this darkness; (19) which those who have passed beyond the seeing of form and function, transcending light and darkness alike, worship as the radiance; (20) wherein the occasions of speech, like signs of the imperishable tradition, shine as in a reflection, through the yoga that is preceded by the word; (21) in which the high and low sounds of the Atharvans and Angirases, of the Saman, the Rk and the Yajus, hold their separate stations; (22) that which, though one, is divided manifold by the differences of derivational procedure — arriving at that through grammar, the supreme Brahman is attained.
+> (18) That highest form of speech, whose differentiations have set like the sun, the pure light that appears even within this darkness; (19) which those who have passed beyond the seeing of form and function, transcending light and darkness alike, worship as the radiance; (20) wherein the occasions of speech, like signs of the imperishable tradition, shine as in a reflection, through the yoga that is preceded by the word; (21) in which the high and low sounds of the Atharvans and Angirases, of the Saman, the Rk and the Yajus, hold their separate stations; (22) that which, though one, is divided manifold by the differences of derivational procedure, arriving at that through grammar, the supreme Brahman is attained.
 
-*Gist.* A single five-verse sentence — the longest period in the kanda — building the object of the grammarian's worship clause by clause and landing, at its last word, on the discipline that reaches it.
+A single five-verse sentence, the longest period in the kanda, building the object of the grammarian's worship clause by clause and landing, at its last word, on the discipline that reaches it. Verse 18 names the goal: the uttama rūpa of vac, speech's highest form, in which bheda has 'set' (astamita, the sun-verb: differentiation gone down like daylight), a suddha jyotis that vivartate, the kanda's master-verb again, even asminn eva tamasi, within this very darkness of ordinary divided experience. 19 gives the worshippers: those past murti-vyapara-darśana, the seeing of shape and function (the whole apparatus of ordinary cognition), who have stepped beyond the pair aloka-tamasi, light *and* darkness, the highest form is not the bright member of an opposition but what precedes opposition. 20 turns to method, and its phrase is the charter of the entire tradition: śabda-purvena yogena, by the yoga preceded by the word, union pursued through language itself, in which the nimittas of speech (its occasioning apparatus: the phonemes, the akṣara-smṛti's signs) show like reflections, media become transparent toward their source (1.49's mirror already implicit). 21 anchors this in the concrete canon: in that highest speech the uccavaca varṇas, the high and low sounds of all four Vedas, Atharvan and Angiras hymns, Saman, Rk, Yajus, hold prthak-sthiti, distinct stations: the entire audible revelation housed, differentiated, within the undifferentiated. And 22 closes the arc: that One, divided bahudha by prakriya-bhedas, differences of derivational procedure, the grammarian's own term (1.1 used prakriya of the world's unfolding; here it is declension and derivation that unfold the One), is *arrived at through grammar*: tad vyakaranam agamya, param brahma adhigamyate. The sentence's architecture is its argument: five verses of theology suspended grammatically until vyākaraṇa appears as the instrument of the final verb. This is the passage 1.11-14 promised and the whole kanda redeems, the discipline of speech-forms as the śabda-purva-yoga, the word-led path on which the differentiated Veda, the reflecting signs, and the settled darkness of ordinary seeing are traversed toward the light that speech itself is.
 
 *Contract.* 17 entities · 6 axioms · 2 denials; adequacy proved in `V1_18_22`.
 
 *Refuted.* “The highest form of speech is merely a linguistic structure that underlies all the world's words.” (unlicensed): Reduces vac_uttama from absolute reality to a mere linguistic property.
 
 ::: {.contested}
-*Contested.* the transcription is rough at two seams: 18a's ratyastamita- we read as (a)ty-astamita-bheda ('whose differentiation has utterly set'), and 19a's a-i-krtam samatikranta as atikranta with the preceding compound ('having passed beyond...'), following the passage's evident sense; 22a's adekam we read as tad ekam. More substantively, sabda-purvena yogena in 20 is a famous crux — 'yoga preceded by (grounded in) the word' names for the later tradition a whole spiritual method (sabdapurvayoga), and how technical its sense already is here is undecidable from the karika
+*Contested.* the transcription is rough at two seams: 18a's ratyastamita- we read as (a)ty-astamita-bheda ('whose differentiation has utterly set'), and 19a's a-i-krtam samatikranta as atikranta with the preceding compound ('having passed beyond...'), following the passage's evident sense; 22a's adekam we read as tad ekam. More substantively, śabda-purvena yogena in 20 is a famous crux, 'yoga preceded by (grounded in) the word' names for the later tradition a whole spiritual method (sabdapurvayoga), and how technical its sense already is here is undecidable from the karika
 :::
 

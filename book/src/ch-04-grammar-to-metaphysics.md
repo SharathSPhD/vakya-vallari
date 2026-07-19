@@ -94,7 +94,7 @@ around the fifth century CE. The strongest anchor is that Buddhist
 philosophers of the sixth century, Dignāga among them, already quote
 his verses; an older dating to the seventh century rested on a Chinese
 pilgrim's travel report and is now widely set aside as resting on a
-confusion. Nothing reliable is known of his life. A famous collection
+confusion (Houben 2016). Nothing reliable is known of his life. A famous collection
 of worldly poetry circulates under the same name, and whether poet and
 grammarian are one person is an old and open question this book does
 not need to settle.
@@ -107,9 +107,9 @@ scholarly dispute, argued from style, from cross-references, and from
 how the Vṛtti glosses verses in ways the kārikās alone do not force.
 
 This project's ruling is procedural, not doctrinal. Its primary text is
-K. A. Subramania Iyer's 1965 edition of Book I with the Vṛtti, and its
-contracts treat that edition's text as the standpoint to be formalized
-(paper §2.1). Every axiom in Part III inherits that single-source
+K. A. Subramania Iyer's edition of Book I with the Vṛtti (Subramania
+Iyer 1965), and its contracts treat that edition's text as the
+standpoint to be formalized (paper §2.1). Every axiom in Part III inherits that single-source
 choice, and Chapter 23 states plainly what would change under a
 different one. The machine does not decide who wrote the Vṛtti. It
 decides whether a translation is faithful to what the Vṛtti says.
@@ -241,6 +241,8 @@ Note the "as though." The word itself has no earlier and later; sequence
 belongs to the machinery of utterance, and the appearance of division is
 borrowed, the miniature of 1.1's vivarta. The one word appears as many
 sounds the way the one Brahman appears as many things.
+
+![Sequential sound events manifest the single undivided sphoṭa; the sounds reveal it, they do not compose it.](book/assets/figures/fig06-sphota-dhvani.png "Diagram showing a sequence of dhvani sound events along a time arrow on the left, a single circle labeled sphota, the undivided meaning-whole, on the right, arrows from the sequence to the circle labeled manifests, and a note that the sounds reveal it rather than compose it.")
 
 Bhartṛhari argues this with images, and the images are the part of the
 text a reader keeps. The first is fire hidden in wood. Fire was made,

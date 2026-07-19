@@ -4,6 +4,9 @@
             top=0.75in, bottom=0.75in, inner=0.75in, outer=0.5in]{geometry}
 \usepackage{fontspec}
 \setmainfont{TeX Gyre Pagella}
+% DejaVu Sans Mono covers Lean's Unicode (forall, exists, wedge, angle
+% brackets), which Latin Modern Mono silently drops.
+\setmonofont{DejaVu Sans Mono}[Scale=0.82]
 
 % Devanagari font family, resolved from the repo's embedded OFL fonts.
 \newfontfamily\devafont[Path=./book/assets/fonts/, Script=Devanagari]{NotoSerifDevanagari.ttf}
@@ -14,9 +17,26 @@
 \setTransitionsForDevanagari{\begingroup\devafont}{\endgroup}
 
 % Center the mula/IAST verse divs pandoc emits from ::: {.deva} / ::: {.iast}.
-\newenvironment{deva}{\begin{center}\devafont\large}{\end{center}}
+% Devanagari glyphs run optically smaller than Latin at equal point size, so
+% the mula is set one step larger to match the surrounding text visually.
+\newenvironment{deva}{\begin{center}\devafont\Large}{\end{center}}
 \newenvironment{iast}{\begin{center}\itshape}{\end{center}}
 
 \usepackage{microtype}
 \usepackage{xcolor}
 \hypersetup{colorlinks=false, pdfborder={0 0 0}}
+
+% --- Overflow discipline for the 6x9 measure -------------------------------
+% Tables: pandoc emits longtable; set them small with tight columns so wide
+% mapping/gloss tables stay inside the type area.
+\usepackage{etoolbox}
+\AtBeginEnvironment{longtable}{\small\setlength{\tabcolsep}{3.5pt}}
+% Code listings: slightly reduced and allowed to break.
+\usepackage{fvextra}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,breakanywhere,fontsize=\footnotesize,commandchars=\\\{\}}
+\AtBeginEnvironment{verbatim}{\footnotesize}
+% Prose: prefer a slightly loose line to an overfull one.
+\emergencystretch=3em
+\setlength{\parskip}{2pt plus 1pt}
+% Long inline code (theorem names) may break at word boundaries.
+\usepackage{url}

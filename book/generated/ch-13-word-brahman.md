@@ -22,19 +22,19 @@ Chapter 10 walked this verse end to end. Here it stands at the head of its own s
 
 **Axioms, each with its verbatim license.**
 
-- identity `sabdatattva = brahman` — “the ultimate is not merely describable by language but is language — sabda-tattva, word-essence”
-- relation `vivartate(brahman → jagat)` — “Vivarta is appearance without loss of unity: the one presents itself as many while remaining one”
-- predication `anadinidhana(brahman)` — “its plain sense is 'imperishable', which is why it sits naturally beside anadinidhana, 'without beginning or end'”
-- predication `aksara(brahman)` — “What is imperishable and what is phonic are, for him, the same thing”
+- identity `sabdatattva = brahman`: “the ultimate is not merely describable by language but is language, śabda-tattva, word-essence”
+- relation `vivartate(brahman → jagat)`: “Vivarta is appearance without loss of unity: the one presents itself as many while remaining one”
+- predication `anadinidhana(brahman)`: “its plain sense is 'imperishable', which is why it sits naturally beside anadinidhana, 'without beginning or end'”
+- predication `aksara(brahman)`: “What is imperishable and what is phonic are, for him, the same thing”
 
 **Denials.**
 
-- `parinamate(brahman → jagat)` — “Bhartrhari does not say Brahman becomes the world (parinamate), which would make the world a real transformation of its substance”
+- `parinamate(brahman → jagat)`: “Bhartṛhari does not say Brahman becomes the world (parinamate), which would make the world a real transformation of its substance”
 
 **Rejected readings and their compiled fates.**
 
 - “The imperishable linguistic structure underlying words has no beginning or end.” → **unlicensed**. Renders śabdatattva as a mere linguistic property, demoting the ontological identity the commentary insists on: the ultimate IS language, not something described by it. The sort error (property vs absolute) makes the identity claim decidably false.
-- “Brahman transforms itself into the world of objects.” → **contradicted**. Asserts a real transformation (parinama) of Brahman's substance, which the commentary explicitly rules out in favor of vivarta (appearance without loss of unity).
+- “Brahman transforms itself into the world of objects.” → **contradicted**. Asserts a real transformation (pariṇāma) of Brahman's substance, which the commentary explicitly rules out in favor of vivarta (appearance without loss of unity).
 
 **Theorems in `V1_1.lean`.** `accepted_adequate`, `naive_linguistic_structure_inadequate`, `naive_linguistic_structure_sort_error`, `parinama_transformation_inadequate`. All close by `decide`; the build carries zero `sorry`.
 
@@ -55,7 +55,7 @@ vivartate'rthabhāvena prakriyā jagato yataḥ || 1 ||
 
 > Brahman is without beginning or end, imperishable, and its essence is the Word. It appears in the mode of objects, and from it proceeds the unfolding of the world.
 
-*Gist.* The opening karika states the sabdadvaita thesis in a single breath: the ultimate is not merely describable by language but is language — sabda-tattva, word-essence.
+The opening karika states the sabdadvaita thesis in a single breath: the ultimate is not merely describable by language but is language, śabda-tattva, word-essence. Two terms carry the weight. First, akṣara: its plain sense is 'imperishable', which is why it sits naturally beside anadinidhana, 'without beginning or end'. But akṣara is also the ordinary grammarians' word for a phoneme, and Bhartṛhari is a grammarian. The pun is not decorative; it is the argument in miniature. What is imperishable and what is phonic are, for him, the same thing. Second, vivartate. Bhartṛhari does not say Brahman becomes the world (parinamate), which would make the world a real transformation of its substance, as Samkhya has it. Vivarta is appearance without loss of unity: the one presents itself as many while remaining one. This is the term on which the text's later reception turns, since Advaita Vedānta would make vivarta its central technical device. Note also prakriya, here 'unfolding', in grammatical usage it is the term for a derivational procedure, the stepwise generation of a form from a root. The world issues from Brahman the way a word-form issues from its base. The choice of vocabulary is doing philosophical work.
 
 *Contract.* 3 entities · 4 axioms · 1 denials; adequacy proved in `V1_1`.
 
@@ -78,13 +78,13 @@ ekameva yadāmnātaṃ bhinnaśaktivyapāśrayāt |
 apṛthaktve'pi śaktibhyaḥ pṛthaktveneva vartate || 2 ||
 :::
 
-> That which tradition declares to be one alone, resting on its differentiated powers, functions as though it were divided — though it is in fact not separate from those powers.
+> That which tradition declares to be one alone, resting on its differentiated powers, functions as though it were divided, though it is in fact not separate from those powers.
 
-*Gist.* Having asserted unity, Bhartrhari must account for plurality, and he does it through sakti, power.
+Having asserted unity, Bhartṛhari must account for plurality, and he does it through śakti, power. Brahman is one; its powers are many; the powers are not other than it. The syntax is careful: aprthaktve 'pi, 'even in non-separateness', concedes the metaphysical point, and then prthaktvena iva vartate, 'functions as if separate', concedes the phenomenal one. The whole position hangs on that iva, 'as if'. Remove it and you have either a real plurality (and the unity thesis collapses) or a bare denial of plurality (and the world becomes unaccountable). The śakti doctrine is Bhartṛhari's device for holding both, and it places him close to what later doxography would call bhedabheda, difference-and-non-difference, rather than to a strict Advaita. Whether that proximity is genuine or an artefact of reading him backwards through his successors is a live question.
 
 *Contract.* 3 entities · 4 axioms · 2 denials; adequacy proved in `V1_2`.
 
-*Refuted.* “Brahman genuinely transforms itself into the world through its differentiated powers.” (contradicted): Asserts parinama (real transformation of substance), which the verse rejects through the 'iva' (as if).
+*Refuted.* “Brahman genuinely transforms itself into the world through its differentiated powers.” (contradicted): Asserts pariṇāma (real transformation of substance), which the verse rejects through the 'iva' (as if).
 
 
 ### 1.3
@@ -101,11 +101,11 @@ janmādayo vikārāḥ ṣaḍ bhāvabhedasya yonayaḥ || 3 ||
 
 > Resting upon its power of Time, on which divisions are superimposed, arise the six modifications beginning with birth; and these are the wombs of the differentiation of beings.
 
-*Gist.* Time enters as a sakti of Brahman, not as an independent container.
+Time enters as a śakti of Brahman, not as an independent container. This is a commitment Bhartṛhari develops at length much later, in the Kala-samuddesa of the third kanda, and it is worth noticing how early it is planted. The point of adhyahita-kala, 'having divisions superimposed', is that Time in itself is undivided; the partition into moments is laid onto it, not found in it. Sequence is thus a feature of how the one appears, not of what it is, which is what the vivarta of 1.1 requires. The 'six modifications beginning with birth' are the sad-bhava-vikara that Yaska sets out in the Nirukta: a thing is born, exists, alters, grows, declines, perishes. Bhartṛhari takes a piece of received grammatical-etymological analysis and makes it cosmological, the six become yoni, wombs, the generative sources of differentiated being. That move, appropriating the grammarians' apparatus as metaphysics, is characteristic of the whole work.
 
 *Contract.* 4 entities · 4 axioms · 2 denials; adequacy proved in `V1_3`.
 
-*Refuted.* “Time is an independent absolute power that directly generates the six modifications.” (unlicensed): Treats time as an independent absolute rather than a power (sakti) of Brahman, contradicting the commentary's explicit teaching that time enters as a sakti of Brahman, not as an independent container.
+*Refuted.* “Time is an independent absolute power that directly generates the six modifications.” (unlicensed): Treats time as an independent absolute rather than a power (śakti) of Brahman, contradicting the commentary's explicit teaching that time enters as a śakti of Brahman, not as an independent container.
 
 
 ### 1.4
@@ -120,13 +120,13 @@ ekasya sarvabījasya yasya ceyamanekadhā |
 bhoktṛbhoktavyarūpeṇa bhogarūpeṇa ca sthitiḥ || 4 ||
 :::
 
-> It is one, the seed of all; and this abiding of it is manifold — in the form of the experiencer, in the form of what is to be experienced, and in the form of the experiencing.
+> It is one, the seed of all; and this abiding of it is manifold, in the form of the experiencer, in the form of what is to be experienced, and in the form of the experiencing.
 
-*Gist.* The triad is subject, object, and act: bhoktr, bhoktavya, bhoga.
+The triad is subject, object, and act: bhoktr, bhoktavya, bhoga. Bhartṛhari's claim is not that Brahman produces these three but that its sthiti, its abiding, its standing-as, simply is them. The one seed does not divide into three parts; it stands in three modes. The structure anticipates the tripuiti (knower, known, knowing) that later Vedānta and Buddhist epistemology both make central, and the resemblance is close enough that the direction of influence has been argued over. Read together with 1.2, the verse shows the śakti doctrine doing concrete work: experiencer and experienced are powers, appearing separate, not separate.
 
 *Contract.* 4 entities · 6 axioms · 3 denials; adequacy proved in `V1_4`.
 
-*Refuted.* “Brahman creates and produces the three forms of experiencer, experienced, and experiencing as separate entities.” (contradicted): Asserts parinama (real transformation or production) between brahman and the three, which the commentary explicitly denies: 'Bhartrhari's claim is not that Brahman produces these three but that its st…
+*Refuted.* “Brahman creates and produces the three forms of experiencer, experienced, and experiencing as separate entities.” (contradicted): Asserts pariṇāma (real transformation or production) between brahman and the three, which the commentary explicitly denies: 'Bhartṛhari's claim is not that Brahman produces these three but that its st…
 
 
 ### 1.5
@@ -143,7 +143,7 @@ eko'pyanekavarmeva samāmnātaḥ pṛthak pṛthak || 5 ||
 
 > The Veda is both the means of attaining it and its likeness; and though one, it was handed down separately by the great seers, as though it had many paths.
 
-*Gist.* Two words are doing the work: upaya and anukara.
+Two words are doing the work: upaya and anukāra. The Veda is the means of reaching Brahman, which is unremarkable; but it is also anukāra, a likeness or imitation of it, which is not. If Brahman is word-essence, then the Veda is not merely a set of instructions pointing at the goal, it is the goal in linguistic image, and using it as a means is therefore continuous with attaining it. This is what licenses the grammarian's claim on soteriology, and the whole first kanda depends on it. The second line then handles an obvious objection: if the Veda is one, why are there many recensions? The answer reuses the pattern of 1.2 exactly, eko 'pi ... iva, one, yet as though many-pathed. The plurality of sakhas is phenomenal, like the plurality of śaktis.
 
 *Contract.* 3 entities · 4 axioms · 1 denials; adequacy proved in `V1_5`.
 
@@ -164,7 +164,7 @@ bhedānāṃ bahumārgatvaṃ karmaṇyekatra cāṅgatā |
 
 > In its branches are seen the many courses taken by its divisions, the subordination of several elements to one rite, and the determinate power of words.
 
-*Gist.* A continuation of 1.5, cataloguing what the recensions display.
+A continuation of 1.5, cataloguing what the recensions display. Angata is the technical Mimamsa relation of subordination, a subsidiary element standing to a principal rite, and its appearance here shows Bhartṛhari assuming a ritual-exegetical background his readers would have supplied without effort. The third item, on the power of words, is the one that matters for his own project, and it is also the one whose text is least secure.
 
 *Contract.* 7 entities · 3 axioms · 1 denials; adequacy proved in `V1_6`.
 
@@ -187,9 +187,9 @@ smṛtayo bahurūpāśca dṛṣṭādṛṣṭaprayojanāḥ |
 tamevāśritya liṅgebhyo vedavidbhiḥ prakalpitāḥ || 7 ||
 :::
 
-> The smrtis, various in form and having both seen and unseen purposes, were framed by those who know the Veda from indicatory marks, resting upon that alone.
+> The smṛtis, various in form and having both seen and unseen purposes, were framed by those who know the Veda from indicatory marks, resting upon that alone.
 
-*Gist.* The authority of the secondary literature is made derivative.
+The authority of the secondary literature is made derivative. Smṛti texts are prakalpita, framed or constructed, by the veda-vid on the basis of linga, inferential marks within the Veda itself. They are not independent sources. The distinction between drsta and adrsta purposes, seen and unseen, that is, empirically evident aims versus those whose fruit is transcendent, is again standard Mimamsa currency. The verse is doing housekeeping: it subordinates the whole derivative tradition to the one Word before the argument proper resumes.
 
 *Contract.* 6 entities · 4 axioms · 1 denials; adequacy proved in `V1_7`.
 
@@ -208,9 +208,9 @@ tasyārthavādarūpāṇi niśritāḥ svavikalpajāḥ |
 ekatvināṃ dvaitināṃ ca pravādā bahudhā matāḥ || 8 ||
 :::
 
-> Resting on its arthavada portions, the manifold doctrines of the monists and the dualists are held — arising from their own conceptual constructions.
+> Resting on its arthavada portions, the manifold doctrines of the monists and the dualists are held, arising from their own conceptual constructions.
 
-*Gist.* Sharp, and slightly deflationary.
+Sharp, and slightly deflationary. Arthavada is the Mimamsa category for the Veda's non-injunctive passages, the explanatory or laudatory material that does not directly command action. Bhartṛhari's claim is that the rival philosophical systems, ekatvin and dvaitin, those who hold for one and those who hold for two, take their stand on precisely these portions, and that the resulting doctrines are svavikalpaja, born of their own vikalpa, their own conceptual construction. He is not quite calling them false. He is placing them: they are constructions raised on a base that was never injunctive to begin with, which is why they multiply and conflict.
 
 *Contract.* 5 entities · 4 axioms · 2 denials; adequacy proved in `V1_8`.
 
@@ -231,7 +231,7 @@ yuktā praṇavarūpeṇa sarvavādāvirodhinā || 9 ||
 
 > The true purification is declared to be there: knowledge alone, reached through the single syllable, joined with the form of the pranava, which contradicts no doctrine.
 
-*Gist.* Against the multiplying constructions of 1.8, a single point of convergence: the pranava, Om.
+Against the multiplying constructions of 1.8, a single point of convergence: the pranava, Om. The phrase eka-pada-āgama, arrival by way of one word, recalls the akṣara of 1.1, and the circle closes: the imperishable that is also the phoneme is now the syllable through which purification comes. The last quarter is the interesting one. Sarvavadavirodhina, 'not in conflict with any doctrine', makes a claim of a different order from 1.8: the rival systems contradict each other because each is built on a partial base, but Om contradicts none of them, because it is the base. Bhartṛhari is not adjudicating between the schools; he is claiming a position underneath them all.
 
 *Contract.* 5 entities · 5 axioms · 1 denials; adequacy proved in `V1_9`.
 
@@ -254,9 +254,9 @@ vidhātustasya lokānāmaṅgopāṅganibandhanāḥ |
 vidyābhedāḥ pratāyante jñānasaṃskārahetavaḥ || 10 ||
 :::
 
-> Of that ordainer of the worlds, the divisions of knowledge — bound up with the limbs and sub-limbs — are extended, being the causes of the refinement of understanding.
+> Of that ordainer of the worlds, the divisions of knowledge, bound up with the limbs and sub-limbs, are extended, being the causes of the refinement of understanding.
 
-*Gist.* The vidya-bhedas are the branches of learning, structured around the angas and upangas, the auxiliary disciplines of the Veda: phonetics, metre, grammar, etymology, ritual, astronomy, and their subsidiaries.
+The vidya-bhedas are the branches of learning, structured around the angas and upangas, the auxiliary disciplines of the Veda: phonetics, metre, grammar, etymology, ritual, astronomy, and their subsidiaries. Bhartṛhari's point is functional. They are jñāna-saṃskāra-hetu, causes of the saṃskāra, the refining, perfecting, preparing, of knowledge. They do not deliver the goal; they condition the instrument that reaches it. This sets up 1.11 directly, where one of these limbs will be singled out and elevated above the rest, and the reader who knows which discipline the author practises will already see it coming.
 
 *Contract.* 6 entities · 4 axioms · 1 denials; adequacy proved in `V1_10`.
 

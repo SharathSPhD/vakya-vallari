@@ -22,21 +22,21 @@ Sphoṭa is indivisible and non-temporal; the sounds that manifest it are sequen
 
 **Axioms, each with its verbatim license.**
 
-- predication `abhinna-kala(sphota)` — “The sphota is abhinna-kala, without temporal division”
-- predication `dhvani-kala-anupatin(sphota)` — “it is dhvani-kala-anupatin, appearing to run along the timeline of the sounds that manifest it”
-- relation `vivartate(sphota → dhvani)` — “the sounds that manifest it”
-- relation `asraya(vrtti → grahana_upadhi)` — “that differs grahana-upadhi-bhedena, according to the conditions under which it is grasped”
+- predication `abhinna-kala(sphota)`: “The sphoṭa is abhinna-kala, without temporal division”
+- predication `dhvani-kala-anupatin(sphota)`: “it is dhvani-kala-anupatin, appearing to run along the timeline of the sounds that manifest it”
+- relation `vivartate(sphota → dhvani)`: “the sounds that manifest it”
+- relation `asraya(vrtti → grahana_upadhi)`: “that differs grahana-upadhi-bhedena, according to the conditions under which it is grasped”
 
 **Denials.**
 
-- `binna-kala(sphota)` — “it does not itself take time”
-- `bheda(sphota)` — “what differs is not the sphota but its vrtti”
+- `binna-kala(sphota)`: “it does not itself take time”
+- `bheda(sphota)`: “what differs is not the sphoṭa but its vṛtti”
 
 **Rejected readings and their compiled fates.**
 
-- “The sphota is temporally divisible and takes time like the sounds.” → **contradicted**. The verse explicitly establishes the sphota is abhinna-kala (timeless). Only the sounds (dhvani) that manifest it have temporal extension. The appearance of temporality is mediated through manifestation, not intrinsic to the sphota.
-- “The substance of the sphota itself varies according to different utterances and contexts.” → **contradicted**. The commentary explicitly denies this: 'what differs is not the sphota but its vrtti'. The sphota's substance is invariant; only its mode of functioning (vrtti) differs according to conditions of apprehension.
-- “The sounds (dhvani) determine the word-essence (sphota); they are the source from which it arises.” → **unlicensed**. The relationship is reversed. The sphota is the timeless word-essence that manifests through sounds. The sounds are the manifestation (vivartate from sphota), not the source. Sphota is ontologically primary.
+- “The sphoṭa is temporally divisible and takes time like the sounds.” → **contradicted**. The verse explicitly establishes the sphoṭa is abhinna-kala (timeless). Only the sounds (dhvani) that manifest it have temporal extension. The appearance of temporality is mediated through manifestation, not intrinsic to the sphoṭa.
+- “The substance of the sphoṭa itself varies according to different utterances and contexts.” → **contradicted**. The commentary explicitly denies this: 'what differs is not the sphoṭa but its vṛtti'. The sphoṭa's substance is invariant; only its mode of functioning (vṛtti) differs according to conditions of apprehension.
+- “The sounds (dhvani) determine the word-essence (sphoṭa); they are the source from which it arises.” → **unlicensed**. The relationship is reversed. The sphoṭa is the timeless word-essence that manifests through sounds. The sounds are the manifestation (vivartate from sphoṭa), not the source. Sphoṭa is ontologically primary.
 
 **Theorems in `V1_75.lean`.** `accepted_adequate`, `sphota_temporal_inadequate`, `sphota_mutable_inadequate`, `sounds_determine_inadequate`. All close by `decide`; the build carries zero `sorry`.
 
@@ -57,7 +57,7 @@ kāryatve nityatāyāṃ vā kecinnānātvavādinaḥ || 70 ||
 
 > Whether they are produced or eternal, some are proponents of unity; whether they are produced or eternal, some are proponents of plurality.
 
-*Gist.* A doxographic grid opening a new movement.
+A doxographic grid opening a new movement. Two questions cross: are words kārya or nitya, produced or eternal (the dispute 1.28 deflated), and is the linguistic unit ekatva or nanatva, one or many? Bhartṛhari's careful repetition of 'whether produced or eternal' in both lines makes the second question orthogonal to the first, unity-theorists and plurality-theorists exist on both sides of the eternality dispute, so the questions must be settled independently. The unity in question is the one the sphoṭa doctrine asserts: is the word one partless entity variously manifested, or a plurality (of phonemes, of tokens) unified only in cognition? The next five verses set out the data any answer must save, the same phoneme across words, the same word across sentences, and the two candidate explanations. It is the kanda's most dialectical stretch: positions are laid out with a fairness that leaves Bhartṛhari's own verdict genuinely disputable.
 
 *Contract.* 8 entities · 4 axioms · 0 denials; adequacy proved in `V1_70`.
 
@@ -78,7 +78,7 @@ vākyeṣu padamekaṃ ca bhinneṣvapyupalabhyate || 71 ||
 
 > Even when words differ, the unity of the phonemes is not abolished; and even in different sentences, one and the same word is found.
 
-*Gist.* The datum for any theory of linguistic units: recurrence.
+The datum for any theory of linguistic units: recurrence. The 'a' in one word and in another is not two similar sounds but, as competent speakers unhesitatingly judge, the same phoneme; the word 'gauh' in two different sentences is one word, not twins. This identity-across-occurrence is the most elementary fact a science of language must save, and it is already fatal to a crude token-physicalism, since the acoustic events are numerically distinct and unrepeatable. Whatever phonemes and words are, they are repeatables, the type, not the dated token, is the grammarian's object. The verse states the fact at two levels (phoneme across words, word across sentences) so that the coming argument about parts and wholes can run at both.
 
 *Contract.* 4 entities · 3 axioms · 1 denials; adequacy proved in `V1_71`.
 
@@ -99,14 +99,14 @@ vākyaṃ varṇapadābhyāṃ ca vyatiriktaṃ na kiścana || 72 ||
 
 > And there exists no word over and above the phonemes; nor is the sentence anything whatsoever apart from the phonemes and words.
 
-*Gist.* The analyst's thesis, stated in its strongest form — and it is a thesis Bhartrhari reports, not (on the reading this edition takes) his own final voice.
+The analyst's thesis, stated in its strongest form, and it is a thesis Bhartṛhari reports, not (on the reading this edition takes) his own final voice. If phonemes recur identically (1.71), a partitive mind concludes that they are the reals: the word is nothing vyatirekena, over and above, its phonemes, and the sentence nothing over phonemes-and-words, mere collections, with no additional entity anywhere. This is the position of the vaiyākaraṇa atomist and, in a different key, of the Mimamsaka for whom the varṇas alone are eternal and the 'word' a convenient summary. Read in sequence with 1.73, the two verses form a deliberate antinomy: this one dissolves wholes into parts, the next dissolves parts into wholes, and 1.74 will say openly that practice can be run from either side. The arrangement is the argument, each thesis, stated alone, sounds compelling; stated together they cancel, clearing the ground for the sphoṭa account on which partition is a device of analysis rather than a report of structure.
 
 *Contract.* 3 entities · 3 axioms · 3 denials; adequacy proved in `V1_72`.
 
-*Refuted.* “Words emerge as novel linguistic entities with meaning-bearing properties distinct from their component phonemes.” (contradicted): Asserts pada asti-atiriktam varna (words exist as independent entities over and above phonemes), directly contradicting the verse's first claim na varṇavyatirekeṇa padamanyacca vidyate.
+*Refuted.* “Words emerge as novel linguistic entities with meaning-bearing properties distinct from their component phonemes.” (contradicted): Asserts pada asti-atiriktam varṇa (words exist as independent entities over and above phonemes), directly contradicting the verse's first claim na varṇavyatirekeṇa padamanyacca vidyate.
 
 ::: {.contested}
-*Contested.* whether 1.72 is pure purvapaksa (an opponent's view to be superseded) or a moment Bhartrhari endorses at the level of manifested sound is a standing question for the whole passage 1.70-77; we read it as reported doctrine, but the karika carries no explicit 'iti' marking it as another's voice
+*Contested.* whether 1.72 is pure pūrvapakṣa (an opponent's view to be superseded) or a moment Bhartṛhari endorses at the level of manifested sound is a standing question for the whole passage 1.70-77; we read it as reported doctrine, but the karika carries no explicit 'iti' marking it as another's voice
 :::
 
 
@@ -124,7 +124,7 @@ vākyāt padānāmatyantaṃ praviveko na kaścana || 73 ||
 
 > In the word the phonemes do not exist, and in the phonemes there are no parts; from the sentence there is no absolute separation of the words.
 
-*Gist.* The counter-thesis, dissolving in the opposite direction.
+The counter-thesis, dissolving in the opposite direction. In the word, the real, functioning word, the meaning-bearer, phonemes na vidyante, are not found: analysis finds them, hearing-with-understanding does not, and the sphoṭa that conveys meaning has no phonemic grain (1.48). Phonemes in turn have no avayavas, no parts, so the partitive regress finds no floor. And words have no atyantam praviveka, no absolute separation, from the sentence, the doctrine of 1.24 (words as apoddhara, extracts) now stated frontally, and the thesis the entire second kanda will defend: the sentence is the primary unit, its 'words' being artifacts of the same abstraction that finds 'phonemes' in words. Against 1.72's 'nothing but the parts', this verse answers 'the parts are nowhere to be found in the functioning whole'. Both cannot be reports of structure; at most one is, and 1.74 will suggest that neither is, that each is a darśana, a way of taking the phenomenon.
 
 *Contract.* 3 entities · 5 axioms · 2 denials; adequacy proved in `V1_73`.
 
@@ -145,11 +145,11 @@ tatra yanmukhyamekeṣāṃ tatrānyeṣāṃ viparyayaḥ || 74 ||
 
 > Practice is carried on by resort to differing views; what is primary for some is for others the reverse.
 
-*Gist.* The antinomy of 1.72-73 is resolved — or rather, declined.
+The antinomy of 1.72-73 is resolved, or rather, declined. Vyavahara, the working practice of grammar and speech, anugamyate, proceeds, on either darśana: one school takes the parts as mukhya, primary, and constructs wholes; the other takes the whole as primary and extracts parts; and each can run the entire practice from its chosen starting point, the other's primitive appearing in its ledger as derived. Bhartṛhari's equanimity here is methodological, not indifferent. That practice underdetermines metaphysics, that the phenomena of 1.71 can be saved from either end, is itself the philosophically significant discovery, and it relocates the question: the choice between part-primacy and whole-primacy will not be settled by grammatical data, which both fit, but by which starting point better coheres with what language *does*, namely convey undivided meaning. On that criterion the whole wins, and the sphoṭa doctrine is the working-out; but the verse is careful to register that the loser is not refuted, only outweighed.
 
 *Contract.* 5 entities · 6 axioms · 3 denials; adequacy proved in `V1_74`.
 
-*Refuted.* “The part-primary school is definitively refuted by Bhartrhari; only the whole-primary view stands as valid metaphysics.” (contradicted): The verse presents both views symmetrically and the commentary explicitly states the part-primary view is 'not refuted, only outweighed.' The preference for the whole-primary view comes from a higher…
+*Refuted.* “The part-primary school is definitively refuted by Bhartṛhari; only the whole-primary view stands as valid metaphysics.” (contradicted): The verse presents both views symmetrically and the commentary explicitly states the part-primary view is 'not refuted, only outweighed.' The preference for the whole-primary view comes from a higher…
 
 ::: {.contested}
 *Contested.* viparyaya can be read as 'the reverse view' (others take the opposite item as primary) or more strongly as 'error' (what is primary for some is for others a mistake); the first, doxographic reading fits the verse's even tone and we adopt it, but the polemical reading is grammatically available
@@ -168,13 +168,13 @@ sphoṭasyābhinnakālasya dhvanikālānupātinaḥ |
 grahaṇopādhibhedena vṛttibhedaṃ pracakṣate || 75 ||
 :::
 
-> Of the sphota, whose time is undivided, yet which appears to follow the time of the sounds, they declare a difference of function according to the difference of the conditions of its apprehension.
+> Of the sphoṭa, whose time is undivided, yet which appears to follow the time of the sounds, they declare a difference of function according to the difference of the conditions of its apprehension.
 
-*Gist.* The reflection-simile of 1.49 is now given its doctrinal statement.
+The reflection-simile of 1.49 is now given its doctrinal statement. The sphoṭa is abhinna-kala, without temporal division, it does not itself take time, and yet it is dhvani-kala-anupatin, appearing to run along the timeline of the sounds that manifest it. The resolution: what differs is not the sphoṭa but its vṛtti, its mode of functioning, and that differs grahana-upadhi-bhedena, according to the conditions under which it is grasped, the speed of utterance, the voice, the accent, all properties of the manifesting medium transferred in appearance to the manifested word. This is the seed of the later distinction between prākṛta-dhvani (the sound-pattern that determines which word is manifested) and vaikṛta-dhvani (the delivery that varies freely without changing the word), a distinction that lets the grammarian say precisely which acoustic differences matter to identity and which do not. The upadhi vocabulary is significant: as the one Brahman appears many through limiting conditions in the Vedantic picture, so the one word appears extended and varied through the conditions of its apprehension. Microcosm mirrors macrocosm once more.
 
 *Contract.* 4 entities · 4 axioms · 2 denials; adequacy proved in `V1_75`.
 
-*Refuted.* “The sphota is temporally divisible and takes time like the sounds.” (contradicted): The verse explicitly establishes the sphota is abhinna-kala (timeless).
+*Refuted.* “The sphoṭa is temporally divisible and takes time like the sounds.” (contradicted): The verse explicitly establishes the sphoṭa is abhinna-kala (timeless).
 
 
 ### 1.76
@@ -189,13 +189,13 @@ svabhāvabhedānnityatve hrasvadīrghaplutādiṣu |
 prākṛtasya dhvaneḥ kālaḥ śabdasyetyupacaryate || 76 ||
 :::
 
-> On the view that the word is eternal, the time of the primary sound — in short, long, prolated and the rest, according to its natural differences — is attributed figuratively to the word.
+> On the view that the word is eternal, the time of the primary sound, in short, long, prolated and the rest, according to its natural differences, is attributed figuratively to the word.
 
-*Gist.* The prakrta-dhvani half of the distinction 1.75 seeded, now with its own name.
+The prākṛta-dhvani half of the distinction 1.75 seeded, now with its own name. Vowel quantity, hrasva, dirgha, pluta, is linguistically contrastive: 'a' and 'a-drawn-out' can distinguish words, so this temporal difference cannot be waved away as free variation. Yet the eternal word itself has no duration. Bhartṛhari's solution is the figure of speech made technical: the kala belongs to the prākṛta dhvani, the primary sound whose pattern determines *which* word is manifested, and is upacaryate, transferred, predicated figuratively, of the word. Quantity is thus real and criterial, but it is a property of the manifesting pattern, not of the manifested sphoṭa. The verse shows the theory meeting its hardest phonological datum head-on: even the acoustic differences that *matter to identity* are lodged in the dhvani, with the sphoṭa borrowing them only in the loose way the moon borrows the water's trembling.
 
 *Contract.* 4 entities · 5 axioms · 2 denials; adequacy proved in `V1_76`.
 
-*Refuted.* “The eternal word itself has real short, long, and prolated forms due to natural phonetic variations.” (contradicted): Wrongly attributes temporal properties to the sphota itself.
+*Refuted.* “The eternal word itself has real short, long, and prolated forms due to natural phonetic variations.” (contradicted): Wrongly attributes temporal properties to the sphoṭa itself.
 
 
 ### 1.77
@@ -210,13 +210,13 @@ prākṛtasya dhvaneḥ kālaḥ śabdasyetyupacaryate || 76 ||
 dhvanayaḥ samupohante sphoṭātmā tairna bhidyate || 77 ||
 :::
 
-> But after the manifestation of the word, the modified sounds bring in the difference of speed of delivery; the sphota-self is not divided by them.
+> But after the manifestation of the word, the modified sounds bring in the difference of speed of delivery; the sphoṭa-self is not divided by them.
 
-*Gist.* The vaikrta half.
+The vaikṛta half. Once the word is manifested, urdhvam abhivyakteh, 'above' or after manifestation, a second class of sound-properties comes into play: the vaikṛta dhvanayah, modified sounds, which carry vṛtti-bheda, the differences of delivery (the tradition enumerates drutā, madhyamā, vilambitā, fast, medium, slow). These affect nothing criterial: the same word said quickly is the same word. The division of labour completed across 1.76-77 is elegant and does real explanatory work. Contrastive sound-properties (quantity, the phonemic pattern) belong to the prākṛta dhvani and determine which sphoṭa is manifested; non-contrastive ones (tempo, voice) belong to the vaikṛta dhvani and determine only how long the manifesting takes. The sphoṭa itself, tair na bhidyate, is divided by neither. A modern reader will recognize the shape of the phonemic/phonetic distinction, discovered here from the manifestation side.
 
 *Contract.* 6 entities · 4 axioms · 1 denials; adequacy proved in `V1_77`.
 
-*Refuted.* “The modified sounds divide or differentiate the sphota into distinct essences.” (contradicted): The commentary explicitly denies this: the sphota is not divided by the vaikrta dhvani.
+*Refuted.* “The modified sounds divide or differentiate the sphoṭa into distinct essences.” (contradicted): The commentary explicitly denies this: the sphoṭa is not divided by the vaikṛta dhvani.
 
 
 ### 1.78
@@ -233,7 +233,7 @@ kriyate dhvanibhirvādāstrayo'bhivyaktivādinām || 78 ||
 
 > The sounds effect a preparation of the sense-organ alone, or of the word alone, or of both: these are the three positions among the proponents of manifestation.
 
-*Gist.* Having committed to abhivyakti — the word is manifested, not produced — Bhartrhari must say what the sounds actually do, and he opens with a clean doxography.
+Having committed to abhivyakti, the word is manifested, not produced, Bhartṛhari must say what the sounds actually do, and he opens with a clean doxography. Manifestation requires that something be made ready: either the dhvanis prepare the *ear* (as collyrium prepares the eye, sharpening the receiver until the ever-present word registers), or they prepare the *word* (bringing the object itself into manifestable condition, as grinding releases fragrance), or both at once (as light readies both the eye it strikes and the pot it falls on). The three options exhaust the logical space once manifestation is analyzed as a relation between a receiver and an object, and the next two verses supply the perceptual precedents for each. The care taken here is anti-dogmatic: the sphoṭa doctrine is not hostage to one mechanism, and Bhartṛhari characteristically secures the doctrine by showing every available mechanism leads to it.
 
 *Contract.* 6 entities · 5 axioms · 1 denials; adequacy proved in `V1_78`.
 
@@ -254,7 +254,7 @@ viṣayasya tu saṃskārastadgandhapratipattaye || 79 ||
 
 > There is preparation of the sense-organ alone by concentration, collyrium and the like; but preparation of the object for the apprehension of its smell.
 
-*Gist.* Precedents for the first two positions, drawn from accepted perceptual lore.
+Precedents for the first two positions, drawn from accepted perceptual lore. That the receiver alone can be prepared is shown by samadhana and anjana, the yogin's concentration and the doctor's eye-salve improve the eye while leaving the object untouched. That the object alone can be prepared is shown by scent: crushing sandalwood readies the wood's own gandha for apprehension while doing nothing to the nose. Both patterns are familiar, so neither saṃskāra-model is ad hoc when applied to sound and word. The verse's method deserves notice: the manifestation-theorist is assembling an empirical taxonomy of how hidden things come to cognition, exactly as a naturalist would, and the word is being placed within a general theory of manifestation rather than treated as a unique mystery.
 
 *Contract.* 5 entities · 4 axioms · 2 denials; adequacy proved in `V1_79`.
 
@@ -273,16 +273,16 @@ cakṣuṣaḥ prāpyakāritve tejasā tu dvayorapi |
 viṣayendriyayoriṣṭaḥ saṃskāraḥ sa kramo dhvaneḥ || 80 ||
 :::
 
-> If the eye acts by reaching its object, then by light the preparation of both — object and organ — is accepted; that is the pattern for sound.
+> If the eye acts by reaching its object, then by light the preparation of both, object and organ, is accepted; that is the pattern for sound.
 
-*Gist.* The precedent for the third position, and the one the tradition tends to prefer for the word.
+The precedent for the third position, and the one the tradition tends to prefer for the word. On the prapyakaritva theory of vision, the sense reaches out to its object, a live doctrine among Naiyayikas and others, light plays a double role, readying the eye that operates by it and bathing the object that becomes visible in it. Sa kramo dhvaneh: that, says the verse, is the sounds' way, they condition the hearer's faculty and bring the word to manifestable condition at once. The double model fits the phenomenology of 1.84 (repetition ripens the hearer's grasp: receiver-side) and the criterial role of the prākṛta pattern (the sounds determine which word appears: object-side), which is presumably why it stands last, in the position of the favoured view. Bhartṛhari still does not legislate; the argument continues into 1.81 with the question of whether the dhvani is separately perceived at all.
 
 *Contract.* 9 entities · 5 axioms · 1 denials; adequacy proved in `V1_80`.
 
 *Refuted.* “Sound operates only to manifest the word directly; it does not condition the hearer's faculty at all.” (unlicensed): The verse establishes that sound works like light: conditioning both receiver and object.
 
 ::: {.contested}
-*Contested.* whether 1.80 endorses the both-samskara view or merely completes the doxography is not marked in the karika; its final position and the analogy's aptness suggest quiet preference, and we read it so
+*Contested.* whether 1.80 endorses the both-saṃskāra view or merely completes the doxography is not marked in the karika; its final position and the analogy's aptness suggest quiet preference, and we read it so
 :::
 
 
@@ -298,9 +298,9 @@ sphoṭarūpāvibhāgena dhvanergrahaṇamiṣyate |
 kaiściddhvanirasaṃvedyaḥ svatantro'nyaiḥ prakalpitaḥ || 81 ||
 :::
 
-> By some, the apprehension of the sound is accepted as undivided from the form of the sphota; by others the sound is construed as never itself sensed, or as independent.
+> By some, the apprehension of the sound is accepted as undivided from the form of the sphoṭa; by others the sound is construed as never itself sensed, or as independent.
 
-*Gist.* The question beneath the mechanism: what, in hearing, is actually *heard*?
+The question beneath the mechanism: what, in hearing, is actually *heard*? Three answers. On the first, the dhvani is grasped only aviBhagena, in non-separation from the sphoṭa, we never hear bare sound, only word-clothed-in-sound, the two arriving as one phenomenal package (as one sees the lamp's light only in seeing the lit room). On the second, the dhvani is asamvedya, never itself an object of awareness at all, a pure vehicle, doing its manifesting work entirely offstage, inferred by theorists but absent from experience. On the third it is svatantra, independent, separately audible, as when one hears a voice too distant to make out words: sound without sphoṭa, so sound in its own right. The phenomenological dispute matters because it fixes what the 'transfer' of 1.49 and 1.76 amounts to: only on the first and third views is there something *in experience* whose properties could be misattributed to the word. Bhartṛhari again reports without sentencing; his own account of learning and error (1.85-86) will draw on the resources of all three.
 
 *Contract.* 3 entities · 3 axioms · 0 denials; adequacy proved in `V1_81`.
 
@@ -319,9 +319,9 @@ yathānuvākaḥ śloko vā soḍhatvamupagacchati |
 āvṛttyā na tu sa granthaḥ pratyāvṛtti nirūpyate || 82 ||
 :::
 
-> As a Vedic lesson or a verse comes to be mastered through repetition, and yet that text is not discerned anew at each repetition —
+> As a Vedic lesson or a verse comes to be mastered through repetition, and yet that text is not discerned anew at each repetition,
 
-*Gist.* First half of an argument-pair completed by 1.83-84, introducing the phenomenon that most embarrasses part-assembly theories: learning by repetition.
+First half of an argument-pair completed by 1.83-84, introducing the phenomenon that most embarrasses part-assembly theories: learning by repetition. A student masters an anuvaka by reciting it again and again; sodhatva, the being-mastered, dawns gradually across repetitions. Yet the text itself, sa granthah, is not a different object at each pass, na pratyavrtti nirupyate: the tenth recitation does not present a tenth text, but the same text, better possessed. So repetition improves the *grasp* while its object stays fixed, which is exactly the structure manifestation-theory attributes to hearing a word: the sounds' repeated strokes ripen apprehension of one unchanging sphoṭa. The example is chosen from the tradition's daily pedagogy, where every reader has felt the process from inside.
 
 *Contract.* 7 entities · 4 axioms · 1 denials; adequacy proved in `V1_82`.
 
@@ -340,9 +340,9 @@ pratyayairanupākhyeyairgrahaṇānuguṇaistathā |
 dhvaniprakāśite śabde svarūpamavadhāryate || 83 ||
 :::
 
-> — so, by cognitions that cannot be separately reported, yet are conducive to the final grasp, the word's own form is ascertained once the sound has illuminated it.
+> , so, by cognitions that cannot be separately reported, yet are conducive to the final grasp, the word's own form is ascertained once the sound has illuminated it.
 
-*Gist.* The apodosis.
+The apodosis. The intermediate cognitions in learning, each pass through the verse, each stroke of sound, are anupakhyeya, not separately reportable: the student cannot say what exactly the seventh recitation added, and the hearer of a word cannot report the deliverance of each phoneme as it lands. But they are grahana-anuguna, conducive to the grasp; their work is real though silent, and it terminates in avadharana, the settled ascertainment of the word's svarupa. This gives the sphoṭa theory its account of process without surrendering the unity of the object: the *ripening* is gradual and many-staged, the *ripened grasp* seizes one undivided thing. The phenomenology is precise, comprehension does in fact arrive as an all-at-once click after a subpersonal accumulation, not as a felt summation of parts, and the next verse states the mechanism in its classical form.
 
 *Contract.* 6 entities · 4 axioms · 1 denials; adequacy proved in `V1_83`.
 
@@ -363,11 +363,11 @@ nādairāhitabījāyāmantyena dhvaninā saha |
 
 > The seed having been sown by the sounds, the word is ascertained in a cognition brought to ripeness by repetition, together with the final sound.
 
-*Gist.* The classical statement of how the partless word is grasped through serial sounds — the verse later doxographers quote for the sphota theory's answer to its standing objection.
+The classical statement of how the partless word is grasped through serial sounds, the verse later doxographers quote for the sphoṭa theory's answer to its standing objection. Each dhvani deposits a bīja, a seed or trace, in the hearer's buddhi; the sequence is a sowing, avrtta-paripaka, ripening through the repeated strokes; and antyena dhvanina saha, together with the last sound, the whole word is ascertained at once. The final phoneme is not a final part completing a sum, it is the occasion on which a cognition prepared by all the traces seizes the entire sphoṭa. The seed-and-ripening vocabulary does deliberate double duty: it is agricultural, and it is the yogacara-adjacent idiom of traces in awareness, and both registers say the same thing, what accumulates is a readiness in the cognizer, not an assembly of the object. The Mimamsaka has a rival account (the last phoneme aided by memory-traces of the preceding ones conveys the meaning) that is formally parallel while dispensing with the sphoṭa; the argument between the two schools turns on whether the *object* of the final cognition is a mere phoneme-series remembered, or a unity over and above it, and 1.85 gives Bhartṛhari's phenomenological evidence for the latter.
 
 *Contract.* 4 entities · 6 axioms · 1 denials; adequacy proved in `V1_84`.
 
-*Refuted.* “The word-meaning is conveyed by the last phoneme working together with memory-traces of preceding phonemes to form a connected series of meanings.” (contradicted): This is the Mimamsa rival account that the verse and commentary explicitly contrast with sphota doctrine.
+*Refuted.* “The word-meaning is conveyed by the last phoneme working together with memory-traces of preceding phonemes to form a connected series of meanings.” (contradicted): This is the Mimamsa rival account that the verse and commentary explicitly contrast with sphoṭa doctrine.
 
 
 ### 1.85
@@ -382,16 +382,16 @@ asataścāntarāle yāñcchandānastīti manyate |
 pratipatturaśaktiḥ sā grahaṇopāya eva saḥ || 85 ||
 :::
 
-> And when one thinks that the parts of the word exist in the interval, and that what is non-existent exists — that is the apprehender's incapacity; that, in fact, is the very means of the grasping.
+> And when one thinks that the parts of the word exist in the interval, and that what is non-existent exists, that is the apprehender's incapacity; that, in fact, is the very means of the grasping.
 
-*Gist.* The theory's boldest inversion: the appearance of phonemic parts is itself diagnosed as error — but productive error.
+The theory's boldest inversion: the appearance of phonemic parts is itself diagnosed as error, but productive error. In the antarala, the interval before the final ascertainment, the hearer takes part-cognitions to be cognitions of real parts of the word; this, says the verse, is asaktih, an incapacity of the apprehender, taking the non-existent as existent. And then the turn: sa grahanopaya eva sah, that very incapacity is the means of grasping. The mistake is not an obstacle the theory must explain away; it is the mechanism, the ladder the mind climbs. One cannot seize the undivided word directly, so cognition proceeds through a staged fiction of parts that ripens (1.84) into the true unitary grasp, whereupon the fiction has discharged its office. The structure, truth reached only through a scaffolding of error that the attained truth then retires, recurs at the grandest scale in this philosophy: the world's diversity is to Brahman what the phonemes are to the word. That parallel is not decoration; 1.86 immediately generalizes it.
 
 *Contract.* 6 entities · 4 axioms · 1 denials; adequacy proved in `V1_85`.
 
 *Refuted.* “The apprehender's incapacity to perceive parts directly is an obstacle to grasping the word.” (contradicted): Treats incapacity as a defect or barrier rather than as the productive mechanism itself.
 
 ::: {.contested}
-*Contested.* the double sah in grahanopaya eva sah is emphatic but syntactically loose; some construe 'that incapacity is precisely his means of grasping', others make the error-cognition itself the subject — the doctrine is unaffected but the sentence resists tidy parsing
+*Contested.* the double sah in grahanopaya eva sah is emphatic but syntactically loose; some construe 'that incapacity is precisely his means of grasping', others make the error-cognition itself the subject, the doctrine is unaffected but the sentence resists tidy parsing
 :::
 
 
@@ -409,7 +409,7 @@ kramopasṛṣṭarūpā vāg jñānaṃ jñeyavyapāśrayam || 86 ||
 
 > The imitation of differentiation by cognition, and the disturbance of speech, are constant; speech has a form contaminated by sequence, and cognition rests upon its objects.
 
-*Gist.* The generalization: the productive error of 1.85 is not an occasional mishap but the permanent condition of mind and speech.
+The generalization: the productive error of 1.85 is not an occasional mishap but the permanent condition of mind and speech. Jñāna imitates bheda, cognition, whose nature is undivided illumination, perpetually mimics the differentiation of what it grasps; vak suffers upaplava, disturbance, dhruvam, constantly, speech never appears except krama-upasrsta, contaminated by sequence. The two clauses are chiastic: cognition, undivided, borrows division from its objects; speech, whose essence (the sphoṭa, ultimately the śabda-tattva of 1.1) is undivided, borrows division from its manifesting medium. Neither ever presents its true face in ordinary transaction. This is the kanda's epistemological low point, deliberately placed, if distortion is constant, how is truth ever touched?, and the answer has already been given in miniature: as in 1.85, the distortion is the upaya. The doctrine that ordinary cognition is irreducibly word-involved (and so sequence-involved, and so distortion-involved) returns in force at 1.123ff., where it becomes the master-thesis of the kanda.
 
 *Contract.* 8 entities · 6 axioms · 2 denials; adequacy proved in `V1_86`.
 
@@ -430,14 +430,14 @@ saṃkhyāntarāṇāṃ bhede'pi tathā śabdāntaraśrutiḥ || 87 ||
 
 > As the grasp of the first number is a means to the cognition of further numbers even though they differ, so is the hearing of one word a means to the cognition of another.
 
-*Gist.* An analogy from arithmetic for a fact of linguistic learning: counting to one is how one learns to count at all.
+An analogy from arithmetic for a fact of linguistic learning: counting to one is how one learns to count at all. The grasp of adya-samkhya, the first number, is the upaya through which the numbers beyond it, genuinely different items, become cognizable; no one grasps 'seven' who has not first mastered the schema that 'one' inaugurates. So too sabdantara-śruti: hearing one word opens cognitive access to other words not yet heard. The point serves the manifestation theory at a specific joint. If words were learned one-by-one as brute associations, each would be an independent conquest; in fact linguistic competence is systematic, mastering some words confers a capacity for the rest, as mastering early numbers confers the number-series. A theory on which all words are variously-manifested configurations of one underlying word-nature (and ultimately of the one śabda-tattva) predicts this systematicity; a theory of atomistic pairings does not.
 
 *Contract.* 7 entities · 4 axioms · 0 denials; adequacy proved in `V1_87`.
 
 *Refuted.* “The means by which one grasps numbers operates only in arithmetic, not in linguistic learning.” (unlicensed): Contradicts the verse's explicit parallelism.
 
 ::: {.contested}
-*Contested.* the verse is compressed and its target unstated; we read it as an argument from systematicity of acquisition, but it can also be construed more narrowly, as explaining how the phoneme-schema learned in one word transfers to others — the arithmetic simile supports either
+*Contested.* the verse is compressed and its target unstated; we read it as an argument from systematicity of acquisition, but it can also be construed more narrowly, as explaining how the phoneme-schema learned in one word transfers to others, the arithmetic simile supports either
 :::
 
 
@@ -453,13 +453,13 @@ rdhnyaṃapratyekaṃ vyañjakā bhinnā varṇavākyapadeṣu ye |
 teṣāmatyantabhede'pi saṅkīrṇā iva śaktayaḥ || 88 ||
 :::
 
-> The manifestors, distinct for each among phoneme, word and sentence — even though these differ absolutely, their powers appear as though commingled.
+> The manifestors, distinct for each among phoneme, word and sentence, even though these differ absolutely, their powers appear as though commingled.
 
-*Gist.* A precision about levels.
+A precision about levels. The theory recognizes sphoṭas at three grains, varṇa, pada, vākya, and each has its own vyanjakas, its own manifesting sounds; and the manifested items are atyanta-bhinna, absolutely distinct: the sentence-sphoṭa is not a sum of word-sphoṭas any more than the word was a sum of phonemes (1.73). Yet in the single stream of speech these manifesting powers appear sankirna iva, as if commingled, one and the same stretch of sound seems simultaneously to be manifesting phonemes, words and the sentence, and the hearer cannot assign portions of the acoustic flow to levels. The iva is again load-bearing: the commingling is apparent, an artifact of one medium serving three manifestations at once. The verse matters structurally because it prevents a regress-objection, 'if the word is partless, what are the phoneme-sphoṭas doing in it?' Answer: nothing *in* it; they are distinct manifestables sharing manifestors, and hierarchy among sphoṭas is a hierarchy of alternative unities, not of containment. The second kanda's argument that the sentence is the true unit stands on exactly this ground.
 
 *Contract.* 5 entities · 10 axioms · 2 denials; adequacy proved in `V1_88`.
 
-*Refuted.* “The word-sphota is composed of constituent phoneme-sphotas arranged in sequence.” (contradicted): Treats the hierarchy among sphotas as mereological composition, which the commentary explicitly denies: hierarchy among sphotas is a hierarchy of alternative unities, not of containment.
+*Refuted.* “The word-sphoṭa is composed of constituent phoneme-sphoṭas arranged in sequence.” (contradicted): Treats the hierarchy among sphoṭas as mereological composition, which the commentary explicitly denies: hierarchy among sphoṭas is a hierarchy of alternative unities, not of containment.
 
 ::: {.contested}
 *Contested.* the wisdomlib transcription prefixes this karika's first line with the sequence 'rdhnyam a-', which yields no construable Sanskrit and is evidently a transcription artifact; we translate the evident text (pratyekam vyanjaka bhinnah...) and note the corruption rather than silently repairing the source
@@ -478,13 +478,13 @@ yathaiva darśanaiḥ pūrvairdūrāt santamase'pi vā |
 anyathākṛtya viṣayamanyathaivādhyavasyati || 89 ||
 :::
 
-> Just as, by its earlier perceivings — from afar, or in deep gloom — sight makes the object other than it is and determines it quite otherwise,
+> Just as, by its earlier perceivings, from afar, or in deep gloom, sight makes the object other than it is and determines it quite otherwise,
 
-*Gist.* Protasis of a pair completed in 1.90, supplying the perceptual model for staged misapprehension.
+Protasis of a pair completed in 1.90, supplying the perceptual model for staged misapprehension. A figure approaches from a distance or looms in darkness: sight does not withhold judgement until conditions improve, it delivers a series of determinate but wrong verdicts (a post, then a man, then finally the traveller it is), each earlier darśana anyathakrtya, making the object otherwise, and adhyavasyati, determining it with full assertoric confidence. The progression to truth passes through committed error, not through cautious suspension. The example is the stock-in-trade of Indian error-theory (the post/man, the shell/silver), but its use here is distinctive: where the epistemologists deploy it to classify illusion, Bhartṛhari deploys it to show that serial correction is a *normal mode of successful cognition*, the endpoint is veridical, and the errors were its road. The application to sentence-hearing follows immediately.
 
 *Contract.* 2 entities · 3 axioms · 1 denials; adequacy proved in `V1_89`.
 
-*Refuted.* “Sight, from a distance or in deep gloom, provisionally determines the object while reserving final judgment until closer inspection.” (contradicted): The rendering suggests epistemic caution — withholding confident judgment until conditions improve.
+*Refuted.* “Sight, from a distance or in deep gloom, provisionally determines the object while reserving final judgment until closer inspection.” (contradicted): The rendering suggests epistemic caution, withholding confident judgment until conditions improve.
 
 
 ### 1.90
@@ -499,9 +499,9 @@ vyajyamāne tathā vākye vākyābhivyaktihetubhiḥ |
 bhāgāvagraharūpeṇa pūrvaṃ buddhiḥ pravartate || 90 ||
 :::
 
-> — so, while the sentence is being manifested by the causes of its manifestation, cognition first proceeds in the form of a seizing of parts.
+> , so, while the sentence is being manifested by the causes of its manifestation, cognition first proceeds in the form of a seizing of parts.
 
-*Gist.* The apodosis, and the sentence-level restatement of 1.85.
+The apodosis, and the sentence-level restatement of 1.85. As the sounds do their manifesting work, the hearer's buddhi runs ahead in bhaga-avagraha-rūpa, the form of part-seizure, it takes words, phrases, apparent constituents, as so many determinate grasps, exactly as the distant-viewer takes the post and then the man. These part-graspings are the anyatha-determinations of 1.89: committed, useful, and destined to be superseded when the vākya-sphoṭa is seized whole. The two verses together complete the theory's phenomenology of comprehension at sentence scale: hearing is a controlled hallucination of structure that converges on an undivided meaning-whole, the intermediate 'words' having the same standing in the final grasp that the intermediate 'man at a distance' has once the friend is recognized, scaffolding, retrospectively cancelled but prospectively indispensable. The second kanda will inherit this result as its starting point.
 
 *Contract.* 5 entities · 3 axioms · 1 denials; adequacy proved in `V1_90`.
 
@@ -522,7 +522,7 @@ tathaiva pratipattṝṇāṃ niyato buddhiṣu kramaḥ || 91 ||
 
 > As there is a fixed order of succession in the transformation of milk or of a seed, so is the sequence in the cognitions of comprehenders fixed.
 
-*Gist.* A determinism about the stages.
+A determinism about the stages. Milk does not become cheese except through curd; the seed reaches ear-of-grain through sprout and stalk, aniyama excluded, natural transformation has anupurvi-niyama, fixed serial order. So too the hearer's cognitions: the part-seizures of 1.90 are not a random walk that happens to end at the whole but a niyata krama, a law-governed ripening (the paripaka of 1.84 now given its natural-kind analogues). The point defends the theory against a charge of arbitrariness, if the intermediate graspings are errors, why do all competent hearers commit the *same* ones, in the same order, and converge on the same whole? Because manifestation is a causal process with the same fixity as any other maturation: same sounds, same prepared faculty, same staged path. Error with lawlike trajectory is process, not accident. The organic imagery also quietly reasserts the egg of 1.51: language-understanding belongs with growth, not with construction.
 
 *Contract.* 8 entities · 4 axioms · 2 denials; adequacy proved in `V1_91`.
 
@@ -543,7 +543,7 @@ nirbhāgeṣvabhyupāyo vā bhāgabhedaprakalpanam || 92 ||
 
 > Among those very units, if they have parts, the difference of form arises from the sequence of the sound; if they are partless, then the construing of a difference of parts is a device.
 
-*Gist.* A dilemma posed and both horns absorbed.
+A dilemma posed and both horns absorbed. Take the units, phoneme, word, sentence (tesv eva, those of 1.88). Either they have parts or they do not. If bhagavat, then their apparent internal form-differences (the 'g' seeming to precede the 'au' in gauh) arise dhvaneh kramat, from the sound's sequence, the ordering belongs to the manifesting stream, projected onto the unit (1.49, 1.76). If nirbhaga, partless, then bhaga-bheda-prakalpanam, the very positing of parts, is abhyupaya, a device, the analyst's and the hearer's working fiction (1.85's upaya, now named as method). Either way, no real internal sequence belongs to the linguistic unit itself: the first horn locates sequence in the medium, the second concedes it only as fabrication. This is the argumentative pincer that lets Bhartṛhari be serene about the part-whole antinomy of 1.72-74, the dispute over which decomposition is 'real' loses its object once both decompositions are seen to be projections, differently sourced, onto undivided manifestables.
 
 *Contract.* 6 entities · 4 axioms · 1 denials; adequacy proved in `V1_92`.
 
@@ -562,16 +562,16 @@ anekavyaktyabhivyaṅgyā jātiḥ sphoṭa iti smṛtā |
 kaiścid vyaktaya evāsyā dhvanitvena prakalpitāḥ || 93 ||
 :::
 
-> The sphota is held by tradition to be the universal, manifested by its several individuals; by some, its individuals are construed as the sounds.
+> The sphoṭa is held by tradition to be the universal, manifested by its several individuals; by some, its individuals are construed as the sounds.
 
-*Gist.* A rival systematization from within the school, reported with its refinement.
+A rival systematization from within the school, reported with its refinement. On this view the sphoṭa is a jati, a universal: gauh-said-by-Devadatta and gauh-said-by-Yajnadatta are vyaktis, individual instances, and the word itself is the type they instantiate, anekavyakti-abhivyangya, manifested by its many particulars, as cowhood is by cows. The refinement (kaiscit): the vyaktis in question just *are* the dhvanis, so that the sound-word relation becomes a special case of the particular-universal relation, and manifestation of the sphoṭa by sounds becomes the familiar manifestation of a jati by its instances. The economy is attractive, one metaphysical relation instead of two, and this jati-sphoṭa reading became a standing position in the later school (with vyakti-sphoṭa views opposed to it). Bhartṛhari records it as smrta, received doctrine, without making it his own statement; his own emphasis throughout has been on the sphoṭa as *undivided meaning-bearer*, a functional characterization neutral between type-theoretic construals. The next two verses take up what the jati-reading must answer: how eternal universals can have transient, law-governed manifestation.
 
 *Contract.* 4 entities · 3 axioms · 1 denials; adequacy proved in `V1_93`.
 
-*Refuted.* “The sphota is an individual sound instance, not a universal type.” (unlicensed): Confuses the sphota (universal jati) with vyaktis (individual instances).
+*Refuted.* “The sphoṭa is an individual sound instance, not a universal type.” (unlicensed): Confuses the sphoṭa (universal jati) with vyaktis (individual instances).
 
 ::: {.contested}
-*Contested.* whether 1.93 reports a view Bhartrhari endorses, tolerates, or merely catalogues is a classical crux; smrta suggests received authority, but the kaiscit of the second line marks at least the refinement as partisan, and we read the whole as doxography
+*Contested.* whether 1.93 reports a view Bhartṛhari endorses, tolerates, or merely catalogues is a classical crux; smrta suggests received authority, but the kaiscit of the second line marks at least the refinement as partisan, and we read the whole as doxography
 :::
 
 
@@ -587,9 +587,9 @@ avikārasya śabdasya nimittairvikṛto dhvaniḥ |
 upalabdhau nimittatvamupayāti prakāśavat || 94 ||
 :::
 
-> Of the unchanging word, the sound — modified by causes — comes to be the condition for apprehension, like a light.
+> Of the unchanging word, the sound, modified by causes, comes to be the condition for apprehension, like a light.
 
-*Gist.* The manifestation relation restated with its cleanest analogy, in answer to the standing worry: how can the changing reveal the changeless without infecting it?
+The manifestation relation restated with its cleanest analogy, in answer to the standing worry: how can the changing reveal the changeless without infecting it? The dhvani is vikrta nimittaih, modified by its causes: the speaker's organs, effort, pace, while the śabda is avikara, unchanging. The sound's role is nimittatvam upalabdhau, being the condition of apprehension: prakasavat, like a lamp. A lamp may be bright or dim, steady or guttering; these vicissitudes affect how well the pot is seen, perhaps whether it is seen, they do not put flicker into the pot. So the sound's modifications condition the apprehending (speed, clarity, audibility) without transferring change to the word apprehended; where transfer *appears* to occur, 1.49 and 1.76 have already diagnosed it as figurative. The lamp analogy also silently answers 1.78's mechanism question in favour of the both-sides model of 1.80: light conditions eye and object at once. That the light-comparison recurs at every load-bearing joint of the kanda (1.46, 1.55, here) reflects its unique fitness: illumination is the one ordinary relation in which a mediator reveals without constituting.
 
 *Contract.* 5 entities · 4 axioms · 2 denials; adequacy proved in `V1_94`.
 
@@ -610,11 +610,11 @@ na cānityeṣvabhivyaktirniyamena vyavasthitā |
 
 > Nor is manifestation settled by rule only for non-eternal things; manifestation of the eternal universals by their substrates is likewise accepted.
 
-*Gist.* An objection dissolved by precedent.
+An objection dissolved by precedent. The objector holds that abhivyakti is at home only among anitya things, the pot manifested by the lamp is itself a transient item, and manifestation-relations, being causal and dated, seem to belong to the world of the produced; how can the *eternal* be manifested without being dragged into time? The reply is that the objector's own ontology already contains the counterexample: universals, nitya by everyone's admission, are manifested (vyaktir isyate) by their asrayas, the substrates in which they inhere, cowhood becomes apprehensible exactly where a cow stands, though cowhood neither arrives nor departs. Dated, located manifestation of the undated is thus a relation the realist schools (Nyaya-Vaisesika above all) are committed to independently. The sphoṭa theorist claims nothing stranger: sounds stand to the eternal word as the cow stands to cowhood, occasioning its apprehension here and now without lending it their transience. The argument is dialectically tidy: it does not prove the word eternal, it removes the alleged incoherence in saying so.
 
 *Contract.* 7 entities · 4 axioms · 2 denials; adequacy proved in `V1_95`.
 
-*Refuted.* “To manifest the eternal word (sphota) through sounds would drag it into time and make it transient.” (contradicted): Asserts that manifestation of eternal things necessarily makes them temporal.
+*Refuted.* “To manifest the eternal word (sphoṭa) through sounds would drag it into time and make it transient.” (contradicted): Asserts that manifestation of eternal things necessarily makes them temporal.
 
 
 ### 1.96
@@ -631,14 +631,14 @@ deśabhedavikalpe'pi na bhedo dhvaniśabdayoḥ || 96 ||
 
 > Connection with place and the rest is observed even for embodied things; even under the alternative of difference of place, there is no difference between sound and word.
 
-*Gist.* The companion objection: manifestation seems to localize the word — the utterance happens *here*, so is the eternal word here rather than there?
+The companion objection: manifestation seems to localize the word, the utterance happens *here*, so is the eternal word here rather than there? The first line defuses the assumption that location-talk tracks real division: even kayavat things, bodies, stand in place-connections that multiply without multiplying them (one body, many successive places; one fire, many hearths, the traditional illustrations run this way). The second line applies it: under desa-bheda-vikalpa, the alternative that utterances occur in different places, there is still no bheda between dhvani and śabda beyond what the theory already grants, the sounds are many and located; the word they manifest is not parcelled among the locations. As with time in 1.76, so with place: spatial predicates attach to the word upacarena, by transfer from its manifestors. The pair 1.95-96 thus closes the classical trio of worries, change, time, place, and with them the manifestation doctrine's defensive perimeter is complete.
 
 *Contract.* 4 entities · 3 axioms · 2 denials; adequacy proved in `V1_96`.
 
 *Refuted.* “The eternal word becomes parcelled and differentiated as utterances occur in different places.” (contradicted): Violates the explicit assertion that despite place-difference in sounds (desa-bheda in dhvani), there is no difference in the word itself.
 
 ::: {.contested}
-*Contested.* the illustrative force of kayavatam api is compressed; we take it as 'even bodies multiply place-connections without internal division', but some construe it as conceding location to embodied things precisely to contrast the word's non-location — the verse's conclusion is the same on either construal
+*Contested.* the illustrative force of kayavatam api is compressed; we take it as 'even bodies multiply place-connections without internal division', but some construe it as conceding location to embodied things precisely to contrast the word's non-location, the verse's conclusion is the same on either construal
 :::
 
 
@@ -654,13 +654,13 @@ grahaṇagrāhyayoḥ siddhā yogyatā niyatā yathā |
 vyaṅgyavyañjakabhāvena tathaiva sphoṭanādayoḥ || 97 ||
 :::
 
-> As the fitness between an apprehension and its object is established and fixed, just so is that between sphota and sounds, in the relation of manifested and manifestor.
+> As the fitness between an apprehension and its object is established and fixed, just so is that between sphoṭa and sounds, in the relation of manifested and manifestor.
 
-*Gist.* The relation itself, finally named as primitive.
+The relation itself, finally named as primitive. Why do *these* sounds manifest *this* word? The answer offered is yogyatā, fitness, the same fixed, unexplained aptitude that pairs sight with colour and never with sound. No one asks in virtue of what the eye is fit for the visible; that fitness is siddha and niyata, established and fixed, a bedrock of the cognitive order. The vyanya-vyanjaka relation between word and its sounds has, Bhartṛhari claims, the same standing: constitutive, regular, not further derivable. The move is philosophically self-aware, every theory must stop somewhere, and stopping at a fitness already admitted everywhere in epistemology is cheaper than inventing new machinery. It also quietly explains the *rule-boundness* of manifestation (only the right phoneme-pattern manifests gauh) without conceding that the word is assembled from that pattern: fit, not composition.
 
 *Contract.* 5 entities · 5 axioms · 1 denials; adequacy proved in `V1_97`.
 
-*Refuted.* “The word is assembled or composed from the right combination of phonemes according to a structural principle.” (contradicted): The commentary explicitly rejects this: 'without conceding that the word is assembled from that pattern: fit, not composition.' The point is that yogyatā (fitness) explains the manifestation of sphota…
+*Refuted.* “The word is assembled or composed from the right combination of phonemes according to a structural principle.” (contradicted): The commentary explicitly rejects this: 'without conceding that the word is assembled from that pattern: fit, not composition.' The point is that yogyatā (fitness) explains the manifestation of sphoṭa…
 
 
 ### 1.98
@@ -675,13 +675,13 @@ sadṛśagrahaṇānāṃ ca gandhādīnāṃ prakāśakam |
 nimittaṃ niyataṃ loke pratidravyamavasthitam || 98 ||
 :::
 
-> And in ordinary experience, the illuminating condition even of things similarly apprehended — smells and the rest — is fixed, standing distinct for each substance.
+> And in ordinary experience, the illuminating condition even of things similarly apprehended, smells and the rest, is fixed, standing distinct for each substance.
 
-*Gist.* Support for 1.97 from the economy of perception.
+Support for 1.97 from the economy of perception. Smells resemble one another; yet the nimitta that releases each, the crushing of this sandal, the burning of that resin, is niyata and pratidravyam avasthita, fixed and lodged substance by substance. Similar manifestables, dedicated manifestors: nature is full of such assignments, and no one finds them mysterious enough to demand a compositional analysis (nobody thinks the fragrance is *made of* crushings). So likewise similar words each have their own dedicated sound-patterns, and the dedication is no argument that the pattern constitutes the word. The example continues the naturalist's method of 1.79-80: the word-sound relation is being normalized, placed in a family of manifestation-relations the opponent already accepts, so that scepticism about it becomes scepticism about perception at large.
 
 *Contract.* 5 entities · 4 axioms · 1 denials; adequacy proved in `V1_98`.
 
-*Refuted.* “The manifestables themselves—smells—are the illuminating condition for similar things perceived.” (unlicensed): Confuses the manifestable (gandha, sort=manifestation) with the manifestor (nimitta, sort=power).
+*Refuted.* “The manifestables themselves, smells, are the illuminating condition for similar things perceived.” (unlicensed): Confuses the manifestable (gandha, sort=manifestation) with the manifestor (nimitta, sort=power).
 
 
 ### 1.99
@@ -696,9 +696,9 @@ prakāśakānāṃ bhedāṃśca prakāśyo'rtho'nuvartate |
 tailodakādibhede tat pratyakṣaṃ pratibimbake || 99 ||
 :::
 
-> And the illuminated object conforms to the differences of its illuminators — that is directly seen in a reflection when the oil, water and the like differ.
+> And the illuminated object conforms to the differences of its illuminators, that is directly seen in a reflection when the oil, water and the like differ.
 
-*Gist.* The transfer-doctrine of 1.49 receives its everyday proof.
+The transfer-doctrine of 1.49 receives its everyday proof. One face, reflected in water, in oil, in a sword-blade: the pratibimba differs, dim, dark, elongated, as the medium differs, and the differences are patently the medium's contribution, since the face has not changed. Prakasya anuvartate prakasakanam bhedan: the revealed conforms to its revealers. Pratyaksam: this is not speculation but something seen. Applied: the word heard through a child's voice, a shout, a drawl 'conforms' likewise, its apparent duration, pitch and colour are the sounds' vicissitudes worn borrowed. The verse arms the theory with a lived, checkable case where everyone already distinguishes the thing from its medium-conditioned appearance, and 1.100 will push the same example to its limit: media can even misrepresent *size*.
 
 *Contract.* 8 entities · 5 axioms · 2 denials; adequacy proved in `V1_99`.
 
@@ -717,9 +717,9 @@ viruddhaparimāṇeṣu vajrādarśatalādiṣu |
 parvatādisarūpāṇāṃ bhāvānāṃ nāsti saṃbhavaḥ || 100 ||
 :::
 
-> In mirrors of contrary measure — a gem-facet, a blade-surface and the like — there is no possibility of entities really of like form with the mountain reflected.
+> In mirrors of contrary measure, a gem-facet, a blade-surface and the like, there is no possibility of entities really of like form with the mountain reflected.
 
-*Gist.* The reductio that secures 1.99.
+The reductio that secures 1.99. A mountain shows in the facet of a jewel. If reflections were real duplicates, entities sarupa with their originals, the facet would have to contain a mountain-sized thing, which is absurd: viruddha-parimana, the measures contradict. So a reflection is not a second entity resembling the first; it is the original *as appearing under* an alien condition, and its size-in-the-mirror is a fact about the mirroring, not about anything's real dimensions. Applied to the word: the sphoṭa 'in' a quick utterance is not a short word-duplicate, nor a long one in slow speech, there are no duplicates at all, only the one word under different manifesting conditions (1.75-77). The mirror-mountain is the strongest of the reflection-series because it makes quantitative transfer patently unreal, and duration was exactly the quantitative property whose transfer to the word (1.76) most needed the demonstration.
 
 *Contract.* 6 entities · 4 axioms · 1 denials; adequacy proved in `V1_100`.
 
@@ -740,9 +740,9 @@ vṛttikālaḥ svakālaśca nādabhedādvibhajyate || 101 ||
 
 > Therefore, for phonemes, sentences, words and the rest, whose time is undivided, the time of functioning and their own time are distinguished according to the difference of the sound.
 
-*Gist.* Tasmat — the conclusion of the whole movement since 1.75.
+Tasmat, the conclusion of the whole movement since 1.75. All linguistic units, at every grain, are abhinna-kala, temporally undivided in themselves; the felt durations belong to nāda. Hence a final clean distinction: vṛtti-kala, the time of functioning, how long the manifesting takes, a real property of the sound-process, versus sva-kala, the unit's 'own time', which exists only as the figurative shadow the vṛtti casts (the upacara of 1.76). Long and short vowels, quick and slow recitations, differ in vṛtti-kala; no sphoṭa differs from any other in sva-kala, since none has any. The verse closes the temporal dossier with the theory in equilibrium: sequence and duration fully acknowledged as data, fully assigned to the medium, the meaning-bearer standing outside time as 1.48 required. What remains for the kanda is doxography (1.102-113), the cosmological deepening (1.114-118), and the great theses on knowledge and word (1.123ff.).
 
 *Contract.* 7 entities · 5 axioms · 2 denials; adequacy proved in `V1_101`.
 
-*Refuted.* “Linguistic units (phonemes and words) themselves possess distinct time-properties that differ according to length and speed of utterance.” (unlicensed): Assigns actual duration to linguistic units, but the commentary insists linguistic units have only figurative time (sva-kala) — the real duration is a property of nada.
+*Refuted.* “Linguistic units (phonemes and words) themselves possess distinct time-properties that differ according to length and speed of utterance.” (unlicensed): Assigns actual duration to linguistic units, but the commentary insists linguistic units have only figurative time (sva-kala), the real duration is a property of nāda.
 

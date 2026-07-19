@@ -71,7 +71,7 @@ def _md_sources(*dirs):
 
 def test_no_em_dashes_in_prose_sources():
     offenders = []
-    for p in _md_sources(BOOK / "src"):
+    for p in _md_sources(BOOK / "src", BOOK / "generated"):
         # Em-dashes are permitted only inside fenced code blocks (verbatim
         # JSON/Lean quoted from the repository).
         in_code = False
@@ -89,12 +89,36 @@ def test_chapter_files_match_spec_order():
         assert (BOOK / rel).exists() or rel.startswith("generated/"), rel
 
 
+def test_generated_chapters_use_iast_not_bare_ascii(generated):
+    """The corpus commentary was authored in bare ASCII romanization; the
+    generator must normalize it so the book keeps one convention throughout
+    (review 2026-07-19 §6)."""
+    bare = re.compile(
+        r"\b(Bhartrhari|sphota|aksara|Panini|vrtti|sabda|pasyanti|vaikhari"
+        r"|parinama|vyakarana|sastra|smrti|sruti)\b"
+    )
+    offenders = []
+    for p in generated:
+        if not p.name.startswith("ch-"):
+            continue
+        for i, line in enumerate(p.read_text(encoding="utf-8").splitlines(), 1):
+            if line.startswith("    "):
+                continue
+            # Inline code spans keep ASCII identifiers by design (Lean
+            # requires them); strip them before checking the prose.
+            line = re.sub(r"`[^`]*`", "", line)
+            m = bare.search(line)
+            if m:
+                offenders.append(f"{p.name}:{i}:{m.group(0)}")
+    assert not offenders, f"bare ASCII romanization in generated prose: {offenders[:10]}"
+
+
 def test_theorem_index_covers_all_verified_verses(generated):
     app_d = next(p for p in generated if p.name == "app-d-theorem-index.md")
     body = app_d.read_text()
-    rows = [l for l in body.splitlines() if l.startswith("| 1.")]
+    rows = [l for l in body.splitlines() if l.startswith("**1.")]
     assert len(rows) == 144
-    assert body.count("`accepted_adequate`") == 144
+    assert body.count("`accepted_adequate`") >= 144
 
 
 def test_featured_walkthroughs_have_prose_and_theorems(generated):

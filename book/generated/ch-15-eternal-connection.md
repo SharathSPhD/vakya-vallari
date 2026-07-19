@@ -22,20 +22,20 @@ This verse fixes the eternality of the word-meaning relation. The interesting fo
 
 **Axioms, each with its verbatim license.**
 
-- predication `nityah(sambandha)` — “That the sabda-artha-sambandha is eternal”
-- predication `transmitted(sambandha)` — “The nityatva thesis, stated as inherited rather than argued”
-- predication `parampara_siddhah(nityatva)` — “The nityatva thesis, stated as inherited rather than argued”
-- relation `bhavya(nityatva → apaurusheya)` — “An eternal relation secures an authorless Veda”
-- relation `samaya_bhavya_krita(samaya → apaurusheya)` — “a conventional relation has an author and a beginning, and a Veda whose words mean by convention is a Veda someone composed”
+- predication `nityah(sambandha)`: “That the śabda-artha-sambandha is eternal”
+- predication `transmitted(sambandha)`: “The nityatva thesis, stated as inherited rather than argued”
+- predication `parampara_siddhah(nityatva)`: “The nityatva thesis, stated as inherited rather than argued”
+- relation `bhavya(nityatva → apaurusheya)`: “An eternal relation secures an authorless Veda”
+- relation `samaya_bhavya_krita(samaya → apaurusheya)`: “a conventional relation has an author and a beginning, and a Veda whose words mean by convention is a Veda someone composed”
 
 **Denials.**
 
-- `samaya(sambandha)` — “hold against the Naiyayikas, for whom the relation is samaya”
-- `krita(sambandha)` — “the bond between a word and what it means is not made”
+- `samaya(sambandha)`: “hold against the Naiyayikas, for whom the relation is samaya”
+- `krita(sambandha)`: “the bond between a word and what it means is not made”
 
 **Rejected readings and their compiled fates.**
 
-- “The relation between words and their meanings is established by convention or agreement.” → **contradicted**. Directly asserts sambandha is samaya, which the commentary explicitly identifies as the Naiyayika position. This contradicts both the verse's claim of nityatva and Bhartrhari's position. Conventional relations have authors and beginnings, undermining Vedic authorilessness.
+- “The relation between words and their meanings is established by convention or agreement.” → **contradicted**. Directly asserts sambandha is samaya, which the commentary explicitly identifies as the Naiyayika position. This contradicts both the verse's claim of nityatva and Bhartṛhari's position. Conventional relations have authors and beginnings, undermining Vedic authorilessness.
 - “The word-meaning relations were established by the great seers as an authoritative innovation.” → **contradicted**. Claims sambandha is krita (made/authored), which the commentary explicitly denies: 'the bond between a word and what it means is not made.' This contradicts the core doctrine that the relations are eternal and uncreated.
 
 **Theorems in `V1_23.lean`.** `accepted_adequate`, `conventional_relation_inadequate`, `authored_relations_inadequate`. All close by `decide`; the build carries zero `sorry`.
@@ -55,9 +55,9 @@ nityāḥ śabdārthasaṃbandhāstatrānnātā maharṣibhiḥ |
 sūtrāṇāṃ sānutantrāṇāṃ bhāṣyāṇāṃ ca praṇetṛbhiḥ || 23 ||
 :::
 
-> There the relations between word and meaning are handed down as eternal by the great seers — by the authors of the sutras with their ancillary treatises, and of the commentaries.
+> There the relations between word and meaning are handed down as eternal by the great seers, by the authors of the sutras with their ancillary treatises, and of the commentaries.
 
-*Gist.* The nityatva thesis, stated as inherited rather than argued.
+The nityatva thesis, stated as inherited rather than argued. That the śabda-artha-sambandha is eternal, that the bond between a word and what it means is not made, is the position the grammarians share with Mimamsa and hold against the Naiyayikas, for whom the relation is samaya, convention, established by agreement (divine or human). The stakes are not linguistic but scriptural: a conventional relation has an author and a beginning, and a Veda whose words mean by convention is a Veda someone composed. An eternal relation secures an authorless Veda. The second line names the lineage by their genres rather than their names, sutra, anutantra, bhasya, which for a grammarian points unmistakably at Pāṇini, Kātyāyana and Patañjali, the munitraya whose authority this whole kanda presupposes.
 
 *Contract.* 7 entities · 5 axioms · 2 denials; adequacy proved in `V1_23`.
 
@@ -84,9 +84,9 @@ te liṅgaiśca svaśabdaiśca śāstre'sminnupavarṇitāḥ |
 smṛtyarthamanugamyante kecideva yathāgamam || 26 ||
 :::
 
-> Those word-meanings reached by abstraction, and those meanings whose defining marks are fixed; those words that are to be explained, and those that do the explaining; those relations obtaining by way of cause and effect and by way of fitness, which are ancillary to dharma and to cognition, holding among correct and incorrect words — these are set out in this science, by indicatory marks and in their own terms; and only some are followed, for the sake of what is to be remembered, according to tradition.
+> Those word-meanings reached by abstraction, and those meanings whose defining marks are fixed; those words that are to be explained, and those that do the explaining; those relations obtaining by way of cause and effect and by way of fitness, which are ancillary to dharma and to cognition, holding among correct and incorrect words, these are set out in this science, by indicatory marks and in their own terms; and only some are followed, for the sake of what is to be remembered, according to tradition.
 
-*Gist.* One long sentence spanning three verses, cataloguing the subject matter of the science.
+One long sentence spanning three verses, cataloguing the subject matter of the science. The technically loaded term is apoddhara, 'abstraction' or 'extraction', in apoddhara-padartha. It names what is, for Bhartṛhari, a foundational concession: the word is not a natural unit given prior to the sentence but is *extracted* from it by analysis. The sentence is the real linguistic whole; words are what grammatical procedure abstracts out of it. Since the second kanda will argue this at length, its appearance here as a settled item in a list is worth marking, the doctrine is presupposed before it is defended. The rest of the catalogue is orderly: meanings with fixed marks, the anvakhyeya/pratipadaka distinction between what gets explained and what does the explaining, and relations of two kinds, causal and of yogyatā or fitness. The final line is a piece of realism about the discipline: not everything true of these matters is transmitted, only kecid eva, some only, and that as tradition allows.
 
 *Contract.* 7 entities · 5 axioms · 1 denials; adequacy proved in `V1_24_26`.
 
@@ -105,13 +105,13 @@ smṛtyarthamanugamyante kecideva yathāgamam || 26 ||
 arthapratyāyanābhede viparītāstvasādhavaḥ || 27 ||
 :::
 
-> Correct words, established from the cultivated by way of tradition, are the means of dharma; the incorrect are the reverse — though in conveying the meaning there is no difference between them.
+> Correct words, established from the cultivated by way of tradition, are the means of dharma; the incorrect are the reverse, though in conveying the meaning there is no difference between them.
 
-*Gist.* One of the pivotal verses of the kanda, and its force lies entirely in the last quarter.
+One of the pivotal verses of the kanda, and its force lies entirely in the last quarter. Artha-pratyayana-abhede concedes, flatly, that incorrect forms communicate perfectly well: an ungrammatical word conveys its meaning no worse than a grammatical one. Bhartṛhari does not try to argue that solecisms fail to signify, he grants that they succeed. The distinction between sādhu and asādhu therefore cannot be a semantic distinction at all. It is a distinction in dharma: correct forms are dharma-sādhana, a means of merit, and incorrect ones are viparita, the reverse. This is what preserves the grammarian's enterprise from the obvious objection that if people understand each other anyway, grammar is idle. The reply is that grammar was never in the business of securing communication; it is in the business of securing merit, and the two come apart. Note also that sādhu forms are established sistebhyah agamat, from the cultivated, by tradition, not by rule alone. Usage of the learned is the criterion, and the rules describe it.
 
 *Contract.* 9 entities · 5 axioms · 1 denials; adequacy proved in `V1_27`.
 
-*Refuted.* “Correct words communicate meaning better than incorrect ones.” (unlicensed): Treats sadhu and asadhu as semantically distinguished in their capacity to convey meaning.
+*Refuted.* “Correct words communicate meaning better than incorrect ones.” (unlicensed): Treats sādhu and asādhu as semantically distinguished in their capacity to convey meaning.
 
 
 ### 1.28
@@ -126,9 +126,9 @@ nityatve kṛtakatve vā teṣāmādirna vidyate |
 prāṇināmiva sā caiṣā vyavasthānityatocyate || 28 ||
 :::
 
-> Whether they are eternal or made, no beginning of them is found — as with living beings; and this arrangement is what is called eternality.
+> Whether they are eternal or made, no beginning of them is found, as with living beings; and this arrangement is what is called eternality.
 
-*Gist.* A strikingly concessive move.
+A strikingly concessive move. Bhartṛhari declines to settle whether words are nitya or krtaka, eternal or manufactured, and argues that the dispute does not matter for his purpose: on either horn, no adi, no beginning, is found. The analogy to praninam carries the argument, living beings are certainly produced, each from a parent, yet the series of them has no first term, and their beginninglessness is perfectly compatible with each member being made. Hence vyavastha-nityata, 'eternality as regular arrangement': what is eternal is not necessarily the item but the settled order in which items stand. This is a weaker and considerably more defensible thesis than the one 1.23 reports from tradition, and it lets the grammarian keep everything he needs, an authorless, beginningless linguistic order, without having to win the metaphysical argument about whether individual words are eternal substances.
 
 *Contract.* 7 entities · 4 axioms · 1 denials; adequacy proved in `V1_28`.
 
@@ -149,7 +149,7 @@ tasmānnivadhyate śiṣṭaiḥ sādhutvaviṣayā smṛtiḥ || 29 ||
 
 > No one would undertake this arrangement if it served no purpose; therefore the tradition concerning correctness is composed by the cultivated.
 
-*Gist.* A brief argument from purpose, propping up 1.27.
+A brief argument from purpose, propping up 1.27. The reasoning runs backwards from the existence of the discipline to its point: nobody codifies an anarthika, purposeless, system, and the sistas plainly did codify one; so it must have a purpose, and by 1.27 that purpose is dharma rather than communication. The argument is frankly weak taken alone, the mere existence of a practice is poor evidence that it achieves what it claims, but it is not meant to stand alone. It is a bridge, converting the doctrinal claim of 1.27 into a reason to trust the smṛti that follows, and setting up the far more interesting verses on the limits of reasoning that come next.
 
 *Contract.* 6 entities · 3 axioms · 1 denials; adequacy proved in `V1_29`.
 
@@ -170,7 +170,7 @@ nāgamādṛte dharmastarkeṇa vyavatiṣṭhate |
 
 > Dharma is not established by reasoning apart from tradition; even the knowledge that the seers possess is itself preceded by tradition.
 
-*Gist.* The most consequential verse in this stretch, and one of the most cited in the whole work.
+The most consequential verse in this stretch, and one of the most cited in the whole work. The first line subordinates tarka to āgama in matters of dharma, which is orthodox enough. The second line is the radical one: even rsis, whose authority rests on direct vision, do not see without tradition, their jñāna too is āgama-purvaka, preceded by what was handed down. This closes the escape route by which one might appeal past the tradition to the unmediated insight of those who founded it. There is no such unmediated layer. Every seeing is already informed by what was received. Whether this is a humbling of reason or a quiet circularity, tradition validated by seers whose seeing is constituted by tradition, has been debated ever since, and the verse does not defend itself against the charge.
 
 *Contract.* 5 entities · 3 axioms · 2 denials; adequacy proved in `V1_30`.
 
@@ -189,9 +189,9 @@ dharmasya cāvyavacchinnāḥ panthāno ye vyavasthitāḥ |
 na tāṃllokaprasiddhatvāt kaścittarkeṇa bādhate || 31 ||
 :::
 
-> And those paths of dharma that stand unbroken — no one sets them aside by reasoning, because they are established in the world.
+> And those paths of dharma that stand unbroken, no one sets them aside by reasoning, because they are established in the world.
 
-*Gist.* The complement to 1.30.
+The complement to 1.30. Where that verse denied reasoning the power to *establish* dharma, this one denies it the power to *overturn* it. The operative term is avyavacchinna, 'unbroken', 'uninterrupted': what secures these paths is the sheer continuity of their transmission, and loka-prasiddhatva, their being established in the world, functions as the warrant. Bhartṛhari is describing something like a burden of proof. Reasoning does not get to arraign an unbroken practice and demand its credentials; the practice's persistence is its credential, and tarka arrives too late to sit in judgement. The position is conservative, but it is not anti-rational in an interesting way, the claim is about what reasoning is *for*, not about whether it works.
 
 *Contract.* 2 entities · 4 axioms · 1 denials; adequacy proved in `V1_31`.
 

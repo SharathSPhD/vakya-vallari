@@ -70,6 +70,30 @@ The theory is called *śābdabodha*, "verbal cognition": the structured awarenes
 
 "Devadatta cooks rice." The śābdabodha analysis derives the resulting cognition step by step. Each word contributes its meaning: the name contributes Devadatta, *odana* contributes rice, the verbal root contributes the activity of cooking. Each ending contributes a relation: the accusative marks rice as the object of the activity, the verbal ending marks Devadatta as the agent, the one whose effort drives it. And the output is written as one nested qualification: Devadatta, qualified by an activity conducive to cooking, an activity whose object is rice. Every node is a word-meaning. Every edge is a relation contributed by a grammatical element. Nothing arrives from nowhere.
 
+Now watch the analysis actually run, step by step, the way the manuals run it.
+
+Step one, the verb. The root *pac* contributes an activity: cooking. The verbal ending *-ti* contributes something further: effort, *kṛti*, the agent's productive exertion. But the effort is not bare. State its delimitor or the claim is not finished. The effort is delimited by cooking-ness (*pākatva*): it is effort of the cooking kind, not effort in general.
+
+Step two, the object. *Odana* contributes rice. The accusative ending contributes a role: patient-hood, *karmatva*, the property of being what the activity lands on. Again the delimitor is mandatory. The patient-hood resides in the rice as delimited by rice-ness (*odanatva*): what is being cooked is being cooked as rice, not as a heap of white grains that happen to be present.
+
+Step three, the root of the tree. The nominative marks Devadatta as chief qualificand, the item the whole cognition is about. Everything else hangs off him.
+
+Step four, assembly. The finished cognition, in the school's own style: Devadatta, qualified by effort delimited by cooking-ness, which effort has as its object rice, itself qualified by patient-hood delimited by rice-ness. Every node is a word-meaning. Every edge names its relation. Every property carries its delimitor. Nothing is left to charity.
+
+A type theorist reading that parse will want to write it down as a record, and the translation is nearly mechanical:
+
+```text
+bodha
+  qualificand : Entity   := Devadatta        -- viśeṣya, from the nominative
+  qualifier   : Property := effort           -- kṛti, from the verbal ending
+    delimitor : Property := cooking-ness     -- pākatva, from the root (avacchedaka)
+  object      : Entity   := rice             -- from odana
+    role      : Property := patient-hood     -- karmatva, from the accusative
+    delimitor : Property := rice-ness        -- odanatva (avacchedaka)
+```
+
+Read the two columns of this page together. The left-hand analysis is fourteenth-century Mithilā. The right-hand record is any dependently typed language you like. The fields correspond one for one, and the two delimitor lines are the school's signature move: no property enters the structure without the index that says which property it is.
+
 Say what this is in modern terms and the sentence almost writes itself: a compositional semantics, mapping surface syntax to a typed structure by rules, with the lexicon supplying the leaves and the morphology supplying the edges. The manuals of the school derive the bodha for sentence after sentence, including the hard cases: negations, compounds, sentences with ambiguous scope. It is a semantic parser, fully specified, executed by trained humans instead of by machines, and debugged in public disputation for four centuries. When this book's pipeline takes a commentary sentence and elaborates it into typed claims a kernel can check, it is walking a path this tradition surveyed first.
 
 ::: pandit
@@ -106,7 +130,21 @@ Row four. Śābdabodha maps a surface sentence to a typed cognition-structure by
 
 Row five. The qualificand-qualifier analysis is the discipline of stating every judgment as a subject, a predicate, and an explicit connecting relation. In the kernel, a claim is literally that: an inductive datum built from sorted entities and named relations, with no unanalyzed sentence anywhere in the system. The humblest row of the table, and the one every other row stands on.
 
+![Five Navya-Nyāya devices paired with their type theoretic counterparts in the kernel.](book/assets/figures/fig11-nyaya-mapping.png "Diagram of five paired boxes linked by double arrows: avacchedaka with type index, parampara-sambandha with nested relation nodes, structured absence with typed absence, shabdabodha with elaboration, and visheshya visheshana with subject-predicate typing.")
+
 A caution before the code. The table asserts structural correspondence, not historical influence and not identity of doctrine. Navya-Nyāya did not have dependent type theory; it had no formal syntax, no notion of computation, no kernel. What it had was a worked-out discipline for writing cognition-structure exactly, and the claim is that the structures it settled on are the ones a dependent-type formalization reaches for today. The end of this chapter says plainly where the correspondence stops.
+
+## A verification system, not just a logic
+
+One more framing, and it is the one this book cares about most. Navya-Nyāya is usually shelved as a logic. It is better described as a formal verification system run on human hardware.
+
+Consider what the technical idiom was actually for. Not expression: Sanskrit already expressed everything the school wanted to say. The idiom existed to make claims checkable. A definition written in the regimented style can be tested by any trained reader, anywhere on the subcontinent, with no access to the author, no shared context, and no charity. Apply it to the standard counterexamples. See whether it overreaches or underreaches. Report the failure in the same idiom. The language was designed so that checking a claim requires training but not genius, and so that two trained checkers reach the same verdict. That is the defining property of a verification format. It is what distinguishes a specification from an essay.
+
+A debate in this idiom, likewise, is a proof script. The proponent states a thesis, the opponent raises a numbered objection, the proponent repairs or concedes, and every move is written in a form the whole assembly can verify step by step. Nothing rests on rhetoric because the format gives rhetoric no purchase. The record of a Navadvīpa disputation is a program that any trained human can re-run, centuries later, and it will pass or fail the same way. The tradition even had the equivalent of a build error: a move stated without its delimitors was rejected as unfinished before its truth was ever discussed.
+
+And that last discipline is the deepest link. The school's insistence that every property travel with its delimitor is exactly the machine checker's insistence that every claim carry its type. In both systems the point is identical: an unindexed claim is not false, it is not yet checkable, and a community that wants checkable claims must refuse it at the door.
+
+Here, then, is how this book's two pillars meet. Lean supplies the mechanical checker: tireless, fast, incapable of charity. Navya-Nyāya supplies the ontology of claims worth checking: qualification, delimitation, relational nesting, structured denial. Neither pillar can do the other's work. A checker with a shallow ontology verifies trivia; an ontology without a checker stays prose. This project is the two shaking hands, and Chapter 24 asks what a prover would look like if the handshake were designed in from the start.
 
 ## Three choices, inherited
 
@@ -164,7 +202,7 @@ A chapter that has spent four thousand words on a correspondence owes the reader
 Three things do not map cleanly, and no claim in this book should be read as pretending otherwise. First, universals. When Navya-Nyāya says pot-ness delimits a counterpositive, many of its thinkers meant that *ghaṭatva* is a real universal, a *jāti*, existing in the world and inhering in every pot, with a supporting theory of which properties are genuine universals and which are mere imposed properties, *upādhi*. A type in Lean is nothing of the sort: it is a piece of formal syntax with no ontological commitment at all. The kernel borrows the structure of delimitation while staying silent on the metaphysics of universals, and the silence is a real difference, not a detail. Second, the epistemic layers. Navya-Nyāya is before everything a theory of knowledge: of how cognitions are produced, what makes them veridical, how perceptual error works, when a cognition of a cognition certifies the first. Type theory has no theory of perception and no account of error beyond ill-typedness. The whole pramāṇa apparatus, the school's actual center, has no counterpart in the kernel and is not modeled by this book. Third, the direction of ambition. Navya-Nyāya wanted to be right about reality; the kernel wants only to be faithful to a commentary. Structural kinship between their instruments is the claim here. Doctrinal agreement is not, and was never available.
 :::
 
-The correspondence itself is not this book's discovery. The field was opened by Daniel Ingalls, whose 1951 study first presented Navya-Nyāya's technical apparatus to modern logicians as logic, and by Bimal Krishna Matilal, whose 1968 work on the school's doctrine of negation made the structure of *abhāva* available to analytic philosophy. Everything in this chapter walks through doors those two opened. And the traffic through them is current. In 2026 alone, Panday and Ghosh encoded the school's core constructs, relational nesting, delimitors, and typed absence, in cubical type theory, the richer foundation flagged as a horizon in Chapter 6; and the Pramana project of Sathish trained large language models on the school's staged method of analysis. One line takes the logic into deeper foundations; the other takes it into machine reasoning. This book's kernel sits deliberately in between: Navya-Nyāya's structural choices, in plain Lean 4, doing verification work on a real text. Receipt: paper §2.3.
+The correspondence itself is not this book's discovery. The field was opened by Daniel Ingalls (1951), whose study first presented Navya-Nyāya's technical apparatus to modern logicians as logic, and by Bimal Krishna Matilal (1968), whose work on the school's doctrine of negation made the structure of *abhāva* available to analytic philosophy. Everything in this chapter walks through doors those two opened. And the traffic through them is current. In 2026 alone, Panday and Ghosh (2026) encoded the school's core constructs, relational nesting, delimitors, and typed absence, in cubical type theory, the richer foundation flagged as a horizon in Chapter 6; and the Pramana project (Sathish 2026a) trained large language models on the school's staged method of analysis. One line takes the logic into deeper foundations; the other takes it into machine reasoning. This book's kernel sits deliberately in between: Navya-Nyāya's structural choices, in plain Lean 4, doing verification work on a real text. Receipt: paper §2.3.
 
 The point of the chapter, then, is not that medieval Bengal secretly had Lean. It is narrower and stranger. When this project needed to decide how a formal ontology for a Sanskrit philosophical text should represent qualification, delimitation, relational nesting, and denial, the best available answers turned out to be the ones a school of Sanskrit logicians had already engineered, under memory constraints and in prose, five centuries earlier. The kernel did not impose a foreign formalism on the tradition. On its three deepest choices, it took dictation.
 

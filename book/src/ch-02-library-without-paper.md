@@ -24,6 +24,8 @@ Then come the permutation recitations, which the tradition calls *vikṛti*, mod
 
 The *jaṭā-pāṭha*, the braid recitation, goes further. For each pair of adjacent words, the reciter says the pair forward, then reversed, then forward again: ab, ba, ab, then bc, cb, bc. And the *ghana-pāṭha*, the dense recitation, is the heaviest of all: ab, ba, abc, cba, abc, then bc, cb, bcd, dcb, bcd. A ghana reciter who knows a text speaks every word of it many times over, in an interlocking pattern that binds each word to its neighbors on both sides. Reciting a text against its natural word order is hard, and that is the point. Reversal breaks the crutch of habit. A reciter who has silently smoothed a phrase into something more natural will trip the moment the pattern makes him say it backward, because the smoothed version no longer interlocks.
 
+![The recitation permutations store the same words in interlocking orders, so corruption in any one stream is caught by cross-checking the others.](book/assets/figures/fig02-patha-codes.png "Diagram of four word slots a b c d recited as the pada-patha with each word isolated, the krama-patha as overlapping pairs, and the ghana-patha as dense braided repetitions, with a note that corruption in one stream is caught by cross-checking the others.")
+
 Here is the opening of the Ṛgveda's first hymn, as an anchor. In the continuous saṃhitā form, with accents omitted:
 
 ::: {.deva}
@@ -83,6 +85,8 @@ The tradition built its unpacking as a stack of named layers, each with a distin
 | Notes | *ṭippaṇī* | Glosses and annotations on any of the above. Local repairs, clarifications, cross-references. |
 
 Read the table as a software engineer and the structure is instantly familiar. The root text is the compact binary. The vṛtti is the first-stage decompressor, mechanical and close to the data. The bhāṣya is where semantics happens: not just what the words say but what the rule must mean for the whole system to work, argued adversarially, with objections given full voice before they are answered. The ṭīkā and ṭippaṇī are maintenance layers, patching the interpretation as the language of the earlier layers itself drifts out of reach. Each layer takes the one below it as its input and fixes an interpretation of it. The stack is versioned interpretation, and the version history is preserved, because the older layers are never overwritten. They are memorized too, and commented upon in their turn.
+
+![The commentary stack unpacks the compressed root text layer by layer, from sūtra and kārikā down to the marginal ṭippaṇī.](book/assets/figures/fig03-commentary-stack.png "Diagram of five stacked boxes from sutra and karika at the top through vrtti, bhashya, and tika to tippani at the bottom, each arrow labeled unpacks, with a vertical double arrow beside the stack running between compression and decompression.")
 
 Two things about this stack deserve emphasis. First, its sheer weight. In discipline after discipline, the commentarial layers outweigh the root text by orders of magnitude, and the tradition's greatest minds spent themselves there. Patañjali's Mahābhāṣya, the "Great Commentary" on Pāṇini, is one of the monuments of Sanskrit prose, and it is layer three of somebody else's text. In this tradition, writing commentary was not a lesser genre for those who had nothing of their own to say. It was the primary form of philosophical work. New ideas entered the world as readings of old sentences.
 

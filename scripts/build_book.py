@@ -134,6 +134,97 @@ FEATURED = {
 
 _ID = re.compile(r"1\.(\d+)")
 
+# ---------------------------------------------------------------------------
+# IAST normalization for corpus-derived display text.
+#
+# The corpus commentary and translation fields were authored in bare ASCII
+# romanization (sphota, Bhartrhari). The hand-authored chapters use IAST
+# (sphoṭa, Bhartṛhari). This vetted, word-boundary map normalizes the
+# corpus-derived text at book-build time so the whole book reads in one
+# convention. It is presentation only: contracts, Lean identifiers, and the
+# corpus files themselves are untouched (Lean requires ASCII identifiers).
+# Longest keys are applied first to avoid substring collisions.
+# ---------------------------------------------------------------------------
+IAST_MAP = {
+    "vaiyakarana": "vaiyākaraṇa",
+    "sabdatattva": "śabdatattva",
+    "Vakyapadiya": "Vākyapadīya",
+    "purvapaksa": "pūrvapakṣa",
+    "Bhartrhari": "Bhartṛhari",
+    "Katyayana": "Kātyāyana",
+    "vyakarana": "vyākaraṇa",
+    "Patanjali": "Patañjali",
+    "siddhanta": "siddhānta",
+    "apasabda": "apaśabda",
+    "samskara": "saṃskāra",
+    "pratyaksa": "pratyakṣa",
+    "upanisad": "upaniṣad",
+    "samhita": "saṃhitā",
+    "pasyanti": "paśyantī",
+    "vaikhari": "vaikharī",
+    "madhyama": "madhyamā",
+    "parinama": "pariṇāma",
+    "anukara": "anukāra",
+    "pratibha": "pratibhā",
+    "anumana": "anumāna",
+    "yogyata": "yogyatā",
+    "abhyasa": "abhyāsa",
+    "upadana": "upādāna",
+    "sadhana": "sādhana",
+    "vedanta": "vedānta",
+    "prakrta": "prākṛta",
+    "vaikrta": "vaikṛta",
+    "darsana": "darśana",
+    "pramana": "pramāṇa",
+    "avidya": "avidyā",
+    "sphota": "sphoṭa",
+    "aksara": "akṣara",
+    "Panini": "Pāṇini",
+    "sastra": "śāstra",
+    "asadhu": "asādhu",
+    "turiya": "turīya",
+    "atman": "ātman",
+    "moksa": "mokṣa",
+    "kāraka": "kāraka",
+    "karaka": "kāraka",
+    "sruti": "śruti",
+    "smrti": "smṛti",
+    "agama": "āgama",
+    "jnana": "jñāna",
+    "sakti": "śakti",
+    "varna": "varṇa",
+    "sadhu": "sādhu",
+    "sabda": "śabda",
+    "vakya": "vākya",
+    "vrtti": "vṛtti",
+    "karya": "kārya",
+    "nada": "nāda",
+    "bija": "bīja",
+    "rupa": "rūpa",
+    "krti": "kṛti",
+    "dosa": "doṣa",
+    "tika": "ṭīkā",
+}
+_IAST_RES = [
+    (re.compile(r"\b" + k + r"(s?)\b"), v)
+    for k, v in sorted(IAST_MAP.items(), key=lambda kv: -len(kv[0]))
+] + [
+    (re.compile(r"\b" + k[0].upper() + k[1:] + r"(s?)\b"), v[0].upper() + v[1:])
+    for k, v in sorted(IAST_MAP.items(), key=lambda kv: -len(kv[0]))
+    if k[0].islower()
+]
+
+
+def normalize_iast(text: str) -> str:
+    for rx, repl in _IAST_RES:
+        text = rx.sub(lambda m, r=repl: r + m.group(1), text)
+    # Display typography: the corpus prose uses em-dashes; the book's house
+    # style does not. Spaced em-dashes become commas (appositive register),
+    # unspaced ones a plain space-comma; double conversion artifacts cleaned.
+    text = text.replace(" — ", ", ").replace("— ", ", ").replace(" —", ",").replace("—", ", ")
+    text = text.replace(" ,", ",").replace(",,", ",")
+    return text
+
 
 def _key(vid: str):
     m = _ID.match(vid)
@@ -174,8 +265,12 @@ def _card(r: dict, contract: dict | None) -> str:
     out = [f"### {r['id']}", ""]
     out += ["::: {.deva}", deva, ":::", ""]
     out += ["::: {.iast}", iast, ":::", ""]
-    out += [f"> {r['translation'].strip()}", ""]
-    out += [f"*Gist.* {_first_sentence(r['commentary'])}", ""]
+    out += [f"> {normalize_iast(r['translation'].strip())}", ""]
+    # Full commentary, normalized to IAST for display. Nothing is truncated:
+    # the commentary is the edition's most distinctive asset and the reader
+    # gets all of it (review 2026-07-19 §3, option b).
+    commentary = normalize_iast(" ".join(r["commentary"].split()))
+    out += [commentary, ""]
     if contract:
         ne, na, nd = (
             len(contract.get("entities", [])),
@@ -190,14 +285,19 @@ def _card(r: dict, contract: dict | None) -> str:
         rr = contract.get("rejected_readings", [])
         if rr:
             x = rr[0]
-            why = _first_sentence(x.get("why", ""), 200)
+            why = normalize_iast(_first_sentence(x.get("why", ""), 200))
             out += [
-                f"*Refuted.* “{x['rendering'].strip()}” "
+                f"*Refuted.* “{normalize_iast(x['rendering'].strip())}” "
                 f"({x['expect']}): {why}",
                 "",
             ]
     if r.get("contested"):
-        out += ["::: {.contested}", f"*Contested.* {r['contested'].strip()}", ":::", ""]
+        out += [
+            "::: {.contested}",
+            f"*Contested.* {normalize_iast(r['contested'].strip())}",
+            ":::",
+            "",
+        ]
     return "\n".join(out)
 
 
@@ -215,7 +315,7 @@ def _featured(vid: str, r: dict, contract: dict) -> str:
             head = f"relation `{a['name']}({a['from']} → {a['to']})`"
         else:
             head = f"predication `{a['name']}({a['of']})`"
-        out += [f"- {head} — “{a['cite']}”"]
+        out += [f"- {head}: “{normalize_iast(a['cite'])}”"]
     dn = contract.get("denials", [])
     if dn:
         out += ["", "**Denials.**", ""]
@@ -226,10 +326,13 @@ def _featured(vid: str, r: dict, contract: dict) -> str:
                 head = f"`{a['a']} = {a['b']}`"
             else:
                 head = f"`{a['name']}({a['of']})`"
-            out += [f"- {head} — “{a['cite']}”"]
+            out += [f"- {head}: “{normalize_iast(a['cite'])}”"]
     out += ["", "**Rejected readings and their compiled fates.**", ""]
     for x in contract.get("rejected_readings", []):
-        out += [f"- “{x['rendering'].strip()}” → **{x['expect']}**. {x['why'].strip()}"]
+        out += [
+            f"- “{normalize_iast(x['rendering'].strip())}” → **{x['expect']}**. "
+            f"{normalize_iast(x['why'].strip())}"
+        ]
     out += [
         "",
         f"**Theorems in `{_module_name(vid)}.lean`.** "
@@ -270,16 +373,18 @@ def generate() -> list[Path]:
         p = GEN / f"ch-{num}-{slug}.md"
         p.write_text("\n".join(parts))
         written.append(p)
-    # Appendix D: theorem index
+    # Appendix D: theorem index. Compact run-in entries rather than a wide
+    # table: long theorem identifiers overflow a 6x9 print measure, and
+    # run-in lines reflow cleanly on both Kindle and paper.
     lines = [
         "# Appendix D · Theorem Index",
         "",
-        "Generated from the Lean modules. One row per verse: the adequacy "
-        "theorem, the refutation theorems with their registered failure "
-        "modes, and auxiliary sort-error lemmas.",
+        "Generated from the Lean modules. One entry per verse: the adequacy "
+        "theorem, then each refutation theorem with its registered failure "
+        "mode, then auxiliary sort-error lemmas where the module carries "
+        "them. Every theorem closes by `decide`; the build carries zero "
+        "`sorry`.",
         "",
-        "| Verse | Adequacy | Refutations (mode) | Sort-error lemmas |",
-        "|---|---|---|---|",
     ]
     for r in k1:
         vid = r["id"]
@@ -289,16 +394,15 @@ def generate() -> list[Path]:
         thms = re.findall(r"^theorem\s+(\w+)", lp.read_text(), re.M)
         c = json.loads((CONTRACTS / f"{vid}.json").read_text())
         modes = {x["label"]: x["expect"] for x in c.get("rejected_readings", [])}
-        ade = [t for t in thms if t == "accepted_adequate"]
         sortl = [t for t in thms if t.endswith("_sort_error")]
         refs = [t for t in thms if t.endswith("_inadequate")]
-        ref_s = "; ".join(
-            f"`{t}` ({modes.get(t[: -len('_inadequate')], '?')})" for t in refs
-        )
-        lines.append(
-            f"| {vid} | {'`accepted_adequate`' if ade else '—'} | {ref_s} | "
-            f"{', '.join(f'`{t}`' for t in sortl) or '—'} |"
-        )
+        entry = [f"**{vid}**: `accepted_adequate`"]
+        for t in refs:
+            entry.append(f"`{t}` ({modes.get(t[: -len('_inadequate')], '?')})")
+        if sortl:
+            entry.append("sort-error lemmas: " + ", ".join(f"`{t}`" for t in sortl))
+        lines.append("; ".join(entry) + ".")
+        lines.append("")
     p = GEN / "app-d-theorem-index.md"
     p.write_text("\n".join(lines) + "\n")
     written.append(p)
@@ -307,6 +411,8 @@ def generate() -> list[Path]:
 
 
 ORDER = [
+    "src/000-copyright.md",
+    "src/00a-preface.md",
     "src/00-how-to-read.md",
     "src/01-note-on-sanskrit.md",
     "src/part-1.md",
@@ -344,6 +450,7 @@ ORDER = [
     "src/app-c-glossary.md",
     "generated/app-d-theorem-index.md",
     "src/app-e-further-reading.md",
+    "src/99-about-the-author.md",
 ]
 
 

@@ -1,24 +1,31 @@
 ---
 title: "The Proven Word"
-subtitle: "Bhartṛhari's Brahmakāṇḍa, the First Machine-Verified Translation of a Sanskrit Classic"
-author: "Sharath Sathish"
+subtitle: "A Machine-Verified Reading of Bhartṛhari's Vākyapadīyam"
+author: "Dr Sharath Sathish"
 lang: en
-date: "2026"
-rights: "© 2026 Sharath Sathish. Text CC BY-NC-ND 4.0; code Apache-2.0. Noto Serif Devanagari and Noto Sans Devanagari are embedded under the SIL Open Font License 1.1."
-publisher: "TechNektar"
+date: "2026-07"
+edition: "First edition"
+rights: "© 2026 Sharath Sathish. All rights reserved. Text CC BY-NC-ND 4.0; code Apache-2.0. Noto Serif Devanagari and Noto Sans Devanagari are embedded under the SIL Open Font License 1.1."
+publisher: "TechNektar, London"
 description: >
-  One Sanskrit verse can be translated three grammatical ways that disagree
-  about the nature of reality. For fifteen centuries the commentary tradition
-  has been the only referee. This book tells the story of the first machine
-  verified translation of a Sanskrit classic: the complete first book of
-  Bhartṛhari's Vākyapadīya, where every verse's accepted reading is proved
-  adequate against its commentary in the Lean theorem prover, and 350
-  plausible mistranslations are refuted by compiled theorems.
+  What if a translation could be checked the way software is checked? One
+  verse of Sanskrit can be translated three grammatical ways that disagree
+  about the nature of reality, and for fifteen centuries the commentary
+  tradition has been the only referee. This book brings objective
+  verification into that most subjective of arts. It tells the story of the
+  complete first book of Bhartṛhari's Vākyapadīyam, the Brahmakāṇḍa, whose
+  every verse now carries a reading proved adequate against its commentary
+  in the Lean theorem prover, with 361 plausible mistranslations refuted by
+  compiled theorems. Along the way it teaches, from first principles, the
+  two traditions it joins: Pāṇini's grammar and the paramparā that carried
+  it, and the dependent type theory that powers modern proof assistants,
+  meeting in Navya-Nyāya, the formal logic India built centuries before
+  formal logic had that name.
 subject:
   - Sanskrit
   - Philosophy of language
   - Theorem proving
-  - Machine translation
+  - Formal verification
   - Pāṇini
   - Bhartṛhari
 toc-title: "Contents"

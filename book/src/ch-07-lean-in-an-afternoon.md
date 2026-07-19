@@ -194,6 +194,8 @@ The `∧` is logical "and". Adequacy demands both: all claims entailed, and none
 
 That is the entire kernel. Sorts, entities, claims, readings, entailment, contracts, adequacy. You have written all of it.
 
+![The kernel's type structure: six sorts type the entities, entities build claims, claims fill contracts and readings, and adequacy is decided by computation.](book/assets/figures/fig09-kernel-types.png "Diagram of the kernel's types: a Sorta enumeration of six sorts typing Entity, entities feeding Claim with its identity, relation, and predication kinds, claims filling Contract with axioms and denials and Reading with claims, and both flowing into the decidable Adequate proposition closed by decide.")
+
 ::: engineer
 Why route everything through `Bool` and then wrap in `Prop`? Because of what `decide` actually does. When you write `by decide`, Lean's elaborator finds the `Decidable` instance for the goal, evaluates it, and if the answer is yes, produces a proof term. The kernel, the small trusted core from Chapter 5, then independently checks that term by rerunning the reduction. Nothing is taken on the tactic's word; the tactic only proposes, the kernel disposes. This is why `deriving DecidableEq` mattered so much: it is the ground-level supply of decidability from which the instances for `Adequate` are assembled by `infer_instance`. The trust story for every verdict in this book is: a computation the kernel replayed.
 :::
@@ -238,7 +240,7 @@ theorem accepted_adequate : contract.Adequate accepted := by decide
 Paste it in. Lean accepts, silently. Sit with the silence for a moment, because a great deal happened inside it. The checker walked all three claims. It found the flipped identity via the symmetry clause, the predication and the relation by membership. It confirmed that no claim appears among the denials. It reduced the conjunction to a true statement, built a proof object, and the kernel verified that object. The theorem `accepted_adequate` is now a permanent, replayable certificate that this translation says nothing the commentary does not license and nothing it denies. This is the shape, letter for letter, of the theorem the real system proves about the accepted translation of Vākyapadīya 1.1: there the line reads `theorem accepted_adequate : contract.Adequate accepted := by decide` as well (lean/VakyaVallari/Verses/V1_1.lean).
 
 ::: vrtti
-In our toy, the "commentary" is one English sentence and you took my word for the axioms. In the real edition no one takes anyone's word. Each axiom in a contract carries a verbatim quotation from the vṛtti, the prose commentary in Iyer's 1965 edition, and a test suite checks that every quoted string actually occurs in the source text (tests/test_contracts.py). The step from commentary sentence to axiom remains human and contestable; the quotation makes it auditable. Chapter 10 walks the real 1.1 contract sentence by sentence.
+In our toy, the "commentary" is one English sentence and you took my word for the axioms. In the real edition no one takes anyone's word. Each axiom in a contract carries a verbatim quotation from the vṛtti, the prose commentary in Subramania Iyer's (1965) edition, and a test suite checks that every quoted string actually occurs in the source text (tests/test_contracts.py). The step from commentary sentence to axiom remains human and contestable; the quotation makes it auditable. Chapter 10 walks the real 1.1 contract sentence by sentence.
 :::
 
 ## Two ways to be wrong
@@ -339,8 +341,18 @@ cd lean && lake build
 
 If any contract, any reading, any theorem fails to check, the build fails, publicly. There is no reviewer discretion in that gate and no fatigue. When a later chapter reports that a translation "compiles against the commentary" or that a rival reading "is refuted by decide," you now know the literal, unglamorous, checkable thing being claimed, because you have caused both outcomes with your own hands: the silence of an accepted theorem, and the error message that is really a proof.
 
+## What you now own
+
+Before closing the tab, place the afternoon's work on the map Chapter 6 drew at its end. You have just built, at toy scale, the same architecture that currently defines the frontier of machine mathematics.
+
+Recall the shape. When Google DeepMind's AlphaProof reached silver-medal standard on the 2024 International Mathematical Olympiad, solving four of six problems, its proofs were written in Lean and every step was checked by the kernel (Google DeepMind 2024; AlphaProof team 2025). A model searched and proposed; the checker refused everything unsound. Propose and verify. Now look back at your session. You proposed `shattered_adequate`, and the checker refused. You proposed `accepted_adequate`, and the checker accepted, silently, after replaying the computation. You have been running the same loop. The tactic proposes; the kernel disposes. That sentence from the engineer box is not a description of your toy in particular. It is the structural answer to the era's defining problem, that fluent systems, human or machine, produce plausible text rather than verified truth.
+
+Two things differ between your afternoon and the frontier, and it is worth being exact about both. The first is the domain. AlphaProof's checker judges mathematics; yours judges meaning, whether a reading keeps faith with a commentary. The second is the size of the search. At the frontier, the proposer is a reinforcement-trained model exploring vast proof spaces; at your desk, the proposer was you, and the proofs were two words long. But the checker's role is identical in both places, and the checker is the part that carries the trust. Yours fits in 150 lines, and you wrote it.
+
+That is why this chapter exists. When Part III puts language models in the proposer's seat, drafting contracts and readings at scale, you will not need to take the safety story on faith. You own the pattern. You have felt the silence of acceptance and read the refusal that is really a proof, and you know that nothing a fluent proposer says gets past the gate you built by hand.
+
 ## The thread so far
 
 One verse showed us that translations encode incompatible worldviews, and the tradition's own answer was commentary. The formal tradition gave us proofs as checkable objects and propositions as types. This chapter joined the two in miniature: you built sorts, entities, claims, and contracts, then proved one reading of an invented verse adequate and two readings defective, using the same definitions and the same `decide` that the book's real kernel uses. What remains is to see the tradition's own exactness deepen the kernel, and then to watch the real Verse 1.1 go through the machine end to end.
 
-*Doors: B, you have now written the kernel and should read everything after this with proofs in hand; A, the contract-and-gate pattern you just exercised is the architecture Chapters 9 and 11 generalize; C and D, skim the listings and keep the verdicts: accepted readings compile, rejected ones are refuted, and Chapter 10 replays this for the real verse.*
+*Doors: B, you have now written the kernel and should read everything after this with proofs in hand; A, the contract-and-gate pattern you just exercised is the architecture Chapters 9 and 11 generalize, and it is the same propose-and-verify loop AlphaProof runs at the frontier; C and D, skim the listings and keep the verdicts: accepted readings compile, rejected ones are refuted, and Chapter 10 replays this for the real verse.*
